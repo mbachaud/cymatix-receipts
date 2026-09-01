@@ -1,28 +1,58 @@
-# beds/
+# Archived beds
 
-Archived knowledge-store snapshots (benchmark "beds") are too large for git, so
-they are published as **GitHub Release assets** on this repository rather than
-committed here. Each asset is a zstd-compressed SQLite store named `<bed>.db.zst`.
+Knowledge-store snapshots archived as GitHub Release assets of this repository. Each asset is a `VACUUM INTO` copy of the source database (WAL checkpointed on the copy, sources never modified), compressed with zstandard level 12 and round-trip verified. `MANIFEST.json` carries both hashes, row counts, table lists, and the privacy heuristic result per bed.
 
-This directory holds only the manifest that describes them:
+## Release `early-beds-2026-04`: Early knowledge-store snapshots (Helix era, April 2026)
 
-- `MANIFEST.json` (not yet present) records one entry per published asset with
-  its release tag, asset filename, uncompressed and compressed byte counts, and
-  the sha256 of the uploaded `.db.zst`.
+https://github.com/mbachaud/cymatix-receipts/releases/tag/early-beds-2026-04
 
-The manifest arrives with the first release. A sibling agent uploads the bed
-assets and writes `beds/MANIFEST.json` at that time. Until then this directory
-is intentionally empty of data.
+| label | asset | raw MB | zst MB | ratio | docs | privacy rows | source |
+|---|---|---:|---:|---:|---:|---:|---|
+| helix-cache-genome | `helix-cache-genome.db.zst` | 248.9 | 49.3 | x5.05 | 7737 | 0 | `E:\helix-cache\genome.db` |
+| genome-bench-2026-04-10 | `genome-bench-2026-04-10.db.zst` | 549.4 | 173.8 | x3.16 | 7313 | 0 | `E:\Helix-backup blobs\genome-bench-2026-04-10.db` |
+| genome-bench-2026-04-14 | `genome-bench-2026-04-14.db.zst` | 798.7 | 156.3 | x5.11 | 18254 | 0 | `E:\Helix-backup blobs\genome-bench-2026-04-14.db` |
+| genome-2026-04-15 | `genome-2026-04-15.db.zst` | 825.7 | 161.9 | x5.1 | 19692 | 0 | `E:\Helix-backup blobs\genome.db` |
+| genomes-main-2026-04-21 | `genomes-main-2026-04-21.db.zst` | 258.9 | 51.5 | x5.03 | 7982 | 3 | `E:\Helix-backup blobs\helix-context-2026-04-21\genomes-main-genome.db` |
+| genome-bench-organic | `genome-bench-organic.db.zst` | 298.4 | 60.0 | x4.98 | 8872 | 0 | `E:\Helix-backup blobs\helix-context-2026-04-21\genome_bench_organic.db` |
+| genome-cpu | `genome-cpu.db.zst` | 275.3 | 60.8 | x4.53 | 8021 | 0 | `E:\Helix-backup blobs\helix-context-2026-04-21\genome_cpu.db` |
+| genome-llm-backup | `genome-llm-backup.db.zst` | 57.2 | 19.1 | x3.0 | 3501 | 0 | `E:\Helix-backup blobs\helix-context-2026-04-21\genome_llm_backup.db` |
+| genome-bench-helix | `genome-bench-helix.db.zst` | 22.1 | 5.2 | x4.26 | 687 | 0 | `E:\Helix-backup blobs\helix-context-2026-04-21\genome_bench_helix.db` |
 
-## Verifying a downloaded bed
+## Release `bench-beds-2026-05-to-07`: Bench and dogfood beds (May to July 2026)
 
-```bash
-# after downloading <bed>.db.zst from the release page
-sha256sum <bed>.db.zst          # compare against the entry in MANIFEST.json
-zstd -d <bed>.db.zst -o <bed>.db
+https://github.com/mbachaud/cymatix-receipts/releases/tag/bench-beds-2026-05-to-07
+
+| label | asset | raw MB | zst MB | ratio | docs | privacy rows | source |
+|---|---|---:|---:|---:|---:|---:|---|
+| genome-bench-2026-05-08-frozen | `genome-bench-2026-05-08-frozen.db.zst` | 1179.5 | 183.4 | x6.43 | 18936 | 8 | `F:\Projects\cymatix-context\benchmarks\genome-bench-2026-05-08-frozen.db` |
+| bench-matrix-small | `bench-matrix-small.db.zst` | 45.2 | 13.3 | x3.39 | 1238 | 0 | `F:\Projects\helix-context\genomes\bench\matrix\small.db` |
+| enterprise-rag-smoke | `enterprise-rag-smoke.db.zst` | 138.5 | 30.7 | x4.51 | 2181 | 0 | `F:\Projects\helix-context\genomes\bench\enterprise_rag_smoke.db` |
+| genomes-main-current | `genomes-main-current.db.zst` | 12.9 | 4.8 | x2.66 | 757 | 1 | `F:\Projects\cymatix-context\genomes\main\genome.db` |
+| dogfood-bed | `dogfood-bed.db.zst` | 261.5 | 67.8 | x3.85 | 6272 | 2 | `F:\Projects\cymatix-context\genomes\dogfood\genome.db` |
+| assetops-bed | `assetops-bed.db.zst` | 198.5 | 57.4 | x3.46 | 5636 | 0 | `F:\Projects\cymatix-context\genomes\assetops-bed\genome.db` |
+| taggerdogfood-e2b | `taggerdogfood-e2b.db.zst` | 143.4 | 49.0 | x2.93 | 5693 | 0 | `F:\Projects\cymatix-context\genomes\taggerdogfood\genome.db` |
+| taggerdogfood-cpu | `taggerdogfood-cpu.db.zst` | 215.2 | 59.0 | x3.65 | 6276 | 0 | `F:\Projects\cymatix-context\genomes\taggerdogfood_cpu\genome.db` |
+
+## Restore
+
+```python
+import hashlib, zstandard as zstd
+src, dst = 'dogfood-bed.db.zst', 'dogfood-bed.db'
+with open(src, 'rb') as fi, open(dst, 'wb') as fo:
+    zstd.ZstdDecompressor().copy_stream(fi, fo)
+print(hashlib.sha256(open(dst, 'rb').read()).hexdigest())  # compare with sha256_raw
 ```
 
-Bed identity for benchmark purposes is not the file sha256. It is the
-content-derived gene identity plus the `ingest_c` and `tagger_version` recorded
-for that bed in the main repository's baselines ledger. See the citation rules
-in the top-level `README.md`.
+## Not archived
+
+- E:/Helix-backup blobs/genome-bench-2026-04-10.db.SAFETY_COPY (byte-duplicate of genome-bench-2026-04-10)
+- E:/Helix-backup blobs/genome-bench-{A3,fresh,N1000,N50,PKI,PKI2}.db (mid-experiment variants of the 2026-04-12/13 bench bed)
+- E:/Helix-backup blobs/helix-context-2026-04-21/genome.db (+wal) and genome_2026-04-15_pre_fresh.db (near-duplicates of genome-2026-04-15)
+- E:/Helix-backup blobs/helix-context-2026-04-21/genome.db.pre-*.bak (pre-compact / pre-backfill / pre-reingest safety copies)
+- F:/Projects/helix-context/genomes/bench/{matrix,sike_beds}/* larger than 500 MB (matrix medium/large/xl, enterprise_rag_10k/50k, sike beds): live bench beds, 165 GB, stay in place
+
+## Privacy
+
+Privacy audit: a name-based heuristic (content_type / source / origin columns, exchange-like table names) found no persisted query/response exchanges; the only flagged rows are hitl_events records (human-in-the-loop pause events, counts in the manifest). These schemas carry no content_type column, so the audit is not a content scan. The repository stays private until an owner review clears it.
+
+Generated 2026-09-01T21:51:09.361826+00:00 by `publish_beds.py`.

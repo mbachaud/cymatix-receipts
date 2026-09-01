@@ -1,0 +1,1735 @@
+{
+  "generated_at": "2026-09-01T21:51:09.361051+00:00",
+  "repo": "mbachaud/cymatix-receipts",
+  "beds": [
+    {
+      "label": "helix-cache-genome",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "helix-cache-genome.db.zst",
+      "source_path": "E:\\helix-cache\\genome.db",
+      "source_mtime": "2026-04-17T00:26:42.649201+00:00",
+      "source_bytes": 229474304,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/helix-cache-genome.db.zst",
+      "notes": [
+        "WAL copied alongside and checkpointed on the copy"
+      ],
+      "source_wal_bytes": 263383392,
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 63928,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 7737,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_",
+            "count": 82
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/batch_lead_research_vs_seq",
+            "count": 82
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/marathon/fleet.md",
+            "count": 70
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/SQLite_query_optimization_",
+            "count": 69
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/Stability_AI_and_Replicate",
+            "count": 61
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/ollama_call_latency_and_ti",
+            "count": 60
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/web_crawl_timeout_and_conn",
+            "count": 59
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/fleet_task_throughput_\u2014_ho",
+            "count": 52
+          },
+          {
+            "value": "F:/Projects/Education/docs/superpowers/plans/2026-03-26-supervisor-restructure.m",
+            "count": 41
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/web_crawl.py_\u2014_what_can_go",
+            "count": 39
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 248905728,
+      "sha256_raw": "c5fc519c84c652c5c4d9478faa6c0f1bd3852cd6c075e5355113140dfbfe424a",
+      "zst_bytes": 49300054,
+      "sha256_zst": "bae111a7c3a4687d8570f70c13a4b8a293d5f86748c2a309c441520889a04505",
+      "ratio": 5.05,
+      "roundtrip_ok": true,
+      "seconds": 7.1,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-bench-2026-04-10",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-bench-2026-04-10.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\genome-bench-2026-04-10.db",
+      "source_mtime": "2026-04-10T07:52:43.690306+00:00",
+      "source_bytes": 557256704,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-bench-2026-04-10.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 136049,
+      "user_version": 0,
+      "tables": [
+        "entity_graph",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "health_log",
+        "promoter_index",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 7313,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 354
+          },
+          {
+            "value": "__session__",
+            "count": 77
+          },
+          {
+            "value": "F:/Projects/helix-context/README.md",
+            "count": 7
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/tagger.py",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/server.py",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/docs/RESEARCH.md",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/context_manager.py",
+            "count": 4
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/genome.py",
+            "count": 3
+          },
+          {
+            "value": "F:/Projects/helix-context/helix.toml",
+            "count": 3
+          },
+          {
+            "value": "F:/Projects/helix-context/benchmarks/bench_sweep.py",
+            "count": 3
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {}
+      },
+      "vacuumed_bytes": 549392384,
+      "sha256_raw": "cd189085e56ecf357002d8abb21a16bced03420137225950072c9fac6aad6282",
+      "zst_bytes": 173814827,
+      "sha256_zst": "5341861e58cd2b3739c1a4d7a848a9e7ebcf4df88d56199a7dd7e8ab23e2021d",
+      "ratio": 3.16,
+      "roundtrip_ok": true,
+      "seconds": 14.1,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-bench-2026-04-14",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-bench-2026-04-14.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\genome-bench-2026-04-14.db",
+      "source_mtime": "2026-04-15T22:42:58.402627+00:00",
+      "source_bytes": 841883648,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-bench-2026-04-14.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 205538,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 18254,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 505
+          },
+          {
+            "value": "__session__",
+            "count": 124
+          },
+          {
+            "value": "E:/SteamLibrary\\steamapps\\common\\BeamNG.drive\\ui\\lib\\ext\\vue3\\CHANGELOG.md",
+            "count": 57
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\fleet_task_throughput_\u2014_ho",
+            "count": 51
+          },
+          {
+            "value": "E:/SteamLibrary\\steamapps\\common\\BeamNG.drive\\ui\\lib\\ext\\angular-material\\CHANGE",
+            "count": 48
+          },
+          {
+            "value": "F:/Projects\\Education\\docs\\superpowers\\plans\\2026-03-26-supervisor-restructure.m",
+            "count": 40
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\web_crawl.py_\u2014_what_can_go",
+            "count": 38
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\shell_injection_risks_in_l",
+            "count": 37
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\error_handling_gaps_in_fle",
+            "count": 36
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\claim_task_race_condition_",
+            "count": 33
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 798728192,
+      "sha256_raw": "44446fd1b5873ea6dc417ed31da6693ee63d9bc92c375cf0bad6e7fdf37c066c",
+      "zst_bytes": 156267171,
+      "sha256_zst": "9f6f356c29ff13313b8d386b6e128fa2ff3be269e82a1a42494cb262a1a1b975",
+      "ratio": 5.11,
+      "roundtrip_ok": true,
+      "seconds": 16.6,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-2026-04-15",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-2026-04-15.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\genome.db",
+      "source_mtime": "2026-04-15T18:38:07.585974+00:00",
+      "source_bytes": 871067648,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-2026-04-15.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 212663,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 19692,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 1797
+          },
+          {
+            "value": "__session__",
+            "count": 269
+          },
+          {
+            "value": "E:/SteamLibrary\\steamapps\\common\\BeamNG.drive\\ui\\lib\\ext\\vue3\\CHANGELOG.md",
+            "count": 57
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\fleet_task_throughput_\u2014_ho",
+            "count": 51
+          },
+          {
+            "value": "E:/SteamLibrary\\steamapps\\common\\BeamNG.drive\\ui\\lib\\ext\\angular-material\\CHANGE",
+            "count": 48
+          },
+          {
+            "value": "F:/Projects\\Education\\docs\\superpowers\\plans\\2026-03-26-supervisor-restructure.m",
+            "count": 40
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\web_crawl.py_\u2014_what_can_go",
+            "count": 38
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\shell_injection_risks_in_l",
+            "count": 37
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\error_handling_gaps_in_fle",
+            "count": 36
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\claim_task_race_condition_",
+            "count": 33
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 825696256,
+      "sha256_raw": "6b0c0ec1ff79093e88ddfc3c6e7b97b86541b34b39866cc91e70a0060073f1ed",
+      "zst_bytes": 161871466,
+      "sha256_zst": "416337a19f11b3d4cacaa3e920cb5e2e91e9be69f4d4fb412a95964de22a014c",
+      "ratio": 5.1,
+      "roundtrip_ok": true,
+      "seconds": 18.7,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genomes-main-2026-04-21",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genomes-main-2026-04-21.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\helix-context-2026-04-21\\genomes-main-genome.db",
+      "source_mtime": "2026-04-21T08:04:06.513146+00:00",
+      "source_bytes": 272519168,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genomes-main-2026-04-21.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 66533,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 7982,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 169
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_",
+            "count": 82
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/batch_lead_research_vs_seq",
+            "count": 82
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/marathon/fleet.md",
+            "count": 70
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/SQLite_query_optimization_",
+            "count": 69
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/Stability_AI_and_Replicate",
+            "count": 61
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/ollama_call_latency_and_ti",
+            "count": 60
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/web_crawl_timeout_and_conn",
+            "count": 59
+          },
+          {
+            "value": "F:/Projects/Education/fleet/knowledge/code_discussion/fleet_task_throughput_\u2014_ho",
+            "count": 52
+          },
+          {
+            "value": "F:/Projects/Education/docs/superpowers/plans/2026-03-26-supervisor-restructure.m",
+            "count": 41
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 3,
+        "detail": {
+          "table:hitl_events": 3
+        }
+      },
+      "vacuumed_bytes": 258936832,
+      "sha256_raw": "b1026272a66f5d3bf6a10a1f5f51e9912f7ee30bdc3f3365b031fc961c78599a",
+      "zst_bytes": 51513394,
+      "sha256_zst": "4cadf14091c8adec65849502eecad70bd731e56121c3bc2be8eb237795038f28",
+      "ratio": 5.03,
+      "roundtrip_ok": true,
+      "seconds": 9.3,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-bench-organic",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-bench-organic.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\helix-context-2026-04-21\\genome_bench_organic.db",
+      "source_mtime": "2026-04-15T08:38:26.940694+00:00",
+      "source_bytes": 314589184,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-bench-organic.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 76804,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 8872,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\fleet_task_throughput_\u2014_ho",
+            "count": 51
+          },
+          {
+            "value": "F:\\Projects\\Education\\docs\\superpowers\\plans\\2026-03-26-supervisor-restructure.m",
+            "count": 40
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\web_crawl.py_\u2014_what_can_go",
+            "count": 38
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\shell_injection_risks_in_l",
+            "count": 37
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\error_handling_gaps_in_fle",
+            "count": 36
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\claim_task_race_condition_",
+            "count": 33
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+            "count": 33
+          },
+          {
+            "value": "F:\\Projects\\Education\\ROADMAP.md",
+            "count": 32
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\wsl_bg_callback_patterns_\u2014",
+            "count": 30
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\Replicate_and_Stability_AI",
+            "count": 28
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 298426368,
+      "sha256_raw": "72e6ada7badd16dd4c2bc84ce74ace6057024800d9232d42de974a46a75874d5",
+      "zst_bytes": 59972802,
+      "sha256_zst": "70c031ceb6c9b945b6bab81417a3eca0a5bb484228e0fad032a8107f1b1dcedd",
+      "ratio": 4.98,
+      "roundtrip_ok": true,
+      "seconds": 11.7,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-cpu",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-cpu.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\helix-context-2026-04-21\\genome_cpu.db",
+      "source_mtime": "2026-04-10T20:02:45.070636+00:00",
+      "source_bytes": 283795456,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-cpu.db.zst",
+      "notes": [
+        "WAL copied alongside and checkpointed on the copy"
+      ],
+      "source_wal_bytes": 2649192,
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 69286,
+      "user_version": 0,
+      "tables": [
+        "entity_graph",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "health_log",
+        "promoter_index",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 8021,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "",
+            "count": 1011
+          },
+          {
+            "value": "__session__",
+            "count": 104
+          },
+          {
+            "value": null,
+            "count": 27
+          },
+          {
+            "value": "F:/Projects/helix-context/README.md",
+            "count": 7
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/tagger.py",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/server.py",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/docs/RESEARCH.md",
+            "count": 5
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/context_manager.py",
+            "count": 4
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/genome.py",
+            "count": 3
+          },
+          {
+            "value": "F:/Projects/helix-context/helix.toml",
+            "count": 3
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {}
+      },
+      "vacuumed_bytes": 275312640,
+      "sha256_raw": "ecab31908bd4647a3641abfab72b669a79deccc449be91d8da5e564ca539cf54",
+      "zst_bytes": 60778932,
+      "sha256_zst": "6c25e8305691cd134d5392c90c8c2d4a5adc787d502823aa641d1cd02ab62fd0",
+      "ratio": 4.53,
+      "roundtrip_ok": true,
+      "seconds": 6.1,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-llm-backup",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-llm-backup.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\helix-context-2026-04-21\\genome_llm_backup.db",
+      "source_mtime": "2026-04-09T17:09:09.796907+00:00",
+      "source_bytes": 60280832,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-llm-backup.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 14717,
+      "user_version": 0,
+      "tables": [
+        "entity_graph",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "health_log",
+        "promoter_index",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 3501,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 136
+          },
+          {
+            "value": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+            "count": 30
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\batch_lead_research_vs_seq",
+            "count": 26
+          },
+          {
+            "value": "F:\\Projects\\BookKeeper\\bookkeeper\\cli.py",
+            "count": 26
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\docs\\superpowers\\plans\\2026-04-07-auth-biged-templates.m",
+            "count": 23
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\code_index_AST_scanning_\u2014_",
+            "count": 22
+          },
+          {
+            "value": "F:\\Projects\\Education\\BigEd\\research\\orchestration_and_infrastructure.md",
+            "count": 21
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\web_crawl_timeout_and_conn",
+            "count": 20
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\ollama_call_latency_and_ti",
+            "count": 20
+          },
+          {
+            "value": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\Stability_AI_and_Replicate",
+            "count": 20
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {}
+      },
+      "vacuumed_bytes": 57159680,
+      "sha256_raw": "3e104fb550c07b0eabec3a4ee01924dec705e5a1630e5634d57c23991ca6efea",
+      "zst_bytes": 19051331,
+      "sha256_zst": "4b093a607415027c6601810a1c6086ed5f8608989de1c3bb43a4a1d5c34eada7",
+      "ratio": 3.0,
+      "roundtrip_ok": true,
+      "seconds": 2.4,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-bench-helix",
+      "group": "A",
+      "release_tag": "early-beds-2026-04",
+      "asset_name": "genome-bench-helix.db.zst",
+      "source_path": "E:\\Helix-backup blobs\\helix-context-2026-04-21\\genome_bench_helix.db",
+      "source_mtime": "2026-04-15T08:13:48.106715+00:00",
+      "source_bytes": 23228416,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/early-beds-2026-04/genome-bench-helix.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 5671,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 687,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\helix-context\\tests\\test_density_gate.py",
+            "count": 13
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\tests\\test_registry.py",
+            "count": 11
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\docs\\collab\\CELESTIA_JOINT_EXPERIMENT.md",
+            "count": 9
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\docs\\LAUNCHER.md",
+            "count": 9
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\helix_context\\server.py",
+            "count": 8
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\helix_context\\ribosome.py",
+            "count": 8
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\helix_context\\launcher\\app.py",
+            "count": 8
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\README.md",
+            "count": 8
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\tests\\test_server.py",
+            "count": 7
+          },
+          {
+            "value": "F:\\Projects\\helix-context\\helix_context\\mcp_server.py",
+            "count": 7
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 22147072,
+      "sha256_raw": "0280b225aebf34cf0f87cb4578d680ec987c85c39962c623292d098a95597e65",
+      "zst_bytes": 5196324,
+      "sha256_zst": "806ba4979dba6e557257bbeb96e8ecbe4c390a0d2793707ab23d6de2e8dfddb0",
+      "ratio": 4.26,
+      "roundtrip_ok": true,
+      "seconds": 0.9,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genome-bench-2026-05-08-frozen",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "genome-bench-2026-05-08-frozen.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\benchmarks\\genome-bench-2026-05-08-frozen.db",
+      "source_mtime": "2026-05-12T21:21:14.787048+00:00",
+      "source_bytes": 1230057472,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/genome-bench-2026-05-08-frozen.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 300307,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 18936,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 1894
+          },
+          {
+            "value": "D:/SteamLibrary/steamapps/common/Turing Complete\\translations\\_ids.txt",
+            "count": 52
+          },
+          {
+            "value": "D:/SteamLibrary/steamapps/common/Turing Complete\\translations\\English.txt",
+            "count": 52
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\fleet_task_throughput_\u2014_ho",
+            "count": 51
+          },
+          {
+            "value": "F:/Projects\\Education\\docs\\superpowers\\plans\\2026-03-26-supervisor-restructure.m",
+            "count": 40
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\web_crawl.py_\u2014_what_can_go",
+            "count": 38
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\shell_injection_risks_in_l",
+            "count": 37
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\error_handling_gaps_in_fle",
+            "count": 36
+          },
+          {
+            "value": "F:/Projects\\Education\\fleet\\knowledge\\code_discussion\\claim_task_race_condition_",
+            "count": 33
+          },
+          {
+            "value": "F:/Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+            "count": 33
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 8,
+        "detail": {
+          "table:hitl_events": 8
+        }
+      },
+      "vacuumed_bytes": 1179525120,
+      "sha256_raw": "a6eb6fdc1626e09754089689632d51b69beb930112b97841bc4fe9ecb3caeec2",
+      "zst_bytes": 183351568,
+      "sha256_zst": "d22b54b36f6a06097792a4233604fd433d17c13fd3921aa6ecaf3de1f1e40c8a",
+      "ratio": 6.43,
+      "roundtrip_ok": true,
+      "seconds": 20.7,
+      "asset_size_verified": true
+    },
+    {
+      "label": "bench-matrix-small",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "bench-matrix-small.db.zst",
+      "source_path": "F:\\Projects\\helix-context\\genomes\\bench\\matrix\\small.db",
+      "source_mtime": "2026-05-21T09:27:09.665967+00:00",
+      "source_bytes": 47181824,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/bench-matrix-small.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 11519,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 1238,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+            "count": 33
+          },
+          {
+            "value": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+            "count": 26
+          },
+          {
+            "value": "F:\\Projects\\BookKeeper\\bookkeeper\\cli.py",
+            "count": 25
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\docs\\superpowers\\plans\\2026-04-07-auth-biged-templates.m",
+            "count": 22
+          },
+          {
+            "value": "F:\\Projects\\BookKeeper\\docs\\superpowers\\plans\\2026-03-25-rbac-completion.md",
+            "count": 15
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\.planning\\14-devils-advocate-deep-dive.md",
+            "count": 11
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\.planning\\02-pricing-monetization.md",
+            "count": 11
+          },
+          {
+            "value": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\pdf_report.py",
+            "count": 11
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\ray_scorer_prototype.py",
+            "count": 10
+          },
+          {
+            "value": "F:\\Projects\\CosmicTasha\\.planning\\03-architecture-decisions.md",
+            "count": 10
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 45211648,
+      "sha256_raw": "7676231e1ccf912cd9a40c7444d19cc597b6d0289eb357db45e4db8d1d3aba3e",
+      "zst_bytes": 13331464,
+      "sha256_zst": "f32accf29e824410dc4d22dec989b707ad89875009c346dd696eca379838c7f3",
+      "ratio": 3.39,
+      "roundtrip_ok": true,
+      "seconds": 1.4,
+      "asset_size_verified": true
+    },
+    {
+      "label": "enterprise-rag-smoke",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "enterprise-rag-smoke.db.zst",
+      "source_path": "F:\\Projects\\helix-context\\genomes\\bench\\enterprise_rag_smoke.db",
+      "source_mtime": "2026-07-08T20:15:25.229704+00:00",
+      "source_bytes": 146329600,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/enterprise-rag-smoke.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 35725,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 2181,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          },
+          {
+            "value": "F:\\Projects\\EnterpriseRAG-Bench-main\\generated_data\\sources\\confluence\\customer-",
+            "count": 2
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 138526720,
+      "sha256_raw": "1142b58a809d63b975e7ede59923551acaa48cc9d202cfecc4114140d395628a",
+      "zst_bytes": 30685400,
+      "sha256_zst": "8ea12cbf214d97e2a1ab9b1f8ec56ebf6d8a7d6cc5d770b89dd89af99ddfc047",
+      "ratio": 4.51,
+      "roundtrip_ok": true,
+      "seconds": 3.6,
+      "asset_size_verified": true
+    },
+    {
+      "label": "genomes-main-current",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "genomes-main-current.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\genomes\\main\\genome.db",
+      "source_mtime": "2026-07-22T05:22:37.078090+00:00",
+      "source_bytes": 14307328,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/genomes-main-current.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 3493,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genes_fts_vocab",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "okf_links",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 757,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": null,
+            "count": 757
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 1,
+        "detail": {
+          "table:hitl_events": 1
+        }
+      },
+      "vacuumed_bytes": 12881920,
+      "sha256_raw": "1b321c7042ab078993404b878ea7a111118c16eca23f25a2dbd74c0b1c3b1e86",
+      "zst_bytes": 4844193,
+      "sha256_zst": "6e0bd7f039c93da0d6e082687120e1690a2f2524c46d1f4aaceba093c3d0ef0a",
+      "ratio": 2.66,
+      "roundtrip_ok": true,
+      "seconds": 0.7,
+      "asset_size_verified": true
+    },
+    {
+      "label": "dogfood-bed",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "dogfood-bed.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\genomes\\dogfood\\genome.db",
+      "source_mtime": "2026-08-18T00:10:28.206194+00:00",
+      "source_bytes": 271212544,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/dogfood-bed.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 66214,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genes_fts_vocab",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "okf_links",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_term_df",
+        "splade_terms",
+        "sqlite_sequence",
+        "symbol_defs"
+      ],
+      "doc_count": 6272,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r3_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_202",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_baseline_2026-04-17",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-17.",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-16.",
+            "count": 104
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 2,
+        "detail": {
+          "table:hitl_events": 2
+        }
+      },
+      "vacuumed_bytes": 261468160,
+      "sha256_raw": "1194456a9b493d0ec46c9fcf5de6b78143c878335509e14369e1a3a5e7ca3a7b",
+      "zst_bytes": 67829088,
+      "sha256_zst": "50601d1b5d0fa7cc054f9c4e921517c8ed0642fc153dfd55856b4083c204f424",
+      "ratio": 3.85,
+      "roundtrip_ok": true,
+      "seconds": 5.5,
+      "asset_size_verified": true
+    },
+    {
+      "label": "assetops-bed",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "assetops-bed.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\genomes\\assetops-bed\\genome.db",
+      "source_mtime": "2026-07-14T09:23:02.374180+00:00",
+      "source_bytes": 208248832,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/assetops-bed.db.zst",
+      "notes": [
+        "WAL copied alongside and checkpointed on the copy"
+      ],
+      "source_wal_bytes": 366712,
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 50842,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genes_fts_vocab",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "okf_links",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence"
+      ],
+      "doc_count": 5636,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:/Projects/helix-context/helix_context/knowledge_store.py",
+            "count": 71
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/context_manager.py",
+            "count": 50
+          },
+          {
+            "value": "F:/Projects/helix-context/docs/archive/superpowers/plans/2026-05-06-obsidian-vau",
+            "count": 39
+          },
+          {
+            "value": "F:/Projects/helix-context/docs/archive/plans/2026-05-04-native-observability-sid",
+            "count": 37
+          },
+          {
+            "value": "F:/Projects/helix-context/scripts/build_fixture_matrix.py",
+            "count": 29
+          },
+          {
+            "value": "F:/Projects/helix-context/docs/config-reference.md",
+            "count": 28
+          },
+          {
+            "value": "F:/Projects/MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md",
+            "count": 27
+          },
+          {
+            "value": "F:/Projects/BookKeeper/bookkeeper/cli.py",
+            "count": 26
+          },
+          {
+            "value": "F:/Projects/helix-context/helix_context/config.py",
+            "count": 24
+          },
+          {
+            "value": "F:/Projects/helix-context/overnight_logs/RESULTS-2026-07-11.md",
+            "count": 23
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 198520832,
+      "sha256_raw": "efbe6bc5612dc07174e367984afb4371d33fd8d93804705d89c74ca4e4c38266",
+      "zst_bytes": 57427836,
+      "sha256_zst": "0bc370e2c97b5163125178169b3ecbe3dd2573347b8cbce8b9f74d258bbba84f",
+      "ratio": 3.46,
+      "roundtrip_ok": true,
+      "seconds": 4.1,
+      "asset_size_verified": true
+    },
+    {
+      "label": "taggerdogfood-e2b",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "taggerdogfood-e2b.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\genomes\\taggerdogfood\\genome.db",
+      "source_mtime": "2026-07-31T10:12:58.894920+00:00",
+      "source_bytes": 150052864,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/taggerdogfood-e2b.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 36634,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genes_fts_vocab",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "okf_links",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence",
+        "symbol_defs"
+      ],
+      "doc_count": 5693,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_202",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-17.",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-16.",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_202",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_r3_",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r3_",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_202",
+            "count": 104
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 143446016,
+      "sha256_raw": "f7169de6e611a1fbadb57bf72743493df126420d871809f3625beca0e78a96d3",
+      "zst_bytes": 48953235,
+      "sha256_zst": "01fc9fb6b4a9bcb1078bf08cfa501ffe434dbe1286f37e67116cdf0136269762",
+      "ratio": 2.93,
+      "roundtrip_ok": true,
+      "seconds": 3.2,
+      "asset_size_verified": true
+    },
+    {
+      "label": "taggerdogfood-cpu",
+      "group": "B",
+      "release_tag": "bench-beds-2026-05-to-07",
+      "asset_name": "taggerdogfood-cpu.db.zst",
+      "source_path": "F:\\Projects\\cymatix-context\\genomes\\taggerdogfood_cpu\\genome.db",
+      "source_mtime": "2026-08-01T07:53:13.003304+00:00",
+      "source_bytes": 224600064,
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/bench-beds-2026-05-to-07/taggerdogfood-cpu.db.zst",
+      "notes": [],
+      "quick_check": "ok",
+      "page_size": 4096,
+      "page_count": 54834,
+      "user_version": 0,
+      "tables": [
+        "agents",
+        "cwola_log",
+        "entity_graph",
+        "filename_index",
+        "gene_attribution",
+        "gene_relations",
+        "genes",
+        "genes_fts",
+        "genes_fts_config",
+        "genes_fts_content",
+        "genes_fts_data",
+        "genes_fts_docsize",
+        "genes_fts_idx",
+        "genes_fts_vocab",
+        "genome_calibration",
+        "harmonic_links",
+        "health_log",
+        "hitl_events",
+        "okf_links",
+        "orgs",
+        "participants",
+        "parties",
+        "path_key_index",
+        "promoter_index",
+        "session_delivery_log",
+        "splade_terms",
+        "sqlite_sequence",
+        "symbol_defs"
+      ],
+      "doc_count": 6276,
+      "date_range": null,
+      "content_types": null,
+      "sources": {
+        "column": "source_id",
+        "top10": [
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r3_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d8_harmonic_off_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d6_cymatics_off_202",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r2_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_d5_cold_tier_on_r1_",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\ablation_baseline_2026-04-17",
+            "count": 105
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-17.",
+            "count": 104
+          },
+          {
+            "value": "F:\\Projects\\cymatix-context\\benchmarks\\snow\\results\\snow_oracle-only_2026-04-16.",
+            "count": 104
+          }
+        ]
+      },
+      "privacy_flag": {
+        "heuristic": "genes.content_type in exchange/conversation/chat/turn/query_response set; genes.source|origin|domain LIKE %exchange%|%proxy%|%chat%; row counts of tables named exchanges/sessions/turns/conversations/session_deliveries/hitl_events",
+        "count": 0,
+        "detail": {
+          "table:hitl_events": 0
+        }
+      },
+      "vacuumed_bytes": 215175168,
+      "sha256_raw": "447e84360161efeba02d84971b2ff49a5c084bcbb5ca3405b65e35da5636c569",
+      "zst_bytes": 59024230,
+      "sha256_zst": "e96c7ef88f54b0bf42ffe4943db70ab62ba8d0656521a1c3253dc53431eccfd6",
+      "ratio": 3.65,
+      "roundtrip_ok": true,
+      "seconds": 4.4,
+      "asset_size_verified": true
+    }
+  ],
+  "not_archived": [
+    "E:/Helix-backup blobs/genome-bench-2026-04-10.db.SAFETY_COPY (byte-duplicate of genome-bench-2026-04-10)",
+    "E:/Helix-backup blobs/genome-bench-{A3,fresh,N1000,N50,PKI,PKI2}.db (mid-experiment variants of the 2026-04-12/13 bench bed)",
+    "E:/Helix-backup blobs/helix-context-2026-04-21/genome.db (+wal) and genome_2026-04-15_pre_fresh.db (near-duplicates of genome-2026-04-15)",
+    "E:/Helix-backup blobs/helix-context-2026-04-21/genome.db.pre-*.bak (pre-compact / pre-backfill / pre-reingest safety copies)",
+    "F:/Projects/helix-context/genomes/bench/{matrix,sike_beds}/* larger than 500 MB (matrix medium/large/xl, enterprise_rag_10k/50k, sike beds): live bench beds, 165 GB, stay in place"
+  ]
+}
