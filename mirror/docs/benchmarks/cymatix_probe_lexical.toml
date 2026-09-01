@@ -1,0 +1,107 @@
+# cymatix_probe_lexical.toml
+# -------------------------------------------------------------------------
+# Lexical-probe profile for RepoBench-R (and other retrieval benchmarks).
+# All neural/GPU paths are OFF. Pipeline is pure FTS5 + tag lookup +
+# synonym expansion + BM25 shortlist. LLM-free, GPU-free.
+#
+# This file is the default config consumed by:
+#   benchmarks/repobench_r_cymatix.py
+#   benchmarks/repobench_r_cymatix_global.py
+# when no --cymatix-config / CYMATIX_CONFIG is supplied.
+# -------------------------------------------------------------------------
+
+[ribosome]
+enabled = false
+backend = "none"
+query_expansion_enabled = false
+query_decomposition_enabled = false
+
+[hardware]
+device = "cpu"
+
+[budget]
+expression_tokens = 7000
+max_genes_per_turn = 12
+decoder_mode = "none"
+legibility_enabled = false
+session_delivery_enabled = false
+abstain_enabled = false                  # A3 fix: real key (was [abstain] enabled, a no-op → abstain tier was silently ON)
+
+[session]
+synthetic_session_enabled = false
+
+[genome]
+path = "genomes/probe/genome.db"
+compact_interval = 0
+
+[server]
+host = "127.0.0.1"
+port = 11437
+upstream = "http://localhost:11434"
+
+[ingestion]
+backend = "cpu"
+splade_enabled = false
+dense_embed_on_ingest = false
+rerank_enabled = false
+entity_graph = false
+
+[retrieval]
+dense_embedding_enabled = false
+sr_enabled = false
+ray_trace_theta = false
+seeded_edges_enabled = false
+filename_anchor_enabled = true
+filename_anchor_weight = 4.0
+bm25_shortlist_enabled = true
+bm25_shortlist_size = 50
+bm25_prefilter_enabled = false
+entity_graph_retrieval_enabled = false
+fusion_mode = "additive"
+
+[context]
+cold_tier_enabled = false
+
+[cymatics]
+enabled = false
+
+[know]
+emit_floor = 0.0                         # A3 fix: real key (was confidence_floor, a no-op)
+
+# A3 fix: synonym expansion was a no-op (no [synonyms] section) for all 50
+# needles despite the probe header claiming it runs. Mirrors root cymatix.toml.
+[synonyms]
+slow = ["performance", "latency", "bottleneck", "timeout", "lag"]
+fast = ["performance", "speed", "optimization", "cache"]
+cache = ["redis", "ttl", "invalidation", "cdn", "caching", "eviction"]
+auth = ["jwt", "login", "security", "token", "session", "oauth"]
+protein = ["folding", "amino", "alpha_helix", "beta_sheet", "alphafold", "biochemistry"]
+tree = ["btree", "b-tree", "data_structures", "index", "binary_tree"]
+cymatix = ["genome", "ribosome", "codons", "splice", "chromatin", "promoter", "context compression"]
+pipeline = ["steps", "expression", "workflow", "process", "stages"]
+scoring = ["divergence", "audit", "grades", "ratchet", "dimensions"]
+compress = ["compression", "ratio", "target", "context_compression"]
+ratio = ["compression", "ratio", "target", "factor"]
+error = ["exception", "crash", "failure", "bug", "traceback"]
+port = ["proxy", "server", "configuration", "system_settings", "api"]
+threshold = ["divergence", "scoring", "reconciliation", "configuration"]
+model = ["ollama", "llm", "configuration", "deployment", "agent_frameworks"]
+skills = ["fleet", "agent", "worker", "llm_systems", "systems_architecture"]
+monetary = ["decimal", "financial", "data_processing", "bookkeeping"]
+budget = ["tokens", "configuration", "ribosome", "expression"]
+dimensions = ["audit", "scoring", "preset", "ci_cd"]
+binary = ["rust", "deployment", "packaging", "compatibility"]
+default = ["configuration", "system_settings", "deployment"]
+db = ["database", "sqlite", "postgres", "sql", "query", "schema"]
+api = ["endpoint", "route", "rest", "http", "request", "response"]
+ui = ["frontend", "component", "render", "layout", "css", "style"]
+test = ["pytest", "unittest", "mock", "assert", "coverage"]
+deploy = ["docker", "kubernetes", "ci", "cd", "pipeline", "helm"]
+config = ["settings", "toml", "env", "environment", "dotenv"]
+conductor = ["llm", "agent", "orchestration", "model", "fleet"]
+vacuum = ["reclaim", "sqlite", "pages", "compact", "shrink", "admin"]
+sike = ["scale_invariant", "benchmark", "retrieval", "sike_score"]
+moe = ["mixture_of_experts", "sliding_window", "swa", "gemma4", "tissue", "answer_slate"]
+slate = ["answer_slate", "kv_facts", "front_loaded", "extraction", "moe"]
+decoder = ["decoder_mode", "condensed", "moe", "ribosome_prompt", "instructions"]
+maintenance = ["admin", "vacuum", "refresh", "checkpoint", "compact"]
