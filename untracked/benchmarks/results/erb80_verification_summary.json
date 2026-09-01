@@ -1,0 +1,31 @@
+{
+  "n_rows": 80,
+  "correct": 14,
+  "incorrect": 14,
+  "abstained": 52,
+  "judge_error": 0,
+  "answered": 28,
+  "know_emitted": 0,
+  "correctness_among_answered": 0.5,
+  "hallucination_rate": 0.5,
+  "coverage": 0.35,
+  "know_precision_correct": 0.0,
+  "know_vs_judged_agreement": 0.825,
+  "audit_n": 8,
+  "audit_agreement": 0.5,
+  "audit_agreement_target": 0.8,
+  "benchmark": "erb500k_scored",
+  "issue": "#93",
+  "fixture": "genomes/bench/matrix-sharded/enterprise_rag_500k",
+  "helix_url": "http://127.0.0.1:11457",
+  "answer_model": "sonnet",
+  "audit_model": "opus",
+  "n_questions_total": 80,
+  "audit_fraction": 0.1,
+  "baselines": {
+    "BM25": 68.8,
+    "Vector": 51.4,
+    "Onyx_GPT4": 72.4
+  },
+  "finished_at": "2026-07-15T03:49:59.150025+00:00"
+}

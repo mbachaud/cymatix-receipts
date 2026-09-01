@@ -1,0 +1,30 @@
+{
+  "config": "python_cfr",
+  "n_per_level": 200,
+  "timestamp": "20260613T083151Z",
+  "levels": {
+    "easy": {
+      "n": 200,
+      "avg_cands": 6.8,
+      "random_acc@1": 0.16,
+      "random_acc@3": 0.495,
+      "overlap_acc@1": 0.185,
+      "overlap_acc@3": 0.5,
+      "bm25_acc@1": 0.205,
+      "bm25_acc@3": 0.53
+    },
+    "hard": {
+      "n": 200,
+      "avg_cands": 17.7,
+      "random_acc@1": 0.065,
+      "random_acc@3": 0.2,
+      "random_acc@5": 0.345,
+      "overlap_acc@1": 0.11,
+      "overlap_acc@3": 0.305,
+      "overlap_acc@5": 0.475,
+      "bm25_acc@1": 0.12,
+      "bm25_acc@3": 0.32,
+      "bm25_acc@5": 0.485
+    }
+  }
+}

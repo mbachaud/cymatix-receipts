@@ -1,0 +1,47 @@
+[
+  {
+    "config": "baseline",
+    "flags": {
+      "distance_metric": "cosine",
+      "sr_enabled": "false",
+      "ray_trace_theta": "false",
+      "seeded_edges_enabled": "false"
+    }
+  },
+  {
+    "config": "w1",
+    "flags": {
+      "distance_metric": "w1",
+      "sr_enabled": "false",
+      "ray_trace_theta": "false",
+      "seeded_edges_enabled": "false"
+    }
+  },
+  {
+    "config": "sr",
+    "flags": {
+      "distance_metric": "cosine",
+      "sr_enabled": "true",
+      "ray_trace_theta": "false",
+      "seeded_edges_enabled": "false"
+    }
+  },
+  {
+    "config": "seeded_plus_sr",
+    "flags": {
+      "distance_metric": "cosine",
+      "sr_enabled": "true",
+      "ray_trace_theta": "false",
+      "seeded_edges_enabled": "true"
+    }
+  },
+  {
+    "config": "all_on",
+    "flags": {
+      "distance_metric": "w1",
+      "sr_enabled": "true",
+      "ray_trace_theta": "true",
+      "seeded_edges_enabled": "true"
+    }
+  }
+]

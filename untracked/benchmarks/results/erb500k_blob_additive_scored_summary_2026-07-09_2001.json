@@ -1,0 +1,32 @@
+{
+  "n_rows": 500,
+  "correct": 236,
+  "incorrect": 121,
+  "abstained": 143,
+  "judge_error": 0,
+  "answered": 357,
+  "know_emitted": 0,
+  "correctness_among_answered": 0.6611,
+  "hallucination_rate": 0.3389,
+  "coverage": 0.714,
+  "know_precision_correct": 0.0,
+  "know_vs_judged_agreement": 0.528,
+  "audit_n": 50,
+  "audit_agreement": 0.96,
+  "audit_agreement_target": 0.8,
+  "benchmark": "erb500k_scored",
+  "issue": "#93",
+  "fixture": "F:/tmp/erb_blob.db (BLOB mode, 829131 genes, 499997 ERB docs)",
+  "fixture_mode": "blob",
+  "helix_url": "http://127.0.0.1:11437",
+  "answer_model": "sonnet",
+  "audit_model": "sonnet",
+  "n_questions_total": 500,
+  "audit_fraction": 0.1,
+  "baselines": {
+    "BM25": 68.8,
+    "Vector": 51.4,
+    "Onyx_GPT4": 72.4
+  },
+  "finished_at": "2026-07-10T16:14:09.279177+00:00"
+}

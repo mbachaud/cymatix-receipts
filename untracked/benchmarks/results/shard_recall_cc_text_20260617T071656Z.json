@@ -1,0 +1,691 @@
+{
+  "benchmark": "shard_recall",
+  "label": "cc_text",
+  "timestamp": "20260617T071656Z",
+  "helix_url": "http://127.0.0.1:11461",
+  "needles_file": "benchmarks\\results\\gold_helix_code.jsonl",
+  "n_needles": 100,
+  "max_results": 10,
+  "metrics": "recall@{1,3,5,10}, MRR -- by type (within / cross / all)",
+  "gold_match_rule": "bidirectional case-insensitive forward-slash substring: norm(gold) in norm(source) OR norm(source) in norm(gold)",
+  "summary": {
+    "all": {
+      "n": 100,
+      "err": 0,
+      "mrr": 0.382,
+      "latency": {
+        "median_ms": 44.3,
+        "p90_ms": 67.7
+      },
+      "recall@1": 0.28,
+      "recall@3": 0.42,
+      "recall@5": 0.52,
+      "recall@10": 0.67
+    },
+    "within": {
+      "n": 100,
+      "err": 0,
+      "mrr": 0.382,
+      "latency": {
+        "median_ms": 44.3,
+        "p90_ms": 67.7
+      },
+      "recall@1": 0.28,
+      "recall@3": 0.42,
+      "recall@5": 0.52,
+      "recall@10": 0.67
+    }
+  },
+  "per_needle_sample": [
+    {
+      "id": "h36",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "SELECT claim_id, supersedes_claim_id FROM claims WHERE claim_id IN ({','.join('?' * len(claim_set))}) AND supersedes_cla",
+      "gold_paths": [
+        "helix_context/identity/claims_graph.py"
+      ],
+      "rank": 1,
+      "latency_ms": 52.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h25",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Stage 6 know/miss helper (kept here so the knowledge store read for",
+      "gold_paths": [
+        "helix_context/context_packet.py"
+      ],
+      "rank": null,
+      "latency_ms": 57.0,
+      "n_returned": 10
+    },
+    {
+      "id": "h30",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Weak \u2014 below mean; the consumer should treat this as a reach",
+      "gold_paths": [
+        "helix_context/encoding/legibility.py"
+      ],
+      "rank": null,
+      "latency_ms": 43.3,
+      "n_returned": 10
+    },
+    {
+      "id": "h77",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "R3 Stage C legacy alias \u2014 pre-R3 callers + tests still import gene_spectrum.",
+      "gold_paths": [
+        "helix_context/scoring/cymatics.py"
+      ],
+      "rank": 3,
+      "latency_ms": 74.8,
+      "n_returned": 10
+    },
+    {
+      "id": "h41",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Perfect: >50% open (recently accessed). Failing: <10% open (all stale).",
+      "gold_paths": [
+        "helix_context/integrations/scorerift.py"
+      ],
+      "rank": 1,
+      "latency_ms": 45.6,
+      "n_returned": 10
+    },
+    {
+      "id": "h45",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "\u2500\u2500 database (genome registry) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "gold_paths": [
+        "helix_context/launcher/collector.py"
+      ],
+      "rank": null,
+      "latency_ms": 66.9,
+      "n_returned": 10
+    },
+    {
+      "id": "h93",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "---------------------------------------------------------------------------",
+      "gold_paths": [
+        "helix_context/storage/indexes.py"
+      ],
+      "rank": null,
+      "latency_ms": 54.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h62",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Called by KnowledgeStore.upsert_doc() after each write",
+      "gold_paths": [
+        "helix_context/persistence.py"
+      ],
+      "rank": 4,
+      "latency_ms": 48.0,
+      "n_returned": 10
+    },
+    {
+      "id": "h52",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Verify _RULES output names match the manifest at import time so any",
+      "gold_paths": [
+        "helix_context/launcher/observability_render.py"
+      ],
+      "rank": null,
+      "latency_ms": 50.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h39",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Fetch a single participant by id. Returns None if unknown.",
+      "gold_paths": [
+        "helix_context/identity/registry.py"
+      ],
+      "rank": 1,
+      "latency_ms": 42.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h66",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "gene_id ascending breaks bitwise-equal scores deterministically.",
+      "gold_paths": [
+        "helix_context/retrieval/fusion.py"
+      ],
+      "rank": null,
+      "latency_ms": 63.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h82",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Vault export -- opt-in, off if config.vault.enabled=false.",
+      "gold_paths": [
+        "helix_context/server/app.py"
+      ],
+      "rank": 1,
+      "latency_ms": 51.9,
+      "n_returned": 10
+    },
+    {
+      "id": "h58",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "scheme, so the session_id here aligns with the registry participant.",
+      "gold_paths": [
+        "helix_context/mcp/mcp_server.py"
+      ],
+      "rank": null,
+      "latency_ms": 44.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h57",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Cached launcher update checks against PyPI.",
+      "gold_paths": [
+        "helix_context/launcher/update_check.py"
+      ],
+      "rank": 1,
+      "latency_ms": 43.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h88",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "fts5 bm25() computes idf = ln((N - n + 0.5) / (n + 0.5)) and then",
+      "gold_paths": [
+        "helix_context/shard_router.py"
+      ],
+      "rank": 4,
+      "latency_ms": 37.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h13",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "File-based memory  between AI assistants.",
+      "gold_paths": [
+        "helix_context/bridge.py"
+      ],
+      "rank": 5,
+      "latency_ms": 38.7,
+      "n_returned": 10
+    },
+    {
+      "id": "h78",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Stage 4 (spec \u00a79, issue #63) \u2014 staleness threshold in days. When",
+      "gold_paths": [
+        "helix_context/scoring/know_calibration.py"
+      ],
+      "rank": null,
+      "latency_ms": 39.2,
+      "n_returned": 10
+    },
+    {
+      "id": "h5",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "\u2500\u2500 Core modules (canonical class names) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "gold_paths": [
+        "helix_context/aliases.py"
+      ],
+      "rank": 9,
+      "latency_ms": 38.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h22",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "declared on the parser). Only parse the first token to keep",
+      "gold_paths": [
+        "helix_context/cli/dispatcher.py"
+      ],
+      "rank": null,
+      "latency_ms": 39.4,
+      "n_returned": 10
+    },
+    {
+      "id": "h24",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Stage 4 (2026-05-08): hoist classifier-derived `cls` so per-classifier",
+      "gold_paths": [
+        "helix_context/context_manager.py"
+      ],
+      "rank": 4,
+      "latency_ms": 43.9,
+      "n_returned": 10
+    },
+    {
+      "id": "h21",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "than papering over them with a top-level except. Any *other*",
+      "gold_paths": [
+        "helix_context/cli/cmd_status.py"
+      ],
+      "rank": null,
+      "latency_ms": 57.8,
+      "n_returned": 10
+    },
+    {
+      "id": "h4",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Duck-typed protocol for external s. Any object with this ``retrieve`` signature is a valid . Use ``isinstance(obj, )`` f",
+      "gold_paths": [
+        "helix_context/adapters/retriever.py"
+      ],
+      "rank": 1,
+      "latency_ms": 49.0,
+      "n_returned": 10
+    },
+    {
+      "id": "h89",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Open or create main.db with WAL + busy_timeout, return connection. Mirrors KnowledgeStore's connection setup so both lay",
+      "gold_paths": [
+        "helix_context/shard_schema.py"
+      ],
+      "rank": 6,
+      "latency_ms": 68.9,
+      "n_returned": 10
+    },
+    {
+      "id": "h26",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "overwrite or newest-wins: fall through to upsert",
+      "gold_paths": [
+        "helix_context/cross_store_import.py"
+      ],
+      "rank": null,
+      "latency_ms": 43.4,
+      "n_returned": 10
+    },
+    {
+      "id": "h64",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "already-delivered ones. The overhead is tiny and bounded.",
+      "gold_paths": [
+        "helix_context/retrieval/expand.py"
+      ],
+      "rank": null,
+      "latency_ms": 41.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h42",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Normalize: tags per KB of (effective) content",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "rank": 1,
+      "latency_ms": 35.8,
+      "n_returned": 10
+    },
+    {
+      "id": "h27",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "SELECT g.gene_id, g.source_id, g.content, bm25(genes_fts) AS rank FROM genes_fts f JOIN genes g ON g.gene_id = f.gene_id",
+      "gold_paths": [
+        "helix_context/encoding/chunk_fetch.py"
+      ],
+      "rank": 9,
+      "latency_ms": 71.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h2",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "\u2500\u2500 Fetch \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "gold_paths": [
+        "helix_context/adapters/cache.py"
+      ],
+      "rank": 8,
+      "latency_ms": 27.2,
+      "n_returned": 10
+    },
+    {
+      "id": "h104",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Collect items up to batch_size or flush_interval",
+      "gold_paths": [
+        "helix_context/write_queue.py"
+      ],
+      "rank": 1,
+      "latency_ms": 43.4,
+      "n_returned": 10
+    },
+    {
+      "id": "h90",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "builds an RRF ``Fuser`` (shard_router.py), but it uses the RRF",
+      "gold_paths": [
+        "helix_context/sharding.py"
+      ],
+      "rank": null,
+      "latency_ms": 45.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h35",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "false positives in production. Starts conservative.",
+      "gold_paths": [
+        "helix_context/identity/claims_analyze.py"
+      ],
+      "rank": null,
+      "latency_ms": 45.3,
+      "n_returned": 10
+    },
+    {
+      "id": "h3",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Resolve a source_id \u2192 (text, metadata). Never raises.",
+      "gold_paths": [
+        "helix_context/adapters/dal.py"
+      ],
+      "rank": 8,
+      "latency_ms": 45.2,
+      "n_returned": 10
+    },
+    {
+      "id": "h15",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Use json.dumps for scalars AND lists \u2014 keeps booleans,",
+      "gold_paths": [
+        "helix_context/cli/cmd_config.py"
+      ],
+      "rank": 6,
+      "latency_ms": 49.2,
+      "n_returned": 10
+    },
+    {
+      "id": "h50",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "bound at boot, it really IS an external collector (not tempo leaking).",
+      "gold_paths": [
+        "helix_context/launcher/observability_health.py"
+      ],
+      "rank": null,
+      "latency_ms": 39.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h44",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Return True if pystray + PIL can be imported. Used for --tray fail-fast.",
+      "gold_paths": [
+        "helix_context/launcher/app.py"
+      ],
+      "rank": 3,
+      "latency_ms": 51.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h7",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Matryoshka truncate + per-row L2 renormalise.",
+      "gold_paths": [
+        "helix_context/backends/bgem3_codec.py"
+      ],
+      "rank": 1,
+      "latency_ms": 35.7,
+      "n_returned": 10
+    },
+    {
+      "id": "h99",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "FileLock is reusable; its internal counter handles re-entrant acquires.",
+      "gold_paths": [
+        "helix_context/vault/locking.py"
+      ],
+      "rank": 2,
+      "latency_ms": 41.9,
+      "n_returned": 10
+    },
+    {
+      "id": "h101",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "\u2500\u2500 Field classification \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "gold_paths": [
+        "helix_context/vault/schema.py"
+      ],
+      "rank": 2,
+      "latency_ms": 31.0,
+      "n_returned": 10
+    },
+    {
+      "id": "h87",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "-- AI-Consumer Sprint 3: 1-hop neighborhood expand --",
+      "gold_paths": [
+        "helix_context/server/routes_registry.py"
+      ],
+      "rank": 8,
+      "latency_ms": 39.4,
+      "n_returned": 10
+    },
+    {
+      "id": "h47",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Lifecycle manager for one optional Headroom proxy child. Exactly mirrors HelixSupervisor's start/stop/restart surface so",
+      "gold_paths": [
+        "helix_context/launcher/headroom_supervisor.py"
+      ],
+      "rank": 2,
+      "latency_ms": 67.6,
+      "n_returned": 10
+    },
+    {
+      "id": "h61",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Return SPLADE worker cap for a VRAM amount in GB.",
+      "gold_paths": [
+        "helix_context/parallel.py"
+      ],
+      "rank": 1,
+      "latency_ms": 43.7,
+      "n_returned": 10
+    },
+    {
+      "id": "h97",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Pruner thread must NEVER die \u2014 catch broad here",
+      "gold_paths": [
+        "helix_context/vault/__init__.py"
+      ],
+      "rank": 5,
+      "latency_ms": 38.2,
+      "n_returned": 10
+    },
+    {
+      "id": "h69",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Return a tiny BM25-ranked source-id rescue list. ``exclude_source_ids`` lets callers keep Helix packet sources first and",
+      "gold_paths": [
+        "helix_context/retrieval/lexical_rescue.py"
+      ],
+      "rank": 1,
+      "latency_ms": 92.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h10",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "DeBERTa-based 7-class natural logic relation classifier.",
+      "gold_paths": [
+        "helix_context/backends/nli_backend.py"
+      ],
+      "rank": 3,
+      "latency_ms": 43.0,
+      "n_returned": 10
+    },
+    {
+      "id": "h23",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "p60 of HIT scores \u2014 at-or-above this enters TIGHT tier (with ratio gate).",
+      "gold_paths": [
+        "helix_context/config.py"
+      ],
+      "rank": 4,
+      "latency_ms": 46.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h9",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "they produce calibrated relevance scores that don't need retrieval-order bias.",
+      "gold_paths": [
+        "helix_context/backends/deberta_backend.py"
+      ],
+      "rank": null,
+      "latency_ms": 45.6,
+      "n_returned": 10
+    },
+    {
+      "id": "h12",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Encode text into a sparse SPLADE vector. Returns {token: weight} dict with top_k non-zero entries. Each token is from th",
+      "gold_paths": [
+        "helix_context/backends/splade_backend.py"
+      ],
+      "rank": 1,
+      "latency_ms": 59.5,
+      "n_returned": 10
+    },
+    {
+      "id": "h38",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "because doc has the stable (7d) half-life -- safest retrieval default.",
+      "gold_paths": [
+        "helix_context/identity/provenance.py"
+      ],
+      "rank": null,
+      "latency_ms": 48.1,
+      "n_returned": 10
+    },
+    {
+      "id": "h53",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "\u2500\u2500 log rotation (spec \u00a77.4) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "gold_paths": [
+        "helix_context/launcher/observability_supervisor.py"
+      ],
+      "rank": 1,
+      "latency_ms": 35.8,
+      "n_returned": 10
+    },
+    {
+      "id": "h92",
+      "project": null,
+      "type": "within",
+      "file_type": null,
+      "question": "Session registry schema (federation layers)",
+      "gold_paths": [
+        "helix_context/storage/ddl.py"
+      ],
+      "rank": null,
+      "latency_ms": 41.8,
+      "n_returned": 10
+    }
+  ]
+}

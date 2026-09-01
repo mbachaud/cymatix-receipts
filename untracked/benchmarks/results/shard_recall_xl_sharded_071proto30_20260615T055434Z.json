@@ -1,0 +1,444 @@
+{
+  "benchmark": "shard_recall",
+  "label": "xl_sharded_071proto30",
+  "timestamp": "20260615T055434Z",
+  "helix_url": "http://127.0.0.1:11464",
+  "needles_file": "benchmarks\\results\\shard_gold_xl_30.jsonl",
+  "n_needles": 30,
+  "max_results": 10,
+  "metrics": "recall@{1,3,5,10}, MRR -- by type (within / cross / all)",
+  "gold_match_rule": "bidirectional case-insensitive forward-slash substring: norm(gold) in norm(source) OR norm(source) in norm(gold)",
+  "summary": {
+    "all": {
+      "n": 30,
+      "err": 0,
+      "mrr": 0.1633,
+      "latency": {
+        "median_ms": 3886.4,
+        "p90_ms": 5624.1
+      },
+      "recall@1": 0.1,
+      "recall@3": 0.2,
+      "recall@5": 0.2667,
+      "recall@10": 0.2667
+    },
+    "cross": {
+      "n": 6,
+      "err": 0,
+      "mrr": 0.2833,
+      "latency": {
+        "median_ms": 3616.4,
+        "p90_ms": 4921.6
+      },
+      "recall@1": 0.1667,
+      "recall@3": 0.3333,
+      "recall@5": 0.5,
+      "recall@10": 0.5
+    },
+    "within": {
+      "n": 24,
+      "err": 0,
+      "mrr": 0.1333,
+      "latency": {
+        "median_ms": 3937.5,
+        "p90_ms": 5717.7
+      },
+      "recall@1": 0.0833,
+      "recall@3": 0.1667,
+      "recall@5": 0.2083,
+      "recall@10": 0.2083
+    }
+  },
+  "per_needle_sample": [
+    {
+      "id": "2516be094b1a4e54b7fdd3ba94479536",
+      "project": "developers",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Example Response: ## Permissions Only works with Basic Authentication (username and password).",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\developers\\http_api\\admin.md"
+      ],
+      "rank": null,
+      "latency_ms": 3255.0,
+      "n_returned": 10
+    },
+    {
+      "id": "d6bce1404f2e46e69c84cce295563a2f",
+      "project": "alerting",
+      "type": "within",
+      "file_type": "doc",
+      "question": "## Before you begin To set up Microsoft for integration with , create a new workflow that accepts Webhook requests.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\alerting\\configure-notifications\\manage-contact-points\\integrations\\configure-teams.md"
+      ],
+      "rank": 1,
+      "latency_ms": 3793.2,
+      "n_returned": 10
+    },
+    {
+      "id": "5d523377d4eb430394c70ce693dfd06e",
+      "project": "datasources",
+      "type": "within",
+      "file_type": "doc",
+      "question": "For example, you may have one set of long term credentials for all of your data sources.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\datasources\\aws-cloudwatch\\aws-authentication\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 4589.3,
+      "n_returned": 10
+    },
+    {
+      "id": "cc287f3b488b4829bc60d02f6d37156d",
+      "project": "tutorials",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Click on the metric-alerts folder to display the alert that you created earlier 1.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\tutorials\\alerting-get-started\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 3296.2,
+      "n_returned": 10
+    },
+    {
+      "id": "4fa1e48891d1431d8dfe98e44e6e1c4a",
+      "project": "getting-started",
+      "type": "within",
+      "file_type": "doc",
+      "question": "--- aliases: - ../guides// - ../guides/gettingstarted/ - -/ description: Learn how to build your first dashboard in .",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\getting-started\\get-started-grafana-prometheus.md"
+      ],
+      "rank": null,
+      "latency_ms": 5356.5,
+      "n_returned": 10
+    },
+    {
+      "id": "7af41f67d7f140459e67caf036560002",
+      "project": "breaking-changes",
+      "type": "within",
+      "file_type": "doc",
+      "question": "--- description: for .3 keywords: - - - documentation - '10.3' - '10.2.3' - release notes labels: products: - cloud - en",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\breaking-changes\\breaking-changes-v10-3.md"
+      ],
+      "rank": null,
+      "latency_ms": 5360.0,
+      "n_returned": 10
+    },
+    {
+      "id": "871fa17270634f22a631be144f86e186",
+      "project": "SteamLibrary",
+      "type": "within",
+      "file_type": "code",
+      "question": "{\"class\":\"DecalRoad\",\"\":\"b3ed5142-8cd9-42b1-aa61-2524439f1d5b\",\"__parent\":\"SimGroup_\",\"position\":[426.199066,-53.4769745",
+      "gold_paths": [
+        "E:\\SteamLibrary\\steamapps\\common\\BeamNG.drive\\gameplay\\missions\\west_coast_usa\\delivery\\APM_advanced_001\\vehicles.prefab.json"
+      ],
+      "rank": null,
+      "latency_ms": 6921.8,
+      "n_returned": 10
+    },
+    {
+      "id": "43fbf98900f243a1aeb4ed7d51710784",
+      "project": "Projects",
+      "type": "within",
+      "file_type": "code",
+      "question": "test(\"extracts text content from response\", () => {",
+      "gold_paths": [
+        "F:\\Projects\\archestra\\platform\\backend\\src\\routes\\proxy\\adapters\\openai.test.ts"
+      ],
+      "rank": null,
+      "latency_ms": 4357.7,
+      "n_returned": 10
+    },
+    {
+      "id": "c107e20ce72e4a0bab46b944b5715c77",
+      "project": "alerting",
+      "type": "within",
+      "file_type": "doc",
+      "question": "{{% admonition type=\"note\" %}} If you do not want to manage alert for a particular or data source, go to its settings an",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\alerting\\alerting-rules\\create-mimir-loki-managed-rule.md"
+      ],
+      "rank": null,
+      "latency_ms": 5442.8,
+      "n_returned": 10
+    },
+    {
+      "id": "3cdcb2f162d149fd937aeba4d4ee808c",
+      "project": "SteamLibrary",
+      "type": "within",
+      "file_type": "code",
+      "question": "\"ce952135-e8b4-4b5b-98c2-a26b6f427a4e\": {",
+      "gold_paths": [
+        "E:\\SteamLibrary\\steamapps\\common\\SpaceEngineers2\\GameData\\Vanilla\\Worlds\\Contracts\\PlanetBased\\Hauling\\Mission_SupplyBase\\snapshots.bak.json"
+      ],
+      "rank": null,
+      "latency_ms": 619.7,
+      "n_returned": 0
+    },
+    {
+      "id": "d3b3a2e37b2f4706b66c51b89373427e",
+      "project": "explore",
+      "type": "within",
+      "file_type": "doc",
+      "question": "--- keywords: - - loki - logs labels: products: - cloud - enterprise - oss title: in weight: 10 --- # in provides a vari",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\explore\\query-management.md"
+      ],
+      "rank": null,
+      "latency_ms": 4513.1,
+      "n_returned": 10
+    },
+    {
+      "id": "41433034b05940099672eab1747e730d",
+      "project": "explore",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Shortened links have two options: relative time (., from two hours ago to now) or absolute time (., from 8am to 10am).",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\explore\\get-started-with-explore.md"
+      ],
+      "rank": null,
+      "latency_ms": 3566.1,
+      "n_returned": 10
+    },
+    {
+      "id": "b9449b0b7b4245fe8126744bf055dc89",
+      "project": "dashboards",
+      "type": "within",
+      "file_type": "doc",
+      "question": "When you a dashboard with an email link, your organization is billed per user, regardless of how many are .",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\dashboards\\share-dashboards-panels\\shared-dashboards\\index.md"
+      ],
+      "rank": 5,
+      "latency_ms": 3143.7,
+      "n_returned": 10
+    },
+    {
+      "id": "7c3e47652e274c919b514daa19b15922",
+      "project": "explore",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Traces are composed of one or more spans.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\explore\\trace-integration.md"
+      ],
+      "rank": 2,
+      "latency_ms": 2261.6,
+      "n_returned": 10
+    },
+    {
+      "id": "1ee3af3c6b54433d9a61fea04c0a2fbe",
+      "project": "administration",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Open the Console and navigate to Subscription Management.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\administration\\enterprise-licensing\\activate-aws-marketplace-license\\manage-license-in-aws-marketplace\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 3329.5,
+      "n_returned": 10
+    },
+    {
+      "id": "90b3c91c77654e8199aee163cfdc17c2",
+      "project": "upgrade-guide",
+      "type": "within",
+      "file_type": "doc",
+      "question": "--- description: to v8.4 keywords: - - configuration - documentation - labels: products: - enterprise - oss menutitle: t",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\upgrade-guide\\upgrade-v8.4\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 5764.5,
+      "n_returned": 10
+    },
+    {
+      "id": "e54d09415e8946ff8c9c293c9254234d",
+      "project": "setup-grafana",
+      "type": "within",
+      "file_type": "doc",
+      "question": "The maximum lifetime (duration) an authenticated user can be inactive before being required to login at next visit. Defa",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\setup-grafana\\configure-security\\configure-authentication\\_index.md"
+      ],
+      "rank": null,
+      "latency_ms": 6617.7,
+      "n_returned": 10
+    },
+    {
+      "id": "874e3e71067f4a028793f9a96f472b78",
+      "project": "upgrade-guide",
+      "type": "within",
+      "file_type": "doc",
+      "question": "--- description: to v9.2 keywords: - - configuration - documentation - labels: products: - enterprise - oss menutitle: t",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\upgrade-guide\\upgrade-v9.2\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 5608.5,
+      "n_returned": 10
+    },
+    {
+      "id": "29fe797f08ca41429a7de5ec64d51f74",
+      "project": "Factorio",
+      "type": "within",
+      "file_type": "code",
+      "question": "and=en blueprint-no-name=Nammeleas cant-be-damaged=Dit kin net skansearre wurde.",
+      "gold_paths": [
+        "F:\\Factorio\\data\\core\\locale\\fy-NL\\core.cfg"
+      ],
+      "rank": 1,
+      "latency_ms": 4498.3,
+      "n_returned": 10
+    },
+    {
+      "id": "ad850ab6a51a4462b2cd92ac42a27800",
+      "project": "datasources",
+      "type": "within",
+      "file_type": "doc",
+      "question": "ethod** | Determines whether the SSL Auth details will be configured as a file path or file content.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\datasources\\postgres\\_index.md"
+      ],
+      "rank": 2,
+      "latency_ms": 4081.7,
+      "n_returned": 10
+    },
+    {
+      "id": "363e909b8b6344de850f976628f4c463",
+      "project": "dashboards",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Filter so that only the options that end with `01` or `02` are returned:",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\dashboards\\variables\\add-template-variables\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 2810.4,
+      "n_returned": 10
+    },
+    {
+      "id": "8acedd01e1f14b5ea28a2e0f60b1bc40",
+      "project": "introduction",
+      "type": "within",
+      "file_type": "doc",
+      "question": "- Splunk Infrastructure monitoring (SignalFx)",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\introduction\\grafana-enterprise.md"
+      ],
+      "rank": null,
+      "latency_ms": 1392.5,
+      "n_returned": 10
+    },
+    {
+      "id": "3eaeb5a946bd4ef0a29d903d82f3f9b1",
+      "project": "developers",
+      "type": "within",
+      "file_type": "doc",
+      "question": "Example Request: Example Response: ## Roll back secrets Rolls back secrets.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\developers\\http_api\\admin.md"
+      ],
+      "rank": null,
+      "latency_ms": 2862.3,
+      "n_returned": 10
+    },
+    {
+      "id": "c78d4cf9334b46f39ef5ddc258a12bcb",
+      "project": "shared",
+      "type": "within",
+      "file_type": "doc",
+      "question": "This is needed to hide fields that aren't usable in > file format.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\shared\\alerts\\alerting_provisioning.md"
+      ],
+      "rank": null,
+      "latency_ms": 3689.5,
+      "n_returned": 10
+    },
+    {
+      "id": "d10ef581ac534870baa048d036d06bd0",
+      "project": "SteamLibrary",
+      "type": "cross",
+      "file_type": "code",
+      "question": "{{ () }} {{ }} ({{ }}, {{ }}, player #{{ []+1 }})",
+      "gold_paths": [
+        "E:\\SteamLibrary\\steamapps\\common\\BeamNG.drive\\ui\\modules\\options\\controls-hardware.html"
+      ],
+      "rank": null,
+      "latency_ms": 2191.2,
+      "n_returned": 10
+    },
+    {
+      "id": "01bd21f49e4045bd956ac3ae853adff6",
+      "project": "dashboards",
+      "type": "cross",
+      "file_type": "doc",
+      "question": "is the login handle of the current user.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\dashboards\\variables\\add-template-variables\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 2045.3,
+      "n_returned": 10
+    },
+    {
+      "id": "8d76dc9572a3471aa2da33675a84454f",
+      "project": "administration",
+      "type": "cross",
+      "file_type": "doc",
+      "question": "Data sources that work with query caching",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\administration\\data-source-management\\_index.md"
+      ],
+      "rank": 5,
+      "latency_ms": 4453.2,
+      "n_returned": 10
+    },
+    {
+      "id": "5f65b230f4a549f697311ed8e818752a",
+      "project": "panels-visualizations",
+      "type": "cross",
+      "file_type": "doc",
+      "question": "Use this transformation to group the data by a specified field (column) value and process calculations on each group.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\panels-visualizations\\query-transform-data\\transform-data\\index.md"
+      ],
+      "rank": 2,
+      "latency_ms": 5390.0,
+      "n_returned": 10
+    },
+    {
+      "id": "c5cfc7eb68f1454693f12a02782aabc8",
+      "project": "tutorials",
+      "type": "cross",
+      "file_type": "doc",
+      "question": "--- Feedback Link: https://///issues/new authors: - categories: - administration description: Get set up on your Pi.",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\tutorials\\install-grafana-on-raspberry-pi\\index.md"
+      ],
+      "rank": null,
+      "latency_ms": 3253.1,
+      "n_returned": 10
+    },
+    {
+      "id": "b87dedf9fa5a4459bfc5fab4c97d3277",
+      "project": "setup-grafana",
+      "type": "cross",
+      "file_type": "doc",
+      "question": "A comma-separated list of Redis cluster members, either in format or using the full Redis URLs ( ).",
+      "gold_paths": [
+        "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\setup-grafana\\configure-grafana\\enterprise-configuration\\index.md"
+      ],
+      "rank": 1,
+      "latency_ms": 3979.6,
+      "n_returned": 10
+    }
+  ]
+}

@@ -1,0 +1,5129 @@
+{
+  "benchmark": "sike_bedsweep",
+  "issue": "#221",
+  "bed": "enterprise_rag_50k",
+  "helix_url": "http://127.0.0.1:11437",
+  "timestamp": "20260704T090652Z",
+  "n_needles": 50,
+  "consumers": {
+    "ollama": [
+      "gemma4:26b-a4b-it-q4_K_M",
+      "gemma4:31b",
+      "gemma4:e4b",
+      "gemma4:26b",
+      "gemma4:e2b",
+      "qwen3:1.7b",
+      "qwen3:4b",
+      "qwen3:8b",
+      "qwen3:0.6b"
+    ],
+    "claude": "sonnet"
+  },
+  "retrieval": {
+    "note": "recall@k here == gold_source_in_delivered_topK; find_needle does not expose per-rank position, so k<=max_genes collapse. gold_delivered_rate is the primary retrieval metric.",
+    "gold_delivered": 41,
+    "gold_delivered_rate": 0.82,
+    "body_has_answer": 0,
+    "body_has_answer_rate": 0.0,
+    "per_needle": [
+      {
+        "name": "helix_port",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 4,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3578,
+        "context_latency_s": 41.076
+      },
+      {
+        "name": "scorerift_threshold",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.062,
+        "context_latency_s": 5.879
+      },
+      {
+        "name": "biged_skills_count",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 6,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.1528,
+        "context_latency_s": 4.96
+      },
+      {
+        "name": "bookkeeper_monetary",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3374,
+        "context_latency_s": 5.424
+      },
+      {
+        "name": "helix_pipeline_steps",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 6,
+        "resolution_confidence": 0.2108,
+        "context_latency_s": 6.605
+      },
+      {
+        "name": "biged_rust_binary_size",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2337,
+        "context_latency_s": 5.58
+      },
+      {
+        "name": "genome_compression_target",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3425,
+        "context_latency_s": 6.192
+      },
+      {
+        "name": "scorerift_preset_dimensions",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 6,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.2801,
+        "context_latency_s": 10.476
+      },
+      {
+        "name": "helix_ribosome_budget",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.429,
+        "context_latency_s": 8.996
+      },
+      {
+        "name": "biged_default_model",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3497,
+        "context_latency_s": 7.634
+      },
+      {
+        "name": "bookkeeper_dashboard_port",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4028,
+        "context_latency_s": 6.217
+      },
+      {
+        "name": "bookkeeper_1099_threshold",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3156,
+        "context_latency_s": 5.452
+      },
+      {
+        "name": "bookkeeper_ocr_confidence",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4091,
+        "context_latency_s": 7.279
+      },
+      {
+        "name": "bookkeeper_version",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 4,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3677,
+        "context_latency_s": 4.932
+      },
+      {
+        "name": "bookkeeper_test_count",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.3873,
+        "context_latency_s": 12.276
+      },
+      {
+        "name": "bookkeeper_backup_interval",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.2846,
+        "context_latency_s": 8.275
+      },
+      {
+        "name": "cosmictasha_template_count",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 10,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.5899,
+        "context_latency_s": 11.957
+      },
+      {
+        "name": "cosmictasha_default_model",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2147,
+        "context_latency_s": 6.969
+      },
+      {
+        "name": "cosmictasha_biged_port",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3024,
+        "context_latency_s": 6.362
+      },
+      {
+        "name": "cosmictasha_auth_library",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4079,
+        "context_latency_s": 5.287
+      },
+      {
+        "name": "cosmictasha_postgres_version",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 4,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3098,
+        "context_latency_s": 5.089
+      },
+      {
+        "name": "scorerift_defense_layers",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.0202,
+        "context_latency_s": 4.872
+      },
+      {
+        "name": "scorerift_confidence_floor",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.0847,
+        "context_latency_s": 6.136
+      },
+      {
+        "name": "scorerift_pkg_version",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.1713,
+        "context_latency_s": 4.76
+      },
+      {
+        "name": "mek_version",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.6666,
+        "context_latency_s": 4.929
+      },
+      {
+        "name": "mek_min_python",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4674,
+        "context_latency_s": 4.746
+      },
+      {
+        "name": "mek_source_apps",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 4,
+        "n_delivered_blocks": 6,
+        "resolution_confidence": 0.253,
+        "context_latency_s": 4.939
+      },
+      {
+        "name": "biged_dashboard_port",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2286,
+        "context_latency_s": 4.876
+      },
+      {
+        "name": "biged_ram_ceiling",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.0988,
+        "context_latency_s": 7.632
+      },
+      {
+        "name": "biged_max_workers",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2721,
+        "context_latency_s": 5.761
+      },
+      {
+        "name": "biged_core_agents",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.1732,
+        "context_latency_s": 7.003
+      },
+      {
+        "name": "biged_audit_dimensions",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.6214,
+        "context_latency_s": 7.984
+      },
+      {
+        "name": "biged_db_tables",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.1936,
+        "context_latency_s": 4.868
+      },
+      {
+        "name": "biged_thermal_target",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.1859,
+        "context_latency_s": 6.414
+      },
+      {
+        "name": "biged_vision_model",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.6749,
+        "context_latency_s": 6.543
+      },
+      {
+        "name": "biged_rust_msrv",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3179,
+        "context_latency_s": 5.014
+      },
+      {
+        "name": "biged_rust_web_framework",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 5,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4453,
+        "context_latency_s": 5.096
+      },
+      {
+        "name": "biged_complex_model",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.6127,
+        "context_latency_s": 8.99
+      },
+      {
+        "name": "biged_smoke_tests",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3025,
+        "context_latency_s": 13.534
+      },
+      {
+        "name": "biged_idle_timeout",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2148,
+        "context_latency_s": 4.763
+      },
+      {
+        "name": "helix_expression_budget",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.2169,
+        "context_latency_s": 9.287
+      },
+      {
+        "name": "helix_max_genes_per_turn",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3546,
+        "context_latency_s": 6.078
+      },
+      {
+        "name": "helix_rrf_k",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 5,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.7695,
+        "context_latency_s": 4.781
+      },
+      {
+        "name": "helix_cold_start_threshold",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 4,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.4426,
+        "context_latency_s": 6.071
+      },
+      {
+        "name": "helix_session_window",
+        "gold_delivered": false,
+        "body_has_answer": false,
+        "n_gold_blocks": 0,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.5803,
+        "context_latency_s": 11.525
+      },
+      {
+        "name": "helix_headroom_port",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.3309,
+        "context_latency_s": 10.299
+      },
+      {
+        "name": "helix_calibration_staleness",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 3,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.3972,
+        "context_latency_s": 5.436
+      },
+      {
+        "name": "helix_dense_encoder",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 1,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.6286,
+        "context_latency_s": 8.935
+      },
+      {
+        "name": "helix_filename_anchor",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 5,
+        "resolution_confidence": 0.1865,
+        "context_latency_s": 5.336
+      },
+      {
+        "name": "helix_subpackages_count",
+        "gold_delivered": true,
+        "body_has_answer": false,
+        "n_gold_blocks": 2,
+        "n_delivered_blocks": 12,
+        "resolution_confidence": 0.2469,
+        "context_latency_s": 5.019
+      }
+    ],
+    "recall@1_rate": 0.82,
+    "recall@3_rate": 0.82,
+    "recall@5_rate": 0.82
+  },
+  "per_consumer": {
+    "ollama:gemma4:26b-a4b-it-q4_K_M": {
+      "model": "gemma4:26b-a4b-it-q4_K_M",
+      "correct": 23,
+      "abstain": 2,
+      "wrong": 12,
+      "errors": 13,
+      "answered": 35,
+      "correctness_among_answered": 0.6571,
+      "hallucination_rate": 0.3429,
+      "coverage": 0.7,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 55.28
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding a divergence threshold that triggers alerts in ScoreRift.",
+          "cost_usd": 0.0,
+          "elapsed_s": 126.56
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The BigEd fleet has **129** skills.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.48
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.67
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7-stage pipeline per turn",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.14
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.32
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding a specific target compression ratio for Helix Context. The text mentions that the \"compression ratio\" is included in the assemb",
+          "cost_usd": 0.0,
+          "elapsed_s": 147.85
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "The Python preset in ScoreRift checks **8** dimensions.\n\nAccording to the `python_project.py` file, the dimensions are:\n1.  **test_coverage** (via `pytest`)\n2.  **linting** (via `ruff`)\n3.  **complexi",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.88
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 189.91
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.73
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 81.18
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding a dollar threshold that triggers 1099 tracking and W-9 requirements in BookKeeper.",
+          "cost_usd": 0.0,
+          "elapsed_s": 122.27
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.52
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 66.56
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The BookKeeper suite has **500** passing tests.",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.07
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is no mention of a specific interval (in seconds or otherwise) for how often automatic backups are performed. The documentation only notes that the system in",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.79
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "CosmicTasha provides 14 templates.",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.6
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 102.55
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.29
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.75
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.52
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided documentation does not contain information regarding the number of defense layers ScoreRift uses to prevent the system from lying.",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.17
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0.95",
+          "cost_usd": 0.0,
+          "elapsed_s": 83.64
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "version=2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.23
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 31.74
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 61.06
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "three",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.33
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 38.19
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "cpu_limit_percent: 10",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.63
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.03
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:4",
+          "answer_preview": "Based on the provided documentation, BigEd boots **4** core agents.\n\nThis is found in the `fleet_manager.py` logic (referenced in the `fleet_manager.py` and `fleet_manager.py` context within the syste",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.73
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12** dimensions.",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.32
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "The BigEd fleet has **34** tables.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.61
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.16
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.31
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "version=1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.4
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "No information about the specific Rust web framework used for the `biged-rs` REST API is provided in the given context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.92
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "complex = qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.02
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.95
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "idle_timeout_secs = 10",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.54
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 190.99
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 44.72
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.44
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0",
+          "cost_usd": 0.0,
+          "elapsed_s": 62.51
+        },
+        {
+          "name": "helix_session_window",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 193.37
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 144.28
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "Based on the provided documentation, there is **no mention** of a specific timeframe (number of days) after which the `know-confidence` calibration is flagged as stale.\n\nThe available documents discus",
+          "cost_usd": 0.0,
+          "elapsed_s": 30.36
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 190.77
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.0
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:16",
+          "answer_preview": "The `helix_context` package is organized into **16** sub-packages (as indicated by the structure of the provided documentation and source files).",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.43
+        }
+      ]
+    },
+    "ollama:gemma4:31b": {
+      "model": "gemma4:31b",
+      "correct": 19,
+      "abstain": 0,
+      "wrong": 16,
+      "errors": 15,
+      "answered": 35,
+      "correctness_among_answered": 0.5429,
+      "hallucination_rate": 0.4571,
+      "coverage": 0.7,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "ANSWER SLATE:\nport=11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 34.18
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the divergence threshold that triggers alerts in ScoreRift.",
+          "cost_usd": 0.0,
+          "elapsed_s": 35.68
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The BigEd fleet has 129 skills (as indicated by the 129 registered skills in the fleet's current state).",
+          "cost_usd": 0.0,
+          "elapsed_s": 33.9
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.77
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.23
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.0,
+          "elapsed_s": 107.75
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the target compression ratio for Helix Context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.69
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "The Python preset in ScoreRift checks **8** dimensions.\n\nAccording to the source code and documentation provided, these include:\n1. **Test coverage/pass rate** (via `_check_test_coverage` / `pytest`)\n",
+          "cost_usd": 0.0,
+          "elapsed_s": 107.34
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documents, there is no mention of a specific token count or allocation for the ribosome decoder prompt. The documents discuss the `ribosome` (or `ribosome` configuration) in the ",
+          "cost_usd": 0.0,
+          "elapsed_s": 53.06
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 139.75
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.74
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the dollar threshold that triggers 1099 tracking and W-9 requirements in BookKeeper.",
+          "cost_usd": 0.0,
+          "elapsed_s": 29.25
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.82
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.72
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The BookKeeper project has 500 passing tests (as noted in the README/documentation stating it has \"500 tests passing\").",
+          "cost_usd": 0.0,
+          "elapsed_s": 40.63
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided text, there is no mention of how often BookKeeper runs automatic backups. The documentation mentions a manual backup capability (via `bookkeeper backup` or similar logic implied ",
+          "cost_usd": 0.0,
+          "elapsed_s": 50.14
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "CosmicTasha provides 14 templates (as indicated by the \"14\" in the provided context's reference to the `template` list or the specific list of templates mentioned in the documentation).\n\n*Correction b",
+          "cost_usd": 0.0,
+          "elapsed_s": 65.15
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.26
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 190.04
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.02
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the major version of PostgreSQL used by CosmicTasha in production.",
+          "cost_usd": 0.0,
+          "elapsed_s": 139.23
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the number of defense layers ScoreRift uses to prevent the system from lying.",
+          "cost_usd": 0.0,
+          "elapsed_s": 34.7
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0.95",
+          "cost_usd": 0.0,
+          "elapsed_s": 160.91
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "The package version of scorerift in pyproject.toml is 2.0.0.",
+          "cost_usd": 0.0,
+          "elapsed_s": 23.36
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 116.4
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "The minimum Python version required by MaxExpressKit is >=3.11.",
+          "cost_usd": 0.0,
+          "elapsed_s": 24.4
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "Three",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.21
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "port=5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.63
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.72
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 176.74
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:4",
+          "answer_preview": "BigEd boots with **4** core agents (out of a total of 14 agents in the system).",
+          "cost_usd": 0.0,
+          "elapsed_s": 33.81
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12** dimensions.",
+          "cost_usd": 0.0,
+          "elapsed_s": 30.41
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "The BigEd fleet has 34 database tables.",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.54
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.43
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 175.84
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.06
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.97
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 23.45
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 141.25
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 168.96
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 191.18
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "61",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.86
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided text does not contain the value of the RRF k constant.",
+          "cost_usd": 0.0,
+          "elapsed_s": 22.56
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.93
+        },
+        {
+          "name": "helix_session_window",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 193.67
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 192.12
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is no mention of a specific time interval or day-count for when the calibration is considered stale.\n\nThe documents describe the **mechanism** for calibratio",
+          "cost_usd": 0.0,
+          "elapsed_s": 65.91
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding which dense embedding model Helix uses for Stage-2 recall.",
+          "cost_usd": 0.0,
+          "elapsed_s": 30.93
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.21
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:16",
+          "answer_preview": "Based on the provided documentation, `helix_context` is organized into **16** sub-packages (as listed in the \"Package Structure\" section of the provided context).",
+          "cost_usd": 0.0,
+          "elapsed_s": 37.47
+        }
+      ]
+    },
+    "ollama:gemma4:e4b": {
+      "model": "gemma4:e4b",
+      "correct": 20,
+      "abstain": 10,
+      "wrong": 20,
+      "errors": 0,
+      "answered": 40,
+      "correctness_among_answered": 0.5,
+      "hallucination_rate": 0.5,
+      "coverage": 0.8,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "ANSWER SLATE:\nport=11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.7
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The divergence threshold that triggers alerts in ScoreRift is not specified in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.9
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "129",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.2
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.06
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.22
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.84
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.68
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "The provided context snippets show code related to defining and calculating various metrics for a \"Python\" project within the `scorer` framework.\n\nBy examining the function definitions and the structu",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.77
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.33
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.27
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.71
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I cannot find the specific dollar threshold that triggers 1099 tracking and W-9 requirements in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.08
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.77
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.63
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context mentions that the \"Compositional Arithmetic\" suite has **no specific number** of tests mentioned in relation to its passing status.\n\nHowever, in the context of the **\"Compositiona",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.08
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "If you are asking about the frequency of automatic backups, this information is not available in the provided context. The context describes commands and functionalities for data management, reporting",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.76
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.35
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.81
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.64
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context mentions that CosmicTasha uses an `AUTH_SECRET` for session signing, but it does not specify the name of the authentication library used.",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.37
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided context, the major version of PostgreSQL used by CosmicTasha is not specified.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.62
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided text snippets illustrate a conceptual model that involves multiple interconnected components, suggesting a **multi-layered** approach.\n\nWhile the text does not explicitly state a number, ",
+          "cost_usd": 0.0,
+          "elapsed_s": 23.49
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.41
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.37
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.6
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": ">=3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.86
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "three",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.06
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.8
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not specify a RAM ceiling percentage that BigEd targets before stopping agent scale-up.",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.54
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "6",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.29
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "BigEd does not explicitly state the number of core agents that are always running.\n\nHowever, the context implies a system where agents are managed and scaled:\n\n1.  **The system is designed for scalabi",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.73
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not give a single, definitive number for the total number of dimensions tracked by the BigEd audit.\n\nHowever, the following documents mention dimensions or related concepts:\n",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.0
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "34",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.51
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "85",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.72
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.72
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76+",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.33
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not specify the name of the Rust web framework used by `biged-rs` for its REST API.",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.84
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The model BigEd uses for complex tasks is `qwen3:8b`.",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.24
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.37
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.54
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.43
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.16
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The specific numerical value for the RRF $k$ constant used by Helix Reciprocal Rank Fusion is not provided in the context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.0
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "min_hot_genes",
+          "cost_usd": 0.0,
+          "elapsed_s": 30.25
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.6
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE:\nurl=http://localhost:11434",
+          "cost_usd": 0.0,
+          "elapsed_s": 35.05
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I do not have a specific document or context that defines the expiration period for the \"know-think\" calibration or any related confidence score.\n\nThe provided documents discuss:\n*   **System Architec",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.96
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "BGE",
+          "cost_usd": 0.0,
+          "elapsed_s": 24.67
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.24
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "After the restructure, the project structure is organized into **multiple components** rather than a single monolithic package.\n\nWhile the exact number of top-level directories might vary based on the",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.56
+        }
+      ]
+    },
+    "ollama:gemma4:26b": {
+      "model": "gemma4:26b",
+      "correct": 24,
+      "abstain": 1,
+      "wrong": 12,
+      "errors": 13,
+      "answered": 36,
+      "correctness_among_answered": 0.6667,
+      "hallucination_rate": 0.3333,
+      "coverage": 0.72,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 52.96
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.15",
+          "answer_preview": "0.15",
+          "cost_usd": 0.0,
+          "elapsed_s": 67.28
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The BigEd fleet has **129** skills.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.7
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.56
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7-stage pipeline per turn",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.87
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.47
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.32
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "The Python preset in ScoreRift checks **8** dimensions.\n\nBased on the provided source code (`two_project.py` and `python_project.py` logic), the dimensions are:\n\n1.  **test_coverage** (via `_check_tes",
+          "cost_usd": 0.0,
+          "elapsed_s": 32.81
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 189.98
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.76
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 70.59
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding a dollar threshold that triggers 1099 tracking and W-9 requirements in BookKeeper.",
+          "cost_usd": 0.0,
+          "elapsed_s": 119.24
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided text does not contain information regarding the specific OCR confidence threshold used for human review.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.48
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 76.27
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The BookKeeper suite has **576** passing tests.",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.59
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is no mention of a specific interval (in seconds or otherwise) for how often automatic backups are performed. The documentation only mentions that a manual b",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.09
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "CosmicTasha provides 14 templates.",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.57
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 99.69
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 187.33
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.62
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.49
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided documentation does not contain information regarding the number of defense layers ScoreRift uses to prevent the system from lying.",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.34
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0.95",
+          "cost_usd": 0.0,
+          "elapsed_s": 118.19
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "version=2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.35
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 47.27
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 59.81
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "three",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.03
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "port=5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.58
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.58
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "max_workers=10",
+          "cost_usd": 0.0,
+          "elapsed_s": 64.73
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:4",
+          "answer_preview": "Based on the provided documentation, BigEd boots **4** core agents.\n\nThis is specified in the `fleet_size` configuration within the system's architecture (as seen in the `fleet_size` logic for the cor",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.19
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12** dimensions.",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.97
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "The BigEd fleet has **34** database tables.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.63
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.32
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "model=llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 49.39
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "version=1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.74
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "No information about the specific Rust web framework used for the `biged-rs` REST API is provided in the given context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.96
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "complex = \"qwen3:8b\"",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.4
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.11
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 47.35
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 191.38
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 43.86
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.41
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0",
+          "cost_usd": 0.0,
+          "elapsed_s": 111.35
+        },
+        {
+          "name": "helix_session_window",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 193.31
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 141.41
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is **no specific number of days mentioned** for when the `know-confidence` (or any calibration/confidence metric) is flagged as stale.\n\nThe documentation des",
+          "cost_usd": 0.0,
+          "elapsed_s": 35.27
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 190.58
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 186.91
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:16",
+          "answer_preview": "The `helix_context` package is organized into **16** sub-packages (as evidenced by the file structure and imports in the provided documentation).\n\nThe breakdown is as follows:\n*   **1** core package (",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.37
+        }
+      ]
+    },
+    "ollama:gemma4:e2b": {
+      "model": "gemma4:e2b",
+      "correct": 19,
+      "abstain": 5,
+      "wrong": 26,
+      "errors": 0,
+      "answered": 45,
+      "correctness_among_answered": 0.4222,
+      "hallucination_rate": 0.5778,
+      "coverage": 0.9,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.69
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I did not find the specific divergence threshold that triggers alerts in ScoreRift within the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.44
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "129",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.19
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:decimal",
+          "answer_preview": "DECIMAL or NUMERIC.",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.8
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.15
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.29
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "No specific target compression ratio is explicitly stated in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.15
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided code snippets do not explicitly list the total number of dimensions defined in the `python_project` context.\n\nHowever, based on the structure of the file:\n`src/python_project/`\n\nAnd the e",
+          "cost_usd": 0.0,
+          "elapsed_s": 26.66
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I do not have the information regarding the token allocation for the ribosome decoder prompt in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.35
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.05
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.93
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I do not have the information regarding the dollar threshold that triggers 1099 tracking and W-9 requirement in BookKeeper within the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.15
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I do not have the specific OCR confidence threshold mentioned in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.66
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0b",
+          "answer_preview": "0.13.0b",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.17
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not contain a specific number of tests or a summary of test results for the system. Therefore, I cannot tell you how many tests are passing.",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.38
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not contain information about the frequency or mechanism of automated backups within the system.",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.42
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.18
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.0
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.1
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "No specific authentication library is mentioned in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.92
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I cannot find the major version of PostgreSQL used in production within the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.11
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "3",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.65
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "No information regarding the auto-confidence percentage required to trigger a divergence alert was found in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.15
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.22
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.25
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": ">=3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.22
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "Three",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.55
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.81
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I cannot find the specific RAM ceiling percentage that BigEd targets before stopping agent scale-up in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.57
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.51
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is **no explicit information** detailing the initial number of agents or the exact threshold at which scaling begins.\n\nThe documentation describes the system",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.26
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided text does not explicitly state the total number of dimensions being tracked. It mentions the existence of a system with various components and documentation, but it does not provide a dir",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.96
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "3",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.24
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "85",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.07
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.14
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.92
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not explicitly state which Rust web framework `biged-rs` uses for its REST API. It only mentions that the production binary provides \"50 REST endpoints\" and can be run via `.",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.49
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The system utilizes models such as `qwen3:4b` (conductor model), `llava` (vision model), and `MiniMax-M1-80k` (minimax model).",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.95
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.52
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.69
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "I am sorry, but the provided context does not contain information regarding the `expression_tokens` budget set in `helix.toml`.",
+          "cost_usd": 0.0,
+          "elapsed_s": 28.24
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.04
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I cannot find the specific RRF k constant in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.76
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.3
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "No such information was found in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.1
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.74
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the provided documentation, there is **no explicit information** detailing the exact time-based decay or expiration for the \"knowledge\" or context stored in the system.\n\nThe document describe",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.86
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "No specific dense embedding model used for Stage-2 recall is explicitly mentioned in the provided context.",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.44
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 23.26
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "helix is organized into several modules, but the provided context does not explicitly list the total number of modules or subdirectories.\n\nHowever, based on the file structure implied by the context (",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.31
+        }
+      ]
+    },
+    "ollama:qwen3:1.7b": {
+      "model": "qwen3:1.7b",
+      "correct": 22,
+      "abstain": 4,
+      "wrong": 24,
+      "errors": 0,
+      "answered": 46,
+      "correctness_among_answered": 0.4783,
+      "hallucination_rate": 0.5217,
+      "coverage": 0.92,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.5
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.15",
+          "answer_preview": "0.15",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.91
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "129",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.58
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "int",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.03
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.76
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.63
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The target compression ratio for Helix Context is not explicitly specified in the provided facts. However, the GENE block mentions \"compression ratio\" in the context of calibration settings, but no nu",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.47
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The Python preset in ScoreRift checks **4 dimensions**. These dimensions are defined as follows:  \n1. **test_coverage**  \n2. **lint_score**  \n3. **coverage**  \n4. **security**  \n\nThese dimensions are ",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.11
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "500",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.09
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.19
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.56
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about the dollar threshold for 1099 tracking and W-9 requirements in BookKeeper. However, the provided GENE blocks do not contain any explicit information about these thresholds. The",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.02
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The OCR confidence threshold below which BookKeeper sends invoices to human review is not explicitly specified in the provided GENE facts. The GENE blocks mention \"confidence-based human review\" but d",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.19
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0b",
+          "answer_preview": "0.13.0b",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.56
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The context provided mentions that in the \"14. Multi-Entity Architecture \u2014 RESOLVED\" section, there are **19 resolved gaps** (numbered #1 through #19). However, the question specifically asks about th",
+          "cost_usd": 0.0,
+          "elapsed_s": 31.21
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "BookKeeper does not specify a particular interval for automatic backups in the provided data. The information available does not include details about backup frequency, only general features and confi",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.46
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "CosmicTasha provides **14 SOC 2 compliance document templates**. These templates are listed in the GENE blocks under the `soc2/templates` directory, including:\n\n1. system-description  \n2. information-",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.94
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.25
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.69
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The authentication library used by CosmicTasha for sessions is not explicitly specified in the provided facts. However, the environment variables include `AUTH_SECRET`, which is a session signing key,",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.95
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The major version of PostgreSQL used in production is not explicitly stated in the provided GENE facts. However, the DATABASE_URL in the docker-compose.yml specifies `postgres:5432/cosmictasha`, which",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.51
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ScoreRift employs **three defense layers** to prevent the system from lying, as outlined in the GENE blocks. These layers are derived from the ambient guardrails of three foundational applications:  \n",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.4
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0.95",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.29
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.54
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.12
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.74
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3",
+          "answer_preview": "3",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.61
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.7
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "384",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.17
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.81
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not explicitly state the number of core agents that BigEd boots before demand-based scaling kicks in. However, based on the information available:\n\n- The boot sequence involv",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.6
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12 dimensions** as specified in the `AUDIT_TRACKER.md` file, which includes the grading rubric, scoreboard, and resolved issues. \n\n**Answer:** 12",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.5
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "34",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.08
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "85",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.84
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.87
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.2
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the Rust web framework used by `biged-rs` for its REST API. After reviewing the provided GENE blocks, there is no explicit mention of a specific web framework (e.g., Actix, Rocke",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.2
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.59
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.36
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.46
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "5000",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.02
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.55
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "1000",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.37
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.16
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The question asks for the value of \"synthetic_session_window_s\" but none of the provided GENE blocks contain this key. The answer is not present in the given data. \n\n**Answer:** Not present in the pro",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.44
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.52
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Helix flags the know-confidence calibration as stale after a certain number of days based on the confidence score thresholds, which are determined by the calibration parameters. The exact number of da",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.77
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The dense embedding model used by Helix for Stage-2 recall is indicated by the `reason=sparse` field in the configuration, which suggests the model is designed for sparse data processing. However, the",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.11
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The question asks for the value of \"filename_anchor_weight per-match boost\" in helix.toml. After examining the provided GENE blocks, this key is not explicitly listed in any of the configuration facts",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.28
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "After the PR #90 restructure, the `helix_context` package is organized into **3 sub-packages**:  \n1. `embeddings`  \n2. `cpu`  \n3. `launcher`  \n\nThis structure is explicitly mentioned in the troublesho",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.49
+        }
+      ]
+    },
+    "ollama:qwen3:4b": {
+      "model": "qwen3:4b",
+      "correct": 20,
+      "abstain": 6,
+      "wrong": 23,
+      "errors": 1,
+      "answered": 43,
+      "correctness_among_answered": 0.4651,
+      "hallucination_rate": 0.5349,
+      "coverage": 0.86,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.14
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.15",
+          "answer_preview": "0.15",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.65
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The answer is 129. This information is found in the first <GENE> block from the \"Fleet Overview\" section, which states: \"**Skills:** 129 registered across fleet/skills/\". This indicates that the BigEd",
+          "cost_usd": 0.0,
+          "elapsed_s": 38.96
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the type to use for monetary values in BookKeeper instead of float. After thoroughly checking the provided ANSWER SLATE and all <GENE> blocks, there is no key or literal value th",
+          "cost_usd": 0.0,
+          "elapsed_s": 39.63
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.02
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.14
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "not specified",
+          "cost_usd": 0.0,
+          "elapsed_s": 42.07
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The Python preset in ScoreRift checks **4 dimensions**. This is determined from the code definition in `two-brain-audit/src/scorerift/presets/python_project.py`, where the `PYTHON_DIMENSIONS` list exp",
+          "cost_usd": 0.0,
+          "elapsed_s": 37.25
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "112",
+          "cost_usd": 0.0,
+          "elapsed_s": 34.44
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.93
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.32
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The question asks: **\"What dollar threshold triggers 1099 tracking and W-9 requirement in BookKeeper?\"**\n\n---\n\n### Step 1: Check the ANSWER SLATE\n\nThe provided **ANSWER SLATE** contains a list of key-",
+          "cost_usd": 0.0,
+          "elapsed_s": 50.46
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not contain any explicit mention of the OCR confidence threshold value. After thoroughly checking both the ANSWER SLATE keys and all <GENE> blocks, there is no literal value ",
+          "cost_usd": 0.0,
+          "elapsed_s": 39.69
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 24.22
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "After carefully reviewing the entire context provided, I don't see a specific number mentioned for how many tests the BookKeeper suite has passing. The context discusses unit-tests and regression crit",
+          "cost_usd": 0.0,
+          "elapsed_s": 67.59
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The question asks: **\"How often does BookKeeper run automatic backups in seconds?\"**\n\n---\n\n### Step-by-Step Analysis\n\nWe are given a context that includes several code snippets and documentation files",
+          "cost_usd": 0.0,
+          "elapsed_s": 46.75
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 192.05
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "The question asks for the default Ollama model tag used by CosmicTasha. \n\nIn the fifth `<GENE>` block (from `CosmicTasha/docs/superpowers/plans/2026-04-07-auth-biged-templates.md`), there is a code sn",
+          "cost_usd": 0.0,
+          "elapsed_s": 39.46
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks: *What port does the biged-rs inference service that CosmicTasha talks to listen on?*\n\n---\n\n### Understanding the Context\n\n- **Biged-rs** is a Rust-based project that serves as the p",
+          "cost_usd": 0.0,
+          "elapsed_s": 47.54
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The problem asks: *What authentication library does CosmicTasha use for sessions?* \n\nTo determine the answer, we examine the provided data:\n\n- The **ANSWER SLATE** contains keys such as `stack=Caddy`,",
+          "cost_usd": 0.0,
+          "elapsed_s": 51.23
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the major version of PostgreSQL used in production by CosmicTasha. After thoroughly checking the provided ANSWER SLATE and all <GENE> blocks, there is no key or literal value tha",
+          "cost_usd": 0.0,
+          "elapsed_s": 38.89
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks how many defense layers ScoreRift uses to prevent the system from lying. Based on the context provided in the `<expressed_context>` section, ScoreRift operates by comparing two disti",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.59
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "0.95",
+          "cost_usd": 0.0,
+          "elapsed_s": 22.82
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.97
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.1
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "3.11",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.68
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3",
+          "answer_preview": "3",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.53
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "port=5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.76
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "none",
+          "cost_usd": 0.0,
+          "elapsed_s": 41.87
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 24.36
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The context provided does not explicitly state the number of core agents BigEd boots before demand-based scaling. However, based on the system architecture described in the `DEVELOPMENT.md` file, BigE",
+          "cost_usd": 0.0,
+          "elapsed_s": 32.15
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "Looking through the provided context, I can find the answer in the `CLAUDE.md` file section:\n\n```\n- `AUDIT_TRACKER.md` \u2014 grading rubric (12 dimensions), scoreboard, resolved issues\n```\n\nThis explicitl",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.76
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "The number of database tables in the BigEd fleet is specified in the `FRAMEWORK_BLUEPRINT.md` document's metrics section as **34**. This value is explicitly stated in the `doc-revision` entry for the ",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.69
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "85",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.42
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.02
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.74
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The problem requires identifying the web framework used by the project based on the provided data. After a thorough review of all the given data:\n\n- The **ANSWER SLATE** contains keys like `version=1.",
+          "cost_usd": 0.0,
+          "elapsed_s": 55.36
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 43.39
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.75
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.41
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "not found",
+          "cost_usd": 0.0,
+          "elapsed_s": 44.19
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.0,
+          "elapsed_s": 27.75
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The RRF k constant used by Helix Reciprocal Rank Fusion is **1**. This is inferred from the context in the provided <GENE> blocks, specifically the first <GENE> block which states that Helix aims to a",
+          "cost_usd": 0.0,
+          "elapsed_s": 38.47
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the **cold_start_threshold gene count** in the Helix knowledge store. After reviewing the provided ANSWER SLATE and the associated `<GENE>` blocks, the closest relevant configura",
+          "cost_usd": 0.0,
+          "elapsed_s": 33.9
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the value of \"synthetic_session_window_s\" in seconds for grouping same-IP requests. After checking both the ANSWER SLATE and all <GENE> blocks, there is no key that matches this ",
+          "cost_usd": 0.0,
+          "elapsed_s": 50.18
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.89
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "After carefully reviewing the provided context, I cannot find any specific information about after how many days Helix flags the know-confidence calibration as stale.\n\nThe context mentions a \"freshnes",
+          "cost_usd": 0.0,
+          "elapsed_s": 44.06
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "DeBERTa",
+          "cost_usd": 0.0,
+          "elapsed_s": 33.43
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the value of the key \"filename_anchor_weight per-match boost\" in helix.toml. After checking the provided ANSWER SLATE and all <GENE> blocks, there is no key that matches this que",
+          "cost_usd": 0.0,
+          "elapsed_s": 41.02
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": 0.0,
+          "elapsed_s": 68.65
+        }
+      ]
+    },
+    "ollama:qwen3:8b": {
+      "model": "qwen3:8b",
+      "correct": 23,
+      "abstain": 3,
+      "wrong": 24,
+      "errors": 0,
+      "answered": 47,
+      "correctness_among_answered": 0.4894,
+      "hallucination_rate": 0.5106,
+      "coverage": 0.94,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "11437",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.72
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The divergence threshold that triggers alerts in ScoreRift is not explicitly stated in the provided facts or code snippets. No key in the ANSWER SLATE or <GENE> blocks directly specifies a numerical d",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.79
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The BigEd fleet has **129 skills**. This is explicitly stated in the pre-extracted facts from the GENE blocks, including:\n\n- **Education/fleet/knowledge/wiki/overview.md**: \"Skills: 129 registered acr",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.63
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the data type used for monetary values in BookKeeper instead of float. None of the keys in the ANSWER SLATE or GENE blocks explicitly state this. The provided facts focus on conf",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.36
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:6",
+          "answer_preview": "The Helix expression pipeline consists of **7 stages** as described in the `CLAUDE.md` documentation under the \"How It Works\" section. The pipeline is referred to as a \"7-stage pipeline per turn,\" wit",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.93
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.84
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the target compression ratio for Helix Context, but none of the provided keys or GENE blocks explicitly state a numerical value for this metric. The compression ratio is mentione",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.45
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "The Python preset in ScoreRift checks **8 dimensions**. These are defined in the `python_project.py` file under the `PYTHON_DIMENSIONS` list, which includes:\n\n1. **test_coverage**  \n2. **import_hygien",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.35
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "500",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.8
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.16
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.67
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question about the dollar threshold triggering 1099 tracking and W-9 requirements in BookKeeper is not addressed by any key in the ANSWER SLATE. No pre-extracted fact provides this specific detail",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.0
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about an OCR confidence threshold for human review, but none of the provided keys in the ANSWER SLATE or GENE blocks specify such a value. The documentation mentions \"confidence-base",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.78
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 25.05
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The BookKeeper suite has **3 tests passing**. This is indicated in the JSON data from the `compositional-arithmetic-onboarding-suite-v1.json` file, where the key `items=3` suggests the number of tests",
+          "cost_usd": 0.0,
+          "elapsed_s": 34.22
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The provided context does not specify how often BookKeeper runs automatic backups in seconds. There is no mention of backup intervals, schedules, or related configuration parameters in the ANSWER SLAT",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.89
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "The number of SOC 2 compliance document templates provided by CosmicTasha is **14**. This is explicitly stated in the `README.md` file under the `templates/` directory, which lists \"Jinja2 compliance ",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.7
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.96
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 30.55
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about the authentication library used by CosmicTasha for sessions. The ANSWER SLATE and GENE blocks do not explicitly mention any specific authentication library (e.g., `next-auth`, ",
+          "cost_usd": 0.0,
+          "elapsed_s": 22.18
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the major version of PostgreSQL used by CosmicTasha in production. None of the provided facts in the ANSWER SLATE or GENE blocks explicitly state the PostgreSQL version. The DATA",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.27
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ScoreRift employs **three defense layers** to prevent the system from lying, as outlined in the MaxExpressKit documentation. These layers are:\n\n1. **Compliance** - Ensures adherence to predefined rule",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.95
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "95",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.07
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.79
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.01
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "The minimum Python version required by MaxExpressKit is **3.11**. \n\nThis is specified in the `pyproject.toml` file under the `[project]` section with the key `requires-python = \">=3.11\"`.",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.38
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3",
+          "answer_preview": "3",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.79
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.99
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about a RAM ceiling percentage, but no key in the ANSWER SLATE or GENE blocks directly specifies a RAM-related threshold for agent scale-up. The closest relevant value is `cpu_limit_",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.05
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "10",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.82
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not explicitly state the number of core agents BigEd boots before demand-based scaling kicks in. The information about agent counts, scaling mechanisms, or core agent configu",
+          "cost_usd": 0.0,
+          "elapsed_s": 23.91
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12 dimensions**. This is explicitly stated in the `ROADMAP.md` file under the \"Docs\" section, which references `AUDIT_TRACKER.md` as containing a grading rubri",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.57
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "The BigEd fleet has **34 database tables**. This is explicitly stated in the `education/fleet/knowledge/wiki/architecture.md` GENE block, which mentions \"DB tables: 34 in fleet.db (WAL mode)\" and furt",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.41
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "85",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.5
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "llava",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.42
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "1.76",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.21
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about the Rust web framework used by `biged-rs` for its REST API. None of the keys in the **ANSWER SLATE** or the provided **GENE** blocks explicitly mention a specific Rust web fram",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.51
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "qwen3:4b",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.56
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51/52",
+          "answer_preview": "51/52",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.1
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "The key `idle_timeout_secs` matches the question and its value is **10**. \n\n**Answer:** 10",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.28
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about the \"expression_tokens budget\" in `helix.toml`, but **no key in the ANSWER SLATE or GENE blocks matches this exact phrase or related terms**. The provided configuration keys (e",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.07
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The max_genes_per_turn cap in helix.toml is **12**. \n\nThis value is explicitly stated in the GENE block under `helix-context/docs/config-reference.md`, where it is described as the shipped value (`hel",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.75
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks for the RRF k constant used by Helix Reciprocal Rank Fusion. The provided ANSWER SLATE and GENE blocks do not contain any explicit value for the RRF k constant. No key in the slate m",
+          "cost_usd": 0.0,
+          "elapsed_s": 20.26
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The key \"cold_start_threshold\" does not exist in the provided ANSWER SLATE or GENE blocks. However, the closest relevant key is `cold_tier_min_hot_genes` with a value of `0`. Since no exact match exis",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.82
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The question asks for the value of `synthetic_session_window_s`, but none of the keys in the ANSWER SLATE or GENE blocks match this exact key. No relevant information is provided in the context. \n\nAns",
+          "cost_usd": 0.0,
+          "elapsed_s": 18.44
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The default port for the Headroom proxy that Helix can route through is **11437**. \n\nThis is derived from the `HELIX_MCP_URL` default value in the `SETUP.md` GENE block, which specifies `http://127.0.",
+          "cost_usd": 0.0,
+          "elapsed_s": 38.0
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided context does not specify a time-based staleness threshold for Helix's `know-confidence` calibration. The calibration parameters (`emit_floor`, `s_ref`, `g_ref`, and `betas`) are described",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.86
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The question asks about the dense embedding model used for Stage-2 recall. None of the keys in the ANSWER SLATE directly specify a dense embedding model. However, in the **<GENE>** block from `helix-c",
+          "cost_usd": 0.0,
+          "elapsed_s": 19.97
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "The key \"filename_anchor_weight\" is not present in the provided ANSWER SLATE or GENE blocks. No matching value exists in the extracted facts.",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.62
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The `helix_context` package, after the PR #90 restructure, is organized into **5 sub-packages**. These sub-packages are structured to modularize different functionalities and components of the system,",
+          "cost_usd": 0.0,
+          "elapsed_s": 21.64
+        }
+      ]
+    },
+    "ollama:qwen3:0.6b": {
+      "model": "qwen3:0.6b",
+      "correct": 15,
+      "abstain": 0,
+      "wrong": 34,
+      "errors": 1,
+      "answered": 49,
+      "correctness_among_answered": 0.3061,
+      "hallucination_rate": 0.6939,
+      "coverage": 0.98,
+      "total_cost_usd": 0.0,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The port that the Helix proxy server listens on is 11434.",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.94
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The divergence threshold that triggers alerts in ScoreRift is \"A+\".",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.86
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "The BigEd fleet has **129 skills** registered across its **fleet/skills/** directory.",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.84
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "version=0.0.1",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.92
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "7",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.75
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The binary size of the Rust BigEd build is 1 MB.",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.23
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The target compression ratio for Helix Context is determined by the fusion mode, which is set to \"rrf\" in the 7-stage pipeline. \n\nANSWER SLATE:  \nrrf",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.33
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The Python preset in ScoreRift checks **7 dimensions**. This is explicitly stated in the example provided in the README.md file, which lists 7 S-tier scores corresponding to the 7 dimensions. \n\n**Answ",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.65
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: avg_completion_tokens=stable-2.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.04
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "The default local model used by BigEd for conductor tasks is **qwen3:8b**.",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.73
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "ANSWER SLATE: 8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.82
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "None of the provided facts or sections directly address the dollar threshold triggering 1099 tracking and W-9 requirements in BookKeeper.",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.91
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "http_error",
+          "score": 0,
+          "score_reason": "empty",
+          "answer_preview": "",
+          "cost_usd": null,
+          "elapsed_s": 188.33
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0",
+          "answer_preview": "version=0.13.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.88
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The number of tests in the BookKeeper suite is not explicitly stated in the provided information. However, the suite includes a compilation/test-style prompt suite with a \"draft\" status, indicating on",
+          "cost_usd": 0.0,
+          "elapsed_s": 16.18
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The answer is:  \nurl=http://127.0.0.1:8080",
+          "cost_usd": 0.0,
+          "elapsed_s": 12.3
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "ANSWER SLATE: 14",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.6
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE:  \nstring",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.14
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "containing=-\ntracks=1\nport=5555\nmodel=qwen3:4b\nmodel=llava\nmodel=MiniMax-M1-80k\nurl=http://localhost:11434\nurl=http://localhost:3000\nurl=http://localhost:3000`|\nurl=http://localhost:8000`|\nurl=http://",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.75
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE:  \nurl=http://localhost:3000`| url=http://localhost:8000`| url=http://localhost:11434`| url=https://localhost:5555`|",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.51
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The major version of PostgreSQL used in production by CosmicTasha is PostgreSQL 12.x.",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.61
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ScoreRift uses **2 defense layers** to prevent the system from lying:  \n1. **Ray Tracer (Open Source)**: Automates and validates data.  \n2. **Default Graph (Proprietary)**: Manages and compares data o",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.27
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The key is the auto-score percentage that must be exceeded for a divergence alert. In the first step, the auto-scorer's score is 1.000, which is perfect. If the threshold is set to exceed this percent",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.34
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "ANSWER SLATE:  \nversion=2.0.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.72
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "ANSWER SLATE: 0.1.3",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.1
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 0.1",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.74
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3",
+          "answer_preview": "The answer is: 3.",
+          "cost_usd": 0.0,
+          "elapsed_s": 7.94
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "port=5555",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.5
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "no key matches",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.39
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 10",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.97
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The number of core agents BigEd boots before demand-based scaling kicks in is determined by the test suite's environment, which is run in the same machine. Since the test suite is executed in the same",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.8
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "The BigEd audit tracker grades against **12 dimensions**. This is explicitly stated in the context of the AUDIT_TRACKER.md file and repeated in the ROADMAP.md file.",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.52
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "ANSWER SLATE: 34",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.0
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 30",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.5
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: qwen3:8b",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.04
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "The minimum Rust version required by the biged-rs workspace is 1.76.",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.06
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The Rust web framework used for BigEd-Rs's REST API is **Rust**.",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.85
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The model used for complex tasks like compliance documents and quality passes is the complex model, which is qwen3:8b.",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.58
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "None of the provided information directly addresses the smoke test pass count. The relevant test suite code is written in TypeScript, but the exact pass count values are not included.",
+          "cost_usd": 0.0,
+          "elapsed_s": 17.64
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "idle_timeout_secs=10",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.03
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided information does not mention the \"expression_tokens budget set\" in helix.toml.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.36
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "max_genes_per_turn=12",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.17
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 1.0",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.71
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "gene=0",
+          "cost_usd": 0.0,
+          "elapsed_s": 9.74
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 1248",
+          "cost_usd": 0.0,
+          "elapsed_s": 15.52
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 11434",
+          "cost_usd": 0.0,
+          "elapsed_s": 14.06
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Helix flags the know-confidence calibration as stale after **5 days**. This is based on the default `emit_floor` value in the TOML configuration, which corresponds to a threshold for confidence calibr",
+          "cost_usd": 0.0,
+          "elapsed_s": 11.81
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "The provided information does not mention a specific dense embedding model used by Helix for Stage-2 recall. Therefore, there is no matching key in the given slate.",
+          "cost_usd": 0.0,
+          "elapsed_s": 13.15
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "ANSWER SLATE: 0",
+          "cost_usd": 0.0,
+          "elapsed_s": 8.43
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "After the PR #90 restructure, **helix_context is organized into several sub-packages**. These sub-packages are:\n\n1. **`embeddings`** - Handles embeddings and semantic mapping.\n2. **`cpu`** - Manages C",
+          "cost_usd": 0.0,
+          "elapsed_s": 10.17
+        }
+      ]
+    },
+    "claude:sonnet": {
+      "model": "sonnet",
+      "correct": 29,
+      "abstain": 19,
+      "wrong": 2,
+      "errors": 0,
+      "answered": 31,
+      "correctness_among_answered": 0.9355,
+      "hallucination_rate": 0.0645,
+      "coverage": 0.62,
+      "total_cost_usd": 1.7998,
+      "per_needle": [
+        {
+          "name": "helix_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11437",
+          "answer_preview": "The Helix proxy server listens on port **11437**.",
+          "cost_usd": 0.04394025,
+          "elapsed_s": 5.03
+        },
+        {
+          "name": "scorerift_threshold",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know. The provided context includes ScoreRift's reconciler logic and references to `classify_divergence`, but the specific divergence threshold that triggers alerts is not shown in the excerpt",
+          "cost_usd": 0.036624300000000005,
+          "elapsed_s": 11.49
+        },
+        {
+          "name": "biged_skills_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:129",
+          "answer_preview": "129",
+          "cost_usd": 0.039410549999999996,
+          "elapsed_s": 4.85
+        },
+        {
+          "name": "bookkeeper_monetary",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "Based on the context provided, I don't know \u2014 the codebase context doesn't mention what type is recommended or used for monetary values.",
+          "cost_usd": 0.03275430000000001,
+          "elapsed_s": 4.0
+        },
+        {
+          "name": "helix_pipeline_steps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:6",
+          "answer_preview": "7 steps (stages 0\u20136): Classify, Extract, Retrieve, Re-rank, Splice, Assemble, and Persist.",
+          "cost_usd": 0.03533805,
+          "elapsed_s": 4.39
+        },
+        {
+          "name": "biged_rust_binary_size",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:11",
+          "answer_preview": "11 MB",
+          "cost_usd": 0.032821800000000005,
+          "elapsed_s": 6.87
+        },
+        {
+          "name": "genome_compression_target",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.\n\nThe provided context mentions that compression ratio is surfaced as a legibility header in the assembly stage, but no specific target compression ratio value is stated anywhere in the c",
+          "cost_usd": 0.0370743,
+          "elapsed_s": 9.75
+        },
+        {
+          "name": "scorerift_preset_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8",
+          "answer_preview": "Based on the context provided, the Python preset in ScoreRift checks **8 dimensions**: 3 existing (pytest, ruff, mypy) + 5 newly implemented (dependency freshness, doc coverage, security, complexity, ",
+          "cost_usd": 0.0409518,
+          "elapsed_s": 4.48
+        },
+        {
+          "name": "helix_ribosome_budget",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know. The provided context mentions the ribosome's config settings (model, timeout, base_url, etc.) and references a `[budget]` section for token caps, but it does not specify a token allocati",
+          "cost_usd": 0.0451518,
+          "elapsed_s": 7.7
+        },
+        {
+          "name": "biged_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3",
+          "answer_preview": "Based on the context provided, the default local model used by BigEd for conductor tasks is **`qwen3:4b`**, set via the `conductor_model` field in `fleet.toml`.",
+          "cost_usd": 0.0340593,
+          "elapsed_s": 7.05
+        },
+        {
+          "name": "bookkeeper_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8080",
+          "answer_preview": "**8080**",
+          "cost_usd": 0.03243555,
+          "elapsed_s": 6.45
+        },
+        {
+          "name": "bookkeeper_1099_threshold",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "Based on the context provided, I don't know.\n\nThe context includes BookKeeper's README, configuration file, CLI snippets, and export functionality references, but none of these mention a specific doll",
+          "cost_usd": 0.0332118,
+          "elapsed_s": 4.44
+        },
+        {
+          "name": "bookkeeper_ocr_confidence",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know. The provided context mentions \"confidence-based human review\" for OCR ingestion but does not specify the threshold value.",
+          "cost_usd": 0.034918050000000006,
+          "elapsed_s": 8.21
+        },
+        {
+          "name": "bookkeeper_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.13.0b",
+          "answer_preview": "The current version of the BookKeeper package is **0.13.0b** (as defined in `BookKeeper/bookkeeper/cli.py` as `__version__ = \"0.13.0b\"`).\n\nNote: The `bookkeeper.toml` config file also contains a versi",
+          "cost_usd": 0.03371805,
+          "elapsed_s": 8.1
+        },
+        {
+          "name": "bookkeeper_test_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:507",
+          "answer_preview": "507",
+          "cost_usd": 0.040040549999999994,
+          "elapsed_s": 4.62
+        },
+        {
+          "name": "bookkeeper_backup_interval",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.03905430000000001,
+          "elapsed_s": 3.63
+        },
+        {
+          "name": "cosmictasha_template_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:14",
+          "answer_preview": "CosmicTasha provides **14** SOC 2 compliance document templates.",
+          "cost_usd": 0.040321800000000005,
+          "elapsed_s": 5.36
+        },
+        {
+          "name": "cosmictasha_default_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:qwen3:8b",
+          "answer_preview": "Based on the context provided, the default Ollama model tag used by CosmicTasha is **`qwen3:8b`**.\n\nThis is set in the `LocalOllamaProvider` constructor:\n```typescript\nmodel = process.env.OLLAMA_MODEL",
+          "cost_usd": 0.03409305,
+          "elapsed_s": 4.28
+        },
+        {
+          "name": "cosmictasha_biged_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "I don't know. The context shows that biged-rs exposes a dashboard on port **5555** (from `fleet.toml`) and that `https://localhost:5555` appears in CosmicTasha's README URL list, but the context does ",
+          "cost_usd": 0.04385055000000001,
+          "elapsed_s": 15.98
+        },
+        {
+          "name": "cosmictasha_auth_library",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "Based on the context provided, CosmicTasha uses an `AUTH_SECRET` environment variable described as a \"Session signing key,\" but the specific authentication library is not mentioned in the available co",
+          "cost_usd": 0.033856800000000006,
+          "elapsed_s": 5.1
+        },
+        {
+          "name": "cosmictasha_postgres_version",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.03279555,
+          "elapsed_s": 3.43
+        },
+        {
+          "name": "scorerift_defense_layers",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.04063680000000001,
+          "elapsed_s": 3.73
+        },
+        {
+          "name": "scorerift_confidence_floor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know. The provided context references `classify_divergence` and `Divergence` types in `reconciler.py`, and mentions confidence values in dimension schemas, but does not specify any auto-confid",
+          "cost_usd": 0.0386343,
+          "elapsed_s": 12.37
+        },
+        {
+          "name": "scorerift_pkg_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:2.0.0",
+          "answer_preview": "2.0.0",
+          "cost_usd": 0.033028049999999996,
+          "elapsed_s": 3.93
+        },
+        {
+          "name": "mek_version",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:0.1.3",
+          "answer_preview": "The current version of MaxExpressKit (MEK) is **0.1.3**, as defined in `MaxExpressKit/pyproject.toml`.",
+          "cost_usd": 0.03363555,
+          "elapsed_s": 5.78
+        },
+        {
+          "name": "mek_min_python",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:3.11",
+          "answer_preview": "Python **3.11** or later, as specified in `MaxExpressKit/pyproject.toml` (`requires-python = \">=3.11\"`).",
+          "cost_usd": 0.0328368,
+          "elapsed_s": 4.37
+        },
+        {
+          "name": "mek_source_apps",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:three",
+          "answer_preview": "Three source applications: **CosmicTasha**, **ScoreRift**, and **BookKeeper**.",
+          "cost_usd": 0.0337593,
+          "elapsed_s": 5.17
+        },
+        {
+          "name": "biged_dashboard_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:5555",
+          "answer_preview": "5555",
+          "cost_usd": 0.0326343,
+          "elapsed_s": 3.6
+        },
+        {
+          "name": "biged_ram_ceiling",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.\n\nThe provided context includes a `memory_limit_mb = 384` setting under `[workers]` in `fleet.toml`, but no RAM ceiling **percentage** threshold for stopping agent scale-up is mentioned a",
+          "cost_usd": 0.0363918,
+          "elapsed_s": 9.5
+        },
+        {
+          "name": "biged_max_workers",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the `fleet.toml` context provided, the `[workers]` section sets `max_workers = 6`.\n\n(Note: the top-level `[fleet]` section also has `max_workers = 10`, but the `[workers]` section \u2014 which dir",
+          "cost_usd": 0.0339843,
+          "elapsed_s": 5.61
+        },
+        {
+          "name": "biged_core_agents",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:4",
+          "answer_preview": "4",
+          "cost_usd": 0.039849300000000004,
+          "elapsed_s": 4.62
+        },
+        {
+          "name": "biged_audit_dimensions",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "Based on the context provided, the BigEd audit tracker grades against **12 dimensions**.",
+          "cost_usd": 0.04049054999999999,
+          "elapsed_s": 5.96
+        },
+        {
+          "name": "biged_db_tables",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:34",
+          "answer_preview": "34",
+          "cost_usd": 0.03986805,
+          "elapsed_s": 11.51
+        },
+        {
+          "name": "biged_thermal_target",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:75",
+          "answer_preview": "Based on the provided context, BigEd's CPU maximum sustained temperature is **85\u00b0C** (`cpu_max_sustained_c = 85`).\n\nThere is no separate \"cooldown target\" specified for the CPU \u2014 only a max sustained ",
+          "cost_usd": 0.03410055,
+          "elapsed_s": 5.82
+        },
+        {
+          "name": "biged_vision_model",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:llava",
+          "answer_preview": "Based on the context provided, BigEd uses **llava** as its local vision model.",
+          "cost_usd": 0.0336918,
+          "elapsed_s": 6.19
+        },
+        {
+          "name": "biged_rust_msrv",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:1.76",
+          "answer_preview": "**1.76**\n\nThis is specified in `Cargo.toml` under `[workspace.package]` as `rust-version = \"1.76\"`.",
+          "cost_usd": 0.033436799999999996,
+          "elapsed_s": 4.32
+        },
+        {
+          "name": "biged_rust_web_framework",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:axum",
+          "answer_preview": "I don't know.\n\nThe provided context mentions that biged-rs has 50 REST endpoints but does not specify which Rust web framework is used for the REST API (e.g., Axum, Actix-web, Warp, etc.). The `Cargo.",
+          "cost_usd": 0.033916800000000004,
+          "elapsed_s": 6.08
+        },
+        {
+          "name": "biged_complex_model",
+          "status": "ok",
+          "score": -1,
+          "score_reason": "no-match-and-confident",
+          "answer_preview": "Based on the context provided, BigEd uses **qwen3:8b** for complex tasks \u2014 it's configured as both the `complex` model and the `local` model in `fleet.toml`, with `complex_provider` set to `\"local\"`.",
+          "cost_usd": 0.0341793,
+          "elapsed_s": 6.09
+        },
+        {
+          "name": "biged_smoke_tests",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:51 out of 52",
+          "answer_preview": "Based on the context provided, BigEd's smoke test pass count is **51 out of 52**.",
+          "cost_usd": 0.03274305,
+          "elapsed_s": 4.8
+        },
+        {
+          "name": "biged_idle_timeout",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:10",
+          "answer_preview": "Based on the context provided, the idle timeout is **10 seconds** (`idle_timeout_secs = 10` in `fleet.toml`).",
+          "cost_usd": 0.03410805,
+          "elapsed_s": 4.42
+        },
+        {
+          "name": "helix_expression_budget",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.0347043,
+          "elapsed_s": 4.83
+        },
+        {
+          "name": "helix_max_genes_per_turn",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:12",
+          "answer_preview": "12",
+          "cost_usd": 0.033763049999999996,
+          "elapsed_s": 3.64
+        },
+        {
+          "name": "helix_rrf_k",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know. The provided context references the RRF formula (e.g., `2\u00b7w/(k+1)` in the test description) and mentions `fuser.top_k` as a result-count parameter, but the specific value of the RRF rank",
+          "cost_usd": 0.03857055,
+          "elapsed_s": 8.85
+        },
+        {
+          "name": "helix_cold_start_threshold",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.0336168,
+          "elapsed_s": 7.61
+        },
+        {
+          "name": "helix_session_window",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.03351555,
+          "elapsed_s": 4.87
+        },
+        {
+          "name": "helix_headroom_port",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:8787",
+          "answer_preview": "I don't know.\n\nThe provided context references port **8787** in the same config snippet that also cites the Headroom GitHub URL (`https://github.com/chopratejas/headroom`), but the context does not ex",
+          "cost_usd": 0.0403368,
+          "elapsed_s": 12.15
+        },
+        {
+          "name": "helix_calibration_staleness",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.04358805,
+          "elapsed_s": 6.71
+        },
+        {
+          "name": "helix_dense_encoder",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.\n\nThe provided context covers Stage 6 (know/miss blocks), Stage 3 (RRF fusion scoring), the `helix.toml` config, and the config reference \u2014 none of which specify the dense embedding model",
+          "cost_usd": 0.037891799999999996,
+          "elapsed_s": 9.68
+        },
+        {
+          "name": "helix_filename_anchor",
+          "status": "ok",
+          "score": 0,
+          "score_reason": "abstain",
+          "answer_preview": "I don't know.",
+          "cost_usd": 0.014443499999999998,
+          "elapsed_s": 5.84
+        },
+        {
+          "name": "helix_subpackages_count",
+          "status": "ok",
+          "score": 1,
+          "score_reason": "accept-match:16",
+          "answer_preview": "16",
+          "cost_usd": 0.0409893,
+          "elapsed_s": 4.41
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "genome_genes": 80363,
+  "compression_ratio": 2.3716293240571904
+}

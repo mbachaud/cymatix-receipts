@@ -1,0 +1,30 @@
+{
+  "config": "python_cff",
+  "n_per_level": 200,
+  "timestamp": "20260613T173424Z",
+  "levels": {
+    "easy": {
+      "n": 200,
+      "avg_cands": 6.7,
+      "random_acc@1": 0.145,
+      "random_acc@3": 0.495,
+      "overlap_acc@1": 0.15,
+      "overlap_acc@3": 0.435,
+      "bm25_acc@1": 0.12,
+      "bm25_acc@3": 0.44
+    },
+    "hard": {
+      "n": 200,
+      "avg_cands": 17.5,
+      "random_acc@1": 0.05,
+      "random_acc@3": 0.22,
+      "random_acc@5": 0.345,
+      "overlap_acc@1": 0.07,
+      "overlap_acc@3": 0.24,
+      "overlap_acc@5": 0.385,
+      "bm25_acc@1": 0.09,
+      "bm25_acc@3": 0.24,
+      "bm25_acc@5": 0.36
+    }
+  }
+}

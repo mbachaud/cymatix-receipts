@@ -1,0 +1,353 @@
+{
+  "label": "xl_sharded_A",
+  "helix_url": "http://127.0.0.1:11464",
+  "timestamp": "2026-06-14T23:18:57.367943+00:00",
+  "queries": [
+    {
+      "id": "ebf0edb4b96046919eabd5e6436666c1",
+      "type": "within",
+      "query": "Group multiple alert instances into one email",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9458404811578563,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "f441b39687974ed184c0b4ec5e827bb4",
+      "type": "within",
+      "query": "Une de est la vitesse du drone sans aucune am\u00e9lioration de vitesse.",
+      "tiers_fired": [
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.8723514408055558,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "2016fa907d464bc8b551541d13345ded",
+      "type": "within",
+      "query": "build:** remove __RUNTIME_COMPILE__ flag (206640a), closes #817",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9256921823699905,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "8c16e7bfe72a46d99048815e5d3f1c3e",
+      "type": "within",
+      "query": "- Prototype Docs | | Forums | Wiki | Mod Portal | API Docs Prototype | Runtime | Auxiliary Prototype Docs Version 2.0.76 Home / / &gt;&lt; ::&nbsp;struct Properties default sorted north optional ::&nbsp; int8 east optional ::&nbsp; int8 <span cla",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9644266023056686,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "10638036d4b8409ab465f4cc54d3b65e",
+      "type": "within",
+      "query": "Now to Stop Control...\" } } }, \"\":5 }, { \"metadata\":{ \"chill\":true, \"static\":true, \"system\":true, \"weight\":0.1 }, \"name\":\"\", \"notes\":{ \"english\":{ \"note\":{ \"freeform\":\"Best of luck!\" } } }, \"\":8 }, { \"metadata\":{ \"chill\":true, \"static\":true, \"system\":true, \"weight\":0.7 }, \"name\":\"\", \"notes\":{ \"english\":{ \"note\":{ \"freeform\":\"Good job!",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9392034998746057,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "a9895bf6f7bb4275b87f134d5befb070",
+      "type": "within",
+      "query": "{{ }} ## Node graph You can also expand the node graph for a displayed .",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9499078176161615,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "e1024847034441078e29f47f1437f709",
+      "type": "within",
+      "query": "Application Insights and Insights Analytics (removed)",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9660228746709105,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "770bddc579144d4e961cf88c5f9f4c12",
+      "type": "within",
+      "query": "Since version 8.4, API details are specified using OpenAPI v2.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9487046631469415,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "deba30c504fa4306bbc65ae6bdcd30ad",
+      "type": "within",
+      "query": "# \u041f\u043e\u043a\u0440\u0430\u0449\u0435\u043d\u043d\u044f \u0448\u0432\u0438\u0434\u043a\u043e\u0441\u0442\u0456 \u0428\u0432\u0438\u0434\u043a\u0456\u0441\u0442\u044c \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f \u0431\u0443\u043b\u0430 \u043f\u043e\u0434\u0432\u043e\u0454\u043d\u0430.",
+      "tiers_fired": [],
+      "dense_fired": false,
+      "lexical_dense_agree": null,
+      "know_found": false,
+      "confidence": null,
+      "top_sources": [],
+      "fp_count": 0,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "81fa229d68014b879b80ab35062cf28e",
+      "type": "within",
+      "query": "- API: Migrate CSRF to service and support additional options.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.932147375562426,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "375daf535d5342e48aac1ef406ea8211",
+      "type": "cross",
+      "query": "Scroll to the Data source- section and click +New .",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.8399021222795661,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "22c382244be34087a7a386ee548d82fd",
+      "type": "cross",
+      "query": "--- keywords: - - labels: products: - cloud - enterprise - oss title: Traces in weight: 40 --- # Traces in You can use to query and visualize traces from tracing data sources.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.952006213181093,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "13360ec9a7a14901985aa952654eb5c5",
+      "type": "cross",
+      "query": "Deprecated logs-related functions and variables have been removed from the \"@/data\" and \"@/ui\" packages",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9797712847367885,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "cf51ee35c58d4c91831ba6f9b42ad6b1",
+      "type": "cross",
+      "query": "\"ce952135-e8b4-4b5b-98c2-a26b6f427a4e\": {",
+      "tiers_fired": [],
+      "dense_fired": false,
+      "lexical_dense_agree": null,
+      "know_found": false,
+      "confidence": null,
+      "top_sources": [],
+      "fp_count": 0,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "15a05ea34e8a493fbb4811040422a4b7",
+      "type": "cross",
+      "query": "Within the Log details view, you have the ability to filter the displayed fields in two ways: a positive filter, which focuses on an specific field and a negative filter, which excludes certain fields.",
+      "tiers_fired": [
+        "authority",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": false,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9250133024235223,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "6a9bac1a730b43e3a39f843400ccdccc",
+      "type": "cross",
+      "query": "In the file, mount the persistent volume into as follows.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9002495108803119,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    }
+  ],
+  "aggregate": {
+    "n": 16,
+    "n_dense_fired": 13,
+    "pct_dense_fired": 81.2,
+    "by_type": {
+      "within": {
+        "n": 10,
+        "dense_fired": 9,
+        "pct_dense": 90.0
+      },
+      "cross": {
+        "n": 6,
+        "dense_fired": 4,
+        "pct_dense": 66.7
+      }
+    },
+    "tier_frequency": {
+      "fts5": 14,
+      "lex_anchor": 14,
+      "tag_exact": 14,
+      "tag_prefix": 14,
+      "authority": 13,
+      "dense": 13
+    },
+    "errors": []
+  }
+}

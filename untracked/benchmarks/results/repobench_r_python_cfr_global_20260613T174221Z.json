@@ -1,0 +1,44 @@
+{
+  "config": "python_cfr",
+  "helix_config": "F:\\tmp\\cb_helix_probe\\helix_probe.toml",
+  "timestamp": "20260613T174221Z",
+  "arm": "helix_global",
+  "corpus_size": 3052,
+  "ingest_errors": 0,
+  "levels": {
+    "easy": {
+      "n": 200,
+      "corpus": 3052,
+      "helix_B_acc@1": 0.19,
+      "helix_B_acc@3": 0.52,
+      "helix_C_recall@1": 0.065,
+      "helix_C_recall@3": 0.15,
+      "helix_C_recall@5": 0.205,
+      "helix_C_recall@10": 0.32,
+      "bm25_B_acc@1": 0.2,
+      "bm25_B_acc@3": 0.56,
+      "bm25_C_recall@1": 0.14,
+      "bm25_C_recall@3": 0.315,
+      "bm25_C_recall@5": 0.43,
+      "bm25_C_recall@10": 0.53
+    },
+    "hard": {
+      "n": 200,
+      "corpus": 3052,
+      "helix_B_acc@1": 0.08,
+      "helix_B_acc@3": 0.27,
+      "helix_B_acc@5": 0.415,
+      "helix_C_recall@1": 0.045,
+      "helix_C_recall@3": 0.12,
+      "helix_C_recall@5": 0.165,
+      "helix_C_recall@10": 0.25,
+      "bm25_B_acc@1": 0.135,
+      "bm25_B_acc@3": 0.32,
+      "bm25_B_acc@5": 0.47,
+      "bm25_C_recall@1": 0.105,
+      "bm25_C_recall@3": 0.24,
+      "bm25_C_recall@5": 0.315,
+      "bm25_C_recall@10": 0.435
+    }
+  }
+}

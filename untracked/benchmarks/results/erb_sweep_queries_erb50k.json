@@ -1,0 +1,3670 @@
+[
+ {
+  "query": "What are the default size limits for file uploads and total request size for the new multipart upload support on the OpenAI-compatible API endpoints?",
+  "gold_ids": [
+   "53511b625cec4dc7",
+   "9dfbfaf620c359b9"
+  ]
+ },
+ {
+  "query": "What is the name of the new metric added so SRE can track when server-side streaming sessions get finalized due to hitting the time limit?",
+  "gold_ids": [
+   "9259277037dfdb2a",
+   "98d01c5fa5c70d28"
+  ]
+ },
+ {
+  "query": "What are the acceptance criteria for the project introducing an algorithm to generate interactive UI color states and a Kappa-style elevation scale for dense table and grid components?",
+  "gold_ids": [
+   "3059c6c13c80f901",
+   "5082cd19f2e1636f"
+  ]
+ },
+ {
+  "query": "In the meeting about onboarding a SaaS product to Google Cloud Marketplace, what did the GCP team recommend for handling delays where a new subscription entitlement is not immediately available during the customer onboarding flow?",
+  "gold_ids": [
+   "ac847d251896fcd7",
+   "dc240a4ebeb3f7a2"
+  ]
+ },
+ {
+  "query": "What failover sequence and recovery targets did MedThink specify for handling an EU region outage, including any limits on how long traffic can shift to the US?",
+  "gold_ids": [
+   "1c1424949720b78a",
+   "a62b135f81aca611"
+  ]
+ },
+ {
+  "query": "In the draft spec about extending a routing policy engine for automated regional failover, what is the proposed priority order for evaluating different failure signals when deciding whether to shift traffic or fail over?",
+  "gold_ids": [
+   "c3c83f370eb9ed2f",
+   "cdce5fc34fa73473"
+  ]
+ },
+ {
+  "query": "In a rolling investigation of a model regression on policy-related prompts after a recent deploy, what was the average triage rubric score change between the older baseline build and the newer optimized build in the first comparison run?",
+  "gold_ids": [
+   "a01a03485e979142",
+   "bb69a38c7fdcbc26"
+  ]
+ },
+ {
+  "query": "In the internal shiproom runner notes, what is the target time-to-recover threshold for a verified rollback in staging?",
+  "gold_ids": [
+   "255fe0d16e6da17f",
+   "9736f8f6fe2ebc35"
+  ]
+ },
+ {
+  "query": "In the EdgePath evaluation email thread, what alternative Year 1 pricing package did Redwood propose instead of matching the competitor's 50 percent first-year discount and migration credit?",
+  "gold_ids": [
+   "9b7836a63acd1d66",
+   "eaf9e80fdda92a78"
+  ]
+ },
+ {
+  "query": "How does the new alerting approach group model-serving requests by the stages they pass through to reduce noisy alerts and speed up root cause analysis?",
+  "gold_ids": [
+   "13be4603839bb557",
+   "da5c5d8004895367"
+  ]
+ },
+ {
+  "query": "How long is the validity period for the telemetry driven runbook author certification from the operator training bootcamp?",
+  "gold_ids": [
+   "81301ad1060ec953",
+   "eb09db157cf34fcf"
+  ]
+ },
+ {
+  "query": "What was identified as the root cause of the intermittent VPN connectivity blackholes and duplicate IP warnings for users on the corporate Wi-Fi in the SF2 building behind a specific edge switch?",
+  "gold_ids": [
+   "2d69479b67c11979",
+   "7b58d3cc7212a058"
+  ]
+ },
+ {
+  "query": "What is the recommended two-stage process for rotating the signing credentials used by GPU image build and promotion pipelines, including how to cut over safely and roll back if something goes wrong?",
+  "gold_ids": [
+   "793cb9e9ef5fe6a4",
+   "e26fd56b7ca53578"
+  ]
+ },
+ {
+  "query": "In the on-prem private upgrade deep dive with an air-gapped healthcare customer, what did they describe as their current rollback approach when an upgrade goes wrong?",
+  "gold_ids": [
+   "580b5522dee14e1f",
+   "d3e9cdc382155e69"
+  ]
+ },
+ {
+  "query": "What was the high-percentile latency concern reported after a smoke test of about 50 concurrent streaming chat sessions for Satellite Grove?",
+  "gold_ids": [
+   "4befe7dfea907705",
+   "a8d22b0f89c91de7"
+  ]
+ },
+ {
+  "query": "What is the company policy for how long contractor access should last by default before it expires, according to the access and permissions playbook?",
+  "gold_ids": [
+   "1e4fe3c0b3becaf6",
+   "a883285f79a8ac0b"
+  ]
+ },
+ {
+  "query": "What service credit percentages were proposed in the tiered uptime SLA counteroffer for the maritime logistics SaaS customer using dedicated GPU capacity?",
+  "gold_ids": [
+   "d5229e13ab8ad628",
+   "d5c7368951776655"
+  ]
+ },
+ {
+  "query": "In the incident writeup about KV cache ghost entries causing gradual memory growth and OOM during a surge, what metric name was added for counting when the sanitizer finds negative refcounts?",
+  "gold_ids": [
+   "1e22402a7a20eb07",
+   "478d1f659e66aaa4"
+  ]
+ },
+ {
+  "query": "After a recent network change at the SoMa office, users on corporate WiFi saw VPN access to an internal 10.11.x service fail and SSO logins time out because an office bridge was translating client addresses. What device mode misconfiguration caused the source IP rewrite?",
+  "gold_ids": [
+   "73144ada8327eda3",
+   "df962cc31b13949a"
+  ]
+ },
+ {
+  "query": "In the recent update to the chat completions compatibility adapter, how does the parameter normalizer handle a client sending max_tokens as null compared to leaving it out entirely?",
+  "gold_ids": [
+   "7a1c995653ee9d34",
+   "da3b662a2b9c7886"
+  ]
+ },
+ {
+  "query": "What is the expected turnaround time for security to approve access to a high risk internal tool role in Redwood's tool access governance process?",
+  "gold_ids": [
+   "1bf0c69366e4d98d",
+   "7a071348775563a7"
+  ]
+ },
+ {
+  "query": "What is the recommended liability cap language in the procurement legal triage SOP for vendor contracts (including the key exceptions and how the cap amount is determined)?",
+  "gold_ids": [
+   "70ce6780a1fec1c1",
+   "bdaea76de047ba20"
+  ]
+ },
+ {
+  "query": "In the customer docs plan for the opt-in quantization profile feature, what are the review roles required before the documentation can be merged?",
+  "gold_ids": [
+   "3eaf7fe3fb07bf32",
+   "513eb0bf4255b292"
+  ]
+ },
+ {
+  "query": "What is the default time limit for automatically expiring guest or contractor accounts in the plan to set up a temporary contractor seat pool for DossierHQ with Okta provisioning and SSO?",
+  "gold_ids": [
+   "0637c45cae0af0fc",
+   "12e4390317fcad49"
+  ]
+ },
+ {
+  "query": "In the enterprise tenant cutover go-live runbook, what latency threshold triggers escalation based on the 95th percentile being too high, and how long does it need to be sustained?",
+  "gold_ids": [
+   "5d7f004af883e52e",
+   "e9dcd8a1222c87f1"
+  ]
+ },
+ {
+  "query": "For a customer upgrading a private deployment in their own cloud environment, what restore time did support say is typical if the upgrade fails and a rollback is needed (assuming snapshots were taken)?",
+  "gold_ids": [
+   "2a60103863e40f2c",
+   "b86172d5c5ed20a7"
+  ]
+ },
+ {
+  "query": "In the Redwood and Acme service assurance negotiation, what timing did Redwood agree to for sending an initial incident summary after a Severity 1 outage?",
+  "gold_ids": [
+   "9d30679dab284b49",
+   "ddf3fa2b2847bc5e"
+  ]
+ },
+ {
+  "query": "What steps and commands were recommended for creating and pushing a signed annotated Git tag and then making a draft GitHub release for the v1.14.0 release?",
+  "gold_ids": [
+   "d86547e7b260407f"
+  ]
+ },
+ {
+  "query": "What caused the nightly evaluation cron jobs in the production us-east cluster to fail with an invalid refresh token error after an identity provider policy change?",
+  "gold_ids": [
+   "1df82c6c4bc3edd9",
+   "a260ee305b65d046"
+  ]
+ },
+ {
+  "query": "In the Console feature that compares canary or A-B cohorts and links metric anomalies to request traces, what customer tiers are allowed into the beta via a feature flag gate?",
+  "gold_ids": [
+   "65477b0c6de760a5",
+   "c0c6df0ab1270c67"
+  ]
+ },
+ {
+  "query": "What is the operator procedure to put a private deployment tenant into local-only telemetry mode and how can you verify the mode afterward?",
+  "gold_ids": [
+   "71ea9c9ff5343fe5",
+   "e5178aeace459c43"
+  ]
+ },
+ {
+  "query": "What performance goal was set for reducing GPU out of memory incidents in the stress tests for the windowed KV cache proposal?",
+  "gold_ids": [
+   "1b3a436473e126e4",
+   "87189629b4230c0f"
+  ]
+ },
+ {
+  "query": "In the security review meeting about private cloud upgrades for a financial services customer, what was the stated minimum audit log retention period they wanted?",
+  "gold_ids": [
+   "7b6b6daab933a561",
+   "f44d14311a433dee"
+  ]
+ },
+ {
+  "query": "In the Console nav redesign prototype with compact workspace chips and a contextual micro-rail, how is the micro-rail state preserved in shareable URLs?",
+  "gold_ids": [
+   "0ce7d38e2be3ed44",
+   "ddff2b2cd45e5bd5"
+  ]
+ },
+ {
+  "query": "For regulated customer private VPC deployments, what is the tenant-facing monthly availability target for the inference endpoint?",
+  "gold_ids": [
+   "ab7f1a7e14d46b38",
+   "ae89807601a2679f"
+  ]
+ },
+ {
+  "query": "What telemetry events and alert threshold are required to monitor streaming responses when a downstream tool call fails but the system continues with degraded output?",
+  "gold_ids": [
+   "9520eeb2e586241f",
+   "b71581677a772d3d"
+  ]
+ },
+ {
+  "query": "What caused the spike in 502 and 503 errors on the embeddings endpoint for the us-east dedicated pool around March 13, 2026?",
+  "gold_ids": [
+   "5e5ddc0dab19e598",
+   "eae08aab0d159055"
+  ]
+ },
+ {
+  "query": "In the sandbox onboarding demo with NimbusApps, what median and p95 latency did the 50-concurrency 1-minute performance run report?",
+  "gold_ids": [
+   "1de89c4870baa96e",
+   "27d2e564e3e934f0"
+  ]
+ },
+ {
+  "query": "In the 3-hour customer workshop plan for taking a team from initial evaluation to a proof of concept, what are the three types of go/no-go acceptance gates?",
+  "gold_ids": [
+   "304c1c58f31da4d4",
+   "6e8bb79363745b09"
+  ]
+ },
+ {
+  "query": "What are the retention time windows for these lightweight kernel state snapshots (in-memory cache, indexed store, and any cold archive) used for post-incident diagnostics?",
+  "gold_ids": [
+   "612c405eb1b75afb",
+   "d0fe3cc7a725306d"
+  ]
+ },
+ {
+  "query": "In the security review call about buying an LLM inference service through AWS Marketplace, what was said about whether cross-region failover is enabled by default for the hosted endpoint?",
+  "gold_ids": [
+   "a8ce667aa62828e4",
+   "d55aa0655604b54d"
+  ]
+ },
+ {
+  "query": "What was the founder building when they came in as a self-serve lead from a Hacker News thread, and what kind of stable integration did they say they wanted for it?",
+  "gold_ids": [
+   "c77f879e32391308"
+  ]
+ },
+ {
+  "query": "What caused the brief p99 latency jump on the hosted text generation endpoint in us-west-2, and what mitigation was applied to bring it back down?",
+  "gold_ids": [
+   "10d80f5a32edd348",
+   "68bd4aa2bef44815"
+  ]
+ },
+ {
+  "query": "What support response time commitments did Acme approve for being shown in their AWS and Azure marketplace listing for incident priority levels?",
+  "gold_ids": [
+   "71e430f042f249da",
+   "a06a0c35309287ef"
+  ]
+ },
+ {
+  "query": "What is the estimated compressed size for the customers requested 12 month structured audit log export for their SIEM privacy scan?",
+  "gold_ids": [
+   "8df173af52d492df",
+   "a264da5106844ee3"
+  ]
+ },
+ {
+  "query": "In the Medicore procurement email thread about data use and telemetry, what turnaround timeline did Redwood propose for delivering the operational runbook?",
+  "gold_ids": [
+   "1b7e1cbf45d73228",
+   "91a2b15331c9f4de"
+  ]
+ },
+ {
+  "query": "In some lab notes about reducing few-shot example copying, what tradeoff was noted when rotating the order of exemplars in prompts?",
+  "gold_ids": [
+   "c9c687b55c1ea218",
+   "d567ce871b57a356"
+  ]
+ },
+ {
+  "query": "What are the initial weighting percentages for the signals used in the Model Resilience Propensity Index, before the 4-week recalibration?",
+  "gold_ids": [
+   "492b2a28a0b48fea",
+   "5c83a2540001a7a1"
+  ]
+ },
+ {
+  "query": "In the email thread about BrightPath considering a marketplace pilot versus a direct contract for an AI inference vendor, what lead time was given for getting marketplace entitlement after onboarding?",
+  "gold_ids": [
+   "220a4115af732950",
+   "4f00ff4400de4899"
+  ]
+ },
+ {
+  "query": "What is the proposed HTTP header scheme for attributing API traffic to quickstart templates, including how the header value is formatted and the opt-in header?",
+  "gold_ids": [
+   "3f0f0140f19dce68",
+   "491335f24e708a60"
+  ]
+ },
+ {
+  "query": "In the cost-aware model routing proposal, what telemetry fields were suggested to emit so the team can analyze routing decisions and tradeoffs between spend and quality?",
+  "gold_ids": [
+   "02d034f0b4fbcda7",
+   "46464332e57fb03c"
+  ]
+ },
+ {
+  "query": "What is the sampling policy for request routes of different telemetry priority levels in the new path-based observability change?",
+  "gold_ids": [
+   "34b19e1040a2aa2b",
+   "ca578b407a203c36"
+  ]
+ },
+ {
+  "query": "What metric label allowlist and caps did the SRE team decide for v1 shadow traffic metrics to prevent high-cardinality issues (including limits for route and experiment labels)?",
+  "gold_ids": [
+   "203661ffca4f53c9",
+   "832c1192fc75e870"
+  ]
+ },
+ {
+  "query": "What was the decision for when and how to roll out the new lattice scheduler into a limited canary, and what condition would allow expanding it to higher traffic models?",
+  "gold_ids": [
+   "558cc0fb81e24254",
+   "e7417cc951d6c684"
+  ]
+ },
+ {
+  "query": "What audit log retention period did Redwood commit to for pilot customers during the 2027 API model migration, in response to the Acme Health security questions?",
+  "gold_ids": [
+   "877cb7595d7229d8",
+   "9f5ead160512a3d3"
+  ]
+ },
+ {
+  "query": "In a recent GPU incident in us-east after a driver update, what load balancer network setting change was suspected as contributing to the NCCL watchdog timeouts and Xid errors?",
+  "gold_ids": [
+   "7ecd6ca829f79403"
+  ]
+ },
+ {
+  "query": "In our staging cluster, checkpoint downloads sometimes hang when resuming with an HTTP Range request to a cloud storage signed URL; what unexpected HTTP status code is sometimes returned instead of partial content that triggers the stall?",
+  "gold_ids": [
+   "14bf508dbed40d53",
+   "4af05beba360e02b"
+  ]
+ },
+ {
+  "query": "In the email thread about renewing the feature flag vendor for Redwood, what peak burst capacity was proposed in the multi year renewal option SLA?",
+  "gold_ids": [
+   "52e3c0d35412411f",
+   "fa03ea0ca2c21591"
+  ]
+ },
+ {
+  "query": "In the incident where a CI runner service token was suspected of being used from two different datacenter IP ranges minutes apart, what time window did the team decide to audit for artifact uploads and repository pushes?",
+  "gold_ids": [
+   "4c390c869417155c",
+   "8f348b8b768b2f7c"
+  ]
+ },
+ {
+  "query": "What was identified as the root cause of the hover double-outline or glow issue on small icon-style buttons, and what change was proposed to prevent stacked shadow artifacts?",
+  "gold_ids": [
+   "555c5707ab30bc28",
+   "b8f6eb714eaa8cc0"
+  ]
+ },
+ {
+  "query": "In our design system buttons, what approach was chosen to show a loading spinner without the button shifting size when the text length changes?",
+  "gold_ids": [
+   "b69b1818f919d8a1",
+   "e91549b4d382c143"
+  ]
+ },
+ {
+  "query": "What is the proposed backend API endpoint and query parameters for fetching a trace in either grouped or full detail for the console timeline view?",
+  "gold_ids": [
+   "0c200407aab966b0",
+   "cc1d372a5a63d46c"
+  ]
+ },
+ {
+  "query": "For the NorthPoint Signalworks dedicated pilot, what p95 latency target did they set for short chat interactions?",
+  "gold_ids": [
+   "ca50af5c2562366c",
+   "db28ff79afa2f3b7"
+  ]
+ },
+ {
+  "query": "What remediation timeline by severity did the security team propose for the upcoming external penetration test findings?",
+  "gold_ids": [
+   "61a5c778bc61f97d"
+  ]
+ },
+ {
+  "query": "During the November 2025 us-east incident where streaming chat responses were dropping, what was the internal start and mitigation time that support shared with the affected customer?",
+  "gold_ids": [
+   "4dc2cae3b18903ae",
+   "7ccd32ce718cc962"
+  ]
+ },
+ {
+  "query": "What p95 latency goal did the founder set for the on-page product Q and A widget for the streetwear brand that expects big traffic spikes during limited edition drops?",
+  "gold_ids": [
+   "75faee706defe1cd",
+   "cc52dc3070237c48"
+  ]
+ },
+ {
+  "query": "What did the internal usability test with six reviewers conclude about the table column compression feature, especially regarding its discoverability?",
+  "gold_ids": [
+   "b82b6425770ec444",
+   "f15f7e29574c833e"
+  ]
+ },
+ {
+  "query": "What is the default wait time used by the new tool-call batching invoker, and how does it differ between hosted and dedicated tiers?",
+  "gold_ids": [
+   "1bb65cc0cd9596aa",
+   "b63d8f3c87137748"
+  ]
+ },
+ {
+  "query": "In an ops day log about GPU rebalancing and brief west region network instability, what was the target slot capacity for the small hosted pool in the slot metrics dashboard?",
+  "gold_ids": [
+   "563ec86af36af413",
+   "82e8d3938e90294f"
+  ]
+ },
+ {
+  "query": "In our internal dry run of marketplace onboarding, what time window did the team suggest we describe as a normal entitlement sync delay before telling customers to contact support?",
+  "gold_ids": [
+   "2bcb65600f2f9268",
+   "a66380bbdf2e6102"
+  ]
+ },
+ {
+  "query": "In the Private VPC console prototype for an interactive network path storyboard used to rehearse cluster upgrades, what is explicitly out of scope for the ticket?",
+  "gold_ids": [
+   "0d238108adb5ac3e"
+  ]
+ },
+ {
+  "query": "In the security incident about leaked encrypted log fragments in a partners cloud storage archive, what steps were listed in the triage checklist?",
+  "gold_ids": [
+   "1c0998a4d7dcf6df"
+  ]
+ },
+ {
+  "query": "What was the credit memo amount AWS Marketplace issued after fixing the March billing issue with duplicated reserved usage and reversing incorrectly applied VAT for a US buyer?",
+  "gold_ids": [
+   "3e76c00ca5a9ea0a",
+   "486fd89ed2c435f7"
+  ]
+ },
+ {
+  "query": "How does the new v1 chat compatibility layer handle invalid tool or function schemas, and what HTTP status does it return when validation fails?",
+  "gold_ids": [
+   "79bed41b140dff9d",
+   "aef1399b858d1823"
+  ]
+ },
+ {
+  "query": "What change was introduced to prevent oscillations in the new GPU scratch memory allocator that can trigger repeated micro-batch splits?",
+  "gold_ids": [
+   "3e501f756aeb6af7",
+   "43f89e2eea9c7db2"
+  ]
+ },
+ {
+  "query": "Why are some newly created Okta provisioned users getting a 403 when accessing the model observability metrics or dashboard, and what was the underlying type mismatch causing the missing role mapping?",
+  "gold_ids": [
+   "d0140a66ba7465a1",
+   "ec1f84947e85240c"
+  ]
+ },
+ {
+  "query": "What is the three-step message sequence used for the new cross-language streaming startup handshake in the SDKs?",
+  "gold_ids": [
+   "83a405f2b7a889b7",
+   "c300ca92cfdb247f"
+  ]
+ },
+ {
+  "query": "In the proposal for an anchor-based trace drilldown panel that pins a span or request correlation, what is the MVP limitation on how many anchors can be pinned in a workspace?",
+  "gold_ids": [
+   "6176a0c62257fb85",
+   "8e922f933c0e98bb"
+  ]
+ },
+ {
+  "query": "In a morning account blitz note from May 2026, what was the proposed mitigation to address repeated inference timeouts for a healthcare customer with a mid-June renewal?",
+  "gold_ids": [
+   "344f8cb7966073c1",
+   "3a22b35dee0f4a71"
+  ]
+ },
+ {
+  "query": "What was the low-risk mitigation plan for BrightHealth AI to reduce recurring tail-latency spikes after enabling aggressive per-tenant batching, prefix cache prefetch, and a fast quantization profile, including the small initial traffic split to a stable profile?",
+  "gold_ids": [
+   "2cbaacd4d70ce8e6",
+   "8feea127ce9378dc"
+  ]
+ },
+ {
+  "query": "In the design for tenant credit based routing that can spill over to hosted capacity, what are the hysteresis window durations used for the different credit tiers?",
+  "gold_ids": [
+   "4d3e3bde95d75278",
+   "a48d26b8d8492b7a"
+  ]
+ },
+ {
+  "query": "During the year end handoff meeting, what was identified as the cause of the early December latency incident impacting some p95 requests?",
+  "gold_ids": [
+   "257371deb6c684a6",
+   "70ece183cdcb14a5"
+  ]
+ },
+ {
+  "query": "What was the root cause of the customer invoice overcharge where an organization-wide promotional credit was mistakenly redistributed as charges across multiple child accounts during a billing reconciliation run in a hybrid dedicated plus hosted setup?",
+  "gold_ids": [
+   "7ed880bd2b954705",
+   "b3f2ae862162a9d0"
+  ]
+ },
+ {
+  "query": "What is the target reduction in product manager first-touch triage time for high-touch enterprise requests when using the intake checklist and minimum implementation slate?",
+  "gold_ids": [
+   "5dd4d99160072d83",
+   "8bac209971a7d3d0"
+  ]
+ },
+ {
+  "query": "What are the three request quality and cost tiers proposed in the lightweight interaction tiering model for user facing features?",
+  "gold_ids": [
+   "2b742638e4730e5b",
+   "7a433444b320acb1"
+  ]
+ },
+ {
+  "query": "Why would Apple Silicon MacBooks coming back from logic board repair get stuck during automated DEP or MDM setup at first boot, with the device checking in but the management profile and SSO certificate never installing?",
+  "gold_ids": [
+   "73fe0905d0a13ade",
+   "d9420c9523944740"
+  ]
+ },
+ {
+  "query": "What default lookahead window did the new predictive headroom autoscaling design choose for forecasting future load on dedicated capacity?",
+  "gold_ids": [
+   "6becf2f21efbb0e3",
+   "81ab9fbf555c2a9e"
+  ]
+ },
+ {
+  "query": "In the Slack chat about a desk plant rap contest, where was the remaining sticker stock said to be stored?",
+  "gold_ids": [
+   "812c6a23787ccd7e"
+  ]
+ },
+ {
+  "query": "What are the three runtime precision settings introduced for controlling fp32 vs lower precision execution, and what does each mode allow?",
+  "gold_ids": [
+   "4b04bf41aeab1ace",
+   "5c9d54ca2f3eb0a9"
+  ]
+ },
+ {
+  "query": "What summary turnaround time after transcription completion is the call-summarization customer targeting?",
+  "gold_ids": [
+   "16890763cb04e727",
+   "2261e0f53c34ce1d"
+  ]
+ },
+ {
+  "query": "In the key rotation runbook, what is the recommended default rotation interval for per-tenant key encryption keys used to wrap data keys?",
+  "gold_ids": [
+   "13757714f54d3399",
+   "7b0668926500895c"
+  ]
+ },
+ {
+  "query": "In the engineering rollout chat about deprecating v2, what was the start time and region for the initial canary deployment and what traffic ramp was planned?",
+  "gold_ids": [
+   "df958526ac602335"
+  ]
+ },
+ {
+  "query": "What was the founders statement about keeping sensitive health and personal data within US borders and needing audit logging for the hosted API trial?",
+  "gold_ids": [
+   "a1ee3f1ee754b82d"
+  ]
+ },
+ {
+  "query": "What is the recommended emergency action to temporarily simplify routing policy rules when the edge route agent is causing high evaluation latency and end to end latency spikes?",
+  "gold_ids": [
+   "9f978f909b9e6407",
+   "c6262efec1b083f4"
+  ]
+ },
+ {
+  "query": "What are the five synthetic workload templates defined for the repeatable probe harness that compares competitor model endpoints across regions?",
+  "gold_ids": [
+   "4d35a972c9bb2693",
+   "f88b8e9ce48cc040"
+  ]
+ },
+ {
+  "query": "When an employee is marked for immediate termination in Workday, why can a third party SaaS seat stay billable for around two weeks even after Okta deactivates the user?",
+  "gold_ids": [
+   "269e2c74c9c650d9",
+   "457e0b1fd2188f47"
+  ]
+ },
+ {
+  "query": "In the OpenAI Responses v3 compatibility work, how are overly large user-provided seeds handled to keep determinism, and where is the original seed stored for auditing?",
+  "gold_ids": [
+   "a0ca986b552498c1",
+   "dbb15ec4c8d4c9b6"
+  ]
+ },
+ {
+  "query": "In the MedSecure logging and PII redaction POC email thread, what method did Redwood propose for pseudonymizing trace or request IDs so correlation works within a tenant but not across customers?",
+  "gold_ids": [
+   "4cf0520ef28e6bda",
+   "ced36840d9e8ec27"
+  ]
+ },
+ {
+  "query": "What was the temporary mitigation applied to the internal load balancer serving the gen-infer VIPs around 03:40 UTC that immediately reduced TCP retransmits?",
+  "gold_ids": [
+   "8f318f7c5486019d"
+  ]
+ },
+ {
+  "query": "What change was applied to reduce the latency spike caused by a KV cache and continuous batching regression on the us-west-2 inference production cluster?",
+  "gold_ids": [
+   "5e8f1cdbf4a00dfb",
+   "fc618325a8c525b2"
+  ]
+ },
+ {
+  "query": "In the meeting about Zephyrus Labs unit cost and deployment options, what utilization threshold was mentioned as the point where a dedicated reserved setup typically becomes cheaper than hosted?",
+  "gold_ids": [
+   "4863b757e5a4bd1b",
+   "d90d9c2e042e167b"
+  ]
+ },
+ {
+  "query": "What are the default significance threshold and minimum sample size guidelines for deciding whether a model regression is actionable in the causal regression investigation handbook?",
+  "gold_ids": [
+   "5bc70d0f95781e6d",
+   "604d2cb364f54879"
+  ]
+ },
+ {
+  "query": "How is the baseline token cost computed for the per-span cost delta metric in the new tracing observability change?",
+  "gold_ids": [
+   "1f31b8c8207ad0b9",
+   "61a5017b998cf013"
+  ]
+ },
+ {
+  "query": "What is the standard amount of time a new hire buddy is expected to spend per day during the first two weeks when a long-term contractor is converted to a full-time employee?",
+  "gold_ids": [
+   "abb071c7a724e433",
+   "d457d78df25d25be"
+  ]
+ },
+ {
+  "query": "What are the proposed internal time to mitigate targets by severity for incident response, regardless of customer deployment tier?",
+  "gold_ids": [
+   "5ac830539b2ccc0b",
+   "721af2e97d0108d6"
+  ]
+ },
+ {
+  "query": "What baseline metrics are listed for the Console activation health panel in the quarterly activation plan for customer-hosted Private VPC deployments?",
+  "gold_ids": [
+   "2c5eed33fbdeaee6",
+   "6e76c09d102ddc56"
+  ]
+ },
+ {
+  "query": "In the Velora AI Solutions opportunity, what requirement did their security team say was non-negotiable before going live?",
+  "gold_ids": [
+   "bd4b0532a89bb7c0"
+  ]
+ },
+ {
+  "query": "In an internal onboarding thread for a new language model, what was the estimated GPU memory used by the attention key value cache for a single 8192 token sequence (batch 1)?",
+  "gold_ids": [
+   "40366a43f5037e2c",
+   "f4189264f99102e2"
+  ]
+ },
+ {
+  "query": "What was the performance threshold for short requests that the solo iOS founder said would convince them to buy after a demo?",
+  "gold_ids": [
+   "48f07e6b34daaa73"
+  ]
+ },
+ {
+  "query": "What is the rollout ramp schedule and time window used for the canary phase when validating adaptive degradation behavior in the Redwood serving runtime?",
+  "gold_ids": [
+   "6b5ca5ec8f81deb9",
+   "bc97e3d401a1db64"
+  ]
+ },
+ {
+  "query": "What are the acceptance thresholds for rerank performance in the mini-bundle unified inference API, including the required top-1 precision and the P95 latency limit?",
+  "gold_ids": [
+   "bf5dab461dcd7515",
+   "d2164f4a959f313d"
+  ]
+ },
+ {
+  "query": "In the proposed small business token pricing tiers, what is the monthly included token allowance for the plan priced at $25 per month?",
+  "gold_ids": [
+   "cea5323c23d2cfeb",
+   "f1cdea37a73174e4"
+  ]
+ },
+ {
+  "query": "What is the phased rollout schedule for removing the legacy compatibility proxy and migrating old persisted flag configs to a single newer schema?",
+  "gold_ids": [
+   "4a2529ac5e1c04ad",
+   "996105fcc00e3bcf"
+  ]
+ },
+ {
+  "query": "For the ClearSight Health pilot discussions with Redwood, what specific types of patient-related data did their security lead say should be treated as PHI for this integration?",
+  "gold_ids": [
+   "038093dda6ae3336",
+   "775636c165faefc6"
+  ]
+ },
+ {
+  "query": "Why would a tenant start getting rate limit 429 errors on real time chat or streaming endpoints a few minutes after being upgraded to a higher tier, apparently because background catch up jobs consume the newly increased burst allowance first?",
+  "gold_ids": [
+   "568498151ed6a5bd",
+   "cd315a8957f76ae5"
+  ]
+ },
+ {
+  "query": "In the SOC2 readiness notes, what log retention duration is mentioned as a risk for some environments?",
+  "gold_ids": [
+   "8449c9142d8bcf88",
+   "89050343dcc4a704"
+  ]
+ },
+ {
+  "query": "In the PRD about adding managed orchestration for multi-model inference pipelines, what are the rollout milestones and target quarters for alpha, beta, and general availability?",
+  "gold_ids": [
+   "5a32545823cd0595",
+   "69ab4cb2da629357"
+  ]
+ },
+ {
+  "query": "How do we turn observed production workload patterns for inference routes into defensible latency SLO targets and cost sensitivity guidance, including clustering and profiling steps?",
+  "gold_ids": [
+   "196d94ae62c438ac",
+   "2e0e0fc4b2fecdab"
+  ]
+ },
+ {
+  "query": "When the audit event buffer is full or the local durable queue hits its size limit, what should happen to must-log admin actions and what HTTP status is returned?",
+  "gold_ids": [
+   "0a23d36515f52409",
+   "9b80b94cc31f1c0b"
+  ]
+ },
+ {
+  "query": "What documents did Silver Birch ScribeCo say they needed from us before they could proceed with using real customer data in their trial?",
+  "gold_ids": [
+   "5c7531c26b6ebe22"
+  ]
+ },
+ {
+  "query": "When is the 48-hour throughput and latency benchmark on the dedicated pool due to be completed?",
+  "gold_ids": [
+   "22b13912344c047f",
+   "3cf5ffeead6c0498"
+  ]
+ },
+ {
+  "query": "Which GPU cluster or pool was flagged as having relatively low average usage but high churn, making its free capacity unreliable during a specific morning UTC window?",
+  "gold_ids": [
+   "6566fbd8298c7704",
+   "73e38edc68fd5898"
+  ]
+ },
+ {
+  "query": "What was the requested proof-of-concept duration for the inbound content marketing company evaluating batching and caching for high-volume templated SEO article generation?",
+  "gold_ids": [
+   "6346ce8c26217d19",
+   "bb5b51362c4b3ae5"
+  ]
+ },
+ {
+  "query": "What percent reduction in monthly model or token spend was the founder of a small developer tools micro-SaaS aiming for while keeping acceptable latency?",
+  "gold_ids": [
+   "52bf76739dcbe6a9"
+  ]
+ },
+ {
+  "query": "What is the formula used by the new autoscaling approach that combines a high-percentile request rate with request variability to compute effective demand, including the default weights?",
+  "gold_ids": [
+   "9d620fdd31258c80",
+   "ce47f0fba5a3df98"
+  ]
+ },
+ {
+  "query": "For IronCrest Bioinformatics evaluating Redwood, what was the typical time to get from signup to receiving the first response token using the self-serve quickstart flow?",
+  "gold_ids": [
+   "72b01f25c7acd077",
+   "e5a4cebcde816697"
+  ]
+ },
+ {
+  "query": "What is the phased rollout plan for the change that smooths dedicated autoscaling signals and adds an advisory gateway-to-controller backpressure mechanism?",
+  "gold_ids": [
+   "ca4f980fc9e3f1b5",
+   "f196095e9bcd280e"
+  ]
+ },
+ {
+  "query": "When are production changes normally allowed to be deployed, and what are the default business hours change window?",
+  "gold_ids": [
+   "065d38234ba9e2af",
+   "259f83404034bbb4"
+  ]
+ },
+ {
+  "query": "What was the temporary workaround used to prevent the Windows 11 imaging task sequence from failing when a provisioning script breaks under certain non-default locale collation settings?",
+  "gold_ids": [
+   "1175a3bded9a4482",
+   "54ab33f2ffac433d"
+  ]
+ },
+ {
+  "query": "What latency goals did the founder of Birch Branch Apps mention for short in-app chat responses during their early discovery call?",
+  "gold_ids": [
+   "586463319700aa7b",
+   "8347374a147fc054"
+  ]
+ },
+ {
+  "query": "What were the performance goals for the multilingual enterprise search project in terms of median and tail response time for retrieval plus reranking, and did they allow a higher tail latency for Japanese or Chinese?",
+  "gold_ids": [
+   "28998d388db2adbc",
+   "83b2817b083d7a90"
+  ]
+ },
+ {
+  "query": "In a case where server-sent event streaming responses sometimes lose the very last space or period only when traffic goes through an HTTP/2 edge proxy with stream preemption, what mitigation was proposed to stop the final bytes from being dropped?",
+  "gold_ids": [
+   "0def71631765613f",
+   "71e2d3b583cd4ab2"
+  ]
+ },
+ {
+  "query": "What are the pass fail criteria used in the quick pull request smoke checks for the embedding robustness noise and input length evaluation suite?",
+  "gold_ids": [
+   "7b947e898b389a50",
+   "d146419e6f9f2753"
+  ]
+ },
+ {
+  "query": "What was the suspected root cause behind the brief p99 latency spikes on the hosted chat inference route during small burst traffic?",
+  "gold_ids": [
+   "96e91f6bc9bb6f01",
+   "dad8fafb232efe1e"
+  ]
+ },
+ {
+  "query": "What is the recommended step-by-step rollback and traffic split plan to mitigate correctness issues and tail latency spikes after a healthcare customer enabled adaptive batching together with an INT8 quantized model on their dedicated production route?",
+  "gold_ids": [
+   "28260d867389c5eb",
+   "32bce13902c7c90b"
+  ]
+ },
+ {
+  "query": "What was the temporary mitigation applied for the enterprise customer whose SSE streaming chat responses were getting truncated after an edge proxy handoff in us-east?",
+  "gold_ids": [
+   "df350e994383e970",
+   "f03814790a1aa207"
+  ]
+ },
+ {
+  "query": "What KPI targets did the customer set for improving support ticket handling time and high priority triage speed in their Zendesk automation pilot?",
+  "gold_ids": [
+   "be036148b47c8abc"
+  ]
+ },
+ {
+  "query": "What was the CTOs non negotiable security requirement mentioned on the early 2026 demo call for the analytics SaaS customer moving from hosted API to a dedicated VPC deployment?",
+  "gold_ids": [
+   "7b489dcc941248eb",
+   "86668bebe7673ab4"
+  ]
+ },
+ {
+  "query": "What false positive threshold did the prospect set for suggested code review comments in the evaluation criteria for their PR review assistant POC?",
+  "gold_ids": [
+   "0e3c154013989a8c",
+   "ec5aa282572426fe"
+  ]
+ },
+ {
+  "query": "What is the minimum cache time-to-live safeguard that was added to the new automated policy recommendation service to prevent cold-start issues after deploys?",
+  "gold_ids": [
+   "7c85a5ee1d56dc4c",
+   "d963bf5fb0470183"
+  ]
+ },
+ {
+  "query": "What was the target goal for average router queue time for very short token sequences, compared to the baseline of 28 ms, in the weekly sprint anchor about reducing staging inference queuing latency?",
+  "gold_ids": [
+   "497250cb027e72b5",
+   "a6178fc852b2c2ec"
+  ]
+ },
+ {
+  "query": "What uptime and latency service level targets are stated for the hosted versus reserved/dedicated LLM inference offering in the SaaS go-to-market brief?",
+  "gold_ids": [
+   "92cd9dd84126c179",
+   "9a650011ea0209c7"
+  ]
+ },
+ {
+  "query": "What was the short-term mitigation suggested to stabilize RDMA traffic when there was packet loss and latency spikes between two racks in the same availability zone?",
+  "gold_ids": [
+   "32ee5e3412981a9d"
+  ]
+ },
+ {
+  "query": "In the recent Friday all-hands notes, what was the reported median latency improvement attributed to continuous batching?",
+  "gold_ids": [
+   "7f689b0b48b152ed",
+   "afe0ab13a922abc2"
+  ]
+ },
+ {
+  "query": "For the upcoming joint demo with a Japan-based logistics customer, what document did they prefer for trial procurement instead of a full purchase order?",
+  "gold_ids": [
+   "21683c40a28cc7f4",
+   "27d197b6134920e2"
+  ]
+ },
+ {
+  "query": "What change was introduced to reduce tail latency in a paged key value cache by defragmenting free space during frees and keeping frequently used key prefixes from being evicted?",
+  "gold_ids": [
+   "2560732ec3ffd9c3",
+   "43bb8a20371b568b"
+  ]
+ },
+ {
+  "query": "What is the planned cutoff date when the old model capability format may stop being accepted for new writes?",
+  "gold_ids": [
+   "1cc2280cbdfbf3e7",
+   "37f88d4506717ab0"
+  ]
+ },
+ {
+  "query": "In the recent SDK update that added typed streaming errors and a reconnecting iterator API across Python, TypeScript, and Go, what package versions were released for each SDK?",
+  "gold_ids": [
+   "2532e95c6bbe81dc",
+   "fca5cce75b24b89f"
+  ]
+ },
+ {
+  "query": "When do reservations open for the new dedicated GPU option that is rolling out first in the EU Central and India South regions?",
+  "gold_ids": [
+   "b5ca98a0d15618dd"
+  ]
+ },
+ {
+  "query": "What are the required permission scopes for an API key when SDK examples fail with a 401 unauthorized error during developer onboarding?",
+  "gold_ids": [
+   "8db10c8d03423730",
+   "db21d11258f000c2"
+  ]
+ },
+ {
+  "query": "Why did the 3am nightly release pipeline stop uploading build artifacts to the internal S3 style storage after a security sudo policy update?",
+  "gold_ids": [
+   "1b2ff9688312e34c",
+   "36cf934868778ef2"
+  ]
+ },
+ {
+  "query": "What caused the GPU training slowdowns in one us-east rack where same-rack pod latency jumped to tens of milliseconds and NCCL allreduce started timing out, and what network symptom on the top-of-rack switch pointed to it?",
+  "gold_ids": [
+   "2e0eaf3a1468b5a2",
+   "cc8f7dcf843161ab"
+  ]
+ },
+ {
+  "query": "In the engineering chat about a Go refactor PR, what did they change in the linter config to get CI passing when a gocritic rule complained about context parameter types in tests?",
+  "gold_ids": [
+   "91368f3bb3aad234"
+  ]
+ },
+ {
+  "query": "What success targets were suggested for the four week micro credential pilot with SI partners (completion percentage and number of integrations started within about two months)?",
+  "gold_ids": [
+   "31aecc3b29c8696b"
+  ]
+ },
+ {
+  "query": "What are the lifecycle states and key transitions for the edge adapter service that registers with a control plane and can fall back to hosted inference?",
+  "gold_ids": [
+   "5e24a59967e6660d",
+   "82b2cc0ab24fb1bf"
+  ]
+ },
+ {
+  "query": "In the planning meeting about a strict deployment change freeze and automatic fallback during a model rollout, what composite health score thresholds defined green, amber, and red states?",
+  "gold_ids": [
+   "3006d4d088da52b6",
+   "3f8c63cd1c69b16a"
+  ]
+ },
+ {
+  "query": "What is the corrective journal number created to move a supplier credit amount from the DEV cost center to the OPS cost center after it was posted incorrectly during the March close?",
+  "gold_ids": [
+   "295dcdfff9d3f36a",
+   "3e8a2c86b8220835"
+  ]
+ },
+ {
+  "query": "What are the three default preset options in the autoscaling policy builder for the dedicated capacity trial onboarding flow?",
+  "gold_ids": [
+   "470da4c762e32854",
+   "b2d3d21ad6a8baa9"
+  ]
+ },
+ {
+  "query": "What were the two immediate options the SRE suggested when a finance customer could not reserve four A100 GPUs in eu-west-1 due to insufficient capacity?",
+  "gold_ids": [
+   "0a08094271318216",
+   "2e3901a397a27ba3"
+  ]
+ },
+ {
+  "query": "What change reduced GPU memory use and improved first-token latency by prepacking INT8 weights and fusing smoothquant dequantization into the GEMM kernel without creating intermediate tensors?",
+  "gold_ids": [
+   "94ac5422a33b5af8",
+   "f70e8f4b8c9d32d4"
+  ]
+ },
+ {
+  "query": "In the OpenAI compatibility adapter update for Redwood deployments, what priority order does the normalizer use to resolve conflicting tool selection hints?",
+  "gold_ids": [
+   "b121baa15144ab54",
+   "cb69a7f84d5f343a"
+  ]
+ },
+ {
+  "query": "What caused the brief period where a few tenants were not being throttled correctly after a shard reassignment happened at the same time as a runtime policy reload?",
+  "gold_ids": [
+   "b9e73ed6d9cd4230",
+   "e3cd27edb37f7e2a"
+  ]
+ },
+ {
+  "query": "What are the pass fail threshold percentages for the release guardrails for critical versus lower risk controls in the SSO and audit log compliance rollout plan?",
+  "gold_ids": [
+   "057eebb0fb862238",
+   "e04e87df57980daa"
+  ]
+ },
+ {
+  "query": "In the HyperOnboard 30-60-90 onboarding template, what are the escalation conditions that should trigger an email to people ops and the hiring manager?",
+  "gold_ids": [
+   "04b73f6d5a83a6ca",
+   "70b4ab5dac13ab58"
+  ]
+ },
+ {
+  "query": "What was the agreed condition and timing for approving the additional senior infrastructure engineering hire under the hiring freeze plan?",
+  "gold_ids": [
+   "b97c9b26136ece53",
+   "e291818c8390e7e4"
+  ]
+ },
+ {
+  "query": "What procurement target date did ClearPath Health give for signing an agreement after the streaming model benchmark and security review?",
+  "gold_ids": [
+   "450481de1d899a51",
+   "e51023f44e95cb6e"
+  ]
+ },
+ {
+  "query": "What configuration option was added to let repositories explicitly allow Docker-in-Docker during the staged rollout of the new GitHub composite action CI setup?",
+  "gold_ids": [
+   "5fc577670ce6ee58",
+   "dcabc85fbbcfc396"
+  ]
+ },
+ {
+  "query": "What is the HTTP endpoint and method for the new service that returns recommended default profiles for batching, cache lifetimes, and quantization based on recent traffic telemetry?",
+  "gold_ids": [
+   "25e00e69a0023860",
+   "f505ae2f3fac0e4a"
+  ]
+ },
+ {
+  "query": "Who is responsible for signing off on latency regression in the weekly customer rollout tracker for Nimbus Health?",
+  "gold_ids": [
+   "3bb906e0944b0162",
+   "570efe9709c2fdeb"
+  ]
+ },
+ {
+  "query": "What was the performance goal for response time at the 95th percentile for single-request text generation for a small SaaS lead building automated social content drafts and support triage?",
+  "gold_ids": [
+   "29d98e941beaebf7",
+   "51e071ae236ff4d1"
+  ]
+ },
+ {
+  "query": "In a production incident during a staggered canary rollout in us-east-1, what ordering change was made to the autoscaler prewarm handshake to stop some tenant-pinned traffic from getting routed to an older model variant?",
+  "gold_ids": [
+   "11a838a33c64a1d5",
+   "75a93953b182c77a"
+  ]
+ },
+ {
+  "query": "In the eng-platform standup about staging 401 spikes on the generate endpoint, what header value caused the requests to miss both the primary and fallback route predicates and hit the fallthrough route?",
+  "gold_ids": [
+   "5229d1e274f2b748",
+   "85f47ccbe72aaae3"
+  ]
+ },
+ {
+  "query": "What maintenance window and expected downtime were planned for the rollout bringing up new dedicated GPU capacity nodes, including the canary and broader rollout dates?",
+  "gold_ids": [
+   "6994d2e874ba9ea4"
+  ]
+ },
+ {
+  "query": "What are the required fields that each entry in the contract conformance results ledger must include?",
+  "gold_ids": [
+   "a1ae9fd2d153df77",
+   "ae41db672c7192d6"
+  ]
+ },
+ {
+  "query": "What keyboard-only interaction model is required for the compact dashboard widgets, including how focus enters the card and how users move and activate controls inside it?",
+  "gold_ids": [
+   "30ef1db36f376d28",
+   "3acb7082b34773b2"
+  ]
+ },
+ {
+  "query": "When does booking open for the new top end 80GB accelerator on dedicated clusters in the EU Central and India South locations?",
+  "gold_ids": [
+   "f32c6a82f64392dc"
+  ]
+ },
+ {
+  "query": "What were the final concession terms approved for the retail partner purchase through the major cloud providers marketplace, specifically the first year price reduction and the referral payout schedule after launch?",
+  "gold_ids": [
+   "0b59c83f95b2e233",
+   "5684e81b0a9f6f9c"
+  ]
+ },
+ {
+  "query": "In the recent change that made low bit math safer for inference, what is the default pass rate used to decide when a machine is allowed to step down from the safest numeric mode?",
+  "gold_ids": [
+   "2db5b87f2f5c38f6",
+   "b495ce5c37d861f6"
+  ]
+ },
+ {
+  "query": "What caused an enterprise tenant in Western Europe to suddenly get routed to a Southeast Asia edge during a short mid March 2026 load spike on the vectorization service, adding about 200ms and triggering ingestion timeouts, even though the tenant was supposed to stay in Europe?",
+  "gold_ids": [
+   "6b5c395b5220a3aa",
+   "7dc4038f451905e6"
+  ]
+ },
+ {
+  "query": "In our rollout system, what is the name of the new mechanism that prevents a candidate release from getting full user traffic until a dry run with replayed requests and smoke checks has passed?",
+  "gold_ids": [
+   "7807102a6125651b",
+   "e9bc0a1fcca60478"
+  ]
+ },
+ {
+  "query": "During a large overnight upload run using short lived credentials refreshed by many transient workers, what client side scheduling change was recommended to stop periodic too many requests errors after a partial worker restart caused refresh bursts?",
+  "gold_ids": [
+   "583a99fa023dfa72",
+   "bb2e1cb2c8d7bfc7"
+  ]
+ },
+ {
+  "query": "During a failover between two active locations, what is the default time window where a short-lived resume credential is accepted on the destination before doing full authentication again?",
+  "gold_ids": [
+   "136a781caea19733",
+   "aaa78dbf704a2b79"
+  ]
+ },
+ {
+  "query": "What are the specific gate thresholds used to automatically decide whether a compressed model variant is allowed, canaried, or blocked, including the limits for chat similarity drop, code pass rate change, retrieval embedding quality, and acceptable latency and cost changes?",
+  "gold_ids": [
+   "990e47a5a3a6d7de",
+   "d6cc7e12bce3e447"
+  ]
+ },
+ {
+  "query": "When is the 60 to 90 minute technical deep dive scheduled with the healthcare client about running model serving inside their own isolated network, and what is the time window in Pacific time?",
+  "gold_ids": [
+   "5aea98cf51429be0",
+   "dab3fc0fde34e716"
+  ]
+ },
+ {
+  "query": "What was the recommended way to split a year long commitment for about eight high end inference accelerators across North America, Europe, and Southeast Asia while keeping a small extra pool for short spikes?",
+  "gold_ids": [
+   "7233f10175b9cb26",
+   "cec2af1e4633d986"
+  ]
+ },
+ {
+  "query": "In the notes about keeping long, stop-and-go chat sessions cheap without replaying the whole history, what storage setup and time-to-live were proposed for keeping the compact per-session state for recent sessions versus longer retention?",
+  "gold_ids": [
+   "836a1b1eb8c0b87c",
+   "d2d2a1cab224e181"
+  ]
+ },
+ {
+  "query": "When a production model experiment shows a sustained increase in harmful output warnings for two evaluation windows, what automated actions should the platform take regarding traffic shifting and incident/oncall notifications?",
+  "gold_ids": [
+   "6b685f3221e1b7a7",
+   "7941d1ba0213472c"
+  ]
+ },
+ {
+  "query": "In the recent recruiting email thread about an offer being sent for signature, what were the two proposed onboarding start dates (one earlier limited-access option and one later full start) mentioned due to immigration timing?",
+  "gold_ids": [
+   "68d36e7d236f66ce",
+   "be5b702dcd34b985"
+  ]
+ },
+ {
+  "query": "In our offline installer release process, how do we expose per-component supply chain provenance so an operator can see which build system and commit produced each piece and optionally enforce that missing or bad attestations fail the index step?",
+  "gold_ids": [
+   "971e8d571b5e5873",
+   "9d30f4c5eab25613"
+  ]
+ },
+ {
+  "query": "In the February 2026 update to our inference tuning product, what change caused older route configuration payloads to start getting rejected with a 400 error, and what field needs to be removed to fix it?",
+  "gold_ids": [
+   "39d88864e9c24332",
+   "5c19bd738d7c5235"
+  ]
+ },
+ {
+  "query": "During a short surge in vector writes last March, a customer in the western US region saw search answers point to the wrong source records and also couldnt verify charges because telemetry for about twenty minutes never arrived; what was the suspected technical cause behind both symptoms?",
+  "gold_ids": [
+   "b7e0ffd568367db3",
+   "e84f82c926d369b6"
+  ]
+ },
+ {
+  "query": "In our GPU inference runtime, what change was introduced to cut the worst-case temporary device-memory spike when short and long requests are interleaved, especially for attention-heavy ops that used to grab per-op temp buffers?",
+  "gold_ids": [
+   "1a9324d0c09579ac",
+   "c3aed0bc45f5b296"
+  ]
+ },
+ {
+  "query": "For the European customer kickoff scheduled the morning of Dec 21, who is assigned as the standby person to handle operational issues during the hands-on portion?",
+  "gold_ids": [
+   "474f4c50e544fe86",
+   "e98ee115a874e6ad"
+  ]
+ },
+ {
+  "query": "After moving a HIPAA customers production private VPC environment to a new internal token exchange service, why would an automation-run service identity start getting 403s when trying to act on behalf of a human admin for user management, even though the same action works with the humans own token?",
+  "gold_ids": [
+   "0aef5ddc3ac7ad14",
+   "5ab2542d5b49b359"
+  ]
+ },
+ {
+  "query": "From the internal sandbox microbench in the EU West lab around May 2029, what was the estimated dollars per one million tokens for the biggest model on a single 40GB GPU when using the no-batching low-latency mode on the long output workload (about 300 tokens per response)?",
+  "gold_ids": [
+   "0c1d7213454b72ec",
+   "30664e909e7fb4f2"
+  ]
+ },
+ {
+  "query": "In the quick A100 microbenchmark notes comparing 4-bit weight compression to half precision on a 7B model at single-item batching, what speedup and quality hit were observed for the simplest run?",
+  "gold_ids": [
+   "26d4ba9e0296d516",
+   "dafbc787f2ef5b94"
+  ]
+ },
+ {
+  "query": "During a major production outage, what is the prescribed sequence of actions for the first 60 to 90 minutes, from opening the live coordination call through confirming the service is healthy again?",
+  "gold_ids": [
+   "a940d1ae4f2674d4",
+   "ba9bbf59138c6755"
+  ]
+ },
+ {
+  "query": "In the EU West production setup where token streaming to browsers sometimes reconnects after a short handshake reset at the CDN layer, what change on the gateway side reduced cases where the last bit of generated text never arrives even though the backend says it finished?",
+  "gold_ids": [
+   "dd22cc74f2bbab5b",
+   "ea1d5c0ab2484cc4"
+  ]
+ },
+ {
+  "query": "After a recent refactor to request grouping and the per request memoization layer, what is the specific risk if the cache key canonicalization now treats a trailing slash differently between callers, especially in a multi customer environment?",
+  "gold_ids": [
+   "24e0b61507de0495",
+   "4b0ed88b6f5ddfc4"
+  ]
+ },
+ {
+  "query": "For the hospital system that wants to run an interactive intake chatbot and auto-generate discharge writeups entirely inside its own locked-down data center with no patient data leaving the network, what end-to-end response time target did they set for producing about 200 tokens under peak load?",
+  "gold_ids": [
+   "28a114e56916ec49",
+   "5e5d6a8d853e934c"
+  ]
+ },
+ {
+  "query": "During the Feb 14, 2026 APAC region outage where vector generation requests intermittently failed with server errors due to a cache layer getting overloaded by a scheduled warmup task, what immediate mitigation did the oncall apply to reduce the cascading retries across downstream nodes?",
+  "gold_ids": [
+   "53e7901516506fd4",
+   "b71bc54daada0cc8"
+  ]
+ },
+ {
+  "query": "In the EU-only finance search and fraud alert ranking opportunity where the main technical advocate left during an internal reorg and procurement later said spending is on hold until the Q3 cycle, what date did the procurement team first communicate the company-wide spending freeze?",
+  "gold_ids": [
+   "4ca703e1d4f5da93",
+   "8c7359b8f1cb8bd2"
+  ]
+ },
+ {
+  "query": "How should we automate the creation and teardown of short-lived experiment workspaces so that a request ticket spins up the needed tracking/docs/chat area, requires an approver before access is enabled, expires on a default one month timer with a simple extension, and writes an encrypted audit bundle to object storage when it shuts down?",
+  "gold_ids": [
+   "755961d8ddd5a165",
+   "9fe493803e3b6c52"
+  ]
+ },
+ {
+  "query": "What are the immediate follow up actions for the mid market product analytics SaaS that wants cheaper and more consistent in app assistant responses and is planning a short trial on the shared service before moving to a private network isolated deployment?",
+  "gold_ids": [
+   "0cbadfa6c82120d3",
+   "503c2a605579882e"
+  ]
+ },
+ {
+  "query": "What fields are included in the proposed runtime metadata JSON that apps can use as the single source of truth for whether a hosted model can do streaming or tool calls, what token ceilings apply (soft vs enforced), and what the expected output format guarantees are?",
+  "gold_ids": [
+   "3cd55caac4ce1bc0"
+  ]
+ },
+ {
+  "query": "In the 2027 renewal email thread about moving a customer from four capacity bands to a two level reserved plus overflow setup, what p95 response time was promised for the reranking endpoint under the base reservation assumptions?",
+  "gold_ids": [
+   "00858a1c8d4bfb8e",
+   "01f5061a7865b71a"
+  ]
+ },
+ {
+  "query": "In the recent observability change for tool invocation tracking, what is the staged rollout schedule and the temporary kill switch name used to gate it?",
+  "gold_ids": [
+   "3e295f4221cc9fa6",
+   "9d953392c9053f03"
+  ]
+ },
+ {
+  "query": "For the Fortune 500 oriented customer evaluating a dedicated inference setup for an agent assist contact center, what burst traffic level and duration did they ask the vendor to guarantee beyond their steady state request rate?",
+  "gold_ids": [
+   "1103f8c816ee3450",
+   "d946a524b46b112e"
+  ]
+ },
+ {
+  "query": "For a small B2B SaaS embedding a live chat helper inside their product that needs partial replies immediately while it fetches recent user-event context, what first-response-time target and concurrent-load threshold were set as the pass criteria for their short trial?",
+  "gold_ids": [
+   "9ef7ffd56126a4a4",
+   "bc1fdac43b703a6a"
+  ]
+ },
+ {
+  "query": "What is the numeric rule that turns recent automated test slice failure patterns plus latency and vector drift into a single 0 to 100 release risk score that decides whether to proceed, slow down, pause, or revert a staged model change?",
+  "gold_ids": [
+   "962d62081784e4ad",
+   "cb48bb8038c4a7b1"
+  ]
+ },
+ {
+  "query": "In our hosted chat streaming, a corporate gateway forces the stream into a polling style connection and after a reconnect the assistant reply consistently loses the last couple sentences and the final completion status never arrives; what is the recommended short term mitigation for customers until a server side fix is deployed?",
+  "gold_ids": [
+   "34c0968eae9f0a8e",
+   "a50b4843b1ce7a66"
+  ]
+ },
+ {
+  "query": "How should we set up low-noise oncall dashboards and tiered paging for a streaming text generation service so that responders can jump from a latency spike to a trace with hashed prompt references and cache hotness context and resolve issues within about 15 minutes?",
+  "gold_ids": [
+   "7d72b8cc72df2c4c",
+   "97681cd5fe44bbb1"
+  ]
+ },
+ {
+  "query": "For a content templating company planning tens of millions of very short generations during a Q3 ramp, what was the requested plan for a time limited evaluation that included a large free usage allowance?",
+  "gold_ids": [
+   "28601c97e2538dae",
+   "68c4c571ed03e980"
+  ]
+ },
+ {
+  "query": "In the mid March 2026 incident where a regional dedicated serving cluster briefly ran out of spare capacity and the automatic scaler couldnt add nodes due to provider limit type errors, what exact build version did on call revert to in order to restore capacity?",
+  "gold_ids": [
+   "2d62740e4206b125",
+   "afca4c58e8d1dc65"
+  ]
+ },
+ {
+  "query": "On managed iPhones on corporate Wi-Fi, why do long-lived server push text streams sometimes reconnect after the app is backgrounded and then end with a few seconds of silence and a cut-off final JSON fragment instead of a clean end marker?",
+  "gold_ids": [
+   "c2fb04f2e27ae004",
+   "e692f3635e900507"
+  ]
+ },
+ {
+  "query": "In our cross team outage process, what is the expected update rhythm for the shared incident channel from the first message through containment, including when the interval should be shortened?",
+  "gold_ids": [
+   "b53730f6eeeffdb6",
+   "c9b0cd90b61eb474"
+  ]
+ },
+ {
+  "query": "In a customer owned cloud network peered to our control plane, why would big model artifact downloads over long lived encrypted multiplexed streams start hanging after a transit vendor policy change, then immediately work again when the node packet size limit is lowered?",
+  "gold_ids": [
+   "445cb8e706ed97e7",
+   "463a69566ada7a43"
+  ]
+ },
+ {
+  "query": "In the private network hosted cluster console, what are the planned quick actions on the compact outage summary tile that on call engineers can use to stop a risky release or switch to a safer model option?",
+  "gold_ids": [
+   "38224e944bf46521",
+   "c22160a18f951894"
+  ]
+ },
+ {
+  "query": "In the negotiation where a healthcare customer pushed for stronger protection against outside patent or copyright lawsuits for an AI hosting service, what dollar limit did the vendor propose per claim as the compromise?",
+  "gold_ids": [
+   "499eebd76be8dd59",
+   "cbc2a1d5c4cc79cb"
+  ]
+ },
+ {
+  "query": "In our GPU inference runtime, what configuration change was shown to eliminate out of memory crashes caused by combining lookahead cache allocation with aggressive request coalescing on long context runs, even though it slightly increased tail latency?",
+  "gold_ids": [
+   "3499737785c1b35f"
+  ]
+ },
+ {
+  "query": "When someone new starts at Redwood Inference, what is the target turnaround time for getting them fully set up with accounts and tools in North America versus Europe/Asia-Pacific?",
+  "gold_ids": [
+   "0d596db040bb5aec",
+   "86dda2394d11a805"
+  ]
+ },
+ {
+  "query": "Where can I find the internal one stop reference page that summarizes how our company handles approvals and SLAs for access requests, production changes, data retention, purchasing thresholds, vendor onboarding, and business travel, including links to the standard request templates?",
+  "gold_ids": [
+   "582419f83b303193",
+   "a70ac7f0f7af5207"
+  ]
+ },
+ {
+  "query": "Why did our telemetry collectors in the dedicated production clusters stop being able to mint short lived credentials for a customer cloud identity when going through the AWS to GCP federation bridge, after an IAM policy tightening with conditional rules, causing missing metrics and traces for about a day in US East and EU West?",
+  "gold_ids": [
+   "62cc3d8ff8afa833",
+   "ecc726fe700982c4"
+  ]
+ },
+ {
+  "query": "In the public documentation for searching system activity records, what identifier should examples use instead of showing a persons email address to avoid exposing sensitive personal data?",
+  "gold_ids": [
+   "7aef881b35369ecf",
+   "f12ffab928525a1a"
+  ]
+ },
+ {
+  "query": "Before an external audit rehearsal happening in about three weeks, what are the due dates and owners for the main evidence gaps around deployment rollback proof, contractor access end date confirmation, encryption key rotation documentation placement, and two overdue third party security questionnaires?",
+  "gold_ids": [
+   "19246aeaa5dbb5e4",
+   "261b6a3dabb2d364"
+  ]
+ },
+ {
+  "query": "During the 10:00 UTC partial rollout that caused structured function-invocation outputs to sometimes drop or swap argument fields, what small hotfix was added in the batching/serving path to prevent argument-buffer interleaving?",
+  "gold_ids": [
+   "426811ddd3a5efcf",
+   "f6c9f01c40ad3130"
+  ]
+ },
+ {
+  "query": "During a late morning April 2025 incident, why did an interactive response feed start arriving in long bursts with 15 to 30 second silences for many users, and what immediate workaround was recommended to keep conversations responsive?",
+  "gold_ids": [
+   "250bac9e27b3b52d",
+   "975e883da24d7412"
+  ]
+ },
+ {
+  "query": "On Windows ARM tablets in our SF office, why does switching between the two WiFi bands make our always-on VPN still show connected but suddenly stop reaching private 10.x services until a reboot, with routes preferring the wrong network after the handoff?",
+  "gold_ids": [
+   "0bb4d42885f5bfb8",
+   "b6a11e286117dfcd"
+  ]
+ },
+ {
+  "query": "After a customer rotated credentials during a migration, their staging probes started alternating between auth failures complaining about a signature mismatch and throttling errors; what short lived workaround did support create so both legacy and new signing methods would be accepted during the rollout?",
+  "gold_ids": [
+   "4a62d07fc4155271",
+   "99aec94c65f3dcad"
+  ]
+ },
+ {
+  "query": "For a chat style server sent events stream that must survive mobile disconnects without re running tool side effects, what mechanism was introduced to let a client reconnect from a safe checkpoint using a server issued marker plus an explicit receipt from the client, while keeping compatibility with existing OpenAI like streaming clients?",
+  "gold_ids": [
+   "aa9307a1a3f28390",
+   "c51dcce0a59403f0"
+  ]
+ },
+ {
+  "query": "For the healthcare client contract review about sending patient records through our connector into the vendor platform, what is the promised retention duration for ingestion related audit traces and the default way customers can obtain exports?",
+  "gold_ids": [
+   "184d7a4ea5d79fc8",
+   "d086587d656a9f7c"
+  ]
+ },
+ {
+  "query": "In our agent runtime, parallel tool responses sometimes stomp each other and the final structured payload varies run to run; where is the proposal that adds a deterministic way to combine overlapping JSON outputs plus per-invocation jittered exponential retry limits to prevent retry storms?",
+  "gold_ids": [
+   "17c622500c5e78fa",
+   "ee182592f0e1c23c"
+  ]
+ },
+ {
+  "query": "What is the target success criteria for the internal two week cross team rehearsal that practices incident response for model endpoint reliability, especially the time limit from alert to starting the incident call?",
+  "gold_ids": [
+   "2f999cb58c0b6b5e",
+   "ebe2613b03a6ba37"
+  ]
+ },
+ {
+  "query": "During the rollout of the new version of our inference cost optimizer, what is the suggested traffic ramp schedule for moving from a small canary to full production, including the minimum stabilization wait between increases?",
+  "gold_ids": [
+   "b66d3031db483467",
+   "fad9f20fac3a25e4"
+  ]
+ },
+ {
+  "query": "In the email thread about an AI service pilot for a payments company, what were the four main categories of changes their procurement and counsel asked for in the first contract markup?",
+  "gold_ids": [
+   "0b002481748f2786",
+   "631f329e495b89b3"
+  ]
+ },
+ {
+  "query": "In our multi-customer GPU inference environment, what is the CI-based tool that spins up a sandbox network setup and drives synthetic traffic patterns to catch regressions in outbound routing and bandwidth fairness before infrastructure changes land?",
+  "gold_ids": [
+   "6fa56d21997d91d2",
+   "f17801c5a29abc6f"
+  ]
+ },
+ {
+  "query": "In the vendor email thread about a dedicated GPU capacity plan for AuroraEdge, what utilization threshold and measurement window did they propose as the trigger to start billing the next ramped capacity tranche after the initial time gate?",
+  "gold_ids": [
+   "5d391b87a421134d",
+   "8a6f7ffb49b0a8a4"
+  ]
+ },
+ {
+  "query": "How should I structure a small prompt experiment to reduce overconfident mistakes by mixing a couple of correct examples with one intentionally wrong example plus an immediate fix, while keeping the total examples very short and tracking things like made-up details and format compliance over a few hundred test prompts?",
+  "gold_ids": [
+   "95733a3ddba0b924",
+   "c93c60fc297adcc1"
+  ]
+ },
+ {
+  "query": "For the fintech prospect doing merchant reconciliation and dispute handling, what are the specific compliance items their ops and security teams said must be in place before moving past the pilot phase?",
+  "gold_ids": [
+   "74a4188955f5f91e",
+   "a81b2e62d3cc7a68"
+  ]
+ },
+ {
+  "query": "During a multi region switchover, what is causing some customers to get bursty too many requests and occasional service unavailable responses because different parts of the traffic gatekeeper disagree briefly on the time boundary used for quota calculations?",
+  "gold_ids": [
+   "70e991a537fdfd92",
+   "9b56b5282e138c3b"
+  ]
+ },
+ {
+  "query": "For a EU-hosted dedicated banking tenant facing a regulator check in late March 2026, how can we produce a tamper-evident 7-day audit activity export that includes per-event masking justification plus the GDPR lawful-ground and any consent time, with a signed checksum manifest and a trusted timestamp?",
+  "gold_ids": [
+   "1ffcb1ce2ea4ef84",
+   "ea285341bca61d33"
+  ]
+ },
+ {
+  "query": "In the partner integration call about getting a third party AI service into another companys cloud catalog, what date did the security lead target for completing the pre publication image security smoke test?",
+  "gold_ids": [
+   "957a12e395343c8d",
+   "d064c335facfa883"
+  ]
+ },
+ {
+  "query": "In our GPU inference service that merges many request streams, what change was made to cut worst case latency spikes that happened when the attention memory footprint abruptly shifted during batch formation, while keeping median latency nearly flat?",
+  "gold_ids": [
+   "5f95dcb0ec5c753c",
+   "6ad4ba7dd181e5f7"
+  ]
+ },
+ {
+  "query": "After our single sign on provider URL changed, access approvals look successful in the internal approval UI but engineers still get a forbidden error when trying to open privileged operational tools; what caused the approval to not actually translate into permissions?",
+  "gold_ids": [
+   "003acb082ed4820a",
+   "2d2d9eb9da1bb3d4"
+  ]
+ },
+ {
+  "query": "Which fintech support-chat prospect dropped us after their lawyers rejected non-audited compliance proof and chose a rival that could deliver a private install with formal audit paperwork?",
+  "gold_ids": [
+   "41cdd6aedf984768",
+   "a56d3f525b409c19"
+  ]
+ },
+ {
+  "query": "Where are the small on-node files stored that capture the GPU communication tuning fingerprints, and what should ops do with them during cluster upgrades?",
+  "gold_ids": [
+   "59473efcb3bdb752",
+   "c2d52b23778d13f3"
+  ]
+ },
+ {
+  "query": "In the partner sales planning call between a vendor and an ISV, what were the concrete due dates in late December for each side to send the pilot inputs and the vendor deliverables?",
+  "gold_ids": [
+   "2e3ebc4108b8b7fd",
+   "79564453a5037927"
+  ]
+ },
+ {
+  "query": "In our hiring workflow, what happens when a candidate is strong but the pay we want to offer is about 20 percent above the middle of the internal range, specifically who has to approve it?",
+  "gold_ids": [
+   "eac4b423f5a8e866",
+   "f8381a5c5ffc960d"
+  ]
+ },
+ {
+  "query": "What is the step by step readiness checklist for bringing up a new managed Kubernetes cluster in the Frankfurt secondary region with preemptible GPU workers for batch inference, including the key quota checks and the basic validation command to confirm the GPUs are usable?",
+  "gold_ids": [
+   "394a733bc62a0b94",
+   "4e493cd39e10fd27"
+  ]
+ },
+ {
+  "query": "In the dedicated GPU hosting plan with prepaid overage credits, what is the default time window after a demand spike during which any additional spikes are treated as part of the same billable overage event?",
+  "gold_ids": [
+   "932992fe66e9cb40",
+   "a6b3298d16a1f646"
+  ]
+ },
+ {
+  "query": "For a mid sized subscription software company adding AI powered lookup across internal docs and support chats, what are the performance targets for the overnight vectorization run and the interactive top ten results response time that were discussed in the pre sales notes?",
+  "gold_ids": [
+   "d11eb49758c69bd7"
+  ]
+ },
+ {
+  "query": "In our incident response process, what is the rule for when a quick time-boxed after-action review is acceptable instead of writing the full formal analysis, based on impact duration and whether the issue hit one customer versus many?",
+  "gold_ids": [
+   "68b652983a11bd9e",
+   "7ac2a43343246a78"
+  ]
+ },
+ {
+  "query": "For the outsourced customer support company planning an isolated always-on deployment for AI agent guidance and end-of-chat ticket writeups, what peak simultaneous staff load and response-time target did they specify for real-time streaming suggestions?",
+  "gold_ids": [
+   "139c17178a2059c9",
+   "8478d871aacd2f05"
+  ]
+ },
+ {
+  "query": "Need the account notes for a tiny two person dev shop building a browser based coding assistant that struggled with keeping API secrets safe in a serverless front end, is pushing hard for incremental responses to keep the UI snappy, and is asking about cheap usage plus some starter credit before converting from prototype to paid.",
+  "gold_ids": [
+   "06d0ed069fac5d12",
+   "91248620e7fc32c2"
+  ]
+ },
+ {
+  "query": "When is the 45 minute video call finally locked in for the vendor walkthrough that got moved because the client team was traveling to a Denver conference in early October 2026?",
+  "gold_ids": [
+   "1fff0b01b884857a",
+   "4d0014c61ac8e465"
+  ]
+ },
+ {
+  "query": "During a gradual rollout of a new large model on a single production tenant in early March 2026, some sessions that were supposed to stay on a customer-specified version briefly got routed to a cheaper compressed build, causing worse answers without any server error spike. What was the immediate mitigation applied at the request routing layer to prevent this kind of misrouting when a version lock is provided?",
+  "gold_ids": [
+   "50cb84a677659d8c",
+   "cea056756c423965"
+  ]
+ },
+ {
+  "query": "For the healthcare chat rollout that ramps from a few thousand to about fifteen thousand monthly active users by month three, what was the projected total monthly language model token consumption at steady state based on the stated session and prompt/response length assumptions?",
+  "gold_ids": [
+   "be682f774c5b82f4",
+   "c73815b4ff4d876c"
+  ]
+ },
+ {
+  "query": "In the us-east dedicated setup for a big retail tenant, what caused the multi-hour staircase of gateway failures during peak traffic when long-lived chat streams coincided with a large embedding batch, especially involving warmup connection churn and disk-backed cache write pressure?",
+  "gold_ids": [
+   "193a31352c6667af",
+   "ddb4212df2f8c406"
+  ]
+ },
+ {
+  "query": "In the disconnected installer package for the on prem product, what are the mandatory items that must exist at the top level of the extracted folder before the installer will accept it (including the signed inventory files and the human instructions file)?",
+  "gold_ids": [
+   "632bf0111d130315",
+   "99e49504a48c61b2"
+  ]
+ },
+ {
+  "query": "From a late July 2025 call with a vendor, what was the specific console tuning recommendation for the search route that included both a suggested batch size and a quantization setting?",
+  "gold_ids": [
+   "b5ffa43a52d12ab1",
+   "fe1c5ef7165789db"
+  ]
+ },
+ {
+  "query": "In our model serving runtime, what is the new approach that chooses between two attention implementations at execution time to cut tail latency on mixed prompt lengths and avoid costly cache page swapping on very long contexts?",
+  "gold_ids": [
+   "2594d3dd2229101c",
+   "c871530feea2265a"
+  ]
+ },
+ {
+  "query": "For the EU production rollout of a card-industry regulated bank, can you provide a tamper-evident proof package for a 3-day early-March 2026 activity export to their file-drop security tool that lets them verify no per-call audit records were lost or reordered (including a hardware-backed signed index and local validation steps)?",
+  "gold_ids": [
+   "928da76f5928495f",
+   "966ce0fceb3f79d9"
+  ]
+ },
+ {
+  "query": "In the GPU inference runtime that mixes tiny chat requests with very long prompt processing, what is the target reduction for worst case per token latency on the latency sensitive traffic while keeping overall throughput loss under about ten percent?",
+  "gold_ids": [
+   "80ce347c092e3f39",
+   "faf88321e539dc1c"
+  ]
+ },
+ {
+  "query": "I need the most recent vendor continuity evidence packet for the bank security intake that includes measured switchover recovery timing samples showing a big difference when the in memory cache is prewarmed versus cold, along with a planned live non production witness window in mid August 2027; where is that packet shared and what is the confirmed demo time slot?",
+  "gold_ids": [
+   "28506cfe0eb36308",
+   "edd3697cf057137f"
+  ]
+ },
+ {
+  "query": "Why do some long range analytics charts in the US East production console briefly show zero or outdated values and the drill through to traces disappears, then fixes itself after about 10 to 30 minutes?",
+  "gold_ids": [
+   "529891857fbe24e2",
+   "9a28944954983c61"
+  ]
+ },
+ {
+  "query": "In the recent SDK update that made streaming behave the same across Python, TypeScript, and Go, what is the new wrapper layer called that handles automatic reauthentication on expired credentials and lets a client resume a dropped stream using a small persisted checkpoint token?",
+  "gold_ids": [
+   "1b3a7ab2902d1fe1",
+   "df14175491f089e5"
+  ]
+ },
+ {
+  "query": "In a recent GPU serving load test with highly uneven prompt lengths, what change gave the biggest reduction in tail latency by preventing the runtime from switching to a slower attention implementation due to temporary scratch memory growth?",
+  "gold_ids": [
+   "72ebe7fe099a8690",
+   "f41c5de64eb0c97d"
+  ]
+ },
+ {
+  "query": "In the March 2026 production incident where long streamed chat replies started arriving chopped up and in the wrong order and the customers usage charges jumped because their client kept reissuing the same request, what was identified as the underlying platform cause?",
+  "gold_ids": [
+   "29ae2c9e27d7f00c",
+   "ae54bf00df1b222f"
+  ]
+ },
+ {
+  "query": "In our internal admin UI, what are the requirements for a small collapsible tenant sidebar that summarizes inter-region service connectivity and recent liveness, highlights the three most important issues, and includes guarded remediation actions plus an estimated failover cost impact?",
+  "gold_ids": [
+   "7c88c7b50832e7c8",
+   "db70cf062c2f2f27"
+  ]
+ },
+ {
+  "query": "Which bank client got a temporary signoff to keep normal processing in Europe but let traffic switch to a US site only during disaster recovery drills or when the EU cluster is degraded, with payload logging turned off, and what were the start and end dates of that allowance?",
+  "gold_ids": [
+   "d03a1c8d9a7a6e84"
+  ]
+ },
+ {
+  "query": "How should we handle a short term external engineering team working out of our London site so they can get into the lab and then send two sensitive prototype boards back to the US with proper custody tracking and customs clearance after the week ends?",
+  "gold_ids": [
+   "5d0c0e85fe1a34a8",
+   "6977798c8432c91d"
+  ]
+ },
+ {
+  "query": "What is the default time window the company targets for routine internal approvals across operational requests?",
+  "gold_ids": [
+   "12e7ac14026dcd9d",
+   "bd88ae13703d9d0b"
+  ]
+ },
+ {
+  "query": "What dates did the team set for the three stage launch of the new high end compute hardware offering (restricted trial, broader preview, and public release) that follows the late July readiness work and the early August go no go decision?",
+  "gold_ids": [
+   "ff97c276b63541ce"
+  ]
+ },
+ {
+  "query": "For the small legal document review firm that came in via a website contact form in late Feb 2026, what was their target p95 response time for an interactive single-user chat experience?",
+  "gold_ids": [
+   "569d7ff3d3a97882"
+  ]
+ },
+ {
+  "query": "Im looking for the doc about building a fast system to store and query model performance run histories and a simple UI to compare two runs plus an oncall workflow for investigating detected slowdowns, including how it groups repeated issues and how long detailed vs rolled up data is kept",
+  "gold_ids": [
+   "9f5cb57b15338d16",
+   "fe30b60b558aae98"
+  ]
+ },
+ {
+  "query": "In our model serving stack, what change was proposed to reduce cost swings when traffic mixes tiny chat style requests with much longer generations, by dynamically choosing between a few preset group sizes under latency budgets instead of waiting for one fixed threshold?",
+  "gold_ids": [
+   "03b5bc197daff095",
+   "10514fd93a02d194"
+  ]
+ },
+ {
+  "query": "For the mid sized software company building outbound sales chat reps that trigger actions in email, calendar, and a CRM, what latency targets did they set for live token streaming and for the full message to action acknowledgement flow during their planned short evaluation?",
+  "gold_ids": [
+   "cb4e20bb4d9b7b62",
+   "ed3df04d5a46a958"
+  ]
+ },
+ {
+  "query": "Our finance team is seeing totals in our accounting system come out a bit higher than what the payment processor exported, mostly when customers switch tiers in the middle of a billing period; what change should we make so each charge or credit line maps 1:1 and we stop the penny level rounding drift?",
+  "gold_ids": [
+   "1fa1549b7dfb5c0c",
+   "3ae3a7f2e3d26ef0"
+  ]
+ },
+ {
+  "query": "What is the planned overnight time window in late March 2026 for rotating and rekeying the secrets used by automation accounts during a contractor to full time transition?",
+  "gold_ids": [
+   "76a536bd614d093d",
+   "96325acc8390144d"
+  ]
+ },
+ {
+  "query": "In the rollout plan for the internal service that only hands out application secrets to verified runtime hosts using short lived machine health proofs and hardware backed key unwrapping, what is the default hot and cold retention period for the tamper resistant audit trail?",
+  "gold_ids": [
+   "9e70a973d56d7203",
+   "ba14517517d6558a"
+  ]
+ },
+ {
+  "query": "In the GPU reservation proposal for a pharma company with nightly model scoring and some real time triage traffic, what was the estimated cache warmup cost expressed in token hours for the smallest configuration?",
+  "gold_ids": [
+   "0494c5e24fa0ba95",
+   "97f6935c0c6deb76"
+  ]
+ },
+ {
+  "query": "During a traffic surge in the US East production cluster for a healthcare customer with dedicated capacity, why did conversations that were supposed to stay locked to a specific model version sometimes get served by an experimental fallback instead?",
+  "gold_ids": [
+   "0cd82e2df8495055",
+   "9de5e7babd879835"
+  ]
+ },
+ {
+  "query": "In our long conversation serving experiments, what mitigation is suggested for the tendency to start making up references right after a retrieval step when older context has been aggressively shrunk to save memory?",
+  "gold_ids": [
+   "375a3e51ea6a897c",
+   "c03443853bd5fcac"
+  ]
+ },
+ {
+  "query": "What phone number did the recruiter provide for the frontend engineering candidate so the interviewers could reach her quickly if she was running late?",
+  "gold_ids": [
+   "444919d73a9e77b1",
+   "e46ac8116afff59d"
+  ]
+ },
+ {
+  "query": "How does the proposed multi-region traffic controller proactively avoid tail-latency blowups by warming likely failover locations ahead of time and using a three-level degrade/shed mechanism before hard failures occur?",
+  "gold_ids": [
+   "473ca0cb7c181538",
+   "802e004edd755258"
+  ]
+ },
+ {
+  "query": "For a small mobile game studio adding realtime global chat and match lobby messaging, what latency goal did they set for typical short messages so players dont notice added delay?",
+  "gold_ids": [
+   "34ca852f254f9e87",
+   "d48128fe059ae0a2"
+  ]
+ },
+ {
+  "query": "What were the target responsiveness and peak simultaneous agent usage thresholds for the short pilot of the customer support assistant that required partial replies to appear immediately while also invoking internal lookups?",
+  "gold_ids": [
+   "3ec2652f9b002ecb",
+   "7cec4293a334b14f"
+  ]
+ },
+ {
+  "query": "In the late Q3 email thread about rescuing a near-lost senior platform hire for a customer-facing performance pipeline, what one-time pay-range exception did People Ops approve (how far above the midpoint)?",
+  "gold_ids": [
+   "3376fe0bd7f6b546",
+   "e8adced1c09ee74a"
+  ]
+ },
+ {
+  "query": "What caused the March 2026 morning spike where a dedicated east coast deployment started cutting off live generated replies mid stream and briefly overcounted usage charges due to retry and double counting behavior?",
+  "gold_ids": [
+   "7491b57d65b85a1b",
+   "e4d463816197b161"
+  ]
+ },
+ {
+  "query": "In the service that lets clients discover which language models are available, where is the advisory 0 to 100 score documented that helps automatic selection based on feature match between our capability names and an OpenAI style interface?",
+  "gold_ids": [
+   "9dac3933184d89ea",
+   "c4fbcf2e40bda48a"
+  ]
+ },
+ {
+  "query": "For the shipping customer rollout checklist, what is the requirement for output stability across repeated cold and warm starts before approving deployment?",
+  "gold_ids": [
+   "1e6e7edf8fee6200",
+   "20dc249b09808d91"
+  ]
+ },
+ {
+  "query": "What change reduced out of memory failures for long context transformer serving by reusing temporary GPU buffers across microbatches and adding an optional recompute mode, and what kind of memory savings was observed on an A100 at around 4k tokens?",
+  "gold_ids": [
+   "27e43627d0be2ce3",
+   "cb76e6ce5bcdbd82"
+  ]
+ },
+ {
+  "query": "How does the temporary cross team sandbox get automatically shut down, including the default lifetime and the advance warning sent to the owners before everything is archived?",
+  "gold_ids": [
+   "021353bea4d134a8",
+   "6e89de74ee8d5c9a"
+  ]
+ },
+ {
+  "query": "In the internal workshop where we deliberately sabotage a client library via a local proxy to test resiliency, what exact fields are required in the saved run trace file format (the per-span identifiers, timestamps, and the single flattened attributes string) so our baseline and failure runs are comparable?",
+  "gold_ids": [
+   "391989efd2e65f2f",
+   "8cfd19bf5d3f7468"
+  ]
+ },
+ {
+  "query": "In the late March 2026 payments rollout, what was the prior deployment version the team reverted to after the early Europe canary started restart looping due to a shutdown hook issue?",
+  "gold_ids": [
+   "037289e31ec7bbcb",
+   "2e0c546932e6e08d"
+  ]
+ },
+ {
+  "query": "Who on the team committed to producing a short animated demo to embed in the upcoming renewal business review materials, and what was the demo supposed to showcase?",
+  "gold_ids": [
+   "4e337da73ecb62f0"
+  ]
+ },
+ {
+  "query": "For the tiny production experiment that tweaks how the model serving layer keeps and evicts attention memory, what are the concrete pass or fail thresholds for error rate and tail latency during the first hour?",
+  "gold_ids": [
+   "1a1317bfb84448f7",
+   "b4ea6ce5ebe1f115"
+  ]
+ },
+ {
+  "query": "From a partner intro call with a services firm that resells and operates enterprise AI stacks, what was the expected lead time they were told for standing up an isolated customer environment in an EU region when customer key management is required?",
+  "gold_ids": [
+   "6bed10e143cca94a",
+   "8a6aa90ff99e4ffd"
+  ]
+ },
+ {
+  "query": "For the short evaluation engagement with the retail client where we offered a temporary sandbox to run about a couple thousand acceptance examples and promised a signed deletion attestation afterward, what date did we say we needed to receive their materials in order to hit the staging deadline?",
+  "gold_ids": [
+   "3547902449e158e8",
+   "f08f2386eb56fc1b"
+  ]
+ },
+ {
+  "query": "In the internal routing performance memo that compared a nearby low latency serving path versus a centralized high throughput batching path and a split strategy that starts local then hands off when the response gets longer, which approach had the cheapest cost per 1k tokens for medium length requests and what was that cost?",
+  "gold_ids": [
+   "be6be72d61e871ed",
+   "d2da25cff632b04a"
+  ]
+ },
+ {
+  "query": "During the 2025-02-10 capacity incident, what two thresholds should trigger noisy-tenant detection in the runbook update, and how long were SLA targets breached?",
+  "gold_ids": [
+   "4695aaff90535913",
+   "f796b0e2b91b9beb"
+  ]
+ },
+ {
+  "query": "For the 90-day AcmeSec eval, what do they need to send to get Splunk HEC audit log exports wired up, and which internal team members are responsible for wiring the export and sending the pricing quote?",
+  "gold_ids": [
+   "41aeddd5a106d6d4",
+   "9719d8a3187e5801"
+  ]
+ },
+ {
+  "query": "Which teams are required to sign off on the dedicated capacity intake rubric, and what two follow-up dependencies were noted for the next steps work?",
+  "gold_ids": [
+   "6e4d9dfbb8dfc1fd",
+   "eb0b5ef722c04566"
+  ]
+ },
+ {
+  "query": "For the PayRight Redwood DPA negotiation, what incident notification timeframe did PayRight request at the start and what notification window did Redwood propose in the final tracked wording before sending the DocuSign link?",
+  "gold_ids": [
+   "0ca0d03a33c464b5",
+   "45680851d49bf67c"
+  ]
+ },
+ {
+  "query": "When using the python async batching helper for embeddings then rerank, what singleton-wrapped rerank response shape can show up during auth refresh, and what redwood.utils normalizer did the sampleapp add to fix the output shape?",
+  "gold_ids": [
+   "bcfab40c43a89d13"
+  ]
+ },
+ {
+  "query": "During the us-west-2 incident with TLS handshake failures on edge.redwood.ai, what alert triggered the PagerDuty page and what two preventative follow-ups were planned before closing the thread?",
+  "gold_ids": [
+   "2e152053cc0f17e5",
+   "526d823aa23b49f6"
+  ]
+ },
+ {
+  "query": "For the StrataCore joint benchmark on the S100 card, what model and metrics are they benchmarking, and what artifacts will be included in the post run internal results bundle for signoff?",
+  "gold_ids": [
+   "09f9cff7c1d1d066"
+  ]
+ },
+ {
+  "query": "For the Praxis Health Redwood Private connectivity plan, what hybrid approach did Redwood recommend for a customer with both on-prem colo and AWS us-west-2, and when was the proposed 30-minute follow-up call scheduled?",
+  "gold_ids": [
+   "05823badae324bcc",
+   "6502702ba39cfaaa"
+  ]
+ },
+ {
+  "query": "After the docs deploy failed due to mkdocs linkcheck reporting broken anchor fragments from an include refactor, what final deploy-bot status was reported once prod was updated?",
+  "gold_ids": [
+   "86ec7a4e6f110670"
+  ]
+ },
+ {
+  "query": "In the on-prem cutover readiness weekly sync meeting, who attended, and what two checkpoint meetings (with dates) were scheduled around the staging soak test?",
+  "gold_ids": [
+   "a6815beb20d66770",
+   "b21914828b4ad414"
+  ]
+ },
+ {
+  "query": "For the Helios vendor onboarding kickoff and demo, which meeting time did they lock in, and what is the Redwood commitment 48 hours after the call?",
+  "gold_ids": [
+   "1a942f20869a7b7d",
+   "fc552f5aef43a0f3"
+  ]
+ },
+ {
+  "query": "When is the updated on-call runbook due to be pushed to Confluence, and what is the Confluence path for the on-call runbook?",
+  "gold_ids": [
+   "60083d75a37aad16",
+   "c8a7f35dbd8bbb3c"
+  ]
+ },
+ {
+  "query": "What metric name did Billing request to replace emit_latency_ms with in the aggregated rollups for billing reconciliation, and what is the default request sampling rate for full emission span tracing?",
+  "gold_ids": [
+   "4a1cd13f6432c068",
+   "d9de66479ead4640"
+  ]
+ },
+ {
+  "query": "For the Jupiter Therapeutics rollout, if the target go-live is 2028-07-22 and the canary is planned as 7 days with a 10/90 traffic split, what date should the canary period start?",
+  "gold_ids": [
+   "0d5b32594875b3e9",
+   "4ffa4e796fec54a7"
+  ]
+ },
+ {
+  "query": "What UI indicator did the team plan to show for tenants in escalation mode, and what default grace-window duration was chosen for the circuit-breaker?",
+  "gold_ids": [
+   "b632bff1628a565d",
+   "bd563e6fe35aab6d"
+  ]
+ },
+ {
+  "query": "For the ProofPoint pentest artifact audit-proxy escrow, what is the default retention period, what is the standard access request turnaround time, and who is billed for the AuditWorks storage fees?",
+  "gold_ids": [
+   "2e6af4f77b079095",
+   "b545c08608f69ba8"
+  ]
+ },
+ {
+  "query": "In the Adaptive Log Zipper rollout plan, what dependency blocks per-tenant admission signaling in the edge gateway and what fallback mode is planned until it is added?",
+  "gold_ids": [
+   "666f715365eff938",
+   "a73ca5b3bbe4909e"
+  ]
+ },
+ {
+  "query": "For the Mapflow incident where a segmented batch embedding job caused a negative provisional balance and autopay to be paused, what was the job start time and what date is the full rollout of the permanent ordering-resilient hourly aggregator fix scheduled for?",
+  "gold_ids": [
+   "27e774d6db16688e",
+   "981621f0f428620e"
+  ]
+ },
+ {
+  "query": "After the kernel-selector change caused OOMs on canary during 1k-token generations, what allocator and KV config values were hot-reloaded, and how did that change impact fallback allocations per minute in the follow-up metrics?",
+  "gold_ids": [
+   "0a62e1d8a4282750",
+   "a563eff9d5fbc2be"
+  ]
+ },
+ {
+  "query": "If NimbleHealth moves from the current roughly 35k per month run rate to a 24 month annual prepay, what term discount do they get and what one time onboarding credit applies in Q1?",
+  "gold_ids": [
+   "6c19ef044b685286",
+   "d04e1b4a0ae9c711"
+  ]
+ },
+ {
+  "query": "During the initial staging rollout of decision breadcrumbs, what sampling approach and percentage are planned, and who said it would start by end of week?",
+  "gold_ids": [
+   "3fbbc64a97e0bd7b",
+   "9dfa0f0171e3909a"
+  ]
+ },
+ {
+  "query": "What config flag controls enabling the bandwidth-aware fanout planner for TP allreduce on heterogeneous link clusters, and what other new components are called out in the release notes as helping reduce comm and compute stalls?",
+  "gold_ids": [
+   "5f5de188ceb96638",
+   "a77b02ee068e667d"
+  ]
+ },
+ {
+  "query": "Which issue filed after two customer escalations describes transient admin privileges or permission denied after SSO due to SAML assertion ordering and session stitching, and what environment(s) was it reproduced on?",
+  "gold_ids": [
+   "16f51e90324012d8",
+   "dc1df0feaf516905"
+  ]
+ },
+ {
+  "query": "For the Q3 KPI dashboard email thread, what was the quarterly uptime percentage and how far below the target was it, and which JIRA ticket was Jonas going to create to track the infra changes?",
+  "gold_ids": [
+   "ad96aa176758c37c",
+   "b2ad490745a68228"
+  ]
+ },
+ {
+  "query": "For the Q2 milestone scope they locked in the chat, which items were pushed to v1 versus kept in the MVP?",
+  "gold_ids": [
+   "f8176a0a8e7d38c3"
+  ]
+ },
+ {
+  "query": "In the simulated cross-region restore scheduler project, what are the two regions the restore simulation runs between, and what was the blocking issue mentioned for wiring the validator failure reporting to the DR dashboard?",
+  "gold_ids": [
+   "9e2659eb3fb268ad",
+   "e0e02b26a726f803"
+  ]
+ },
+ {
+  "query": "In the Unified Inference Consumption Paradigm overview, what are the two unit primitives used for billing, and where is the referenced Confluence file that contains the pricing catalog and token definitions for them?",
+  "gold_ids": [
+   "09aa082f74922480",
+   "b451ec0b97f115ff"
+  ]
+ },
+ {
+  "query": "In the recent Performance Management and PIP handbook overhaul, what passing score do managers need on the quiz and what is the due date for completing the required microlearning assignment?",
+  "gold_ids": [
+   "a1e1bae655ca239e",
+   "de7855d1fe0472bf"
+  ]
+ },
+ {
+  "query": "After the procurement kickoff call that requested a draft SLA and pricing model, what were the latency targets the bank wanted for interactive IDE edits and streaming token delivery?",
+  "gold_ids": [
+   "585a5a0de83691dd",
+   "fff135ab97d3ea50"
+  ]
+ },
+ {
+  "query": "What trace job ID did they queue for the prefetch triage, and where did cheng say he would upload the perf artifacts for it?",
+  "gold_ids": [
+   "54b67146eab70b7d",
+   "782a0548207135b9"
+  ]
+ },
+ {
+  "query": "In the incident where Meridian Analytics saw pinned sessions revert to the fallback variant during a tiered canary in us-east, which model rollout was affected and what type of customer contract did they have?",
+  "gold_ids": [
+   "3a78af071e9631cc",
+   "f1318f0622672faf"
+  ]
+ },
+ {
+  "query": "What are the acceptance criteria for the trace export UI changes that include the corr-id copy behavior, the consent modal requirements, and the keyboard help overlay, and what else did the PM ask to include before merging?",
+  "gold_ids": [
+   "74e4b2e63d9ced81"
+  ]
+ },
+ {
+  "query": "In the runtime inference forensics walkthrough for Arcadia Retail, what is their p95 latency target for interactive queries, and by what day did they say they would upload the sample requests?",
+  "gold_ids": [
+   "a83779549aab7942",
+   "b5074c7341707bb4"
+  ]
+ },
+ {
+  "query": "Why were SSE streaming connections getting cleanly closed after about 60 seconds only when going through the edge proxy, and what heartbeat change was implemented to mitigate it?",
+  "gold_ids": [
+   "3db24b83ad5e60c1",
+   "75cdc2dc766aa570"
+  ]
+ },
+ {
+  "query": "For the StellarNow executive briefing to align on the mutual action plan, who is the customer executive sponsor and what time window was ultimately confirmed for the meeting?",
+  "gold_ids": [
+   "37109f6bcbc276c8",
+   "963e3f0c9d34da4b"
+  ]
+ },
+ {
+  "query": "For the CartPilot Redwood trial POC, when is the kickoff sync scheduled and what peak request rate did they say they expect during bursts?",
+  "gold_ids": [
+   "1d64dbf041929d84",
+   "dc183fec69f53a18"
+  ]
+ },
+ {
+  "query": "In the resilient streaming schema proposal, what resume success rate is targeted in the success metrics and what resume_success_rate threshold would trigger a rollback during rollout?",
+  "gold_ids": [
+   "316c631a1669f333",
+   "f6d903793a302f8d"
+  ]
+ },
+ {
+  "query": "Who owns the mixed-priority cgroup and soft-quota playbook for multi-tenant inference, and what is the best email or Slack channel to contact for rollout coordination?",
+  "gold_ids": [
+   "2f529e59b16f4627",
+   "d0f9bda2df8c4d99"
+  ]
+ },
+ {
+  "query": "For the Usage Insights reconciliation drift alert, what drift percentage and time window trigger warn vs page, and which severity level includes workspace_id in the alert labels?",
+  "gold_ids": [
+   "138aa4d61b5bbd2b",
+   "9fbc8acc7c0590ad"
+  ]
+ },
+ {
+  "query": "For the private customer collector debug bundle upload 403 escalation, what support ticket number is being updated and what request ID should be included if escalating to infra?",
+  "gold_ids": [
+   "a372994d00ea0648",
+   "f00e0c8fc57a355a"
+  ]
+ },
+ {
+  "query": "For the Proxima Bank 429 spike after priority routing rollout, what caused the throttling and what temporary policy exception did we apply, and how do we verify it is not burning the enterprise route SLOs?",
+  "gold_ids": [
+   "2069d99c02e9c0a5",
+   "2b19e9427e612693",
+   "5ae8d376b7725761",
+   "b2611a210b05029c"
+  ]
+ },
+ {
+  "query": "Our Key Management Standard says we must not cache plaintext DEKs, but ADR-007 allows a short-lived in-memory DEK cache. What is the actual policy we should follow, and how should we describe DEK caching and KMS outage behavior in customer-facing rotation materials?",
+  "gold_ids": [
+   "0fe8098c1cd5a19d",
+   "29b6888e8811bf11",
+   "3ca590eff27bcd30",
+   "49d23ad4bcbf9219",
+   "8bac1942a2822c5f",
+   "8ff7857a37e9be73",
+   "b21022db12c1c11c",
+   "d06a7dbf1ca9b3d9"
+  ]
+ },
+ {
+  "query": "What caused the savings $/day estimates in Optimization Suggestions beta to not match Arkadia Finance billing, and what UI or API changes should we make to prevent this confusion going forward?",
+  "gold_ids": [
+   "46841366d6853bb5",
+   "844e1ff4814422cc",
+   "9bdfaa6e0e7927b0",
+   "c95213512d550156",
+   "f1100b380f1f06de",
+   "f6c0493eeac7db71"
+  ]
+ },
+ {
+  "query": "Do we need to recalculate or annotate Dedicated throughput SLO compliance for streaming-heavy deployments before the streaming double-counting fix, and how should Support handle any credit requests tied to that period?",
+  "gold_ids": [
+   "133a79f844ce56f9",
+   "27a3ef996457b7e9",
+   "2afb2fceef23e95e",
+   "44b7167de82c45fb",
+   "71ff102b31596404",
+   "7ab3df98694ec871",
+   "7cafd36e725b745b",
+   "d93a71b9cf1142be"
+  ]
+ },
+ {
+  "query": "For the Trident Financial Private VPC deal, what is our approved stance on US-only data residency and 7-year audit log retention/export, and which evidence pack artifacts should we share (and how) to back it up?",
+  "gold_ids": [
+   "0a486361a803d796",
+   "357e2233eb5d481f",
+   "ad79f8e4c6a7f4d6",
+   "b5738ad66abe7a29"
+  ]
+ },
+ {
+  "query": "After the Northwind latency spike, what metric wording ended up approved for the public case study and what exactly can Sales share privately without triggering new legal approval?",
+  "gold_ids": [
+   "6985a13a7d15b314",
+   "855d594b67781460",
+   "8a08b8862cb4b60a",
+   "9105b6ac1128a802",
+   "b656c0c02f0e5b0e",
+   "bd568471d28a1527"
+  ]
+ },
+ {
+  "query": "For an air-gapped on-prem restore into a brand new cluster, what do we need to install before running restore apply, and what will the installer check and report if those prerequisites are missing?",
+  "gold_ids": [
+   "1104b172b5e4d87d",
+   "171a6197ae91d494",
+   "295b637a0d1afc10",
+   "724f41546c1dc332"
+  ]
+ },
+ {
+  "query": "When a tenant has a fallback model configured, which overload conditions will trigger Smart Routing to attempt the fallback versus the gateway returning a terminal 503, and how should Support explain that behavior to customers?",
+  "gold_ids": [
+   "163063e39c10253b",
+   "1ffa86c19cc9edab",
+   "39941345d9639909",
+   "3bc8a3841b1cfa61",
+   "45a6b39db42f987f",
+   "551b51ba99850d2a",
+   "5c2a83a667385b90",
+   "8c59440806b95e61"
+  ]
+ },
+ {
+  "query": "What caused the EU-West activation funnel and onboarding email issues in late January, and which code/config changes fixed them?",
+  "gold_ids": [
+   "3cfc1a0245b57474",
+   "9b4f06c34d87a24a",
+   "a90c0680e667c6d9",
+   "b8e65abfbca0b465",
+   "f11a919aeed55e74",
+   "f74f2accbd27cafb"
+  ]
+ },
+ {
+  "query": "Why did Northpeak Search see their Dedicated Burst Usage billed higher than expected, and how do we prevent retry attempts from double-counting burst GPU-seconds now?",
+  "gold_ids": [
+   "11e2f9b0d5fde6ac",
+   "52e0c3e4787cea46",
+   "68e034581bacf79f",
+   "6da96f677e0ed503",
+   "6ec84979c3a505d9",
+   "95dedf390e014e6b"
+  ]
+ },
+ {
+  "query": "If Console shows a canary step change to a lower percentage but one region keeps serving the old split, how do we tell whether it is cohorting key behavior, router version skew, or stale config propagation, and what is the recommended mitigation?",
+  "gold_ids": [
+   "01a685f3141380fa",
+   "2226c96a7803c327",
+   "24336ea91e5662dc",
+   "3f9d7af17e3d93f5",
+   "478602059a432f5a",
+   "4cf77eb01f5f0a39",
+   "7d501216002f12b4",
+   "8fd55a40a041a0bd"
+  ]
+ },
+ {
+  "query": "A dedicated beta customer says the Suggestions view overstates dollar savings compared to billing after they enable caching in a partial rollout; what is causing the mismatch and what UI and estimator changes should we make to prevent this confusion?",
+  "gold_ids": [
+   "844e1ff4814422cc",
+   "9bdfaa6e0e7927b0",
+   "f1100b380f1f06de",
+   "f6c0493eeac7db71"
+  ]
+ },
+ {
+  "query": "Before we re-enable paging and hook perf-canary into rollout gates, what exact baseline key, min-sample requirements, and incident-bot dedupe key should we enforce to avoid another false-positive alert storm?",
+  "gold_ids": [
+   "010cba7a72a0312b",
+   "167e666fa76c8a08",
+   "7e144b28810ff455",
+   "afac28563c221ce5"
+  ]
+ },
+ {
+  "query": "How should we explain and remediate a case where a customers invoice token total is higher than their Usage API export because streaming retries were double-counted, and what approvals are required before issuing a credit or changing the ledger?",
+  "gold_ids": [
+   "0015d9393307fdc5",
+   "0f79c8dc5205192a",
+   "13efaca7ebeddacf",
+   "2b814f086f40955d",
+   "3fa7ab7bdc2b3aa1",
+   "5f4328c64d75aac4",
+   "7316d62af8558817",
+   "759e75d867a59f29",
+   "8870ad8354dc54af",
+   "94cc786f674d4c72",
+   "acdbd29753217667",
+   "ade208b1cfbc4303",
+   "db905fb7a810050a",
+   "def5e919643dfe12",
+   "f2b17238705174ff",
+   "fd3c10206a7140f8"
+  ]
+ },
+ {
+  "query": "What is the approved wording to use when a prospect demands EU-only data residency and no non-EU support access for the Hosted API, and who do we need to escalate to if they want that as a contractual commitment?",
+  "gold_ids": [
+   "140665340cd4d470",
+   "4518df68807512ab",
+   "5cdcd3b4574b624c",
+   "617850d092455473",
+   "693f456951345efa",
+   "c274d715585cefa7"
+  ]
+ },
+ {
+  "query": "For the Acme AI dedicated failover incident with intermittent 500s and fallback churn, what v1 incident type and primary owner should we set, and what time-to-mitigate and time-to-fix targets should CS use in customer updates?",
+  "gold_ids": [
+   "02777957e0bf9c2e",
+   "7cc14f6bd2a28f71",
+   "7ceec567dec0e904",
+   "7d8c1db801f0e74d",
+   "87c09f17590dff38",
+   "b83f15731549e602",
+   "c607bb1be43a63a5",
+   "ea3660c99ce833d5"
+  ]
+ },
+ {
+  "query": "A customer subscribed via AWS Marketplace but our console cannot verify the entitlement. What is the approved manual workaround, and what steps do we take afterward to link the subscription and keep marketplace metering and revenue recognition correct?",
+  "gold_ids": [
+   "93889207ffb5ed29",
+   "a24b3da6948281d2",
+   "a5ee9bd5cac4d13e",
+   "ce8b03ac9916b9f8",
+   "e03b6c34b77e7b89",
+   "edf5612dd61ee17b"
+  ]
+ },
+ {
+  "query": "Finance is seeing QTD blended $/1M output tokens jump. How do we verify whether its a rate card change or a streaming output token undercount, and what is the backfill and escalation path?",
+  "gold_ids": [
+   "01af345f09235294",
+   "37c4b2e8aff2035f",
+   "49e633b2ad334bda",
+   "751778a3ed33bf69",
+   "99d8d7e0bbb58776",
+   "c2742a42a5bc623a",
+   "d480eec85dee7376",
+   "e9ecc019f26d96b0"
+  ]
+ },
+ {
+  "query": "Can you reconcile the current public error contract for data residency policy blocks across the ADR, the gateway implementation, and the PM requirements, and confirm the exact HTTP status and error.code/subcode fields SDKs should key off of?",
+  "gold_ids": [
+   "3f51d1d19e496b4e",
+   "6847c36ce3121548",
+   "9bc2f8d2b066e7a8",
+   "a182e0b8d016c626",
+   "aacd9c0a4af6066c",
+   "c533c269ece0f1dd",
+   "cca9e259f3ae60fb",
+   "cd3f11c72b4c863f",
+   "d06a1e373b7ca721",
+   "e04fc68191bf4570",
+   "e7649f1b0d84cecf",
+   "ed541da1d1eaaa2a"
+  ]
+ },
+ {
+  "query": "Customers behind strict corporate proxies are seeing 4xx failures when the quickstart templates add telemetry tags. What tagging approach and opt-out setting should we use, and how will that affect TTFS and activation KPI measurement?",
+  "gold_ids": [
+   "1be69a80f65dd62d",
+   "1cce98ba9d33f804",
+   "335607b8fadd122b",
+   "cb6e63a50d355691"
+  ]
+ },
+ {
+  "query": "How do we decide whether a streaming disconnect is a client abort or a platform-caused failure for SLO and error budget accounting, and how should that be reflected in the SLA availability calculation and the customer-facing Support response?",
+  "gold_ids": [
+   "46c1173fea526dc2",
+   "5ee2c7d697944b6c",
+   "a206f6a2c52148c6",
+   "b0af7cc932a9cd23",
+   "b971a56ff172270c",
+   "f47c55a9d01e6637"
+  ]
+ },
+ {
+  "query": "What is our v1 standard for streaming timeout enforcement and retry behavior, and do any of the Python, TypeScript, or Go SDKs still violate it based on the parity matrix and recent support tickets?",
+  "gold_ids": [
+   "0abd62416d9ebe4e",
+   "0ed0b1d07a5963e7",
+   "12b62a77a87cfa44",
+   "1856c6ff60f58fe7",
+   "1910f1f908d08f2e",
+   "1f1362e54161e451",
+   "275c76cbb37cd56b",
+   "2fc32a2f4d019d75",
+   "36c6fbe6271ff9a8",
+   "42e4422c18dc834f",
+   "64a115bae9b78469",
+   "68abd9b73493f13d",
+   "9314a6a0e50e6f10",
+   "bc32a466a59530cf",
+   "c11b3b99fa9b816d",
+   "e52216c606ce8a10",
+   "f5ef591086cae8ef",
+   "ff157964d6dae61d"
+  ]
+ },
+ {
+  "query": "Northbridge Bank reported that request log TTL was not being enforced in us-east and that audit log exports were missing key admin event types; what caused these issues and what customer-facing compliance pack artifacts should we provide to show both retention enforcement and audit log evidence are now correct?",
+  "gold_ids": [
+   "0bda33b3d3685102",
+   "1744905635332787",
+   "1ccb76b4c5c36573",
+   "4146e68d40ee66ec",
+   "7031885c98b55bb9",
+   "a364ec4dad2c9844",
+   "b75c774557b59aec",
+   "bd143a102f5ce934",
+   "c2b6462698659f50",
+   "e5de3caa7d786e40",
+   "f6839282a7c059cb",
+   "f98e33b163e51b4d"
+  ]
+ },
+ {
+  "query": "What audit event names and required fields should we emit for an Optimization Config rollback, and what should we check if the rollback succeeds in Console but never shows up in the customers SIEM export?",
+  "gold_ids": [
+   "348577ca9fee9f07",
+   "5c236542b493b9d0",
+   "6da31f9383480e3f",
+   "7e6f4303e131c293",
+   "bf48e94e1ad66e23",
+   "eca4979f592440c3"
+  ]
+ },
+ {
+  "query": "Fast tier p99 is regressing in canary, what SLO targets and abort criteria apply and what rollback steps should we take? Which dashboards and reason codes should we use to confirm whether admission control or requeue behavior is causing it.",
+  "gold_ids": [
+   "0f447deb340c07cd",
+   "268e9afa90857ee5",
+   "29388dac9ac220e5",
+   "33815b2690aa1888",
+   "38aaf5856e098e8c",
+   "821754a8011d66c2",
+   "85db49d1295e4f85",
+   "87b6b5e4005435e3",
+   "9399eca6d64fcd30",
+   "9b518b47b817ce98",
+   "af6d3ec8889b3cca",
+   "b35a26fb460638cf",
+   "c0ebe0dc9a68bbbb",
+   "d2ee566c7c2e5224",
+   "de746d275101db7a",
+   "e1b433962ecffa71",
+   "ec554ac75f0b3d00",
+   "fdd337324ad9c887"
+  ]
+ },
+ {
+  "query": "A non-burst Dedicated tenant is seeing tail latency spikes during another tenant's burst window; what should we check first, and when do we reduce burst caps versus trigger the SLO gate or circuit breaker, and what denial reason code will burst customers see?",
+  "gold_ids": [
+   "03588d30381ef732",
+   "0e6050c4fc30d19c",
+   "18c26a291ada2fe2",
+   "19387eec774aae92",
+   "1bf5d7d219d66c58",
+   "2c7540aa7118442e",
+   "46835202aedac8a4",
+   "4797faea2c7565e9",
+   "5f5e96f5a36679c7",
+   "712fc5a393f0360f",
+   "794573bc4f8e817f",
+   "8809f5c9202f62d6",
+   "915fbc84bb743f57",
+   "93b68679436fe190",
+   "9820507a1cf61bee",
+   "cf2ed074d808bb12",
+   "dc28df3853a3e148",
+   "f2a41cb6ea8b49c8"
+  ]
+ },
+ {
+  "query": "For an enterprise ticket like SUP-1842 where streaming disconnects happen in us-east, when should we escalate from a Support bridge to a formal incident and post a status page update, and what customer update cadence and credits wording should we use?",
+  "gold_ids": [
+   "09747eeacb5061ac",
+   "34dbce394957e9c9",
+   "38b41bca60814603",
+   "415697bdfa5148bd",
+   "4c8938b0f90b562d",
+   "6bc5795dc0a261b3",
+   "73e945eb131bf9e0",
+   "865753b8f43d292b",
+   "94760e0e58065d27",
+   "9fc56d0b2a5b5a4d",
+   "afc203ae76bf1bd0",
+   "c02b3c008b8ffed1",
+   "c430becf8d47b46f",
+   "c45bcf26cbe7141a",
+   "cc634a460d225dc6",
+   "d8f1b62e46fc6ba8",
+   "e55d8e797cb9a6d3",
+   "fd217646c3416461"
+  ]
+ },
+ {
+  "query": "For the Northwind Analytics long-context latency regression after enabling Runtime 1.21 kernel auto-selection v2 on L40S, what mitigations were applied and what is the recommended plan and criteria to safely re-enable v2?",
+  "gold_ids": [
+   "aab50af5acd3c218",
+   "ce18c718d2905e10",
+   "f7660343a00985d8",
+   "ff60378db201730c"
+  ]
+ },
+ {
+  "query": "Why were some Hosted API overload errors missing Retry-After, and what changes and alerts ensure it stays consistent across gateway, routing, and streaming paths going forward?",
+  "gold_ids": [
+   "10429dd472a48b94",
+   "141083e530716348",
+   "14e5a27ea8fb3c4e",
+   "29cc6d84c3b42815",
+   "5a315ab409e02a27",
+   "5beb8031727a318a",
+   "7f9233b490cadbb6",
+   "8ec23d7604a0eb2b",
+   "a8344b4094d9d549",
+   "a953f579d05a85b1",
+   "e9f934ad59a3d8fe",
+   "fb3cb7c4d9e35662"
+  ]
+ },
+ {
+  "query": "Why can the observed canary traffic percentage in a single region diverge from what the Console rollout step shows, and what are the recommended oncall mitigations and GA preventative fixes?",
+  "gold_ids": [
+   "01a685f3141380fa",
+   "1a7d78b318660dee",
+   "2226c96a7803c327",
+   "24336ea91e5662dc",
+   "3f9d7af17e3d93f5",
+   "43108c9619371fe1",
+   "478602059a432f5a",
+   "4cf77eb01f5f0a39",
+   "7d501216002f12b4",
+   "8fd55a40a041a0bd"
+  ]
+ },
+ {
+  "query": "Which streaming event names and tool-call fields are we standardizing on for SDK examples and golden fixtures, and how should we map OpenAI-compat tool-call deltas into that model?",
+  "gold_ids": [
+   "07deab5dcb6c3e14",
+   "35aaeb94e6be3f05",
+   "408892550dfd63c6",
+   "a03c4485bab9638e",
+   "a851c41551a98e56",
+   "f92b82579fa982a7"
+  ]
+ },
+ {
+  "query": "Streaming chat requests sometimes return a generic 500 when region pinning should block them; what is the canonical residency violation error contract and where in the gateway and Python SDK do we enforce it?",
+  "gold_ids": [
+   "3f51d1d19e496b4e",
+   "6847c36ce3121548",
+   "9bc2f8d2b066e7a8",
+   "aacd9c0a4af6066c",
+   "cd3f11c72b4c863f",
+   "d06a1e373b7ca721",
+   "e04fc68191bf4570",
+   "ed541da1d1eaaa2a"
+  ]
+ },
+ {
+  "query": "What is the expected workflow when a new Sev0 or Sev1 incident is created with incident_type set to unknown, including the temporary owner, when it must be reclassified, and how SLA timers and alerts behave until it is updated?",
+  "gold_ids": [
+   "5ef3e383e53b2320",
+   "746ca4b1d64ca6f5",
+   "7cc14f6bd2a28f71",
+   "7d981d5df0d8c205",
+   "b83f15731549e602",
+   "cb3546af1c02d088"
+  ]
+ },
+ {
+  "query": "For the runtime 1.19 Dedicated canary, what TP watchdog mode and default timeouts should we start with, and what specific metrics or alert conditions should trigger an immediate rollback if we see false positives or drain storms?",
+  "gold_ids": [
+   "0d4b4ca166ab6288",
+   "80b1e5362ea1ddfd",
+   "b378821f9b0a6ab0",
+   "e3fef896fd1dd3b6",
+   "f0433d70e33f6df0",
+   "f9a9ac179abc7c2a"
+  ]
+ },
+ {
+  "query": "When a quantization profile is blocked due to a quality regression, how is that enforced differently from an incompatibility fallback, and what should oncall do to verify a customer route is back on baseline using logs, dashboards, and audit history?",
+  "gold_ids": [
+   "13365b14ec570f7d",
+   "3c6adadc8d78e725",
+   "640cfcfa1607fe37",
+   "7b4fb7e46399efe1",
+   "c399ee5b49b3337f",
+   "c42c286aa8674add",
+   "d84c942bff921ed5",
+   "d98103a47e6795b6"
+  ]
+ },
+ {
+  "query": "Northbridge Bank is seeing request logs older than their configured retention window in us-east after a maintenance window. What is the recommended remediation and what customer-safe evidence artifacts should we provide to prove the retention policy is configured correctly and enforcement has caught up?",
+  "gold_ids": [
+   "0bda33b3d3685102",
+   "a364ec4dad2c9844",
+   "b81d90ae4010df59",
+   "bd143a102f5ce934",
+   "f66e0b298378486d",
+   "f98e33b163e51b4d"
+  ]
+ },
+ {
+  "query": "If the demo tenant starts returning 429s mid-demo and the Console dashboards are empty, what are the fastest recovery steps to keep the call moving and what fixes were put in place to prevent this from happening again?",
+  "gold_ids": [
+   "396290d8dd19d0b2",
+   "4521c355743b7164",
+   "4c8fdb235584c943",
+   "5b35c3b5eb7c8df8",
+   "5d06ab3fb85cb0bd",
+   "a7ec705f2d998fd0",
+   "b62ac13217371144",
+   "bce10fa55b3344a9",
+   "d71c905148ce4d11",
+   "f3f0f91d74b7008e",
+   "f4964c003fd54006",
+   "ffa11e88dded7aae"
+  ]
+ },
+ {
+  "query": "What are the current suppression rules and cooldown windows for PLG signals (especially intent-only), and how do they prevent HubSpot task creation after cases like Quartz Commerce?",
+  "gold_ids": [
+   "2533c718b7e74df3",
+   "42ec0f47729a6847",
+   "6fdb2ac4f9fc3a4a",
+   "8237117483fe2ac5",
+   "8e5ece853b5f42da",
+   "ad2819b37c71fd66",
+   "b509f479f94ea35d",
+   "c420b24eab6f077e"
+  ]
+ },
+ {
+  "query": "If a Private upgrade fails on a Postgres migration lock timeout, what is the recommended operator path to recover or roll back, and what upgrade artifacts and audit events need to be captured for change management?",
+  "gold_ids": [
+   "218e8711e7d6544e",
+   "49d488b9a5499d61",
+   "6ed9910fa750283f",
+   "7513a0e922f59e56",
+   "7a97ee07b680bb13",
+   "b7b3bed6e9e2659f",
+   "b9b57f8d925fe7c2",
+   "bbff1b55cd3a2beb",
+   "bf364fe0693b1a9d",
+   "c0b2b43958a1217a",
+   "c1a75862a7bac5b9",
+   "cac2b33b8f1be62b",
+   "ce79e3e386b04347",
+   "d5d70cfa6411f199",
+   "e20ef96cb7372897",
+   "ff7f4a59e00242d4"
+  ]
+ },
+ {
+  "query": "Which template telemetry header format are we standardizing on for KPI tracking, and how do the quickstart templates behave by default when a corporate proxy blocks those headers?",
+  "gold_ids": [
+   "1be69a80f65dd62d",
+   "335607b8fadd122b",
+   "64ee36f3d31a81a9",
+   "711a13d7fc2ac983"
+  ]
+ },
+ {
+  "query": "In the planned controlled failover game day on 2026-01-15 (Hosted API us-east \u2192 eu-west), what caused the routing automation to oscillate (flip/rollback), and what follow-up ticket and target ship date were created to fix the streaming disconnect/reconnect behavior clients saw during cross-region redirects?",
+  "gold_ids": [
+   "0501425bdc181de1",
+   "0f86472d592ce191",
+   "3f26eabf56e5e995",
+   "f5bf83b714ccd864"
+  ]
+ },
+ {
+  "query": "In the Feb 12, 2026 incident where daily usage exports briefly overstated output tokens (while invoices stayed correct), what was the root cause and what mitigation + follow-up steps were taken to prevent a repeat?",
+  "gold_ids": [
+   "f57c40822f987aa4"
+  ]
+ },
+ {
+  "query": "In a Private/VPC deployment, some users could complete SAML SSO but then immediately hit 403s because their admin group wasn't being recognized after an IdP/AD-connector upgrade (early March 2026). What was the underlying parsing problem with the comma-separated \"groups\" SAML attribute (why the first group didn't match), and what server-side patch fixed it?",
+  "gold_ids": [
+   "54cf2b5fd11808f5",
+   "d226c5bcab5145ea"
+  ]
+ },
+ {
+  "query": "In Runtime 1.22 on Hosted (Shared) pools, we're seeing burst-time p99 latency spikes that correlate with KV compaction activity. Which two compaction knobs should oncall tune first (and by roughly what amount), and what's the emergency kill-switch plus the specific counters/metrics to check to confirm the disable took effect?",
+  "gold_ids": [
+   "55b7c55f9836f776",
+   "6313ea7cdd408d64",
+   "72ce68b8386f56ca",
+   "bc1ba92b95d3561d"
+  ]
+ },
+ {
+  "query": "What caused the production perf-canary paging storm on 2026-02-12 right after canary coverage was expanded (and paging rules were enabled), and what immediate mitigations/config changes were applied to stop the repeated pages?",
+  "gold_ids": [
+   "010cba7a72a0312b",
+   "125006d8b8393a21",
+   "aa2ad79b654a27f0",
+   "afac28563c221ce5"
+  ]
+ },
+ {
+  "query": "In the Feb 2026 SEV-2 incident where the Dedicated autoscaler in us-west stopped scaling above minimum because its metrics query returned no data, what was the underlying cause and what hotfix restored scale-out?",
+  "gold_ids": [
+   "22c7442448fc0484"
+  ]
+ },
+ {
+  "query": "In a private VPC deployment using SSO via our identity-proxy, what caused the intermittent 403 RBAC denials that occurred right after an IdP group membership sync for users who were already logged in (and were fixed by logging out/in), and what mitigation plus long-term server-side fix did we apply?",
+  "gold_ids": [
+   "7a51b05b11e5434c",
+   "d06a55dd511db768"
+  ]
+ },
+ {
+  "query": "In the March 2026 incident where long-lived Server-Sent Events (SSE) streams would reconnect after a brief upstream TCP reset and then show duplicated heartbeat frames while sometimes never emitting the terminal end-of-stream event, what was the root cause and what server-side fix resolved it?",
+  "gold_ids": [
+   "031bf0fa55cc0565",
+   "7397ed92b6489ed5"
+  ]
+ },
+ {
+  "query": "After the Console v4.3.2 rollout (March 2026), what caused saved dashboard filter presets to revert to the default right after you edit and save a linked sub-report in the widget editor modal, and what hotfix fixed it?",
+  "gold_ids": [
+   "163d9f1ce751748a",
+   "939b4ec94c49d3f8"
+  ]
+ },
+ {
+  "query": "During a March 2026 prod us-east-1 dedicated incident where a sudden burst of high-concurrency streaming traffic caused intermittent 502/504s due to proxy ephemeral port pressure, what mitigations were applied (replica changes and any kernel/sysctl tuning) and-per the ingress proxy connection-entropy playbook-what RCA artifacts should be captured while the issue is ongoing?",
+  "gold_ids": [
+   "050299d8544186ec",
+   "a8ef82683b38b8e8",
+   "c2d4cb41af902ae6",
+   "f2ecd0b9b90ee454"
+  ]
+ },
+ {
+  "query": "In the hosted API incident in late April 2026 where streaming requests started returning 502/504 and non-streaming requests also saw a sharp tail-latency increase, what was the underlying trigger (involving an edge keepalive/connection-TTL change) and what immediate mitigations were used to restore service?",
+  "gold_ids": [
+   "6dbd18e8e9eb0a87",
+   "7629e47f8e1e3b10"
+  ]
+ },
+ {
+  "query": "During the us-east canary that normalized/rotated the session cookie domain for cross-subdomain routing, long-poll streaming clients started losing their pinned model version and getting routed to a fallback model. What was the root cause in the edge/session-manager flow, and what immediate mitigations were applied (platform-side and customer-side)?",
+  "gold_ids": [
+   "1b07b2ea95b8097c",
+   "6ee04aa0e2dcdd42"
+  ]
+ },
+ {
+  "query": "After the March 9, 2026 embedding-catalog promotion that made a 1024-d embedding model the default, a dedicated Hosted API tenant (us-west with eu-west failover) saw /v1/rerank start timing out with 512-vs-1024 vector length mismatches when using the alias open-embed-default. What was the confirmed root cause, and what short-term mitigation and permanent fix did we deploy?",
+  "gold_ids": [
+   "1f1f80ed1a5fdd7d",
+   "87ab4cf95a5200a3",
+   "f921829d1aed0631",
+   "f99186a34fb6dfe8"
+  ]
+ },
+ {
+  "query": "For Incident Bot v2, when responders use break-glass during a Sev0/Sev1 incident to view tenant-scoped config diffs or run privileged telemetry queries, which audit events must be emitted and how long are those audit events retained (SIEM vs immutable archive)? Also, what baseline vs break-glass permission scopes does the bot use for these reads?",
+  "gold_ids": [
+   "072969462392ed77",
+   "26b3ca4da852774a",
+   "70fe45e489dbda75",
+   "7ab21b15078a1ab7"
+  ]
+ },
+ {
+  "query": "What was the root cause and planned server-side fix for the March 2026 incident where function-call webhook callbacks were retried after a timeout and the JSON payload stayed the same, but the HMAC signature header changed between the first delivery and the retry due to gzip/encoding differences?",
+  "gold_ids": [
+   "408e6a007e3af36f",
+   "ccd744765bed7c2f"
+  ]
+ },
+ {
+  "query": "After rotating a Hosted API key in the Console, why might the Usage \u2192 Ad-hoc Query still show request IDs tied to the old key and 'View trace' links that 404, and what immediate mitigation did Support/SRE apply before a proper fix shipped?",
+  "gold_ids": [
+   "10df83efffb96328",
+   "cbbd279f84656813"
+  ]
+ },
+ {
+  "query": "In the March 2025 incident where eu-west-1 ran short on GPUs and the router temporarily failed eligible traffic over to us-east-1, what conditions/thresholds triggered enabling region fallback and which traffic was excluded? Also, per the region pinning policy, what kinds of request/response data are considered 'customer content' that must stay in-region for residency-strict traffic?",
+  "gold_ids": [
+   "7ca16d5f441b4a8f",
+   "8f6a0fd7e36e643b",
+   "d68100a0270618f7"
+  ]
+ },
+ {
+  "query": "In a private deployment, we saw a security bug where an RBAC exclusion rule (meant to block admin/superuser access) allowed access to an admin route when a JWT omitted the entitlements claim in mid-March 2026. What was the root cause in the policy evaluator, and what were the immediate workaround and the server-side fix plus rollout timeline?",
+  "gold_ids": [
+   "4c875e6858cfd991",
+   "e1e25d1857131fa0"
+  ]
+ },
+ {
+  "query": "In the mid-March 2026 eu-west canary rollout where sticky fallback kept pinning requests back onto the failing canary instead of the stable quantized variant, what configuration mistake caused the loop and what mitigations were applied to stop it?",
+  "gold_ids": [
+   "9a52504b6921d646",
+   "b6d76e612d4a483f"
+  ]
+ },
+ {
+  "query": "For a shadow evaluation running in a private deployment using an evaluator sidecar, what fields are required in each shadow probe telemetry record, and which run-lifecycle telemetry events must the evaluator emit?",
+  "gold_ids": [
+   "2b39ee41d4c2cbbe",
+   "5cb1781c265d8a58",
+   "b413d719b1f649ea",
+   "cfe0f2cc4126daa0"
+  ]
+ },
+ {
+  "query": "After the org GPG signing-key rotation on 2026-03-09, our GitLab release promotion pipelines started failing on prod release runners during artifact verification. What was the root cause of the signature verification failures, and what immediate operational mitigations unblocked hotfix promotions while the permanent fix was rolled out?",
+  "gold_ids": [
+   "bba916d26d8fbe19",
+   "d14176adee339f76"
+  ]
+ },
+ {
+  "query": "In a Redwood Private (VPC/on-prem) upgrade using the private installer, the UI has been stuck on \"Running migrations\" for over an hour and the migration pod logs repeatedly say it's waiting on a Postgres advisory lock (the Postgres database is externally managed, not the in-cluster StatefulSet). What's the underlying cause, what Support-guided action resolved it, and what specific logs/artifacts should be collected before attempting a retry or rollback?",
+  "gold_ids": [
+   "32d4e6a4231759e5",
+   "4f5d0ff511ca5697",
+   "90bfd7d814707eda",
+   "ae5d79e9c8ba7309"
+  ]
+ },
+ {
+  "query": "In the March 2026 fix for Hosted API issues where SSE streams were truncated/partial behind corporate proxies (e.g., NGINX/Envoy idle timeouts), what resume identifier format did we choose for Last-Event-ID-style reconnects, and per our 2026 partial-result checkpointing/resume standard what are the default checkpoint emission cadence and checkpoint TTL?",
+  "gold_ids": [
+   "40efe666aad29f46",
+   "74e66f8580902a51",
+   "acbea4858355cc4a",
+   "eb6fd8afeef8971e"
+  ]
+ },
+ {
+  "query": "We saw quality regressions after enabling an INT8/mixed-precision variant and suspect KV-cache rounding on long-context requests. What request header can we set as a quick mitigation to bypass the KV cache, and in the dynamic quant handoff policy for the interactive-chat route what minimum KV-cache hit-rate and max sequence length are required before routing to a quant variant?",
+  "gold_ids": [
+   "122bd2b63d0dcbf8",
+   "68704806c20e2b46",
+   "713a236bd8d7930a",
+   "778272f1e8c3743b"
+  ]
+ },
+ {
+  "query": "For the hosted API rollout in late June 2026 that introduced the Cost-Fallback policy engine and Telemetry Normalization v1, what HTTP response header was added for downstream billing/webhook consumers to understand the fallback reason, and which fields are required in the standardized per-fallback telemetry event envelope used for cost reconciliation?",
+  "gold_ids": [
+   "17be9c9b639619a2",
+   "17d78da930beb7ec",
+   "18f5f3699884941d",
+   "c61744aee738bf8a"
+  ]
+ },
+ {
+  "query": "In the Feb 25, 2026 incident where Redwood Console traces showed missing child spans/incomplete request graphs for about two hours while the underlying services were healthy, what caused the span drops in the ingestion pipeline, and what immediate mitigation was used to bring drop rates back to baseline?",
+  "gold_ids": [
+   "196bbe50e8fb6e8e"
+  ]
+ },
+ {
+  "query": "In March 2026, what caused duplicate tool/webhook executions during *streaming* chat retries only when the idempotency key contained non-ASCII characters (e.g., emoji/diacritics) and the request went over HTTP/2 through the edge proxy-and what were the recommended workaround and the server-side fix (including what normalization we applied)?",
+  "gold_ids": [
+   "a5614f094c6cd46e",
+   "e8cadb648103ad05"
+  ]
+ },
+ {
+  "query": "After the Feb 22, 2026 SEV-2 where Console rollout actions caused a rollback loop, which HTTP status code was wrongly treated as retryable, what server-side idempotency change was added for rollback requests, and (per the Dedicated staged rollouts audit-log spec) which service must emit the canonical audit events and what identifiers are used to de-duplicate retries?",
+  "gold_ids": [
+   "38b044cabb0cb49d",
+   "42e597d8cd9dc7e6",
+   "fc9cbc08bbdc5241"
+  ]
+ },
+ {
+  "query": "In a Private deployment incident in early March 2026, a scheduled KMS envelope key rotation caused about an 18-minute gap where audit events weren't being indexed and some requests saw stale SSO attributes that broke RBAC reconciliation. What was the root cause, and what immediate mitigation/hotfix was applied?",
+  "gold_ids": [
+   "9c23b2030985d29a",
+   "b3d66041809fbce1"
+  ]
+ },
+ {
+  "query": "In the EU hosted API, streaming generate requests over HTTP/2 intermittently returned 502 only when the client included a ~12KB base64-encoded user-metadata header. What was the root cause in our proxy chain, and what server-side mitigation did we deploy to stop the 502s (include the header and cutoff/behavior)?",
+  "gold_ids": [
+   "39e69815e1703ded",
+   "7f7fdaa5fe6105ac"
+  ]
+ },
+ {
+  "query": "On Streamly AI's dedicated pool dp-132-usw, what % of interactive burst credits should be reserved exclusively for priority=high routes?",
+  "gold_ids": [
+   "40d79601ccc4fe26",
+   "5082b3041ba51d75",
+   "7f857e8de1f90cbb",
+   "ef8d850dd5b2f621"
+  ]
+ },
+ {
+  "query": "For extraction, what price-normalization correctness is reported at temp=0.0 with strict JSON + canonicalization, and what earlier % is it compared to?",
+  "gold_ids": [
+   "117257c5956ca7da",
+   "612079a955e79275",
+   "8c7f8a8f38afed5d",
+   "ed702e4f3ea50666"
+  ]
+ },
+ {
+  "query": "Who approves terminating STALE-ORPHAN test instances after the 72h grace window-infra manager or cost-ops?",
+  "gold_ids": [
+   "8bd08d21c8744c53"
+  ]
+ },
+ {
+  "query": "INC-9821: was the degraded GPU node an OOM or intermittent driver/kernel launch stalls?",
+  "gold_ids": [
+   "07d25d79890e033d",
+   "c959147339a0b2ba",
+   "c9e686093e17e140",
+   "d11236334064c075"
+  ]
+ },
+ {
+  "query": "What must `--deterministic true` enforce in the eval runner (decoding settings)?",
+  "gold_ids": [
+   "42b12375aced5100",
+   "93e8247d690c56c7",
+   "9817c1d1aad51920",
+   "c90636e8aeb32dab"
+  ]
+ },
+ {
+  "query": "Copperfield Nimbus Dedicated sizing: latest baseline/growth/peak QPS and peak concurrent chat sessions?",
+  "gold_ids": [
+   "0b9c21085dbf2777",
+   "c32bfe1e8e345cb9",
+   "d642a366304a63f6",
+   "f1161baa41231097"
+  ]
+ },
+ {
+  "query": "What does Redwood Private on-prem recommend for signing backup manifests?",
+  "gold_ids": [
+   "35891580efe361d6",
+   "6f235d8cc626ce53",
+   "921b788c251a2593",
+   "e87b1a17450c28c0"
+  ]
+ },
+ {
+  "query": "In the SLO\u2192customer impact classifier, what score ranges map to Tiers 1-4 in v2, and what were the previous thresholds?",
+  "gold_ids": [
+   "3df56a8eaee50c9a",
+   "8f58632909616c1b",
+   "c00d3e3e3c7c2b33",
+   "e03b1d2836641498"
+  ]
+ },
+ {
+  "query": "What is the API endpoint to start a Unified Capacity Transition migration?",
+  "gold_ids": [
+   "1a065ffe79064a8c",
+   "74bf68add30b00b5",
+   "90cb269683c20437",
+   "90f1c6ced1692cbe"
+  ]
+ },
+ {
+  "query": "For EXP-002 (eu-west\u2192us-east), what egress cost rate and measurement basis does the cost penalty catalog use?",
+  "gold_ids": [
+   "2fe90bb0bc5f6dcc",
+   "496a168806855335",
+   "b1efb55a242a24be",
+   "c089b5d69ab97121"
+  ]
+ },
+ {
+  "query": "Default TTL for the cross-account GPU warm-pool handoff handshake token?",
+  "gold_ids": [
+   "342c9f8b0240040a",
+   "6a7f0e45f96a4cff",
+   "a6ad7e8558a1f07a",
+   "fe451e9f3b1d9b48"
+  ]
+ },
+ {
+  "query": "How do audit log exports access records older than the retention cutoff (super-admin override vs legal hold)?",
+  "gold_ids": [
+   "98b513b1efa4f9ba",
+   "a98619287f2072ad",
+   "b86af068c57878d4",
+   "f85c4336232e44e7"
+  ]
+ },
+ {
+  "query": "For the office keycard audit, how many months of access logs should we export?",
+  "gold_ids": [
+   "44da181949a8406f",
+   "6b97865a66546a22",
+   "f2a7ff0956e4d16e"
+  ]
+ },
+ {
+  "query": "For the Interactive Latency Canvas, what are the current prompt_len_bucket cutoffs (short/medium/long)?",
+  "gold_ids": [
+   "050b66bbd0a3e3d6",
+   "2de2b7913c034d72",
+   "59194ed4e374f321",
+   "bbefbbe2c3a72e05"
+  ]
+ },
+ {
+  "query": "In the Deterministic Playback Manifest v1, how is manifest signing/integrity represented (signature vs integrity fields)?",
+  "gold_ids": [
+   "05b43b52dece1648",
+   "504ad8368bd0a90e",
+   "db76ec2be5b2ce5e",
+   "deaef5878deed59d"
+  ]
+ },
+ {
+  "query": "What are the automated rollback trigger thresholds (safety sentinel, composite quality, business KPI) in the Optimize cohort-driven gates PRD?",
+  "gold_ids": [
+   "42680b5bc778bfaa",
+   "796ce7a974d9d992",
+   "b01c1e9291c904ae",
+   "f6a4a3ddb4bcacbc"
+  ]
+ },
+ {
+  "query": "ClearEdge 2027 pilot: final po_fingerprint format and weekly invoice delivery time?",
+  "gold_ids": [
+   "5d9063b7343b01be",
+   "9da097c0aae0db54",
+   "aca430f9701afc51",
+   "b6381a5236ef531d"
+  ]
+ },
+ {
+  "query": "What monthly token volume discount breakpoints apply for Hosted pricing in the enterprise playbook?",
+  "gold_ids": [
+   "3ed003ff015f39fd",
+   "5989a677485179c3",
+   "85a83b8f9ece0dd3",
+   "9019b3d5dbedcc3b"
+  ]
+ },
+ {
+  "query": "Do I need to set enable_tool_signal for tool-signal in the Responses v9 OpenAI-compat streaming bridge?",
+  "gold_ids": [
+   "46a37ab7b6fe50bc",
+   "7ad78eadd2bff9fd",
+   "e2f01aed559fe824",
+   "f4fd2378c61ac0b2"
+  ]
+ },
+ {
+  "query": "Does the Hosted AWS Marketplace SKU support customer-managed KMS keys (BYOK)?",
+  "gold_ids": [
+   "141b0331922d2055",
+   "1503f9fdaf3b9d99",
+   "3677e50ed7bd7c97",
+   "48147db32331a818"
+  ]
+ },
+ {
+  "query": "What is the procedure for an emergency rollback of a Serving Runtime release (Hosted and Dedicated)?",
+  "gold_ids": [
+   "02901ca50967f413",
+   "1197eb68b2a2f50e",
+   "433b185e96e4af5f",
+   "f2f9ecb316ec2076"
+  ]
+ },
+ {
+  "query": "Which intake channel has the most reports of \"token accounting discrepancy\"?",
+  "gold_ids": [
+   "26a492f681fcdc11",
+   "508f4349b90e1c80",
+   "5824860051daa029",
+   "8c7cffffb569ba74",
+   "bf3c6aab43f547ac",
+   "c874b683ea109c7a"
+  ]
+ },
+ {
+  "query": "What is Redwood Inference's end-to-end process for rotating secrets and credentials used by production services (including emergency rotation)?",
+  "gold_ids": [
+   "2aa7a14df2bfc879",
+   "89a8ff10a06d9814",
+   "c9522507690b5d95",
+   "d23a61cd9dcf690f",
+   "eeff9cd2c72b8254",
+   "f2cbe6a2ed881179"
+  ]
+ },
+ {
+  "query": "In Q4 2025, which customer industry segment was featured in the most published customer stories (case studies + one-page success stories)?",
+  "gold_ids": [
+   "0c5dccb469389550",
+   "5968b5e9d20b49c0",
+   "7c6909764bdf90c1",
+   "7de73a4b806af92d",
+   "88733f05498ee132",
+   "fbca9d0ff94c4baf"
+  ]
+ },
+ {
+  "query": "How many weekly status updates for Project Orion marked the project as 'At Risk'?",
+  "gold_ids": [
+   "11e9960f2826b581",
+   "32377d4cb4d5acc7",
+   "37b4858a8aea58ac",
+   "8b286a4444d8154b",
+   "d8c0e4d679005363",
+   "f201f4385b5a85fe"
+  ]
+ },
+ {
+  "query": "Across Redwood's Go, Python, and TypeScript SDKs, which SDK has the highest number of customer-reported auth-related bug reports, and what are the corresponding support ticket IDs?",
+  "gold_ids": [
+   "2d548c2083889677",
+   "375990f56d462933",
+   "50a24601ab090865",
+   "5decc53e8bf5cbd5",
+   "61d23caf28777c52",
+   "6b11b98f99714474",
+   "70c28ba48df90bef",
+   "87e170993cbf9804",
+   "989ad2eb84da43c6",
+   "9ed39f599a23d624"
+  ]
+ },
+ {
+  "query": "Across all incident postmortems, which Redwood team was assigned the most follow-up action items?",
+  "gold_ids": [
+   "06c29274ec0b6ce5",
+   "3fd782c688c14251",
+   "44ce0ee7f4a8d085",
+   "5dbf11704565d828",
+   "7eb5b18dd4836414",
+   "90e9119f9fbca59b",
+   "b0d9f08b1628eb0d",
+   "d456735459bee148",
+   "fa3a7d89d672887d"
+  ]
+ },
+ {
+  "query": "Which Redwood Inference engineering team owned the most production incidents involving GPU capacity or quota exhaustion in H1 2025?",
+  "gold_ids": [
+   "5424dba026a8acde",
+   "5db05c66e908a98b",
+   "625e0cbd076e64ea",
+   "685fd4eca1a2b9d6",
+   "6b978dcb1f7cdb97",
+   "730745ab9e2be68b",
+   "98ae5d849e21862e",
+   "9c4835017547b21d",
+   "d63313dcade83417"
+  ]
+ },
+ {
+  "query": "How many internal incident writeups at Redwood Inference describe activating automatic fallback (to a different model or region) as part of mitigation?",
+  "gold_ids": [
+   "02c1f158140bbe11",
+   "29f5d1e14f5f2b4b",
+   "7ca16d5f441b4a8f",
+   "b719450aa73cc1dd",
+   "cdbf593997654e58"
+  ]
+ },
+ {
+  "query": "What is the complete SOP Redwood Inference must follow to enable \"customer-managed audit log export\" (to the customer's cloud storage) across Hosted, Dedicated, and Private deployments-including required prerequisites, security approvals, configuration steps, validation, customer communication, and ongoing operations/ownership?",
+  "gold_ids": [
+   "21e07a0a4a5de582",
+   "4aff54bee6bb0abf",
+   "71883bb11ff79679",
+   "73b1484510b38627",
+   "74ab20b3a7d5457b",
+   "75c91a55b4f51ab4",
+   "8aac40a24e22a617",
+   "ca3417867e6c110a",
+   "d485b3d76ebd359f",
+   "d5b578db2638a16c",
+   "f8f28c8df41c69bf"
+  ]
+ },
+ {
+  "query": "For an enterprise Redwood Private deployment upgrade, what is the complete go/no-go gate (required validations, required approvals, and required customer communications) mandated by Redwood's internal standards?",
+  "gold_ids": [
+   "33212bcbfe35a863",
+   "4f408b3ae37d9afa",
+   "7ac10a59197e922c",
+   "7c16bd6b89c77563",
+   "a1e78761b8a19a41",
+   "b10a9acc8fb851e2",
+   "cac2b33b8f1be62b",
+   "d5d70cfa6411f199",
+   "f21607f6ed73d3fb"
+  ]
+ },
+ {
+  "query": "What is Redwood Inference's end-to-end process for making a production change (definition, required approvals, pre-deploy verification, deploy execution, customer/internal communications, and rollback/post-change requirements) for the Hosted API and Console?",
+  "gold_ids": [
+   "065d38234ba9e2af",
+   "07caf412f53cb2d7",
+   "1f42e260cbff953c",
+   "259f83404034bbb4",
+   "35aa81dcfc48bfa6",
+   "64978db261e6c2f1",
+   "7dea318154f7f19a",
+   "9441e87e7ee1d84f",
+   "9f9020a906796e92",
+   "edd393c0f27b0eda"
+  ]
+ },
+ {
+  "query": "List every internal communication thread (email, Slack, and meeting notes) about the Redwood Private upgrade 'rollback loop' bug (including references to RRB-17 or 'stuck rollback').",
+  "gold_ids": [
+   "0ca1e794374b7d38",
+   "15f10193655bb55b",
+   "44f53e67e8a380df",
+   "80be13cab5140c42",
+   "94c8708670bd4ad0"
+  ]
+ },
+ {
+  "query": "What is Redwood Inference's end-to-end internal process for launching a new third-party LLM into the Hosted API model catalog-from intake to post-launch monitoring-including every required gate, owner, and artifact?",
+  "gold_ids": [
+   "0d4b7f74c9e7dd94",
+   "1827be2f8ba5b764",
+   "4a56ecfe88b4f20f",
+   "585c3f5ec066543d",
+   "66d575065ecc359d",
+   "d06b5f0a9803169d",
+   "d79d866366aa29d1",
+   "fdf5f0d082831c17"
+  ]
+ },
+ {
+  "query": "\"What is the complete required content of a production rollout plan for introducing a new LLM model version on Redwood Inference (hosted, dedicated, and private), including required metrics/thresholds, approvals, rollback/fallback rules, and customer-facing communications?\"",
+  "gold_ids": [
+   "00f756794b0907ff",
+   "09d5c9085559a533",
+   "0be449a41c1ceccf",
+   "1b2bd08e9fdf167f",
+   "225414fbeb9128a0",
+   "50979aac1ddaddfb",
+   "594565080c8bd90b",
+   "8805d9bb476cdf37",
+   "b6a77e23ff961523",
+   "c8fe367d54c431f8",
+   "d071e0467ee61253"
+  ]
+ },
+ {
+  "query": "Has any customer other than Kestrel Labs reported timeouts specifically when using the JSON-schema structured output feature on the hosted API?",
+  "gold_ids": [
+   "0167935697975ef3",
+   "32e576bd89ce71b7",
+   "59849a496f68abad",
+   "a8b4aa41091482a8",
+   "bd6602bf389bba7b",
+   "d7f34d59e52a8929"
+  ]
+ },
+ {
+  "query": "What is Redwood Inference's complete end-to-end process for shipping an emergency serving-runtime hotfix to production (Hosted + Dedicated), including required approvals, checklists, rollout/rollback steps, and mandatory customer communications?",
+  "gold_ids": [
+   "4f9d7926fb838442",
+   "4fb1aca97af97379",
+   "757592e4ee8f81c5",
+   "946955a33f50c8b8",
+   "bb79591a5a658957",
+   "e53a0f8bf029a11e"
+  ]
+ },
+ {
+  "query": "Which customers have been granted an exception to Redwood\u2019s default inference request log retention policy, and what retention period was approved for each?",
+  "gold_ids": [
+   "3730b834ba1e0fc0",
+   "3783dfd2f98bdb6e",
+   "6a80f2250390256c",
+   "72a9d800084a1acf",
+   "8949fc3e02675913",
+   "a76b1c107ab4f264",
+   "b5d32e0b47f9be37"
+  ]
+ },
+ {
+  "query": "In March 2026, which deployment offering-Hosted API, Dedicated, or Private-had the most customer support escalations where the primary symptom was request timeouts?",
+  "gold_ids": [
+   "08cfba78525b3e3e",
+   "6ae478c7bc778b08",
+   "6bf5bb36d57f9a9f",
+   "e8b49d40ad4521db",
+   "f7980f470787ea63",
+   "ff8db84abd7db7ad"
+  ]
+ },
+ {
+  "query": "How many Fireflies sales-call transcripts mention a customer requirement for data residency (keeping data in a specific region/country)?",
+  "gold_ids": [
+   "134f1422159b4861",
+   "141b0331922d2055",
+   "2fb0229b0b9fb835",
+   "3677e50ed7bd7c97",
+   "5dcf7673288186fe",
+   "81597a0abe24d259",
+   "89bf3f447cabbb62",
+   "a6eed7d7c2868554",
+   "d11ecaed7601ed93",
+   "fa9b0c09dbbba70d",
+   "fadb0cc8234ee95e"
+  ]
+ },
+ {
+  "query": "In the team chat about posting jokes when an AI makes things up in production, what tagging requirement did someone propose for the memes?",
+  "gold_ids": [
+   "a6ab278163c02871"
+  ]
+ },
+ {
+  "query": "Who owns the messy go-to-market misc assets dump with placeholder marketing files and micro-copy ideas created during a last-minute scramble before a partner call?",
+  "gold_ids": [
+   "7489b7366e1d1530"
+  ]
+ },
+ {
+  "query": "Who is responsible for the stock canyon hero placeholder image that is suggested for demo slides, and what is its current status?",
+  "gold_ids": [
+   "d43170166ef56cd5"
+  ]
+ },
+ {
+  "query": "When is the professional deep cleaning scheduled for the smelly refrigerator in the 4th floor office kitchen?",
+  "gold_ids": [
+   "e8acfa320cb17833"
+  ]
+ },
+ {
+  "query": "Are sneakers acceptable for the first few weeks of the company summer softball league, or do we need cleats right away?",
+  "gold_ids": [
+   "0f9cd362a97a0b54"
+  ]
+ },
+ {
+  "query": "What time was the fantasy football mock draft scheduled for, and which time zone was it in?",
+  "gold_ids": [
+   "b0d7bb926e17ce56"
+  ]
+ },
+ {
+  "query": "Do I need approval to add a large planter or wall mounted art in a Redwood office, and what details should I include in the request?",
+  "gold_ids": [
+   "a9955e04abfc54e9",
+   "bd9e970ccff3596b"
+  ]
+ },
+ {
+  "query": "How often should facilities water common-area snake plants and ZZ plants in the office?",
+  "gold_ids": [
+   "733ef913c009bb6a",
+   "a60688efe3f8eea4"
+  ]
+ },
+ {
+  "query": "What was the deadline and time zone for paying into the office fantasy football playoff pickem?",
+  "gold_ids": [
+   "d99507dcf1caa14c"
+  ]
+ },
+ {
+  "query": "In a first round technical interview for a senior sales engineer candidate, what were the agreed next steps after the call?",
+  "gold_ids": [
+   "0d3af92dd78c3fcc",
+   "d1e21a570ad73b45"
+  ]
+ },
+ {
+  "query": "What is the proposed weekly cleanup schedule and routine for tidying the engineering kitchen fridge so old opened items get discarded?",
+  "gold_ids": [
+   "dff7ec05f2c61209"
+  ]
+ },
+ {
+  "query": "What caused the courtyard entrance badge kiosk to intermittently show card read errors and freeze for a few minutes after a recent vendor update?",
+  "gold_ids": [
+   "ee81fc3da021e0c0"
+  ]
+ },
+ {
+  "query": "What time are people planning to start the office foosball tournament lunch bracket on Friday?",
+  "gold_ids": [
+   "8e7997a564154cd3"
+  ]
+ },
+ {
+  "query": "For the casual soccer game being organized on Friday after work, what was the agreed maximum number of players?",
+  "gold_ids": [
+   "51ea09614c4b78eb"
+  ]
+ },
+ {
+  "query": "When are signups due for the informal company softball team being organized for summer?",
+  "gold_ids": [
+   "7fd936a40e366acd"
+  ]
+ },
+ {
+  "query": "Who volunteered to be the captain for the office summer softball team and help organize practices?",
+  "gold_ids": [
+   "b2e0d32b8072b665"
+  ]
+ },
+ {
+  "query": "Is there an internal hackathon demo project that uses a small web UI and a fake backend to visualize model serving behavior like batching and cache hit rates, and can be run locally or deployed for a quick demo?",
+  "gold_ids": [
+   "9218b25ecdac533f"
+  ]
+ },
+ {
+  "query": "In the chat about an office cat knocking over equipment and jokes about caching, what was the short bash command meme about forcefully ending a process named after a cat?",
+  "gold_ids": [
+   "f30092a1dddf6706"
+  ]
+ },
+ {
+  "query": "What noise range is considered normal in the company cafeteria during the day, and what short-term maximum is allowed at lunch?",
+  "gold_ids": [
+   "35502642f701a0a2",
+   "f8ab54970ff7e09a"
+  ]
+ },
+ {
+  "query": "In a backend inference engineer interview about multi-tenant GPU scheduling, what strategy did the candidate propose to reduce cold misses for growing attention cache in long chat histories?",
+  "gold_ids": [
+   "9cf7b165f46e706e",
+   "f9b69e7c69592717"
+  ]
+ }
+]

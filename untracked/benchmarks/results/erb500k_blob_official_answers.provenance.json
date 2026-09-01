@@ -1,0 +1,49 @@
+{
+  "export_timestamp_utc": "2026-07-13T06:56:55.863876+00:00",
+  "source_file": "F:\\Projects\\helix-context\\benchmarks\\results\\erb500k_blob_additive_scored.jsonl",
+  "source_file_sha256": "b1cf42efbcb19cf9f463f80a272944822abbc0e0361926934c904313020437ce",
+  "questions_file": "F:\\Projects\\EnterpriseRAG-Bench-main\\questions.jsonl",
+  "questions_file_sha256": "f9524b9157cd43aae36b99333a124738804306ea6d07f332d49faa6d3d147905",
+  "row_count_in": 500,
+  "row_count_out": 500,
+  "verdict_tallies_source": {
+    "CORRECT": 236,
+    "ABSTAINED": 143,
+    "INCORRECT": 121
+  },
+  "exclude_abstained": false,
+  "excluded_abstained_ids": [],
+  "empty_answer_count": 5,
+  "empty_answer_sentinel_applied": true,
+  "empty_answer_sentinel_text": "(no answer produced)",
+  "empty_answer_rows": [
+    {
+      "question_id": "qst_0113",
+      "old_judge_verdict": "ABSTAINED",
+      "answer_status": "exit_nonzero"
+    },
+    {
+      "question_id": "qst_0184",
+      "old_judge_verdict": "ABSTAINED",
+      "answer_status": "exit_nonzero"
+    },
+    {
+      "question_id": "qst_0194",
+      "old_judge_verdict": "ABSTAINED",
+      "answer_status": "exit_nonzero"
+    },
+    {
+      "question_id": "qst_0202",
+      "old_judge_verdict": "ABSTAINED",
+      "answer_status": "exit_nonzero"
+    },
+    {
+      "question_id": "qst_0282",
+      "old_judge_verdict": "ABSTAINED",
+      "answer_status": "exit_nonzero"
+    }
+  ],
+  "document_ids_hook_file": null,
+  "document_ids_merged_count": 0,
+  "output_file": "F:\\Projects\\helix-context\\benchmarks\\results\\erb500k_blob_official_answers.jsonl"
+}

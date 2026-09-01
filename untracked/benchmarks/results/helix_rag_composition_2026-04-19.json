@@ -1,0 +1,1524 @@
+{
+  "genome": {
+    "total_genes": 7846,
+    "compression_ratio": 2.5889416344929184
+  },
+  "n_needles": 8,
+  "results": [
+    {
+      "name": "helix_and_headroom_ports",
+      "query": "what ports do helix and headroom listen on",
+      "expected": [
+        "11437",
+        "8787"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.025,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/skills/security_suite.py",
+            "F:/Projects/helix-context/helix_context/server.py",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/collab/HELIX_CODEBASE_INTRO.md",
+            "F:/Projects/helix-context/benchmarks/bench_sweep.py",
+            "F:/Projects/helix-context/deploy/otel/docker-compose.yml",
+            "F:/Projects/helix-context/deploy/otel/tempo.yaml",
+            "F:/Projects/helix-context/tests/test_headroom_bridge.py"
+          ],
+          "n_delivered": 10,
+          "content_chars": 32349,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 7.662,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/backend-with-otel.bat",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/Education/fleet/web_app.py",
+            "F:/Projects/helix-context/launcher-with-otel.bat",
+            "F:/Projects/Education/fleet/knowledge/code_writes/workspace/.gitignore",
+            "F:/Projects/helix-context/helix_context/mcp/server.py",
+            "F:/Projects/helix-context/tests/test_launcher_state.py",
+            "F:/Projects/Education/docs/archive/ARCHITECTURE_RESEARCH.md"
+          ],
+          "n_delivered": 8,
+          "content_chars": 15282,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.502,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/architecture/PIPELINE_LANES.md",
+            "F:/Projects/helix-context/docs/architecture/KNOWLEDGE_GRAPH.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "file_coverage=0.12 below 0.15 floor (folder=1.00) \u2014 delivered set is in the right folder but no filenames match the queried concept"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.487,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/architecture/PIPELINE_LANES.md",
+            "F:/Projects/helix-context/docs/architecture/KNOWLEDGE_GRAPH.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 57693,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.563,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/architecture/PIPELINE_LANES.md",
+            "F:/Projects/helix-context/docs/architecture/KNOWLEDGE_GRAPH.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 190,
+          "content_chars": 63003,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "python_version_and_codec_extra",
+      "query": "python version helix requires and extra that enables headroom",
+      "expected": [
+        "3.11",
+        "codec"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.034,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/docs/ops/SKILLS_BUNDLE.md",
+            "F:/Projects/helix-context/docs/ops/SKILLS_BUNDLE.md",
+            "F:/Projects/helix-context/docs/ops/SKILLS_BUNDLE.md",
+            "F:/Projects/helix-context/pyproject.toml",
+            "F:/Projects/helix-context/benchmarks/bench_sweep.py",
+            "F:/Projects/helix-context/tests/test_headroom_bridge.py",
+            "F:/Projects/helix-context/helix_context/server.py",
+            "F:/Projects/helix-context/deploy/windows/setup-helix.ps1",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md"
+          ],
+          "n_delivered": 12,
+          "content_chars": 37785,
+          "score": {
+            "pointer_full": true,
+            "pointer_partial": 1.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              true,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.142,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/NOTICE",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/helix-context/deploy/windows/setup-helix.ps1",
+            "F:/Projects/helix-context/deploy/windows/README.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-24-rust-phase3-bridge.md",
+            "F:/Projects/helix-context/tests/test_launcher_state.py",
+            "F:/Projects/helix-context/helix_context/config.py",
+            "F:/Projects/helix-context/helix_context/launcher/__init__.py",
+            "F:/Projects/helix-context/helix_context/launcher/supervisor.py",
+            "F:/Projects/CosmicTasha/web/.dockerignore",
+            "F:/Projects/helix-context/helix_context/launcher/installer.py",
+            "F:/Projects/Education/BigEd/launcher/modules/hub.py"
+          ],
+          "n_delivered": 12,
+          "content_chars": 35173,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 1.018,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/scripts/validate_layered_fingerprints.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "file_coverage=0.12 below 0.15 floor (folder=1.00) \u2014 delivered set is in the right folder but no filenames match the queried concept"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.5,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              true
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 1.032,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/scripts/validate_layered_fingerprints.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 57693,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.5,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 1.018,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/scripts/validate_layered_fingerprints.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 183,
+          "content_chars": 62944,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.5,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "pipeline_steps_and_compression_target",
+      "query": "steps in helix pipeline and target compression ratio",
+      "expected": [
+        "6",
+        "5x"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.03,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix.toml",
+            "F:/Projects/helix-context/benchmarks/needle_results.json",
+            "F:/Projects/helix-context/benchmarks/bench_needle.py",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/benchmarks/bench_sweep.py",
+            "F:/Projects/helix-context/benchmarks/bench_budget_zone.py",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/benchmarks/sweep_results.json",
+            "F:/Projects/helix-context/benchmarks/sweep_results.json"
+          ],
+          "n_delivered": 10,
+          "content_chars": 34110,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.139,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/docs/DIMENSIONS.md",
+            "F:/Projects/helix-context/docs/architecture/DIMENSIONS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/scripts/claude_core_ingest.py",
+            "F:/Projects/helix-context/docs/FUTURE/PUSH_PULL_CONTEXT.md",
+            "F:/Projects/helix-context/scripts/ingest_parallel.py",
+            "F:/Projects/helix-context/docs/collab/batman_output/PORT_NOTES.md",
+            "F:/Projects/helix-context/docs/collab/CELESTIA_JOINT_EXPERIMENT.md",
+            "F:/Projects/helix-context/scripts/claude_core_ingest.py"
+          ],
+          "n_delivered": 9,
+          "content_chars": 31798,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.724,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only"
+          ],
+          "n_refresh_targets": 0,
+          "score": {
+            "pointer_full": true,
+            "pointer_partial": 1.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              true,
+              true
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.729,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 57660,
+          "score": {
+            "pointer_full": true,
+            "pointer_partial": 1.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              true,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.737,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 160,
+          "content_chars": 62095,
+          "score": {
+            "pointer_full": true,
+            "pointer_partial": 1.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              true,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "claim_types_and_spec_source",
+      "query": "claim_type allowed values helix claims layer specification",
+      "expected": [
+        "path_value",
+        "agent-context-index"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.024,
+          "delivered_srcs": [
+            "F:/Projects/Education/BigEd/research/agent_swarming_and_collaboration.md",
+            "F:/Projects/helix-context/docs/positioning/ENTERPRISE.md",
+            "F:/Projects/helix-context/docs/positioning/ENTERPRISE.md",
+            "F:/Projects/helix-context/docs/positioning/ENTERPRISE.md",
+            "F:/Projects/helix-context/docs/plans/2026-04-15-helix-ai-visibility.md",
+            "F:/Projects/Education/fleet/skills/clinical_review.py",
+            "F:/Projects/Education/ROADMAP.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARK_RATIONALE.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARK_RATIONALE.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARK_RATIONALE.md",
+            "F:/Projects/Education/education-context/FRAMEWORK_BLUEPRINT.md"
+          ],
+          "n_delivered": 11,
+          "content_chars": 42751,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.138,
+          "delivered_srcs": [
+            "F:/Projects/CosmicTasha/web/src/lib/compliance-kb/soc2/templates/encryption-policy.ts",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-module-deps-versioning.md",
+            "F:/Projects/Education/fleet/modules_blueprint.py",
+            "F:/Projects/helix-context/helix_context/telemetry.py",
+            "F:/Projects/helix-context/helix_context/server.py",
+            "F:/Projects/BookKeeper/docs/superpowers/plans/2026-03-25-rbac-completion.md",
+            "F:/Projects/Education/fleet/geo_api.py",
+            "F:/Projects/helix-context/helix_context/telemetry.py",
+            "F:/Projects/helix-context/tests/test_health.py",
+            "F:/Projects/CosmicTasha/web/src/lib/compliance-kb/soc2/templates/access-review-templates.ts",
+            "F:/Projects/helix-context/benchmarks/needle_results.json",
+            "F:/Projects/helix-context/tests/test_layered_fingerprints.py"
+          ],
+          "n_delivered": 12,
+          "content_chars": 36485,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.51,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "file_coverage=0.12 below 0.15 floor (folder=1.00) \u2014 delivered set is in the right folder but no filenames match the queried concept"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.53,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 57660,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.556,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/tests/test_stress.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/ROSETTA.md",
+            "F:/Projects/helix-context/docs/MISSION.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-04-07-helix-context-design.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 161,
+          "content_chars": 62409,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "headroom_port_and_mode_default",
+      "query": "headroom dashboard port default compression mode",
+      "expected": [
+        "8787",
+        "token"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.034,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/Education/education-context/OPERATIONS.md",
+            "F:/Projects/Education/OPERATIONS.md",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/benchmarks/bench_sweep.py",
+            "F:/Projects/helix-context/helix_context/headroom_bridge.py",
+            "F:/Projects/helix-context/helix_context/mcp_server.py",
+            "F:/Projects/helix-context/helix_context/mcp_server.py"
+          ],
+          "n_delivered": 12,
+          "content_chars": 41409,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.145,
+          "delivered_srcs": [
+            "F:/Projects/CosmicTasha/web/postcss.config.mjs",
+            "F:/Projects/Education/biged-rs/crates/biged-gui/src/lib.rs",
+            "F:/Projects/CosmicTasha/deploy/Caddyfile",
+            "F:/Projects/Education/fleet/static/view_engine.js",
+            "F:/Projects/Education/deploy/helm/biged-cc/templates/service-dashboard.yaml",
+            "F:/Projects/Education/deploy/helm/biged-cc/templates/deployment-ollama.yaml",
+            "F:/Projects/BookKeeper/docs/superpowers/plans/2026-03-25-stitch-ui-integration.md",
+            "F:/Projects/Education/biged-rs/crates/biged-gui/src/web.rs",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-24-rust-phase4-gui.md",
+            "F:/Projects/Education/biged-rs/LICENSE",
+            "F:/Projects/BookKeeper/bookkeeper/dashboard/token_bridge.py",
+            "F:/Projects/BookKeeper/bookkeeper/dashboard/templates/_head.html"
+          ],
+          "n_delivered": 12,
+          "content_chars": 22378,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.949,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/skills/api_health_probe.py",
+            "F:/Projects/Education/fleet/knowledge/code_drafts/autoresearch_loop_evolved_20260402_coder_2.py",
+            "F:/Projects/helix-context/scripts/claude_core_ingest.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/config.py",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-27-factorio-sandbox-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-25-api-governance-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-factorio-takeover.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-25-api-governance.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-25-api-governance.md",
+            "F:/Projects/Education/ROADMAP.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "coordinate_confidence=0.00 below 0.30 floor (folder=0.00, file=0.00) \u2014 retrieval may not have located the right coordinate region"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.928,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/skills/api_health_probe.py",
+            "F:/Projects/Education/fleet/knowledge/code_drafts/autoresearch_loop_evolved_20260402_coder_2.py",
+            "F:/Projects/helix-context/scripts/claude_core_ingest.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/config.py",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-27-factorio-sandbox-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-25-api-governance-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-factorio-takeover.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-25-api-governance.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 56846,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.945,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/skills/api_health_probe.py",
+            "F:/Projects/Education/fleet/knowledge/code_drafts/autoresearch_loop_evolved_20260402_coder_2.py",
+            "F:/Projects/helix-context/scripts/claude_core_ingest.py",
+            "F:/Projects/helix-context/helix_context/ribosome.py",
+            "F:/Projects/helix-context/helix_context/config.py",
+            "F:/Projects/helix-context/docs/papers/AGENTOME_PART_II_DRAFT.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/architecture/LAUNCHER.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-27-factorio-sandbox-design.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-25-api-governance-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-factorio-takeover.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-25-api-governance.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 249,
+          "content_chars": 63888,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "freshness_half_lives_stable_and_hot",
+      "query": "freshness half-life stable hot volatility",
+      "expected": [
+        "7d",
+        "15min"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.01,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/factorio/state_encoder.py",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-factorio-ml-overhaul.md",
+            "F:/Projects/helix-context/tests/test_density_gate.py",
+            "F:/Projects/helix-context/docs/FUTURE/LANGUAGE_AT_THE_EDGES.md",
+            "F:/Projects/Education/fleet/knowledge/code_discussion/Stability_AI_and_Replicate_API_\u2014_paralle_round1.md",
+            "F:/Projects/Education/fleet/static/view_engine.js",
+            "F:/Projects/helix-context/docs/collab/comms/REPLY_TO_PAIRWISE_FROM_HELIX.md",
+            "F:/Projects/helix-context/helix_context/schemas.py",
+            "F:/Projects/helix-context/benchmarks/bench_needle_1000.py",
+            "F:/Projects/helix-context/helix_context/tie_break.py",
+            "F:/Projects/helix-context/tests/fixtures/science_protein.txt",
+            "F:/Projects/helix-context/docs/FUTURE/TIE_BREAK_WALKING.md"
+          ],
+          "n_delivered": 12,
+          "content_chars": 43324,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.141,
+          "delivered_srcs": [
+            "F:/Projects/Education/fleet/db_tasks.py",
+            "F:/Projects/BookKeeper/bookkeeper/ingestion/bank/csv_parser.py",
+            "F:/Projects/CosmicTasha/web/src/app/intake/_context/intake-context.tsx",
+            "F:/Projects/Education/fleet/templates/components/_tasks.html",
+            "F:/Projects/Education/fleet/templates/components/_tasks.html",
+            "F:/Projects/Education/fleet/templates/components/_queue.html",
+            "F:/Projects/Education/fleet/payments.py",
+            "F:/Projects/Education/fleet/templates/components/_update.html",
+            "F:/Projects/Education/scripts/setup.ps1",
+            "F:/Projects/CosmicTasha/web/src/lib/review/mock-data.ts",
+            "F:/Projects/helix-context/helix_context/cwola.py",
+            "F:/Projects/BookKeeper/bookkeeper/scale/task_queue.py"
+          ],
+          "n_delivered": 12,
+          "content_chars": 31629,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.177,
+          "delivered_srcs": [
+            "F:/Projects/Education/autoresearch/profiles.toml",
+            "F:/Projects/helix-context/benchmarks/precision_tie_break_ab_2026-04-15.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_v2.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_deberta.json",
+            "F:/Projects/helix-context/benchmarks/compression_results.json",
+            "F:/Projects/helix-context/benchmarks/compression_fresh_genome.json",
+            "F:/Projects/Education/fleet/skills/diffusion.py",
+            "F:/Projects/Education/fleet/skills/autoresearch_loop.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/tests/test_density_gate.py",
+            "F:/Projects/helix-context/benchmarks/bench_needle_1000.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/DESIGN_TARGET.md",
+            "F:/Projects/Education/fleet/knowledge/sync/drift_2026-04-02.md",
+            "F:/Projects/Education/fleet/knowledge/sync/drift_2026-04-01.md",
+            "F:/Projects/Education/docs/archive/STABILITY_GUIDE.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "coordinate_confidence=0.00 below 0.30 floor (folder=0.00, file=0.00) \u2014 retrieval may not have located the right coordinate region"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.19,
+          "delivered_srcs": [
+            "F:/Projects/Education/autoresearch/profiles.toml",
+            "F:/Projects/helix-context/benchmarks/precision_tie_break_ab_2026-04-15.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_v2.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_deberta.json",
+            "F:/Projects/helix-context/benchmarks/compression_results.json",
+            "F:/Projects/helix-context/benchmarks/compression_fresh_genome.json",
+            "F:/Projects/Education/fleet/skills/diffusion.py",
+            "F:/Projects/Education/fleet/skills/autoresearch_loop.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/tests/test_density_gate.py",
+            "F:/Projects/helix-context/benchmarks/bench_needle_1000.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 59779,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.183,
+          "delivered_srcs": [
+            "F:/Projects/Education/autoresearch/profiles.toml",
+            "F:/Projects/helix-context/benchmarks/precision_tie_break_ab_2026-04-15.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_v2.json",
+            "F:/Projects/helix-context/benchmarks/compression_results_deberta.json",
+            "F:/Projects/helix-context/benchmarks/compression_results.json",
+            "F:/Projects/helix-context/benchmarks/compression_fresh_genome.json",
+            "F:/Projects/Education/fleet/skills/diffusion.py",
+            "F:/Projects/Education/fleet/skills/autoresearch_loop.py",
+            "F:/Projects/helix-context/tests/test_pipeline.py",
+            "F:/Projects/helix-context/tests/test_density_gate.py",
+            "F:/Projects/helix-context/benchmarks/bench_needle_1000.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 164,
+          "content_chars": 65115,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "coord_floor_and_file_grain_floor",
+      "query": "coordinate confidence floor file-grain coverage floor",
+      "expected": [
+        "0.30",
+        "0.15"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.028,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/docs/FUTURE/WALKER_PATTERNS.md",
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md",
+            "F:/Projects/helix-context/docs/specs/2026-04-16-snow-benchmark-design.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/CosmicTasha/web/src/app/intake/resume/page.tsx"
+          ],
+          "n_delivered": 12,
+          "content_chars": 43735,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.145,
+          "delivered_srcs": [
+            "F:/Projects/Education/BigEd/research/COMPARISON_security_posture.md",
+            "F:/Projects/Education/BigEd/research/COMPARISON_stier_roadmap.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/_plans/ray_trace_plan.md",
+            "F:/Projects/helix-context/scripts/pwpc/lockstep_matrix_test.py",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_054031.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_050352.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_051005.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_053051.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_053220.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_050721.md",
+            "F:/Projects/Education/fleet/knowledge/flywheel/audit_20260326_052925.md"
+          ],
+          "n_delivered": 12,
+          "content_chars": 27181,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 0.204,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/Education/fleet/audit_scorer.py",
+            "F:/Projects/helix-context/helix_context/integrations/scorerift.py",
+            "F:/Projects/helix-context/helix_context/genome.py",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_FIGURE_SPECS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/Education/BigEd/research/COMPARISON_security_posture.md",
+            "F:/Projects/helix-context/docs/specs/2026-04-16-snow-benchmark-design.md",
+            "F:/Projects/helix-context/docs/FUTURE/WALKER_PATTERNS.md",
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md",
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4518,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "coordinate_confidence=0.00 below 0.30 floor (folder=0.00, file=0.00) \u2014 retrieval may not have located the right coordinate region"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 0.202,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/Education/fleet/audit_scorer.py",
+            "F:/Projects/helix-context/helix_context/integrations/scorerift.py",
+            "F:/Projects/helix-context/helix_context/genome.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_FIGURE_SPECS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/Education/BigEd/research/COMPARISON_security_posture.md",
+            "F:/Projects/helix-context/docs/specs/2026-04-16-snow-benchmark-design.md",
+            "F:/Projects/helix-context/docs/FUTURE/WALKER_PATTERNS.md",
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md"
+          ],
+          "n_delivered": 11,
+          "n_read": 11,
+          "n_missing": 0,
+          "content_chars": 55050,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 0.217,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/Education/fleet/audit_scorer.py",
+            "F:/Projects/helix-context/helix_context/integrations/scorerift.py",
+            "F:/Projects/helix-context/helix_context/genome.py",
+            "F:/Projects/helix-context/docs/papers/PAPER_THREE_CONSTRAINTS.md",
+            "F:/Projects/helix-context/docs/papers/PAPER_FIGURE_SPECS.md",
+            "F:/Projects/helix-context/docs/benchmarks/BENCHMARKS.md",
+            "F:/Projects/Education/BigEd/research/COMPARISON_security_posture.md",
+            "F:/Projects/helix-context/docs/specs/2026-04-16-snow-benchmark-design.md",
+            "F:/Projects/helix-context/docs/FUTURE/WALKER_PATTERNS.md",
+            "F:/Projects/helix-context/docs/collab/from_todd/PWPC_EXPERIMENT_SPEC.md"
+          ],
+          "n_delivered": 11,
+          "n_claims_resolved": 121,
+          "content_chars": 57796,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "helix_port_and_fleet_port",
+      "query": "helix listen port bigEd fleet dashboard port",
+      "expected": [
+        "11437",
+        "5555"
+      ],
+      "cells": {
+        "pure_rag_bm25": {
+          "cell": "pure_rag_bm25",
+          "latency_s": 0.051,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/tests/test_launcher_supervisor.py",
+            "F:/Projects/Education/fleet/skills/security_suite.py",
+            "F:/Projects/helix-context/benchmarks/bench_needle.py",
+            "F:/Projects/helix-context/deploy/otel/tempo.yaml",
+            "F:/Projects/helix-context/benchmarks/needle_results.json",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/fleet/fleet.toml",
+            "F:/Projects/helix-context/helix_context/tagger.py",
+            "F:/Projects/helix-context/benchmarks/sweep_results.json"
+          ],
+          "n_delivered": 10,
+          "content_chars": 31357,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.5,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              true
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "pure_rag_embedding": {
+          "cell": "pure_rag_embedding",
+          "latency_s": 0.151,
+          "delivered_srcs": [
+            "F:/Projects/helix-context/tests/test_launcher_state.py",
+            "F:/Projects/helix-context/backend-with-otel.bat",
+            "F:/Projects/helix-context/tests/test_status.py",
+            "F:/Projects/helix-context/helix_context/config.py",
+            "F:/Projects/helix-context/launcher-with-otel.bat",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-28-module-deps-versioning.md",
+            "F:/Projects/Education/.mcp.json",
+            "F:/Projects/helix-context/tests/test_pipeline.py"
+          ],
+          "n_delivered": 8,
+          "content_chars": 17919,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              false
+            ]
+          }
+        },
+        "helix_only": {
+          "cell": "helix_only",
+          "latency_s": 2.706,
+          "delivered_srcs": [
+            "F:/Projects/Education/deploy/helm/biged-cc/values.yaml",
+            "F:/Projects/Education/biged-rs/Cargo.toml",
+            "F:/Projects/Education/docker-compose.yml",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-24-rust-hybrid-architecture-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-24-rust-phase2-server.md",
+            "F:/Projects/Education/biged-rs/docs/RUNBOOK.md",
+            "F:/Projects/Education/biged-rs/DEPLOYMENT.md",
+            "F:/Projects/Education/OPERATIONS.md",
+            "F:/Projects/helix-context/BENCHMARK_NOTES.md"
+          ],
+          "n_delivered": 16,
+          "content_chars": 4555,
+          "packet_notes": [
+            "source_index unavailable; using gene-local metadata only",
+            "file_coverage=0.00 below 0.15 floor (folder=0.75) \u2014 delivered set is in the right folder but no filenames match the queried concept"
+          ],
+          "n_refresh_targets": 16,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": false,
+            "content_partial": 0.5,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              false,
+              true
+            ]
+          }
+        },
+        "helix_rag": {
+          "cell": "helix_rag",
+          "latency_s": 2.691,
+          "delivered_srcs": [
+            "F:/Projects/Education/deploy/helm/biged-cc/values.yaml",
+            "F:/Projects/Education/biged-rs/Cargo.toml",
+            "F:/Projects/Education/docker-compose.yml",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-24-rust-hybrid-architecture-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-24-rust-phase2-server.md",
+            "F:/Projects/Education/biged-rs/docs/RUNBOOK.md"
+          ],
+          "n_delivered": 12,
+          "n_read": 12,
+          "n_missing": 0,
+          "content_chars": 51719,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        },
+        "helix_full_stack": {
+          "cell": "helix_full_stack",
+          "latency_s": 2.763,
+          "delivered_srcs": [
+            "F:/Projects/Education/deploy/helm/biged-cc/values.yaml",
+            "F:/Projects/Education/biged-rs/Cargo.toml",
+            "F:/Projects/Education/docker-compose.yml",
+            "F:/Projects/helix-context/helix_context/context_manager.py",
+            "F:/Projects/helix-context/training/export_training_data.py",
+            "F:/Projects/helix-context/scripts/cross_compare_genomes.py",
+            "F:/Projects/helix-context/helix_context/aliases.py",
+            "F:/Projects/helix-context/docs/research/RESEARCH.md",
+            "F:/Projects/helix-context/README.md",
+            "F:/Projects/Education/docs/superpowers/specs/2026-03-24-rust-hybrid-architecture-design.md",
+            "F:/Projects/Education/docs/superpowers/plans/2026-03-24-rust-phase2-server.md",
+            "F:/Projects/Education/biged-rs/docs/RUNBOOK.md"
+          ],
+          "n_delivered": 12,
+          "n_claims_resolved": 268,
+          "content_chars": 58527,
+          "score": {
+            "pointer_full": false,
+            "pointer_partial": 0.0,
+            "content_full": true,
+            "content_partial": 1.0,
+            "group_hits": [
+              false,
+              false
+            ],
+            "answer_found": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

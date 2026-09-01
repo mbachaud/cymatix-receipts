@@ -1,0 +1,191 @@
+{
+  "genome": "genomes\\bench\\matrix\\enterprise_rag_10k_batched.db",
+  "queries_count": 5,
+  "topk": 10,
+  "weights": [
+    0.0,
+    4.0
+  ],
+  "arms": {
+    "0.0": {
+      "n_queries": 5,
+      "recall_at_k": 0.8,
+      "mrr": 0.8,
+      "mean_rank_of_gold": 1.0,
+      "wall_s": 132.468,
+      "per_query": [
+        {
+          "query": "What are the default size limits for file uploads and total request size for the new multipart upload support on the OpenAI-compatible API endpoints?",
+          "rank": 1,
+          "topk_ids": [
+            "53511b625cec4dc7",
+            "9dfbfaf620c359b9",
+            "32d4424b777a32fe",
+            "77397f0bf996e0ba",
+            "a1c86dd911678679",
+            "c0c6df0ab1270c67",
+            "c15fb6aa7f9cd852",
+            "fa618ac763a64dfb",
+            "fe2fdd8f080c0fb5",
+            "fea15d90eceb97d7"
+          ]
+        },
+        {
+          "query": "What is the name of the new metric added so SRE can track when server-side streaming sessions get finalized due to hitting the time limit?",
+          "rank": 0,
+          "topk_ids": [
+            "44b7167de82c45fb",
+            "71ff102b31596404",
+            "7ab3df98694ec871",
+            "b14595fca7d4f654",
+            "a206f6a2c52148c6",
+            "fa23ccfc782112a9",
+            "71e2d3b583cd4ab2",
+            "7cafd36e725b745b",
+            "0ba188672d8b7586",
+            "7629e47f8e1e3b10"
+          ]
+        },
+        {
+          "query": "What are the acceptance criteria for the project introducing an algorithm to generate interactive UI color states and a Kappa-style elevation scale for dense table and grid components?",
+          "rank": 1,
+          "topk_ids": [
+            "5082cd19f2e1636f",
+            "7941d1ba0213472c",
+            "3059c6c13c80f901",
+            "2a56ec48d06bf35a",
+            "a501f2ef99a3463b",
+            "10835ac61d12e7a3",
+            "f640b85b14f37d7a",
+            "6ac4d4e40d7129dd",
+            "fc9cbc08bbdc5241",
+            "06e518284c49927f"
+          ]
+        },
+        {
+          "query": "In the meeting about onboarding a SaaS product to Google Cloud Marketplace, what did the GCP team recommend for handling delays where a new subscription entitlement is not immediately available during the customer onboarding flow?",
+          "rank": 1,
+          "topk_ids": [
+            "dc240a4ebeb3f7a2",
+            "839114f6d8aa6d27",
+            "3cfc1a0245b57474",
+            "94cc786f674d4c72",
+            "7f7e1dcab8af5c9a",
+            "87350b4681127750",
+            "ac847d251896fcd7",
+            "2bcb65600f2f9268",
+            "56f8b32d6766895b",
+            "65977ab3a5e762e7"
+          ]
+        },
+        {
+          "query": "What failover sequence and recovery targets did MedThink specify for handling an EU region outage, including any limits on how long traffic can shift to the US?",
+          "rank": 1,
+          "topk_ids": [
+            "1c1424949720b78a",
+            "d03a1c8d9a7a6e84",
+            "3ea07a131e8788c3",
+            "20f997d92d2baa80",
+            "b02a4beb7fe8e7f6",
+            "c327b6bd46754680",
+            "74c89b8eaf2177c1",
+            "fa618ac763a64dfb",
+            "3f26eabf56e5e995",
+            "b715ae6ad1c466db"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "4.0": {
+      "n_queries": 5,
+      "recall_at_k": 0.8,
+      "mrr": 0.8,
+      "mean_rank_of_gold": 1.0,
+      "wall_s": 100.421,
+      "per_query": [
+        {
+          "query": "What are the default size limits for file uploads and total request size for the new multipart upload support on the OpenAI-compatible API endpoints?",
+          "rank": 1,
+          "topk_ids": [
+            "53511b625cec4dc7",
+            "9dfbfaf620c359b9",
+            "32d4424b777a32fe",
+            "77397f0bf996e0ba",
+            "a1c86dd911678679",
+            "c0c6df0ab1270c67",
+            "c15fb6aa7f9cd852",
+            "fa618ac763a64dfb",
+            "fe2fdd8f080c0fb5",
+            "fea15d90eceb97d7"
+          ]
+        },
+        {
+          "query": "What is the name of the new metric added so SRE can track when server-side streaming sessions get finalized due to hitting the time limit?",
+          "rank": 0,
+          "topk_ids": [
+            "71ff102b31596404",
+            "44b7167de82c45fb",
+            "7ab3df98694ec871",
+            "b14595fca7d4f654",
+            "7cafd36e725b745b",
+            "a206f6a2c52148c6",
+            "fa23ccfc782112a9",
+            "71e2d3b583cd4ab2",
+            "0ba188672d8b7586",
+            "7629e47f8e1e3b10"
+          ]
+        },
+        {
+          "query": "What are the acceptance criteria for the project introducing an algorithm to generate interactive UI color states and a Kappa-style elevation scale for dense table and grid components?",
+          "rank": 1,
+          "topk_ids": [
+            "5082cd19f2e1636f",
+            "7941d1ba0213472c",
+            "3059c6c13c80f901",
+            "a501f2ef99a3463b",
+            "2a56ec48d06bf35a",
+            "10835ac61d12e7a3",
+            "f640b85b14f37d7a",
+            "6ac4d4e40d7129dd",
+            "fc9cbc08bbdc5241",
+            "ade6cb3927944182"
+          ]
+        },
+        {
+          "query": "In the meeting about onboarding a SaaS product to Google Cloud Marketplace, what did the GCP team recommend for handling delays where a new subscription entitlement is not immediately available during the customer onboarding flow?",
+          "rank": 1,
+          "topk_ids": [
+            "dc240a4ebeb3f7a2",
+            "839114f6d8aa6d27",
+            "3cfc1a0245b57474",
+            "94cc786f674d4c72",
+            "7f7e1dcab8af5c9a",
+            "2bcb65600f2f9268",
+            "65977ab3a5e762e7",
+            "87350b4681127750",
+            "ac847d251896fcd7",
+            "954c91869684eefc"
+          ]
+        },
+        {
+          "query": "What failover sequence and recovery targets did MedThink specify for handling an EU region outage, including any limits on how long traffic can shift to the US?",
+          "rank": 1,
+          "topk_ids": [
+            "1c1424949720b78a",
+            "d03a1c8d9a7a6e84",
+            "3ea07a131e8788c3",
+            "74c89b8eaf2177c1",
+            "3f26eabf56e5e995",
+            "20f997d92d2baa80",
+            "b02a4beb7fe8e7f6",
+            "c327b6bd46754680",
+            "f5bf83b714ccd864",
+            "fa618ac763a64dfb"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "export_timestamp_utc": "2026-07-15T03:50:35.636792+00:00",
+  "source_file": "benchmarks\\results\\erb80_verification_scored.jsonl",
+  "source_file_sha256": "0e4d61596cf019fcbd927a6d590efac13570da001074107909db1f1e480cdbdc",
+  "questions_file": "F:\\tmp\\erb_verification\\questions.jsonl",
+  "questions_file_sha256": "25da845343893452ca3ab9a5bfc6720d27a80fe1bc006f4c34cd0044d8c9c3f5",
+  "row_count_in": 80,
+  "row_count_out": 80,
+  "verdict_tallies_source": {
+    "ABSTAINED": 52,
+    "CORRECT": 14,
+    "INCORRECT": 14
+  },
+  "exclude_abstained": false,
+  "excluded_abstained_ids": [],
+  "empty_answer_count": 0,
+  "empty_answer_sentinel_applied": true,
+  "empty_answer_sentinel_text": "(no answer produced)",
+  "empty_answer_rows": [],
+  "document_ids_hook_file": null,
+  "document_ids_merged_count": 0,
+  "output_file": "benchmarks\\results\\erb80_verification_answers.jsonl"
+}

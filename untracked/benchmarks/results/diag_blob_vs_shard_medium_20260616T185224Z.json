@@ -1,0 +1,4116 @@
+{
+  "benchmark": "diag_blob_vs_shard_tiers",
+  "label": "medium",
+  "timestamp": "20260616T185224Z",
+  "blob_url": "http://127.0.0.1:11461",
+  "sharded_url": "http://127.0.0.1:11462",
+  "needles_file": "benchmarks\\results\\shard_gold_medium.jsonl",
+  "n_needles": 150,
+  "max_results": 200,
+  "blob_rank_cap": 10,
+  "shard_bury_cap": 10,
+  "gold_match_rule": "bidirectional case-insensitive forward-slash substring: norm(gold) in norm(source) OR norm(source) in norm(gold)",
+  "fingerprint_tier_field": "fingerprints[*].tier_contributions  (routes_context.py L817-819, dict {tier_name: float})",
+  "aggregate": {
+    "total_needles": 150,
+    "blob_good_count": 65,
+    "shard_bad_count": 105,
+    "divergent_count": 40,
+    "candidate_gen_loss": 11,
+    "ranking_loss": 29,
+    "blob_pool_total": 102,
+    "shard_pool_total": 104,
+    "tier_ranking_summary": [
+      {
+        "tier": "dense",
+        "blob_median": 2.29,
+        "shard_median": 2.0293,
+        "delta": 0.2607
+      }
+    ],
+    "tier_cand_gen_summary": [
+      {
+        "tier": "fts5",
+        "blob_median": 6.0
+      },
+      {
+        "tier": "dense",
+        "blob_median": 2.3423
+      },
+      {
+        "tier": "tag_prefix",
+        "blob_median": 1.5
+      },
+      {
+        "tier": "authority",
+        "blob_median": 0.0
+      },
+      {
+        "tier": "lex_anchor",
+        "blob_median": 0.0
+      },
+      {
+        "tier": "tag_exact",
+        "blob_median": 0.0
+      }
+    ],
+    "tier_overall_delta_rank": [
+      "dense"
+    ]
+  },
+  "per_needle": [
+    {
+      "id": "789e5fadfe054eb994dbbb2c978e7d90",
+      "type": "cross",
+      "question": "- Timestamp Drift Vulnerability: indexing relies on file timestamps/hashes (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_incremental_in_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "05ae1f5358fc4e269962be073d170c05",
+      "type": "within",
+      "question": "Not handled by XeroClient \u2014 use Xero's OAuth2 redirect to obtain:",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/ingestion/sync/README.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 18,
+        "score": 29.0871,
+        "tiers": {
+          "dense": 2.0871,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 71.4923,
+        "tiers": {
+          "dense": 1.9792,
+          "fts5": 6.0,
+          "lex_anchor": 18.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "e0ac6ac7f22b4cd5ad73a330d6859001",
+      "type": "within",
+      "question": "Return the volatility_class for the given source_kind.",
+      "gold_paths": [
+        "helix_context/identity/provenance.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 11.3071,
+        "tiers": {
+          "dense": 2.3071,
+          "fts5": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 73,
+        "score": 11.7978,
+        "tiers": {
+          "dense": 2.3071,
+          "fts5": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "9273ffbe58924918a3d83c63034bfebe",
+      "type": "within",
+      "question": "Return the path for the given platform, or None if missing.",
+      "gold_paths": [
+        "helix_context/launcher/installer.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "987904c03e804fc6938d866427b8b6e6",
+      "type": "within",
+      "question": "| Account Range | Increase | Decrease |\n|---------------|----------|----------|\n| AR (1200) | decrease | increase |\n| AP (2100) | increase | decrease |\n| Inventory (1300) | decrease | increase |",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.4036,
+        "tiers": {
+          "dense": 2.4036,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 50,
+        "score": 12.8965,
+        "tiers": {
+          "dense": 2.4036,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "789e5fadfe054eb994dbbb2c978e7d90",
+      "type": "within",
+      "question": "- Timestamp Drift Vulnerability: indexing relies on file timestamps/hashes (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_incremental_in_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "a074de060e5b4a74b7be3ff5276ff200",
+      "type": "within",
+      "question": "prevent silent regression: once you declare \"testing should be at least A\", a drop below that floor is flagged.",
+      "gold_paths": [
+        "two-brain-audit/docs/ARCHITECTURE.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 71,
+        "score": 6.0,
+        "tiers": {
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 143,
+        "score": 10.7851,
+        "tiers": {
+          "dense": 1.8388,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "ebbec81509584cefb04dc46940de6aca",
+      "type": "within",
+      "question": "Per- submenu: 'Use this database' action + folder info.",
+      "gold_paths": [
+        "helix_context/launcher/tray.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "d7bb6f0901a04d848a6279ae9189c4c7",
+      "type": "cross",
+      "question": "Poll until the uvicorn server binds the , or timeout.",
+      "gold_paths": [
+        "helix_context/launcher/app.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.531,
+        "tiers": {
+          "dense": 2.531,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 149,
+        "score": 15.3583,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "ec790449bcf54b14afecc4ca77b58536",
+      "type": "within",
+      "question": "- Create .\n- Create \u2014 , , , , , , .\n- Create \u2014 returns a typed config object with defaults applied.\n- Create \u2014 , , .\n- Create \u2014 exposes template paths.\n- Create \u2014 regex/glob patterns for risky ops.\n- ",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 61.7558,
+        "tiers": {
+          "dense": 2.0567,
+          "fts5": 6.0,
+          "lex_anchor": 6.9102,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "7c969850e53c4595872628d49b6faf99",
+      "type": "within",
+      "question": "an intentional server to other sessions.",
+      "gold_paths": [
+        "helix_context/bridge.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 170,
+        "score": 0.0,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "92c153e5a9f54c5eb132f44d29813cba",
+      "type": "cross",
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift timeline visualization\n- stored in tenant schema (privacy boundary maintained)",
+      "gold_paths": [
+        "CosmicTasha/.planning/15-phase2-integration-monitoring.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 174,
+        "score": 14.792,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 2.792,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 35.1763,
+        "tiers": {
+          "dense": 2.1411,
+          "fts5": 6.0,
+          "lex_anchor": 4.937,
+          "tag_exact": 6.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "19b6c48120f34dcab8086762b1bdc147",
+      "type": "within",
+      "question": "this \"use \" for a timespan defined by the \"weeks\" profile.",
+      "gold_paths": [
+        "CosmicTasha/web/.next/types/cache-life.d.ts"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "0509cc60ba484148b1ba8e6b89351b3e",
+      "type": "within",
+      "question": "Convert a sqlite3. (or tuple) to a WITHOUT password_hash.",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/tenancy/auth.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.2489,
+        "tiers": {
+          "dense": 2.2489,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 45.5734,
+        "tiers": {
+          "dense": 2.1524,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "942dca9ef44d4945b18c77acabc316da",
+      "type": "within",
+      "question": "Event: fleet_start\nCompleted: Event: fleet_start, Time: -03-26 :29\nNext: Continue operations\n---",
+      "gold_paths": [
+        "Education/fleet/knowledge/marathon/fleet.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "cbd11bde625a499ba11e7bfaecd62cc5",
+      "type": "within",
+      "question": "The web app reads these from (see [](web/.",
+      "gold_paths": [
+        "CosmicTasha/README.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 179,
+        "score": 9.8988,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.8988,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 18,
+        "score": 34.1507,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.8988,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "8d07eb8216224fcba17dca43e17278a4",
+      "type": "within",
+      "question": "Event: fleet_start\nCompleted: Event: fleet_start, Time: -03-26 :08\nNext: Continue operations\n---",
+      "gold_paths": [
+        "Education/fleet/knowledge/marathon/fleet.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "214d846cd7b841588ff8b97e02ed01ab",
+      "type": "within",
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rollback\n- ds_rag: RAG eval benchmark with known-good queries, embedding swap test\n- ds_fleet: Routing model A/B with held-",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-23-ml-data-scientists-design.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 58.1975,
+        "tiers": {
+          "dense": 2.6975,
+          "fts5": 6.0,
+          "lex_anchor": 18.0,
+          "tag_exact": 18.0,
+          "tag_prefix": 13.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 70.4509,
+        "tiers": {
+          "dense": 2.6975,
+          "fts5": 6.0,
+          "lex_anchor": 14.9988,
+          "tag_exact": 18.0,
+          "tag_prefix": 13.5
+        }
+      }
+    },
+    {
+      "id": "7106047a190440c9a90a745002366c33",
+      "type": "within",
+      "question": "#### 1. \u2014 Context\nThread-safe identification for all operations.",
+      "gold_paths": [
+        "BookKeeper/docs/MULTI_TENANT_GUIDE.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "409b190c1003490b8586bf988c066903",
+      "type": "within",
+      "question": "- (): Double-entry accounting equation (A = L + E) with sections for current/fixed assets, current/long-term liabilities, and equity with retained earnings calculation\n- Statement (): Indirect method ",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 8,
+        "score": 33.6661,
+        "tiers": {
+          "dense": 2.29,
+          "fts5": 6.0,
+          "lex_anchor": 8.8761,
+          "tag_exact": 9.0,
+          "tag_prefix": 7.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 51.0632,
+        "tiers": {
+          "dense": 2.29,
+          "fts5": 6.0,
+          "lex_anchor": 7.6359,
+          "tag_exact": 9.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "822548f639a24ab2936606ba2b667800",
+      "type": "within",
+      "question": "Position: Pure Python. is a data pipeline with a web UI \u2014 Python owns this space. The financial library ecosystem has zero equivalent in C/C++. You'd spend months rebuilding what gives you in seconds.",
+      "gold_paths": [
+        "BookKeeper/docs/BookKeeper_Language_Consensus.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 26.2451,
+        "tiers": {
+          "dense": 2.2451,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 19,
+        "score": 33.8976,
+        "tiers": {
+          "dense": 1.9295,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "ec9c3bce77114d3bac03bac719274bce",
+      "type": "within",
+      "question": "- OFX test files: \u2014 Generate synthetic OFX/QFX files stored in\n .",
+      "gold_paths": [
+        "BookKeeper/docs/planning/MVP_SCOPE.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "020a328da2b246cdb7d8d6d6dbfb0deb",
+      "type": "cross",
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identifiers and emits a WARN-level reminder. Never blocks unless .\nbash\ngit add skills/ledger/SKILL.md\ngit commit -m \"feat(ledg",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 9,
+        "score": 8.2174,
+        "tiers": {
+          "dense": 2.2174,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 49.8658,
+        "tiers": {
+          "dense": 2.113,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "6b755b51415b4b4f9385aa30464ac8ef",
+      "type": "within",
+      "question": "- [LOW] (line 160) \u2014 format_audit_report() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 270) \u2014 _check_hallucinations() has nesting depth 4 \u2014 consider early returns or extra",
+      "gold_paths": [
+        "Education/fleet/knowledge/quality/reviews/quality_review_20260329_1908.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 193,
+        "score": 2.1719,
+        "tiers": {
+          "dense": 2.1719
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "92c153e5a9f54c5eb132f44d29813cba",
+      "type": "within",
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift timeline visualization\n- stored in tenant schema (privacy boundary maintained)",
+      "gold_paths": [
+        "CosmicTasha/.planning/15-phase2-integration-monitoring.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 174,
+        "score": 14.792,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 2.792,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 35.1763,
+        "tiers": {
+          "dense": 2.1411,
+          "fts5": 6.0,
+          "lex_anchor": 4.937,
+          "tag_exact": 6.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "16bdab3cc94c471e83ec421424016432",
+      "type": "cross",
+      "question": "ScoreRift doesn't replace tooling. It sits on top of it.",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 28.6334,
+        "tiers": {
+          "dense": 1.6334,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 57.3852,
+        "tiers": {
+          "dense": 1.6334,
+          "fts5": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "214d846cd7b841588ff8b97e02ed01ab",
+      "type": "cross",
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rollback\n- ds_rag: RAG eval benchmark with known-good queries, embedding swap test\n- ds_fleet: Routing model A/B with held-",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-23-ml-data-scientists-design.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 58.1975,
+        "tiers": {
+          "dense": 2.6975,
+          "fts5": 6.0,
+          "lex_anchor": 18.0,
+          "tag_exact": 18.0,
+          "tag_prefix": 13.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 70.4509,
+        "tiers": {
+          "dense": 2.6975,
+          "fts5": 6.0,
+          "lex_anchor": 14.9988,
+          "tag_exact": 18.0,
+          "tag_prefix": 13.5
+        }
+      }
+    },
+    {
+      "id": "b250cbfe989847dfab74be9452c8a3eb",
+      "type": "within",
+      "question": "When a tier should be triggered automatically.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/tiers.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 19.3196,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.3196,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 32.1199,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.3196,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "b4c6fee920604e7b9134ba5660e67421",
+      "type": "within",
+      "question": "LLM reviewer system \u2014 the \"right brain on demand\":",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 104.7797,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.4266,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "4a692d34e3b7470e9e8083d11e367d0a",
+      "type": "cross",
+      "question": "The DORA four key are not yet formally scored but are on the roadmap:",
+      "gold_paths": [
+        "two-brain-audit/docs/STANDARDS.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 81,
+        "score": 7.5,
+        "tiers": {
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 29.3434,
+        "tiers": {
+          "dense": 1.5402,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "e810c927b61a428eae843619a16365c5",
+      "type": "cross",
+      "question": "Lightweight projection \u2014 `HelixSession.`.",
+      "gold_paths": [
+        "helix_context/api.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 13,
+        "score": 19.8773,
+        "tiers": {
+          "dense": 1.8773,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 19.8773,
+        "tiers": {
+          "dense": 1.8773,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "cdf3aee83dce45929632430b965c516e",
+      "type": "within",
+      "question": "def pylint_score():\n result = subprocess.run([\"pylint\", \"src/\", \"--output-format=json\"],\n capture_output=True, text=True, timeout=120)\n data = json.loads(result.stdout)\n score = max(0.0, (10 - len(dat",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 41,
+        "score": 33.9412,
+        "tiers": {
+          "dense": 2.2352,
+          "fts5": 6.0,
+          "lex_anchor": 1.4236,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "ed6214befd76403ba8064e39e3e5ddcf",
+      "type": "within",
+      "question": "Scan , emit to claim_edges. Returns a summary.",
+      "gold_paths": [
+        "helix_context/identity/claims_analyze.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 21.0439,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.5439,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 32,
+        "score": 21.4124,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.4041,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "5ad9d47fad894145952d208a8d4a78df",
+      "type": "within",
+      "question": "Audit depth \u2014 higher include everything from lower .",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/tiers.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 22.1533,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.1533,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 57.7848,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.1533,
+          "fts5": 6.0,
+          "lex_anchor": 3.1083,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "c5c48d9d86f24eb1b9fb9960715010ca",
+      "type": "within",
+      "question": "The implementation includes 24 comprehensive tests (in ):",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 15.4783,
+        "tiers": {
+          "dense": 1.9783,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "37fd803f48c04fd992229d606c4ad98a",
+      "type": "within",
+      "question": "Reviewer: coder_3 (performance optimizer)\nProject: C:[REDACTED]\\Projects\\\\\\\\\\",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_writes/reviews/workspace_review_20260321_173458_coder_3.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 139,
+        "score": 37.4972,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.0242,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "001c1e4bf81e4f3bbae4c2ee8a580a6e",
+      "type": "within",
+      "question": "> Last sweep: 2026-03-24 \u2014 Full gap review for professional services + mixed/general business.",
+      "gold_paths": [
+        "BookKeeper/docs/planning/GAPS.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 11.8613,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.3613,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "65219bb37547459b8086db677c5e00f2",
+      "type": "within",
+      "question": "Per-spec lookup with `default` fallback.",
+      "gold_paths": [
+        "helix_context/config.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 112,
+        "score": 7.9218,
+        "tiers": {
+          "dense": 1.9218,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "6a9e5841f73c42b1a34b770b011aa049",
+      "type": "within",
+      "question": "coordinator = (\n model=\"amazon.nova\",\n =[\n researcher_agent.as_tool(),\n coder_agent.as_tool(),\n security_agent.as_tool()\n ],\n system_prompt=\"Route tasks to the most appropriate specialist\"\n)\n`",
+      "gold_paths": [
+        "Education/BigEd/research/agent_swarming_and_collaboration.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 19.1879,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.1879,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 53.2797,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.0615,
+          "fts5": 6.0,
+          "lex_anchor": 11.4398,
+          "tag_exact": 12.0,
+          "tag_prefix": 9.0
+        }
+      }
+    },
+    {
+      "id": "67f45a8fa835423ab0e92b4a70420511",
+      "type": "within",
+      "question": "Build/load the hot-tier (lifecycle tier < 2) .",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "102599d53bfa4fcb89389a6bcacd0759",
+      "type": "within",
+      "question": "Autonomous agents share a common architectural pattern: plan-execute-reflect loops where an LLM decomposes a high-level goal into sub-tasks, executes them via tool use (web search, code execution, fil",
+      "gold_paths": [
+        "Education/BigEd/research/agent_evolution_and_autoresearch.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 20.7471,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.2471,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 4.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 16,
+        "score": 40.3423,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.0057,
+          "fts5": 6.0,
+          "lex_anchor": 8.4398,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "0567bf4221ea4d8098faedb7669ddbcd",
+      "type": "within",
+      "question": "Imperative \u2014 VaultManager.status() updates it on each call.",
+      "gold_paths": [
+        "helix_context/telemetry/otel.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 19.9833,
+        "tiers": {
+          "dense": 1.9833,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 72,
+        "score": 19.5828,
+        "tiers": {
+          "dense": 1.9833,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "84bd46aa1a1340fcabc113d49ef149a0",
+      "type": "within",
+      "question": "Compliance Profile is designed to prove is real \u2014 it analyzed your company, found actual issues, and knows what it's talking about \u2014 without giving enough detail for someone to take output to another ",
+      "gold_paths": [
+        "CosmicTasha/.planning/02-pricing-monetization.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 131,
+        "score": 18.5221,
+        "tiers": {
+          "dense": 2.0221,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 38.9702,
+        "tiers": {
+          "dense": 1.8178,
+          "fts5": 6.0,
+          "lex_anchor": 9.0376,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "28e5875de6f14451bf4e17845610a6eb",
+      "type": "within",
+      "question": "import webview\nimport threading\nfrom fleet_bridge import start_fleet_if_needed",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-31-pywebview-migration.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 46,
+        "score": 17.6041,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.1041,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 179,
+        "score": 22.847,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.1041,
+          "fts5": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "88e07fe3292d4088ac4c6fba71bd0ddb",
+      "type": "within",
+      "question": "Xero API: 60 requests per minute (enforced locally with deque timestamp tracking).",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/ingestion/sync/README.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 36.8154,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.2314,
+          "fts5": 6.0,
+          "lex_anchor": 11.5841,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 55.6863,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.2314,
+          "fts5": 6.0,
+          "lex_anchor": 10.9423,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "ef299229bebd4e8991777432306bb2cd",
+      "type": "within",
+      "question": "#### Enhanced (~150 new lines)\nNew command group with 6 subcommands:\n- \u2014 List all tenants with status\n- \u2014 Create new tenant with optional COA template\n- \u2014 Show metadata and statistics\n- \u2014 Soft-delete ",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_IMPLEMENTATION_SUMMARY.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 11,
+        "score": 6.0,
+        "tiers": {
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 133,
+        "score": 21.066,
+        "tiers": {
+          "dense": 2.1305,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "1c6700336c1d4d64be00766e33fc4d02",
+      "type": "cross",
+      "question": "1. \u2014 seed the baseline.\n2. Open the baseline; fill in (letter grade) for the dimensions you care about.\n3. Work normally. Stop hook checks for divergences after PR-sized changes.\n4. \u2014 on-demand check.",
+      "gold_paths": [
+        "MaxExpressKit/docs/drift.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 8.1512,
+        "tiers": {
+          "dense": 2.1512,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 132,
+        "score": 18.7231,
+        "tiers": {
+          "dense": 2.1512,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "90aab8b825ff4521afde5d0bbe408b02",
+      "type": "within",
+      "question": "- Three distilled guardrails: , , .\n- Three named subagents matching each guardrail.\n- entry skill.\n- Slash commands: , , , .\n- Layer 2 wrapper stubs: , .\n- Hooks: (warn-only default), , .\n- ported fr",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 34.5193,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.5193,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 164.0135,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.1745,
+          "fts5": 6.0,
+          "lex_anchor": 17.5356,
+          "tag_exact": 21.0,
+          "tag_prefix": 12.0
+        }
+      }
+    },
+    {
+      "id": "b3a97d3a8168430c9e85c166b4442b13",
+      "type": "within",
+      "question": "All four incumbents are integration-monitoring platforms.",
+      "gold_paths": [
+        "CosmicTasha/.planning/02-pricing-monetization.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "f35e4508bacf4d53b73ed88a73ba49e4",
+      "type": "within",
+      "question": "Routing-DB . Mirrors `KnowledgeStore.` so\n `/admin/swap-db and other callers reading genome.` work\n on a sharded knowledge store.",
+      "gold_paths": [
+        "helix_context/sharding.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 26.4654,
+        "tiers": {
+          "dense": 2.4654,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 11,
+        "score": 36.7883,
+        "tiers": {
+          "dense": 2.193,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "8068be07034743c5adf9fc48cc7ffd7c",
+      "type": "within",
+      "question": "- [ ] Run intake against its own infrastructure\n- [ ] Generate DriftWatch's own compliance documents\n- [ ] Review against actual infrastructure (does the System Description accurately describe Caddy +",
+      "gold_paths": [
+        "CosmicTasha/.planning/04-launch-checklist.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 32.0082,
+        "tiers": {
+          "dense": 2.0082,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 18,
+        "score": 72.9514,
+        "tiers": {
+          "dense": 1.9268,
+          "fts5": 6.0,
+          "lex_anchor": 10.2754,
+          "tag_exact": 12.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "f93033ea0d6c4a8f8813375c3e46104c",
+      "type": "within",
+      "question": "a using werkzeug (pbkdf2:sha256 with random salt).",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/tenancy/auth.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 60,
+        "score": 18.2971,
+        "tiers": {
+          "dense": 1.7971,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 25.5697,
+        "tiers": {
+          "dense": 1.7971,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "69954b1a79aa423d8abad05d9a47c124",
+      "type": "cross",
+      "question": "= AuditEngine(db_path=\"audit.db\", baseline_path=\"audit_baseline.json\")",
+      "gold_paths": [
+        "two-brain-audit/docs/QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 124.8961,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 1.8723,
+          "fts5": 6.0,
+          "lex_anchor": 10.7597,
+          "tag_exact": 12.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "171ec5783c6f4ae88b76c23a95e48e64",
+      "type": "within",
+      "question": "Run ruff. Returns the unmeasured sentinel (0.0, 0.0) if ruff isn't\n installed or its output couldn't be parsed \u2014 so callers don't mistake\n a launch failure for a clean repo.",
+      "gold_paths": [
+        "MaxExpressKit/lib/drift_scoring/python_preset.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 15.7839,
+        "tiers": {
+          "dense": 2.2839,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 9,
+        "score": 28.2544,
+        "tiers": {
+          "dense": 2.2839,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "b5220954f68d425eaf69c7ec118ffce0",
+      "type": "within",
+      "question": "| Component | Per-Customer Size | At 100 Customers | At 500 Customers |\n|-----------|-------------------|-------------------|-------------------|\n| Intake data (PostgreSQL) | ~5MB | 500MB | 2.",
+      "gold_paths": [
+        "CosmicTasha/.planning/01-infrastructure-hosting.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 23.2709,
+        "tiers": {
+          "dense": 2.2709,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 46.4425,
+        "tiers": {
+          "dense": 2.2709,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "6c939ea552ef4ef0afda9949b4e99fa5",
+      "type": "within",
+      "question": "- STANDARDS.md: maps dimensions to OWASP, SRE, DORA, Clean Code\n- DB path display in dashboard header\n- Lint fixes for CI green",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 182,
+        "score": 3.6002,
+        "tiers": {
+          "dense": 2.1002,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 12,
+        "score": 37.3401,
+        "tiers": {
+          "dense": 1.7978,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "4803f494025d492f827e2daad74f44ba",
+      "type": "within",
+      "question": "Examples of behavior that contributes to a positive environment for \ncommunity include:",
+      "gold_paths": [
+        "MaxExpressKit/CODE_OF_CONDUCT.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.8646,
+        "tiers": {
+          "dense": 2.3646,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "6fda7eae8f2a41c3b61af128d53af334",
+      "type": "within",
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identifiers and emits a WARN-level reminder. Never blocks unless .",
+      "gold_paths": [
+        "MaxExpressKit/skills/ledger/SKILL.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 32,
+        "score": 20.0907,
+        "tiers": {
+          "dense": 2.0907,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 47.6337,
+        "tiers": {
+          "dense": 2.0907,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "8ceb14d2e72446329b64923e9f049ed4",
+      "type": "within",
+      "question": "- Command concatenation via : If or constructs commands using without escaping (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/shell_injection_risks_in_lead_client_and_round1.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.3895,
+        "tiers": {
+          "dense": 2.3895,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 89,
+        "score": 10.122,
+        "tiers": {
+          "dense": 2.3895,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "7b45f3d588e0488ca3e444a57f818442",
+      "type": "within",
+      "question": "Pull the compressed string out of any * dataclass.",
+      "gold_paths": [
+        "helix_context/encoding/headroom_bridge.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 132,
+        "score": 8.0815,
+        "tiers": {
+          "dense": 2.0773,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "fe2f0c24ff38493f9c797bb7f53e74be",
+      "type": "within",
+      "question": "Bundle a self-contained interpreter inside the Rust binary so no system install is needed.",
+      "gold_paths": [
+        "Education/biged-rs/docs/EMBEDDED_CPYTHON.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 34.5,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 15.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 39.438,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 15.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "5b5f90f48f5746fd8c3e9e388bfa9400",
+      "type": "within",
+      "question": "Position: The plan's moat analysis (doc 09) is half right.",
+      "gold_paths": [
+        "CosmicTasha/.planning/14-devils-advocate-deep-dive.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 60,
+        "score": 9.9143,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.9143,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 84,
+        "score": 27.1761,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.7508,
+          "fts5": 6.0,
+          "lex_anchor": 2.7391,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "d7bb6f0901a04d848a6279ae9189c4c7",
+      "type": "within",
+      "question": "Poll until the uvicorn server binds the , or timeout.",
+      "gold_paths": [
+        "helix_context/launcher/app.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.531,
+        "tiers": {
+          "dense": 2.531,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 149,
+        "score": 15.3583,
+        "tiers": {
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "3cb3cd25110947de9897452e688117c3",
+      "type": "within",
+      "question": "Retrieve a cached review result. Returns None on miss or expiry.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/reviewers/cache.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 11.9916,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.4916,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "6dc255230d0e45488902182e9de8d324",
+      "type": "cross",
+      "question": "runs on // and warns when float literals appear on lines with money-shaped identifiers (, , , etc.",
+      "gold_paths": [
+        "MaxExpressKit/docs/ledger.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 14,
+        "score": 8.0301,
+        "tiers": {
+          "dense": 2.0301,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 21.6677,
+        "tiers": {
+          "dense": 2.0301,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "ed6214befd76403ba8064e39e3e5ddcf",
+      "type": "cross",
+      "question": "Scan , emit to claim_edges. Returns a summary.",
+      "gold_paths": [
+        "helix_context/identity/claims_analyze.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 21.0439,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.5439,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 32,
+        "score": 21.4124,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.4041,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "9da4b823cc224c1cbfacc8f949359039",
+      "type": "within",
+      "question": "'s three guardrails distill the agent surface of three larger apps:",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 13,
+        "score": 7.8573,
+        "tiers": {
+          "dense": 1.8573,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 60.4087,
+        "tiers": {
+          "dense": 1.8253,
+          "fts5": 6.0,
+          "lex_anchor": 7.8283,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "03290520d69840deac7a18f6fa297cf3",
+      "type": "cross",
+      "question": "This file contains types and functions that are shared between all\nTurboPack ECMAScript runtimes.",
+      "gold_paths": [
+        "CosmicTasha/web/.next/server/chunks/ssr/[turbopack]_runtime.js"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "dc51197ac19f46419e1c3c4a173cbb3d",
+      "type": "within",
+      "question": "Step 1: Build from authoritative public sources (Claude + Max)",
+      "gold_paths": [
+        "CosmicTasha/.planning/11-compliance-knowledge-and-qualification.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 184,
+        "score": 20.9092,
+        "tiers": {
+          "dense": 1.28,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "8ed234f7c4634e9db0d9749eb4f184fd",
+      "type": "within",
+      "question": "Build swimlane : transaction lifecycle by status.",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/dashboard/analytics.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 22.1944,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 2.6944,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 42.8069,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 2.6944,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "1b817284cc824d55bfe7077c5418d840",
+      "type": "within",
+      "question": "By default is gated as \u2014 the operator is reminded but can proceed.",
+      "gold_paths": [
+        "MaxExpressKit/docs/compliance.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "6ae23795cafb4c64a1bc2caf1941fe8e",
+      "type": "within",
+      "question": "Read idle_threshold_hours .toml; fall back to default.",
+      "gold_paths": [
+        "Education/fleet/debug_models.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 8.2705,
+        "tiers": {
+          "dense": 2.2705,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 162,
+        "score": 22.81,
+        "tiers": {
+          "dense": 2.0606,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "d16b68b141ea4ffabc2e4308b402ceeb",
+      "type": "within",
+      "question": "curl -H \"X-Tenant-ID: xyz-\" \\\n -F \"file=@bank.",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 98,
+        "score": 7.9789,
+        "tiers": {
+          "dense": 1.9789,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 91,
+        "score": 17.3124,
+        "tiers": {
+          "dense": 1.9813,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "b7a262823f7249dd81ad34a2d8b22255",
+      "type": "within",
+      "question": "- context_not_effective: Context exists but output quality is low \u2014 context may need rewording\n- low_score: accuracy\n - DB error: Row() argument 1 must be sqlite3.",
+      "gold_paths": [
+        "Education/fleet/knowledge/flywheel/audit_20260326_050842.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 43,
+        "score": 8.5876,
+        "tiers": {
+          "dense": 2.5876,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "3be82ccc5d114f95821fd932c10da6b4",
+      "type": "within",
+      "question": "Quick summary for CI/smoke test integration.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/engine.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 42.7678,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 1.5725,
+          "fts5": 6.0,
+          "lex_anchor": 8.0544,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "32d567475c964591971653570ad1c276",
+      "type": "within",
+      "question": "Goal: A minimal that announces itself when the plugin loads, mirrors pattern.",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 151,
+        "score": 16.4933,
+        "tiers": {
+          "dense": 1.7805,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "03290520d69840deac7a18f6fa297cf3",
+      "type": "within",
+      "question": "This file contains types and functions that are shared between all\nTurboPack ECMAScript runtimes.",
+      "gold_paths": [
+        "CosmicTasha/web/.next/server/chunks/ssr/[turbopack]_runtime.js"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "acd1776ca44c4a218bab852ebe825b17",
+      "type": "within",
+      "question": "Return the marker-only ContextWindow shipped when the tier fires.",
+      "gold_paths": [
+        "helix_context/context_manager.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 8,
+        "score": 1.9868,
+        "tiers": {
+          "dense": 1.9868
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "020a328da2b246cdb7d8d6d6dbfb0deb",
+      "type": "within",
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identifiers and emits a WARN-level reminder. Never blocks unless .\nbash\ngit add skills/ledger/SKILL.md\ngit commit -m \"feat(ledg",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 9,
+        "score": 8.2174,
+        "tiers": {
+          "dense": 2.2174,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 49.8658,
+        "tiers": {
+          "dense": 2.113,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "2ec551bcd2c349c39307cc491666d2d3",
+      "type": "within",
+      "question": "result = engine.review_dimension(\"architecture\", context=source_code, mode=\"\")",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 49,
+        "score": 45.2983,
+        "tiers": {
+          "dense": 1.8156,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "f5de0b1680b548ec947f62f009979711",
+      "type": "within",
+      "question": "Ambient HITL/audit nudge. Triggers on six risky-op categories:",
+      "gold_paths": [
+        "MaxExpressKit/docs/compliance.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 24.8899,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 2.3899,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 71.5617,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 2.3899,
+          "fts5": 6.0,
+          "lex_anchor": 4.964,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "88647095e35d4615b8f6c1ecbe30f3e3",
+      "type": "within",
+      "question": "enforces Python quality via fast AST analysis:",
+      "gold_paths": [
+        "two-brain-audit/docs/STANDARDS.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 109,
+        "score": 24.6102,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 1.8243,
+          "fts5": 6.0,
+          "lex_anchor": 4.2573,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "37f728219b7b4d71bfc5dcde0b7760df",
+      "type": "within",
+      "question": "Constructs an error for when a module is .",
+      "gold_paths": [
+        "CosmicTasha/web/.next/standalone/.next/server/chunks/[turbopack]_runtime.js"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "398a3bd7c49e4f3e9e96c014fee806bb",
+      "type": "within",
+      "question": "1. PostgreSQL Support \u2014 Schema isolation mode\n2. Multi-Tenant Metrics \u2014 Per-tenant billing/usage\n3. Audit Logging \u2014 Cross-tenant audit trail\n4. API Rate Limiting \u2014 Per-tenant quotas\n5. Tenant Onboardi",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_IMPLEMENTATION_SUMMARY.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 9.7885,
+        "tiers": {
+          "dense": 2.2885,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "43aa8edd7f9842a1a01eaf5cb8928abe",
+      "type": "within",
+      "question": "| Focus | Time Allocation | Details |\n|-------|-----------------|---------|\n| #1 intake friction point | 40% of time | Whatever the data says is the biggest drop-off.",
+      "gold_paths": [
+        "CosmicTasha/.planning/05-go-to-market.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 17.0212,
+        "tiers": {
+          "dense": 2.0212,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 6,
+        "score": 30.447,
+        "tiers": {
+          "dense": 1.8156,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "8862357d48a2473ea87c642babd7be81",
+      "type": "within",
+      "question": "Apply path sanitization to plain (CSV / Markdown output).",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/sanitizer.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.6296,
+        "tiers": {
+          "dense": 2.6296,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "652ddd2210df425987556b1b49d05545",
+      "type": "cross",
+      "question": "from lib.decimal_math import pct_of, sum_money\nfrom decimal import Decimal\ntotal = sum_money([price, pct_of(price, Decimal(\"8\"))])",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 24.9216,
+        "tiers": {
+          "dense": 2.4216,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 4.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 74.7647,
+        "tiers": {
+          "dense": 2.4216,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "016f094cf01042dbb56be530f6476af1",
+      "type": "within",
+      "question": "Reviewer: coder_2 ( critic / reviewer)\nProject: C:\\Users\\max\\Projects\\\\\\\\\\",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_writes/reviews/workspace_review_20260329_050923_coder_2.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 134,
+        "score": 17.4677,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.9677,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 200,
+        "score": 23.7884,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.9677,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "fc623e554485450c82a4e008fbe16117",
+      "type": "within",
+      "question": "Composes 's packet-shortlist with an underlying .",
+      "gold_paths": [
+        "helix_context/adapters/retriever.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 9.387,
+        "tiers": {
+          "dense": 1.887,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 35,
+        "score": 9.7259,
+        "tiers": {
+          "dense": 1.887,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "652ddd2210df425987556b1b49d05545",
+      "type": "within",
+      "question": "from lib.decimal_math import pct_of, sum_money\nfrom decimal import Decimal\ntotal = sum_money([price, pct_of(price, Decimal(\"8\"))])",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 24.9216,
+        "tiers": {
+          "dense": 2.4216,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 4.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 74.7647,
+        "tiers": {
+          "dense": 2.4216,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "06ac6732bb634f5ebf67178467f27332",
+      "type": "within",
+      "question": "Decimal-only money math. The agent's standard library for currency, percentages, splits, and allocations.",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 26.4884,
+        "tiers": {
+          "dense": 2.4884,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 82.3111,
+        "tiers": {
+          "dense": 2.045,
+          "fts5": 6.0,
+          "lex_anchor": 10.8283,
+          "tag_exact": 9.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "0f78d8e512ad4d5d984ef6418f2f41ee",
+      "type": "within",
+      "question": "- First public release.\nbash\ngit add README.md CHANGELOG.md CODE_OF_CONDUCT.md\ngit commit -m \"docs: add README stub, CHANGELOG, CODE_OF_CONDUCT\"\n`",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 16,
+        "score": 17.7717,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.2717,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 66.1467,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 2.076,
+          "fts5": 6.0,
+          "lex_anchor": 7.964,
+          "tag_exact": 6.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "0c5997259a2043acb3f3954d1a73dcc9",
+      "type": "within",
+      "question": "Convert a numeric to the nearest letter .",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/grades.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 18.6351,
+        "tiers": {
+          "dense": 2.1351,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 24.619,
+        "tiers": {
+          "dense": 2.1351,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "1c6700336c1d4d64be00766e33fc4d02",
+      "type": "within",
+      "question": "1. \u2014 seed the baseline.\n2. Open the baseline; fill in (letter grade) for the dimensions you care about.\n3. Work normally. Stop hook checks for divergences after PR-sized changes.\n4. \u2014 on-demand check.",
+      "gold_paths": [
+        "MaxExpressKit/docs/drift.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 8.1512,
+        "tiers": {
+          "dense": 2.1512,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 132,
+        "score": 18.7231,
+        "tiers": {
+          "dense": 2.1512,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "4c06dee8cb904873a87f8163b5a0f2ea",
+      "type": "within",
+      "question": "- Index Coverage: Missing composite indexes on keys (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/SQLite_query_optimization_in_db.py_\u2014_ind_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "4803f494025d492f827e2daad74f44ba",
+      "type": "cross",
+      "question": "Examples of behavior that contributes to a positive environment for \ncommunity include:",
+      "gold_paths": [
+        "MaxExpressKit/CODE_OF_CONDUCT.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.8646,
+        "tiers": {
+          "dense": 2.3646,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "f9ef9df3703d4984b232a7ec38920435",
+      "type": "within",
+      "question": "1. Fill in this (copy as a new dated file in , or inline in ).\n2. Have the named approver respond in writing (PR comment, Slack thread, signed commit).\n3. Reference the approval in your commit message",
+      "gold_paths": [
+        "MaxExpressKit/scaffold/compliance/HITL_TEMPLATE.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 23.3087,
+        "tiers": {
+          "dense": 2.3087,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 39.7315,
+        "tiers": {
+          "dense": 2.3087,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "c932bab6d7bd451aa8b63aa7a8e3408c",
+      "type": "cross",
+      "question": "the Continue HTTP -provider shape into the flat\n dict that tool consumers (and the `Dict[str, Any]` return-type\n annotation) expect.",
+      "gold_paths": [
+        "helix_context/mcp/mcp_server.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.6789,
+        "tiers": {
+          "dense": 2.1789,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 182,
+        "score": 15.2631,
+        "tiers": {
+          "dense": 2.0293,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "2a836b1f24b0483d8daa0fa7bcb8898e",
+      "type": "within",
+      "question": "Return value from :func:apply_budget_tiers.",
+      "gold_paths": [
+        "helix_context/pipeline/tier_logic.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 24.0964,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.5964,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 6,
+        "score": 23.4818,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 2.5964,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 6.0
+        }
+      }
+    },
+    {
+      "id": "6b755b51415b4b4f9385aa30464ac8ef",
+      "type": "cross",
+      "question": "- [LOW] (line 160) \u2014 format_audit_report() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 270) \u2014 _check_hallucinations() has nesting depth 4 \u2014 consider early returns or extra",
+      "gold_paths": [
+        "Education/fleet/knowledge/quality/reviews/quality_review_20260329_1908.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 193,
+        "score": 2.1719,
+        "tiers": {
+          "dense": 2.1719
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "e5589a1b9b7e4eef96593b6051ee7a9a",
+      "type": "within",
+      "question": "Bigger harmonic- = more walkable in general.",
+      "gold_paths": [
+        "helix_context/retrieval/tie_break.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 7.9666,
+        "tiers": {
+          "dense": 1.9666,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 7.9666,
+        "tiers": {
+          "dense": 1.9666,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "7106047a190440c9a90a745002366c33",
+      "type": "cross",
+      "question": "#### 1. \u2014 Context\nThread-safe identification for all operations.",
+      "gold_paths": [
+        "BookKeeper/docs/MULTI_TENANT_GUIDE.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "518477d07e3343c29dd370687e1effd1",
+      "type": "within",
+      "question": "Each extraction follows the same pattern: create blueprint file, move routes, register in .",
+      "gold_paths": [
+        "Education/docs/superpowers/plans/2026-03-31-dashboard-decomposition.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 8.0773,
+        "tiers": {
+          "dense": 2.0773,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 42,
+        "score": 26.9711,
+        "tiers": {
+          "dense": 1.8856,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "575e14e7a9ca4dbfa98521abd3965ea7",
+      "type": "within",
+      "question": "- Create .\n- Create \u2014 fixtures (, ).\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .\n- Create .",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "dc71666f89eb41eb9e287dbf138f4fee",
+      "type": "within",
+      "question": "engine.(Dimension(\n name=\"uptime\",\n check=lambda: (1.0 if ping_ok() else 0.0, {\"host\": \"prod\"}),\n confidence=0.95,\n tier=Tier.LIGHT,\n))",
+      "gold_paths": [
+        "two-brain-audit/docs/QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 6,
+        "score": 59.406,
+        "tiers": {
+          "dense": 1.6619,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "9a0008f3f10f4ee38c9d634b150e4192",
+      "type": "within",
+      "question": "Decision (2026-03-24): Use with 4 decimal places, stored as\nTEXT in SQLite.",
+      "gold_paths": [
+        "BookKeeper/docs/planning/GAPS.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 12,
+        "score": 52.0462,
+        "tiers": {
+          "dense": 1.5755,
+          "fts5": 6.0,
+          "lex_anchor": 11.6279,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "0567bf4221ea4d8098faedb7669ddbcd",
+      "type": "cross",
+      "question": "Imperative \u2014 VaultManager.status() updates it on each call.",
+      "gold_paths": [
+        "helix_context/telemetry/otel.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 19.9833,
+        "tiers": {
+          "dense": 1.9833,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 72,
+        "score": 19.5828,
+        "tiers": {
+          "dense": 1.9833,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "4a692d34e3b7470e9e8083d11e367d0a",
+      "type": "within",
+      "question": "The DORA four key are not yet formally scored but are on the roadmap:",
+      "gold_paths": [
+        "two-brain-audit/docs/STANDARDS.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 81,
+        "score": 7.5,
+        "tiers": {
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 29.3434,
+        "tiers": {
+          "dense": 1.5402,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "ccc7c81a5fdc487fa39e49f62297b116",
+      "type": "within",
+      "question": "Community Impact: A serious violation of community standards, including\nsustained inappropriate behavior.",
+      "gold_paths": [
+        "MaxExpressKit/CODE_OF_CONDUCT.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.4481,
+        "tiers": {
+          "dense": 2.4481,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 20,
+        "score": 15.9454,
+        "tiers": {
+          "dense": 2.1529,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "c9d093a4660043d18c619b38cabee2ba",
+      "type": "within",
+      "question": "a participant under a party. Trust-on-first-use for party_id.",
+      "gold_paths": [
+        "helix_context/server/routes_registry.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 43,
+        "score": 7.8345,
+        "tiers": {
+          "dense": 1.8345,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 95,
+        "score": 7.8345,
+        "tiers": {
+          "dense": 1.8345,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "c9f4f2be15c14dea8b39e57b2b1c3345",
+      "type": "within",
+      "question": "`python\nfrom ..context import set_tenant, get_tenant, get_tenant_or_none, require_tenant",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_API_REFERENCE.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 29.7259,
+        "tiers": {
+          "dense": 2.7259,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 63,
+        "score": 63.8382,
+        "tiers": {
+          "dense": 2.6346,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "b6c2c2218e144f53adbc56639699a3c2",
+      "type": "within",
+      "question": "Tiers control depth \u2014 higher tiers include everything from lower:",
+      "gold_paths": [
+        "two-brain-audit/docs/QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 115,
+        "score": 14.2029,
+        "tiers": {
+          "dense": 1.2868,
+          "fts5": 1.0234,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "03946656d7c841fb83d7c9eccd8125d7",
+      "type": "within",
+      "question": "- \u2014 Source modules\n- \u2014 Comprehensive test suite\n- \u2014 Configuration reference",
+      "gold_paths": [
+        "BookKeeper/docs/MULTI_TENANT_GUIDE.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "b4c6fee920604e7b9134ba5660e67421",
+      "type": "cross",
+      "question": "LLM reviewer system \u2014 the \"right brain on demand\":",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 104.7797,
+        "tiers": {
+          "authority": 2.0,
+          "dense": 1.4266,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 9.0,
+          "tag_prefix": 4.5
+        }
+      }
+    },
+    {
+      "id": "c932bab6d7bd451aa8b63aa7a8e3408c",
+      "type": "within",
+      "question": "the Continue HTTP -provider shape into the flat\n dict that tool consumers (and the `Dict[str, Any]` return-type\n annotation) expect.",
+      "gold_paths": [
+        "helix_context/mcp/mcp_server.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.6789,
+        "tiers": {
+          "dense": 2.1789,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 182,
+        "score": 15.2631,
+        "tiers": {
+          "dense": 2.0293,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "6dc255230d0e45488902182e9de8d324",
+      "type": "within",
+      "question": "runs on // and warns when float literals appear on lines with money-shaped identifiers (, , , etc.",
+      "gold_paths": [
+        "MaxExpressKit/docs/ledger.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 14,
+        "score": 8.0301,
+        "tiers": {
+          "dense": 2.0301,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 21.6677,
+        "tiers": {
+          "dense": 2.0301,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "b00540e55c9840c691e50196fbd5d9d1",
+      "type": "cross",
+      "question": "A single interaction between a and a dimension surface.",
+      "gold_paths": [
+        "CosmicTasha/ray_scorer_prototype.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.7942,
+        "tiers": {
+          "dense": 2.2942,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 33,
+        "score": 26.2046,
+        "tiers": {
+          "dense": 1.7629,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "0d33188ce6794471a43a9a556c81e064",
+      "type": "within",
+      "question": "Pre-v0.1.0. Documentation, screenshots, and demo GIF land before tag.\nmarkdown",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 22.4621,
+        "tiers": {
+          "dense": 1.5673,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "b00540e55c9840c691e50196fbd5d9d1",
+      "type": "within",
+      "question": "A single interaction between a and a dimension surface.",
+      "gold_paths": [
+        "CosmicTasha/ray_scorer_prototype.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 9.7942,
+        "tiers": {
+          "dense": 2.2942,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 33,
+        "score": 26.2046,
+        "tiers": {
+          "dense": 1.7629,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "b5758f12539c44078bf38965e9eb30ab",
+      "type": "within",
+      "question": "- [ ] Terms of Service \u2014 drafted, reviewed.",
+      "gold_paths": [
+        "CosmicTasha/.planning/04-launch-checklist.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 177,
+        "score": 10.9624,
+        "tiers": {
+          "dense": 1.5612,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "ffdefa37f8be4b13876b631199191ef4",
+      "type": "within",
+      "question": "Copies into the current working directory.",
+      "gold_paths": [
+        "MaxExpressKit/commands/mek-init.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "5ce92b4891644538bb5d79f622dc57b6",
+      "type": "within",
+      "question": "- Missing TCP_NODELAY: Verify socket initialization lacks ; absence causes packet aggregation, increasing RTT by ~30% in high-throughput scenarios.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/ollama_call_latency_and_timeout_tuning_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "3dfb72a952c94cc6b42b17e7c8df30c2",
+      "type": "within",
+      "question": "10 fixes from dogfooding (TBR auditing itself \u2014 4 divergences found):",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 9,
+        "score": 7.9337,
+        "tiers": {
+          "dense": 1.9337,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 33,
+        "score": 17.1937,
+        "tiers": {
+          "dense": 1.9337,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "b5173d88c6664461b8b0195e720d841f",
+      "type": "within",
+      "question": "Reviewer: coder_2 ( critic / reviewer)\nProject: C:\\Users\\max\\Projects\\\\\\\\\\",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_writes/reviews/workspace_review_20260329_082741_coder_2.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "67f45a8fa835423ab0e92b4a70420511",
+      "type": "cross",
+      "question": "Build/load the hot-tier (lifecycle tier < 2) .",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "30219c6bcc6a4d58885889a2b0b9c378",
+      "type": "within",
+      "question": "A single 's traversal path through the interaction graph.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/ray_trace.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 5,
+        "score": 9.5761,
+        "tiers": {
+          "dense": 2.0761,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "67926bd13cfc4b30a2e7dc70a94f28fa",
+      "type": "within",
+      "question": "- No customer voice represented (would buyers trust this?",
+      "gold_paths": [
+        "CosmicTasha/.planning/13-swarm-consensus-plan-audit.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 61,
+        "score": 11.856,
+        "tiers": {
+          "dense": 1.2703,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "be8291e443464c5aa7b9f9157d7cc0ba",
+      "type": "within",
+      "question": "Advantages: single database server, connection pooling across tenants, can run\ncross- analytics, proper concurrent write support.",
+      "gold_paths": [
+        "BookKeeper/docs/planning/MULTI_TENANT_ARCHITECTURE.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 13,
+        "score": 30.9991,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 1.9991,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 7.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 3,
+        "score": 39.4738,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 1.9991,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "69954b1a79aa423d8abad05d9a47c124",
+      "type": "within",
+      "question": "= AuditEngine(db_path=\"audit.db\", baseline_path=\"audit_baseline.json\")",
+      "gold_paths": [
+        "two-brain-audit/docs/QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 124.8961,
+        "tiers": {
+          "authority": 3.5,
+          "dense": 1.8723,
+          "fts5": 6.0,
+          "lex_anchor": 10.7597,
+          "tag_exact": 12.0,
+          "tag_prefix": 7.5
+        }
+      }
+    },
+    {
+      "id": "90275b80119a46758617643a0bfadaec",
+      "type": "within",
+      "question": "DA1 (Auditor): This is the most important document in the .",
+      "gold_paths": [
+        "CosmicTasha/.planning/16-full-plan-council-review.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 50,
+        "score": 8.022,
+        "tiers": {
+          "dense": 2.022,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 20,
+        "score": 18.0045,
+        "tiers": {
+          "dense": 2.022,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "37f728219b7b4d71bfc5dcde0b7760df",
+      "type": "cross",
+      "question": "Constructs an error for when a module is .",
+      "gold_paths": [
+        "CosmicTasha/web/.next/standalone/.next/server/chunks/[turbopack]_runtime.js"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "b840b80ada7347658c9e5fe807fac051",
+      "type": "cross",
+      "question": "- Pool Exhaustion Risk: If is not initialized with , high-concurrency crawls may hit OS file descriptor limits, causing errors.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/web_crawl_timeout_and_connection_pooling_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "b840b80ada7347658c9e5fe807fac051",
+      "type": "within",
+      "question": "- Pool Exhaustion Risk: If is not initialized with , high-concurrency crawls may hit OS file descriptor limits, causing errors.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/web_crawl_timeout_and_connection_pooling_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "e810c927b61a428eae843619a16365c5",
+      "type": "within",
+      "question": "Lightweight projection \u2014 `HelixSession.`.",
+      "gold_paths": [
+        "helix_context/api.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 13,
+        "score": 19.8773,
+        "tiers": {
+          "dense": 1.8773,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 19.8773,
+        "tiers": {
+          "dense": 1.8773,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "fe3a1a31f7f243dca59ae4ffe7c30a9b",
+      "type": "within",
+      "question": "Compute between two spectra via cosine similarity.",
+      "gold_paths": [
+        "helix_context/scoring/cymatics.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 7.9283,
+        "tiers": {
+          "dense": 1.9283,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "4c06dee8cb904873a87f8163b5a0f2ea",
+      "type": "cross",
+      "question": "- Index Coverage: Missing composite indexes on keys (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/SQLite_query_optimization_in_db.py_\u2014_ind_round1.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "a2ce17e71d45430cb4ebf36c42df0e6a",
+      "type": "within",
+      "question": "can inadvertently contain information the customer didn't intend to share:",
+      "gold_paths": [
+        "CosmicTasha/.planning/08-sanitization-and-frameworks.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 18,
+        "score": 7.9327,
+        "tiers": {
+          "dense": 1.9327,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 7,
+        "score": 28.9598,
+        "tiers": {
+          "dense": 1.6573,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "16bdab3cc94c471e83ec421424016432",
+      "type": "within",
+      "question": "ScoreRift doesn't replace tooling. It sits on top of it.",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 28.6334,
+        "tiers": {
+          "dense": 1.6334,
+          "fts5": 6.0,
+          "lex_anchor": 12.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 57.3852,
+        "tiers": {
+          "dense": 1.6334,
+          "fts5": 6.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "e22e1ce4d8744b0c922389b5ce2d717c",
+      "type": "within",
+      "question": "- in : Missing transactions in for allows interleaved writes, violating ACID.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/claim_task_race_condition_and_WAL_correc_round1.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 15.668,
+        "tiers": {
+          "dense": 2.168,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 40,
+        "score": 21.0433,
+        "tiers": {
+          "dense": 1.977,
+          "fts5": 6.0,
+          "lex_anchor": 3.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "14ca21d631e9459ba51a6c8e0e970b35",
+      "type": "within",
+      "question": "Generate a markdown Map sorted by severity, grouped by file.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/claims.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.3423,
+        "tiers": {
+          "dense": 2.3423,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "3be82ccc5d114f95821fd932c10da6b4",
+      "type": "cross",
+      "question": "Quick summary for CI/smoke test integration.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/engine.py"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 17,
+        "score": 42.7678,
+        "tiers": {
+          "authority": 1.5,
+          "dense": 1.5725,
+          "fts5": 6.0,
+          "lex_anchor": 8.0544,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    },
+    {
+      "id": "8c488fb209c44476baa9d112f6342a67",
+      "type": "within",
+      "question": "a file-level parent document into its full content.",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 173,
+        "score": 7.9885,
+        "tiers": {
+          "dense": 1.9885,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "2cb46814337a4ff2ae5196765602e4d2",
+      "type": "within",
+      "question": "4. Intake flow \u2014 Stage 0-1 (welcome, routing, company profile)\n5. The \"wow\" moment screen (Q1.4 \u2014 AI preview)\n6. Intake flow \u2014 Stage 2 (tech stack, highest visual complexity)\n7. Intake flow \u2014 Stage 4 ",
+      "gold_paths": [
+        "CosmicTasha/.planning/10-figma-design-system.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 2,
+        "score": 18.7704,
+        "tiers": {
+          "dense": 2.2704,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 36,
+        "score": 46.4442,
+        "tiers": {
+          "dense": 2.1543,
+          "fts5": 6.0,
+          "lex_anchor": 5.0964,
+          "tag_exact": 6.0,
+          "tag_prefix": 9.0
+        }
+      }
+    },
+    {
+      "id": "8c488fb209c44476baa9d112f6342a67",
+      "type": "cross",
+      "question": "a file-level parent document into its full content.",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 173,
+        "score": 7.9885,
+        "tiers": {
+          "dense": 1.9885,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "dc3ee4e59a5444db96bf085138076211",
+      "type": "within",
+      "question": "DriftWatch launches on pre-owned, self-hosted hardware behind residential 1Gbps symmetric fiber.",
+      "gold_paths": [
+        "CosmicTasha/.planning/01-infrastructure-hosting.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 19.0221,
+        "tiers": {
+          "dense": 2.5221,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 19,
+        "score": 32.0883,
+        "tiers": {
+          "dense": 2.5221,
+          "fts5": 6.0,
+          "lex_anchor": 5.5132,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "1adcd9ca6f6f436a8048370b9a87a51b",
+      "type": "within",
+      "question": "Summarize vendor payments >= $600 for reporting.",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/exports/tax_engine.py"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 8.46,
+        "tiers": {
+          "dense": 2.46,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 59,
+        "score": 14.9303,
+        "tiers": {
+          "dense": 2.46,
+          "fts5": 6.0
+        }
+      }
+    },
+    {
+      "id": "b7a262823f7249dd81ad34a2d8b22255",
+      "type": "cross",
+      "question": "- context_not_effective: Context exists but output quality is low \u2014 context may need rewording\n- low_score: accuracy\n - DB error: Row() argument 1 must be sqlite3.",
+      "gold_paths": [
+        "Education/fleet/knowledge/flywheel/audit_20260326_050842.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 43,
+        "score": 8.5876,
+        "tiers": {
+          "dense": 2.5876,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      }
+    },
+    {
+      "id": "2ec551bcd2c349c39307cc491666d2d3",
+      "type": "cross",
+      "question": "result = engine.review_dimension(\"architecture\", context=source_code, mode=\"\")",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "blob": {
+        "in_pool": false,
+        "rank": null,
+        "score": null,
+        "tiers": {}
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 49,
+        "score": 45.2983,
+        "tiers": {
+          "dense": 1.8156,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "d16b68b141ea4ffabc2e4308b402ceeb",
+      "type": "cross",
+      "question": "curl -H \"X-Tenant-ID: xyz-\" \\\n -F \"file=@bank.",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_QUICKSTART.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 98,
+        "score": 7.9789,
+        "tiers": {
+          "dense": 1.9789,
+          "fts5": 6.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 91,
+        "score": 17.3124,
+        "tiers": {
+          "dense": 1.9813,
+          "fts5": 6.0,
+          "tag_prefix": 1.5
+        }
+      }
+    },
+    {
+      "id": "0a3c9ac356d1486398aa0b3cc6cd423f",
+      "type": "within",
+      "question": "| Persona | Score | Blocking? |\n|---------|-------|-----------|\n| DA1 (Auditor) | 8/10 | No |\n| DA2 (Competitor) | 6/10 | No \u2014 vulnerability window is real |\n| DA3 (Skeptical CTO) | 7/10 | No |\n| DA4 ",
+      "gold_paths": [
+        "CosmicTasha/.planning/16-full-plan-council-review.md"
+      ],
+      "blob": {
+        "in_pool": true,
+        "rank": 1,
+        "score": 20.4453,
+        "tiers": {
+          "dense": 2.4453,
+          "fts5": 6.0,
+          "lex_anchor": 6.0,
+          "tag_exact": 3.0,
+          "tag_prefix": 3.0
+        }
+      },
+      "sharded": {
+        "in_pool": true,
+        "rank": 4,
+        "score": 46.6972,
+        "tiers": {
+          "dense": 1.9082,
+          "fts5": 6.0,
+          "lex_anchor": 9.0,
+          "tag_exact": 6.0,
+          "tag_prefix": 3.0
+        }
+      }
+    }
+  ]
+}

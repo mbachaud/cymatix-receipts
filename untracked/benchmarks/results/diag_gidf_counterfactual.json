@@ -1,0 +1,2146 @@
+{
+  "summary": {
+    "root": "genomes\\bench\\matrix-sharded\\medium",
+    "n_shards": 6,
+    "total_N": 17735,
+    "n_needles": 150,
+    "n_gold_in_lexical_pool": 124,
+    "n_buried_golds": 13,
+    "median_parity_error": 0.0,
+    "max_parity_error": 26.47823286648409,
+    "parity_bit_exact": false,
+    "frac_buried_golds_global_reranks_above": 0.3076923076923077,
+    "n_buried_reranked_above": 4,
+    "median_rank_improvement": 0.0
+  },
+  "needles": [
+    {
+      "question": "Not handled by XeroClient \u2014 use Xero's OAuth2 redirect to obtain:",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+        "engine_local": 35.04241342750301,
+        "manual_local": 35.04241342750301,
+        "manual_global": 53.95180789202613,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Return the volatility_class for the given source_kind.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\provenance.py",
+        "engine_local": 62.078842868991835,
+        "manual_local": 62.078842868991835,
+        "manual_global": 62.078842868991835,
+        "parity_err": null
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\context_packet.py",
+        "engine_local": 65.77317920846538,
+        "manual_local": 65.77317920846538,
+        "manual_global": 65.77317920846538,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Return the path for the given platform, or None if missing.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\launcher\\installer.py",
+        "engine_local": 26.253157785758678,
+        "manual_local": 26.253157785758678,
+        "manual_global": 26.253157785758678,
+        "parity_err": null
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tests\\test_install_observability.py",
+        "engine_local": 31.173692437214175,
+        "manual_local": 31.173692437214175,
+        "manual_global": 31.173692437214175,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "| Account Range | Increase | Decrease |\n|---------------|----------|----------|\n",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\BALANCE_SHEET_CASH_FLOW.md",
+        "engine_local": 42.70675137525261,
+        "manual_local": 42.70675137525261,
+        "manual_global": 61.452151369886295,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\engine.py",
+        "engine_local": 53.0384276085594,
+        "manual_local": 53.0384276085594,
+        "manual_global": 76.99365579105559,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "prevent silent regression: once you declare \"testing should be at least A\", a dr",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\ARCHITECTURE.md",
+        "engine_local": 34.74046504018876,
+        "manual_local": 34.74046504018877,
+        "manual_global": 44.9639083180873,
+        "parity_err": 7.105427357601002e-15
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-04-01-two-brain-audit-design.md",
+        "engine_local": 39.24500924934834,
+        "manual_local": 39.24500924934834,
+        "manual_global": 39.24500924934834,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Poll until the uvicorn server binds the , or timeout.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\launcher\\app.py",
+        "engine_local": 53.07752353547657,
+        "manual_local": 53.07752353547657,
+        "manual_global": 53.07752353547657,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- Create .\n- Create \u2014 , , , , , , .\n- Create \u2014 returns a typed config object wit",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 54.72154145113559,
+        "manual_local": 54.72154145113559,
+        "manual_global": 107.2575223726897,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "an intentional server to other sessions.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\bridge.py",
+        "engine_local": 19.01457668475911,
+        "manual_local": 19.01457668475911,
+        "manual_global": 19.01457668475911,
+        "parity_err": null
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\ops\\RESTART_PROTOCOL.md",
+        "engine_local": 25.605437755672366,
+        "manual_local": 25.605437755672366,
+        "manual_global": 25.605437755672366,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift t",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\15-phase2-integration-monitoring.md",
+        "engine_local": 74.71599866021994,
+        "manual_local": 74.71599866021994,
+        "manual_global": 98.67215649429907,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Convert a sqlite3. (or tuple) to a WITHOUT password_hash.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\auth.py",
+        "engine_local": 37.956530700599444,
+        "manual_local": 30.71888910239253,
+        "manual_global": 38.42787531434047,
+        "parity_err": 7.237641598206913
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "The web app reads these from (see [](web/.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\README.md",
+        "engine_local": 10.668402501330233,
+        "manual_local": 10.668402501330233,
+        "manual_global": 15.393662914192646,
+        "parity_err": 0.0
+      },
+      "local_rank": 23,
+      "n_wrong_above": 22,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\DEVELOPMENT.md",
+        "engine_local": 14.705949325345617,
+        "manual_local": 14.705949325345617,
+        "manual_global": 14.705949325345617,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rol",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-23-ml-data-scientists-design.md",
+        "engine_local": 190.886092994983,
+        "manual_local": 190.886092994983,
+        "manual_global": 190.886092994983,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "#### 1. \u2014 Context\nThread-safe identification for all operations.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\MULTI_TENANT_GUIDE.md",
+        "engine_local": 23.3444516631574,
+        "manual_local": 23.3444516631574,
+        "manual_global": 22.971437764132247,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\context.py",
+        "engine_local": 31.587593822635483,
+        "manual_local": 31.587593822635483,
+        "manual_global": 31.68432397788596,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 3
+    },
+    {
+      "question": "- (): Double-entry accounting equation (A = L + E) with sections for current/fix",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\BALANCE_SHEET_CASH_FLOW.md",
+        "engine_local": 200.7749718547318,
+        "manual_local": 200.7749718547318,
+        "manual_global": 306.740452268191,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Position: Pure Python. is a data pipeline with a web UI \u2014 Python owns this space",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\BookKeeper_Language_Consensus.md",
+        "engine_local": 78.83809363874286,
+        "manual_local": 78.83809363874286,
+        "manual_global": 90.5902823514813,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- OFX test files: \u2014 Generate synthetic OFX/QFX files stored in\n .",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\planning\\MVP_SCOPE.md",
+        "engine_local": 24.183204269837685,
+        "manual_local": 24.183204269837688,
+        "manual_global": 38.27021130272537,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identif",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 40.06759724393837,
+        "manual_local": 40.06759724393837,
+        "manual_global": 115.12198339959579,
+        "parity_err": 0.0
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger\\SKILL.md",
+        "engine_local": 40.7209941642632,
+        "manual_local": 40.7209941642632,
+        "manual_global": 107.52174473091257,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": true,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 1
+    },
+    {
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift t",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\15-phase2-integration-monitoring.md",
+        "engine_local": 74.71599866021994,
+        "manual_local": 74.71599866021994,
+        "manual_global": 98.67215649429907,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "ScoreRift doesn't replace tooling. It sits on top of it.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+        "engine_local": 12.434842174769454,
+        "manual_local": 12.434842174769454,
+        "manual_global": 21.911291812454813,
+        "parity_err": 0.0
+      },
+      "local_rank": 12,
+      "n_wrong_above": 11,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\positioning\\ENTERPRISE.md",
+        "engine_local": 18.73826773300335,
+        "manual_local": 18.73826773300335,
+        "manual_global": 18.73826773300335,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rol",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-23-ml-data-scientists-design.md",
+        "engine_local": 190.886092994983,
+        "manual_local": 190.886092994983,
+        "manual_global": 190.886092994983,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "When a tier should be triggered automatically.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\tiers.py",
+        "engine_local": 14.50844437968713,
+        "manual_local": 14.50844437968713,
+        "manual_global": 24.84120897997382,
+        "parity_err": 0.0
+      },
+      "local_rank": 4,
+      "n_wrong_above": 3,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tests\\test_know_miss_block.py",
+        "engine_local": 14.666577699357294,
+        "manual_local": 14.666577699357294,
+        "manual_global": 14.666577699357294,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "LLM reviewer system \u2014 the \"right brain on demand\":",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+        "engine_local": 14.53402432067014,
+        "manual_local": 14.53402432067014,
+        "manual_global": 33.269533323431304,
+        "parity_err": 0.0
+      },
+      "local_rank": 22,
+      "n_wrong_above": 21,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\FUTURE\\LANGUAGE_AT_THE_EDGES.md",
+        "engine_local": 34.89980764255661,
+        "manual_local": 34.89980764255661,
+        "manual_global": 34.89980764255661,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "The DORA four key are not yet formally scored but are on the roadmap:",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+        "engine_local": 25.430352625271603,
+        "manual_local": 25.430352625271603,
+        "manual_global": 39.88973503344936,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Lightweight projection \u2014 `HelixSession.`.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+        "engine_local": 25.455852768733102,
+        "manual_local": 25.455852768733102,
+        "manual_global": 25.455852768733102,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "def pylint_score():\n result = subprocess.run([\"pylint\", \"src/\", \"--output-format",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+        "engine_local": 50.830674301369235,
+        "manual_local": 40.662515543758424,
+        "manual_global": 80.2135436685426,
+        "parity_err": 10.168158757610811
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\scripts\\bench_claude_matrix.py",
+        "engine_local": 75.94596752578485,
+        "manual_local": 75.94596752578485,
+        "manual_global": 75.94596752578485,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Scan , emit to claim_edges. Returns a summary.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\claims_analyze.py",
+        "engine_local": 81.17024572198343,
+        "manual_local": 81.17024572198343,
+        "manual_global": 81.17024572198343,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Audit depth \u2014 higher include everything from lower .",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\tiers.py",
+        "engine_local": 28.378806800864577,
+        "manual_local": 28.378806800864574,
+        "manual_global": 40.96825587232641,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "The implementation includes 24 comprehensive tests (in ):",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\BALANCE_SHEET_CASH_FLOW.md",
+        "engine_local": 14.983117209923947,
+        "manual_local": 14.983117209923947,
+        "manual_global": 22.430802012472434,
+        "parity_err": 0.0
+      },
+      "local_rank": 9,
+      "n_wrong_above": 8,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\datasources\\alertmanager\\_index.md",
+        "engine_local": 21.19973597607175,
+        "manual_local": 21.19973597607175,
+        "manual_global": 21.19973597607175,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "> Last sweep: 2026-03-24 \u2014 Full gap review for professional services + mixed/gen",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\planning\\GAPS.md",
+        "engine_local": 40.341999067104986,
+        "manual_local": 40.341999067104986,
+        "manual_global": 54.05584459428681,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Per-spec lookup with `default` fallback.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\config.py",
+        "engine_local": 19.600452328687005,
+        "manual_local": 19.600452328687005,
+        "manual_global": 19.600452328687005,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "coordinator = (\n model=\"amazon.nova\",\n =[\n researcher_agent.as_tool(),\n coder_ag",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_swarming_and_collaboration.md",
+        "engine_local": 107.06251597677816,
+        "manual_local": 107.06251597677816,
+        "manual_global": 107.06251597677816,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Build/load the hot-tier (lifecycle tier < 2) .",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\knowledge_store.py",
+        "engine_local": 20.606222666668987,
+        "manual_local": 20.606222666668987,
+        "manual_global": 20.606222666668987,
+        "parity_err": null
+      },
+      "local_rank": 6,
+      "n_wrong_above": 5,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\cwola.py",
+        "engine_local": 23.49641358617024,
+        "manual_local": 23.49641358617024,
+        "manual_global": 23.49641358617024,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Autonomous agents share a common architectural pattern: plan-execute-reflect loo",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_evolution_and_autoresearch.md",
+        "engine_local": 93.63671291821633,
+        "manual_local": 93.63671291821633,
+        "manual_global": 93.63671291821633,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Imperative \u2014 VaultManager.status() updates it on each call.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\telemetry\\otel.py",
+        "engine_local": 26.011407469146587,
+        "manual_local": 26.011407469146587,
+        "manual_global": 26.011407469146587,
+        "parity_err": null
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\superpowers\\plans\\2026-05-06-obsidian-vault-export-v1.md",
+        "engine_local": 29.96555808966693,
+        "manual_local": 29.96555808966693,
+        "manual_global": 29.96555808966693,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Compliance Profile is designed to prove is real \u2014 it analyzed your company, foun",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\02-pricing-monetization.md",
+        "engine_local": 60.27907723799869,
+        "manual_local": 60.2790772379987,
+        "manual_global": 93.42952020741029,
+        "parity_err": 7.105427357601002e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "import webview\nimport threading\nfrom fleet_bridge import start_fleet_if_needed",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-31-pywebview-migration.md",
+        "engine_local": 40.330165252667925,
+        "manual_local": 40.330165252667925,
+        "manual_global": 40.330165252667925,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Xero API: 60 requests per minute (enforced locally with deque timestamp tracking",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+        "engine_local": 61.836488368365195,
+        "manual_local": 61.836488368365195,
+        "manual_global": 80.1230431852195,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "#### Enhanced (~150 new lines)\nNew command group with 6 subcommands:\n- \u2014 List al",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\TENANCY_IMPLEMENTATION_SUMMARY.md",
+        "engine_local": 96.33173089231518,
+        "manual_local": 96.33173089231518,
+        "manual_global": 131.16546542274028,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "1. \u2014 seed the baseline.\n2. Open the baseline; fill in (letter grade) for the dim",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\drift.md",
+        "engine_local": 61.073971224802335,
+        "manual_local": 61.07397122480233,
+        "manual_global": 127.47119504697936,
+        "parity_err": 7.105427357601002e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- Three distilled guardrails: , , .\n- Three named subagents matching each guardr",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 60.13323196380439,
+        "manual_local": 60.13323196380439,
+        "manual_global": 179.45566345117177,
+        "parity_err": 0.0
+      },
+      "local_rank": 4,
+      "n_wrong_above": 3,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\CHANGELOG.md",
+        "engine_local": 82.19036569659536,
+        "manual_local": 82.19036569659536,
+        "manual_global": 240.79795479136058,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "All four incumbents are integration-monitoring platforms.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\02-pricing-monetization.md",
+        "engine_local": 33.64548389616976,
+        "manual_local": 33.64548389616976,
+        "manual_global": 48.43450124187857,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Routing-DB . Mirrors `KnowledgeStore.` so\n `/admin/swap-db and other callers rea",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\sharding.py",
+        "engine_local": 76.40810314045932,
+        "manual_local": 76.40810314045932,
+        "manual_global": 76.40810314045932,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- [ ] Run intake against its own infrastructure\n- [ ] Generate DriftWatch's own ",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\04-launch-checklist.md",
+        "engine_local": 52.02415204806529,
+        "manual_local": 52.02415204806529,
+        "manual_global": 117.07660106156152,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "a using werkzeug (pbkdf2:sha256 with random salt).",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\auth.py",
+        "engine_local": 33.72196496511085,
+        "manual_local": 33.72196496511085,
+        "manual_global": 46.251323970278435,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\auth_blueprint.py",
+        "engine_local": 39.55756004263267,
+        "manual_local": 39.55756004263267,
+        "manual_global": 39.55756004263267,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "= AuditEngine(db_path=\"audit.db\", baseline_path=\"audit_baseline.json\")",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+        "engine_local": 13.810817801466722,
+        "manual_local": 5.470813136536528,
+        "manual_global": 28.472939672281335,
+        "parity_err": 8.340004664930195
+      },
+      "local_rank": 23,
+      "n_wrong_above": 22,
+      "top_wrong": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\11-compliance-knowledge-and-qualification.md",
+        "engine_local": 34.84981697246452,
+        "manual_local": 20.052695937606757,
+        "manual_global": 23.253085347121207,
+        "parity_err": 14.79712103485776
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": true,
+      "local_rank_scorable": 3,
+      "global_rank_scorable": 1
+    },
+    {
+      "question": "Run ruff. Returns the unmeasured sentinel (0.0, 0.0) if ruff isn't\n installed or",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\lib\\drift_scoring\\python_preset.py",
+        "engine_local": 45.71414056517605,
+        "manual_local": 45.71414056517605,
+        "manual_global": 80.65249458923061,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "| Component | Per-Customer Size | At 100 Customers | At 500 Customers |\n|-------",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+        "engine_local": 25.310025435289987,
+        "manual_local": 25.310025435289983,
+        "manual_global": 50.77746317089712,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- STANDARDS.md: maps dimensions to OWASP, SRE, DORA, Clean Code\n- DB path displa",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+        "engine_local": 40.08412509372042,
+        "manual_local": 40.08412509372042,
+        "manual_global": 73.67604112617408,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Examples of behavior that contributes to a positive environment for \ncommunity i",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\CODE_OF_CONDUCT.md",
+        "engine_local": 39.54627971375049,
+        "manual_local": 39.54627971375049,
+        "manual_global": 47.58125638351211,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identif",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger\\SKILL.md",
+        "engine_local": 37.927418637007904,
+        "manual_local": 37.927418637007904,
+        "manual_global": 91.75429503797031,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- Command concatenation via : If or constructs commands using without escaping (",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\shell_injection_risks_in_lead_client_and_round1.md",
+        "engine_local": 39.77868346762245,
+        "manual_local": 39.77868346762245,
+        "manual_global": 39.77868346762245,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Pull the compressed string out of any * dataclass.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\encoding\\headroom_bridge.py",
+        "engine_local": 23.41762242606176,
+        "manual_local": 23.41762242606176,
+        "manual_global": 23.41762242606176,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Bundle a self-contained interpreter inside the Rust binary so no system install ",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\biged-rs\\docs\\EMBEDDED_CPYTHON.md",
+        "engine_local": 53.58158685489192,
+        "manual_local": 53.58158685489192,
+        "manual_global": 53.58158685489192,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Position: The plan's moat analysis (doc 09) is half right.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\14-devils-advocate-deep-dive.md",
+        "engine_local": 20.22670862693356,
+        "manual_local": 20.22670862693356,
+        "manual_global": 36.47701793153055,
+        "parity_err": 0.0
+      },
+      "local_rank": 4,
+      "n_wrong_above": 3,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\plans\\2026-03-28-factorio-ml-overhaul.md",
+        "engine_local": 23.196602670044033,
+        "manual_local": 23.196602670044033,
+        "manual_global": 23.196602670044033,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Poll until the uvicorn server binds the , or timeout.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\launcher\\app.py",
+        "engine_local": 53.07752353547657,
+        "manual_local": 53.07752353547657,
+        "manual_global": 53.07752353547657,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Retrieve a cached review result. Returns None on miss or expiry.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\reviewers\\cache.py",
+        "engine_local": 18.93548981820934,
+        "manual_local": 18.93548981820934,
+        "manual_global": 33.29651123871089,
+        "parity_err": 0.0
+      },
+      "local_rank": 12,
+      "n_wrong_above": 11,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\reviews\\2026-05-16-deep-review\\pipeline-03-scoring-conflict.md",
+        "engine_local": 31.268238800756066,
+        "manual_local": 31.268238800756066,
+        "manual_global": 31.268238800756066,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "runs on // and warns when float literals appear on lines with money-shaped ident",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\ledger.md",
+        "engine_local": 24.987226657173853,
+        "manual_local": 24.987226657173856,
+        "manual_global": 70.95255108946577,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\hooks\\scripts\\money_math_guard.py",
+        "engine_local": 30.827106479510135,
+        "manual_local": 30.827106479510135,
+        "manual_global": 78.48193156961774,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "Scan , emit to claim_edges. Returns a summary.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\claims_analyze.py",
+        "engine_local": 81.17024572198343,
+        "manual_local": 81.17024572198343,
+        "manual_global": 81.17024572198343,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "'s three guardrails distill the agent surface of three larger apps:",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 23.178263362231576,
+        "manual_local": 23.178263362231576,
+        "manual_global": 59.06356573265149,
+        "parity_err": 0.0
+      },
+      "local_rank": 8,
+      "n_wrong_above": 7,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\README.md",
+        "engine_local": 29.47211847931836,
+        "manual_local": 29.47211847931836,
+        "manual_global": 29.47211847931836,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Step 1: Build from authoritative public sources (Claude + Max)",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\11-compliance-knowledge-and-qualification.md",
+        "engine_local": 29.4790294943027,
+        "manual_local": 29.4790294943027,
+        "manual_global": 27.566322057324033,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Build swimlane : transaction lifecycle by status.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\dashboard\\analytics.py",
+        "engine_local": 19.216418652654873,
+        "manual_local": 19.21641865265487,
+        "manual_global": 35.65236441585475,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\swimlanes\\README.md",
+        "engine_local": 20.101767727661432,
+        "manual_local": 20.101767727661432,
+        "manual_global": 20.101767727661432,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "By default is gated as \u2014 the operator is reminded but can proceed.",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\compliance.md",
+        "engine_local": 13.906133439084975,
+        "manual_local": 13.906133439084975,
+        "manual_global": 24.00275400387687,
+        "parity_err": 0.0
+      },
+      "local_rank": 14,
+      "n_wrong_above": 13,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\ROADMAP.md",
+        "engine_local": 18.535915548149788,
+        "manual_local": 18.535915548149788,
+        "manual_global": 18.535915548149788,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Read idle_threshold_hours .toml; fall back to default.",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\debug_models.py",
+        "engine_local": 47.6041604571487,
+        "manual_local": 47.6041604571487,
+        "manual_global": 47.6041604571487,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "curl -H \"X-Tenant-ID: xyz-\" \\\n -F \"file=@bank.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\TENANCY_QUICKSTART.md",
+        "engine_local": 19.41965944002792,
+        "manual_local": 19.41965944002792,
+        "manual_global": 30.716417378185003,
+        "parity_err": 0.0
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\GEMINI.md",
+        "engine_local": 23.960483004913456,
+        "manual_local": 23.960483004913456,
+        "manual_global": 23.960483004913456,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Quick summary for CI/smoke test integration.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\engine.py",
+        "engine_local": 8.455915260837502,
+        "manual_local": 8.455915260837502,
+        "manual_global": 10.879647463700003,
+        "parity_err": 0.0
+      },
+      "local_rank": 36,
+      "n_wrong_above": 35,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\superpowers\\plans\\2026-05-11-helix-cli-v1.md",
+        "engine_local": 26.618673466006133,
+        "manual_local": 26.618673466006133,
+        "manual_global": 26.618673466006133,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Goal: A minimal that announces itself when the plugin loads, mirrors pattern.",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 31.168615441320412,
+        "manual_local": 31.16861544132041,
+        "manual_global": 56.043897892341185,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identif",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 40.06759724393837,
+        "manual_local": 40.06759724393837,
+        "manual_global": 115.12198339959579,
+        "parity_err": 0.0
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger\\SKILL.md",
+        "engine_local": 40.7209941642632,
+        "manual_local": 40.7209941642632,
+        "manual_global": 107.52174473091257,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": true,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 1
+    },
+    {
+      "question": "result = engine.review_dimension(\"architecture\", context=source_code, mode=\"\")",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+        "engine_local": 36.40983422947802,
+        "manual_local": 25.78169343077151,
+        "manual_global": 47.60005486073881,
+        "parity_err": 10.62814079870651
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Ambient HITL/audit nudge. Triggers on six risky-op categories:",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\compliance.md",
+        "engine_local": 17.97211537042115,
+        "manual_local": 17.97211537042115,
+        "manual_global": 49.08983628620666,
+        "parity_err": 0.0
+      },
+      "local_rank": 6,
+      "n_wrong_above": 5,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\concepts.md",
+        "engine_local": 19.107092786065188,
+        "manual_local": 19.107092786065188,
+        "manual_global": 53.552165128842766,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 3,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "enforces Python quality via fast AST analysis:",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+        "engine_local": 15.619684445842912,
+        "manual_local": 15.619684445842907,
+        "manual_global": 22.326281408659042,
+        "parity_err": 5.329070518200751e-15
+      },
+      "local_rank": 4,
+      "n_wrong_above": 3,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tests\\test_bench_harvest.py",
+        "engine_local": 17.17411852344803,
+        "manual_local": 17.17411852344803,
+        "manual_global": 17.17411852344803,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "1. PostgreSQL Support \u2014 Schema isolation mode\n2. Multi-Tenant Metrics \u2014 Per-tena",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\TENANCY_IMPLEMENTATION_SUMMARY.md",
+        "engine_local": 93.34589482860818,
+        "manual_local": 93.34589482860818,
+        "manual_global": 123.62612884247976,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "| Focus | Time Allocation | Details |\n|-------|-----------------|---------|\n| #1",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\05-go-to-market.md",
+        "engine_local": 46.11066647932021,
+        "manual_local": 46.11066647932022,
+        "manual_global": 65.39822792219411,
+        "parity_err": 1.4210854715202004e-14
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Apply path sanitization to plain (CSV / Markdown output).",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\sanitizer.py",
+        "engine_local": 31.317120456535093,
+        "manual_local": 31.317120456535093,
+        "manual_global": 43.11989562151504,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "from lib.decimal_math import pct_of, sum_money\nfrom decimal import Decimal\ntotal",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 19.732283647982264,
+        "manual_local": 12.225908578757846,
+        "manual_global": 52.091960655609064,
+        "parity_err": 7.506375069224418
+      },
+      "local_rank": 16,
+      "n_wrong_above": 15,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\factorio\\economic_scorer.py",
+        "engine_local": 28.700782727973618,
+        "manual_local": 28.700782727973618,
+        "manual_global": 28.700782727973618,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Composes 's packet-shortlist with an underlying .",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\adapters\\retriever.py",
+        "engine_local": 35.924798693446,
+        "manual_local": 35.924798693446,
+        "manual_global": 35.924798693446,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "from lib.decimal_math import pct_of, sum_money\nfrom decimal import Decimal\ntotal",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 19.732283647982264,
+        "manual_local": 12.225908578757846,
+        "manual_global": 52.091960655609064,
+        "parity_err": 7.506375069224418
+      },
+      "local_rank": 16,
+      "n_wrong_above": 15,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\factorio\\economic_scorer.py",
+        "engine_local": 28.700782727973618,
+        "manual_local": 28.700782727973618,
+        "manual_global": 28.700782727973618,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Decimal-only money math. The agent's standard library for currency, percentages,",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 33.75871884833489,
+        "manual_local": 33.75871884833489,
+        "manual_global": 76.72774737673801,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\ledger.md",
+        "engine_local": 41.05876689480821,
+        "manual_local": 41.05876689480821,
+        "manual_global": 91.51252689612097,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "- First public release.\nbash\ngit add README.md CHANGELOG.md CODE_OF_CONDUCT.md\ng",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 33.65651935295246,
+        "manual_local": 28.546843849302153,
+        "manual_global": 67.55324193968342,
+        "parity_err": 5.109675503650305
+      },
+      "local_rank": 8,
+      "n_wrong_above": 7,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\superpowers\\plans\\2026-05-11-helix-cli-v1.md",
+        "engine_local": 44.26745475135017,
+        "manual_local": 44.26745475135017,
+        "manual_global": 44.26745475135017,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Convert a numeric to the nearest letter .",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\grades.py",
+        "engine_local": 26.642034028436793,
+        "manual_local": 26.642034028436793,
+        "manual_global": 34.44025405618238,
+        "parity_err": 0.0
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\audit_scorer.py",
+        "engine_local": 29.099563637881054,
+        "manual_local": 29.099563637881054,
+        "manual_global": 29.099563637881054,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "1. \u2014 seed the baseline.\n2. Open the baseline; fill in (letter grade) for the dim",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\drift.md",
+        "engine_local": 61.073971224802335,
+        "manual_local": 61.07397122480233,
+        "manual_global": 127.47119504697936,
+        "parity_err": 7.105427357601002e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Examples of behavior that contributes to a positive environment for \ncommunity i",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\CODE_OF_CONDUCT.md",
+        "engine_local": 39.54627971375049,
+        "manual_local": 39.54627971375049,
+        "manual_global": 47.58125638351211,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "1. Fill in this (copy as a new dated file in , or inline in ).\n2. Have the named",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\scaffold\\compliance\\HITL_TEMPLATE.md",
+        "engine_local": 79.89807142427955,
+        "manual_local": 79.89807142427956,
+        "manual_global": 125.7691674558918,
+        "parity_err": 1.4210854715202004e-14
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "the Continue HTTP -provider shape into the flat\n dict that tool consumers (and t",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\mcp\\mcp_server.py",
+        "engine_local": 53.491301922374774,
+        "manual_local": 53.491301922374774,
+        "manual_global": 53.491301922374774,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Return value from :func:apply_budget_tiers.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\pipeline\\tier_logic.py",
+        "engine_local": 46.59885682146424,
+        "manual_local": 46.59885682146424,
+        "manual_global": 46.59885682146424,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Bigger harmonic- = more walkable in general.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\retrieval\\tie_break.py",
+        "engine_local": 23.34299674402128,
+        "manual_local": 23.34299674402128,
+        "manual_global": 23.34299674402128,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "#### 1. \u2014 Context\nThread-safe identification for all operations.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\MULTI_TENANT_GUIDE.md",
+        "engine_local": 23.3444516631574,
+        "manual_local": 23.3444516631574,
+        "manual_global": 22.971437764132247,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\context.py",
+        "engine_local": 31.587593822635483,
+        "manual_local": 31.587593822635483,
+        "manual_global": 31.68432397788596,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 3
+    },
+    {
+      "question": "Each extraction follows the same pattern: create blueprint file, move routes, re",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\plans\\2026-03-31-dashboard-decomposition.md",
+        "engine_local": 49.321054312106845,
+        "manual_local": 49.321054312106845,
+        "manual_global": 49.321054312106845,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "- Create .\n- Create \u2014 fixtures (, ).\n- Create .\n- Create .\n- Create .\n- Create .",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 9.08270572757249,
+        "manual_local": 9.08270572757249,
+        "manual_global": 11.971682901242641,
+        "parity_err": 0.0
+      },
+      "local_rank": 31,
+      "n_wrong_above": 30,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\superpowers\\plans\\2026-03-28-factorio-autoresearch.md",
+        "engine_local": 19.319565378583846,
+        "manual_local": 19.319565378583846,
+        "manual_global": 19.319565378583846,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "engine.(Dimension(\n name=\"uptime\",\n check=lambda: (1.0 if ping_ok() else 0.0, {\"",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+        "engine_local": 30.669977287480567,
+        "manual_local": 26.819876723451497,
+        "manual_global": 72.58602436447838,
+        "parity_err": 3.85010056402907
+      },
+      "local_rank": 10,
+      "n_wrong_above": 9,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\integrations\\scorerift.py",
+        "engine_local": 57.086827957646314,
+        "manual_local": 57.086827957646314,
+        "manual_global": 57.086827957646314,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Decision (2026-03-24): Use with 4 decimal places, stored as\nTEXT in SQLite.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\planning\\GAPS.md",
+        "engine_local": 24.457791688184134,
+        "manual_local": 24.457791688184134,
+        "manual_global": 38.65850628886647,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\architecture\\adr\\2026-05-14-spec-vs-code-design-decisions.md",
+        "engine_local": 28.61640982334859,
+        "manual_local": 28.61640982334859,
+        "manual_global": 28.61640982334859,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Imperative \u2014 VaultManager.status() updates it on each call.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\telemetry\\otel.py",
+        "engine_local": 26.011407469146587,
+        "manual_local": 26.011407469146587,
+        "manual_global": 26.011407469146587,
+        "parity_err": null
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\superpowers\\plans\\2026-05-06-obsidian-vault-export-v1.md",
+        "engine_local": 29.96555808966693,
+        "manual_local": 29.96555808966693,
+        "manual_global": 29.96555808966693,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "The DORA four key are not yet formally scored but are on the roadmap:",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+        "engine_local": 25.430352625271603,
+        "manual_local": 25.430352625271603,
+        "manual_global": 39.88973503344936,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Community Impact: A serious violation of community standards, including\nsustaine",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\CODE_OF_CONDUCT.md",
+        "engine_local": 44.410496432092664,
+        "manual_local": 44.41049643209266,
+        "manual_global": 72.36866847126215,
+        "parity_err": 7.105427357601002e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "`python\nfrom ..context import set_tenant, get_tenant, get_tenant_or_none, requir",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\TENANCY_API_REFERENCE.md",
+        "engine_local": 47.71206682203641,
+        "manual_local": 21.233833955552324,
+        "manual_global": 30.654307960830987,
+        "parity_err": 26.47823286648409
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Tiers control depth \u2014 higher tiers include everything from lower:",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+        "engine_local": 26.809022030355855,
+        "manual_local": 26.80902203035585,
+        "manual_global": 39.24452068399877,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\tiers.py",
+        "engine_local": 33.59367494863777,
+        "manual_local": 33.59367494863777,
+        "manual_global": 49.96729676486481,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "- \u2014 Source modules\n- \u2014 Comprehensive test suite\n- \u2014 Configuration reference",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\MULTI_TENANT_GUIDE.md",
+        "engine_local": 36.89309278946381,
+        "manual_local": 36.89309278946381,
+        "manual_global": 44.67165712437857,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "LLM reviewer system \u2014 the \"right brain on demand\":",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+        "engine_local": 14.53402432067014,
+        "manual_local": 14.53402432067014,
+        "manual_global": 33.269533323431304,
+        "parity_err": 0.0
+      },
+      "local_rank": 22,
+      "n_wrong_above": 21,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\FUTURE\\LANGUAGE_AT_THE_EDGES.md",
+        "engine_local": 34.89980764255661,
+        "manual_local": 34.89980764255661,
+        "manual_global": 34.89980764255661,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "the Continue HTTP -provider shape into the flat\n dict that tool consumers (and t",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\mcp\\mcp_server.py",
+        "engine_local": 53.491301922374774,
+        "manual_local": 53.491301922374774,
+        "manual_global": 53.491301922374774,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "runs on // and warns when float literals appear on lines with money-shaped ident",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\ledger.md",
+        "engine_local": 24.987226657173853,
+        "manual_local": 24.987226657173856,
+        "manual_global": 70.95255108946577,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\hooks\\scripts\\money_math_guard.py",
+        "engine_local": 30.827106479510135,
+        "manual_local": 30.827106479510135,
+        "manual_global": 78.48193156961774,
+        "parity_err": 0.0
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": false,
+      "local_rank_scorable": 2,
+      "global_rank_scorable": 2
+    },
+    {
+      "question": "A single interaction between a and a dimension surface.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\ray_scorer_prototype.py",
+        "engine_local": 23.19354222334853,
+        "manual_local": 23.19354222334853,
+        "manual_global": 35.503021753463585,
+        "parity_err": 0.0
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\ray_trace_plan.md",
+        "engine_local": 24.267241087542534,
+        "manual_local": 24.267241087542534,
+        "manual_global": 24.267241087542534,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Pre-v0.1.0. Documentation, screenshots, and demo GIF land before tag.\nmarkdown",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+        "engine_local": 19.509566838585236,
+        "manual_local": 19.509566838585236,
+        "manual_global": 27.139713439725643,
+        "parity_err": 0.0
+      },
+      "local_rank": 8,
+      "n_wrong_above": 7,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\whatsnew\\whats-new-in-v10-2.md",
+        "engine_local": 25.96234347530446,
+        "manual_local": 25.96234347530446,
+        "manual_global": 25.96234347530446,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "A single interaction between a and a dimension surface.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\ray_scorer_prototype.py",
+        "engine_local": 23.19354222334853,
+        "manual_local": 23.19354222334853,
+        "manual_global": 35.503021753463585,
+        "parity_err": 0.0
+      },
+      "local_rank": 3,
+      "n_wrong_above": 2,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\ray_trace_plan.md",
+        "engine_local": 24.267241087542534,
+        "manual_local": 24.267241087542534,
+        "manual_global": 24.267241087542534,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- [ ] Terms of Service \u2014 drafted, reviewed.",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\04-launch-checklist.md",
+        "engine_local": 18.28157934975057,
+        "manual_local": 18.281579349750572,
+        "manual_global": 28.539641250128156,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 6,
+      "n_wrong_above": 5,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\archive\\vendors.md",
+        "engine_local": 31.333254966247484,
+        "manual_local": 31.333254966247484,
+        "manual_global": 31.333254966247484,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Copies into the current working directory.",
+      "gold": {
+        "shard": "maxexpresskit",
+        "source_id": "F:\\Projects\\MaxExpressKit\\commands\\mek-init.md",
+        "engine_local": 21.24674849258046,
+        "manual_local": 21.246748492580462,
+        "manual_global": 28.700265141942157,
+        "parity_err": 3.552713678800501e-15
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "10 fixes from dogfooding (TBR auditing itself \u2014 4 divergences found):",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+        "engine_local": 24.375678684862535,
+        "manual_local": 24.375678684862535,
+        "manual_global": 44.20053121984994,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Build/load the hot-tier (lifecycle tier < 2) .",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\knowledge_store.py",
+        "engine_local": 20.606222666668987,
+        "manual_local": 20.606222666668987,
+        "manual_global": 20.606222666668987,
+        "parity_err": null
+      },
+      "local_rank": 6,
+      "n_wrong_above": 5,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\cwola.py",
+        "engine_local": 23.49641358617024,
+        "manual_local": 23.49641358617024,
+        "manual_global": 23.49641358617024,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "A single 's traversal path through the interaction graph.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\ray_trace.py",
+        "engine_local": 28.96225906101049,
+        "manual_local": 28.96225906101049,
+        "manual_global": 41.27436924154502,
+        "parity_err": 0.0
+      },
+      "local_rank": 2,
+      "n_wrong_above": 1,
+      "top_wrong": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\docs\\ray_trace_plan.md",
+        "engine_local": 29.49851473620572,
+        "manual_local": 29.49851473620572,
+        "manual_global": 29.49851473620572,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- No customer voice represented (would buyers trust this?",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\13-swarm-consensus-plan-audit.md",
+        "engine_local": 16.437356847997442,
+        "manual_local": 16.437356847997442,
+        "manual_global": 33.36073321458059,
+        "parity_err": 0.0
+      },
+      "local_rank": 8,
+      "n_wrong_above": 7,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\datasources\\aws-cloudwatch\\aws-authentication\\index.md",
+        "engine_local": 21.177046565372834,
+        "manual_local": 21.177046565372834,
+        "manual_global": 21.177046565372834,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "Advantages: single database server, connection pooling across tenants, can run\nc",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\planning\\MULTI_TENANT_ARCHITECTURE.md",
+        "engine_local": 66.64971143826865,
+        "manual_local": 66.64971143826865,
+        "manual_global": 84.85522174145423,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "= AuditEngine(db_path=\"audit.db\", baseline_path=\"audit_baseline.json\")",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+        "engine_local": 13.810817801466722,
+        "manual_local": 5.470813136536528,
+        "manual_global": 28.472939672281335,
+        "parity_err": 8.340004664930195
+      },
+      "local_rank": 23,
+      "n_wrong_above": 22,
+      "top_wrong": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\11-compliance-knowledge-and-qualification.md",
+        "engine_local": 34.84981697246452,
+        "manual_local": 20.052695937606757,
+        "manual_global": 23.253085347121207,
+        "parity_err": 14.79712103485776
+      },
+      "scorable": true,
+      "global_reranks_above_top_wrong": true,
+      "local_rank_scorable": 3,
+      "global_rank_scorable": 1
+    },
+    {
+      "question": "DA1 (Auditor): This is the most important document in the .",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+        "engine_local": 16.554683407083036,
+        "manual_local": 16.554683407083036,
+        "manual_global": 39.08969548214743,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Lightweight projection \u2014 `HelixSession.`.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+        "engine_local": 25.455852768733102,
+        "manual_local": 25.455852768733102,
+        "manual_global": 25.455852768733102,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Compute between two spectra via cosine similarity.",
+      "gold": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\helix_context\\scoring\\cymatics.py",
+        "engine_local": 33.97490269828434,
+        "manual_local": 33.97490269828434,
+        "manual_global": 33.97490269828434,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "can inadvertently contain information the customer didn't intend to share:",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\08-sanitization-and-frameworks.md",
+        "engine_local": 36.80525352316303,
+        "manual_local": 36.80525352316303,
+        "manual_global": 56.17337898552651,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "ScoreRift doesn't replace tooling. It sits on top of it.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+        "engine_local": 12.434842174769454,
+        "manual_local": 12.434842174769454,
+        "manual_global": 21.911291812454813,
+        "parity_err": 0.0
+      },
+      "local_rank": 12,
+      "n_wrong_above": 11,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\archive\\positioning\\ENTERPRISE.md",
+        "engine_local": 18.73826773300335,
+        "manual_local": 18.73826773300335,
+        "manual_global": 18.73826773300335,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "- in : Missing transactions in for allows interleaved writes, violating ACID.",
+      "gold": {
+        "shard": "education",
+        "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_discussion\\claim_task_race_condition_and_WAL_correc_round1.md",
+        "engine_local": 55.88720131612525,
+        "manual_local": 55.88720131612525,
+        "manual_global": 55.88720131612525,
+        "parity_err": null
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Generate a markdown Map sorted by severity, grouped by file.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\claims.py",
+        "engine_local": 34.60674018418831,
+        "manual_local": 34.60674018418831,
+        "manual_global": 35.79037913289288,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Quick summary for CI/smoke test integration.",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\engine.py",
+        "engine_local": 8.455915260837502,
+        "manual_local": 8.455915260837502,
+        "manual_global": 10.879647463700003,
+        "parity_err": 0.0
+      },
+      "local_rank": 36,
+      "n_wrong_above": 35,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\docs\\superpowers\\plans\\2026-05-11-helix-cli-v1.md",
+        "engine_local": 26.618673466006133,
+        "manual_local": 26.618673466006133,
+        "manual_global": 26.618673466006133,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "4. Intake flow \u2014 Stage 0-1 (welcome, routing, company profile)\n5. The \"wow\" mome",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\10-figma-design-system.md",
+        "engine_local": 99.81582119359624,
+        "manual_local": 99.81582119359624,
+        "manual_global": 163.25992792199645,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "DriftWatch launches on pre-owned, self-hosted hardware behind residential 1Gbps ",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+        "engine_local": 49.86623045831322,
+        "manual_local": 49.86623045831322,
+        "manual_global": 82.04005979954852,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "Summarize vendor payments >= $600 for reporting.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\exports\\tax_engine.py",
+        "engine_local": 28.44952317355247,
+        "manual_local": 28.44952317355247,
+        "manual_global": 47.67757692328267,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "result = engine.review_dimension(\"architecture\", context=source_code, mode=\"\")",
+      "gold": {
+        "shard": "two-brain-audit",
+        "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+        "engine_local": 36.40983422947802,
+        "manual_local": 25.78169343077151,
+        "manual_global": 47.60005486073881,
+        "parity_err": 10.62814079870651
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    },
+    {
+      "question": "curl -H \"X-Tenant-ID: xyz-\" \\\n -F \"file=@bank.",
+      "gold": {
+        "shard": "bookkeeper",
+        "source_id": "F:\\Projects\\BookKeeper\\docs\\TENANCY_QUICKSTART.md",
+        "engine_local": 19.41965944002792,
+        "manual_local": 19.41965944002792,
+        "manual_global": 30.716417378185003,
+        "parity_err": 0.0
+      },
+      "local_rank": 5,
+      "n_wrong_above": 4,
+      "top_wrong": {
+        "shard": "helix-context",
+        "source_id": "F:\\Projects\\helix-context\\GEMINI.md",
+        "engine_local": 23.960483004913456,
+        "manual_local": 23.960483004913456,
+        "manual_global": 23.960483004913456,
+        "parity_err": null
+      },
+      "scorable": false
+    },
+    {
+      "question": "| Persona | Score | Blocking? |\n|---------|-------|-----------|\n| DA1 (Auditor) ",
+      "gold": {
+        "shard": "cosmictasha",
+        "source_id": "F:\\Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+        "engine_local": 82.23590473696919,
+        "manual_local": 82.23590473696919,
+        "manual_global": 155.67853614161785,
+        "parity_err": 0.0
+      },
+      "local_rank": 1,
+      "n_wrong_above": 0
+    }
+  ]
+}

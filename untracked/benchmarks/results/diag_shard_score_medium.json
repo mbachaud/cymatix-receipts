@@ -1,0 +1,4042 @@
+{
+  "genome": "genomes/bench/matrix-sharded/medium/main.genome.db",
+  "needles_file": "benchmarks/results/shard_gold_medium.jsonl",
+  "limit": 8,
+  "aggregate": {
+    "n_needles": 60,
+    "golds_found_in_ranking": 34,
+    "golds_not_returned": 26,
+    "idf_clip_lo": 0.5,
+    "idf_clip_hi": 3.0,
+    "median_gold_m_shard": 1.5407355505389777,
+    "frac_gold_m_at_floor": 0.0,
+    "frac_gold_m_at_ceiling": 0.14705882352941177,
+    "median_wrong_top_minus_gold_corrected": 17.764435852508715,
+    "n_gaps_measured": 29
+  },
+  "per_needle": [
+    {
+      "question": "- Timestamp Drift Vulnerability: indexing relies on file timestamps/hashes (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_incremental_in_round1.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.1414947094456294,
+        "helix-context": 0.9156766771142678,
+        "maxexpresskit": 3.0,
+        "bookkeeper": 1.2572349301416952,
+        "two-brain-audit": 1.4060935041621274,
+        "cosmictasha": 1.1720964555586262
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Not handled by XeroClient \u2014 use Xero's OAuth2 redirect to obtain:",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/ingestion/sync/README.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "bookkeeper": 1.5170428989494233,
+        "helix-context": 0.9572589580947033,
+        "education": 0.9182311750952025,
+        "cosmictasha": 1.262814973386643
+      },
+      "gold": [
+        {
+          "rank": 1,
+          "gene_id": "f7b802905ceac17b",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 40.7528680785,
+            "m_shard": 1.5170428989494233,
+            "doc_type_boost": 1.15,
+            "corrected": 71.0974264998577,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "173a455ba547c217",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 29.5210990245,
+            "m_shard": 1.5170428989494233,
+            "doc_type_boost": 1.15,
+            "corrected": 51.50248969094554,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "4397bd03ef0dc79c",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 20.14183658,
+            "m_shard": 1.5170428989494233,
+            "doc_type_boost": 1.15,
+            "corrected": 35.139434678812044,
+            "rrf": 0.0136986301369863
+          }
+        }
+      ],
+      "best_gold_rank": 1,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Return the volatility_class for the given source_kind.",
+      "gold_paths": [
+        "helix_context/identity/provenance.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 96,
+      "shard_multipliers": {
+        "helix-context": 1.0434017462054204,
+        "education": 0.8548777765794655,
+        "maxexpresskit": 0.9791122293133218
+      },
+      "gold": [
+        {
+          "rank": 5,
+          "gene_id": "354a3477979cbdbf",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\provenance.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 10.972075689499999,
+            "m_shard": 1.0434017462054204,
+            "doc_type_boost": 1.0,
+            "corrected": 11.448282933922341,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ],
+      "best_gold_rank": 5,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "a6e333847686e19f",
+          "source_id": "F:\\Projects\\MaxExpressKit\\tests\\unit\\test_source_app_detect.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 17.8459358005,
+            "m_shard": 0.9791122293133218,
+            "doc_type_boost": 1.0,
+            "corrected": 17.473173985809975,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "c12be1c2a83e98ae",
+          "source_id": "F:\\Projects\\MaxExpressKit\\lib\\source_app_detect.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 17.313151746630176,
+            "m_shard": 0.9791122293133218,
+            "doc_type_boost": 1.0,
+            "corrected": 16.951518603082903,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "94fb5b3c778b6d3b",
+          "source_id": "F:\\Projects\\MaxExpressKit\\maxexpresskit.egg-info\\SOURCES.txt",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 17.2382120965,
+            "m_shard": 0.9791122293133218,
+            "doc_type_boost": 1.0,
+            "corrected": 16.878144275179984,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "e581c986c365de62",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\source-app-integration.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 15.841113102558765,
+            "m_shard": 0.9791122293133218,
+            "doc_type_boost": 1.0,
+            "corrected": 15.510227564650783,
+            "rrf": 0.015625
+          }
+        }
+      ]
+    },
+    {
+      "question": "Return the path for the given platform, or None if missing.",
+      "gold_paths": [
+        "helix_context/launcher/installer.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.220817735025667,
+        "helix-context": 0.894630188911,
+        "bookkeeper": 1.1898249678363333,
+        "maxexpresskit": 1.3037484371178063,
+        "cosmictasha": 1.0677570794690072,
+        "two-brain-audit": 1.3623561350019824
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "| Account Range | Increase | Decrease |\n|---------------|----------|----------|\n| AR (1200) | decrease | increase |\n| AP (2100) | increase | decrease |\n| Inventory (1300) | decrease | increase |",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 96,
+      "shard_multipliers": {
+        "helix-context": 0.9248182410644791,
+        "bookkeeper": 1.5346374342833065,
+        "education": 1.055186609322928
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Timestamp Drift Vulnerability: indexing relies on file timestamps/hashes (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/code_index_AST_scanning_\u2014_incremental_in_round1.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.1414947094456294,
+        "helix-context": 0.9156766771142678,
+        "maxexpresskit": 3.0,
+        "bookkeeper": 1.2572349301416952,
+        "two-brain-audit": 1.4060935041621274,
+        "cosmictasha": 1.1720964555586262
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "prevent silent regression: once you declare \"testing should be at least A\", a drop below that floor is flagged.",
+      "gold_paths": [
+        "two-brain-audit/docs/ARCHITECTURE.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "helix-context": 0.9635992359338451,
+        "education": 1.063479028673481,
+        "maxexpresskit": 1.748339144310366,
+        "two-brain-audit": 1.3758673365657188,
+        "bookkeeper": 0.9137933259531235
+      },
+      "gold": [
+        {
+          "rank": 11,
+          "gene_id": "f31527cedba04fe8",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\ARCHITECTURE.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 9.5,
+            "m_shard": 1.3758673365657188,
+            "doc_type_boost": 1.0,
+            "corrected": 13.070739697374329,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ],
+      "best_gold_rank": 11,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "9aa5ee151283033d",
+          "source_id": "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\alerting\\manage-notifications\\declare-incident-from-alert.md",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 32.0,
+            "m_shard": 0.9635992359338451,
+            "doc_type_boost": 1.0,
+            "corrected": 30.835175549883044,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "9a5dd2df5d5b85e6",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.0575654535,
+            "m_shard": 1.3758673365657188,
+            "doc_type_boost": 1.15,
+            "corrected": 28.571536658173407,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "f9c734740af8ecc8",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\regression_detector.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 23.21293024175,
+            "m_shard": 1.063479028673481,
+            "doc_type_boost": 1.0,
+            "corrected": 24.686464506161563,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "a83df361cef2411d",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 17.48756033775,
+            "m_shard": 1.3758673365657188,
+            "doc_type_boost": 1.0,
+            "corrected": 24.060563064932396,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "64bb02589340627e",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\regression_detector.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 21.5,
+            "m_shard": 1.063479028673481,
+            "doc_type_boost": 1.0,
+            "corrected": 22.86479911647984,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "0596f22db28e1ea8",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 11.300544439077886,
+            "m_shard": 1.748339144310366,
+            "doc_type_boost": 1.0,
+            "corrected": 19.757184194858695,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "e4b2ca32c09f2938",
+          "source_id": "F:\\Projects\\MaxExpressKit\\lib\\drift_scoring\\baseline.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 11.262886400553603,
+            "m_shard": 1.748339144310366,
+            "doc_type_boost": 1.0,
+            "corrected": 19.691345172008745,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "c9718853f71a9d04",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-04-01-two-brain-audit-design.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 16.5,
+            "m_shard": 1.063479028673481,
+            "doc_type_boost": 1.0,
+            "corrected": 17.547403973112438,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "e90e6e2a914205c4",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\concepts.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 8.780561412181322,
+            "m_shard": 1.748339144310366,
+            "doc_type_boost": 1.0,
+            "corrected": 15.351399225937712,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "9d3eb73c5ab2de77",
+          "source_id": "F:\\Projects\\Education\\docs\\ray_trace_plan.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 13.5,
+            "m_shard": 1.063479028673481,
+            "doc_type_boost": 1.0,
+            "corrected": 14.356966887091993,
+            "rrf": 0.015625
+          }
+        }
+      ]
+    },
+    {
+      "question": "Per- submenu: 'Use this database' action + folder info.",
+      "gold_paths": [
+        "helix_context/launcher/tray.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9790230707935569,
+        "education": 1.0333353144796928,
+        "bookkeeper": 1.0544332485817545,
+        "cosmictasha": 1.0256713494405494,
+        "two-brain-audit": 1.1881694513320207,
+        "maxexpresskit": 0.9279562261857164
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Poll until the uvicorn server binds the , or timeout.",
+      "gold_paths": [
+        "helix_context/launcher/app.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "helix-context": 0.9308075501565491,
+        "education": 1.1345736130204598,
+        "cosmictasha": 1.0372558825601363,
+        "bookkeeper": 0.9685345913265537
+      },
+      "gold": [
+        {
+          "rank": 9,
+          "gene_id": "c2470b8e19669fbf",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\launcher\\app.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 17.6034750755,
+            "m_shard": 0.9308075501565491,
+            "doc_type_boost": 1.0,
+            "corrected": 16.38544750926803,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ],
+      "best_gold_rank": 9,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "ade070a94a3a118c",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\security\\reviews\\security_review_20260401_0936.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 28.5,
+            "m_shard": 1.1345736130204598,
+            "doc_type_boost": 1.0,
+            "corrected": 32.3353479710831,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "c1cdf4795e06bb10",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\server\\app.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 21.16216302825,
+            "m_shard": 0.9308075501565491,
+            "doc_type_boost": 1.0,
+            "corrected": 19.69790112433888,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "462b485785b22cb2",
+          "source_id": "F:\\Projects\\Education\\biged-rs\\docs\\RUNBOOK.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 16.5,
+            "m_shard": 1.1345736130204598,
+            "doc_type_boost": 1.0,
+            "corrected": 18.720464614837585,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "4f40108a77baf938",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\security\\reviews\\security_review_20260331_2325.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 16.5,
+            "m_shard": 1.1345736130204598,
+            "doc_type_boost": 1.0,
+            "corrected": 18.720464614837585,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "8566f67fe2e94cfc",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\security\\reviews\\security_review_20260331_2257.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 16.5,
+            "m_shard": 1.1345736130204598,
+            "doc_type_boost": 1.0,
+            "corrected": 18.720464614837585,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "02837a1143d40310",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\server\\app.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 20.0,
+            "m_shard": 0.9308075501565491,
+            "doc_type_boost": 1.0,
+            "corrected": 18.616151003130984,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "584dee3dd4718494",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\app\\intake\\_stages\\stage-5.tsx",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 16.5,
+            "m_shard": 1.0372558825601363,
+            "doc_type_boost": 1.0,
+            "corrected": 17.11472206224225,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "a585630f88e4d368",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\08-sanitization-and-frameworks.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 16.5,
+            "m_shard": 1.0372558825601363,
+            "doc_type_boost": 1.0,
+            "corrected": 17.11472206224225,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ]
+    },
+    {
+      "question": "- Create .\n- Create \u2014 , , , , , , .\n- Create \u2014 returns a typed config object with defaults applied.\n- Create \u2014 , , .\n- Create \u2014 exposes template paths.\n- Create \u2014 regex/glob patterns for risky ops.\n- Create .\n- Create \u2014 auto-scorers for Python repos.\n- Create \u2014 letter-grade \u2194 float mapping.\n- Create \u2014 load/save/diverge.",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.919010114292405,
+        "education": 1.1003377102840703,
+        "cosmictasha": 1.1198362077470216,
+        "bookkeeper": 1.0963598901433969,
+        "maxexpresskit": 2.169393684300649,
+        "two-brain-audit": 1.6157007776684527
+      },
+      "gold": [
+        {
+          "rank": 3,
+          "gene_id": "407c848b16f92caf",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 36.02837169309049,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 78.1597220066268,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "63a0da7dec5dceda",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 34.69191230725569,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 75.26041545567246,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "b6aac9aa1e48b199",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 31.779499497468027,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 68.94224550004279,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "df1b5ffb1414cb67",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 27.20577703946803,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 59.020040885913545,
+            "rrf": 0.014492753623188406
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "b820c12733d24ae6",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 26.86708668768036,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 58.285288175811814,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 3,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "e90e6e2a914205c4",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\concepts.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 45.5903407128405,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 98.90339720755092,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "f29514bccf2b2d1c",
+          "source_id": "F:\\Projects\\MaxExpressKit\\lib\\compliance_templates\\risky_op_patterns.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 36.53369881175,
+            "m_shard": 2.169393684300649,
+            "doc_type_boost": 1.0,
+            "corrected": 79.25597546635257,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ]
+    },
+    {
+      "question": "an intentional server to other sessions.",
+      "gold_paths": [
+        "helix_context/bridge.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 96,
+      "shard_multipliers": {
+        "helix-context": 0.96567987658842,
+        "education": 1.0347775579064864,
+        "cosmictasha": 1.3337512031165464
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift timeline visualization\n- stored in tenant schema (privacy boundary maintained)",
+      "gold_paths": [
+        "CosmicTasha/.planning/15-phase2-integration-monitoring.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9379043294627861,
+        "education": 0.9769981154155002,
+        "cosmictasha": 1.4026707084095404,
+        "bookkeeper": 1.2186247706411986,
+        "two-brain-audit": 1.1731824605850651,
+        "maxexpresskit": 2.2879515680688156
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "this \"use \" for a timespan defined by the \"weeks\" profile.",
+      "gold_paths": [
+        "CosmicTasha/web/.next/types/cache-life.d.ts"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "helix-context": 0.9686718134643526,
+        "education": 1.0501392261421596,
+        "cosmictasha": 1.457649952246135,
+        "bookkeeper": 1.0249178607981504
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Convert a sqlite3. (or tuple) to a WITHOUT password_hash.",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/tenancy/auth.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 188,
+      "shard_multipliers": {
+        "helix-context": 0.9360304047385962,
+        "education": 1.042430488713271,
+        "bookkeeper": 1.3542365897058126,
+        "cosmictasha": 1.1624458302222944,
+        "maxexpresskit": 1.295890039916203,
+        "two-brain-audit": 1.3112078186333205
+      },
+      "gold": [
+        {
+          "rank": 1,
+          "gene_id": "29093faef331e83f",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\auth.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 33.678253533749995,
+            "m_shard": 1.3542365897058126,
+            "doc_type_boost": 1.0,
+            "corrected": 45.60832321279332,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "d14e5c747310db35",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\auth.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 18.96290724575,
+            "m_shard": 1.3542365897058126,
+            "doc_type_boost": 1.0,
+            "corrected": 25.680262839392125,
+            "rrf": 0.015625
+          }
+        }
+      ],
+      "best_gold_rank": 1,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Event: fleet_start\nCompleted: Event: fleet_start, Time: -03-26 :29\nNext: Continue operations\n---",
+      "gold_paths": [
+        "Education/fleet/knowledge/marathon/fleet.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.425570352330886,
+        "helix-context": 0.8786880507598671,
+        "cosmictasha": 1.1633989185165872,
+        "bookkeeper": 0.9862446189245846,
+        "two-brain-audit": 1.0024381173962824,
+        "maxexpresskit": 1.1706018675565655
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "The web app reads these from (see [](web/.",
+      "gold_paths": [
+        "CosmicTasha/README.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9185795242023621,
+        "education": 1.0630953312724185,
+        "cosmictasha": 3.0,
+        "bookkeeper": 0.8540866921392889,
+        "maxexpresskit": 1.2234256337158018,
+        "two-brain-audit": 0.9401210593536373
+      },
+      "gold": [
+        {
+          "rank": 5,
+          "gene_id": "bc0eebdb01cfc252",
+          "source_id": "F:\\Projects\\CosmicTasha\\README.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 10.134835575250001,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 34.965182734612505,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "07a9fa686ba9fe07",
+          "source_id": "F:\\Projects\\CosmicTasha\\README.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 7.789396107376844,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 26.87341657045011,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 5,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "063e51f340d11c97",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\README.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 16.244455285785026,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 56.04337073595834,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "41c125af7671d171",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\AGENTS.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 15.214992890224147,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 45.644978670672444,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "9ae4a368ee560b45",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\next-env.d.ts",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 14.728795163280424,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 44.18638548984127,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "e1cbf41b477b68cd",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\app\\page.tsx",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 14.085619593748191,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 42.256858781244574,
+            "rrf": 0.015625
+          }
+        }
+      ]
+    },
+    {
+      "question": "Event: fleet_start\nCompleted: Event: fleet_start, Time: -03-26 :08\nNext: Continue operations\n---",
+      "gold_paths": [
+        "Education/fleet/knowledge/marathon/fleet.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.425570352330886,
+        "helix-context": 0.8786880507598671,
+        "cosmictasha": 1.1633989185165872,
+        "bookkeeper": 0.9862446189245846,
+        "two-brain-audit": 1.0024381173962824,
+        "maxexpresskit": 1.1706018675565655
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rollback\n- ds_rag: RAG eval benchmark with known-good queries, embedding swap test\n- ds_fleet: Routing model A/B with held-out task set\n- ds_research: Autoresearch trial with 1-min budget, metric tracking\n- Integration: Smoke test for experiment HITL flow end-to-end",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-23-ml-data-scientists-design.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.8690881336128753,
+        "education": 1.276368020514684,
+        "bookkeeper": 1.1265616159593905,
+        "cosmictasha": 1.1273963074461106,
+        "maxexpresskit": 1.5043573009292928,
+        "two-brain-audit": 1.20169874478648
+      },
+      "gold": [
+        {
+          "rank": 16,
+          "gene_id": "7e0caab0a16095fb",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-23-ml-data-scientists-design.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 55.99883138666479,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 71.47511756813289,
+            "rrf": 0.013333333333333334
+          }
+        }
+      ],
+      "best_gold_rank": 16,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "28c25c294b65b853",
+          "source_id": "F:\\Projects\\Education\\CLAUDE.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 69.6289803599052,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.15,
+            "corrected": 102.2030344072922,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "64078552f51fa7e4",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\multi_model_best_practices.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 75.38591801168772,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 96.2201749472601,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "b532e67918624d9c",
+          "source_id": "F:\\Projects\\Education\\biged-rs\\tests\\config_test.rs",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.72776007538317,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 94.10375518439837,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "af34a4edfbefa915",
+          "source_id": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.22892868871838,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 93.46706275483044,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "6d1674b97b7c867c",
+          "source_id": "F:\\Projects\\Education\\DEVELOPMENT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.22776007538317,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 93.46557117414102,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "3f2ad0cac8d88d12",
+          "source_id": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 67.18602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 85.75408908194055,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "bde0e5935748ecd9",
+          "source_id": "F:\\Projects\\Education\\education-context\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 67.18602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 85.75408908194055,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "9494a2dd457d4877",
+          "source_id": "F:\\Projects\\Education\\fleet\\CLAUDE.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.68602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.15,
+            "corrected": 83.20505859651682,
+            "rrf": 0.0136986301369863
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "1268c52bbaf4931e",
+          "source_id": "F:\\Projects\\Education\\AUDIT_TRACKER.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 63.07077075241385,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 80.50151481759389,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "d3577493fc5ba01c",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\ml_train_suite.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 62.68602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 80.01043298962448,
+            "rrf": 0.014492753623188406
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "7540fcb6bf4603e8",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_evolution_and_autoresearch.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 61.0,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 77.85844925139571,
+            "rrf": 0.014285714285714285
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "cff46be3ffe60694",
+          "source_id": "F:\\Projects\\Education\\ROADMAP.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 59.88474939835251,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 76.4349790485931,
+            "rrf": 0.014084507042253521
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "161014bff4546e25",
+          "source_id": "F:\\Projects\\BookKeeper\\tests\\test_config.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 66.8007404953403,
+            "m_shard": 1.1265616159593905,
+            "doc_type_boost": 1.0,
+            "corrected": 75.25515015971447,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 14,
+          "gene_id": "c0f631befa8e6ed6",
+          "source_id": "F:\\Projects\\Education\\fleet\\smoke_test.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.84184206369546,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 72.55110943724726,
+            "rrf": 0.013888888888888888
+          }
+        },
+        {
+          "rank": 15,
+          "gene_id": "0a007550e382dbf1",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_evolution_and_autoresearch.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.0,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 71.47660914882229,
+            "rrf": 0.013513513513513514
+          }
+        }
+      ]
+    },
+    {
+      "question": "#### 1. \u2014 Context\nThread-safe identification for all operations.",
+      "gold_paths": [
+        "BookKeeper/docs/MULTI_TENANT_GUIDE.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 186,
+      "shard_multipliers": {
+        "helix-context": 3.0,
+        "education": 1.1936101693129515,
+        "cosmictasha": 1.1265655859316295,
+        "bookkeeper": 1.1785768523236422,
+        "maxexpresskit": 1.3433197245659272,
+        "two-brain-audit": 1.3582542865745437
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- (): Double-entry accounting equation (A = L + E) with sections for current/fixed assets, current/long-term liabilities, and equity with retained earnings calculation\n- Statement (): Indirect method with operating, investing, and financing activity sections, including working capital adjustments and position reconciliation\n- Multi-Format Export: PDF, XLSX (with formulas), and JSON for both reports\n- CLI Integration: and commands with flexible d",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9263509710198056,
+        "education": 1.0280403509697422,
+        "bookkeeper": 1.5747666273314365,
+        "cosmictasha": 1.1890585575642572,
+        "two-brain-audit": 1.2194628828870377,
+        "maxexpresskit": 1.5442064269165892
+      },
+      "gold": [
+        {
+          "rank": 8,
+          "gene_id": "bdd572b62d0d68f1",
+          "source_id": "F:\\Projects\\BookKeeper\\docs\\BALANCE_SHEET_CASH_FLOW.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 33.63586299626881,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 52.9686345280165,
+            "rrf": 0.014705882352941176
+          }
+        }
+      ],
+      "best_gold_rank": 8,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "6065adffbf0e411b",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 52.47170273,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 82.63068633845982,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "4ed7e6e02c81f994",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 47.7727601505,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 75.23094838051652,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "89c95aa48354f076",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 44.35452308825,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 69.84802273057778,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "24247c498aadf120",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 43.871111823999996,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 69.08676280436077,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "e055a6421a629d44",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 37.652458781,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 59.2938355252913,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "0be456ef4fddbcf2",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 37.24211173025,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 58.647634684146325,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "f5e2d9552cbb6c5e",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\reports\\xlsx_report.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 35.4557381935,
+            "m_shard": 1.5747666273314365,
+            "doc_type_boost": 1.0,
+            "corrected": 55.83451325452439,
+            "rrf": 0.014925373134328358
+          }
+        }
+      ]
+    },
+    {
+      "question": "Position: Pure Python. is a data pipeline with a web UI \u2014 Python owns this space. The financial library ecosystem has zero equivalent in C/C++. You'd spend months rebuilding what gives you in seconds.",
+      "gold_paths": [
+        "BookKeeper/docs/BookKeeper_Language_Consensus.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.0637035305134765,
+        "helix-context": 0.9522980068649318,
+        "bookkeeper": 1.1717286153388176,
+        "cosmictasha": 1.2487588070361937,
+        "maxexpresskit": 1.4360090519558668,
+        "two-brain-audit": 1.1824109896843544
+      },
+      "gold": [
+        {
+          "rank": 9,
+          "gene_id": "481c1d421acf893c",
+          "source_id": "F:\\Projects\\BookKeeper\\docs\\BookKeeper_Language_Consensus.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 29.772794027499998,
+            "m_shard": 1.1717286153388176,
+            "doc_type_boost": 1.0,
+            "corrected": 34.88563472061039,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "9dc4cfec280f864d",
+          "source_id": "F:\\Projects\\BookKeeper\\docs\\BookKeeper_Language_Consensus.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 27.5,
+            "m_shard": 1.1717286153388176,
+            "doc_type_boost": 1.0,
+            "corrected": 32.222536921817486,
+            "rrf": 0.015625
+          }
+        }
+      ],
+      "best_gold_rank": 9,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "1cbfa482c52618dd",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\app\\intake\\_stages\\stage-2.tsx",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 41.0,
+            "m_shard": 1.2487588070361937,
+            "doc_type_boost": 1.0,
+            "corrected": 51.19911108848394,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "772b38aa07784596",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\data_pipeline.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 38.633615825250004,
+            "m_shard": 1.0637035305134765,
+            "doc_type_boost": 1.0,
+            "corrected": 41.09471354981975,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "6179a171454f9710",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\data_pipeline.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 35.499286474499996,
+            "m_shard": 1.0637035305134765,
+            "doc_type_boost": 1.0,
+            "corrected": 37.760716353634955,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "ab86cd02650a8c79",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\data_pipeline.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 35.489163057,
+            "m_shard": 1.0637035305134765,
+            "doc_type_boost": 1.0,
+            "corrected": 37.749948038699344,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "714f62991a7b12fc",
+          "source_id": "F:\\Projects\\CosmicTasha\\scripts\\calibrate.py",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 29.5627984515,
+            "m_shard": 1.2487588070361937,
+            "doc_type_boost": 1.0,
+            "corrected": 36.916804926946575,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "1ef7fd5301e399ca",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\app\\intake\\_stages\\stage-2.tsx",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 29.0,
+            "m_shard": 1.2487588070361937,
+            "doc_type_boost": 1.0,
+            "corrected": 36.214005404049615,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "0d8e37c4acd73e2e",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\03-architecture-decisions.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 28.681772113,
+            "m_shard": 1.2487588070361937,
+            "doc_type_boost": 1.0,
+            "corrected": 35.81661552751385,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "2afdaf57f1c0f76f",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\dashboard\\templates\\swimlanes.html",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 30.0,
+            "m_shard": 1.1717286153388176,
+            "doc_type_boost": 1.0,
+            "corrected": 35.151858460164526,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "- OFX test files: \u2014 Generate synthetic OFX/QFX files stored in\n .",
+      "gold_paths": [
+        "BookKeeper/docs/planning/MVP_SCOPE.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9297021174332429,
+        "education": 1.187645008327846,
+        "bookkeeper": 1.6561394004029009,
+        "cosmictasha": 1.2629800968366758,
+        "maxexpresskit": 2.478625125428289,
+        "two-brain-audit": 1.2072696900580153
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identifiers and emits a WARN-level reminder. Never blocks unless .\nbash\ngit add skills/ledger/SKILL.md\ngit commit -m \"feat(ledger): add ledger skill\"\n`",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.0586164715763864,
+        "helix-context": 0.9135697871681036,
+        "maxexpresskit": 2.4792852106587566,
+        "cosmictasha": 1.1223240836366348,
+        "bookkeeper": 1.1256971721160909,
+        "two-brain-audit": 1.2296254866956156
+      },
+      "gold": [
+        {
+          "rank": 4,
+          "gene_id": "783f5010713f051c",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 28.00122749690115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 69.42302921335833,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "82e2a38520d8cfc9",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 19.22566369840115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 47.6659036725449,
+            "rrf": 0.014084507042253521
+          }
+        },
+        {
+          "rank": 14,
+          "gene_id": "407c848b16f92caf",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 17.30386015040115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 42.90120455819698,
+            "rrf": 0.013513513513513514
+          }
+        },
+        {
+          "rank": 16,
+          "gene_id": "bd66efb5cefff94b",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 16.41415686865115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 40.69537636987965,
+            "rrf": 0.013157894736842105
+          }
+        }
+      ],
+      "best_gold_rank": 4,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "3a8586d7747802d7",
+          "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger\\SKILL.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 46.91415686865115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 116.31357529497171,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "e113ba741f98d636",
+          "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger-companion\\SKILL.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 34.637826894109345,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 85.87705194792343,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "e617a5c778fbbe1d",
+          "source_id": "F:\\Projects\\MaxExpressKit\\agents\\ledger.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 28.91415686865115,
+            "m_shard": 2.4792852106587566,
+            "doc_type_boost": 1.0,
+            "corrected": 71.68644150311411,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "question": "- [LOW] (line 160) \u2014 format_audit_report() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 270) \u2014 _check_hallucinations() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 15) \u2014 grade_completeness() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 54) \u2014 grade_consistency() has nesting depth 4 \u2014 consider early returns or extraction\n- [LOW] (line 140) \u2014 grade_actionability() has nesting depth 4 \u2014 consi",
+      "gold_paths": [
+        "Education/fleet/knowledge/quality/reviews/quality_review_20260329_1908.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.2375096487802082,
+        "helix-context": 0.8434547391580258,
+        "cosmictasha": 1.2369828287948532,
+        "bookkeeper": 1.3081736148724876,
+        "two-brain-audit": 3.0,
+        "maxexpresskit": 1.5263127288992777
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Boolean only: \n- No raw API responses stored\n- Historical retained for drift timeline visualization\n- stored in tenant schema (privacy boundary maintained)",
+      "gold_paths": [
+        "CosmicTasha/.planning/15-phase2-integration-monitoring.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9379043294627861,
+        "education": 0.9769981154155002,
+        "cosmictasha": 1.4026707084095404,
+        "bookkeeper": 1.2186247706411986,
+        "two-brain-audit": 1.1731824605850651,
+        "maxexpresskit": 2.2879515680688156
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "ScoreRift doesn't replace tooling. It sits on top of it.",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "two-brain-audit": 3.0,
+        "helix-context": 0.9401032399776112,
+        "maxexpresskit": 1.8601076101694933,
+        "education": 0.9737956874037689,
+        "cosmictasha": 1.2938051375307826
+      },
+      "gold": [
+        {
+          "rank": 1,
+          "gene_id": "98bd8f39c57ebfbb",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 16.520463791,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 56.995600078950005,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 1,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Experiment framework: Unit tests for lifecycle, GPU lock, autonomy config, rollback\n- ds_rag: RAG eval benchmark with known-good queries, embedding swap test\n- ds_fleet: Routing model A/B with held-out task set\n- ds_research: Autoresearch trial with 1-min budget, metric tracking\n- Integration: Smoke test for experiment HITL flow end-to-end",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-23-ml-data-scientists-design.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.8690881336128753,
+        "education": 1.276368020514684,
+        "bookkeeper": 1.1265616159593905,
+        "cosmictasha": 1.1273963074461106,
+        "maxexpresskit": 1.5043573009292928,
+        "two-brain-audit": 1.20169874478648
+      },
+      "gold": [
+        {
+          "rank": 16,
+          "gene_id": "7e0caab0a16095fb",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-23-ml-data-scientists-design.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 55.99883138666479,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 71.47511756813289,
+            "rrf": 0.013333333333333334
+          }
+        }
+      ],
+      "best_gold_rank": 16,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "28c25c294b65b853",
+          "source_id": "F:\\Projects\\Education\\CLAUDE.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 69.6289803599052,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.15,
+            "corrected": 102.2030344072922,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "64078552f51fa7e4",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\multi_model_best_practices.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 75.38591801168772,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 96.2201749472601,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "b532e67918624d9c",
+          "source_id": "F:\\Projects\\Education\\biged-rs\\tests\\config_test.rs",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.72776007538317,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 94.10375518439837,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "af34a4edfbefa915",
+          "source_id": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.22892868871838,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 93.46706275483044,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "6d1674b97b7c867c",
+          "source_id": "F:\\Projects\\Education\\DEVELOPMENT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 73.22776007538317,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 93.46557117414102,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "3f2ad0cac8d88d12",
+          "source_id": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 67.18602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 85.75408908194055,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "bde0e5935748ecd9",
+          "source_id": "F:\\Projects\\Education\\education-context\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 67.18602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 85.75408908194055,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "9494a2dd457d4877",
+          "source_id": "F:\\Projects\\Education\\fleet\\CLAUDE.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.68602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.15,
+            "corrected": 83.20505859651682,
+            "rrf": 0.0136986301369863
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "1268c52bbaf4931e",
+          "source_id": "F:\\Projects\\Education\\AUDIT_TRACKER.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 63.07077075241385,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 80.50151481759389,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "d3577493fc5ba01c",
+          "source_id": "F:\\Projects\\Education\\fleet\\skills\\ml_train_suite.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 62.68602135406134,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 80.01043298962448,
+            "rrf": 0.014492753623188406
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "7540fcb6bf4603e8",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_evolution_and_autoresearch.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 61.0,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 77.85844925139571,
+            "rrf": 0.014285714285714285
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "cff46be3ffe60694",
+          "source_id": "F:\\Projects\\Education\\ROADMAP.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 59.88474939835251,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 76.4349790485931,
+            "rrf": 0.014084507042253521
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "161014bff4546e25",
+          "source_id": "F:\\Projects\\BookKeeper\\tests\\test_config.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 66.8007404953403,
+            "m_shard": 1.1265616159593905,
+            "doc_type_boost": 1.0,
+            "corrected": 75.25515015971447,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 14,
+          "gene_id": "c0f631befa8e6ed6",
+          "source_id": "F:\\Projects\\Education\\fleet\\smoke_test.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.84184206369546,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 72.55110943724726,
+            "rrf": 0.013888888888888888
+          }
+        },
+        {
+          "rank": 15,
+          "gene_id": "0a007550e382dbf1",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_evolution_and_autoresearch.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 56.0,
+            "m_shard": 1.276368020514684,
+            "doc_type_boost": 1.0,
+            "corrected": 71.47660914882229,
+            "rrf": 0.013513513513513514
+          }
+        }
+      ]
+    },
+    {
+      "question": "When a tier should be triggered automatically.",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/tiers.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 151,
+      "shard_multipliers": {
+        "helix-context": 0.974016286740388,
+        "two-brain-audit": 1.662552570817327,
+        "cosmictasha": 1.2317344830205472,
+        "education": 1.0353010755021297,
+        "bookkeeper": 0.8551188441704867
+      },
+      "gold": [
+        {
+          "rank": 3,
+          "gene_id": "e60c904e0acb0eb4",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\tiers.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 19.19596839525,
+            "m_shard": 1.662552570817327,
+            "doc_type_boost": 1.0,
+            "corrected": 31.914306604851046,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 3,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "f24288e577cbc022",
+          "source_id": "F:\\Projects\\two-brain-audit\\tests\\test_tiers.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 31.657083445,
+            "m_shard": 1.662552570817327,
+            "doc_type_boost": 1.0,
+            "corrected": 52.63156546606339,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "251f47f3facfdc6d",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\lib\\tier.ts",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 32.998222666000004,
+            "m_shard": 1.2317344830205472,
+            "doc_type_boost": 1.0,
+            "corrected": 40.64504873610242,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "LLM reviewer system \u2014 the \"right brain on demand\":",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "education": 1.1143128053108287,
+        "helix-context": 0.8409656134950576,
+        "two-brain-audit": 3.0,
+        "cosmictasha": 1.2738083704425185,
+        "bookkeeper": 1.0037390223192562
+      },
+      "gold": [
+        {
+          "rank": 4,
+          "gene_id": "3f171d700fc154bf",
+          "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 33.58834231,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 100.76502693,
+            "rrf": 0.015625
+          }
+        }
+      ],
+      "best_gold_rank": 4,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "98bd8f39c57ebfbb",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 58.41008263125,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 201.5147850778125,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "ac74b2e515b0878c",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 35.400267749,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 122.13092373405,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "df0031ce441258f3",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\reviewers\\providers.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 33.620720745563304,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 100.86216223668991,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "question": "The DORA four key are not yet formally scored but are on the roadmap:",
+      "gold_paths": [
+        "two-brain-audit/docs/STANDARDS.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "education": 1.0686262856150022,
+        "helix-context": 0.9138979920766255,
+        "bookkeeper": 1.013935615344732,
+        "two-brain-audit": 1.6265546609250168,
+        "cosmictasha": 1.4034883386105808
+      },
+      "gold": [
+        {
+          "rank": 2,
+          "gene_id": "4859913f246805cb",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 17.895295814500003,
+            "m_shard": 1.6265546609250168,
+            "doc_type_boost": 1.0,
+            "corrected": 29.107676815706924,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ],
+      "best_gold_rank": 2,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "aab9fb0f47faa9d6",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 16.9627420735,
+            "m_shard": 1.6265546609250168,
+            "doc_type_boost": 1.15,
+            "corrected": 31.72945125897835,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ]
+    },
+    {
+      "question": "Lightweight projection \u2014 `HelixSession.`.",
+      "gold_paths": [
+        "helix_context/api.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 32,
+      "shard_multipliers": {
+        "helix-context": 1.0
+      },
+      "gold": [
+        {
+          "rank": 1,
+          "gene_id": "71391aa3121636b4",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 20.29411000875,
+            "m_shard": 1.0,
+            "doc_type_boost": 1.0,
+            "corrected": 20.29411000875,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "cc7a907afa6addf8",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 19.43578290775,
+            "m_shard": 1.0,
+            "doc_type_boost": 1.0,
+            "corrected": 19.43578290775,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "b88f175c5f7028f6",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 18.389585521249998,
+            "m_shard": 1.0,
+            "doc_type_boost": 1.0,
+            "corrected": 18.389585521249998,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "12aa2d171a880209",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 16.5,
+            "m_shard": 1.0,
+            "doc_type_boost": 1.0,
+            "corrected": 16.5,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "5eefd018c1865199",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\api.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 16.5,
+            "m_shard": 1.0,
+            "doc_type_boost": 1.0,
+            "corrected": 16.5,
+            "rrf": 0.013888888888888888
+          }
+        }
+      ],
+      "best_gold_rank": 1,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "def pylint_score():\n result = subprocess.run([\"pylint\", \"src/\", \"--output-format=json\"],\n capture_output=True, text=True, timeout=120)\n data = json.loads(result.stdout)\n score = max(0.0, (10 - len(data)) / 10) # normalize to 0-1\n return (score, {\"issues\": len(data)})",
+      "gold_paths": [
+        "two-brain-audit/README.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9192253203615625,
+        "education": 1.1684111970964641,
+        "bookkeeper": 1.2512181835267764,
+        "cosmictasha": 1.1605798779955385,
+        "two-brain-audit": 1.8848234283701304,
+        "maxexpresskit": 1.6825175820508038
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Scan , emit to claim_edges. Returns a summary.",
+      "gold_paths": [
+        "helix_context/identity/claims_analyze.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "education": 1.0952783621258293,
+        "helix-context": 0.9557356987982316,
+        "bookkeeper": 1.1192675865108905,
+        "two-brain-audit": 1.3885639080740209,
+        "cosmictasha": 1.122265956216576
+      },
+      "gold": [
+        {
+          "rank": 6,
+          "gene_id": "518e93aa7df49eee",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\claims_analyze.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 22.5351794055,
+            "m_shard": 0.9557356987982316,
+            "doc_type_boost": 1.0,
+            "corrected": 21.53767543665906,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "dd29c9ae933e36f7",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\claims_analyze.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 21.863304406,
+            "m_shard": 0.9557356987982316,
+            "doc_type_boost": 1.0,
+            "corrected": 20.895540514506866,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "c2dac60d4b8108f0",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\identity\\claims_analyze.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 21.07497624475,
+            "m_shard": 0.9557356987982316,
+            "doc_type_boost": 1.0,
+            "corrected": 20.142107148432274,
+            "rrf": 0.015625
+          }
+        }
+      ],
+      "best_gold_rank": 6,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "a77766a27347f9cf",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\claims.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 19.25598035625,
+            "m_shard": 1.3885639080740209,
+            "doc_type_boost": 1.0,
+            "corrected": 26.738159337271075,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "98bd8f39c57ebfbb",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 16.5,
+            "m_shard": 1.3885639080740209,
+            "doc_type_boost": 1.15,
+            "corrected": 26.348000155704543,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "0cb71081bb0856d2",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\claims.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.00302423375,
+            "m_shard": 1.3885639080740209,
+            "doc_type_boost": 1.0,
+            "corrected": 24.998349687167206,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "9b673c70c0f8a0b0",
+          "source_id": "F:\\Projects\\helix-context\\tests\\test_claims_analyze.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 26.106971401,
+            "m_shard": 0.9557356987982316,
+            "doc_type_boost": 1.0,
+            "corrected": 24.951364555440183,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "986d73282bc14424",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\claims.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 17.798892311,
+            "m_shard": 1.3885639080740209,
+            "doc_type_boost": 1.0,
+            "corrected": 24.7148994667508,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "question": "Audit depth \u2014 higher include everything from lower .",
+      "gold_paths": [
+        "two-brain-audit/src/scorerift/tiers.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.1260804607191246,
+        "cosmictasha": 1.5208001002373819,
+        "helix-context": 0.9640851655496635,
+        "two-brain-audit": 3.0,
+        "bookkeeper": 1.0094606386819929,
+        "maxexpresskit": 1.2304839769707887
+      },
+      "gold": [
+        {
+          "rank": 3,
+          "gene_id": "e60c904e0acb0eb4",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\tiers.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 19.263009444310327,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 57.78902833293098,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 3,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "089cb81a90aa0dc3",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 21.013320108310328,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 63.03996032493099,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "aab9fb0f47faa9d6",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 16.81637943656033,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.15,
+            "corrected": 58.01650905613313,
+            "rrf": 0.014705882352941176
+          }
+        }
+      ]
+    },
+    {
+      "question": "The implementation includes 24 comprehensive tests (in ):",
+      "gold_paths": [
+        "BookKeeper/docs/BALANCE_SHEET_CASH_FLOW.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.899123272849056,
+        "education": 1.1322803278371532,
+        "bookkeeper": 1.2812328745664379,
+        "cosmictasha": 1.1945501364228621,
+        "maxexpresskit": 1.2983293525729573,
+        "two-brain-audit": 1.3465354495397985
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Reviewer: coder_3 (performance optimizer)\nProject: C:[REDACTED]\\Projects\\\\\\\\\\",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_writes/reviews/workspace_review_20260321_173458_coder_3.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "education": 1.3380271778643142,
+        "two-brain-audit": 2.1853060245056364,
+        "helix-context": 0.7857615688820837,
+        "bookkeeper": 0.8133447057449258
+      },
+      "gold": [
+        {
+          "rank": 15,
+          "gene_id": "3047a9da11691211",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_173458_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 15,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "98bd8f39c57ebfbb",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.90730048975,
+            "m_shard": 2.1853060245056364,
+            "doc_type_boost": 1.15,
+            "corrected": 47.51597331749739,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "92e729636a774013",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\presets\\python_project.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.60725784791338,
+            "m_shard": 2.1853060245056364,
+            "doc_type_boost": 1.0,
+            "corrected": 40.6625526745749,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "7ee1616bb1e54d3f",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\presets\\python_project.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.604485692393368,
+            "m_shard": 2.1853060245056364,
+            "doc_type_boost": 1.0,
+            "corrected": 40.656494666416144,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "446376db9fa3fb85",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\presets\\python_project.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.576937338988778,
+            "m_shard": 2.1853060245056364,
+            "doc_type_boost": 1.0,
+            "corrected": 40.59629308375588,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "14eb17666cfe1c6c",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\superpowers\\plans\\2026-04-02-tbr-v1-plan.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 18.5,
+            "m_shard": 2.1853060245056364,
+            "doc_type_boost": 1.0,
+            "corrected": 40.42816145335427,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "00166e7bf960a36d",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_123445_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "02cb0a6652560b41",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_102112_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "06b7f79d918a4ae6",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_095221_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "0d1b646d5ba48fd1",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_011418_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "0fb3e22033f1d056",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_121649_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "1306caa2c1d6a74d",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260327_142428_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "207ac9366a3a7452",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_065136_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "2a9adf5039b46752",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_132103_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 14,
+          "gene_id": "2bc5c6d83e53ad20",
+          "source_id": "F:\\Projects\\Education\\fleet\\knowledge\\code_writes\\reviews\\workspace_review_20260321_154950_coder_3.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 29.5,
+            "m_shard": 1.3380271778643142,
+            "doc_type_boost": 1.0,
+            "corrected": 39.47180174699727,
+            "rrf": 0.014492753623188406
+          }
+        }
+      ]
+    },
+    {
+      "question": "> Last sweep: 2026-03-24 \u2014 Full gap review for professional services + mixed/general business.",
+      "gold_paths": [
+        "BookKeeper/docs/planning/GAPS.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.1267318641853603,
+        "helix-context": 0.8324416443250672,
+        "cosmictasha": 1.5370824426907008,
+        "bookkeeper": 1.4663427823889092,
+        "maxexpresskit": 1.2205921953247147,
+        "two-brain-audit": 1.1083380187936098
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Per-spec lookup with `default` fallback.",
+      "gold_paths": [
+        "helix_context/config.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9730556321022639,
+        "education": 1.0432112375051794,
+        "cosmictasha": 0.9834083157355322,
+        "bookkeeper": 0.8983602678496176,
+        "maxexpresskit": 1.1493805075607684,
+        "two-brain-audit": 1.040067174428884
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "coordinator = (\n model=\"amazon.nova\",\n =[\n researcher_agent.as_tool(),\n coder_agent.as_tool(),\n security_agent.as_tool()\n ],\n system_prompt=\"Route tasks to the most appropriate specialist\"\n)\n`",
+      "gold_paths": [
+        "Education/BigEd/research/agent_swarming_and_collaboration.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.2536033002984803,
+        "helix-context": 0.8519059698924494,
+        "cosmictasha": 1.358009322818384,
+        "bookkeeper": 0.9783681373556816,
+        "maxexpresskit": 1.5045350435486058,
+        "two-brain-audit": 1.1463425538931271
+      },
+      "gold": [
+        {
+          "rank": 2,
+          "gene_id": "0352ff4beed17619",
+          "source_id": "F:\\Projects\\Education\\BigEd\\research\\agent_swarming_and_collaboration.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 71.96212913367475,
+            "m_shard": 1.2536033002984803,
+            "doc_type_boost": 1.0,
+            "corrected": 90.21196257848008,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ],
+      "best_gold_rank": 2,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "1310a670a0d4da76",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\lib\\biged\\types.ts",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 67.7288142245,
+            "m_shard": 1.358009322818384,
+            "doc_type_boost": 1.0,
+            "corrected": 91.97636114030539,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "Build/load the hot-tier (lifecycle tier < 2) .",
+      "gold_paths": [
+        "helix_context/knowledge_store.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9686846223670266,
+        "education": 1.1821827436511145,
+        "cosmictasha": 1.217817754310867,
+        "bookkeeper": 1.1112401387917406,
+        "two-brain-audit": 1.6534222797162672,
+        "maxexpresskit": 1.469623744788525
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Autonomous agents share a common architectural pattern: plan-execute-reflect loops where an LLM decomposes a high-level goal into sub-tasks, executes them via tool use (web search, code execution, file I/O), reflects on results to refine the plan.",
+      "gold_paths": [
+        "Education/BigEd/research/agent_evolution_and_autoresearch.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.2062121307101756,
+        "helix-context": 0.897591069924915,
+        "cosmictasha": 1.214402943096275,
+        "maxexpresskit": 1.499469772552275,
+        "bookkeeper": 1.0335971121994536,
+        "two-brain-audit": 1.073059337766926
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Imperative \u2014 VaultManager.status() updates it on each call.",
+      "gold_paths": [
+        "helix_context/telemetry/otel.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9799609163445353,
+        "education": 1.2819210738308726,
+        "bookkeeper": 1.0725622820333327,
+        "cosmictasha": 1.0478975206626684,
+        "two-brain-audit": 0.9522228960679457,
+        "maxexpresskit": 1.0937536068472036
+      },
+      "gold": [
+        {
+          "rank": 3,
+          "gene_id": "cbcabda889230482",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\telemetry\\otel.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 21.5,
+            "m_shard": 0.9799609163445353,
+            "doc_type_boost": 1.0,
+            "corrected": 21.06915970140751,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ],
+      "best_gold_rank": 3,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "7ac14821d76a5aac",
+          "source_id": "F:\\Projects\\helix-context\\tools\\native-otel\\grafana\\docs\\sources\\setup-grafana\\configure-grafana\\settings-updates-at-runtime\\index.md",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 20.0,
+            "m_shard": 0.9799609163445353,
+            "doc_type_boost": 1.15,
+            "corrected": 22.53910107592431,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "731277ec86181daa",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-28-factorio-takeover-design.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 16.5,
+            "m_shard": 1.2819210738308726,
+            "doc_type_boost": 1.0,
+            "corrected": 21.151697718209398,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "Compliance Profile is designed to prove is real \u2014 it analyzed your company, found actual issues, and knows what it's talking about \u2014 without giving enough detail for someone to take output to another AI and self-remediate.",
+      "gold_paths": [
+        "CosmicTasha/.planning/02-pricing-monetization.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9301840735575274,
+        "education": 1.0390057770646834,
+        "cosmictasha": 1.507234006778969,
+        "maxexpresskit": 1.482525404545811,
+        "bookkeeper": 1.06247480497536,
+        "two-brain-audit": 1.3080899237375103
+      },
+      "gold": [
+        {
+          "rank": 1,
+          "gene_id": "4cd062bd0c60f94a",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\02-pricing-monetization.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 26.5458011994406,
+            "m_shard": 1.507234006778969,
+            "doc_type_boost": 1.0,
+            "corrected": 40.01073430499081,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ],
+      "best_gold_rank": 1,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "import webview\nimport threading\nfrom fleet_bridge import start_fleet_if_needed",
+      "gold_paths": [
+        "Education/docs/superpowers/specs/2026-03-31-pywebview-migration.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 160,
+      "shard_multipliers": {
+        "education": 1.5644282021285318,
+        "helix-context": 0.8114284227967569,
+        "bookkeeper": 1.0967061248449395,
+        "cosmictasha": 1.0813589642127621,
+        "two-brain-audit": 1.2164887729040543
+      },
+      "gold": [
+        {
+          "rank": 14,
+          "gene_id": "fbd6c4179746b457",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-31-pywebview-migration.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 32.38591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 50.66544348930666,
+            "rrf": 0.013513513513513514
+          }
+        }
+      ],
+      "best_gold_rank": 14,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "93b31534e4ae4d52",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\launcher_webview.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 52.88591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 82.73622163294156,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "178b7f42736b8449",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\launcher_webview.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 49.88591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 78.04293702655596,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "462b485785b22cb2",
+          "source_id": "F:\\Projects\\Education\\biged-rs\\docs\\RUNBOOK.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 48.67431787993772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 76.14747561074361,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "3f701d8a98971c38",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\fleet_bridge.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 44.353158774,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 69.38733243953014,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "023e0138cf0a5575",
+          "source_id": "F:\\Projects\\Education\\biged-rs\\docs\\MIGRATION.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 42.77035391093772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 66.91114787328932,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "8ffe46595e7090c6",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\launcher_webview.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 40.88591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 63.96308320739918,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "d0551b98d3b08ccb",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\launcher_webview.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 40.88591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 63.96308320739918,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "6d1674b97b7c867c",
+          "source_id": "F:\\Projects\\Education\\DEVELOPMENT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 40.38591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 63.18086910633491,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "af34a4edfbefa915",
+          "source_id": "F:\\Projects\\Education\\FRAMEWORK_BLUEPRINT.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 39.02220826318772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 61.047443116263906,
+            "rrf": 0.014492753623188406
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "6874a4a2e7497edf",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\specs\\2026-03-27-pywebview-launcher-design.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 36.38591801168772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 56.92315629782079,
+            "rrf": 0.014285714285714285
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "e37bc87749acbc5d",
+          "source_id": "F:\\Projects\\Education\\docs\\superpowers\\plans\\2026-03-24-rust-phase3-bridge.md",
+          "breakdown": {
+            "shard": "education",
+            "raw": 33.87829569943772,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 53.00016123225013,
+            "rrf": 0.014084507042253521
+          }
+        },
+        {
+          "rank": 12,
+          "gene_id": "56ab0403b8ed39d4",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\fleet_bridge.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 33.5,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 52.40834477130581,
+            "rrf": 0.013888888888888888
+          }
+        },
+        {
+          "rank": 13,
+          "gene_id": "6f64852b6633a011",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\fleet_bridge.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 33.5,
+            "m_shard": 1.5644282021285318,
+            "doc_type_boost": 1.0,
+            "corrected": 52.40834477130581,
+            "rrf": 0.0136986301369863
+          }
+        }
+      ]
+    },
+    {
+      "question": "Xero API: 60 requests per minute (enforced locally with deque timestamp tracking).",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/ingestion/sync/README.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.8650474263770678,
+        "education": 1.1703883683405536,
+        "bookkeeper": 1.3386245577628595,
+        "cosmictasha": 1.3451710362791378,
+        "two-brain-audit": 1.1912961924045828,
+        "maxexpresskit": 1.04499623437778
+      },
+      "gold": [
+        {
+          "rank": 6,
+          "gene_id": "173a455ba547c217",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 37.44225148149795,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.15,
+            "corrected": 57.63928493072585,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 15,
+          "gene_id": "f7b802905ceac17b",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 29.915368419998973,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.15,
+            "corrected": 46.052263844764255,
+            "rrf": 0.013333333333333334
+          }
+        },
+        {
+          "rank": 16,
+          "gene_id": "4397bd03ef0dc79c",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 29.408340949748975,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.15,
+            "corrected": 45.27173650815667,
+            "rrf": 0.012987012987012988
+          }
+        }
+      ],
+      "best_gold_rank": 6,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "ecd751783307d1dd",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\xero_client.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 58.640517076248976,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.0,
+            "corrected": 78.4976362381792,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "7aaf5c551869be9e",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\ingestion\\sync\\xero_client.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 58.44225148149795,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.0,
+            "corrected": 78.23223304408602,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "b3845ea5a8c15b3f",
+          "source_id": "F:\\Projects\\BookKeeper\\README.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 43.54542344924795,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.15,
+            "corrected": 67.03461918844788,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "a895b3ca9e6ef3e6",
+          "source_id": "F:\\Projects\\Education\\BigEd\\launcher\\fleet_api.py",
+          "breakdown": {
+            "shard": "education",
+            "raw": 50.720775799988395,
+            "m_shard": 1.1703883683405536,
+            "doc_type_boost": 1.0,
+            "corrected": 59.363006029515454,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "dbb8362dc428fcb2",
+          "source_id": "F:\\Projects\\BookKeeper\\pyproject.toml",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 43.64683585849795,
+            "m_shard": 1.3386245577628595,
+            "doc_type_boost": 1.0,
+            "corrected": 58.42672634882994,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "question": "#### Enhanced (~150 new lines)\nNew command group with 6 subcommands:\n- \u2014 List all tenants with status\n- \u2014 Create new tenant with optional COA template\n- \u2014 Show metadata and statistics\n- \u2014 Soft-delete with confirmation\n- \u2014 Permanent delete with destructive confirmation\n- \u2014 Detailed statistics display",
+      "gold_paths": [
+        "BookKeeper/docs/TENANCY_IMPLEMENTATION_SUMMARY.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9584976445282747,
+        "education": 1.0277363022336732,
+        "cosmictasha": 1.1384312463785198,
+        "bookkeeper": 1.3477489521557329,
+        "maxexpresskit": 1.4635571387853792,
+        "two-brain-audit": 1.0576398967658667
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "1. \u2014 seed the baseline.\n2. Open the baseline; fill in (letter grade) for the dimensions you care about.\n3. Work normally. Stop hook checks for divergences after PR-sized changes.\n4. \u2014 on-demand check.\n5. or \u2014 resolve a flagged dimension.",
+      "gold_paths": [
+        "MaxExpressKit/docs/drift.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9074093572553815,
+        "education": 1.0533422729024275,
+        "cosmictasha": 1.2441169800728191,
+        "bookkeeper": 1.0236858101495825,
+        "two-brain-audit": 2.123453744173079,
+        "maxexpresskit": 2.2969840153122956
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "- Three distilled guardrails: , , .\n- Three named subagents matching each guardrail.\n- entry skill.\n- Slash commands: , , , .\n- Layer 2 wrapper stubs: , .\n- Hooks: (warn-only default), , .\n- ported from BookKeeper with new helpers (, , ).\n- (grades, baseline, python preset).\n- for CosmicTasha / ScoreRift / BookKeeper.\n- for .\n- payload for .\n- Docs: concepts + per-guardrail + source-app integration.\n- CI: pytest + ruff on Ubuntu + Windows, Python 3.11 and 3.12.",
+      "gold_paths": [
+        "MaxExpressKit/docs/superpowers/plans/2026-05-10-mek-v0.1.0.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.0681328278146018,
+        "helix-context": 0.8832790881024466,
+        "bookkeeper": 3.0,
+        "two-brain-audit": 2.6119859386362725,
+        "cosmictasha": 3.0,
+        "maxexpresskit": 2.7015865724448243
+      },
+      "gold": [
+        {
+          "rank": 4,
+          "gene_id": "30118b79c4dcaecd",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 68.94977368356872,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.0,
+            "corrected": 186.27378275663878,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "20be98971beab807",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 60.37757604143082,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.0,
+            "corrected": 163.11524871029584,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "b88063499d618427",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 53.03561681491756,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.0,
+            "corrected": 143.2803102485102,
+            "rrf": 0.014705882352941176
+          }
+        }
+      ],
+      "best_gold_rank": 4,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "e90e6e2a914205c4",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\concepts.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 89.86218649335639,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.0,
+            "corrected": 242.77047640098428,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "e581c986c365de62",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\source-app-integration.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 87.53561681491757,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.0,
+            "corrected": 236.4850469978567,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "a532372189ca517d",
+          "source_id": "F:\\Projects\\MaxExpressKit\\README.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 66.94977368356871,
+            "m_shard": 2.7015865724448243,
+            "doc_type_boost": 1.15,
+            "corrected": 208.0012010535114,
+            "rrf": 0.015625
+          }
+        }
+      ]
+    },
+    {
+      "question": "All four incumbents are integration-monitoring platforms.",
+      "gold_paths": [
+        "CosmicTasha/.planning/02-pricing-monetization.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 185,
+      "shard_multipliers": {
+        "helix-context": 0.903456954219159,
+        "education": 1.1541529159297605,
+        "bookkeeper": 1.0203736284027511,
+        "two-brain-audit": 1.2943713577526224,
+        "maxexpresskit": 2.040671669271581,
+        "cosmictasha": 1.5280767397643913
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Routing-DB . Mirrors `KnowledgeStore.` so\n `/admin/swap-db and other callers reading genome.` work\n on a sharded knowledge store.",
+      "gold_paths": [
+        "helix_context/sharding.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 153,
+      "shard_multipliers": {
+        "helix-context": 1.0025961126595284,
+        "education": 1.0199854665561174,
+        "cosmictasha": 1.1420333936362568,
+        "bookkeeper": 0.961625762195162,
+        "maxexpresskit": 1.3033955183418555
+      },
+      "gold": [
+        {
+          "rank": 6,
+          "gene_id": "c0d2bda6d5d090e6",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\sharding.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 38.0,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 38.09865228106208,
+            "rrf": 0.015151515151515152
+          }
+        }
+      ],
+      "best_gold_rank": 6,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "6af19d5f5f195f3f",
+          "source_id": "F:\\Projects\\helix-context\\tests\\test_swap_db.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 42.7064321765,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 42.81730288571671,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "44f9b1a7cffac964",
+          "source_id": "F:\\Projects\\helix-context\\tests\\test_swap_db.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 40.0,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 40.10384450638114,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "6dee63541d33d046",
+          "source_id": "F:\\Projects\\helix-context\\tests\\test_sharded_adapter_parity.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 39.8588212315,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 39.96229922189298,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "f50e1eac07d6048d",
+          "source_id": "F:\\Projects\\helix-context\\tests\\test_swap_db.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 39.762120378999995,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 39.86534732308561,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "5d2daa53e7075738",
+          "source_id": "F:\\Projects\\helix-context\\helix_context\\genome.py",
+          "breakdown": {
+            "shard": "helix-context",
+            "raw": 38.89607961075,
+            "m_shard": 1.0025961126595284,
+            "doc_type_boost": 1.0,
+            "corrected": 38.99705821543349,
+            "rrf": 0.015384615384615385
+          }
+        }
+      ]
+    },
+    {
+      "question": "- [ ] Run intake against its own infrastructure\n- [ ] Generate DriftWatch's own compliance documents\n- [ ] Review against actual infrastructure (does the System Description accurately describe Caddy + PostgreSQL + Ollama on R7-1700?",
+      "gold_paths": [
+        "CosmicTasha/.planning/04-launch-checklist.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.0800336774887194,
+        "helix-context": 0.8798943092945505,
+        "cosmictasha": 2.0151084127702705,
+        "bookkeeper": 1.0341517007730017,
+        "maxexpresskit": 1.6528743284454095,
+        "two-brain-audit": 1.1801343884461408
+      },
+      "gold": [
+        {
+          "rank": 12,
+          "gene_id": "e10babe56ce5315a",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\04-launch-checklist.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 33.5,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 67.50613182780407,
+            "rrf": 0.013888888888888888
+          }
+        }
+      ],
+      "best_gold_rank": 12,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "e42b33f189401646",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 61.4285133298453,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 123.78511399494197,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "a6a128a3557de49c",
+          "source_id": "F:\\Projects\\CosmicTasha\\web\\src\\lib\\compliance-kb\\soc2\\templates\\system-description.ts",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 54.7578200093453,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 110.34294376579197,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "76296c3002027a9e",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 45.91038268375,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 92.51439837952718,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "8b8c00d525800835",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 45.54800734495482,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 91.78417278574052,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "83dd5cb010f4d010",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 43.581419199800116,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 87.821284469985,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "07a9fa686ba9fe07",
+          "source_id": "F:\\Projects\\CosmicTasha\\README.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 35.824283833,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.15,
+            "corrected": 83.01828809335053,
+            "rrf": 0.014285714285714285
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "488b92f65e209c06",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\06-security-compliance-posture.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 39.77542339355011,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 80.15179030184225,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "114dea967be061f7",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\16-full-plan-council-review.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 37.77542339355011,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 76.12157347630172,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "f5f2075d53ea54c1",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\07-review-gate-and-partner-portal.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 37.77542339355011,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 76.12157347630172,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "e56c064af16eae1a",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 37.582277293749996,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 75.73236314570073,
+            "rrf": 0.014492753623188406
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "c53d95497c8e45a0",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\07-review-gate-and-partner-portal.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 33.5188065198453,
+            "m_shard": 2.0151084127702705,
+            "doc_type_boost": 1.0,
+            "corrected": 67.54402900415926,
+            "rrf": 0.014084507042253521
+          }
+        }
+      ]
+    },
+    {
+      "question": "a using werkzeug (pbkdf2:sha256 with random salt).",
+      "gold_paths": [
+        "BookKeeper/bookkeeper/tenancy/auth.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 149,
+      "shard_multipliers": {
+        "helix-context": 0.9871173271380027,
+        "education": 1.0823286144736899,
+        "bookkeeper": 1.3974760048789088,
+        "cosmictasha": 1.082438000811521,
+        "maxexpresskit": 1.2922927793133019
+      },
+      "gold": [
+        {
+          "rank": 3,
+          "gene_id": "29093faef331e83f",
+          "source_id": "F:\\Projects\\BookKeeper\\bookkeeper\\tenancy\\auth.py",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 17.83938224525,
+            "m_shard": 1.3974760048789088,
+            "doc_type_boost": 1.0,
+            "corrected": 24.930108629599708,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 3,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "77b7a46c871c725e",
+          "source_id": "F:\\Projects\\BookKeeper\\docs\\superpowers\\plans\\2026-03-25-rbac-completion.md",
+          "breakdown": {
+            "shard": "bookkeeper",
+            "raw": 30.35574716925,
+            "m_shard": 1.3974760048789088,
+            "doc_type_boost": 1.0,
+            "corrected": 42.421428279197734,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "1ab8c440ce7f9674",
+          "source_id": "F:\\Projects\\MaxExpressKit\\skills\\using-mek\\SKILL.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 22.092291322,
+            "m_shard": 1.2922927793133019,
+            "doc_type_boost": 1.0,
+            "corrected": 28.549708553906523,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "= AuditEngine(db_path=\"audit.db\", baseline_path=\"audit_baseline.json\")",
+      "gold_paths": [
+        "two-brain-audit/docs/QUICKSTART.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 191,
+      "shard_multipliers": {
+        "helix-context": 0.8832305387277594,
+        "education": 1.1507885919748555,
+        "cosmictasha": 1.2769497035355404,
+        "bookkeeper": 1.313484637269862,
+        "two-brain-audit": 3.0,
+        "maxexpresskit": 2.6014212558699406
+      },
+      "gold": [
+        {
+          "rank": 2,
+          "gene_id": "089cb81a90aa0dc3",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 40.62969494911228,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 121.88908484733683,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 10,
+          "gene_id": "846e985c4f8c67f6",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 33.06626055306656,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 99.19878165919968,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 2,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "adde1b79aee93a09",
+          "source_id": "F:\\Projects\\two-brain-audit\\src\\scorerift\\dashboard\\__init__.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 46.564357188316556,
+            "m_shard": 3.0,
+            "doc_type_boost": 1.0,
+            "corrected": 139.69307156494966,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "Run ruff. Returns the unmeasured sentinel (0.0, 0.0) if ruff isn't\n installed or its output couldn't be parsed \u2014 so callers don't mistake\n a launch failure for a clean repo.",
+      "gold_paths": [
+        "MaxExpressKit/lib/drift_scoring/python_preset.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9283715933396506,
+        "education": 1.0808141452141575,
+        "cosmictasha": 1.1821302315871516,
+        "bookkeeper": 1.0711055198401387,
+        "two-brain-audit": 1.564090519240391,
+        "maxexpresskit": 1.7900741143264063
+      },
+      "gold": [
+        {
+          "rank": 5,
+          "gene_id": "3b2d2b4ca3ddc692",
+          "source_id": "F:\\Projects\\MaxExpressKit\\lib\\drift_scoring\\python_preset.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 14.488455202,
+            "m_shard": 1.7900741143264063,
+            "doc_type_boost": 1.0,
+            "corrected": 25.935408613677964,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 5,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "80367610b2c148e5",
+          "source_id": "F:\\Projects\\two-brain-audit\\run_demo.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 27.845441445749998,
+            "m_shard": 1.564090519240391,
+            "doc_type_boost": 1.0,
+            "corrected": 43.55279096936102,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "fb9e0ad88c4ab2d2",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 19.161976291000002,
+            "m_shard": 1.564090519240391,
+            "doc_type_boost": 1.0,
+            "corrected": 29.97106544666226,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "b820c12733d24ae6",
+          "source_id": "F:\\Projects\\MaxExpressKit\\docs\\superpowers\\plans\\2026-05-10-mek-v0.1.0.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 15.60653325425,
+            "m_shard": 1.7900741143264063,
+            "doc_type_boost": 1.0,
+            "corrected": 27.936851192807175,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "933b888bfbba77ff",
+          "source_id": "F:\\Projects\\two-brain-audit\\launch.bat",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 17.833670337500003,
+            "m_shard": 1.564090519240391,
+            "doc_type_boost": 1.0,
+            "corrected": 27.89347469814234,
+            "rrf": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "question": "| Component | Per-Customer Size | At 100 Customers | At 500 Customers |\n|-----------|-------------------|-------------------|-------------------|\n| Intake data (PostgreSQL) | ~5MB | 500MB | 2.",
+      "gold_paths": [
+        "CosmicTasha/.planning/01-infrastructure-hosting.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "helix-context": 0.8980385003560354,
+        "education": 0.9721942373756923,
+        "cosmictasha": 1.9957289868339363,
+        "bookkeeper": 1.0839886580231195
+      },
+      "gold": [
+        {
+          "rank": 2,
+          "gene_id": "e42b33f189401646",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 22.409306325,
+            "m_shard": 1.9957289868339363,
+            "doc_type_boost": 1.0,
+            "corrected": 44.72290220764357,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "e56c064af16eae1a",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 16.57333109675,
+            "m_shard": 1.9957289868339363,
+            "doc_type_boost": 1.0,
+            "corrected": 33.07587727818024,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 11,
+          "gene_id": "8b8c00d525800835",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\01-infrastructure-hosting.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 14.042727038,
+            "m_shard": 1.9957289868339363,
+            "doc_type_boost": 1.0,
+            "corrected": 28.025477403933266,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 2,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "c697d8d3550bfbbc",
+          "source_id": "F:\\Projects\\CosmicTasha\\.planning\\03-architecture-decisions.md",
+          "breakdown": {
+            "shard": "cosmictasha",
+            "raw": 22.72911327225,
+            "m_shard": 1.9957289868339363,
+            "doc_type_boost": 1.0,
+            "corrected": 45.36115020246127,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "- STANDARDS.md: maps dimensions to OWASP, SRE, DORA, Clean Code\n- DB path display in dashboard header\n- Lint fixes for CI green",
+      "gold_paths": [
+        "two-brain-audit/CHANGELOG.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "education": 1.0683347209017582,
+        "helix-context": 0.9312493799948544,
+        "bookkeeper": 1.1481104108070592,
+        "cosmictasha": 1.2121434691331856,
+        "two-brain-audit": 2.040693026914821,
+        "maxexpresskit": 1.6389565229127725
+      },
+      "gold": [
+        {
+          "rank": 10,
+          "gene_id": "3f171d700fc154bf",
+          "source_id": "F:\\Projects\\two-brain-audit\\CHANGELOG.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 27.60827579506033,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 56.340015900120854,
+            "rrf": 0.014285714285714285
+          }
+        }
+      ],
+      "best_gold_rank": 10,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "aab9fb0f47faa9d6",
+          "source_id": "F:\\Projects\\two-brain-audit\\README.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 45.223457953810325,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.15,
+            "corrected": 106.13027459421377,
+            "rrf": 0.01639344262295082
+          }
+        },
+        {
+          "rank": 2,
+          "gene_id": "1b33ce7cf43a55fb",
+          "source_id": "F:\\Projects\\two-brain-audit\\examples\\biged\\dimensions.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 38.87682255631033,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 79.33566069926732,
+            "rrf": 0.016129032258064516
+          }
+        },
+        {
+          "rank": 3,
+          "gene_id": "fb9e0ad88c4ab2d2",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 37.0,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 75.50564199584838,
+            "rrf": 0.015873015873015872
+          }
+        },
+        {
+          "rank": 4,
+          "gene_id": "27940016dac01345",
+          "source_id": "F:\\Projects\\two-brain-audit\\tests\\test_dashboard.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 36.40546164586616,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 74.29237172233404,
+            "rrf": 0.015625
+          }
+        },
+        {
+          "rank": 5,
+          "gene_id": "4859913f246805cb",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\STANDARDS.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 31.0,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 63.26148383435945,
+            "rrf": 0.015384615384615385
+          }
+        },
+        {
+          "rank": 6,
+          "gene_id": "089cb81a90aa0dc3",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 30.44416047081033,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 62.12718598305848,
+            "rrf": 0.015151515151515152
+          }
+        },
+        {
+          "rank": 7,
+          "gene_id": "80367610b2c148e5",
+          "source_id": "F:\\Projects\\two-brain-audit\\run_demo.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 28.10827579506033,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 57.360362413578265,
+            "rrf": 0.014925373134328358
+          }
+        },
+        {
+          "rank": 8,
+          "gene_id": "f60261b216fe87cb",
+          "source_id": "F:\\Projects\\two-brain-audit\\examples\\biged\\__init__.py",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 28.00851661281033,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 57.156784545989964,
+            "rrf": 0.014705882352941176
+          }
+        },
+        {
+          "rank": 9,
+          "gene_id": "846e985c4f8c67f6",
+          "source_id": "F:\\Projects\\two-brain-audit\\docs\\QUICKSTART.md",
+          "breakdown": {
+            "shard": "two-brain-audit",
+            "raw": 27.989826474560328,
+            "m_shard": 2.040693026914821,
+            "doc_type_boost": 1.0,
+            "corrected": 57.11864371119111,
+            "rrf": 0.014492753623188406
+          }
+        }
+      ]
+    },
+    {
+      "question": "Examples of behavior that contributes to a positive environment for \ncommunity include:",
+      "gold_paths": [
+        "MaxExpressKit/CODE_OF_CONDUCT.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 96,
+      "shard_multipliers": {
+        "helix-context": 0.9921198185516227,
+        "education": 0.9709851018330742,
+        "cosmictasha": 1.2911490560835837
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "runs on for /. It scans the diff for float literals next to money-shaped identifiers and emits a WARN-level reminder. Never blocks unless .",
+      "gold_paths": [
+        "MaxExpressKit/skills/ledger/SKILL.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 192,
+      "shard_multipliers": {
+        "helix-context": 0.9390015813907941,
+        "education": 0.9998672070902638,
+        "cosmictasha": 1.153706613429291,
+        "maxexpresskit": 2.370928690463264,
+        "two-brain-audit": 1.2895817273287429,
+        "bookkeeper": 1.0525088554404654
+      },
+      "gold": [
+        {
+          "rank": 2,
+          "gene_id": "3a8586d7747802d7",
+          "source_id": "F:\\Projects\\MaxExpressKit\\skills\\ledger\\SKILL.md",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 20.887405619,
+            "m_shard": 2.370928690463264,
+            "doc_type_boost": 1.0,
+            "corrected": 49.52254925143069,
+            "rrf": 0.016129032258064516
+          }
+        }
+      ],
+      "best_gold_rank": 2,
+      "wrong_above_gold": [
+        {
+          "rank": 1,
+          "gene_id": "30f561600adb430a",
+          "source_id": "F:\\Projects\\MaxExpressKit\\hooks\\scripts\\money_math_guard.py",
+          "breakdown": {
+            "shard": "maxexpresskit",
+            "raw": 23.5,
+            "m_shard": 2.370928690463264,
+            "doc_type_boost": 1.0,
+            "corrected": 55.716824225886704,
+            "rrf": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "question": "- Command concatenation via : If or constructs commands using without escaping (e.",
+      "gold_paths": [
+        "Education/fleet/knowledge/code_discussion/shell_injection_risks_in_lead_client_and_round1.md"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "education": 1.2065185776904985,
+        "helix-context": 0.8663074095904312,
+        "maxexpresskit": 2.1504638345580256,
+        "bookkeeper": 1.1254818830132973
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    },
+    {
+      "question": "Pull the compressed string out of any * dataclass.",
+      "gold_paths": [
+        "helix_context/encoding/headroom_bridge.py"
+      ],
+      "n_returned": 16,
+      "n_pool": 128,
+      "shard_multipliers": {
+        "helix-context": 1.000513847092586,
+        "education": 0.9852461323571565,
+        "bookkeeper": 1.1342620040226843,
+        "cosmictasha": 0.9434041706300421
+      },
+      "gold": [],
+      "best_gold_rank": null,
+      "wrong_above_gold": []
+    }
+  ]
+}

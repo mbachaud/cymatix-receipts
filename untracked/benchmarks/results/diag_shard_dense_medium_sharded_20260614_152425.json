@@ -1,0 +1,368 @@
+{
+  "label": "medium_sharded",
+  "helix_url": "http://127.0.0.1:11462",
+  "timestamp": "2026-06-14T22:25:35.236213+00:00",
+  "queries": [
+    {
+      "id": "w01",
+      "type": "within",
+      "query": "How does Helix decide which tier of the retrieval budget to place a response in \u2014 the very narrow set versus the broader wider set?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9441439067282743,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w02",
+      "type": "within",
+      "query": "Where in the pipeline does the system decide whether it actually found the answer versus needs to escalate?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9520062131827416,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w03",
+      "type": "within",
+      "query": "What mechanism tracks which documents have already been sent to a session so they are not repeated on subsequent turns?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9409835668598789,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w04",
+      "type": "within",
+      "query": "Which component is responsible for giving each document a condensed shorter representation to reduce token cost?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9237484686049608,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w05",
+      "type": "within",
+      "query": "How is the freshness of the top-ranked retrieved document validated against the file it came from?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9558496594408878,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w06",
+      "type": "within",
+      "query": "What approach does BookKeeper use to ensure only authorised users can access particular routes or resources?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9234377646446562,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w07",
+      "type": "within",
+      "query": "How are amounts and financial figures stored internally to avoid floating-point rounding problems in BookKeeper?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9078364897378531,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w08",
+      "type": "within",
+      "query": "What rendering approach does CosmicTasha use for displaying celestial objects and trajectories in real time?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9020311957024462,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w09",
+      "type": "within",
+      "query": "How does the Education project track learner progress through a module and record completion status?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9133308344891328,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "w10",
+      "type": "within",
+      "query": "What is the middleware chain order in MaxExpressKit and how are errors from handlers surfaced back to callers?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9020311957024462,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c01",
+      "type": "cross",
+      "query": "Which of the projects in this corpus store and query data using a local embedded SQL database?",
+      "tiers_fired": [
+        "authority",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": false,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9019440807896535,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c02",
+      "type": "cross",
+      "query": "Compare how task ordering or job scheduling is handled across the different projects in this corpus.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9225521786715494,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c03",
+      "type": "cross",
+      "query": "Which projects expose a REST or HTTP API and what authentication scheme do they rely on?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.6265629971237182,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c04",
+      "type": "cross",
+      "query": "Across the projects here, which ones write structured log output and what format or library do they use?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": false,
+      "know_found": true,
+      "confidence": 0.9390743981048948,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c05",
+      "type": "cross",
+      "query": "Identify projects that have a concept of user sessions or identity and explain how they manage them.",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9714497466526274,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    },
+    {
+      "id": "c06",
+      "type": "cross",
+      "query": "Which projects in the corpus have automated test suites, and what testing framework is each one using?",
+      "tiers_fired": [
+        "authority",
+        "dense",
+        "fts5",
+        "lex_anchor",
+        "tag_exact",
+        "tag_prefix"
+      ],
+      "dense_fired": true,
+      "lexical_dense_agree": true,
+      "know_found": true,
+      "confidence": 0.9613019740908861,
+      "top_sources": [],
+      "fp_count": 10,
+      "fp_error": null,
+      "packet_error": null
+    }
+  ],
+  "aggregate": {
+    "n": 16,
+    "n_dense_fired": 15,
+    "pct_dense_fired": 93.8,
+    "by_type": {
+      "within": {
+        "n": 10,
+        "dense_fired": 10,
+        "pct_dense": 100.0
+      },
+      "cross": {
+        "n": 6,
+        "dense_fired": 5,
+        "pct_dense": 83.3
+      }
+    },
+    "tier_frequency": {
+      "authority": 16,
+      "fts5": 16,
+      "lex_anchor": 16,
+      "tag_exact": 16,
+      "tag_prefix": 16,
+      "dense": 15
+    },
+    "errors": []
+  }
+}

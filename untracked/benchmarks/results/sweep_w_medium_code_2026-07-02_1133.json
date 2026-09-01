@@ -1,0 +1,2955 @@
+{
+  "genome": "genomes\\bench\\matrix\\medium.db",
+  "queries_count": 30,
+  "topk": 10,
+  "weights": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0
+  ],
+  "arms": {
+    "0.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.23333333333333334,
+      "mrr": 0.14642857142857144,
+      "mean_rank_of_gold": 2.5714285714285716,
+      "wall_s": 71.982,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "8fd466bc1f059ff9",
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "0353afac95df744e",
+            "0626516a7b84d3b9",
+            "06854074b1c95c5b",
+            "0fade9e52a439e7a",
+            "107f935692243b65",
+            "12dffa6bb8aad943",
+            "154f5263f7fa49db"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 4,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "ba6ac9e7df0fd27d",
+            "fd41c6914471f44c",
+            "058f44bdb3f7cb9d",
+            "0f04c8cfa16d1fdf",
+            "1893ad145f0c60d6",
+            "5c9bb1d124404ad8",
+            "79703c044a9a10a7",
+            "82483cab1572c8c8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 2,
+          "topk_ids": [
+            "2ae4230ff7223ae5",
+            "ac7e99c8fb6b4802",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac",
+            "0956f9364b8dcca4"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "462b485785b22cb2",
+            "56e1ff890edae27f",
+            "7b7a24f71ca85412",
+            "95f81e7f7e3a90bc",
+            "dec1e3ca1b62c1e2",
+            "e904a980e52ecb6d",
+            "0b2f7c26a2fb7954",
+            "178b7f42736b8449",
+            "6d1674b97b7c867c"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "cf261125fc80d252",
+            "ce08e35801dca70f",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "166c7b4345e38434",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c",
+            "dbc3059b35655302"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "48ecdc2bc85cdb17",
+            "82bf19b3eef84c47",
+            "8d7a069a1ea076e5",
+            "f28e226d16a2987e",
+            "fc6f4c71d8beccb6"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 0,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0",
+            "a2b6f8423b363616",
+            "3286a4b626d2a163",
+            "5760ce02ce133ef6",
+            "72ea6c786c2e62bd"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "8bb69fbb6967c531",
+            "268f98fafbd85ae1",
+            "d5f0ca85995fb948",
+            "f9c3eb5fa8b3ee81",
+            "7c5041b497ddd195",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64",
+            "2c1b11435e8f0a90"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "71c6bd5d8c48e7c1",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 2,
+          "topk_ids": [
+            "51424680a7b67ae4",
+            "85b3a03b6b15305a",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 0,
+          "topk_ids": [
+            "f773ce86d635f6c2",
+            "1c08243bc2b05e6c",
+            "1ef7fd5301e399ca",
+            "3287ae901db6d280",
+            "3f9aabd70ef9927a",
+            "3fc730de33c7eca6",
+            "44749a83517e5c16",
+            "73cfbd78b2abf5a6",
+            "79182c81ca83c3fb",
+            "797bf05e2e447f60"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "889e9c4038b85b1e",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5",
+            "83dd38c055940a46",
+            "4be9b9dc677cd8e4",
+            "031f67a75d5cae02",
+            "0a4496a73345a9be"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "47f806c5383b2bdd",
+            "ac573e9dc884efd3",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "0c0c4d3c19da2dc5",
+            "159f3d403e5485e9",
+            "1a1e27ea37b1d87e"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "14e93ad185623211",
+            "2861bcd63e90f17f",
+            "2ec6aea330b9b0e6",
+            "2fea305f383835c1",
+            "590324e4f11ef8de",
+            "65a0fd8af51806ea",
+            "9309ac595389e552",
+            "d10c3b456635cb29"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "4be9b9dc677cd8e4",
+            "3ff8d1fc1aed2a15",
+            "deeeb5acf7a3de10",
+            "d68a51cc4ad4a4ec",
+            "d7e79431b1ef4f09",
+            "58582271498054f8",
+            "c388d709df2feca0",
+            "c5a2c252476b118e"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "d80892b6689015ab",
+            "f773ce86d635f6c2",
+            "faf58c6dc9140ef5",
+            "40510c011dc20735",
+            "1de6b02bdcbaa468",
+            "92e04ebf40056cb0",
+            "c1fdffe937e2589b",
+            "f95dadf55897f873"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 0,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "2575318a1e0c462c",
+            "765856964cd5e918",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "747bb429669f5f90",
+            "9ebb74a88257e673",
+            "aad933ac1c7c46d4"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 0,
+          "topk_ids": [
+            "6446d74bfdffc9a3",
+            "669f00181867969c",
+            "4ce3f33b254135a7",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "f01ed01905462a4d",
+            "261d9aca1f7b9a4e",
+            "50cff47e7464aa17"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "1.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.3,
+      "mrr": 0.17670634920634923,
+      "mean_rank_of_gold": 3.2222222222222223,
+      "wall_s": 36.721,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 5,
+          "topk_ids": [
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "8fd466bc1f059ff9",
+            "6931bd5a85d61b4d",
+            "db4416f2ded0f543",
+            "e1ae7efdffec9694",
+            "a7b9fdff94ac429d",
+            "26c0f2891f9f2517",
+            "12dffa6bb8aad943",
+            "17895b0634118b24"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 3,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "fd41c6914471f44c",
+            "ba6ac9e7df0fd27d",
+            "1893ad145f0c60d6",
+            "8f6ee75005faf237",
+            "0f04c8cfa16d1fdf",
+            "deb74604086061d3",
+            "058f44bdb3f7cb9d",
+            "5c9bb1d124404ad8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 1,
+          "topk_ids": [
+            "ac7e99c8fb6b4802",
+            "2ae4230ff7223ae5",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac",
+            "0956f9364b8dcca4"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "462b485785b22cb2",
+            "dec1e3ca1b62c1e2",
+            "7b7a24f71ca85412",
+            "56e1ff890edae27f",
+            "95f81e7f7e3a90bc",
+            "e904a980e52ecb6d",
+            "aba748bf0cc269c0",
+            "7e0ebc0b5ab66d6f",
+            "b7f6b36ed05d2dbe"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "ce08e35801dca70f",
+            "cf261125fc80d252",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "166c7b4345e38434",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c",
+            "dbc3059b35655302"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "48ecdc2bc85cdb17",
+            "82bf19b3eef84c47",
+            "8d7a069a1ea076e5",
+            "f28e226d16a2987e",
+            "fc6f4c71d8beccb6"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "cbd7cf8b08dc5d0e",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 0,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0",
+            "a2b6f8423b363616",
+            "774aa2540253f84e",
+            "3286a4b626d2a163",
+            "5760ce02ce133ef6"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "8bb69fbb6967c531",
+            "268f98fafbd85ae1",
+            "d5f0ca85995fb948",
+            "7c5041b497ddd195",
+            "f9c3eb5fa8b3ee81",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64",
+            "e9ba57c4518fe30f"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "71c6bd5d8c48e7c1",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 2,
+          "topk_ids": [
+            "51424680a7b67ae4",
+            "85b3a03b6b15305a",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 0,
+          "topk_ids": [
+            "f773ce86d635f6c2",
+            "44749a83517e5c16",
+            "1c08243bc2b05e6c",
+            "1ef7fd5301e399ca",
+            "3287ae901db6d280",
+            "3f9aabd70ef9927a",
+            "3fc730de33c7eca6",
+            "73cfbd78b2abf5a6",
+            "79182c81ca83c3fb",
+            "797bf05e2e447f60"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "889e9c4038b85b1e",
+            "83dd38c055940a46",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5",
+            "4be9b9dc677cd8e4",
+            "3a688b1e149d416d",
+            "b29a2be7708fa7d3"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "47f806c5383b2bdd",
+            "ac573e9dc884efd3",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "6c0ba404e3222e66",
+            "f6d670bcff8fb15f",
+            "fa031d81716dfbb1"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "9309ac595389e552",
+            "14e93ad185623211",
+            "2861bcd63e90f17f",
+            "2ec6aea330b9b0e6",
+            "2fea305f383835c1",
+            "590324e4f11ef8de",
+            "65a0fd8af51806ea",
+            "d10c3b456635cb29"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "4be9b9dc677cd8e4",
+            "3ff8d1fc1aed2a15",
+            "deeeb5acf7a3de10",
+            "58582271498054f8",
+            "d68a51cc4ad4a4ec",
+            "d7e79431b1ef4f09",
+            "c388d709df2feca0",
+            "c5a2c252476b118e"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "f773ce86d635f6c2",
+            "d80892b6689015ab",
+            "faf58c6dc9140ef5",
+            "40510c011dc20735",
+            "f95dadf55897f873",
+            "1de6b02bdcbaa468",
+            "92e04ebf40056cb0",
+            "c1fdffe937e2589b"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 0,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "765856964cd5e918",
+            "2575318a1e0c462c",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "747bb429669f5f90",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "9ebb74a88257e673",
+            "aad933ac1c7c46d4"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 8,
+          "topk_ids": [
+            "6446d74bfdffc9a3",
+            "669f00181867969c",
+            "4ce3f33b254135a7",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "41495242e4463a9b",
+            "f01ed01905462a4d",
+            "261d9aca1f7b9a4e"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "2.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.3,
+      "mrr": 0.2003174603174603,
+      "mean_rank_of_gold": 2.5555555555555554,
+      "wall_s": 35.387,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 5,
+          "topk_ids": [
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "8fd466bc1f059ff9",
+            "6931bd5a85d61b4d",
+            "db4416f2ded0f543",
+            "e1ae7efdffec9694",
+            "a7b9fdff94ac429d",
+            "26c0f2891f9f2517",
+            "12dffa6bb8aad943",
+            "17895b0634118b24"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 3,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "fd41c6914471f44c",
+            "ba6ac9e7df0fd27d",
+            "1893ad145f0c60d6",
+            "8f6ee75005faf237",
+            "0f04c8cfa16d1fdf",
+            "deb74604086061d3",
+            "058f44bdb3f7cb9d",
+            "5c9bb1d124404ad8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 1,
+          "topk_ids": [
+            "ac7e99c8fb6b4802",
+            "2ae4230ff7223ae5",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac",
+            "0956f9364b8dcca4"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "462b485785b22cb2",
+            "dec1e3ca1b62c1e2",
+            "7b7a24f71ca85412",
+            "56e1ff890edae27f",
+            "95f81e7f7e3a90bc",
+            "e904a980e52ecb6d",
+            "aba748bf0cc269c0",
+            "7e0ebc0b5ab66d6f",
+            "b7f6b36ed05d2dbe"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "ce08e35801dca70f",
+            "cf261125fc80d252",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "166c7b4345e38434",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c",
+            "dbc3059b35655302"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "48ecdc2bc85cdb17",
+            "82bf19b3eef84c47",
+            "8d7a069a1ea076e5",
+            "f28e226d16a2987e",
+            "fc6f4c71d8beccb6"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "cbd7cf8b08dc5d0e",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 0,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0",
+            "a2b6f8423b363616",
+            "774aa2540253f84e",
+            "3286a4b626d2a163",
+            "5760ce02ce133ef6"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "8bb69fbb6967c531",
+            "268f98fafbd85ae1",
+            "d5f0ca85995fb948",
+            "7c5041b497ddd195",
+            "f9c3eb5fa8b3ee81",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64",
+            "e9ba57c4518fe30f"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "71c6bd5d8c48e7c1",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 1,
+          "topk_ids": [
+            "85b3a03b6b15305a",
+            "51424680a7b67ae4",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 0,
+          "topk_ids": [
+            "f773ce86d635f6c2",
+            "44749a83517e5c16",
+            "1c08243bc2b05e6c",
+            "1ef7fd5301e399ca",
+            "3287ae901db6d280",
+            "3f9aabd70ef9927a",
+            "3fc730de33c7eca6",
+            "73cfbd78b2abf5a6",
+            "79182c81ca83c3fb",
+            "797bf05e2e447f60"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "889e9c4038b85b1e",
+            "83dd38c055940a46",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5",
+            "4be9b9dc677cd8e4",
+            "3a688b1e149d416d",
+            "b29a2be7708fa7d3"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "47f806c5383b2bdd",
+            "ac573e9dc884efd3",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "6c0ba404e3222e66",
+            "f6d670bcff8fb15f",
+            "fa031d81716dfbb1"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "9309ac595389e552",
+            "14e93ad185623211",
+            "2861bcd63e90f17f",
+            "2ec6aea330b9b0e6",
+            "2fea305f383835c1",
+            "590324e4f11ef8de",
+            "65a0fd8af51806ea",
+            "d10c3b456635cb29"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "132c23dfbba5ae13",
+            "1cc7f5ce231f1320",
+            "28cd5988e91486e9",
+            "479ce6192286978b",
+            "47f806c5383b2bdd"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "4be9b9dc677cd8e4",
+            "3ff8d1fc1aed2a15",
+            "deeeb5acf7a3de10",
+            "58582271498054f8",
+            "d68a51cc4ad4a4ec",
+            "d7e79431b1ef4f09",
+            "c388d709df2feca0",
+            "c5a2c252476b118e"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "f773ce86d635f6c2",
+            "d80892b6689015ab",
+            "faf58c6dc9140ef5",
+            "40510c011dc20735",
+            "f95dadf55897f873",
+            "1de6b02bdcbaa468",
+            "92e04ebf40056cb0",
+            "c1fdffe937e2589b"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 0,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "765856964cd5e918",
+            "2575318a1e0c462c",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "747bb429669f5f90",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "9ebb74a88257e673",
+            "aad933ac1c7c46d4"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 3,
+          "topk_ids": [
+            "6446d74bfdffc9a3",
+            "669f00181867969c",
+            "41495242e4463a9b",
+            "4ce3f33b254135a7",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "f01ed01905462a4d",
+            "261d9aca1f7b9a4e"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "3.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.36666666666666664,
+      "mrr": 0.21600529100529103,
+      "mean_rank_of_gold": 3.3636363636363638,
+      "wall_s": 34.401,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 4,
+          "topk_ids": [
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "6931bd5a85d61b4d",
+            "db4416f2ded0f543",
+            "e1ae7efdffec9694",
+            "a7b9fdff94ac429d",
+            "26c0f2891f9f2517",
+            "12dffa6bb8aad943",
+            "17895b0634118b24",
+            "3b54da06c3c62605"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 3,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "fd41c6914471f44c",
+            "ba6ac9e7df0fd27d",
+            "1893ad145f0c60d6",
+            "8f6ee75005faf237",
+            "0f04c8cfa16d1fdf",
+            "deb74604086061d3",
+            "058f44bdb3f7cb9d",
+            "5c9bb1d124404ad8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 1,
+          "topk_ids": [
+            "ac7e99c8fb6b4802",
+            "2ae4230ff7223ae5",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac",
+            "8e8a5d661715bafc"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "dec1e3ca1b62c1e2",
+            "7b7a24f71ca85412",
+            "56e1ff890edae27f",
+            "462b485785b22cb2",
+            "aba748bf0cc269c0",
+            "95f81e7f7e3a90bc",
+            "e904a980e52ecb6d",
+            "7e0ebc0b5ab66d6f",
+            "b7f6b36ed05d2dbe"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "ce08e35801dca70f",
+            "cf261125fc80d252",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "166c7b4345e38434",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c",
+            "dbc3059b35655302"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "48ecdc2bc85cdb17",
+            "b14c933928d79cae",
+            "fea1deb4997146fa",
+            "3586a591631e9dc1",
+            "23e5107dd1e9ebdc"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "cbd7cf8b08dc5d0e",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 9,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "774aa2540253f84e",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0",
+            "a2b6f8423b363616",
+            "29e978712948b533",
+            "f280a84b24b492a8"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "268f98fafbd85ae1",
+            "8bb69fbb6967c531",
+            "7c5041b497ddd195",
+            "d5f0ca85995fb948",
+            "f9c3eb5fa8b3ee81",
+            "e9ba57c4518fe30f",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3",
+            "30987cc3122e9d5f"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 1,
+          "topk_ids": [
+            "85b3a03b6b15305a",
+            "51424680a7b67ae4",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 0,
+          "topk_ids": [
+            "44749a83517e5c16",
+            "f773ce86d635f6c2",
+            "8e7c2bd600adb01b",
+            "9b25e2633227fdce",
+            "1c08243bc2b05e6c",
+            "1ef7fd5301e399ca",
+            "3287ae901db6d280",
+            "3f9aabd70ef9927a",
+            "3fc730de33c7eca6",
+            "73cfbd78b2abf5a6"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "83dd38c055940a46",
+            "889e9c4038b85b1e",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5",
+            "4be9b9dc677cd8e4",
+            "3a688b1e149d416d",
+            "b29a2be7708fa7d3"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "ac573e9dc884efd3",
+            "47f806c5383b2bdd",
+            "6c0ba404e3222e66",
+            "f6d670bcff8fb15f",
+            "fa031d81716dfbb1",
+            "2601d1cc8455b1b6",
+            "dd0d84c7f87c41e1",
+            "e628ac5a79f65f3f"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "9309ac595389e552",
+            "61da55f5a5b0660c",
+            "aa5e9c0f815ef360",
+            "b903d6ef1934f86a",
+            "3dcb639233f30c60",
+            "fce27d7a384e5774",
+            "e0431b2fdbe18010",
+            "06854074b1c95c5b"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "4be9b9dc677cd8e4",
+            "58582271498054f8",
+            "3ff8d1fc1aed2a15",
+            "deeeb5acf7a3de10",
+            "d68a51cc4ad4a4ec",
+            "d7e79431b1ef4f09",
+            "bb48603eda50e98a",
+            "9d6002f1c399a1ee"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "f773ce86d635f6c2",
+            "d80892b6689015ab",
+            "faf58c6dc9140ef5",
+            "f95dadf55897f873",
+            "40510c011dc20735",
+            "1de6b02bdcbaa468",
+            "92e04ebf40056cb0",
+            "c1fdffe937e2589b"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 7,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "765856964cd5e918",
+            "2575318a1e0c462c",
+            "747bb429669f5f90",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "1cb783d8261953f7",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "9ebb74a88257e673"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 2,
+          "topk_ids": [
+            "6446d74bfdffc9a3",
+            "41495242e4463a9b",
+            "669f00181867969c",
+            "4ce3f33b254135a7",
+            "f0f42078523928ba",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "f01ed01905462a4d"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "4.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.36666666666666664,
+      "mrr": 0.21600529100529103,
+      "mean_rank_of_gold": 3.3636363636363638,
+      "wall_s": 34.355,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 4,
+          "topk_ids": [
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "6931bd5a85d61b4d",
+            "db4416f2ded0f543",
+            "e1ae7efdffec9694",
+            "a7b9fdff94ac429d",
+            "26c0f2891f9f2517",
+            "12dffa6bb8aad943",
+            "17895b0634118b24",
+            "3b54da06c3c62605"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 3,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "fd41c6914471f44c",
+            "ba6ac9e7df0fd27d",
+            "1893ad145f0c60d6",
+            "8f6ee75005faf237",
+            "0f04c8cfa16d1fdf",
+            "deb74604086061d3",
+            "058f44bdb3f7cb9d",
+            "5c9bb1d124404ad8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 1,
+          "topk_ids": [
+            "ac7e99c8fb6b4802",
+            "2ae4230ff7223ae5",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac",
+            "8e8a5d661715bafc"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "dec1e3ca1b62c1e2",
+            "7b7a24f71ca85412",
+            "56e1ff890edae27f",
+            "462b485785b22cb2",
+            "aba748bf0cc269c0",
+            "7e0ebc0b5ab66d6f",
+            "b7f6b36ed05d2dbe",
+            "773f755d9c089d3b",
+            "95f81e7f7e3a90bc"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "ce08e35801dca70f",
+            "cf261125fc80d252",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "166c7b4345e38434",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "0e18769d68471bda",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "48ecdc2bc85cdb17",
+            "b14c933928d79cae",
+            "fea1deb4997146fa",
+            "3586a591631e9dc1",
+            "23e5107dd1e9ebdc"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "cbd7cf8b08dc5d0e",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 9,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "774aa2540253f84e",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0",
+            "a2b6f8423b363616",
+            "29e978712948b533",
+            "f280a84b24b492a8"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "268f98fafbd85ae1",
+            "8bb69fbb6967c531",
+            "7c5041b497ddd195",
+            "d5f0ca85995fb948",
+            "f9c3eb5fa8b3ee81",
+            "e9ba57c4518fe30f",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3",
+            "30987cc3122e9d5f"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 1,
+          "topk_ids": [
+            "85b3a03b6b15305a",
+            "51424680a7b67ae4",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 0,
+          "topk_ids": [
+            "44749a83517e5c16",
+            "f773ce86d635f6c2",
+            "8e7c2bd600adb01b",
+            "9b25e2633227fdce",
+            "1c08243bc2b05e6c",
+            "1ef7fd5301e399ca",
+            "3287ae901db6d280",
+            "3f9aabd70ef9927a",
+            "3fc730de33c7eca6",
+            "73cfbd78b2abf5a6"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "83dd38c055940a46",
+            "889e9c4038b85b1e",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5",
+            "3a688b1e149d416d",
+            "b29a2be7708fa7d3",
+            "f1d185e13d9d4491"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "ac573e9dc884efd3",
+            "47f806c5383b2bdd",
+            "6c0ba404e3222e66",
+            "f6d670bcff8fb15f",
+            "fa031d81716dfbb1",
+            "2601d1cc8455b1b6",
+            "dd0d84c7f87c41e1",
+            "e628ac5a79f65f3f"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "9309ac595389e552",
+            "61da55f5a5b0660c",
+            "aa5e9c0f815ef360",
+            "b903d6ef1934f86a",
+            "3dcb639233f30c60",
+            "fce27d7a384e5774",
+            "e0431b2fdbe18010",
+            "06854074b1c95c5b"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "2237c44c6720bbd8",
+            "4208ebb2355c1fdd",
+            "fd260349d263f42a",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "58582271498054f8",
+            "4be9b9dc677cd8e4",
+            "3ff8d1fc1aed2a15",
+            "deeeb5acf7a3de10",
+            "bb48603eda50e98a",
+            "9d6002f1c399a1ee",
+            "48ab3b8dcc64e146",
+            "43f2bbe4c9d0194d"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "f773ce86d635f6c2",
+            "d80892b6689015ab",
+            "faf58c6dc9140ef5",
+            "f95dadf55897f873",
+            "40510c011dc20735",
+            "73cfbd78b2abf5a6",
+            "d060d2828d4588d5",
+            "1de6b02bdcbaa468"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 7,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "765856964cd5e918",
+            "2575318a1e0c462c",
+            "747bb429669f5f90",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "1cb783d8261953f7",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "9ebb74a88257e673"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 2,
+          "topk_ids": [
+            "6446d74bfdffc9a3",
+            "41495242e4463a9b",
+            "f0f42078523928ba",
+            "669f00181867969c",
+            "4ce3f33b254135a7",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "f01ed01905462a4d"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    },
+    "6.0": {
+      "n_queries": 30,
+      "recall_at_k": 0.4,
+      "mrr": 0.24309523809523811,
+      "mean_rank_of_gold": 3.0,
+      "wall_s": 34.303,
+      "per_query": [
+        {
+          "query": "export function InlineEdit({ onClose, id, scene }: Props)",
+          "rank": 0,
+          "topk_ids": [
+            "81aad5c405342b6a",
+            "53095f6e8fe4d861",
+            "3b49afab34d7cb8a",
+            "73c594451d536c71",
+            "578eb869841562c4",
+            "2d29f04c9ed28188",
+            "36301b65a140a5bf",
+            "04092fd257499aaf",
+            "05d989f4aa578906",
+            "1d591b545e256313"
+          ]
+        },
+        {
+          "query": "handle name when duplicating a variable twice', ()",
+          "rank": 0,
+          "topk_ids": [
+            "cf261125fc80d252",
+            "8c922065c7477709",
+            "459ea48732d1c310",
+            "95fdaf31aa6af10a",
+            "014232d3b73fafd0",
+            "414e6ace122c8e37",
+            "a5ae3e55934c127e",
+            "16d2c829b29628f8",
+            "75839cfbe2508e46",
+            "7f8194ae135a71d2"
+          ]
+        },
+        {
+          "query": "import { FormEvent } from 'react'; import *",
+          "rank": 4,
+          "topk_ids": [
+            "9a93c6a503c7f9fb",
+            "bb287d7f8025dd0b",
+            "6931bd5a85d61b4d",
+            "db4416f2ded0f543",
+            "e1ae7efdffec9694",
+            "a7b9fdff94ac429d",
+            "26c0f2891f9f2517",
+            "12dffa6bb8aad943",
+            "17895b0634118b24",
+            "3b54da06c3c62605"
+          ]
+        },
+        {
+          "query": "/* object-assign (c) Sindre Sorhus @license MIT */",
+          "rank": 3,
+          "topk_ids": [
+            "46e9023341a58589",
+            "11961cb68d95e890",
+            "fd41c6914471f44c",
+            "ba6ac9e7df0fd27d",
+            "1893ad145f0c60d6",
+            "8f6ee75005faf237",
+            "0f04c8cfa16d1fdf",
+            "deb74604086061d3",
+            "058f44bdb3f7cb9d",
+            "5c9bb1d124404ad8"
+          ]
+        },
+        {
+          "query": "import { css, cx, keyframes } from '@emotion/css';",
+          "rank": 0,
+          "topk_ids": [
+            "2cfa2127f684abf9",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9"
+          ]
+        },
+        {
+          "query": "type OperatorPredicate = (labelValue: string, matcherValue: string) =>",
+          "rank": 1,
+          "topk_ids": [
+            "ac7e99c8fb6b4802",
+            "2ae4230ff7223ae5",
+            "8e8a5d661715bafc",
+            "072feabe9a43ea69",
+            "0c01bafa40f29794",
+            "16607c8187af610f",
+            "3978870b35b0f09e",
+            "3fdceea5bb66bf75",
+            "86385eeb92ef0c9e",
+            "b01c9d59580478ac"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a",
+            "c8d27fa585a6b4bd",
+            "201ef28294d8e307",
+            "9b2cac7c61b0d0e6"
+          ]
+        },
+        {
+          "query": "a82)\" \\ \"v0.5: BigEd CC rebrand + GUI",
+          "rank": 0,
+          "topk_ids": [
+            "b26f160e8189eff2",
+            "dec1e3ca1b62c1e2",
+            "7b7a24f71ca85412",
+            "56e1ff890edae27f",
+            "aba748bf0cc269c0",
+            "462b485785b22cb2",
+            "7e0ebc0b5ab66d6f",
+            "b7f6b36ed05d2dbe",
+            "773f755d9c089d3b",
+            "ad131445f1c3f558"
+          ]
+        },
+        {
+          "query": "export const WindowOptionsEditor = (props: { options: CalculateFieldTransformerOptions;",
+          "rank": 1,
+          "topk_ids": [
+            "a5d8a7eed894a13a",
+            "85ec8245aae1f596",
+            "e896265d2b153766",
+            "3cb3d6c2f5c1f2ca",
+            "8884d34a6c21f700",
+            "b927f917a27c89c9",
+            "c93cb2a3d4932a86",
+            "0357a81b0795cda3",
+            "04092fd257499aaf",
+            "05d989f4aa578906"
+          ]
+        },
+        {
+          "query": "\"use strict\";(self.webpackChunk_grafana_ui=self.webpackChunk_grafana_ui||[]).push([[8550],{\"../../node_modules/@storybook/addon-actions/dist/index.mjs\":function(__unused_webpack_module,__webpack_exports__,__webpack_require__){__webpack_require__.d(__webpack_exports__,{XI:function(){return action}});var v4=__webpack_require__(\"../../node_modules/uuid/dist/esm-browser/v4.js\"),external_STORYBOOK_MODULE_PREVIEW_API_=__webpack_require__(\"@storybook/preview-api\"),external_STORYBOOK_MODULE_GLOBAL_=__webpack_require__(\"@storybook/global\"),external_STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS_=__webpack_require__(\"@storybook/core-events/preview-errors\"),ADDON_ID=\"storybook/actions\",EVENT_ID=`${ADDON_ID}/action-event`,config={depth:10,clearOnStoryChange:!0,limit:50},findProto=(obj,callback)=>{let proto=Object.getPrototypeOf(obj);return!proto||callback(proto)?proto:findProto(proto,callback)},serializeArg=a=>{if(\"object\"==typeof(e=a)&&e&&findProto(e,(proto=>/^Synthetic(?:Base)?Event$/.test(proto.constructor.name)))&&\"function\"==typeof e.persist){let e=Object.create(a.constructor.prototype,Object.getOwnPropertyDescriptors(a));e.persist();let viewDescriptor=Object.getOwnPropertyDescriptor(e,\"view\"),view=viewDescriptor?.value;return\"object\"==typeof",
+          "rank": 0,
+          "topk_ids": [
+            "435602547d892f4f",
+            "f9c537d00611a0cb",
+            "80d675af6b99e374",
+            "16a9f921bb72fc77",
+            "a308cbb51be5809f",
+            "1a0b86cc4ac846da",
+            "0c0e35fa4eef3236",
+            "eec9abbc70eae6f1",
+            "12892c22f8a869a6",
+            "289e52434b8dd40e"
+          ]
+        },
+        {
+          "query": "--- description: Upload a JSON trace file to",
+          "rank": 1,
+          "topk_ids": [
+            "d6ffd8f46f3a76f8",
+            "ce08e35801dca70f",
+            "cf261125fc80d252",
+            "166c7b4345e38434",
+            "214fa0961ed7cdce",
+            "a289b465fe26e5b1",
+            "c768ac048ac3fc3a",
+            "3c9fab65681dae08",
+            "7bc451cdadfc6f30",
+            "245a3ee59310101b"
+          ]
+        },
+        {
+          "query": "import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil }",
+          "rank": 0,
+          "topk_ids": [
+            "a3524f21134d2b33",
+            "de97e9454cff8be0",
+            "0e18769d68471bda",
+            "2fe67c97ae55e3df",
+            "5a5868f1573694ad",
+            "6c3277ed6e8117f3",
+            "a5a81a23ebab946c",
+            "cbd7cf8b08dc5d0e",
+            "cc20f385093d17ea",
+            "d3e21aaa84d37c9c"
+          ]
+        },
+        {
+          "query": "// eslint-disable-next-line lodash/import-scope import _ from 'lodash'; /*",
+          "rank": 0,
+          "topk_ids": [
+            "e9a227e0b8ae51be",
+            "f0d5878d0bda9a4b",
+            "508cbfd595e94523",
+            "a5ff0277b5cf396f",
+            "cc0f3fe7ecdc37f5",
+            "b14c933928d79cae",
+            "fea1deb4997146fa",
+            "3586a591631e9dc1",
+            "23e5107dd1e9ebdc",
+            "21a212faaaf15b00"
+          ]
+        },
+        {
+          "query": "import { reduceError } from './utils'; const SAMPLE_500_PAGE",
+          "rank": 0,
+          "topk_ids": [
+            "cbd7cf8b08dc5d0e",
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0308238217c4b019",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2f9e1fe210620ce2",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93"
+          ]
+        },
+        {
+          "query": "# fleet/factorio/world_model.py \"\"\"Persistent in-memory world state with diffing",
+          "rank": 6,
+          "topk_ids": [
+            "1831b0682e2473be",
+            "451b7d020d3dfc70",
+            "7b9ff53f68eeeaf5",
+            "588a3e533d6af046",
+            "774aa2540253f84e",
+            "29e978712948b533",
+            "f280a84b24b492a8",
+            "5f84a29b7a2ec75f",
+            "68f2cf6e157d4463",
+            "79214901cacda8e0"
+          ]
+        },
+        {
+          "query": "export const RoutingSettings = ({ alertManager }: RoutingSettingsProps)",
+          "rank": 0,
+          "topk_ids": [
+            "268f98fafbd85ae1",
+            "8bb69fbb6967c531",
+            "7c5041b497ddd195",
+            "d5f0ca85995fb948",
+            "e9ba57c4518fe30f",
+            "f9c3eb5fa8b3ee81",
+            "539136278fdb16f2",
+            "67ef3893819b575c",
+            "85c7ed33970100e5",
+            "cd6faf5c762b6f64"
+          ]
+        },
+        {
+          "query": "import { setKustoQuery } from '../components/LogsQueryEditor/setQueryValue'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "/* =================================================== * bootstrap-transition.js v2.3.2 * http://getbootstrap.com/2.3.2/javascript.html#transitions *",
+          "rank": 1,
+          "topk_ids": [
+            "4b5b32feaca88768",
+            "639b84c4ec0e1f25",
+            "d520f54a0db23624",
+            "65b81170b4559b83",
+            "8593ce5ae75c389c",
+            "1aace5fe941c31f2",
+            "f78c34ab731e1759",
+            "0ee14d63c4d7c4ca",
+            "8b78ed2b22eccde3",
+            "30987cc3122e9d5f"
+          ]
+        },
+        {
+          "query": "<refreshPicker.Component model={refreshPicker} /> </Stack> )} {showDebugger && <SceneDebugger",
+          "rank": 1,
+          "topk_ids": [
+            "85b3a03b6b15305a",
+            "51424680a7b67ae4",
+            "e1edf32537c2d8b7",
+            "1d0ce23d7866ef0a",
+            "a5c8836d437ca673",
+            "0b217b9985be7f39",
+            "94c66d956d45ee2d",
+            "0827e005410d38f7",
+            "e86aedd0f5d21ed1",
+            "dc5fa9e1e4d38a11"
+          ]
+        },
+        {
+          "query": "import { useRegisterActions, useKBar, Action, Priority } from",
+          "rank": 0,
+          "topk_ids": [
+            "de97e9454cff8be0",
+            "02fb281f6858a71b",
+            "0b04f5d679828f9a",
+            "0dd9bbc8dcdc7274",
+            "2217dd43451692bf",
+            "2fe67c97ae55e3df",
+            "38d829c5268e7f93",
+            "416e0c1fde8dde29",
+            "441a54b348ad6bf9",
+            "48ecdc2bc85cdb17"
+          ]
+        },
+        {
+          "query": "n, \" \"raw_amount, status, import_batch_id) \" \"VALUES (?,",
+          "rank": 5,
+          "topk_ids": [
+            "44749a83517e5c16",
+            "8e7c2bd600adb01b",
+            "9b25e2633227fdce",
+            "f773ce86d635f6c2",
+            "a70ebf63a5914bfa",
+            "cdae6f3f7c37cc78",
+            "3e82fa4beca6b632",
+            "8141b59a428e85c2",
+            "5c4c120de70704a2",
+            "181e7088c10396ea"
+          ]
+        },
+        {
+          "query": "import { PanelModel } from '@grafana/data'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "87dfc0036a79d813",
+            "9c067fd8aedd1771",
+            "83dd38c055940a46",
+            "889e9c4038b85b1e",
+            "3a688b1e149d416d",
+            "b29a2be7708fa7d3",
+            "f1d185e13d9d4491",
+            "519c8406f3592416",
+            "7118cfda349971c5",
+            "7cb0e4dccb0200d5"
+          ]
+        },
+        {
+          "query": "# Code Write Review \u2014 2026-03-29 07:53 **Reviewer**:",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "ac573e9dc884efd3",
+            "47f806c5383b2bdd",
+            "6c0ba404e3222e66",
+            "f6d670bcff8fb15f",
+            "fa031d81716dfbb1",
+            "2601d1cc8455b1b6",
+            "dd0d84c7f87c41e1",
+            "e628ac5a79f65f3f"
+          ]
+        },
+        {
+          "query": "import { css } from '@emotion/css'; import *",
+          "rank": 0,
+          "topk_ids": [
+            "f344119eee29ab25",
+            "4797a3f65ea21914",
+            "9309ac595389e552",
+            "61da55f5a5b0660c",
+            "aa5e9c0f815ef360",
+            "b903d6ef1934f86a",
+            "3dcb639233f30c60",
+            "fce27d7a384e5774",
+            "e0431b2fdbe18010",
+            "06854074b1c95c5b"
+          ]
+        },
+        {
+          "query": "## [coder_2] \ufffd code critic / reviewer -",
+          "rank": 0,
+          "topk_ids": [
+            "cccec0d56aafd7a8",
+            "d657a02912b64b83",
+            "ac573e9dc884efd3",
+            "54d794059a491bac",
+            "92c711c86127f661",
+            "6ef69db0b628d6e9",
+            "7084a802717f740a",
+            "c8d27fa585a6b4bd",
+            "201ef28294d8e307",
+            "9b2cac7c61b0d0e6"
+          ]
+        },
+        {
+          "query": "## Deployment Matrix | Scenario | Track |",
+          "rank": 7,
+          "topk_ids": [
+            "fbc8219f4291eab8",
+            "22a110479161c6f7",
+            "167a6bd99195adba",
+            "1f0b3d3eb0bb4abb",
+            "3306ad79f9ea3443",
+            "77b17f6f0326cc8a",
+            "81746f7afa793f10",
+            "d16010135621b0c8",
+            "7b0540c37a9da6d0",
+            "0a343f75c3addf8a"
+          ]
+        },
+        {
+          "query": "import { useAsync } from 'react-use'; import {",
+          "rank": 0,
+          "topk_ids": [
+            "5efb9d37ed3f9c8d",
+            "e9bf6d4e7616e978",
+            "58582271498054f8",
+            "bb48603eda50e98a",
+            "9d6002f1c399a1ee",
+            "48ab3b8dcc64e146",
+            "43f2bbe4c9d0194d",
+            "da38b917ebbff8e1",
+            "8f488342fb2b188d",
+            "a4be41ab6cabc15b"
+          ]
+        },
+        {
+          "query": "def test_resolve_recommends_warning(): from dep_resolver import parse_manifest_dict, build_dependency_graph, resolve",
+          "rank": 0,
+          "topk_ids": [
+            "6c9661ca4d4780b2",
+            "cc79da6648d70a80",
+            "f773ce86d635f6c2",
+            "d80892b6689015ab",
+            "faf58c6dc9140ef5",
+            "f95dadf55897f873",
+            "40510c011dc20735",
+            "73cfbd78b2abf5a6",
+            "d060d2828d4588d5",
+            "1de6b02bdcbaa468"
+          ]
+        },
+        {
+          "query": "# PORT_NOTES \u2014 Retrieval Manifold Port ## 1.",
+          "rank": 5,
+          "topk_ids": [
+            "3b8b40c05342739e",
+            "765856964cd5e918",
+            "2575318a1e0c462c",
+            "747bb429669f5f90",
+            "1cb783d8261953f7",
+            "bc6356affcad9615",
+            "c42e1440be8d8f8c",
+            "028df855ce4d7800",
+            "18c43dd114e30497",
+            "9ebb74a88257e673"
+          ]
+        },
+        {
+          "query": "ed, undefined, () => [ { id: PANEL_FILTER_VARIABLE,",
+          "rank": 1,
+          "topk_ids": [
+            "41495242e4463a9b",
+            "6446d74bfdffc9a3",
+            "f0f42078523928ba",
+            "669f00181867969c",
+            "4ce3f33b254135a7",
+            "3a3d24b0df04d2ce",
+            "617d4d0ec2df09cd",
+            "908ee4fcb5fcc533",
+            "21006328c33331cf",
+            "f01ed01905462a4d"
+          ]
+        }
+      ],
+      "gold_evicted_vs_baseline": 0
+    }
+  }
+}
