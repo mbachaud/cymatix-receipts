@@ -1,12 +1,57 @@
 {
- "generated_at": "2026-09-01T22:12:02+00:00",
+ "generated_at": "2026-09-01T22:38:21+00:00",
  "source_commit": "2644c3e44038bf285eb6a5484817bd4c3de126c6",
  "schema_notes": {
   "paths": "receipt paths are relative to the clone root; mirrored receipts start with mirror/. BASELINES.md cites the same files without that prefix.",
   "basis": "delivered = post-budget delivery slice (delivered_gold_rate). final = final ranked order handed downstream (final_recall_at_12). map = candidate-pool / score-map recall (recall_at_12). delivered and final are different metrics and are never merged.",
   "shipped_default": "computed mechanically for ladder receipts: true only when the arm is named baseline, runs the repo cymatix.toml, and overrides no knobs. An arm that merely re-pins the shipped value in its own config TOML reads false.",
-  "nulls": "a null field means the source does not state that number. Nothing is estimated or back-filled."
+  "nulls": "a null field means the source does not state that number. Nothing is estimated or back-filled.",
+  "branches": "rows whose receipt path starts with mirror-branches/ come from a branch that is NOT merged at source_commit. Each such row names the branch, its PR and its exported head sha in notes, read from that directory's SOURCE.md. Where a branch file also exists under mirror/, the master-pinned copy wins and an identical branch copy is skipped; a differing branch copy is kept as its own row with both named."
  },
+ "branch_mirrors": [
+  {
+   "slug": "bench__semantic-portfolio",
+   "branch": "bench/semantic-portfolio",
+   "pr": "#426",
+   "head": "b5eb803d3f634b225185186bf8f3539105c3e194",
+   "diff_base": "2644c3e44038bf285eb6a5484817bd4c3de126c6"
+  },
+  {
+   "slug": "claude__architecture-hunt-research-e4ee87",
+   "branch": "claude/architecture-hunt-research-e4ee87",
+   "pr": "local only, no PR",
+   "head": "2ebafd998fbf4c0851cb4b17f15a297d259521eb",
+   "diff_base": "b5eb803d3f634b225185186bf8f3539105c3e194"
+  },
+  {
+   "slug": "claude__cutoff-paraphrase-gene-issues-a77235",
+   "branch": "claude/cutoff-paraphrase-gene-issues-a77235",
+   "pr": "#427",
+   "head": "b266fb814b45af8175070ebc678f09c487450d2d",
+   "diff_base": "2644c3e44038bf285eb6a5484817bd4c3de126c6"
+  },
+  {
+   "slug": "claude__w22-eps-band-coverage",
+   "branch": "claude/w22-eps-band-coverage",
+   "pr": "#428",
+   "head": "c05f171ab346f99239d5de38d3f5f79f533891ec",
+   "diff_base": "2644c3e44038bf285eb6a5484817bd4c3de126c6"
+  },
+  {
+   "slug": "perf__fts5-ingest-decay",
+   "branch": "perf/fts5-ingest-decay",
+   "pr": "#424",
+   "head": "a565dd615c542c1c8d1dbdd5d25e80f08bb37fc3",
+   "diff_base": "2644c3e44038bf285eb6a5484817bd4c3de126c6"
+  },
+  {
+   "slug": "perf__hub-cutoff-default-200",
+   "branch": "perf/hub-cutoff-default-200",
+   "pr": "#425",
+   "head": "3afa19391015808111cc365beb1a560fe212f90a",
+   "diff_base": "2644c3e44038bf285eb6a5484817bd4c3de126c6"
+  }
+ ],
  "beds": [
   {
    "id": "dogfood",
@@ -129,6 +174,16 @@
    "notes": "BASELINES.md row 2026-08-30-entity-hub-cutoff-retrieval-ab: paired with enronqa_v2, differing ONLY in entity_autolink_hub_cutoff (0 vs 200). Gene-id-set digests are IDENTICAL, so the beds are content-equal and only relation=5 COVER edges differ."
   },
   {
+   "id": "enronqa_v3",
+   "family": "enronqa",
+   "genes": 84677,
+   "size_bytes": null,
+   "tagger_version": 2,
+   "ingest_c": "unknown",
+   "identity": null,
+   "notes": "F:/tmp/enronqa_bed_v3/enronqa.db, the tagger-v2 rebuild of the EnronQA corpus. genes from the subject block of entity_hub_cutoff_reprobe_85k_taggerv2_2026-08-31.json (84,677, bed_stable_during_run true). Same gene count as enronqa_v2 but a different tagger version, so the two are not cross-comparable. No retrieval measurement against this bed is archived."
+  },
+  {
    "id": "erb_100k",
    "family": "erb",
    "genes": 100000,
@@ -211,32 +266,42 @@
   {
    "id": "financebench",
    "family": "financebench",
-   "genes": null,
-   "size_bytes": null,
-   "tagger_version": null,
-   "ingest_c": null,
+   "genes": 73759,
+   "size_bytes": 910073856,
+   "tagger_version": 2,
+   "ingest_c": "unknown",
    "identity": null,
-   "notes": "FinanceBench bed. NOT present in this archive. Named only by research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md ('FinanceBench baseline blackout'). No receipt mirrored; see `missing`."
+   "notes": "FinanceBench bed, F:/tmp/financebench_bed/financebench.db, page-level gold over 368 filings. genes and tagger_version from mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-financebench-baseline-note.md ('73,759-gene tagger-v2 bed'); size_bytes = bed_bytes in the baseline ladder receipt. The note records two bed-design factors: pypdf table extraction is rough and per-page chunking splits financial statements."
   },
   {
    "id": "locomo",
    "family": "locomo",
-   "genes": null,
-   "size_bytes": null,
-   "tagger_version": null,
-   "ingest_c": null,
+   "genes": 6276,
+   "size_bytes": 19738624,
+   "tagger_version": 2,
+   "ingest_c": "unknown",
    "identity": null,
-   "notes": "LoCoMo bed. NOT present in this archive. Named only by research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md and 2026-08-31-plan-red-team.md (semantic-portfolio-lane doc in worktree vigilant-wu-5416d6). No receipt mirrored; see `missing`."
+   "notes": "LoCoMo bed, F:/tmp/locomo_bed/locomo.db, turns plus cues. genes from obs_enrichment_threeway_2026-08-31.json ('6,276 genes: turns+cues'); size_bytes from the baseline ladder receipt. tagger_version 2 per the lane doc ('tagger-v2 bed'). ingest_c unknown: the doc's build-mode line ('locomo sequential (tiny)') is a plan, not a build record."
+  },
+  {
+   "id": "locomo_obs",
+   "family": "locomo",
+   "genes": 8817,
+   "size_bytes": 27435008,
+   "tagger_version": 2,
+   "ingest_c": "unknown",
+   "identity": null,
+   "notes": "LoCoMo bed enriched with observation documents, F:/tmp/locomo_obs_bed/locomo_obs.db. genes from obs_enrichment_threeway_2026-08-31.json ('8,817 genes: turns+cues+2,541 observation docs'). Two arms run against this one file with different gold sets: locomo_obs (union gold) and locomo_obs_ctl (turn-only gold, the displacement control), so it is a bed-and-gold A/B against bed locomo, not a same-bed ablation."
   },
   {
    "id": "muloc",
    "family": "muloc",
-   "genes": null,
-   "size_bytes": null,
-   "tagger_version": null,
-   "ingest_c": null,
+   "genes": 108375,
+   "size_bytes": 1713176576,
+   "tagger_version": 2,
+   "ingest_c": "unknown",
    "identity": null,
-   "notes": "MULocBench bed. NOT present in this archive: no manifest entry, no receipt. Named only by research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md, which cites benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json (listed under `missing`). Every field here is null on purpose."
+   "notes": "MULocBench bed, F:/tmp/muloc_bed/muloc.db. genes and tagger_version from the bed string in muloc_budget_ab_2026-08-31.json ('108,375 genes, tagger v2, hub cutoff 200'); size_bytes is the smallest bed_bytes across the three muloc ladder receipts. ingest_c is unknown: the lane doc says only 'muloc may run parallel c=6', which is a plan line, not a record of the build. tagger_version 2 makes this bed NOT comparable with any ERB or EnronQA bed under the BASELINES tagger rule. Known state hazard: the budget A/B receipt records ~71-75 of 680 cross-run rank jitter cold-vs-cold on this bed and asks for a determinism card."
   },
   {
    "id": "enterprise_rag_10k",
@@ -1903,7 +1968,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-classifier",
@@ -1922,7 +1987,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"classifier.enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"classifier.enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-cymatics",
@@ -1941,7 +2006,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"cymatics.enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=14 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"cymatics.enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=14 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-dense",
@@ -1960,7 +2025,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"retrieval.dense_embedding_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=23 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=23 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-sema",
@@ -1979,7 +2044,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-splade",
@@ -1998,7 +2063,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:ablation_ladder_100k#no-synonyms",
@@ -2017,7 +2082,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "8bd356e725b38bd57107e8f83b329c5586055ad7",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6426775552"
   },
   {
    "id": "m:full469_nosplade_c1#baseline",
@@ -2036,7 +2101,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "f581c704ec96f6c6cfaaa23546eb6df5561b687d",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it receipt predates the delivered_gold_rate field; it records delivered_gold_queries=197 of n_queries=469 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391592960"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=197 of n_queries=469 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391592960"
   },
   {
    "id": "m:full469_nosplade_c1#no-splade",
@@ -2055,7 +2120,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "f581c704ec96f6c6cfaaa23546eb6df5561b687d",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=197 of n_queries=469 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391592960"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=197 of n_queries=469 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391592960"
   },
   {
    "id": "m:nosplade_bed_validation#baseline",
@@ -2074,7 +2139,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=3 of n_queries=10 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391347200"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=3 of n_queries=10 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391347200"
   },
   {
    "id": "m:nosplade_bed_validation#no-splade",
@@ -2093,7 +2158,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=3 of n_queries=10 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391347200"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=3 of n_queries=10 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34391347200"
   },
   {
    "id": "m:rerank_ab_829k_probe30_run1_ladder#baseline-rerank-off-829k-toml",
@@ -2112,7 +2177,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d2f70b359c40f3b10b081c1ec7a383623d5dce90",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391609344"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391609344"
   },
   {
    "id": "m:rerank_ab_829k_probe30_run1_ladder#rerank-on-rerank-off-829k-toml",
@@ -2131,7 +2196,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d2f70b359c40f3b10b081c1ec7a383623d5dce90",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391609344"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391609344"
   },
   {
    "id": "m:rerank_ab_829k_probe30_run2_ladder#baseline-rerank-on-829k-toml",
@@ -2150,7 +2215,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d2f70b359c40f3b10b081c1ec7a383623d5dce90",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391625728"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391625728"
   },
   {
    "id": "m:rerank_ab_829k_probe30_run2_ladder#rerank-off-rerank-on-829k-toml",
@@ -2169,7 +2234,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d2f70b359c40f3b10b081c1ec7a383623d5dce90",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391625728"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391625728"
   },
   {
    "id": "m:rerank_ab_829k_probe30_sumtext_run1_ladder#baseline-rerank-off-829k-toml",
@@ -2188,7 +2253,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391638016"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391638016"
   },
   {
    "id": "m:rerank_ab_829k_probe30_sumtext_run1_ladder#rerank-on-rerank-off-829k-toml",
@@ -2207,7 +2272,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391638016"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391638016"
   },
   {
    "id": "m:rerank_ab_829k_probe30_sumtext_run2_ladder#baseline-rerank-on-829k-toml",
@@ -2226,7 +2291,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391650304"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391650304"
   },
   {
    "id": "m:rerank_ab_829k_probe30_sumtext_run2_ladder#rerank-off-rerank-on-829k-toml",
@@ -2245,7 +2310,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391650304"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391650304"
   },
   {
    "id": "m:rerank_ab_829k_run1_ladder#baseline-rerank-off-829k-toml",
@@ -2264,7 +2329,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "bc891bac3b54c2ec6df988197c4a16159ebbdadc",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391592960"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391592960"
   },
   {
    "id": "m:rerank_ab_829k_run1_ladder#rerank-on-rerank-off-829k-toml",
@@ -2283,7 +2348,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "bc891bac3b54c2ec6df988197c4a16159ebbdadc",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391592960"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391592960"
   },
   {
    "id": "m:rerank_ab_829k_run2_ladder#baseline-rerank-on-829k-toml",
@@ -2302,7 +2367,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "bc891bac3b54c2ec6df988197c4a16159ebbdadc",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391597056"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391597056"
   },
   {
    "id": "m:rerank_ab_829k_run2_ladder#rerank-off-rerank-on-829k-toml",
@@ -2321,7 +2386,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "bc891bac3b54c2ec6df988197c4a16159ebbdadc",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391597056"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391597056"
   },
   {
    "id": "m:sema_ab_100k_run1#baseline",
@@ -2340,7 +2405,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447853568"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447853568"
   },
   {
    "id": "m:sema_ab_100k_run1#no-sema",
@@ -2359,7 +2424,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447853568"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447853568"
   },
   {
    "id": "m:sema_ab_100k_run2#baseline",
@@ -2378,7 +2443,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447865856"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447865856"
   },
   {
    "id": "m:sema_ab_100k_run2#no-sema",
@@ -2397,7 +2462,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447865856"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.sema_embed_on_ingest\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447865856"
   },
   {
    "id": "m:splade_ab_10k#baseline",
@@ -2416,7 +2481,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=8 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 704892928"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=8 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 704892928"
   },
   {
    "id": "m:splade_ab_10k#no-splade",
@@ -2435,7 +2500,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=8 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 704892928"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=8 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 704892928"
   },
   {
    "id": "m:splade_ab_blob_run1#baseline",
@@ -2454,7 +2519,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "3f9ab7ae514afed3625a575c88094b8110760e4e",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724590592"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724590592"
   },
   {
    "id": "m:splade_ab_blob_run1#no-splade",
@@ -2473,7 +2538,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "3f9ab7ae514afed3625a575c88094b8110760e4e",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724590592"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724590592"
   },
   {
    "id": "m:splade_ab_blob_run2#baseline",
@@ -2492,7 +2557,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "3f9ab7ae514afed3625a575c88094b8110760e4e",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724602880"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724602880"
   },
   {
    "id": "m:splade_ab_blob_run2#no-splade",
@@ -2511,7 +2576,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "3f9ab7ae514afed3625a575c88094b8110760e4e",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724602880"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 56724602880"
   },
   {
    "id": "m:splade_ab_dogfood#baseline",
@@ -2530,7 +2595,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=9 of n_queries=18 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 267567104"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: gene_ids. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=9 of n_queries=18 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 267567104"
   },
   {
    "id": "m:splade_ab_dogfood#no-splade",
@@ -2549,7 +2614,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "d3c73ab6d8b14d72b4835244c757c9a1f2511ad9",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=9 of n_queries=18 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 267567104"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: gene_ids. knobs_changed: {\"ingestion.splade_enabled\": false} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=9 of n_queries=18 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 267567104"
   },
   {
    "id": "m:synonyms_ab_100k_run1#baseline",
@@ -2568,7 +2633,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b57bef6f86c01a1b1847fac83ff294b9dfe6bf9d",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447882240"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447882240"
   },
   {
    "id": "m:synonyms_ab_100k_run1#no-synonyms",
@@ -2587,7 +2652,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b57bef6f86c01a1b1847fac83ff294b9dfe6bf9d",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447882240"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447882240"
   },
   {
    "id": "m:synonyms_ab_100k_run2#baseline",
@@ -2606,7 +2671,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b57bef6f86c01a1b1847fac83ff294b9dfe6bf9d",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447894528"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447894528"
   },
   {
    "id": "m:synonyms_ab_100k_run2#no-synonyms",
@@ -2625,7 +2690,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b57bef6f86c01a1b1847fac83ff294b9dfe6bf9d",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447894528"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"synonym_map\": {}} receipt predates the delivered_gold_rate field; it records delivered_gold_queries=15 of n_queries=30 receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6447894528"
   },
   {
    "id": "m:rerank_ab_100k_run1_ladder#baseline-rerank-off-100k-toml",
@@ -2644,7 +2709,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "994f4c5110209b1cf3cba54e497f330cb8d64ed1",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 6447906816"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 6447906816"
   },
   {
    "id": "m:rerank_ab_100k_run1_ladder#rerank-on-rerank-off-100k-toml",
@@ -2663,7 +2728,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "994f4c5110209b1cf3cba54e497f330cb8d64ed1",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 6447906816"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 6447906816"
   },
   {
    "id": "m:rerank_ab_100k_run2_ladder#baseline-rerank-on-100k-toml",
@@ -2682,7 +2747,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "994f4c5110209b1cf3cba54e497f330cb8d64ed1",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 6447919104"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 6447919104"
   },
   {
    "id": "m:rerank_ab_100k_run2_ladder#rerank-off-rerank-on-100k-toml",
@@ -2701,7 +2766,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "994f4c5110209b1cf3cba54e497f330cb8d64ed1",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 6447919104"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 6447919104"
   },
   {
    "id": "m:rerank_ab_829k_first30_sumtext_run1_ladder#baseline-rerank-off-829k-toml",
@@ -2720,7 +2785,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391662592"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391662592"
   },
   {
    "id": "m:rerank_ab_829k_first30_sumtext_run1_ladder#rerank-on-rerank-off-829k-toml",
@@ -2739,7 +2804,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391662592"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 34391662592"
   },
   {
    "id": "m:rerank_ab_829k_first30_sumtext_run2_ladder#baseline-rerank-on-829k-toml",
@@ -2758,7 +2823,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 34391678976"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 34391678976"
   },
   {
    "id": "m:rerank_ab_829k_first30_sumtext_run2_ladder#rerank-off-rerank-on-829k-toml",
@@ -2777,7 +2842,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "6d1701d5093cc6caf6cf0ce91ef082497fdc6671",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391678976"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 34391678976"
   },
   {
    "id": "m:rerank_ab_dogfood_run1_ladder#baseline-rerank-off-dogfood-toml",
@@ -2796,7 +2861,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "cd8ec6b1b7b07492a3f62d66bb7bb6adb0bd73be",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 269709312"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 269709312"
   },
   {
    "id": "m:rerank_ab_dogfood_run1_ladder#rerank-on-rerank-off-dogfood-toml",
@@ -2815,7 +2880,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "cd8ec6b1b7b07492a3f62d66bb7bb6adb0bd73be",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 269709312"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": true} bed_bytes at run time: 269709312"
   },
   {
    "id": "m:rerank_ab_dogfood_run2_ladder#baseline-rerank-on-dogfood-toml",
@@ -2834,7 +2899,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "cd8ec6b1b7b07492a3f62d66bb7bb6adb0bd73be",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 269713408"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 269713408"
   },
   {
    "id": "m:rerank_ab_dogfood_run2_ladder#rerank-off-rerank-on-dogfood-toml",
@@ -2853,7 +2918,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "cd8ec6b1b7b07492a3f62d66bb7bb6adb0bd73be",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 269713408"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. knobs_changed: {\"retrieval.rerank_enabled\": false} bed_bytes at run time: 269713408"
   },
   {
    "id": "m:wave3d_cymatics_354_100k_carve#a-shipped-md5-bins-spread-1-55",
@@ -2986,7 +3051,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "db64692ad946ea523c01be59c18bd88a6e6a3814",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it bed_bytes at run time: 6448795648"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. bed_bytes at run time: 6448795648"
   },
   {
    "id": "m:pki_ab_100k_run1#no-pki",
@@ -3005,7 +3070,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "db64692ad946ea523c01be59c18bd88a6e6a3814",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"retrieval.pki_enabled\": false} bed_bytes at run time: 6448795648"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": false} bed_bytes at run time: 6448795648"
   },
   {
    "id": "m:pki_ab_100k_run1#no-splade-no-pki",
@@ -3024,7 +3089,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "db64692ad946ea523c01be59c18bd88a6e6a3814",
-   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it knobs_changed: {\"ingestion.splade_enabled\": false, \"retrieval.pki_enabled\": false} bed_bytes at run time: 6448795648"
+   "notes": "campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": false, \"retrieval.pki_enabled\": false} bed_bytes at run time: 6448795648"
   },
   {
    "id": "m:pki_ab_100k_run2_pkioff_base#baseline-cymatix-pki-off-toml",
@@ -3043,7 +3108,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "db64692ad946ea523c01be59c18bd88a6e6a3814",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 6448803840"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 6448803840"
   },
   {
    "id": "m:pki_ab_100k_run3_bothoff_base#baseline-cymatix-both-off-toml",
@@ -3062,7 +3127,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "db64692ad946ea523c01be59c18bd88a6e6a3814",
-   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright bed_bytes at run time: 6448812032"
+   "notes": "campaign attributed by date: the only write-up from this day, which does not name the receipt outright needle/gold set directory: erb. bed_bytes at run time: 6448812032"
   },
   {
    "id": "m:enc_iso_100k_run1_fwd#baseline-enc-all-off-toml",
@@ -3081,7 +3146,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "bed_bytes at run time: 6448840704"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 6448840704"
   },
   {
    "id": "m:enc_iso_100k_run1_fwd#dense-on-enc-all-off-toml",
@@ -3100,7 +3165,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 6448840704"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 6448840704"
   },
   {
    "id": "m:enc_iso_100k_run1_fwd#pki-on-enc-all-off-toml",
@@ -3119,7 +3184,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 6448840704"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 6448840704"
   },
   {
    "id": "m:enc_iso_100k_run1_fwd#splade-on-enc-all-off-toml",
@@ -3138,7 +3203,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 6448840704"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 6448840704"
   },
   {
    "id": "m:enc_iso_100k_run2_rev#baseline-enc-all-off-toml",
@@ -3157,7 +3222,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "bed_bytes at run time: 6448865280"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 6448865280"
   },
   {
    "id": "m:enc_iso_100k_run2_rev#dense-on-enc-all-off-toml",
@@ -3176,7 +3241,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 6448865280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 6448865280"
   },
   {
    "id": "m:enc_iso_100k_run2_rev#pki-on-enc-all-off-toml",
@@ -3195,7 +3260,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 6448865280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 6448865280"
   },
   {
    "id": "m:enc_iso_100k_run2_rev#splade-on-enc-all-off-toml",
@@ -3214,7 +3279,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "d6b25d305f19b2ff3a8804cfe662218687320760",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 6448865280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 6448865280"
   },
   {
    "id": "m:enc_iso_250k_run1_fwd#baseline-enc-all-off-toml",
@@ -3233,7 +3298,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 15826972672"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 15826972672"
   },
   {
    "id": "m:enc_iso_250k_run1_fwd#dense-on-enc-all-off-toml",
@@ -3252,7 +3317,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 15826972672"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 15826972672"
   },
   {
    "id": "m:enc_iso_250k_run1_fwd#pki-on-enc-all-off-toml",
@@ -3271,7 +3336,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 15826972672"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 15826972672"
   },
   {
    "id": "m:enc_iso_250k_run1_fwd#splade-on-enc-all-off-toml",
@@ -3290,7 +3355,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 15826972672"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 15826972672"
   },
   {
    "id": "m:enc_iso_250k_run2_rev#baseline-enc-all-off-toml",
@@ -3309,7 +3374,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 15826997248"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 15826997248"
   },
   {
    "id": "m:enc_iso_250k_run2_rev#dense-on-enc-all-off-toml",
@@ -3328,7 +3393,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 15826997248"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 15826997248"
   },
   {
    "id": "m:enc_iso_250k_run2_rev#pki-on-enc-all-off-toml",
@@ -3347,7 +3412,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 15826997248"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 15826997248"
   },
   {
    "id": "m:enc_iso_250k_run2_rev#splade-on-enc-all-off-toml",
@@ -3366,7 +3431,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 15826997248"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 15826997248"
   },
   {
    "id": "m:enc_iso_500k_run1_fwd#baseline-enc-all-off-toml",
@@ -3385,7 +3450,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 31249076224"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 31249076224"
   },
   {
    "id": "m:enc_iso_500k_run1_fwd#dense-on-enc-all-off-toml",
@@ -3404,7 +3469,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 31249076224"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 31249076224"
   },
   {
    "id": "m:enc_iso_500k_run1_fwd#pki-on-enc-all-off-toml",
@@ -3423,7 +3488,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 31249076224"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 31249076224"
   },
   {
    "id": "m:enc_iso_500k_run1_fwd#splade-on-enc-all-off-toml",
@@ -3442,7 +3507,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 31249076224"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 31249076224"
   },
   {
    "id": "m:enc_iso_500k_run2_rev#baseline-enc-all-off-toml",
@@ -3461,7 +3526,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 31249100800"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 31249100800"
   },
   {
    "id": "m:enc_iso_500k_run2_rev#dense-on-enc-all-off-toml",
@@ -3480,7 +3545,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 31249100800"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 31249100800"
   },
   {
    "id": "m:enc_iso_500k_run2_rev#pki-on-enc-all-off-toml",
@@ -3499,7 +3564,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 31249100800"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 31249100800"
   },
   {
    "id": "m:enc_iso_500k_run2_rev#splade-on-enc-all-off-toml",
@@ -3518,7 +3583,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 31249100800"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 31249100800"
   },
   {
    "id": "m:enc_iso_829k_dense_confirm_run1#baseline-enc-all-off-toml",
@@ -3537,7 +3602,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "6eb393e62463235d996a1c0363b1b4019c296135",
-   "notes": "bed_bytes at run time: 56723947520"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56723947520"
   },
   {
    "id": "m:enc_iso_829k_dense_confirm_run1#dense-on-enc-all-off-toml",
@@ -3556,7 +3621,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "6eb393e62463235d996a1c0363b1b4019c296135",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723947520"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723947520"
   },
   {
    "id": "m:enc_iso_829k_dense_confirm_run2#baseline-enc-all-off-toml",
@@ -3575,7 +3640,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "6eb393e62463235d996a1c0363b1b4019c296135",
-   "notes": "bed_bytes at run time: 56724185088"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56724185088"
   },
   {
    "id": "m:enc_iso_829k_dense_confirm_run2#dense-on-enc-all-off-toml",
@@ -3594,7 +3659,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "6eb393e62463235d996a1c0363b1b4019c296135",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56724185088"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56724185088"
   },
   {
    "id": "m:enc_iso_829k_run1_fwd#baseline-enc-all-off-toml",
@@ -3613,7 +3678,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 56723681280"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56723681280"
   },
   {
    "id": "m:enc_iso_829k_run1_fwd#dense-on-enc-all-off-toml",
@@ -3632,7 +3697,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723681280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723681280"
   },
   {
    "id": "m:enc_iso_829k_run1_fwd#pki-on-enc-all-off-toml",
@@ -3651,7 +3716,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 56723681280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 56723681280"
   },
   {
    "id": "m:enc_iso_829k_run1_fwd#splade-on-enc-all-off-toml",
@@ -3670,7 +3735,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56723681280"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56723681280"
   },
   {
    "id": "m:enc_iso_829k_run2_rev#baseline-enc-all-off-toml",
@@ -3689,7 +3754,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "bed_bytes at run time: 56723705856"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56723705856"
   },
   {
    "id": "m:enc_iso_829k_run2_rev#dense-on-enc-all-off-toml",
@@ -3708,7 +3773,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723705856"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.dense_embedding_enabled\": true} bed_bytes at run time: 56723705856"
   },
   {
    "id": "m:enc_iso_829k_run2_rev#pki-on-enc-all-off-toml",
@@ -3727,7 +3792,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 56723705856"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": true} bed_bytes at run time: 56723705856"
   },
   {
    "id": "m:enc_iso_829k_run2_rev#splade-on-enc-all-off-toml",
@@ -3746,7 +3811,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "fe9a74d70ed18ec6ae4908a93234be8813424e22",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56723705856"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56723705856"
   },
   {
    "id": "m:enc_iso_829k_nosplade_run1#baseline-enc-all-off-toml",
@@ -3765,7 +3830,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "8a087708a76ab783a34dcb12eec7074d5ad59be2",
-   "notes": "bed_bytes at run time: 34391937024"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 34391937024"
   },
   {
    "id": "m:enc_iso_829k_nosplade_run1#splade-on-enc-all-off-toml",
@@ -3784,7 +3849,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "8a087708a76ab783a34dcb12eec7074d5ad59be2",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 34391937024"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 34391937024"
   },
   {
    "id": "m:enc_iso_829k_nosplade_run2#baseline-enc-all-off-toml",
@@ -3803,7 +3868,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "8a087708a76ab783a34dcb12eec7074d5ad59be2",
-   "notes": "bed_bytes at run time: 34392174592"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 34392174592"
   },
   {
    "id": "m:enc_iso_829k_nosplade_run2#splade-on-enc-all-off-toml",
@@ -3822,7 +3887,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "8a087708a76ab783a34dcb12eec7074d5ad59be2",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 34392174592"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 34392174592"
   },
   {
    "id": "m:enc_iso_829k_splade_confirm_run1#baseline-enc-all-off-toml",
@@ -3841,7 +3906,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "f7e62e2f231c391853e411533418f4a4e5645cc8",
-   "notes": "bed_bytes at run time: 56724422656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56724422656"
   },
   {
    "id": "m:enc_iso_829k_splade_confirm_run1#splade-on-enc-all-off-toml",
@@ -3860,7 +3925,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "f7e62e2f231c391853e411533418f4a4e5645cc8",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56724422656"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56724422656"
   },
   {
    "id": "m:enc_iso_829k_splade_confirm_run2#baseline-enc-all-off-toml",
@@ -3879,7 +3944,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "f7e62e2f231c391853e411533418f4a4e5645cc8",
-   "notes": "bed_bytes at run time: 56724656128"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 56724656128"
   },
   {
    "id": "m:enc_iso_829k_splade_confirm_run2#splade-on-enc-all-off-toml",
@@ -3898,7 +3963,7 @@
    "baselines_row": "2026-08-14-encoder-isolation",
    "pr": null,
    "git_sha": "f7e62e2f231c391853e411533418f4a4e5645cc8",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56724656128"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true} bed_bytes at run time: 56724656128"
   },
   {
    "id": "m:postflip_default_confirm_829k#baseline",
@@ -3917,7 +3982,7 @@
    "baselines_row": "2026-08-17-postflip-remeasure",
    "pr": null,
    "git_sha": "00988493a43adbbfe8c15aab4fecad7c43825f75",
-   "notes": "bed_bytes at run time: 34392408064"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 34392408064"
   },
   {
    "id": "m:postflip_default_confirm_829k#no-pki",
@@ -3936,7 +4001,7 @@
    "baselines_row": "2026-08-17-postflip-remeasure",
    "pr": null,
    "git_sha": "00988493a43adbbfe8c15aab4fecad7c43825f75",
-   "notes": "knobs_changed: {\"retrieval.pki_enabled\": false} bed_bytes at run time: 34392408064"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"retrieval.pki_enabled\": false} bed_bytes at run time: 34392408064"
   },
   {
    "id": "m:neutralize_ab_100k#neutralize-off",
@@ -3955,7 +4020,7 @@
    "baselines_row": "2026-08-19-neutralize-ab",
    "pr": null,
    "git_sha": "6308d50801cdc889becbc471d0a6ea798bb2fe15",
-   "notes": "knobs_changed: {\"budget.neutralize_control_tags\": false} bed_bytes at run time: 6449012736"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"budget.neutralize_control_tags\": false} bed_bytes at run time: 6449012736"
   },
   {
    "id": "m:neutralize_ab_100k#neutralize-on",
@@ -3974,7 +4039,7 @@
    "baselines_row": "2026-08-19-neutralize-ab",
    "pr": null,
    "git_sha": "6308d50801cdc889becbc471d0a6ea798bb2fe15",
-   "notes": "knobs_changed: {\"budget.neutralize_control_tags\": true} bed_bytes at run time: 6449012736"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"budget.neutralize_control_tags\": true} bed_bytes at run time: 6449012736"
   },
   {
    "id": "m:postflip_know_abstain_sanity_100k#postflip-default",
@@ -3993,7 +4058,7 @@
    "baselines_row": "2026-08-19-know-abstain-sanity",
    "pr": null,
    "git_sha": "710f792099515a28d7fe6370e543ec2e92919ec1",
-   "notes": "receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
+   "notes": "needle/gold set directory: erb. receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
   },
   {
    "id": "m:postflip_know_abstain_sanity_100k#preflip-dense-splade",
@@ -4012,7 +4077,7 @@
    "baselines_row": "2026-08-19-know-abstain-sanity",
    "pr": null,
    "git_sha": "710f792099515a28d7fe6370e543ec2e92919ec1",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true, \"retrieval.dense_embedding_enabled\": true} receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true, \"retrieval.dense_embedding_enabled\": true} receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
   },
   {
    "id": "m:postflip_know_abstain_sanity_100k#preflip-full",
@@ -4031,7 +4096,7 @@
    "baselines_row": "2026-08-19-know-abstain-sanity",
    "pr": null,
    "git_sha": "710f792099515a28d7fe6370e543ec2e92919ec1",
-   "notes": "knobs_changed: {\"ingestion.splade_enabled\": true, \"retrieval.dense_embedding_enabled\": true, \"retrieval.pki_enabled\": true} receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.splade_enabled\": true, \"retrieval.dense_embedding_enabled\": true, \"retrieval.pki_enabled\": true} receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 6448881664"
   },
   {
    "id": "m:postflip_know_abstain_sanity_829k#postflip-default",
@@ -4050,7 +4115,7 @@
    "baselines_row": "2026-08-19-know-abstain-sanity",
    "pr": null,
    "git_sha": "710f792099515a28d7fe6370e543ec2e92919ec1",
-   "notes": "receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34392412160"
+   "notes": "needle/gold set directory: erb. receipt records no final_recall_at_k (final-order basis absent) bed_bytes at run time: 34392412160"
   },
   {
    "id": "m:sema_ingest_ab_dogfood#arm_a",
@@ -4107,7 +4172,7 @@
    "baselines_row": "2026-08-19-sema-readgate-decider",
    "pr": null,
    "git_sha": "ffd39eff7fe9a01509f1e7c8e7b5e437086a599c",
-   "notes": "knobs_changed: {\"ingestion.sema_embed_on_ingest\": false}"
+   "notes": "needle/gold set directory: erb. knobs_changed: {\"ingestion.sema_embed_on_ingest\": false}"
   },
   {
    "id": "m:ladder_v09x_baseline_2026-08-27#baseline",
@@ -4126,7 +4191,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_classifier_off_2026-08-27#baseline-classifier-off-toml",
@@ -4145,7 +4210,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_shortlist_200_2026-08-27#baseline-shortlist-200-toml",
@@ -4164,7 +4229,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_shortlist_500_2026-08-27#baseline-shortlist-500-toml",
@@ -4183,7 +4248,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_shortlist_off_2026-08-27#baseline-shortlist-off-toml",
@@ -4202,7 +4267,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_w15_k20_eps_all_2026-08-27#baseline-w15-k20-eps-all-toml",
@@ -4221,7 +4286,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338972672"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338972672"
   },
   {
    "id": "m:ladder_v09x_w1_baseline_rerun_2026-08-27#baseline",
@@ -4240,7 +4305,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338731008"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338731008"
   },
   {
    "id": "m:ladder_v09x_w1_eps_band_all_2026-08-27#baseline-w1-eps-band-all-toml",
@@ -4259,7 +4324,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338554880"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338554880"
   },
   {
    "id": "m:ladder_v09x_w1_gate50_off_2026-08-27#baseline-w1-gate50-off-toml",
@@ -4278,7 +4343,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338436096"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338436096"
   },
   {
    "id": "m:ladder_v09x_w1_gate50_off_v2_2026-08-27#baseline-w1-gate50-off-v2-toml",
@@ -4297,7 +4362,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338853888"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338853888"
   },
   {
    "id": "m:ladder_v09x_w1_gate50_on_2026-08-27#baseline-w1-gate50-on-toml",
@@ -4316,7 +4381,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338493440"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338493440"
   },
   {
    "id": "m:ladder_v09x_w1_gate50_on_v2_2026-08-27#baseline-w1-gate50-on-v2-toml",
@@ -4335,7 +4400,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338911232"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338911232"
   },
   {
    "id": "m:ladder_v09x_w1_map_empty_2026-08-27#baseline-w1-map-empty-toml",
@@ -4354,7 +4419,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338374656"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338374656"
   },
   {
    "id": "m:ladder_v09x_w1_rrf_k_20_2026-08-27#baseline-w1-rrf-k-20-toml",
@@ -4373,7 +4438,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338612224"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338612224"
   },
   {
    "id": "m:ladder_v09x_w1_rrf_k_240_2026-08-27#baseline-w1-rrf-k-240-toml",
@@ -4392,7 +4457,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24338673664"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24338673664"
   },
   {
    "id": "m:ladder_v09x_w1c_baseline_full_2026-08-28#baseline",
@@ -4411,7 +4476,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24339091456"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24339091456"
   },
   {
    "id": "m:ladder_v09x_w1c_k20_eps_all_full_2026-08-28#baseline-w15-k20-eps-all-toml",
@@ -4430,7 +4495,7 @@
    "baselines_row": "2026-08-27-ranking-under-width-wave1",
    "pr": null,
    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
-   "notes": "bed_bytes at run time: 24339210240"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24339210240"
   },
   {
    "id": "m:ladder_v09x_w24_min_delivered_2026-08-28#baseline-w24-min-delivered-12-toml",
@@ -4449,7 +4514,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b24a73cf81b088f6214a36ab6b9c3458d653bded",
-   "notes": "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.4 arm; BASELINES has no row of its own for it. bed_bytes at run time: 24570433536"
+   "notes": "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.4 arm; BASELINES has no row of its own for it. needle/gold set directory: erb. bed_bytes at run time: 24570433536"
   },
   {
    "id": "m:ladder_v09x_w2_cover_walk_2026-08-28#baseline-w2-cover-walk-toml",
@@ -4468,7 +4533,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "c90234d979f02c75282b0c5ea7a7dcae7d311d64",
-   "notes": "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.1 arm; BASELINES has no row of its own for it. bed_bytes at run time: 24570306560"
+   "notes": "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.1 arm; BASELINES has no row of its own for it. needle/gold set directory: erb. bed_bytes at run time: 24570306560"
   },
   {
    "id": "m:baselines#enronqa-native-baseline-2026-08-29",
@@ -4620,7 +4685,7 @@
    "baselines_row": "2026-08-30-v091-gate-sweep",
    "pr": null,
    "git_sha": "e6dba22372eb6a13b58225c76f0299bfd372626c",
-   "notes": "bed_bytes at run time: 6475706368"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 6475706368"
   },
   {
    "id": "m:ladder_erb100k_v091_2026-08-30#baseline",
@@ -4639,7 +4704,26 @@
    "baselines_row": "2026-08-30-v091-gate-sweep",
    "pr": null,
    "git_sha": "e6dba22372eb6a13b58225c76f0299bfd372626c",
-   "notes": "bed_bytes at run time: 6475743232"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 6475743232"
+  },
+  {
+   "id": "m:ladder_v09x_floor6_2026-08-30#baseline-w24-min-delivered-6-toml",
+   "date": "2026-08-30",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-floor-width-curve-947k",
+   "arm": "baseline @ w24_min_delivered_6.toml",
+   "n": 470,
+   "delivered_gold_rate": 0.6446808510638298,
+   "recall_at_12": 0.6809,
+   "final_recall_at_12": 0.683,
+   "median_gold_rank": 2.0,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/ladder_v09x_floor6_2026-08-30.json",
+   "baselines_row": "2026-08-31-floor-width-curve-947k",
+   "pr": 427,
+   "git_sha": "911fd124be0aeb7df8d9f0a9f38b15a1abbd121c",
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. needle/gold set directory: erb. bed_bytes at run time: 24570679296"
   },
   {
    "id": "m:ladder_v09x_int_v091_2026-08-30#baseline",
@@ -4658,7 +4742,235 @@
    "baselines_row": "2026-08-30-v091-gate-sweep",
    "pr": null,
    "git_sha": "e6dba22372eb6a13b58225c76f0299bfd372626c",
-   "notes": "bed_bytes at run time: 24570556416"
+   "notes": "needle/gold set directory: erb. bed_bytes at run time: 24570556416"
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v090-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v090, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.74,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 7.6 pp, original minus rephrased. Pair fates: both 149, original-only 36, rephrased-only 17, neither 48. Rephrased-miss map-rank buckets: {\"13-30\": 14, \"31-100\": 3, \"<=12\": 8, \"absent\": 11}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v090-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v090, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.664,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 7.6 pp, original minus rephrased. Pair fates: both 149, original-only 36, rephrased-only 17, neither 48. Rephrased-miss map-rank buckets: {\"13-30\": 14, \"31-100\": 3, \"<=12\": 8, \"absent\": 11}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v091-floor0-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_floor0, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.82,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 8.8 pp, original minus rephrased. Pair fates: both 171, original-only 34, rephrased-only 12, neither 33. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 5, \"<=12\": 6, \"absent\": 12}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v091-floor0-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_floor0, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.732,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 8.8 pp, original minus rephrased. Pair fates: both 171, original-only 34, rephrased-only 12, neither 33. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 5, \"<=12\": 6, \"absent\": 12}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v091-shipped-floor12-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_shipped_floor12, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.832,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 8.0 pp, original minus rephrased. Pair fates: both 177, original-only 31, rephrased-only 11, neither 31. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 5, \"<=12\": 3, \"absent\": 12}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#padded-v091-shipped-floor12-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_shipped_floor12, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.752,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 8.0 pp, original minus rephrased. Pair fates: both 177, original-only 31, rephrased-only 11, neither 31. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 5, \"<=12\": 3, \"absent\": 12}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v090-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v090, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.708,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 2.8 pp, original minus rephrased. Pair fates: both 152, original-only 25, rephrased-only 18, neither 55. Rephrased-miss map-rank buckets: {\"13-30\": 7, \"31-100\": 2, \"<=12\": 10, \"absent\": 6}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v090-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v090, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.68,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 2.8 pp, original minus rephrased. Pair fates: both 152, original-only 25, rephrased-only 18, neither 55. Rephrased-miss map-rank buckets: {\"13-30\": 7, \"31-100\": 2, \"<=12\": 10, \"absent\": 6}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v091-floor0-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_floor0, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.84,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 4.0 pp, original minus rephrased. Pair fates: both 182, original-only 28, rephrased-only 18, neither 22. Rephrased-miss map-rank buckets: {\"13-30\": 9, \"31-100\": 1, \"<=12\": 10, \"absent\": 8}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v091-floor0-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_floor0, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.8,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 4.0 pp, original minus rephrased. Pair fates: both 182, original-only 28, rephrased-only 18, neither 22. Rephrased-miss map-rank buckets: {\"13-30\": 9, \"31-100\": 1, \"<=12\": 10, \"absent\": 8}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v091-shipped-floor12-original",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_shipped_floor12, ORIGINAL half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.88,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 4.8 pp, original minus rephrased. Pair fates: both 196, original-only 24, rephrased-only 12, neither 18. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 1, \"<=12\": 4, \"absent\": 8}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:paraphrase_crater_enronqa#v2-v091-shipped-floor12-rephrased",
+   "date": "2026-08-30",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-30-enronqa-paraphrase-crater",
+   "arm": "v091_shipped_floor12, REPHRASED half of each needle pair",
+   "n": 250,
+   "delivered_gold_rate": 0.832,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paraphrase gap for this cell: 4.8 pp, original minus rephrased. Pair fates: both 196, original-only 24, rephrased-only 12, neither 18. Rephrased-miss map-rank buckets: {\"13-30\": 11, \"31-100\": 1, \"<=12\": 4, \"absent\": 8}. Basis line in the receipt: 2026-08-30 v0.9.1 gate-sweep per-query ladder receipts (integration e6dba22); above-gold audit replayed live on the padded bed, 31/31 rank_match vs receipt",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
   },
   {
    "id": "m:sweep_v091_gate#enronqa_padded-v090",
@@ -4908,6 +5220,500 @@
    "pr": null
   },
   {
+   "id": "m:budget14000_null#budget-14000",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-erb947k-budget-doubling",
+   "arm": "expression_tokens 14000",
+   "n": 470,
+   "delivered_gold_rate": 0.6681,
+   "recall_at_12": 0.6809,
+   "final_recall_at_12": 0.683,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/budget14000_null_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paired result: 0 rows differ on any non-timing field over 470 needles, delivered flips +0/-0, and the delivered_count distribution is identical in both arms (6 seats on 152 queries, 12 seats on 318). The 7000 cell restates ladder_v09x_w24_min_delivered_2026-08-28.json, which has its own row.",
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:budget14000_null#floor12-7000-baseline",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-erb947k-budget-doubling",
+   "arm": "expression_tokens 7000 (shipped v0.9.1 floor-12 config)",
+   "n": 470,
+   "delivered_gold_rate": 0.6681,
+   "recall_at_12": 0.6809,
+   "final_recall_at_12": 0.683,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/budget14000_null_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Paired result: 0 rows differ on any non-timing field over 470 needles, delivered flips +0/-0, and the delivered_count distribution is identical in both arms (6 seats on 152 queries, 12 seats on 318). The 7000 cell restates ladder_v09x_w24_min_delivered_2026-08-28.json, which has its own row.",
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:dense_ceiling_probe_829k#dense_only",
+   "date": "2026-08-31",
+   "bed_id": "erb_829k_nosplade",
+   "campaign": "2026-08-31-semantic-portfolio-lane",
+   "arm": "dense-only exhaustive cosine (BGE-M3, no shortlist, no fusion)",
+   "n": 200,
+   "basis": null,
+   "shipped_default": false,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/dense_ceiling_probe_829k_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Ceiling probe, not a pipeline run, so every rate field is null. Over 200 misses of the lexical baseline, dense alone puts gold at rank 12 or better on 53 and at 50 or better on 74, median rank 348. Semantic class: n=86, 4 at 12 or better, median rank 3020. Basic hit control: n=99, 57 at 12 or better, median 6. Rescue by lexical bucket: lex_le12 24 of 44, near_band 19 of 51, pool_absent 10 of 105. Basis receipt postflip_default_confirm_829k.json (no_pki arm = shipped default post-#370; PRE-wave-1 defaults, disclosed). Disclosed: blob-era query wording differs from v09x wording on most needles.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:floor_width_curve_947k#floor0",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-floor-width-curve-947k",
+   "arm": "min_delivered_docs 0",
+   "n": 470,
+   "delivered_gold_rate": 0.6298,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/floor_width_curve_947k_2026-08-31.json",
+   "baselines_row": "2026-08-31-floor-width-curve-947k",
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. delivered_n 296 of 470; arm receipt ladder_v09x_int_v091_2026-08-30.json (v091 gate arm, integration e6dba22). Curve pairing: floor6 vs floor0 +7/-0, floor12 vs floor6 +11/-0, delivered sets strictly nested with zero losses anywhere on the curve. Map and final ranks are byte-identical across all three arms (0 of 470 diffs), which is why recall_at_12 and final_recall_at_12 are null here: the floor is delivery-only and this receipt publishes the delivered basis alone.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:floor_width_curve_947k#floor12",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-floor-width-curve-947k",
+   "arm": "min_delivered_docs 12 (shipped v0.9.1)",
+   "n": 470,
+   "delivered_gold_rate": 0.6681,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/floor_width_curve_947k_2026-08-31.json",
+   "baselines_row": "2026-08-31-floor-width-curve-947k",
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. delivered_n 314 of 470; arm receipt ladder_v09x_w24_min_delivered_2026-08-28.json (W2.4 arm; = shipped v0.9.1 default). Curve pairing: floor6 vs floor0 +7/-0, floor12 vs floor6 +11/-0, delivered sets strictly nested with zero losses anywhere on the curve. Map and final ranks are byte-identical across all three arms (0 of 470 diffs), which is why recall_at_12 and final_recall_at_12 are null here: the floor is delivery-only and this receipt publishes the delivered basis alone.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:floor_width_curve_947k#floor6",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-floor-width-curve-947k",
+   "arm": "min_delivered_docs 6",
+   "n": 470,
+   "delivered_gold_rate": 0.6447,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/floor_width_curve_947k_2026-08-31.json",
+   "baselines_row": "2026-08-31-floor-width-curve-947k",
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. delivered_n 303 of 470; arm receipt ladder_v09x_floor6_2026-08-30.json (this session, master 2644c3e = shipped v0.9.1; config w24_min_delivered_6.toml — copy of shipped toml, only the floor differs). Curve pairing: floor6 vs floor0 +7/-0, floor12 vs floor6 +11/-0, delivered sets strictly nested with zero losses anywhere on the curve. Map and final ranks are byte-identical across all three arms (0 of 470 diffs), which is why recall_at_12 and final_recall_at_12 are null here: the floor is delivery-only and this receipt publishes the delivered basis alone.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:interloper_mine_enron_padded_2026-08-31#mine",
+   "date": "2026-08-31",
+   "bed_id": "enronqa_padded",
+   "campaign": "2026-08-31-interloper-what-wins",
+   "arm": "interloper mine over the delivered-gold-zero misses (enron_padded)",
+   "n": 104,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/enronqa_padded/receipts/interloper_mine_enron_padded_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Miss-forensics replay, no rate published: it mines what won instead of gold. n_mined 104, replay_errors 0, rank_match 104. Basis receipt: ladder_enronqa_padded_v091_floor_2026-08-30.json.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:interloper_mine_enron_v2_2026-08-31#mine",
+   "date": "2026-08-31",
+   "bed_id": "enronqa_v2",
+   "campaign": "2026-08-31-interloper-what-wins",
+   "arm": "interloper mine over the delivered-gold-zero misses (enron_v2)",
+   "n": 72,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/enronqa/receipts/interloper_mine_enron_v2_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Miss-forensics replay, no rate published: it mines what won instead of gold. n_mined 72, replay_errors 0, rank_match 72. Basis receipt: ladder_enronqa_v2_v091_floor_2026-08-30.json.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:interloper_mine_erb947k_2026-08-31#mine",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-interloper-what-wins",
+   "arm": "interloper mine over the delivered-gold-zero misses (erb947k)",
+   "n": 156,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/interloper_mine_erb947k_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Miss-forensics replay, no rate published: it mines what won instead of gold. n_mined 156, replay_errors 0, rank_match 156. Basis receipt: ladder_v09x_w24_min_delivered_2026-08-28.json.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:interloper_mine_financebench_2026-08-31#mine",
+   "date": "2026-08-31",
+   "bed_id": "financebench",
+   "campaign": "2026-08-31-interloper-what-wins",
+   "arm": "interloper mine over the delivered-gold-zero misses (financebench)",
+   "n": 127,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/financebench/receipts/interloper_mine_financebench_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Miss-forensics replay, no rate published: it mines what won instead of gold. n_mined 127, replay_errors 0, rank_match 127. Basis receipt: ladder_financebench_baseline_2026-08-31.json.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:interloper_mine_muloc_2026-08-31#mine",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-interloper-what-wins",
+   "arm": "interloper mine over the delivered-gold-zero misses (muloc)",
+   "n": 375,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/interloper_mine_muloc_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Miss-forensics replay, no rate published: it mines what won instead of gold. n_mined 375, replay_errors 0, rank_match 342. Basis receipt: ladder_muloc_baseline_cold_2026-08-31.json.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:ladder_financebench_baseline_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "financebench",
+   "campaign": "2026-08-31-financebench-baseline-note",
+   "arm": "baseline",
+   "n": 150,
+   "delivered_gold_rate": 0.15333333333333332,
+   "recall_at_12": 0.1533,
+   "final_recall_at_12": 0.1533,
+   "median_gold_rank": 6.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/financebench/receipts/ladder_financebench_baseline_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "ad52cc627ce89cb4427bbfc407889e6c9e8a77e8",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: financebench. bed_bytes at run time: 910073856 Per-question-type split, quoted from mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-financebench-baseline-note.md: novel-generated 17/50 (.34) r@12 .34, 29 pool-absent; domain-relevant 6/50 (.12) r@12 .12, 42 pool-absent; metrics-generated 0/50 (.000), 47 pool-absent; overall 23/150 (.153) with 118 of 127 misses pool-absent. Mechanism named there: a metrics query splits into a doc-identity half and a concept half and single-field flattened FTS cannot express the intersection, so fused mass never concentrates."
+  },
+  {
+   "id": "m:ladder_locomo_baseline_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "locomo",
+   "campaign": "2026-08-31-semantic-portfolio-lane",
+   "arm": "baseline",
+   "n": 2378,
+   "delivered_gold_rate": 0.4348191757779647,
+   "recall_at_12": 0.4857,
+   "final_recall_at_12": 0.4865,
+   "median_gold_rank": 6.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo/receipts/ladder_locomo_baseline_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "3f9dd868d871c4795429f32750756a63e166fa38",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. campaign taken from the write-up that names this receipt; no BASELINES row matches it needle/gold set directory: locomo. bed_bytes at run time: 19738624 Per-class split, quoted from mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-semantic-portfolio-lane.md: singlehop 489/841 (.581) r@12 .637; temporal 174/320 (.544) r@12 .597; adversarial 221/446 (.496) r@12 .563; multihop 120/281 (.427) r@12 .509. The cognitive class is the outlier at 3/401 and is the cohort the observation-enrichment arm was built to test."
+  },
+  {
+   "id": "m:ladder_locomo_obs_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "locomo_obs",
+   "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+   "arm": "baseline",
+   "n": 2378,
+   "delivered_gold_rate": 0.5189234650967199,
+   "recall_at_12": 0.5521,
+   "final_recall_at_12": 0.5505,
+   "median_gold_rank": 5.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo_obs/receipts/ladder_locomo_obs_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "efbc328e20abeaa565a4ef57f938f59328908648",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Arm of the LoCoMo three-way; the summary receipt obs_enrichment_threeway_2026-08-31.json names it. needle/gold set directory: locomo_obs. bed_bytes at run time: 27435008"
+  },
+  {
+   "id": "m:ladder_locomo_obs_turnonly_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "locomo_obs",
+   "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+   "arm": "baseline",
+   "n": 2378,
+   "delivered_gold_rate": 0.2645079899074853,
+   "recall_at_12": 0.3326,
+   "final_recall_at_12": 0.3234,
+   "median_gold_rank": 11.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo_obs_ctl/receipts/ladder_locomo_obs_turnonly_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "efbc328e20abeaa565a4ef57f938f59328908648",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Displacement-control arm of the LoCoMo three-way; the summary receipt names it. needle/gold set directory: locomo_obs_ctl. bed_bytes at run time: 27746304"
+  },
+  {
+   "id": "m:ladder_muloc_baseline_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "baseline",
+   "n": 680,
+   "delivered_gold_rate": 0.4441176470588235,
+   "recall_at_12": 0.4809,
+   "final_recall_at_12": 0.4853,
+   "median_gold_rank": 5.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/ladder_muloc_baseline_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "4d939369e1aa525af2ce2c75f614b4535fb3f7d3",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Warm-bed arm, deprecated by muloc_budget_ab_2026-08-31.json, which names it. needle/gold set directory: muloc. bed_bytes at run time: 1713176576"
+  },
+  {
+   "id": "m:ladder_muloc_baseline_cold_2026-08-31#baseline",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "baseline",
+   "n": 680,
+   "delivered_gold_rate": 0.4485294117647059,
+   "recall_at_12": 0.4824,
+   "final_recall_at_12": 0.4868,
+   "median_gold_rank": 4.0,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/ladder_muloc_baseline_cold_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "309a14e27222c5aabce2ccb19721fde167b9ee67",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. The citable MULoc baseline per muloc_budget_ab_2026-08-31.json, which names it. Date-and-name-overlap attribution would otherwise have sent it to the FinanceBench note. needle/gold set directory: muloc. bed_bytes at run time: 1715494912"
+  },
+  {
+   "id": "m:ladder_muloc_budget14000_2026-08-31#baseline-budget-14000-toml",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "baseline @ budget_14000.toml",
+   "n": 680,
+   "delivered_gold_rate": 0.4441176470588235,
+   "recall_at_12": 0.4838,
+   "final_recall_at_12": 0.4882,
+   "median_gold_rank": 5.0,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "ab756635c21a31a99311793a58bad162197529a3",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Treatment arm of the MULoc budget A/B; the summary receipt names it. needle/gold set directory: muloc. bed_bytes at run time: 1714343936"
+  },
+  {
+   "id": "m:ladder_v09x_budget14000_2026-08-31#baseline-budget-14000-toml",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-erb947k-budget-doubling",
+   "arm": "baseline @ budget_14000.toml",
+   "n": 470,
+   "delivered_gold_rate": 0.6680851063829787,
+   "recall_at_12": 0.6809,
+   "final_recall_at_12": 0.683,
+   "median_gold_rank": 2.0,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/ladder_v09x_budget14000_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": "19e31afc6422bea297ebbc641276aa36a0b2fd2b",
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Matches the wave-1 row's ladder_v09x_*.json glob but is the ERB budget-doubling control arm on branch bench/semantic-portfolio; BASELINES has no row for it. needle/gold set directory: erb. bed_bytes at run time: 24570978304"
+  },
+  {
+   "id": "m:ladder_v09x_w22_coverage_2026-08-31#baseline-w22-eps-band-coverage-toml",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-w22-eps-band-coverage",
+   "arm": "baseline @ w22_eps_band_coverage.toml",
+   "n": 470,
+   "delivered_gold_rate": 0.6680851063829787,
+   "recall_at_12": 0.6809,
+   "final_recall_at_12": 0.6851,
+   "median_gold_rank": 2.0,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__w22-eps-band-coverage/benchmarks/dogfood/erb/receipts/ladder_v09x_w22_coverage_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 428,
+   "git_sha": "60d13cdb95fdd1dac3d4fdc151adf88fd4c28612",
+   "notes": "Branch mirror: claude/w22-eps-band-coverage (PR #428), head c05f171ab346f99239d5de38d3f5f79f533891ec, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Matches the wave-1 row's ladder_v09x_*.json glob but is the W2.2 arm on branch claude/w22-eps-band-coverage; BASELINES has no row for it. needle/gold set directory: erb. bed_bytes at run time: 24570806272"
+  },
+  {
+   "id": "m:muloc_budget_ab#baseline-cold-7000",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "expression_tokens 7000, cold bed (the citable MULoc baseline)",
+   "n": 680,
+   "delivered_gold_rate": 0.4485,
+   "recall_at_12": 0.4824,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/muloc_budget_ab_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Restates arm receipt ladder_muloc_baseline_cold_2026-08-31.json at 4 decimals. n=680 from that ladder receipt. Receipt note on this arm: the CITABLE muloc baseline (cold-gated 1h) Campaign verdict: NULL — doubling expression_tokens changes delivered by net -3/680 (+4/-7, noise); 1/23 rank<=12-undelivered converted; the delivered_count=6 cohort (228 queries) is unchanged: the seat cap on code corpora is th Disclosed caveats: cross-run rank jitter of about 71 to 75 of 680 persists cold-vs-cold on this bed, and the ladder launches omitted CYMATIX_DISABLE_LEARN=1 against the BASELINES convention.",
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:muloc_budget_ab#baseline-warm-deprecated",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "expression_tokens 7000, warm bed (DEPRECATED by the receipt)",
+   "n": 680,
+   "delivered_gold_rate": 0.4441,
+   "recall_at_12": null,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/muloc_budget_ab_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Restates arm receipt ladder_muloc_baseline_2026-08-31.json at 4 decimals. n=680 from that ladder receipt. Receipt note on this arm: ran ~10 min after bed build — warm-access outlier, kept for the coupling analysis only Campaign verdict: NULL — doubling expression_tokens changes delivered by net -3/680 (+4/-7, noise); 1/23 rank<=12-undelivered converted; the delivered_count=6 cohort (228 queries) is unchanged: the seat cap on code corpora is th Disclosed caveats: cross-run rank jitter of about 71 to 75 of 680 persists cold-vs-cold on this bed, and the ladder launches omitted CYMATIX_DISABLE_LEARN=1 against the BASELINES convention.",
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:muloc_budget_ab#budget-14000-cold",
+   "date": "2026-08-31",
+   "bed_id": "muloc",
+   "campaign": "2026-08-31-muloc-budget-doubling",
+   "arm": "expression_tokens 14000, cold bed",
+   "n": 680,
+   "delivered_gold_rate": 0.4441,
+   "recall_at_12": 0.4838,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/muloc_budget_ab_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Restates arm receipt ladder_muloc_budget14000_2026-08-31.json at 4 decimals. n=680 from that ladder receipt. Receipt note on this arm: (none) Campaign verdict: NULL — doubling expression_tokens changes delivered by net -3/680 (+4/-7, noise); 1/23 rank<=12-undelivered converted; the delivered_count=6 cohort (228 queries) is unchanged: the seat cap on code corpora is th Disclosed caveats: cross-run rank jitter of about 71 to 75 of 680 persists cold-vs-cold on this bed, and the ladder launches omitted CYMATIX_DISABLE_LEARN=1 against the BASELINES convention.",
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:obs_enrichment_threeway#base-turngold",
+   "date": "2026-08-31",
+   "bed_id": "locomo",
+   "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+   "arm": "base bed, turn-only gold (LoCoMo baseline)",
+   "n": 2378,
+   "delivered_gold_rate": 0.4348,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo_obs/receipts/obs_enrichment_threeway_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Receipt campaign line: 'LoCoMo observation-enrichment three-way (write-time abstraction A/B + displacement control)'. Three-way summary. This cell restates arm receipt locomo/receipts/ladder_locomo_baseline_2026-08-31.json at 4 decimals; that receipt has its own row at full precision. n=2378 from the receipt's caveat block (needle set identical across beds, resolver 2378/2378). Per-class delivered: adversarial 221/446, cognitive 3/401, commonsense 27/89, multihop 120/281, singlehop 489/841, temporal 174/320. Receipt caveat: the obs arm's gold set is larger by construction, which is why the ctl arm exists; report all three together.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:obs_enrichment_threeway#ctl-obsbed-turngold",
+   "date": "2026-08-31",
+   "bed_id": "locomo_obs",
+   "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+   "arm": "observation bed, turn-only gold (displacement control)",
+   "n": 2378,
+   "delivered_gold_rate": 0.2645,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo_obs/receipts/obs_enrichment_threeway_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Receipt campaign line: 'LoCoMo observation-enrichment three-way (write-time abstraction A/B + displacement control)'. Three-way summary. This cell restates arm receipt locomo_obs_ctl/receipts/ladder_locomo_obs_turnonly_2026-08-31.json at 4 decimals; that receipt has its own row at full precision. n=2378 from the receipt's caveat block (needle set identical across beds, resolver 2378/2378). Per-class delivered: adversarial 166/446, cognitive 2/401, commonsense 18/89, multihop 52/281, singlehop 290/841, temporal 101/320. Receipt caveat: the obs arm's gold set is larger by construction, which is why the ctl arm exists; report all three together.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:obs_enrichment_threeway#obs-obsbed-uniongold",
+   "date": "2026-08-31",
+   "bed_id": "locomo_obs",
+   "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+   "arm": "observation bed, union gold (enrichment arm)",
+   "n": 2378,
+   "delivered_gold_rate": 0.5189,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/locomo_obs/receipts/obs_enrichment_threeway_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 426,
+   "git_sha": null,
+   "notes": "Branch mirror: bench/semantic-portfolio (PR #426), head b5eb803d3f634b225185186bf8f3539105c3e194, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Receipt campaign line: 'LoCoMo observation-enrichment three-way (write-time abstraction A/B + displacement control)'. Three-way summary. This cell restates arm receipt locomo_obs/receipts/ladder_locomo_obs_2026-08-31.json at 4 decimals; that receipt has its own row at full precision. n=2378 from the receipt's caveat block (needle set identical across beds, resolver 2378/2378). Per-class delivered: adversarial 248/446, cognitive 2/401, commonsense 37/89, multihop 156/281, singlehop 575/841, temporal 216/320. Receipt caveat: the obs arm's gold set is larger by construction, which is why the ctl arm exists; report all three together.",
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
    "id": "m:research-inbox#erb-basic-miss-taxonomy-2026-08-31",
    "date": "2026-08-31",
    "bed_id": "erb_blob_v09x_947k",
@@ -4982,6 +5788,82 @@
    "final_recall_at_12": null,
    "median_gold_rank": null,
    "pr": null
+  },
+  {
+   "id": "m:semantic_above_gold_947k#audit",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-semantic-above-gold-audit",
+   "arm": "above-gold audit of the semantic rank-under-100 misses",
+   "n": 21,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/semantic_above_gold_947k_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Diagnostic, no rate published. 21 targets, rank_match 21 against the basis receipt ladder_v09x_w24_min_delivered_2026-08-28.json, and gold out-covers the interloper majority on 16 of them. This is the signal-validity half of the W2.2 arm: the coverage signal is sound and band geometry still kills the lane.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:semantic_vocab_gap_947k#audit",
+   "date": "2026-08-31",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-08-31-semantic-above-gold-audit",
+   "arm": "semantic-class vocabulary-overlap audit",
+   "n": 82,
+   "basis": null,
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/semantic_vocab_gap_947k_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 427,
+   "git_sha": null,
+   "notes": "Branch mirror: claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45af8175070ebc678f09c487450d2d, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. Diagnostic, no rate published. Semantic class: 43 hits and 82 misses; the median fraction of query keywords that hit gold is 0.312 for hits against 0.25 for misses. Miss rank buckets: {\"13-30\": 14, \"31-100\": 6, \"<=12\": 1, \"absent\": 61}.",
+   "delivered_gold_rate": null,
+   "recall_at_12": null,
+   "final_recall_at_12": null,
+   "median_gold_rank": null
+  },
+  {
+   "id": "m:w22_probe_100k_2026-08-31#baseline-w22-eps-band-coverage-toml",
+   "date": "2026-08-31",
+   "bed_id": "erb_100k",
+   "campaign": "2026-08-31-w22-eps-band-coverage",
+   "arm": "baseline @ w22_eps_band_coverage.toml",
+   "n": 30,
+   "delivered_gold_rate": 0.7666666666666667,
+   "recall_at_12": 0.8333,
+   "final_recall_at_12": 0.8333,
+   "median_gold_rank": 3.0,
+   "basis": "delivered",
+   "shipped_default": false,
+   "receipt": "mirror-branches/claude__w22-eps-band-coverage/benchmarks/dogfood/erb/receipts/w22_probe_100k_2026-08-31.json",
+   "baselines_row": null,
+   "pr": 428,
+   "git_sha": "2644c3e44038bf285eb6a5484817bd4c3de126c6",
+   "notes": "Branch mirror: claude/w22-eps-band-coverage (PR #428), head c05f171ab346f99239d5de38d3f5f79f533891ec, exported against master 2644c3e44038bf285eb6a5484817bd4c3de126c6. Not on master at the ledger's source commit. 100k carve probe of the W2.2 arm; no BASELINES row. needle/gold set directory: erb. bed_bytes at run time: 6475747328"
+  },
+  {
+   "id": "m:bucket_ledger_2026-09-01#baseline",
+   "date": "2026-09-01",
+   "bed_id": "erb_blob_v09x_947k",
+   "campaign": "2026-09-01-erb-phase1-probes",
+   "arm": "shipped v0.9.1 defaults, recomputed from the basis ladder",
+   "n": 470,
+   "delivered_gold_rate": 0.668085,
+   "recall_at_12": 0.6809,
+   "basis": "delivered",
+   "shipped_default": true,
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json",
+   "baselines_row": null,
+   "pr": null,
+   "git_sha": "b5eb803d3f634b225185186bf8f3539105c3e194",
+   "notes": "Branch mirror: claude/architecture-hunt-research-e4ee87 (local only, no PR), head 2ebafd998fbf4c0851cb4b17f15a297d259521eb, exported against master b5eb803d3f634b225185186bf8f3539105c3e194. Not on master at the ledger's source commit. Read-only recomputation of ladder_v09x_w24_min_delivered_2026-08-28.json: the 156 mined misses are exactly that receipt's delivered_gold==0 set and every published taxonomy bucket cell reproduces. Probe verdict: PASS",
+   "final_recall_at_12": null,
+   "median_gold_rank": null
   },
   {
    "id": "m:untracked#verify-p0p3p5-basis-2026-09-01",
@@ -5082,81 +5964,136 @@
    "notes": "The two beds have identical gene-id-set digests, so this isolates the COVER-edge difference. The lever earns its flip on build cost (PR #412 / issue #411), not on retrieval."
   },
   {
+   "id": "k:2026-08-30-paraphrase-coverage-discrimination",
+   "date": "2026-08-30",
+   "lever": "coverage/coordination discrimination rerank for the EnronQA paraphrase crater",
+   "bed_id": "enronqa_padded",
+   "kill_criterion": null,
+   "result": "No target: on the near-band needles (map rank 13 to 46) gold beats the interloper majority on distinct-keyword coverage for only 5 of 16, losing 11 of 16, because the interlopers legitimately match the residual generic terms.",
+   "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+   "verdict": "KILL",
+   "notes": "Branch mirror claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45. The receipt calls it a mirror of the W2.1 mass-to-hubs kill. Its above-gold audit (31 targets, 31 of 31 rank_match against the receipt) finds 26 of the lost golds still hitting query keywords and 12 pool-absent, with named-entity losses dominating."
+  },
+  {
+   "id": "k:2026-08-31-expression-tokens-doubling-erb",
+   "date": "2026-08-31",
+   "lever": "expression_tokens 7000 -> 14000 on ERB 947k",
+   "bed_id": "erb_blob_v09x_947k",
+   "kill_criterion": null,
+   "result": "Exact null: delivered 0.6681 = 0.6681, final r@12 0.683 and map r@12 0.6809 unchanged, and 0 of 470 per-needle rows differ on any non-timing field (+0/-0 delivered flips).",
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/budget14000_null_2026-08-31.json",
+   "verdict": "NULL",
+   "notes": "Branch mirror bench/semantic-portfolio (PR #426), head b5eb803d3f63. Registered in advance inside muloc_budget_ab_2026-08-31.json. Mechanism: delivery is seat-capped (classifier caps, max_genes_per_turn 12, min_delivered_docs floor), the seat structure is byte-identical across arms (152 queries at 6 seats, 318 at 12), and the token trimmer never fires at 7000. The arm doubles as a determinism witness: it reproduced the 2026-08-28 floor-12 receipt 470 of 470, cold against cold, three days apart."
+  },
+  {
    "id": "k:2026-08-31-gated-dense-fallback",
    "date": "2026-08-31",
    "lever": "gated dense fallback for the semantic class (dense-ceiling probe)",
-   "bed_id": "erb_blob_829k",
+   "bed_id": "erb_829k_nosplade",
    "kill_criterion": null,
-   "result": "Ceiling measured at 4/86 semantic needles at k=12 with a median dense rank of 3,020, so a gated fallback cannot pay.",
-   "receipt": null,
+   "result": "Ceiling too low to pay: dense-only exhaustive cosine over all 829k vectors puts gold at rank 12 or better on 4 of 86 semantic misses with a median rank of 3,020, and on only 10 of 105 pool-absent misses overall. Across all 200 misses it reaches rank 12 or better on 53, against 57 of 99 on a basic hit control.",
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/dense_ceiling_probe_829k_2026-08-31.json",
    "verdict": "KILL",
-   "notes": "Quoted from the killed list of research-inbox/2026-09-01-architecture-hunt-prompt.md, which names the receipt dense_ceiling_probe_829k. That receipt is not in this archive (see `missing`); the bed_id is this ledger's reading of the '829k' in the receipt name and is not confirmed by a mirrored file."
+   "notes": "Branch mirror bench/semantic-portfolio (PR #426). The 4-of-86-at-12 and median-3,020 figures quoted in research-inbox/2026-09-01-architecture-hunt-prompt.md reproduce exactly from this receipt. Basis receipt postflip_default_confirm_829k.json arm no_pki, which the probe discloses is a PRE-wave-1 default set; blob-era query wording differs from v09x wording on most needles."
   },
   {
    "id": "k:2026-08-31-muloc-budget-14000",
    "date": "2026-08-31",
-   "lever": "expression_tokens raised to 14000 on MULocBench",
+   "lever": "expression_tokens 7000 -> 14000 on MULocBench",
    "bed_id": "muloc",
    "kill_criterion": null,
-   "result": "Null: the 226-query delivered_count=6 cohort is bound by a 15%-of-top hard floor, not by the token budget.",
-   "receipt": null,
+   "result": "NULL: delivered 0.4485 -> 0.4441, a net -3 of 680 (+4/-7), r@12 0.4824 -> 0.4838; one of 23 rank-12-or-better-but-undelivered needles converted, and the delivered_count=6 cohort (228 queries) is unchanged.",
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/muloc_budget_ab_2026-08-31.json",
    "verdict": "NULL",
-   "notes": "Quoted from research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md, which cites benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json. That receipt is not in this archive (see `missing`), and no rate is published in the prose."
+   "notes": "Branch mirror bench/semantic-portfolio (PR #426). The receipt names the mechanism: the seat cap on code corpora is the 15%-of-top hard score floor (tier_hard_floor_frac), not the token budget, and it registers tier_hard_floor_frac as the next cell. The cohort size is 228 in the receipt against the 226 quoted by research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md; the receipt wins. Disclosed: about 71 to 75 of 680 cross-run rank jitter cold-against-cold on this bed, and CYMATIX_DISABLE_LEARN was omitted; the delivered-basis verdict is outside the jitter band."
   },
   {
-   "id": "k:2026-08-31-w2.2-in-band-coverage-tiebreak",
+   "id": "k:2026-08-31-score-threshold-abstain",
+   "date": "2026-08-31",
+   "lever": "score-threshold abstain (refuse when the slate scores low)",
+   "bed_id": "erb_blob_v09x_947k",
+   "kill_criterion": null,
+   "result": "Killed on the ground that miss slates score normally against hit slates; no summary statistic is published in the archived files.",
+   "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/hit_slate_sample_erb947k_2026-08-31.json",
+   "verdict": "KILL",
+   "notes": "The kill is named in research-inbox/2026-09-01-architecture-hunt-prompt.md ('score-threshold abstain (miss slates score-normal vs hits -- hit_slate_sample receipts)'). The three archived hit_slate_sample receipts (erb947k, enron_v2, locomo) carry raw per-hit slates and no rollup, so no number is recorded here. The receipt field points at the evidence, not at a published statistic."
+  },
+  {
+   "id": "k:2026-08-31-w22-eps-band-coverage",
    "date": "2026-08-31",
    "lever": "W2.2 in-band (eps_band) coverage tie-break",
    "bed_id": "erb_blob_v09x_947k",
    "kill_criterion": null,
-   "result": "Killed on band geometry at rrf_k=20; no numbers are published in any source held in this archive.",
-   "receipt": null,
+   "result": "Zero conversion: delivered 0.6681 -> 0.6681 with +0/-0 paired across all classes, final_recall_at_k 0.6830 -> 0.6851 (one needle on the final basis), 67 of 470 final rank moves, and 0 of 21 of the audit targets converted.",
+   "receipt": "mirror-branches/claude__w22-eps-band-coverage/benchmarks/dogfood/erb/receipts/w22_coverage_kill_2026-08-31.json",
    "verdict": "KILL",
-   "notes": "Named in the killed list of research-inbox/2026-09-01-architecture-hunt-prompt.md ('W2.2 in-band coverage tie-break (band geometry at rrf_k=20)'). The 2026-08-31 synthesis still describes the W2.2 arm as running on the 470-needle set. No W2.2 receipt exists in this archive, so no metric is recorded."
+   "notes": "Branch mirror claude/w22-eps-band-coverage (PR #428), head c05f171ab346. Paired reference ladder_v09x_w24_min_delivered_2026-08-28.json. Mechanism named in the receipt: band geometry, not signal validity - gold out-covers interlopers on 16 of 21 targets (semantic_above_gold_947k_2026-08-31.json) but at rrf_k=20 the fused head decays about 36% relative from rank 1 to rank 13, so rank-13-and-beyond gold never shares an eps band with the top 12. Disposition: ships default-inert, the W2.1 precedent. The arm's own ladder receipt and a 100k probe are also archived. Disclosed: CYMATIX_DISABLE_LEARN was unset for this arm."
+  },
+  {
+   "id": "k:2026-09-01-atcap-position-confound",
+   "date": "2026-09-01",
+   "lever": "position-within-document explanation for gold's length deficit (the at-cap confound)",
+   "bed_id": "erb_blob_v09x_947k",
+   "kill_criterion": "quoted from the receipt: 'Length is a CONFOUND rather than the mechanism if gold's shortness is explained by chunk position within its parent document ... Operationalised: return KILL (confound) only if ALL THREE hold -- C1 gold tail-share lift over the corpus base rate >= 1.25x; C2 position composition ...'",
+   "result": "Confound not found: C1 failed, so gold's length profile is corpus-typical and the anomaly is entirely winner-side, and the winner's coverage advantage survives holding chunk length constant. Verdict PASS, meaning length stays a live selection variable in the ranker rather than a structural artefact of where gold sits in its document.",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json",
+   "verdict": "NULL",
+   "notes": "Recorded as NULL for the same reason as the leakage row: the confound hypothesis died, not a lever. The adversarial re-derivation later corrected one input to this probe (gold at-cap 42.9% is an arbitrary-gold-chunk figure; over all gold chunks it is 54.4%) and confirmed that C1 fails under every gold representation (1.081 arbitrary, 0.864 all-gold, 0.377 best-gold), so the PASS stands."
   },
   {
    "id": "k:2026-09-01-doc-rollup-aggregation",
    "date": "2026-09-01",
-   "lever": "doc-rollup / chunk aggregation to source_id",
+   "lever": "doc-rollup / chunk aggregation to source_id before seating",
    "bed_id": "erb_blob_v09x_947k",
-   "kill_criterion": null,
-   "result": "UNION doc rank-1 is 17/156 against an analytic random baseline of 15.6 - indistinguishable from a shuffle - and a realizable rollup over the real score pool nets one new rescue. The corpus averages 1.895 chunks per doc with 78.6% of docs at two chunks or fewer.",
-   "receipt": null,
+   "kill_criterion": "quoted from the receipt: 'KILL if a PERFECT doc-level selection rescues fewer than ~20 of the 156 misses - the lane cannot pay for its implementation and latency. Primary statistic: n misses whose best gold DOC lands in the top-12 of the UNION doc ranking over the candidate pool.'",
+   "result": "The pre-registered statistic reads 138 of 156 (literal PASS) but is INVALID: a constant doc score rescues 149 and a random score rescues 148.05 on average over 20 seeded repeats, because the median candidate pool is 13 docs against a top-12 cut, so the statistic scores pool size. On the valid readings nothing clears the threshold of 20: union rank-1 is 17 against a random mean of 15.9 (lift 1.1), reachable from the live pool is 15, reachable via a non-gold sibling 0, reachable from delivered 0.",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/doc_union_oracle_2026-09-01.json",
    "verdict": "KILL",
-   "notes": "Quoted from research-inbox/2026-09-01-phase2-handoff.md. The doc_union_oracle probe receipt is not in this archive (see `missing`)."
+   "notes": "Branch mirror claude/architecture-hunt-research-e4ee87 (local, no PR). The receipt's structural facts: corpus mean 1.895 chunks per doc with 78.64% of docs at two chunks or fewer, and for 20 of the 156 misses every gold doc holds exactly one chunk, making the rollup a definitional no-op. research-inbox/2026-09-01-phase2-handoff.md quotes '17/156 vs analytic random 15.6'; the receipt's random rank-1 mean is 15.9 over 20 seeded repeats, so the prose figure is off by 0.3 and the receipt wins. The handoff's 'nets one new rescue' does not correspond to any number in the receipt, whose live-pool reachability is 15."
+  },
+  {
+   "id": "k:2026-09-01-generator-leakage",
+   "date": "2026-09-01",
+   "lever": "generator leakage (the suspicion that ERB queries quote their gold verbatim)",
+   "bed_id": "erb_blob_v09x_947k",
+   "kill_criterion": "quoted from the receipt: 'FLAG P1 AS BED-INFLATED if BOTH: (a) the MEDIAN longest common contiguous CONTENT n-gram (stopwords deleted from both sides) between a query and its gold chunk(s) is >= 4 tokens ... AND (b) that median exceeds the TOPIC-MATCHED control'",
+   "result": "Not bed-inflated: arm (a) gives a gold content-LCN median of 2.0 against a threshold of 4, which is decisive on its own. Arm (b) as pre-registered would have been met (gap 2.0) but its control is vacuous on this bed (constant 0 on 470 of 470); the repaired control B2 over directory-neighbour documents gives a gap of 1.0, also not met. Verdict PASS.",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/generator_leakage_2026-09-01.json",
+   "verdict": "NULL",
+   "notes": "Recorded as NULL because the finding is the absence of the suspected effect, not the death of a lever. The receipt discloses the control defect itself under criterion_defect_disclosed and reports the verdict as robust to it."
   },
   {
    "id": "k:2026-09-01-head-chunk-monopoly",
    "date": "2026-09-01",
-   "lever": "head-chunk monopoly at rank 1 (Phase-1 probe P5 bottom line)",
+   "lever": "head-chunk monopoly at rank 1 as an exploitable ranking effect",
    "bed_id": "erb_blob_v09x_947k",
-   "kill_criterion": "quoted from the receipt: \"Per probe: REFUTED if the probe's own coded/pre-registered decision rule flips once a defect is corrected, OR if its headline number is pinned by construction (measured against a null with no support on this bed). ... Arm verdict: KILL if any probe is REFUTED, PASS if all three CONFIRMED, INCONCLUSIVE if corrections were needed but the conclusions stand.\"",
-   "result": "REFUTED as a presentation-order artifact: the 156/156 head-or-only result at p=1.122e-19 measured the assembler's sequence_index sort, so seat 1 is head-or-only with probability 1. In true score order it is 79.49%, and inside the pool rank carries no head-chunk information (17.29% middle share at rank 1 vs 17.47% at ranks 2-15). What survives is an admission effect: at-cap head chunks enter the pool about 1.4x more often than equally long middle chunks (obs/exp 0.592 at rank 1, z=-3.72).",
-   "receipt": "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
+   "kill_criterion": "quoted from head_chunk_lane_2026-09-01.json: 'KILL if the first-vs-middle rank gap collapses once BM25 term frequency and IDF are controlled instead of the kw_cov distinct-term diagnostic. If head chunks simply carry the document title/metadata header and therefore have genuinely higher tf on the query's key terms, then there is a real CONTENT difference and no positional bias to exploit -- that is a clean kill and it should be taken, not argued around.'",
+   "result": "A presentation-order artefact with zero retrieval content: context_manager.py:3355 emits the delivered set sorted by promoter.sequence_index, so seat 1 is head-or-only with probability 1, and the delivered SET is bit-identical to the score top-k (mean overlap 1.000). K1 failed (within-document at-cap paired BM25 gives the head only 54.33% of 5538 decided pairs, p=1.19e-10, mean edge +1.00 on a base of about 38.0, below the pre-registered 60% bar); K2 failed and was refuted (deleting the head's leading 400 characters flips 2.03% of head wins and the head's mean BM25 does not fall). In true score order the rank-1 head-or-only share is 79.49%, and inside the pool rank carries no head-chunk information (17.29% middle share at rank 1 against 17.47% at ranks 2 to 15).",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/head_chunk_lane_2026-09-01.json",
    "verdict": "REFUTED",
-   "notes": "Receipt verdict field: KILL. It is under untracked/ rather than mirror/ because it postdates the mirror commit. Its basis_receipts name three Phase-1 probe receipts that are not in this archive at all (see `missing`)."
+   "notes": "Branch mirror claude/architecture-hunt-research-e4ee87 (local, no PR). Receipt verdict field: KILL. The independent adversarial re-derivation untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json reaches the same conclusion from the other direction and returns KILL on its own arm rubric. What survives both is an admission effect: at-cap head chunks enter the pool about 1.4x more often than equally long middle chunks (obs/exp 0.592 at rank 1, z=-3.72)."
   },
   {
    "id": "k:2026-09-01-length-normalization",
    "date": "2026-09-01",
    "lever": "length-normalization family (BM25 b, rank-time length penalty)",
    "bed_id": "erb_blob_v09x_947k",
-   "kill_criterion": null,
-   "result": "The mechanism is absent: verbosity runs backwards (winner/gold/corpus avg_tf 1.541/1.571/1.691) and boilerplate fires at 0.0%. Gold is not short - 47.8% of the corpus sits at the 4,000-char cap so gold's 42.9% is the base rate; the anomaly is entirely winner-side at 1.80x.",
-   "receipt": null,
-   "verdict": "KILL",
-   "notes": "Quoted from research-inbox/2026-09-01-phase2-handoff.md. The scope_verbosity and atcap_confound probe receipts are not in this archive; the 2026-09-01 verification receipt later corrected the 42.9% figure to 54.4% over all gold chunks."
+   "kill_criterion": "quoted from the receipt: 'KILL the length-normalization family if distinct-term count does NOT separate gold from interlopers on these slates once length is controlled for - i.e. if the at-cap asymmetry is not accompanied by a distinct-term asymmetry, the scope hypothesis is wrong on this bed and no custom scorer over FTS5 postings is worth building.'",
+   "result": "The probe returns PASS, not a kill: the winner-minus-gold distinct-QUERY-term advantage survives length control at +1.084 within gold's own 1000-char band (p=0.00416511, 59 wins / 2 ties / 31 losses), +1.191 with both at cap and +1.169 within 250 chars. What dies is the narrower verbosity reading: length-matched avg_tf delta is -0.0133 (p=0.348, not significant), at-cap winners are LESS repetitive than the average at-cap corpus chunk (1.541 against 1.691), raw distinct-vocabulary size is -0.49 terms when length-matched, and 65.3% of the raw coverage gap is length-mediated.",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/scope_verbosity_2026-09-01.json",
+   "verdict": "CORRECTED",
+   "notes": "PROSE AND RECEIPT DISAGREE. research-inbox/2026-09-01-phase2-handoff.md lists the length-normalization family under 'Killed in Phase 1' and says it 'died of an absent mechanism'. The probe's own verdict is PASS on its pre-registered criterion, and the receipt's wording is 'Length normalization has nothing to saturate here; a scope-aware scorer is not refuted' - the mechanism is narrowed to this-query-term coverage, not absent. The verbosity numbers the handoff quotes (1.541 / 1.571 / 1.691, boilerplate 0.0%) are all in the receipt and are correct; the kill framing is what the receipt does not support. Recorded as CORRECTED, following the receipt. The receipt also reconciles the published at-cap counts: winner 1423 of 1674 is the exactly-4000 count while this probe's >=3990 band gives 1425; gold reconciles at 67 of 156 either way."
   },
   {
    "id": "k:2026-09-01-p0-chunk-split-count",
    "date": "2026-09-01",
    "lever": "chunk_split bucket count in the Phase-1 bucket ledger (probe P0)",
    "bed_id": "erb_blob_v09x_947k",
-   "kill_criterion": "quoted from the receipt: 'CORRECTED if a headline number or a stated definition is wrong but the probe's verdict on its own pre-registered criterion still stands.'",
-   "result": "Ledger sound, count wrong: the buckets reproduce exactly from the raw mine (n=156) and rloss.py passes an independent reimplementation plus 200 randomised negative-control trials with zero mismatches, but chunk_split is 65/156 only under an arbitrary hash-ordered gold chunk; under the definition the receipt states (gold's best single chunk) it is 30/156 and 16/95 reachable.",
+   "kill_criterion": "quoted from verify_p0p3p5_2026-09-01.json: 'CORRECTED if a headline number or a stated definition is wrong but the probe's verdict on its own pre-registered criterion still stands.'",
+   "result": "Ledger sound, count wrong: bucket_ledger_2026-09-01.json returns PASS and recomputes chunk_split to 65 of 156 as published, but the adversarial re-derivation shows 65 holds only under an arbitrary hash-ordered gold chunk; under the definition the receipt states (gold's best single chunk) it is 30 of 156 and 16 of 95 reachable. The same root cause moves the published gold at-cap rate from 42.9% to 54.4% over all 386 gold chunks.",
    "receipt": "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
    "verdict": "CORRECTED",
-   "notes": "Same root cause corrects a second published magnitude: gold at-cap rate 42.9% (an arbitrary gold chunk) becomes 54.4% over all 386 gold chunks. Probe P3 (scope_verbosity) came back CONFIRMED with corrections and is therefore not recorded as a kill."
+   "notes": "The probe receipt this corrects is now archived at mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json, whose own kill criterion clause (c) checks that chunk_split recomputes to 65 - which it does, because the recomputation reuses the same arbitrary gold chunk. Everything else in the ledger reproduces: the 156 mined misses are exactly the basis receipt's delivered_gold==0 set, every taxonomy cell agrees, and rloss.py passes identity, negative and shuffle controls."
   },
   {
    "id": "k:2026-09-01-phrase-as-rerank-feature",
@@ -5164,21 +6101,21 @@
    "lever": "phrase presence as a re-ranking feature",
    "bed_id": "erb_blob_v09x_947k",
    "kill_criterion": null,
-   "result": "Gold out-phrases the best already-delivered chunk on only 29/156 (18.6%); it ties on 78 and loses on 49, and the control is generous to gold because gold chunks are 17% shorter on a length-monotone statistic.",
+   "result": "Gold out-phrases the best already-delivered chunk on only 29 of 156 (18.6%), tying on 78 and losing on 49, and the control is generous to gold because gold chunks are 17% shorter on a length-monotone statistic.",
    "receipt": null,
    "verdict": "KILL",
-   "notes": "Quoted from research-inbox/2026-09-01-phase2-handoff.md. No probe receipt in this archive."
+   "notes": "Quoted from research-inbox/2026-09-01-phase2-handoff.md. Now that the Phase-1 probe receipts are archived it is clear these three counts (29/78/49) are NOT in phrase_reach_2026-09-01.json or in any other archived receipt, so this row stays prose-sourced. The archived phrase probe kills the lane on discrimination, which is the same conclusion by a different measurement."
   },
   {
    "id": "k:2026-09-01-phrase-near-lane",
    "date": "2026-09-01",
    "lever": "exact-phrase + NEAR lane fused into RRF",
    "bed_id": "erb_blob_v09x_947k",
-   "kill_criterion": null,
-   "result": "Discrimination, not reachability: reach is fine (31/37 basic pool-absent reachable, 94.2% of all misses with the DF cap lifted) but the phrase fire rate is 0.9126 on standardised hits vs 0.7372 on misses - inverted, negative at every k, in all 7 strata; bootstrap 95% CI [-0.2616, -0.0855], P(delta >= +0.10) = 0.0000.",
-   "receipt": null,
+   "kill_criterion": "quoted from the receipt: \"KILL if (a) exact-phrase probes return a gold chunk for well under half of the 37 basic pool-absent misses, OR (b) the phrase-fire rate on MISSES is not materially higher than on a matched sample of HITS -- a lane that fires equally on both cannot discriminate and cannot move delivered_gold_rate.\"",
+   "result": "Limb (a) does not fire: reach on the 37 basic pool-absent misses is 31 of 37 = 0.8378 against a 0.40 threshold. Limb (b) fires on every basis: miss reach 0.7372 against matched-hit reach 0.9316 (delta -0.1944) and against the composition-proof standardised hit reach 0.9126 (delta -0.1754), with 0 of 7 question-type strata where misses fire more. Verdict KILL.",
+   "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/phrase_reach_2026-09-01.json",
    "verdict": "KILL",
-   "notes": "Numbers quoted from research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' table. The underlying phrase_reach probe receipt is not in this archive (see `missing`), so this entry is prose-sourced and cannot be re-derived from the clone."
+   "notes": "Branch mirror claude/architecture-hunt-research-e4ee87 (local branch, no PR), head 2ebafd998fbf, exported against the semantic-portfolio head rather than master. Overall miss reach with the DF cap lifted is 0.9423, matching the 94.2% in research-inbox/2026-09-01-phase2-handoff.md. The handoff's bootstrap CI [-0.2616, -0.0855] and its P(delta >= +0.10) = 0.0000 do NOT appear anywhere in this receipt or in any other archived file; those two figures remain prose-only."
   }
  ],
  "graduations": [
@@ -5288,113 +6225,58 @@
    "paired": "+18/-0",
    "pr": null,
    "receipt": "mirror/benchmarks/dogfood/erb/receipts/ladder_v09x_w24_min_delivered_2026-08-28.json",
-   "notes": "before = the wave-1 combo arm (296/470), after = the floor arm (314/470), n=470, r@12 0.6809 and fr@12 0.6830 unchanged - the floor moves delivery only. The +18/-0 paired figure and the two cross-corpus confirms (+18/-0 enronqa_v2, +8/-0 enronqa_padded) are from sweep_v091_gate_2026-08-30.json, where the arm is labelled informational; the BASELINES v0.9.1 row records 'three corpora, zero paired losses'."
+   "notes": "before = the wave-1 combo arm (296/470), after = the floor arm (314/470), n=470, r@12 0.6809 and fr@12 0.6830 unchanged - the floor moves delivery only. The +18/-0 paired figure and the two cross-corpus confirms (+18/-0 enronqa_v2, +8/-0 enronqa_padded) are from sweep_v091_gate_2026-08-30.json, where the arm is labelled informational; the BASELINES v0.9.1 row records 'three corpora, zero paired losses'. Confirmed as the right floor by the 2026-08-31 width curve (mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/receipts/floor_width_curve_947k_2026-08-31.json, PR #427): delivered 0.6298 / 0.6447 / 0.6681 at floors 0 / 6 / 12, strictly nested sets with zero losses anywhere, and floor 6 recovers only 7 of the 18 needles because the classifier caps are 2/5/6/8 and the 8-cap class stays unlifted at 6."
   }
  ],
  "missing": [
   {
-   "receipt": "benchmarks/dogfood/erb/receipts/phrase_reach_2026-09-01.json",
-   "named_in": "task brief; the finding it carries is summarised in research-inbox/2026-09-01-phase2-handoff.md",
-   "note": "ERB Phase-1 phrase/NEAR reachability probe. No file of this name anywhere in the clone; the mirror is pinned to a commit that predates the Phase-1 commit 3ad934c."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/doc_union_oracle_2026-09-01.json",
-   "named_in": "task brief; finding summarised in research-inbox/2026-09-01-phase2-handoff.md",
-   "note": "ERB Phase-1 doc-union oracle probe. Not in the mirror or untracked/."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/scope_verbosity_2026-09-01.json",
-   "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-   "note": "ERB Phase-1 probe P3. The verification receipt reproduces it bit-identically apart from git_sha and wall_s, but the probe receipt itself is not archived."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json",
-   "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-   "note": "ERB Phase-1 probe P5. Not archived."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/generator_leakage_2026-09-01.json",
-   "named_in": "task brief",
-   "note": "ERB Phase-1 generator-leakage probe. No file of this name in the clone and no research-inbox document names it."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json",
-   "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-   "note": "ERB Phase-1 probe P0. Not archived; the verification receipt reproduces its buckets from the raw mine."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/interloper_mine_erb947k_2026-08-31.json",
-   "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json; research-inbox/2026-09-01-architecture-hunt-prompt.md",
-   "note": "The interloper campaign's per-miss delivered slates. Also missing: benchmarks/dogfood/interloper_taxonomy_wave{1,2}_2026-08-31.json and docs/benchmarks/2026-08-31-interloper-what-wins.md. The derived analysis research-inbox/2026-08-31-basic-miss-taxonomy.{md,json} IS in the clone and is recorded as a measurement."
-  },
-  {
-   "receipt": "benchmarks/dogfood/erb/receipts/dense_ceiling_probe_829k.json",
-   "named_in": "research-inbox/2026-09-01-architecture-hunt-prompt.md (killed list)",
-   "note": "Dense-ceiling probe. Only the headline survives in prose (4/86 semantic at k=12, median dense rank 3,020); the exact filename is inferred from the name used in that list."
-  },
-  {
    "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_native_baseline_2026-08-29.json",
    "named_in": "BASELINES.md row 2026-08-29-enronqa-native-baseline",
-   "note": "The EnronQA native baseline and paraphrase-crater receipt. Its headline numbers are quoted in the BASELINES row and recorded here from that row; the file, its embedded paired_analysis and the whole benchmarks/dogfood/enronqa/ tree are absent from the mirror."
+   "note": "STILL MISSING. The EnronQA native baseline on the 84,665-gene bed, with its embedded paired_analysis. Its headline numbers are quoted in the BASELINES row and recorded here from that row. The paraphrase crater itself is now covered by paraphrase_crater_enronqa_2026-08-30.json on the v2 and padded beds, which is a different bed pair, so the native-bed cell is not reconstructable."
   },
   {
    "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_v2_*_2026-08-30.json and benchmarks/dogfood/enronqa_padded/receipts/ladder_enronqa_padded_*_2026-08-30.json",
-   "named_in": "BASELINES.md row 2026-08-30-v091-gate-sweep",
-   "note": "Per-arm EnronQA ladders behind the v0.9.1 gate. The rolled-up sweep receipt sweep_v091_gate_2026-08-30.json IS mirrored and is the source used here."
+   "named_in": "BASELINES.md row 2026-08-30-v091-gate-sweep; basis_receipt of interloper_mine_enron_v2_2026-08-31.json and interloper_mine_enron_padded_2026-08-31.json",
+   "note": "STILL MISSING. The per-arm EnronQA ladders behind the v0.9.1 gate, including the ladder_enronqa_v2_v091_floor_2026-08-30.json and ladder_enronqa_padded_v091_floor_2026-08-30.json that the 2026-08-31 interloper mines cite as their basis. The rolled-up sweep_v091_gate_2026-08-30.json is mirrored and is the source used here; the floor-12 EnronQA cells are also restated by the paraphrase crater receipt."
   },
   {
    "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_v2c_*_2026-08-30.json",
    "named_in": "BASELINES.md row 2026-08-30-entity-hub-cutoff-retrieval-ab",
-   "note": "Per-arm ladders behind the entity-hub-cutoff null. The rolled-up A/B receipt is mirrored."
-  },
-  {
-   "receipt": "benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json",
-   "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-   "note": "MULocBench budget-14000 null. No MULocBench receipt of any kind is in the clone, so neither the baseline nor the null carries a rate here."
-  },
-  {
-   "receipt": "MULocBench baseline receipt (filename not stated in any archived source)",
-   "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-   "note": "The synthesis cites a 226-query delivered_count=6 cohort but names no baseline receipt."
-  },
-  {
-   "receipt": "LoCoMo and LoCoMo+observations three-way receipts (filenames not stated in any archived source)",
-   "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md; research-inbox/2026-08-31-plan-red-team.md (semantic-portfolio-lane doc, worktree vigilant-wu-5416d6)",
-   "note": "Only the cohort line survives (cognitive class n=401, 3 hits). The three-way comparison itself is not archived."
-  },
-  {
-   "receipt": "FinanceBench baseline receipt (filename not stated in any archived source)",
-   "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-   "note": "Called the 'FinanceBench baseline blackout'; only the metrics-class cohort line survives (n=50, 0 hits)."
-  },
-  {
-   "receipt": "W2.2 eps_band_coverage arm receipt (filename not stated in any archived source)",
-   "named_in": "research-inbox/2026-09-01-architecture-hunt-prompt.md killed list; research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md ladder item 5",
-   "note": "The 470-needle W2.2 arm was in flight on 2026-08-31 and appears as killed on 2026-09-01. No receipt, no numbers."
-  },
-  {
-   "receipt": "947k min_delivered_docs floor width curve (12 vs 6 A/B)",
-   "named_in": "task brief",
-   "note": "Only the floor-12 arm (ladder_v09x_w24_min_delivered_2026-08-28.json) and the cross-corpus floor cells inside sweep_v091_gate_2026-08-30.json exist here. No multi-width curve receipt is in the clone; the basic-miss taxonomy records width6_queries=68 and width12_queries=107 as an observation, not as an A/B."
+   "note": "STILL MISSING. Per-arm ladders behind the entity-hub-cutoff null. The rolled-up A/B receipt is mirrored."
   },
   {
    "receipt": "benchmarks/dogfood/erb/receipts/pool_depth_capture_2026-09-01.sqlite and pool_depth_ck_2026-09-01/cache/deep1000.jsonl",
    "named_in": "research-inbox/2026-09-01-phase2-handoff.md",
-   "note": "The interrupted A1 pool-depth capture. The tooling and the smoke JSONs were copied into untracked/erb-phase2-tooling/, but the sqlite capture and the 114-record checkpoint cache were not. The handoff warns that the smoke files' 'VERDICT KILL' lines are 2-4 needle smokes and must not be read as results, so no kill is recorded from them."
+   "note": "STILL MISSING. The interrupted A1 pool-depth capture (14.4 MB sqlite plus a 114-record resumable checkpoint). The tooling and the smoke JSONs were copied into untracked/erb-phase2-tooling/, but the handoff warns that those smokes' VERDICT KILL lines are two-to-four-needle samples and must not be read as results, so no kill is recorded from them. The pre-registered admission gate is still unresolved."
   },
   {
    "receipt": "benchmarks/scbench/campaigns/2026-08-08-codex-pilot/ and 2026-08-11-codex-terra/",
    "named_in": "BASELINES.md rows 2026-08-08-codex-pilot and 2026-08-11-codex-terra",
-   "note": "The SCBench campaign trees have rows in the ledger but no mirrored receipts, so no SCBench measurement is recorded."
+   "note": "STILL MISSING. The SCBench campaign trees have ledger rows but no mirrored receipts, so no SCBench measurement is recorded."
+  },
+  {
+   "receipt": "no file: the bootstrap CI [-0.2616, -0.0855] and P(delta >= +0.10) = 0.0000 for the phrase lane",
+   "named_in": "research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' table",
+   "note": "NEW GAP, found while resolving the branch receipts. phrase_reach_2026-09-01.json is now archived and reproduces every other figure in that table row, but neither it nor any other archived file contains this bootstrap interval or that probability. The kill itself stands on the receipt's own limb (b)."
+  },
+  {
+   "receipt": "no file: the phrase-as-reranking-feature counts 29 / 78 / 49 over the 156 misses",
+   "named_in": "research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' table",
+   "note": "NEW GAP. With the Phase-1 probes archived it is now clear these three counts appear in no receipt in this archive. The corresponding kill row stays prose-sourced."
+  },
+  {
+   "receipt": "no file: a tier_hard_floor_frac ladder (0.15 / 0.10 / 0.05 / 0)",
+   "named_in": "muloc_budget_ab_2026-08-31.json ('Next cell'); research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md ladder item 4",
+   "note": "NEW GAP, and by design: the muloc budget A/B registers this as the next cell rather than reporting it. Recorded so the hard-floor question is not mistaken for answered - the 15%-of-top floor is named as the mechanism behind the muloc delivered_count=6 cohort but has never been varied."
   }
  ],
  "unparsed": [],
  "counts": {
-  "beds": 28,
-  "measurements": 248,
-  "kills": 16,
+  "beds": 30,
+  "measurements": 291,
+  "kills": 21,
   "graduations": 9,
-  "missing": 19,
+  "missing": 8,
   "unparsed": 0
  }
 }

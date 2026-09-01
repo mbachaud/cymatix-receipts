@@ -39,6 +39,7 @@ OUT = os.path.join(ROOT, "ledger", "ledger.json")
 SOURCE_COMMIT = "2644c3e44038bf285eb6a5484817bd4c3de126c6"
 
 BASELINES = "mirror/docs/benchmarks/BASELINES.md"
+BRANCH_ROOT = "mirror-branches"
 ERB_DIR = "mirror/benchmarks/dogfood/erb/receipts"
 DOGFOOD_RECEIPTS = "mirror/benchmarks/dogfood/receipts"
 DATA_DIR = "mirror/docs/benchmarks/data"
@@ -47,6 +48,9 @@ SNOW_DIR = "mirror/benchmarks/snow/results"
 
 
 # ---------------------------------------------------------------- utilities
+
+
+BSLASH = chr(92)
 
 
 def rp(*parts: str) -> str:
@@ -109,6 +113,102 @@ def num(val):
     return None
 
 
+# ---------------------------------------------------------------- branch mirrors
+
+
+def load_branches() -> dict:
+    """One entry per mirror-branches/<slug>/, read from that directory's SOURCE.md.
+
+    SOURCE.md is written by scripts/mirror_branches.py and carries the branch
+    name, the exported head sha, the diff base and the PR number. Everything the
+    ledger says about a branch row's provenance comes from there, never from a
+    git call.
+    """
+    out: dict = {}
+    root = os.path.join(ROOT, BRANCH_ROOT)
+    if not os.path.isdir(root):
+        return out
+    for slug in sorted(os.listdir(root)):
+        src = os.path.join(root, slug, "SOURCE.md")
+        if not os.path.isfile(src):
+            continue
+        text = read_text(rp(BRANCH_ROOT, slug, "SOURCE.md"))
+        def field(name: str):
+            m = re.search(r"^" + re.escape(name) + r":\s*`?([^`\n]+)`?", text, re.M)
+            return m.group(1).strip().rstrip("`") if m else None
+        head = field("head")
+        if head:
+            head = head.split(" ")[0].strip("`")
+        base = field("diff base")
+        if base:
+            base = base.split(" ")[0].strip("`")
+        out[slug] = {
+            "slug": slug,
+            "branch": field("branch") or slug,
+            "head": head,
+            "pr": field("pr"),
+            "diff_base": base,
+        }
+    return out
+
+
+BRANCHES = load_branches()
+
+
+def branch_of(relpath: str):
+    parts = relpath.split("/")
+    if len(parts) > 1 and parts[0] == BRANCH_ROOT:
+        return BRANCHES.get(parts[1])
+    return None
+
+
+def branch_note(relpath: str) -> str:
+    """Provenance sentence appended to every row read out of a branch mirror."""
+    br = branch_of(relpath)
+    if not br:
+        return ""
+    pr = br.get("pr")
+    pr_txt = (" (PR %s)" % pr) if (isinstance(pr, str) and re.fullmatch(r"#\d+", pr)) else " (%s)" % (pr or "no PR recorded")
+    return (
+        "Branch mirror: %s%s, head %s, exported against master %s. Not on master at the "
+        "ledger's source commit."
+        % (br["branch"], pr_txt, br.get("head"), br.get("diff_base"))
+    )
+
+
+def branch_pr_number(relpath: str):
+    br = branch_of(relpath)
+    if not br:
+        return None
+    pr = br.get("pr")
+    if isinstance(pr, str) and pr.startswith("#") and pr[1:].isdigit():
+        return int(pr[1:])
+    return None
+
+
+def master_twin(relpath: str):
+    """A branch file's counterpart under mirror/, if one exists.
+
+    Returns (mirror_relpath, identical: bool) or None. The master copy wins for
+    master rows; an identical branch copy is skipped entirely, and a differing
+    one is emitted as its own row with both noted.
+    """
+    br = branch_of(relpath)
+    if not br:
+        return None
+    tail = "/".join(relpath.split("/")[2:])
+    twin = rp("mirror", tail)
+    if not os.path.exists(os.path.join(ROOT, twin)):
+        return None
+    import hashlib
+
+    def digest(rel: str) -> str:
+        with open(os.path.join(ROOT, rel), "rb") as fh:
+            return hashlib.sha256(fh.read()).hexdigest()
+
+    return twin, digest(relpath) == digest(twin)
+
+
 # ---------------------------------------------------------------- bed identity
 
 BED_BY_PATH = {
@@ -134,6 +234,13 @@ BED_BY_PATH = {
     "enterprise_rag_10k": "enterprise_rag_10k",
     "enterprise_rag_50k": "enterprise_rag_50k",
     "genome": "snow_genome",
+    "f:/tmp/financebench_bed/financebench.db": "financebench",
+    "f:/tmp/locomo_bed/locomo.db": "locomo",
+    "f:/tmp/locomo_obs_bed/locomo_obs.db": "locomo_obs",
+    "f:/tmp/muloc_bed/muloc.db": "muloc",
+    "f:/tmp/enronqa_bed_v2/enronqa.db": "enronqa_v2",
+    "f:/tmp/enronqa_bed_v3/enronqa.db": "enronqa_v3",
+    "f:/tmp/enronqa_padded_bed/enronqa_padded.db": "enronqa_padded",
 }
 
 # The dogfood bed was re-cut on 2026-07-29 (155 genes dropped); the two states
@@ -473,45 +580,85 @@ BEDS = [
     {
         "id": "muloc",
         "family": "muloc",
-        "genes": None,
-        "size_bytes": None,
-        "tagger_version": None,
-        "ingest_c": None,
+        "genes": 108375,
+        "size_bytes": 1713176576,
+        "tagger_version": 2,
+        "ingest_c": "unknown",
         "identity": None,
         "notes": (
-            "MULocBench bed. NOT present in this archive: no manifest entry, no receipt. Named "
-            "only by research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md, which cites "
-            "benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json (listed "
-            "under `missing`). Every field here is null on purpose."
+            "MULocBench bed, F:/tmp/muloc_bed/muloc.db. genes and tagger_version from the bed "
+            "string in muloc_budget_ab_2026-08-31.json ('108,375 genes, tagger v2, hub cutoff 200'); "
+            "size_bytes is the smallest bed_bytes across the three muloc ladder receipts. ingest_c "
+            "is unknown: the lane doc says only 'muloc may run parallel c=6', which is a plan line, "
+            "not a record of the build. tagger_version 2 makes this bed NOT comparable with any ERB "
+            "or EnronQA bed under the BASELINES tagger rule. Known state hazard: the budget A/B "
+            "receipt records ~71-75 of 680 cross-run rank jitter cold-vs-cold on this bed and asks "
+            "for a determinism card."
         ),
     },
     {
         "id": "locomo",
         "family": "locomo",
-        "genes": None,
-        "size_bytes": None,
-        "tagger_version": None,
-        "ingest_c": None,
+        "genes": 6276,
+        "size_bytes": 19738624,
+        "tagger_version": 2,
+        "ingest_c": "unknown",
         "identity": None,
         "notes": (
-            "LoCoMo bed. NOT present in this archive. Named only by "
-            "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md and "
-            "2026-08-31-plan-red-team.md (semantic-portfolio-lane doc in worktree vigilant-wu-5416d6). "
-            "No receipt mirrored; see `missing`."
+            "LoCoMo bed, F:/tmp/locomo_bed/locomo.db, turns plus cues. genes from "
+            "obs_enrichment_threeway_2026-08-31.json ('6,276 genes: turns+cues'); size_bytes from "
+            "the baseline ladder receipt. tagger_version 2 per the lane doc ('tagger-v2 bed'). "
+            "ingest_c unknown: the doc's build-mode line ('locomo sequential (tiny)') is a plan, "
+            "not a build record."
+        ),
+    },
+    {
+        "id": "locomo_obs",
+        "family": "locomo",
+        "genes": 8817,
+        "size_bytes": 27435008,
+        "tagger_version": 2,
+        "ingest_c": "unknown",
+        "identity": None,
+        "notes": (
+            "LoCoMo bed enriched with observation documents, F:/tmp/locomo_obs_bed/locomo_obs.db. "
+            "genes from obs_enrichment_threeway_2026-08-31.json ('8,817 genes: turns+cues+2,541 "
+            "observation docs'). Two arms run against this one file with different gold sets: "
+            "locomo_obs (union gold) and locomo_obs_ctl (turn-only gold, the displacement control), "
+            "so it is a bed-and-gold A/B against bed locomo, not a same-bed ablation."
         ),
     },
     {
         "id": "financebench",
         "family": "financebench",
-        "genes": None,
-        "size_bytes": None,
-        "tagger_version": None,
-        "ingest_c": None,
+        "genes": 73759,
+        "size_bytes": 910073856,
+        "tagger_version": 2,
+        "ingest_c": "unknown",
         "identity": None,
         "notes": (
-            "FinanceBench bed. NOT present in this archive. Named only by "
-            "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md "
-            "('FinanceBench baseline blackout'). No receipt mirrored; see `missing`."
+            "FinanceBench bed, F:/tmp/financebench_bed/financebench.db, page-level gold over 368 "
+            "filings. genes and tagger_version from "
+            "mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-financebench-baseline-note.md "
+            "('73,759-gene tagger-v2 bed'); size_bytes = bed_bytes in the baseline ladder receipt. "
+            "The note records two bed-design factors: pypdf table extraction is rough and per-page "
+            "chunking splits financial statements."
+        ),
+    },
+    {
+        "id": "enronqa_v3",
+        "family": "enronqa",
+        "genes": 84677,
+        "size_bytes": None,
+        "tagger_version": 2,
+        "ingest_c": "unknown",
+        "identity": None,
+        "notes": (
+            "F:/tmp/enronqa_bed_v3/enronqa.db, the tagger-v2 rebuild of the EnronQA corpus. genes "
+            "from the subject block of "
+            "entity_hub_cutoff_reprobe_85k_taggerv2_2026-08-31.json (84,677, bed_stable_during_run "
+            "true). Same gene count as enronqa_v2 but a different tagger version, so the two are "
+            "not cross-comparable. No retrieval measurement against this bed is archived."
         ),
     },
 ]
@@ -522,9 +669,9 @@ KNOWN_BED_IDS = {b["id"] for b in BEDS}
 # ---------------------------------------------------------------- BASELINES.md
 
 
-def parse_baselines_rows() -> list[dict]:
-    """Parse the campaign table of BASELINES.md into rows we can cite."""
-    text = read_text(BASELINES)
+def parse_baselines_rows(relpath: str = BASELINES) -> list[dict]:
+    """Parse the campaign table of a BASELINES.md into rows we can cite."""
+    text = read_text(relpath)
     rows: list[dict] = []
     seen: set[str] = set()
     for line in text.splitlines():
@@ -568,7 +715,28 @@ def expand_braces(pattern: str) -> list[str]:
     return out
 
 
-BASELINE_ROWS = parse_baselines_rows()
+def all_baselines_files() -> list[tuple[str, str | None]]:
+    """(relpath, branch slug) for every BASELINES.md in the archive.
+
+    The master-pinned copy comes first so its rows win on name collisions; a
+    branch copy contributes only the rows that master does not have.
+    """
+    out: list[tuple[str, str | None]] = [(BASELINES, None)]
+    for slug in sorted(BRANCHES):
+        rel = rp(BRANCH_ROOT, slug, "docs/benchmarks/BASELINES.md")
+        if os.path.exists(os.path.join(ROOT, rel)):
+            out.append((rel, slug))
+    return out
+
+
+BASELINE_ROWS: list[dict] = []
+for _rel, _slug in all_baselines_files():
+    for _row in parse_baselines_rows(_rel):
+        if any(r["name"] == _row["name"] for r in BASELINE_ROWS):
+            continue
+        _row["source_file"] = _rel
+        _row["branch_slug"] = _slug
+        BASELINE_ROWS.append(_row)
 
 # Receipts that fall inside a broader row's glob but belong to their own arm.
 # `ladder_v09x_*.json` in the wave-1 row would otherwise swallow the two W2 arms
@@ -579,12 +747,76 @@ CAMPAIGN_OVERRIDE = {
         None,
         "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.1 arm; BASELINES has no row of its own for it.",
     ),
+    "ladder_v09x_budget14000_2026-08-31.json": (
+        "2026-08-31-erb947k-budget-doubling",
+        None,
+        "Matches the wave-1 row's ladder_v09x_*.json glob but is the ERB budget-doubling control arm on branch bench/semantic-portfolio; BASELINES has no row for it.",
+    ),
+    "ladder_v09x_w22_coverage_2026-08-31.json": (
+        "2026-08-31-w22-eps-band-coverage",
+        None,
+        "Matches the wave-1 row's ladder_v09x_*.json glob but is the W2.2 arm on branch claude/w22-eps-band-coverage; BASELINES has no row for it.",
+    ),
+    "w22_probe_100k_2026-08-31.json": (
+        "2026-08-31-w22-eps-band-coverage",
+        None,
+        "100k carve probe of the W2.2 arm; no BASELINES row.",
+    ),
+    "ladder_locomo_obs_2026-08-31.json": (
+        "2026-08-31-locomo-observation-enrichment-threeway",
+        None,
+        "Arm of the LoCoMo three-way; the summary receipt obs_enrichment_threeway_2026-08-31.json names it.",
+    ),
+    "ladder_locomo_obs_turnonly_2026-08-31.json": (
+        "2026-08-31-locomo-observation-enrichment-threeway",
+        None,
+        "Displacement-control arm of the LoCoMo three-way; the summary receipt names it.",
+    ),
+    "ladder_muloc_baseline_2026-08-31.json": (
+        "2026-08-31-muloc-budget-doubling",
+        None,
+        "Warm-bed arm, deprecated by muloc_budget_ab_2026-08-31.json, which names it.",
+    ),
+    "ladder_muloc_baseline_cold_2026-08-31.json": (
+        "2026-08-31-muloc-budget-doubling",
+        None,
+        "The citable MULoc baseline per muloc_budget_ab_2026-08-31.json, which names it. Date-and-name-overlap attribution would otherwise have sent it to the FinanceBench note.",
+    ),
+    "ladder_muloc_budget14000_2026-08-31.json": (
+        "2026-08-31-muloc-budget-doubling",
+        None,
+        "Treatment arm of the MULoc budget A/B; the summary receipt names it.",
+    ),
     "ladder_v09x_w24_min_delivered_2026-08-28.json": (
         "2026-08-28-w2.4-min-delivered-floor-arm",
         None,
         "Matches the wave-1 row's ladder_v09x_*.json glob but is a separate W2.4 arm; BASELINES has no row of its own for it.",
     ),
 }
+
+
+_WRITEUP_CACHE: list[tuple[str, str]] = []
+
+
+def writeup_index() -> list[tuple[str, str]]:
+    """(basename, relpath) for every dated write-up, master copies first."""
+    if _WRITEUP_CACHE:
+        return _WRITEUP_CACHE
+    dirs = ["mirror/docs/benchmarks", "mirror/docs/research"]
+    for slug in sorted(BRANCHES):
+        dirs.append(rp(BRANCH_ROOT, slug, "docs/benchmarks"))
+        dirs.append(rp(BRANCH_ROOT, slug, "docs/research"))
+    seen = set()
+    for d in dirs:
+        if not os.path.isdir(os.path.join(ROOT, d)):
+            continue
+        for rel in ls(d, "*.md"):
+            base = os.path.basename(rel)
+            if not DATE_RE.match(base) or base in seen:
+                continue
+            seen.add(base)
+            _WRITEUP_CACHE.append((base, rel))
+    return _WRITEUP_CACHE
 
 
 def campaign_for(basename: str, date: str | None) -> tuple[str, str | None, str | None]:
@@ -607,20 +839,16 @@ def campaign_for(basename: str, date: str | None) -> tuple[str, str | None, str 
     stripped = re.sub(r"^20\d\d-\d\d-\d\d[-_]", "", stem)
     if stripped != stem:
         stems.append(stripped)
-    writeups = [
-        os.path.basename(d)
-        for d in sorted(ls("mirror/docs/benchmarks", "*.md"))
-        if DATE_RE.match(os.path.basename(d))
-    ]
+    writeups = writeup_index()
     # 1. a dated write-up that names the receipt outright
-    for wu in writeups:
-        text = read_text(rp("mirror/docs/benchmarks", wu))
+    for wu, wu_rel in writeups:
+        text = read_text(wu_rel)
         if any(s in text for s in stems):
             return wu[:-3], None, "campaign taken from the write-up that names this receipt; no BASELINES row matches it"
     # 2. otherwise the dated write-up from the same day whose slug shares the most
     #    words with the receipt name, when that winner is unique
     if date:
-        same_day = [w for w in writeups if w.startswith(date)]
+        same_day = sorted({w for w, _ in writeups if w.startswith(date)})
         if len(same_day) == 1:
             return (
                 same_day[0][:-3],
@@ -688,16 +916,66 @@ def arm_metrics(arm: dict) -> dict:
     }
 
 
+# Class-level splits published in a mirrored write-up rather than in the receipt
+# itself. Quoted so a reader does not have to open the doc; the doc is named.
+EXTRA_NOTES = {
+    "ladder_financebench_baseline_2026-08-31.json": (
+        "Per-question-type split, quoted from "
+        "mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-financebench-baseline-note.md: "
+        "novel-generated 17/50 (.34) r@12 .34, 29 pool-absent; domain-relevant 6/50 (.12) r@12 .12, "
+        "42 pool-absent; metrics-generated 0/50 (.000), 47 pool-absent; overall 23/150 (.153) with "
+        "118 of 127 misses pool-absent. Mechanism named there: a metrics query splits into a "
+        "doc-identity half and a concept half and single-field flattened FTS cannot express the "
+        "intersection, so fused mass never concentrates."
+    ),
+    "ladder_locomo_baseline_2026-08-31.json": (
+        "Per-class split, quoted from "
+        "mirror-branches/bench__semantic-portfolio/docs/research/2026-08-31-semantic-portfolio-lane.md: "
+        "singlehop 489/841 (.581) r@12 .637; temporal 174/320 (.544) r@12 .597; adversarial "
+        "221/446 (.496) r@12 .563; multihop 120/281 (.427) r@12 .509. The cognitive class is the "
+        "outlier at 3/401 and is the cohort the observation-enrichment arm was built to test."
+    ),
+}
+
+
+def ladder_dirs() -> list[str]:
+    """Directories scanned for the ablation-ladder family.
+
+    The master receipt directory first, then every branch mirror's receipt
+    directories, so a branch row can never displace a master row.
+    """
+    dirs = [ERB_DIR]
+    for slug in sorted(BRANCHES):
+        base = os.path.join(ROOT, BRANCH_ROOT, slug, "benchmarks")
+        if not os.path.isdir(base):
+            continue
+        for root, subdirs, _files in os.walk(base):
+            subdirs.sort()
+            if os.path.basename(root) == "receipts":
+                dirs.append(rp(BRANCH_ROOT, slug, os.path.relpath(root, os.path.join(ROOT, BRANCH_ROOT, slug)).replace(os.sep, "/")))
+    return dirs
+
+
 def parse_erb_ladders() -> None:
-    """The ablation-ladder family: mirror/benchmarks/dogfood/erb/receipts/*.json.
+    """The ablation-ladder family, on master and on every branch mirror.
 
     One measurement per (arm x receipt). The arm label is the receipt's `arm`
     field plus the arm config basename when that config is not the shipped
     cymatix.toml, because the 2026-08-27 wave-1 receipts run every arm as a full
     config file with the arm still named "baseline".
+
+    A branch file whose master twin is byte-identical is skipped: master wins.
+    A branch file that differs from its master twin is kept as its own row and
+    both copies are named in `notes`.
     """
-    for rel in ls(ERB_DIR):
+    rels: list[str] = []
+    for d in ladder_dirs():
+        rels.extend(ls(d))
+    for rel in rels:
         base = os.path.basename(rel)
+        twin = master_twin(rel)
+        if twin and twin[1]:
+            continue
         try:
             doc = load(rel)
         except (ValueError, UnicodeDecodeError) as exc:
@@ -736,8 +1014,16 @@ def parse_erb_ladders() -> None:
                 label = "%s @ %s" % (label, cfg)
             shipped = bool(arm["arm"] == "baseline" and cfg == "cymatix.toml" and not knobs)
             notes = []
+            bn = branch_note(rel)
+            if bn:
+                notes.append(bn)
+            if twin and not twin[1]:
+                notes.append("Differs from the master-pinned copy at %s; both kept." % twin[0])
             if extra:
                 notes.append(extra)
+            gold_dir = os.path.basename(os.path.dirname(str(doc.get("gold_file", "")).replace(BSLASH, "/")))
+            if gold_dir:
+                notes.append("needle/gold set directory: %s." % gold_dir)
             if knobs:
                 notes.append("knobs_changed: %s" % json.dumps(knobs, sort_keys=True))
             if met["delivered_gold_rate"] is None and met["delivered_gold_queries"] is not None:
@@ -752,6 +1038,8 @@ def parse_erb_ladders() -> None:
                 notes.append("arm_valid=false in the receipt")
             if doc.get("bed_bytes") is not None:
                 notes.append("bed_bytes at run time: %s" % doc.get("bed_bytes"))
+            if base in EXTRA_NOTES:
+                notes.append(EXTRA_NOTES[base])
             basis = "delivered" if met["delivered_gold_rate"] is not None else "map"
             add(
                 {
@@ -769,7 +1057,7 @@ def parse_erb_ladders() -> None:
                     "shipped_default": shipped,
                     "receipt": rel,
                     "baselines_row": row,
-                    "pr": None,
+                    "pr": branch_pr_number(rel),
                     "git_sha": sha,
                     "notes": " ".join(notes) or None,
                 }
@@ -1164,6 +1452,391 @@ def parse_tagger_v2() -> None:
         )
 
 
+SP = rp(BRANCH_ROOT, "bench__semantic-portfolio", "benchmarks/dogfood")
+CP = rp(BRANCH_ROOT, "claude__cutoff-paraphrase-gene-issues-a77235", "benchmarks/dogfood")
+AH = rp(BRANCH_ROOT, "claude__architecture-hunt-research-e4ee87", "benchmarks/dogfood/erb/receipts")
+
+
+def parse_branch_summaries() -> None:
+    """Explicit readers for the branch receipts that publish rates but do not
+    use the ablation-ladder shape. Every one of these is its own schema."""
+
+    # --- LoCoMo observation-enrichment three-way --------------------------
+    rel = rp(SP, "locomo_obs/receipts/obs_enrichment_threeway_2026-08-31.json")
+    doc = load(rel)
+    beds = {"base_turnGold": "locomo", "ctl_obsBed_turnGold": "locomo_obs", "obs_obsBed_unionGold": "locomo_obs"}
+    labels = {
+        "base_turnGold": "base bed, turn-only gold (LoCoMo baseline)",
+        "ctl_obsBed_turnGold": "observation bed, turn-only gold (displacement control)",
+        "obs_obsBed_unionGold": "observation bed, union gold (enrichment arm)",
+    }
+    short = {"base_turnGold": "base", "ctl_obsBed_turnGold": "ctl", "obs_obsBed_unionGold": "obs"}
+    per_class = doc["per_class_delivered"]
+    for key in ("base_turnGold", "ctl_obsBed_turnGold", "obs_obsBed_unionGold"):
+        arm = doc["arms"][key]
+        cls = ", ".join("%s %s" % (name, per_class[name][short[key]]) for name in sorted(per_class))
+        add(
+            {
+                "id": "m:obs_enrichment_threeway#%s" % slug(key),
+                "date": "2026-08-31",
+                "bed_id": beds[key],
+                "campaign": "2026-08-31-locomo-observation-enrichment-threeway",
+                "arm": labels[key],
+                "n": 2378,
+                "delivered_gold_rate": num(arm["delivered"]),
+                "basis": "delivered",
+                "shipped_default": True,
+                "receipt": rel,
+                "baselines_row": None,
+                "pr": branch_pr_number(rel),
+                "git_sha": None,
+                "notes": (
+                    "%s Receipt campaign line: 'LoCoMo observation-enrichment three-way (write-time abstraction A/B + displacement control)'. Three-way summary. This cell restates arm receipt %s at 4 decimals; that "
+                    "receipt has its own row at full precision. n=2378 from the receipt's caveat "
+                    "block (needle set identical across beds, resolver 2378/2378). Per-class "
+                    "delivered: %s. Receipt caveat: the obs arm's gold set is larger by "
+                    "construction, which is why the ctl arm exists; report all three together."
+                    % (branch_note(rel), arm["receipt"], cls)
+                ),
+            }
+        )
+
+    # --- MULoc budget A/B --------------------------------------------------
+    rel = rp(SP, "muloc/receipts/muloc_budget_ab_2026-08-31.json")
+    doc = load(rel)
+    for key, label, shipped in (
+        ("baseline_cold_7000", "expression_tokens 7000, cold bed (the citable MULoc baseline)", True),
+        ("budget_14000_cold", "expression_tokens 14000, cold bed", False),
+        ("baseline_warm_DEPRECATED", "expression_tokens 7000, warm bed (DEPRECATED by the receipt)", True),
+    ):
+        arm = doc["arms"][key]
+        add(
+            {
+                "id": "m:muloc_budget_ab#%s" % slug(key),
+                "date": "2026-08-31",
+                "bed_id": "muloc",
+                "campaign": "2026-08-31-muloc-budget-doubling",
+                "arm": label,
+                "n": 680,
+                "delivered_gold_rate": num(arm.get("delivered")),
+                "recall_at_12": num(arm.get("r_at_12")),
+                "basis": "delivered",
+                "shipped_default": shipped,
+                "receipt": rel,
+                "baselines_row": None,
+                "pr": branch_pr_number(rel),
+                "git_sha": None,
+                "notes": (
+                    "%s Restates arm receipt %s at 4 decimals. n=680 from that ladder receipt. "
+                    "Receipt note on this arm: %s Campaign verdict: %s Disclosed caveats: "
+                    "cross-run rank jitter of about 71 to 75 of 680 persists cold-vs-cold on this "
+                    "bed, and the ladder launches omitted CYMATIX_DISABLE_LEARN=1 against the "
+                    "BASELINES convention."
+                    % (branch_note(rel), arm.get("receipt"), arm.get("note", "(none)"), doc["verdict"][:210])
+                ),
+            }
+        )
+
+    # --- ERB budget-doubling control --------------------------------------
+    rel = rp(SP, "erb/receipts/budget14000_null_2026-08-31.json")
+    doc = load(rel)
+    paired = doc["paired_result"]
+    dist = paired["delivered_count_distribution_both_arms"]
+    for key, label, shipped in (
+        ("floor12_7000_baseline", "expression_tokens 7000 (shipped v0.9.1 floor-12 config)", True),
+        ("budget_14000", "expression_tokens 14000", False),
+    ):
+        arm = doc["arms"][key]
+        add(
+            {
+                "id": "m:budget14000_null#%s" % slug(key),
+                "date": "2026-08-31",
+                "bed_id": "erb_blob_v09x_947k",
+                "campaign": "2026-08-31-erb947k-budget-doubling",
+                "arm": label,
+                "n": num(paired["n_needles"]),
+                "delivered_gold_rate": num(arm["delivered"]),
+                "recall_at_12": num(arm["score_map_r_at_12"]),
+                "final_recall_at_12": num(arm["final_r_at_12"]),
+                "basis": "delivered",
+                "shipped_default": shipped,
+                "receipt": rel,
+                "baselines_row": None,
+                "pr": branch_pr_number(rel),
+                "git_sha": None,
+                "notes": (
+                    "%s Paired result: %s rows differ on any non-timing field over %s needles, "
+                    "delivered flips %s, and the delivered_count distribution is identical in both "
+                    "arms (6 seats on %s queries, 12 seats on %s). The 7000 cell restates "
+                    "ladder_v09x_w24_min_delivered_2026-08-28.json, which has its own row."
+                    % (
+                        branch_note(rel),
+                        paired["rows_differing_on_any_nontiming_field"],
+                        paired["n_needles"],
+                        paired["delivered_flips"],
+                        dist["6"],
+                        dist["12"],
+                    )
+                ),
+            }
+        )
+
+    # --- 947k min_delivered floor width curve ------------------------------
+    rel = rp(CP, "erb/receipts/floor_width_curve_947k_2026-08-31.json")
+    doc = load(rel)
+    pf = doc["paired"]
+    for key, label, shipped in (
+        ("floor0", "min_delivered_docs 0", False),
+        ("floor6", "min_delivered_docs 6", False),
+        ("floor12", "min_delivered_docs 12 (shipped v0.9.1)", True),
+    ):
+        arm = doc["arms"][key]
+        add(
+            {
+                "id": "m:floor_width_curve_947k#%s" % key,
+                "date": "2026-08-31",
+                "bed_id": "erb_blob_v09x_947k",
+                "campaign": "2026-08-31-floor-width-curve-947k",
+                "arm": label,
+                "n": num(doc["n"]),
+                "delivered_gold_rate": num(arm["delivered"]),
+                "basis": "delivered",
+                "shipped_default": shipped,
+                "receipt": rel,
+                "baselines_row": "2026-08-31-floor-width-curve-947k",
+                "pr": branch_pr_number(rel),
+                "git_sha": None,
+                "notes": (
+                    "%s delivered_n %s of %s; arm receipt %s. Curve pairing: floor6 vs floor0 "
+                    "+%s/-%s, floor12 vs floor6 +%s/-%s, delivered sets strictly nested with zero "
+                    "losses anywhere on the curve. Map and final ranks are byte-identical across "
+                    "all three arms (0 of 470 diffs), which is why recall_at_12 and "
+                    "final_recall_at_12 are null here: the floor is delivery-only and this receipt "
+                    "publishes the delivered basis alone."
+                    % (
+                        branch_note(rel),
+                        arm["delivered_n"],
+                        doc["n"],
+                        arm["receipt"],
+                        pf["floor6_vs_floor0"]["gained"],
+                        pf["floor6_vs_floor0"]["lost"],
+                        pf["floor12_vs_floor6"]["gained"],
+                        pf["floor12_vs_floor6"]["lost"],
+                    )
+                ),
+            }
+        )
+
+    # --- EnronQA paraphrase crater ----------------------------------------
+    rel = rp(CP, "receipts/paraphrase_crater_enronqa_2026-08-30.json")
+    doc = load(rel)
+    bedmap = {"v2": "enronqa_v2", "padded": "enronqa_padded"}
+    for cell in sorted(doc["pair_analysis"]):
+        blk = doc["pair_analysis"][cell]
+        bed_key, arm_key = cell.split("/", 1)
+        fates = blk["fates"]
+        for half, field in (("original", "delivered_orig"), ("rephrased", "delivered_reph")):
+            add(
+                {
+                    "id": "m:paraphrase_crater_enronqa#%s-%s" % (slug(cell), half),
+                    "date": "2026-08-30",
+                    "bed_id": bedmap[bed_key],
+                    "campaign": "2026-08-30-enronqa-paraphrase-crater",
+                    "arm": "%s, %s half of each needle pair" % (arm_key, half.upper()),
+                    "n": num(blk["n_pairs"]),
+                    "delivered_gold_rate": num(blk[field]),
+                    "basis": "delivered",
+                    "shipped_default": arm_key == "v091_shipped_floor12",
+                    "receipt": rel,
+                    "baselines_row": None,
+                    "pr": branch_pr_number(rel),
+                    "git_sha": None,
+                    "notes": (
+                        "%s Paraphrase gap for this cell: %s pp, original minus rephrased. Pair "
+                        "fates: both %s, original-only %s, rephrased-only %s, neither %s. "
+                        "Rephrased-miss map-rank buckets: %s. Basis line in the receipt: %s"
+                        % (
+                            branch_note(rel),
+                            blk["gap_pp"],
+                            fates["both"],
+                            fates["orig_only"],
+                            fates["reph_only"],
+                            fates["neither"],
+                            json.dumps(blk["reph_miss_map_rank_buckets"], sort_keys=True),
+                            doc["basis"],
+                        )
+                    ),
+                }
+            )
+
+    # --- ERB Phase-1 bucket ledger: independent baseline recomputation -----
+    rel = rp(AH, "bucket_ledger_2026-09-01.json")
+    doc = load(rel)
+    add(
+        {
+            "id": "m:bucket_ledger_2026-09-01#baseline",
+            "date": "2026-09-01",
+            "bed_id": "erb_blob_v09x_947k",
+            "campaign": "2026-09-01-erb-phase1-probes",
+            "arm": "shipped v0.9.1 defaults, recomputed from the basis ladder",
+            "n": num(doc.get("n_needles")),
+            "delivered_gold_rate": num(doc["baseline_delivered_gold_rate"]),
+            "recall_at_12": num(doc["baseline_recall_at_k"]),
+            "basis": "delivered",
+            "shipped_default": True,
+            "receipt": rel,
+            "baselines_row": None,
+            "pr": branch_pr_number(rel),
+            "git_sha": doc.get("git_sha"),
+            "notes": (
+                "%s Read-only recomputation of ladder_v09x_w24_min_delivered_2026-08-28.json: the "
+                "%s mined misses are exactly that receipt's delivered_gold==0 set and every "
+                "published taxonomy bucket cell reproduces. Probe verdict: %s"
+                % (branch_note(rel), doc["n_misses"], doc["verdict"])
+            ),
+        }
+    )
+
+    # --- diagnostics that publish no rate ----------------------------------
+    rel = rp(SP, "erb/receipts/dense_ceiling_probe_829k_2026-08-31.json")
+    doc = load(rel)
+    ms, hc = doc["miss_summary"], doc["hit_control_summary"]
+    sem = ms["by_class"]["semantic"]
+    rb = doc["rescue_by_lexical_bucket"]
+    add(
+        {
+            "id": "m:dense_ceiling_probe_829k#dense_only",
+            "date": "2026-08-31",
+            "bed_id": "erb_829k_nosplade",
+            "campaign": "2026-08-31-semantic-portfolio-lane",
+            "arm": "dense-only exhaustive cosine (BGE-M3, no shortlist, no fusion)",
+            "n": num(ms["n"]),
+            "basis": None,
+            "shipped_default": False,
+            "receipt": rel,
+            "baselines_row": None,
+            "pr": branch_pr_number(rel),
+            "git_sha": None,
+            "notes": (
+                "%s Ceiling probe, not a pipeline run, so every rate field is null. Over %s misses "
+                "of the lexical baseline, dense alone puts gold at rank 12 or better on %s and at "
+                "50 or better on %s, median rank %s. Semantic class: n=%s, %s at 12 or better, "
+                "median rank %s. Basic hit control: n=%s, %s at 12 or better, median %s. Rescue by "
+                "lexical bucket: lex_le12 %s of %s, near_band %s of %s, pool_absent %s of %s. "
+                "Basis receipt %s. Disclosed: blob-era query wording differs from v09x wording on "
+                "most needles."
+                % (
+                    branch_note(rel),
+                    ms["n"], ms["le12"], ms["le50"], ms["median"],
+                    sem["n"], sem["le12"], sem["median"],
+                    hc["n"], hc["le12"], hc["median"],
+                    rb["lex_le12"]["dense_le12"], rb["lex_le12"]["n"],
+                    rb["near_band"]["dense_le12"], rb["near_band"]["n"],
+                    rb["pool_absent"]["dense_le12"], rb["pool_absent"]["n"],
+                    doc["basis_receipt"],
+                )
+            ),
+        }
+    )
+
+    rel = rp(CP, "erb/receipts/semantic_above_gold_947k_2026-08-31.json")
+    doc = load(rel)
+    sm = doc["summary"]
+    add(
+        {
+            "id": "m:semantic_above_gold_947k#audit",
+            "date": "2026-08-31",
+            "bed_id": "erb_blob_v09x_947k",
+            "campaign": "2026-08-31-semantic-above-gold-audit",
+            "arm": "above-gold audit of the semantic rank-under-100 misses",
+            "n": num(sm["n_targets"]),
+            "basis": None,
+            "shipped_default": True,
+            "receipt": rel,
+            "baselines_row": None,
+            "pr": branch_pr_number(rel),
+            "git_sha": None,
+            "notes": (
+                "%s Diagnostic, no rate published. %s targets, rank_match %s against the basis "
+                "receipt %s, and gold out-covers the interloper majority on %s of them. This is "
+                "the signal-validity half of the W2.2 arm: the coverage signal is sound and band "
+                "geometry still kills the lane."
+                % (
+                    branch_note(rel),
+                    sm["n_targets"],
+                    sm["rank_match"],
+                    doc["basis_receipt"],
+                    sm["gold_beats_interloper_majority_on_coverage"],
+                )
+            ),
+        }
+    )
+
+    rel = rp(CP, "erb/receipts/semantic_vocab_gap_947k_2026-08-31.json")
+    doc = load(rel)
+    sm = doc["summary"]
+    add(
+        {
+            "id": "m:semantic_vocab_gap_947k#audit",
+            "date": "2026-08-31",
+            "bed_id": "erb_blob_v09x_947k",
+            "campaign": "2026-08-31-semantic-above-gold-audit",
+            "arm": "semantic-class vocabulary-overlap audit",
+            "n": num(sm["n_misses"]),
+            "basis": None,
+            "shipped_default": True,
+            "receipt": rel,
+            "baselines_row": None,
+            "pr": branch_pr_number(rel),
+            "git_sha": None,
+            "notes": (
+                "%s Diagnostic, no rate published. Semantic class: %s hits and %s misses; the "
+                "median fraction of query keywords that hit gold is %s for hits against %s for "
+                "misses. Miss rank buckets: %s."
+                % (
+                    branch_note(rel),
+                    sm["n_hits"], sm["n_misses"],
+                    sm["median_frac_kw_hitting_gold"]["hits"],
+                    sm["median_frac_kw_hitting_gold"]["misses"],
+                    json.dumps(sm["miss_rank_buckets"], sort_keys=True),
+                )
+            ),
+        }
+    )
+
+    for tail, bed_id in (
+        ("erb/receipts/interloper_mine_erb947k_2026-08-31.json", "erb_blob_v09x_947k"),
+        ("enronqa/receipts/interloper_mine_enron_v2_2026-08-31.json", "enronqa_v2"),
+        ("enronqa_padded/receipts/interloper_mine_enron_padded_2026-08-31.json", "enronqa_padded"),
+        ("muloc/receipts/interloper_mine_muloc_2026-08-31.json", "muloc"),
+        ("financebench/receipts/interloper_mine_financebench_2026-08-31.json", "financebench"),
+    ):
+        rel = rp(SP, tail)
+        doc = load(rel)
+        sm = doc["summary"]
+        add(
+            {
+                "id": "m:%s#mine" % os.path.basename(rel)[:-5],
+                "date": "2026-08-31",
+                "bed_id": bed_id,
+                "campaign": "2026-08-31-interloper-what-wins",
+                "arm": "interloper mine over the delivered-gold-zero misses (%s)" % doc["tag"],
+                "n": num(doc["n_misses"]),
+                "basis": None,
+                "shipped_default": True,
+                "receipt": rel,
+                "baselines_row": None,
+                "pr": branch_pr_number(rel),
+                "git_sha": None,
+                "notes": (
+                    "%s Miss-forensics replay, no rate published: it mines what won instead of "
+                    "gold. n_mined %s, replay_errors %s, rank_match %s. Basis receipt: %s."
+                    % (branch_note(rel), sm["n_mined"], sm["replay_errors"], sm["rank_match"], doc["basis_receipt"])
+                ),
+            }
+        )
+
+
 def add_curated_measurements() -> None:
     """Rows whose numbers live in a BASELINES.md row or a research-inbox capture
     rather than in a mirrored receipt. Each names its source explicitly."""
@@ -1495,56 +2168,114 @@ KILLS = [
         ),
     },
     {
-        "id": "k:2026-09-01-head-chunk-monopoly",
-        "date": "2026-09-01",
-        "lever": "head-chunk monopoly at rank 1 (Phase-1 probe P5 bottom line)",
+        "id": "k:2026-08-31-w22-eps-band-coverage",
+        "date": "2026-08-31",
+        "lever": "W2.2 in-band (eps_band) coverage tie-break",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": (
-            "quoted from the receipt: \"Per probe: REFUTED if the probe's own coded/pre-registered "
-            "decision rule flips once a defect is corrected, OR if its headline number is pinned by "
-            "construction (measured against a null with no support on this bed). ... Arm verdict: "
-            "KILL if any probe is REFUTED, PASS if all three CONFIRMED, INCONCLUSIVE if corrections "
-            "were needed but the conclusions stand.\""
-        ),
+        "kill_criterion": None,
         "result": (
-            "REFUTED as a presentation-order artifact: the 156/156 head-or-only result at p=1.122e-19 "
-            "measured the assembler's sequence_index sort, so seat 1 is head-or-only with "
-            "probability 1. In true score order it is 79.49%, and inside the pool rank carries no "
-            "head-chunk information (17.29% middle share at rank 1 vs 17.47% at ranks 2-15). What "
-            "survives is an admission effect: at-cap head chunks enter the pool about 1.4x more "
-            "often than equally long middle chunks (obs/exp 0.592 at rank 1, z=-3.72)."
+            "Zero conversion: delivered 0.6681 -> 0.6681 with +0/-0 paired across all classes, "
+            "final_recall_at_k 0.6830 -> 0.6851 (one needle on the final basis), 67 of 470 final "
+            "rank moves, and 0 of 21 of the audit targets converted."
         ),
-        "receipt": "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-        "verdict": "REFUTED",
+        "receipt": "mirror-branches/claude__w22-eps-band-coverage/benchmarks/dogfood/erb/receipts/w22_coverage_kill_2026-08-31.json",
+        "verdict": "KILL",
         "notes": (
-            "Receipt verdict field: KILL. It is under untracked/ rather than mirror/ because it "
-            "postdates the mirror commit. Its basis_receipts name three Phase-1 probe receipts that "
-            "are not in this archive at all (see `missing`)."
+            "Branch mirror claude/w22-eps-band-coverage (PR #428), head c05f171ab346. Paired "
+            "reference ladder_v09x_w24_min_delivered_2026-08-28.json. Mechanism named in the "
+            "receipt: band geometry, not signal validity - gold out-covers interlopers on 16 of 21 "
+            "targets (semantic_above_gold_947k_2026-08-31.json) but at rrf_k=20 the fused head "
+            "decays about 36% relative from rank 1 to rank 13, so rank-13-and-beyond gold never "
+            "shares an eps band with the top 12. Disposition: ships default-inert, the W2.1 "
+            "precedent. The arm's own ladder receipt and a 100k probe are also archived. Disclosed: "
+            "CYMATIX_DISABLE_LEARN was unset for this arm."
         ),
     },
     {
-        "id": "k:2026-09-01-p0-chunk-split-count",
-        "date": "2026-09-01",
-        "lever": "chunk_split bucket count in the Phase-1 bucket ledger (probe P0)",
+        "id": "k:2026-08-31-expression-tokens-doubling-erb",
+        "date": "2026-08-31",
+        "lever": "expression_tokens 7000 -> 14000 on ERB 947k",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": (
-            "quoted from the receipt: 'CORRECTED if a headline number or a stated definition is "
-            "wrong but the probe's verdict on its own pre-registered criterion still stands.'"
-        ),
+        "kill_criterion": None,
         "result": (
-            "Ledger sound, count wrong: the buckets reproduce exactly from the raw mine (n=156) and "
-            "rloss.py passes an independent reimplementation plus 200 randomised negative-control "
-            "trials with zero mismatches, but chunk_split is 65/156 only under an arbitrary "
-            "hash-ordered gold chunk; under the definition the receipt states (gold's best single "
-            "chunk) it is 30/156 and 16/95 reachable."
+            "Exact null: delivered 0.6681 = 0.6681, final r@12 0.683 and map r@12 0.6809 unchanged, "
+            "and 0 of 470 per-needle rows differ on any non-timing field (+0/-0 delivered flips)."
         ),
-        "receipt": "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-        "verdict": "CORRECTED",
+        "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/budget14000_null_2026-08-31.json",
+        "verdict": "NULL",
         "notes": (
-            "Same root cause corrects a second published magnitude: gold at-cap rate 42.9% (an "
-            "arbitrary gold chunk) becomes 54.4% over all 386 gold chunks. Probe P3 "
-            "(scope_verbosity) came back CONFIRMED with corrections and is therefore not recorded "
-            "as a kill."
+            "Branch mirror bench/semantic-portfolio (PR #426), head b5eb803d3f63. Registered in "
+            "advance inside muloc_budget_ab_2026-08-31.json. Mechanism: delivery is seat-capped "
+            "(classifier caps, max_genes_per_turn 12, min_delivered_docs floor), the seat structure "
+            "is byte-identical across arms (152 queries at 6 seats, 318 at 12), and the token "
+            "trimmer never fires at 7000. The arm doubles as a determinism witness: it reproduced "
+            "the 2026-08-28 floor-12 receipt 470 of 470, cold against cold, three days apart."
+        ),
+    },
+    {
+        "id": "k:2026-08-31-muloc-budget-14000",
+        "date": "2026-08-31",
+        "lever": "expression_tokens 7000 -> 14000 on MULocBench",
+        "bed_id": "muloc",
+        "kill_criterion": None,
+        "result": (
+            "NULL: delivered 0.4485 -> 0.4441, a net -3 of 680 (+4/-7), r@12 0.4824 -> 0.4838; one "
+            "of 23 rank-12-or-better-but-undelivered needles converted, and the delivered_count=6 "
+            "cohort (228 queries) is unchanged."
+        ),
+        "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/muloc/receipts/muloc_budget_ab_2026-08-31.json",
+        "verdict": "NULL",
+        "notes": (
+            "Branch mirror bench/semantic-portfolio (PR #426). The receipt names the mechanism: the "
+            "seat cap on code corpora is the 15%-of-top hard score floor (tier_hard_floor_frac), "
+            "not the token budget, and it registers tier_hard_floor_frac as the next cell. The "
+            "cohort size is 228 in the receipt against the 226 quoted by "
+            "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md; the receipt wins. "
+            "Disclosed: about 71 to 75 of 680 cross-run rank jitter cold-against-cold on this bed, "
+            "and CYMATIX_DISABLE_LEARN was omitted; the delivered-basis verdict is outside the "
+            "jitter band."
+        ),
+    },
+    {
+        "id": "k:2026-08-30-paraphrase-coverage-discrimination",
+        "date": "2026-08-30",
+        "lever": "coverage/coordination discrimination rerank for the EnronQA paraphrase crater",
+        "bed_id": "enronqa_padded",
+        "kill_criterion": None,
+        "result": (
+            "No target: on the near-band needles (map rank 13 to 46) gold beats the interloper "
+            "majority on distinct-keyword coverage for only 5 of 16, losing 11 of 16, because the "
+            "interlopers legitimately match the residual generic terms."
+        ),
+        "receipt": "mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/receipts/paraphrase_crater_enronqa_2026-08-30.json",
+        "verdict": "KILL",
+        "notes": (
+            "Branch mirror claude/cutoff-paraphrase-gene-issues-a77235 (PR #427), head b266fb814b45. "
+            "The receipt calls it a mirror of the W2.1 mass-to-hubs kill. Its above-gold audit "
+            "(31 targets, 31 of 31 rank_match against the receipt) finds 26 of the lost golds still "
+            "hitting query keywords and 12 pool-absent, with named-entity losses dominating."
+        ),
+    },
+    {
+        "id": "k:2026-08-31-gated-dense-fallback",
+        "date": "2026-08-31",
+        "lever": "gated dense fallback for the semantic class (dense-ceiling probe)",
+        "bed_id": "erb_829k_nosplade",
+        "kill_criterion": None,
+        "result": (
+            "Ceiling too low to pay: dense-only exhaustive cosine over all 829k vectors puts gold "
+            "at rank 12 or better on 4 of 86 semantic misses with a median rank of 3,020, and on "
+            "only 10 of 105 pool-absent misses overall. Across all 200 misses it reaches rank 12 "
+            "or better on 53, against 57 of 99 on a basic hit control."
+        ),
+        "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/dense_ceiling_probe_829k_2026-08-31.json",
+        "verdict": "KILL",
+        "notes": (
+            "Branch mirror bench/semantic-portfolio (PR #426). The 4-of-86-at-12 and median-3,020 "
+            "figures quoted in research-inbox/2026-09-01-architecture-hunt-prompt.md reproduce "
+            "exactly from this receipt. Basis receipt postflip_default_confirm_829k.json arm "
+            "no_pki, which the probe discloses is a PRE-wave-1 default set; blob-era query wording "
+            "differs from v09x wording on most needles."
         ),
     },
     {
@@ -1552,19 +2283,28 @@ KILLS = [
         "date": "2026-09-01",
         "lever": "exact-phrase + NEAR lane fused into RRF",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": None,
-        "result": (
-            "Discrimination, not reachability: reach is fine (31/37 basic pool-absent reachable, "
-            "94.2% of all misses with the DF cap lifted) but the phrase fire rate is 0.9126 on "
-            "standardised hits vs 0.7372 on misses - inverted, negative at every k, in all 7 "
-            "strata; bootstrap 95% CI [-0.2616, -0.0855], P(delta >= +0.10) = 0.0000."
+        "kill_criterion": (
+            "quoted from the receipt: \"KILL if (a) exact-phrase probes return a gold chunk for "
+            "well under half of the 37 basic pool-absent misses, OR (b) the phrase-fire rate on "
+            "MISSES is not materially higher than on a matched sample of HITS -- a lane that fires "
+            "equally on both cannot discriminate and cannot move delivered_gold_rate.\""
         ),
-        "receipt": None,
+        "result": (
+            "Limb (a) does not fire: reach on the 37 basic pool-absent misses is 31 of 37 = 0.8378 "
+            "against a 0.40 threshold. Limb (b) fires on every basis: miss reach 0.7372 against "
+            "matched-hit reach 0.9316 (delta -0.1944) and against the composition-proof "
+            "standardised hit reach 0.9126 (delta -0.1754), with 0 of 7 question-type strata where "
+            "misses fire more. Verdict KILL."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/phrase_reach_2026-09-01.json",
         "verdict": "KILL",
         "notes": (
-            "Numbers quoted from research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' "
-            "table. The underlying phrase_reach probe receipt is not in this archive (see "
-            "`missing`), so this entry is prose-sourced and cannot be re-derived from the clone."
+            "Branch mirror claude/architecture-hunt-research-e4ee87 (local branch, no PR), head "
+            "2ebafd998fbf, exported against the semantic-portfolio head rather than master. Overall "
+            "miss reach with the DF cap lifted is 0.9423, matching the 94.2% in "
+            "research-inbox/2026-09-01-phase2-handoff.md. The handoff's bootstrap CI "
+            "[-0.2616, -0.0855] and its P(delta >= +0.10) = 0.0000 do NOT appear anywhere in this "
+            "receipt or in any other archived file; those two figures remain prose-only."
         ),
     },
     {
@@ -1574,31 +2314,50 @@ KILLS = [
         "bed_id": "erb_blob_v09x_947k",
         "kill_criterion": None,
         "result": (
-            "Gold out-phrases the best already-delivered chunk on only 29/156 (18.6%); it ties on "
-            "78 and loses on 49, and the control is generous to gold because gold chunks are 17% "
+            "Gold out-phrases the best already-delivered chunk on only 29 of 156 (18.6%), tying on "
+            "78 and losing on 49, and the control is generous to gold because gold chunks are 17% "
             "shorter on a length-monotone statistic."
         ),
         "receipt": None,
         "verdict": "KILL",
-        "notes": "Quoted from research-inbox/2026-09-01-phase2-handoff.md. No probe receipt in this archive.",
+        "notes": (
+            "Quoted from research-inbox/2026-09-01-phase2-handoff.md. Now that the Phase-1 probe "
+            "receipts are archived it is clear these three counts (29/78/49) are NOT in "
+            "phrase_reach_2026-09-01.json or in any other archived receipt, so this row stays "
+            "prose-sourced. The archived phrase probe kills the lane on discrimination, which is "
+            "the same conclusion by a different measurement."
+        ),
     },
     {
         "id": "k:2026-09-01-doc-rollup-aggregation",
         "date": "2026-09-01",
-        "lever": "doc-rollup / chunk aggregation to source_id",
+        "lever": "doc-rollup / chunk aggregation to source_id before seating",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": None,
-        "result": (
-            "UNION doc rank-1 is 17/156 against an analytic random baseline of 15.6 - "
-            "indistinguishable from a shuffle - and a realizable rollup over the real score pool "
-            "nets one new rescue. The corpus averages 1.895 chunks per doc with 78.6% of docs at "
-            "two chunks or fewer."
+        "kill_criterion": (
+            "quoted from the receipt: 'KILL if a PERFECT doc-level selection rescues fewer than "
+            "~20 of the 156 misses - the lane cannot pay for its implementation and latency. "
+            "Primary statistic: n misses whose best gold DOC lands in the top-12 of the UNION doc "
+            "ranking over the candidate pool.'"
         ),
-        "receipt": None,
+        "result": (
+            "The pre-registered statistic reads 138 of 156 (literal PASS) but is INVALID: a "
+            "constant doc score rescues 149 and a random score rescues 148.05 on average over 20 "
+            "seeded repeats, because the median candidate pool is 13 docs against a top-12 cut, so "
+            "the statistic scores pool size. On the valid readings nothing clears the threshold of "
+            "20: union rank-1 is 17 against a random mean of 15.9 (lift 1.1), reachable from the "
+            "live pool is 15, reachable via a non-gold sibling 0, reachable from delivered 0."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/doc_union_oracle_2026-09-01.json",
         "verdict": "KILL",
         "notes": (
-            "Quoted from research-inbox/2026-09-01-phase2-handoff.md. The doc_union_oracle probe "
-            "receipt is not in this archive (see `missing`)."
+            "Branch mirror claude/architecture-hunt-research-e4ee87 (local, no PR). The receipt's "
+            "structural facts: corpus mean 1.895 chunks per doc with 78.64% of docs at two chunks "
+            "or fewer, and for 20 of the 156 misses every gold doc holds exactly one chunk, making "
+            "the rollup a definitional no-op. research-inbox/2026-09-01-phase2-handoff.md quotes "
+            "'17/156 vs analytic random 15.6'; the receipt's random rank-1 mean is 15.9 over 20 "
+            "seeded repeats, so the prose figure is off by 0.3 and the receipt wins. The handoff's "
+            "'nets one new rescue' does not correspond to any number in the receipt, whose "
+            "live-pool reachability is 15."
         ),
     },
     {
@@ -1606,73 +2365,174 @@ KILLS = [
         "date": "2026-09-01",
         "lever": "length-normalization family (BM25 b, rank-time length penalty)",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": None,
-        "result": (
-            "The mechanism is absent: verbosity runs backwards (winner/gold/corpus avg_tf "
-            "1.541/1.571/1.691) and boilerplate fires at 0.0%. Gold is not short - 47.8% of the "
-            "corpus sits at the 4,000-char cap so gold's 42.9% is the base rate; the anomaly is "
-            "entirely winner-side at 1.80x."
+        "kill_criterion": (
+            "quoted from the receipt: 'KILL the length-normalization family if distinct-term count "
+            "does NOT separate gold from interlopers on these slates once length is controlled for "
+            "- i.e. if the at-cap asymmetry is not accompanied by a distinct-term asymmetry, the "
+            "scope hypothesis is wrong on this bed and no custom scorer over FTS5 postings is worth "
+            "building.'"
         ),
-        "receipt": None,
-        "verdict": "KILL",
+        "result": (
+            "The probe returns PASS, not a kill: the winner-minus-gold distinct-QUERY-term "
+            "advantage survives length control at +1.084 within gold's own 1000-char band "
+            "(p=0.00416511, 59 wins / 2 ties / 31 losses), +1.191 with both at cap and +1.169 "
+            "within 250 chars. What dies is the narrower verbosity reading: length-matched avg_tf "
+            "delta is -0.0133 (p=0.348, not significant), at-cap winners are LESS repetitive than "
+            "the average at-cap corpus chunk (1.541 against 1.691), raw distinct-vocabulary size is "
+            "-0.49 terms when length-matched, and 65.3% of the raw coverage gap is length-mediated."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/scope_verbosity_2026-09-01.json",
+        "verdict": "CORRECTED",
         "notes": (
-            "Quoted from research-inbox/2026-09-01-phase2-handoff.md. The scope_verbosity and "
-            "atcap_confound probe receipts are not in this archive; the 2026-09-01 verification "
-            "receipt later corrected the 42.9% figure to 54.4% over all gold chunks."
+            "PROSE AND RECEIPT DISAGREE. research-inbox/2026-09-01-phase2-handoff.md lists the "
+            "length-normalization family under 'Killed in Phase 1' and says it 'died of an absent "
+            "mechanism'. The probe's own verdict is PASS on its pre-registered criterion, and the "
+            "receipt's wording is 'Length normalization has nothing to saturate here; a scope-aware "
+            "scorer is not refuted' - the mechanism is narrowed to this-query-term coverage, not "
+            "absent. The verbosity numbers the handoff quotes (1.541 / 1.571 / 1.691, boilerplate "
+            "0.0%) are all in the receipt and are correct; the kill framing is what the receipt "
+            "does not support. Recorded as CORRECTED, following the receipt. The receipt also "
+            "reconciles the published at-cap counts: winner 1423 of 1674 is the exactly-4000 count "
+            "while this probe's >=3990 band gives 1425; gold reconciles at 67 of 156 either way."
         ),
     },
     {
-        "id": "k:2026-08-31-w2.2-in-band-coverage-tiebreak",
-        "date": "2026-08-31",
-        "lever": "W2.2 in-band (eps_band) coverage tie-break",
+        "id": "k:2026-09-01-head-chunk-monopoly",
+        "date": "2026-09-01",
+        "lever": "head-chunk monopoly at rank 1 as an exploitable ranking effect",
         "bed_id": "erb_blob_v09x_947k",
-        "kill_criterion": None,
-        "result": "Killed on band geometry at rrf_k=20; no numbers are published in any source held in this archive.",
-        "receipt": None,
-        "verdict": "KILL",
+        "kill_criterion": (
+            "quoted from head_chunk_lane_2026-09-01.json: 'KILL if the first-vs-middle rank gap "
+            "collapses once BM25 term frequency and IDF are controlled instead of the kw_cov "
+            "distinct-term diagnostic. If head chunks simply carry the document title/metadata "
+            "header and therefore have genuinely higher tf on the query's key terms, then there is "
+            "a real CONTENT difference and no positional bias to exploit -- that is a clean kill "
+            "and it should be taken, not argued around.'"
+        ),
+        "result": (
+            "A presentation-order artefact with zero retrieval content: context_manager.py:3355 "
+            "emits the delivered set sorted by promoter.sequence_index, so seat 1 is head-or-only "
+            "with probability 1, and the delivered SET is bit-identical to the score top-k (mean "
+            "overlap 1.000). K1 failed (within-document at-cap paired BM25 gives the head only "
+            "54.33% of 5538 decided pairs, p=1.19e-10, mean edge +1.00 on a base of about 38.0, "
+            "below the pre-registered 60% bar); K2 failed and was refuted (deleting the head's "
+            "leading 400 characters flips 2.03% of head wins and the head's mean BM25 does not "
+            "fall). In true score order the rank-1 head-or-only share is 79.49%, and inside the "
+            "pool rank carries no head-chunk information (17.29% middle share at rank 1 against "
+            "17.47% at ranks 2 to 15)."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/head_chunk_lane_2026-09-01.json",
+        "verdict": "REFUTED",
         "notes": (
-            "Named in the killed list of research-inbox/2026-09-01-architecture-hunt-prompt.md "
-            "('W2.2 in-band coverage tie-break (band geometry at rrf_k=20)'). The 2026-08-31 "
-            "synthesis still describes the W2.2 arm as running on the 470-needle set. No W2.2 "
-            "receipt exists in this archive, so no metric is recorded."
+            "Branch mirror claude/architecture-hunt-research-e4ee87 (local, no PR). Receipt verdict "
+            "field: KILL. The independent adversarial re-derivation "
+            "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json reaches the same conclusion "
+            "from the other direction and returns KILL on its own arm rubric. What survives both is "
+            "an admission effect: at-cap head chunks enter the pool about 1.4x more often than "
+            "equally long middle chunks (obs/exp 0.592 at rank 1, z=-3.72)."
         ),
     },
     {
-        "id": "k:2026-08-31-gated-dense-fallback",
-        "date": "2026-08-31",
-        "lever": "gated dense fallback for the semantic class (dense-ceiling probe)",
-        "bed_id": "erb_blob_829k",
-        "kill_criterion": None,
-        "result": (
-            "Ceiling measured at 4/86 semantic needles at k=12 with a median dense rank of 3,020, "
-            "so a gated fallback cannot pay."
+        "id": "k:2026-09-01-p0-chunk-split-count",
+        "date": "2026-09-01",
+        "lever": "chunk_split bucket count in the Phase-1 bucket ledger (probe P0)",
+        "bed_id": "erb_blob_v09x_947k",
+        "kill_criterion": (
+            "quoted from verify_p0p3p5_2026-09-01.json: 'CORRECTED if a headline number or a stated "
+            "definition is wrong but the probe's verdict on its own pre-registered criterion still "
+            "stands.'"
         ),
-        "receipt": None,
-        "verdict": "KILL",
+        "result": (
+            "Ledger sound, count wrong: bucket_ledger_2026-09-01.json returns PASS and recomputes "
+            "chunk_split to 65 of 156 as published, but the adversarial re-derivation shows 65 "
+            "holds only under an arbitrary hash-ordered gold chunk; under the definition the "
+            "receipt states (gold's best single chunk) it is 30 of 156 and 16 of 95 reachable. The "
+            "same root cause moves the published gold at-cap rate from 42.9% to 54.4% over all 386 "
+            "gold chunks."
+        ),
+        "receipt": "untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
+        "verdict": "CORRECTED",
         "notes": (
-            "Quoted from the killed list of research-inbox/2026-09-01-architecture-hunt-prompt.md, "
-            "which names the receipt dense_ceiling_probe_829k. That receipt is not in this archive "
-            "(see `missing`); the bed_id is this ledger's reading of the '829k' in the receipt name "
-            "and is not confirmed by a mirrored file."
+            "The probe receipt this corrects is now archived at "
+            "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json, "
+            "whose own kill criterion clause (c) checks that chunk_split recomputes to 65 - which "
+            "it does, because the recomputation reuses the same arbitrary gold chunk. Everything "
+            "else in the ledger reproduces: the 156 mined misses are exactly the basis receipt's "
+            "delivered_gold==0 set, every taxonomy cell agrees, and rloss.py passes identity, "
+            "negative and shuffle controls."
         ),
     },
     {
-        "id": "k:2026-08-31-muloc-budget-14000",
-        "date": "2026-08-31",
-        "lever": "expression_tokens raised to 14000 on MULocBench",
-        "bed_id": "muloc",
-        "kill_criterion": None,
-        "result": (
-            "Null: the 226-query delivered_count=6 cohort is bound by a 15%-of-top hard floor, not "
-            "by the token budget."
+        "id": "k:2026-09-01-generator-leakage",
+        "date": "2026-09-01",
+        "lever": "generator leakage (the suspicion that ERB queries quote their gold verbatim)",
+        "bed_id": "erb_blob_v09x_947k",
+        "kill_criterion": (
+            "quoted from the receipt: 'FLAG P1 AS BED-INFLATED if BOTH: (a) the MEDIAN longest "
+            "common contiguous CONTENT n-gram (stopwords deleted from both sides) between a query "
+            "and its gold chunk(s) is >= 4 tokens ... AND (b) that median exceeds the "
+            "TOPIC-MATCHED control'"
         ),
-        "receipt": None,
+        "result": (
+            "Not bed-inflated: arm (a) gives a gold content-LCN median of 2.0 against a threshold "
+            "of 4, which is decisive on its own. Arm (b) as pre-registered would have been met "
+            "(gap 2.0) but its control is vacuous on this bed (constant 0 on 470 of 470); the "
+            "repaired control B2 over directory-neighbour documents gives a gap of 1.0, also not "
+            "met. Verdict PASS."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/generator_leakage_2026-09-01.json",
         "verdict": "NULL",
         "notes": (
-            "Quoted from research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md, which "
-            "cites benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json. "
-            "That receipt is not in this archive (see `missing`), and no rate is published in the "
-            "prose."
+            "Recorded as NULL because the finding is the absence of the suspected effect, not the "
+            "death of a lever. The receipt discloses the control defect itself under "
+            "criterion_defect_disclosed and reports the verdict as robust to it."
+        ),
+    },
+    {
+        "id": "k:2026-09-01-atcap-position-confound",
+        "date": "2026-09-01",
+        "lever": "position-within-document explanation for gold's length deficit (the at-cap confound)",
+        "bed_id": "erb_blob_v09x_947k",
+        "kill_criterion": (
+            "quoted from the receipt: 'Length is a CONFOUND rather than the mechanism if gold's "
+            "shortness is explained by chunk position within its parent document ... Operationalised: "
+            "return KILL (confound) only if ALL THREE hold -- C1 gold tail-share lift over the "
+            "corpus base rate >= 1.25x; C2 position composition ...'"
+        ),
+        "result": (
+            "Confound not found: C1 failed, so gold's length profile is corpus-typical and the "
+            "anomaly is entirely winner-side, and the winner's coverage advantage survives holding "
+            "chunk length constant. Verdict PASS, meaning length stays a live selection variable in "
+            "the ranker rather than a structural artefact of where gold sits in its document."
+        ),
+        "receipt": "mirror-branches/claude__architecture-hunt-research-e4ee87/benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json",
+        "verdict": "NULL",
+        "notes": (
+            "Recorded as NULL for the same reason as the leakage row: the confound hypothesis died, "
+            "not a lever. The adversarial re-derivation later corrected one input to this probe "
+            "(gold at-cap 42.9% is an arbitrary-gold-chunk figure; over all gold chunks it is "
+            "54.4%) and confirmed that C1 fails under every gold representation (1.081 arbitrary, "
+            "0.864 all-gold, 0.377 best-gold), so the PASS stands."
+        ),
+    },
+    {
+        "id": "k:2026-08-31-score-threshold-abstain",
+        "date": "2026-08-31",
+        "lever": "score-threshold abstain (refuse when the slate scores low)",
+        "bed_id": "erb_blob_v09x_947k",
+        "kill_criterion": None,
+        "result": (
+            "Killed on the ground that miss slates score normally against hit slates; no summary "
+            "statistic is published in the archived files."
+        ),
+        "receipt": "mirror-branches/bench__semantic-portfolio/benchmarks/dogfood/erb/receipts/hit_slate_sample_erb947k_2026-08-31.json",
+        "verdict": "KILL",
+        "notes": (
+            "The kill is named in research-inbox/2026-09-01-architecture-hunt-prompt.md ('score-"
+            "threshold abstain (miss slates score-normal vs hits -- hit_slate_sample receipts)'). "
+            "The three archived hit_slate_sample receipts (erb947k, enron_v2, locomo) carry raw "
+            "per-hit slates and no rollup, so no number is recorded here. The receipt field points "
+            "at the evidence, not at a published statistic."
         ),
     },
 ]
@@ -1798,7 +2658,13 @@ GRADUATIONS = [
             "r@12 0.6809 and fr@12 0.6830 unchanged - the floor moves delivery only. The +18/-0 "
             "paired figure and the two cross-corpus confirms (+18/-0 enronqa_v2, +8/-0 "
             "enronqa_padded) are from sweep_v091_gate_2026-08-30.json, where the arm is labelled "
-            "informational; the BASELINES v0.9.1 row records 'three corpora, zero paired losses'."
+            "informational; the BASELINES v0.9.1 row records 'three corpora, zero paired losses'. "
+            "Confirmed as the right floor by the 2026-08-31 width curve "
+            "(mirror-branches/claude__cutoff-paraphrase-gene-issues-a77235/benchmarks/dogfood/erb/"
+            "receipts/floor_width_curve_947k_2026-08-31.json, PR #427): delivered 0.6298 / 0.6447 / "
+            "0.6681 at floors 0 / 6 / 12, strictly nested sets with zero losses anywhere, and floor "
+            "6 recovers only 7 of the 18 needles because the classifier caps are 2/5/6/8 and the "
+            "8-cap class stays unlifted at 6."
         ),
     },
     {
@@ -1845,99 +2711,76 @@ GRADUATIONS = [
 
 MISSING = [
     {
-        "receipt": "benchmarks/dogfood/erb/receipts/phrase_reach_2026-09-01.json",
-        "named_in": "task brief; the finding it carries is summarised in research-inbox/2026-09-01-phase2-handoff.md",
-        "note": "ERB Phase-1 phrase/NEAR reachability probe. No file of this name anywhere in the clone; the mirror is pinned to a commit that predates the Phase-1 commit 3ad934c.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/doc_union_oracle_2026-09-01.json",
-        "named_in": "task brief; finding summarised in research-inbox/2026-09-01-phase2-handoff.md",
-        "note": "ERB Phase-1 doc-union oracle probe. Not in the mirror or untracked/.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/scope_verbosity_2026-09-01.json",
-        "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-        "note": "ERB Phase-1 probe P3. The verification receipt reproduces it bit-identically apart from git_sha and wall_s, but the probe receipt itself is not archived.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json",
-        "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-        "note": "ERB Phase-1 probe P5. Not archived.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/generator_leakage_2026-09-01.json",
-        "named_in": "task brief",
-        "note": "ERB Phase-1 generator-leakage probe. No file of this name in the clone and no research-inbox document names it.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json",
-        "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json",
-        "note": "ERB Phase-1 probe P0. Not archived; the verification receipt reproduces its buckets from the raw mine.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/interloper_mine_erb947k_2026-08-31.json",
-        "named_in": "basis_receipts of untracked/erb-phase2-tooling/verify_p0p3p5_2026-09-01.json; research-inbox/2026-09-01-architecture-hunt-prompt.md",
-        "note": "The interloper campaign's per-miss delivered slates. Also missing: benchmarks/dogfood/interloper_taxonomy_wave{1,2}_2026-08-31.json and docs/benchmarks/2026-08-31-interloper-what-wins.md. The derived analysis research-inbox/2026-08-31-basic-miss-taxonomy.{md,json} IS in the clone and is recorded as a measurement.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/erb/receipts/dense_ceiling_probe_829k.json",
-        "named_in": "research-inbox/2026-09-01-architecture-hunt-prompt.md (killed list)",
-        "note": "Dense-ceiling probe. Only the headline survives in prose (4/86 semantic at k=12, median dense rank 3,020); the exact filename is inferred from the name used in that list.",
-    },
-    {
         "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_native_baseline_2026-08-29.json",
         "named_in": "BASELINES.md row 2026-08-29-enronqa-native-baseline",
-        "note": "The EnronQA native baseline and paraphrase-crater receipt. Its headline numbers are quoted in the BASELINES row and recorded here from that row; the file, its embedded paired_analysis and the whole benchmarks/dogfood/enronqa/ tree are absent from the mirror.",
+        "note": (
+            "STILL MISSING. The EnronQA native baseline on the 84,665-gene bed, with its embedded "
+            "paired_analysis. Its headline numbers are quoted in the BASELINES row and recorded "
+            "here from that row. The paraphrase crater itself is now covered by "
+            "paraphrase_crater_enronqa_2026-08-30.json on the v2 and padded beds, which is a "
+            "different bed pair, so the native-bed cell is not reconstructable."
+        ),
     },
     {
         "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_v2_*_2026-08-30.json and benchmarks/dogfood/enronqa_padded/receipts/ladder_enronqa_padded_*_2026-08-30.json",
-        "named_in": "BASELINES.md row 2026-08-30-v091-gate-sweep",
-        "note": "Per-arm EnronQA ladders behind the v0.9.1 gate. The rolled-up sweep receipt sweep_v091_gate_2026-08-30.json IS mirrored and is the source used here.",
+        "named_in": "BASELINES.md row 2026-08-30-v091-gate-sweep; basis_receipt of interloper_mine_enron_v2_2026-08-31.json and interloper_mine_enron_padded_2026-08-31.json",
+        "note": (
+            "STILL MISSING. The per-arm EnronQA ladders behind the v0.9.1 gate, including the "
+            "ladder_enronqa_v2_v091_floor_2026-08-30.json and "
+            "ladder_enronqa_padded_v091_floor_2026-08-30.json that the 2026-08-31 interloper mines "
+            "cite as their basis. The rolled-up sweep_v091_gate_2026-08-30.json is mirrored and is "
+            "the source used here; the floor-12 EnronQA cells are also restated by the paraphrase "
+            "crater receipt."
+        ),
     },
     {
         "receipt": "benchmarks/dogfood/enronqa/receipts/ladder_enronqa_v2c_*_2026-08-30.json",
         "named_in": "BASELINES.md row 2026-08-30-entity-hub-cutoff-retrieval-ab",
-        "note": "Per-arm ladders behind the entity-hub-cutoff null. The rolled-up A/B receipt is mirrored.",
-    },
-    {
-        "receipt": "benchmarks/dogfood/muloc/receipts/ladder_muloc_budget14000_2026-08-31.json",
-        "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-        "note": "MULocBench budget-14000 null. No MULocBench receipt of any kind is in the clone, so neither the baseline nor the null carries a rate here.",
-    },
-    {
-        "receipt": "MULocBench baseline receipt (filename not stated in any archived source)",
-        "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-        "note": "The synthesis cites a 226-query delivered_count=6 cohort but names no baseline receipt.",
-    },
-    {
-        "receipt": "LoCoMo and LoCoMo+observations three-way receipts (filenames not stated in any archived source)",
-        "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md; research-inbox/2026-08-31-plan-red-team.md (semantic-portfolio-lane doc, worktree vigilant-wu-5416d6)",
-        "note": "Only the cohort line survives (cognitive class n=401, 3 hits). The three-way comparison itself is not archived.",
-    },
-    {
-        "receipt": "FinanceBench baseline receipt (filename not stated in any archived source)",
-        "named_in": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-        "note": "Called the 'FinanceBench baseline blackout'; only the metrics-class cohort line survives (n=50, 0 hits).",
-    },
-    {
-        "receipt": "W2.2 eps_band_coverage arm receipt (filename not stated in any archived source)",
-        "named_in": "research-inbox/2026-09-01-architecture-hunt-prompt.md killed list; research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md ladder item 5",
-        "note": "The 470-needle W2.2 arm was in flight on 2026-08-31 and appears as killed on 2026-09-01. No receipt, no numbers.",
-    },
-    {
-        "receipt": "947k min_delivered_docs floor width curve (12 vs 6 A/B)",
-        "named_in": "task brief",
-        "note": "Only the floor-12 arm (ladder_v09x_w24_min_delivered_2026-08-28.json) and the cross-corpus floor cells inside sweep_v091_gate_2026-08-30.json exist here. No multi-width curve receipt is in the clone; the basic-miss taxonomy records width6_queries=68 and width12_queries=107 as an observation, not as an A/B.",
+        "note": "STILL MISSING. Per-arm ladders behind the entity-hub-cutoff null. The rolled-up A/B receipt is mirrored.",
     },
     {
         "receipt": "benchmarks/dogfood/erb/receipts/pool_depth_capture_2026-09-01.sqlite and pool_depth_ck_2026-09-01/cache/deep1000.jsonl",
         "named_in": "research-inbox/2026-09-01-phase2-handoff.md",
-        "note": "The interrupted A1 pool-depth capture. The tooling and the smoke JSONs were copied into untracked/erb-phase2-tooling/, but the sqlite capture and the 114-record checkpoint cache were not. The handoff warns that the smoke files' 'VERDICT KILL' lines are 2-4 needle smokes and must not be read as results, so no kill is recorded from them.",
+        "note": (
+            "STILL MISSING. The interrupted A1 pool-depth capture (14.4 MB sqlite plus a "
+            "114-record resumable checkpoint). The tooling and the smoke JSONs were copied into "
+            "untracked/erb-phase2-tooling/, but the handoff warns that those smokes' VERDICT KILL "
+            "lines are two-to-four-needle samples and must not be read as results, so no kill is "
+            "recorded from them. The pre-registered admission gate is still unresolved."
+        ),
     },
     {
         "receipt": "benchmarks/scbench/campaigns/2026-08-08-codex-pilot/ and 2026-08-11-codex-terra/",
         "named_in": "BASELINES.md rows 2026-08-08-codex-pilot and 2026-08-11-codex-terra",
-        "note": "The SCBench campaign trees have rows in the ledger but no mirrored receipts, so no SCBench measurement is recorded.",
+        "note": "STILL MISSING. The SCBench campaign trees have ledger rows but no mirrored receipts, so no SCBench measurement is recorded.",
+    },
+    {
+        "receipt": "no file: the bootstrap CI [-0.2616, -0.0855] and P(delta >= +0.10) = 0.0000 for the phrase lane",
+        "named_in": "research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' table",
+        "note": (
+            "NEW GAP, found while resolving the branch receipts. phrase_reach_2026-09-01.json is "
+            "now archived and reproduces every other figure in that table row, but neither it nor "
+            "any other archived file contains this bootstrap interval or that probability. The "
+            "kill itself stands on the receipt's own limb (b)."
+        ),
+    },
+    {
+        "receipt": "no file: the phrase-as-reranking-feature counts 29 / 78 / 49 over the 156 misses",
+        "named_in": "research-inbox/2026-09-01-phase2-handoff.md, 'Killed in Phase 1' table",
+        "note": (
+            "NEW GAP. With the Phase-1 probes archived it is now clear these three counts appear in "
+            "no receipt in this archive. The corresponding kill row stays prose-sourced."
+        ),
+    },
+    {
+        "receipt": "no file: a tier_hard_floor_frac ladder (0.15 / 0.10 / 0.05 / 0)",
+        "named_in": "muloc_budget_ab_2026-08-31.json ('Next cell'); research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md ladder item 4",
+        "note": (
+            "NEW GAP, and by design: the muloc budget A/B registers this as the next cell rather "
+            "than reporting it. Recorded so the hard-floor question is not mistaken for answered - "
+            "the 15%-of-top floor is named as the mechanism behind the muloc delivered_count=6 "
+            "cohort but has never been varied."
+        ),
     },
 ]
 
@@ -1954,6 +2797,7 @@ def main() -> None:
     parse_entity_hub_ab()
     parse_sema_ingest_ab()
     parse_tagger_v2()
+    parse_branch_summaries()
     add_curated_measurements()
 
     measurements = sorted(MEASUREMENTS, key=lambda m: (m["date"] or "", m["id"]))
@@ -1965,7 +2809,18 @@ def main() -> None:
             "basis": "delivered = post-budget delivery slice (delivered_gold_rate). final = final ranked order handed downstream (final_recall_at_12). map = candidate-pool / score-map recall (recall_at_12). delivered and final are different metrics and are never merged.",
             "shipped_default": "computed mechanically for ladder receipts: true only when the arm is named baseline, runs the repo cymatix.toml, and overrides no knobs. An arm that merely re-pins the shipped value in its own config TOML reads false.",
             "nulls": "a null field means the source does not state that number. Nothing is estimated or back-filled.",
+            "branches": "rows whose receipt path starts with mirror-branches/ come from a branch that is NOT merged at source_commit. Each such row names the branch, its PR and its exported head sha in notes, read from that directory's SOURCE.md. Where a branch file also exists under mirror/, the master-pinned copy wins and an identical branch copy is skipped; a differing branch copy is kept as its own row with both named.",
         },
+        "branch_mirrors": [
+            {
+                "slug": br["slug"],
+                "branch": br["branch"],
+                "pr": br["pr"],
+                "head": br["head"],
+                "diff_base": br["diff_base"],
+            }
+            for br in [BRANCHES[k] for k in sorted(BRANCHES)]
+        ],
         "beds": sorted(BEDS, key=lambda b: (b["family"], b["id"])),
         "measurements": measurements,
         "kills": sorted(KILLS, key=lambda k: (k["date"], k["id"])),
