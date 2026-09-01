@@ -2,9 +2,9 @@
 
 branch: `claude/architecture-hunt-research-e4ee87`
 head: `2ebafd998fbf4c0851cb4b17f15a297d259521eb` (refs/heads/claude/architecture-hunt-research-e4ee87)
-merge-base with origin/master: `b5eb803d3f634b225185186bf8f3539105c3e194`
+diff base: `b5eb803d3f634b225185186bf8f3539105c3e194` (merge-base with parent branch `bench/semantic-portfolio`)
 pr: local only, no PR
-exported: 2026-09-01T22:21:05.014698+00:00
+exported: 2026-09-01T22:21:47.823495+00:00
 files: 8
 
 - benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json

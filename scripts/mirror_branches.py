@@ -87,8 +87,10 @@ def main():
             with tarfile.open(fileobj=io.BytesIO(blob.stdout)) as tf:
                 tf.extractall(out, filter="data")
         (out / "SOURCE.md").write_text(
-            "# %s\n\nbranch: `%s`\nhead: `%s` (%s)\nmerge-base with origin/master: `%s`\npr: %s\nexported: %s\nfiles: %d\n\n%s\n"
-            % (branch, branch, sha, ref, base, ("#%d" % pr) if pr else "local only, no PR",
+            "# %s\n\nbranch: `%s`\nhead: `%s` (%s)\ndiff base: `%s`%s\npr: %s\nexported: %s\nfiles: %d\n\n%s\n"
+            % (branch, branch, sha, ref, base,
+               (" (merge-base with parent branch `%s`)" % parent) if parent else " (merge-base with origin/master)",
+               ("#%d" % pr) if pr else "local only, no PR",
                datetime.now(timezone.utc).isoformat(), len(files), "\n".join("- " + f for f in files)),
             encoding="utf-8")
         rows.append((branch, pr, sha[:12], len(files), "ok"))
