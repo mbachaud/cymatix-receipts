@@ -10,4 +10,4 @@ relative to origin/master `2644c3e44038`. Paths scanned: `benchmarks/dogfood`, `
 | `claude/w22-eps-band-coverage` | #428 | `c05f171ab346` | 4 | ok |
 | `perf/fts5-ingest-decay` | #424 | `a565dd615c54` | 5 | ok |
 | `perf/hub-cutoff-default-200` | #425 | `3afa19391015` | 2 | ok |
-| `claude/architecture-hunt-research-e4ee87` | local | `0c17c5f9ef8b` | 26 | ok |
+| `claude/architecture-hunt-research-e4ee87` | local | `fb01f6c7e1aa` | 31 | ok |

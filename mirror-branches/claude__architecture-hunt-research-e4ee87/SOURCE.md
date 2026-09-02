@@ -1,16 +1,21 @@
 # claude/architecture-hunt-research-e4ee87
 
 branch: `claude/architecture-hunt-research-e4ee87`
-head: `0c17c5f9ef8b8ca9bf568715ceae9c828f77148d` (refs/remotes/origin/claude/architecture-hunt-research-e4ee87)
+head: `fb01f6c7e1aae28baaaef1c7b91f768c73c34a61` (refs/remotes/origin/claude/architecture-hunt-research-e4ee87)
 diff base: `b5eb803d3f634b225185186bf8f3539105c3e194` (merge-base with parent branch `bench/semantic-portfolio`)
 pr: local only, no PR
-exported: 2026-09-02T00:49:29.315922+00:00
-files: 26
+exported: 2026-09-02T01:37:48.860784+00:00
+files: 31
 
+- benchmarks/dogfood/erb/receipts/absent_term_overlap_2026-09-01.json
+- benchmarks/dogfood/erb/receipts/absent_term_overlap_prereg_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/atcap_confound_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/bucket_ledger_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/doc_union_oracle_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/generator_leakage_2026-09-01.json
+- benchmarks/dogfood/erb/receipts/harmonic_off_ck_2026-09-01/deep1000_harmonic_off.jsonl
+- benchmarks/dogfood/erb/receipts/harmonic_off_dilution_2026-09-01.json
+- benchmarks/dogfood/erb/receipts/harmonic_off_dilution_prereg_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/head_chunk_lane_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/head_lane_live_2026-09-01.json
 - benchmarks/dogfood/erb/receipts/phrase_reach_2026-09-01.json

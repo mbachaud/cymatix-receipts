@@ -148,8 +148,13 @@ under FOCUSED. At minimum, record `budget_tier` per needle in every receipt.
   mission arithmetic and Q10) are refuted at the substrate level; "no lexical lever converts them"
   (handoff) survives at the delivery level. The generator's anti-lexical instruction (all 125
   semantic queries cap at content-LCN 4) explains the ranking loss, not an absence of terms. The 409
-  denominator is a planning assumption; the 5 absent-at-20000 are its only hard floor pending the
-  term-overlap probe.
+  denominator is a planning assumption with **no hard floor**: the term-overlap probe
+  (`receipts/absent_term_overlap_2026-09-01.json`, pre-registered rule "true vocabulary gap iff zero
+  distinct query terms occur in the gold text under the genes_fts unicode61 tokenizer") found
+  **0 of 20** hard-absent needles are vocabulary gaps. The 5 absent at BM25 20000 carry 4–14 distinct
+  query terms in gold (median 11), the 15 non-semantic absent at 1000 carry 4–14 (median 8), and
+  removing each query's three highest-DF terms rescues none of them. Every miss on this bed is an
+  outranking problem, not an indexing one.
 - **Head-chunk monopoly refuted** (ARM 3, `receipts/head_chunk_lane_2026-09-01.json`; independently
   by `verify_p0p3p5_2026-09-01.json`): delivered order is chunk-index-ascending
   (`context_manager.py:3355`), so seat 1 is head-or-only with probability 1; delivered set equals the
@@ -190,6 +195,8 @@ under FOCUSED. At minimum, record `budget_tier` per needle in every receipt.
 | "depth 1000 is latency-neutral" | RETRACTED | paired +264 ms median, +10% p90 | `verify_a1_recompute` |
 | bare candidate-depth flip as a delivery lever | KILL (projection) | 0/38/69, 0.634 [0.572, 0.661] vs 0.668 | `pool_depth_forensics` + verify receipts |
 | `fts5_candidate_depth` alone | INERT | 0/109 survive the shortlist | `pool_depth_addendum_2026-09-01.json` §B |
+| head dilution as a harmonic-tier tie artefact | KILL | harmonic off reproduces deep1000 exactly, 0/107/0; 69/107 still worse than shipped | `harmonic_off_dilution_2026-09-01.json` |
+| "true vocabulary gap" for the 20 hard-absent needles | NULL | 0/20; gold carries 4–14 distinct query terms in every case | `absent_term_overlap_2026-09-01.json` |
 
 ## 7. Ceiling arithmetic, honestly
 
@@ -198,7 +205,7 @@ under FOCUSED. At minimum, record `budget_tier` per needle in every receipt.
 | perfect re-ranker over the shipped 48–50 map | .768 | Phase 1; still the bound for ordering-only work at shipped admission |
 | oracle over the 1000-deep pool | .909 | upper bound; the ranker moved gold the wrong way on 69/107 |
 | same, excluding the 61 semantic pool-absent from the numerator | .838 | |
-| oracle over BM25 depth 20000 | .989 | 5 needles are hard-absent |
+| oracle over BM25 depth 20000 | .989 | 5 needles are absent at that depth, but none is a vocabulary gap (term-overlap probe, section 5) |
 
 .80 is reachable only if ordering under width improves; nothing measured so far improves it, and
 the two verified delivery levers (seat floor, admission) act on different populations. The FOCUSED
@@ -211,13 +218,22 @@ tier fix (section 4) is the one lever with a plausible positive sign that has no
 1. **Floor the budget tier** (`min_delivered_docs` → `tier_logic`), re-run the 08-28 ladder baseline
    paired; re-grade ARM-1's rescues with tier flips in their own column. ~10 lines + tests; one
    470-needle ladder (~2.5 h at 19 s/query).
-2. **Head-dilution attribution**: `deep1000` with the harmonic tier off on the 107 both-found
-   needles, paired against the existing capture (pre-registered rule: dilution is a harmonic/tie
-   artefact if worse ≤ 20 and better+same ≥ 87; real if worse ≥ 50). ~35 min. If it is an artefact,
-   a head-confined tier computation salvages the depth lever cheaply.
-3. **Term overlap for the 20 hard-absent needles** (5 absent at 20000 + 15 non-semantic absent at
-   1000): true vocabulary gap (zero query terms in gold) vs outranked. Minutes; settles the hard
-   floor of the ceiling.
+2. **Head-dilution attribution** — DONE the same evening, verdict **KILL** for the harmonic-tie
+   hypothesis (`probe_harmonic_off_dilution.py`, receipt `harmonic_off_dilution_2026-09-01.json`,
+   pre-registration receipt written before the run). With the harmonic tier removed
+   (`retrieval.harmonic_weight = 0.0`; `[cymatics] harmonic_links` is not a live retrieval knob) and
+   the deep knobs unchanged, gold's fused rank over the 107 both-found needles is identical to the
+   deep1000 arm on every needle (0 better / 107 same / 0 worse), so 69 of 107 remain worse than
+   shipped. The harmonic tier never appears in tier contributions on this bed (its query-learned graph
+   is empty on bulk beds), and pre-shortlist pools measure 59k–377k documents. Head dilution is
+   genuine competition from the ~950 newly admitted candidates under RRF, not a tie artefact; the
+   depth lever cannot be salvaged by a head-confined tier computation. What remains is ordering
+   protection: admit deep candidates below the shipped head, or a re-ranker gated on not displacing
+   shipped seats.
+3. **Term overlap for the 20 hard-absent needles** — DONE the same evening
+   (`probe_absent_term_overlap.py`, receipt `absent_term_overlap_2026-09-01.json`, pre-registration
+   receipt beside it): verdict ALL_OUTRANKED, 0 of 20 are vocabulary gaps (section 5). The ceiling
+   has no hard floor from the substrate.
 4. **Hit-loss curve at D = 100 and 200** on the 60 hit controls plus the 8 pool-absent needles that
    reach deep fused rank ≤ 48; admission at those depths is already known from the capture
    (D=100 → +16 misses admitted, oracle .802; D=200 → +36, .845); only the ordering side is open.
@@ -227,7 +243,9 @@ tier fix (section 4) is the one lever with a plausible positive sign that has no
    gold past ~950 new competitors without the head dilution measured here, graded paired against the
    08-28 ladder with `rloss.py` quoting `n_paired` on hits, not on the 156 misses alone.
 
-Do not flip any candidate-depth default before 1, 2 and 5.
+Do not flip any candidate-depth default before 1, 4 and 5. Items 2 and 3 closed the same evening:
+dilution is real competition and the substrate has no vocabulary-gap floor, so the campaign's
+remaining budget belongs to ordering under width (items 4 and 6) and to the delivery floor (item 1).
 
 ## 9. Verified nulls (do not re-run)
 
@@ -251,6 +269,8 @@ Do not flip any candidate-depth default before 1, 2 and 5.
 | ARM-1 verification, three lenses + critic | `receipts/verify_a1_{method_basis,code-trace,recompute,completeness}_2026-09-01.json` |
 | ARM-3 head-chunk lane | `receipts/head_chunk_lane_2026-09-01.json`, `head_lane_live_2026-09-01.json` |
 | ARM-5 verification of P0/P3/P5 | `receipts/verify_p0p3p5_2026-09-01.json` |
+| term overlap, 20 hard-absent needles | `receipts/absent_term_overlap_2026-09-01.json` (+ `_prereg`), tool `probe_absent_term_overlap.py` |
+| harmonic-off head-dilution attribution | `receipts/harmonic_off_dilution_2026-09-01.json` (+ `_prereg`), tool `probe_harmonic_off_dilution.py` |
 | Phase-1 probes | `receipts/{phrase_reach,doc_union_oracle,scope_verbosity,atcap_confound,generator_leakage,bucket_ledger}_2026-09-01.json` |
 | scorer | `benchmarks/dogfood/erb/rloss.py` (verified correct by ARM-5) |
 | tools | `benchmarks/dogfood/erb/probe_*.py`, `verify_a1_*.py`, `verify_p0p3p5.py` |
