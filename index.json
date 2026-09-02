@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T01:40:54+00:00",
+  "generated_at": "2026-09-02T05:55:22+00:00",
   "source_commit": "2644c3e44038bf285eb6a5484817bd4c3de126c6",
-  "file_count": 557,
-  "total_bytes": 84072973,
+  "file_count": 568,
+  "total_bytes": 113134949,
   "files": [
     {
       "path": "mirror/benchmarks/dogfood/cold_start_baseline.json",
@@ -3376,6 +3376,105 @@
       "bytes": 25788790,
       "sha256": "f431bf9be4c7713c8e7c1bbbd35b85407a00e356f4d9c4b2108eb01ae69362c0",
       "source": "F:/Projects/cymatix-context/research-inbox/_filename_stems.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/00-tier0-implementation-plan.md",
+      "kind": "research",
+      "bytes": 57400,
+      "sha256": "35d5f5ba5b2a8797d7a1066101f6ad802a383c30823d13259ff367330bbbb5bc",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/00-tier0-implementation-plan.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/01-tier0-pr5-handoff.md",
+      "kind": "research",
+      "bytes": 10968,
+      "sha256": "e0bfe1190d4557eea0b7329177f050db3e2867d8da4358e8454e420d97c24905",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/01-tier0-pr5-handoff.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/pipeline-01-ingest.md",
+      "kind": "research",
+      "bytes": 18056,
+      "sha256": "83a33292d460b61219bbd559fd2ec840e0b2d34dae11a315243857dff8a3265a",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/pipeline-01-ingest.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/pipeline-02-retrieval-fusion.md",
+      "kind": "research",
+      "bytes": 27336,
+      "sha256": "22b385eb2e6fda52793443b53503630a786de6b674048383231b869aab3ed850",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/pipeline-02-retrieval-fusion.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/pipeline-03-scoring-conflict.md",
+      "kind": "research",
+      "bytes": 28996,
+      "sha256": "fba1516a164dc8cd60c8d23e41632a3ec7e1e443b1eb36f352532a4e93fe1997",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/pipeline-03-scoring-conflict.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/README.md",
+      "kind": "research",
+      "bytes": 517,
+      "sha256": "e2a6543579550c1b0785209490baa56185e109cc21c0a069cca17ae7d52ae660",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/README.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/research-ingest-data-processing.md",
+      "kind": "research",
+      "bytes": 30442,
+      "sha256": "a3a6a6e915ff3e69d02d6198a31ac8da78a784bc32bd2c7509ce24e0f6aaf5c2",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/research-ingest-data-processing.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/research-kv-tagging.md",
+      "kind": "research",
+      "bytes": 38625,
+      "sha256": "27967a55c50d67b0fde1f0fd62c67f57fa0dbaa8f383709fe146373709b23251",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/research-kv-tagging.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/locomo/receipts/interloper_mine_locomo_2026-08-31.json",
+      "kind": "receipt",
+      "bytes": 15433874,
+      "sha256": "edc76360a36ea15be4a6460f88b59eabac2be499d88b5ecf15403b0ceae2c628",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/locomo/receipts/interloper_mine_locomo_2026-08-31.json",
+      "source_commit": null,
+      "stamp": "2026-08-31"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/locomo_obs/receipts/interloper_mine_locomo_obs_2026-08-31.json",
+      "kind": "receipt",
+      "bytes": 13413969,
+      "sha256": "eed5c942ea2ab6c3fd180de98071d2d6d23e860608d6ac1f093cdb6938993be8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/locomo_obs/receipts/interloper_mine_locomo_obs_2026-08-31.json",
+      "source_commit": null,
+      "stamp": "2026-08-31"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/SOURCE.md",
+      "kind": "doc",
+      "bytes": 1793,
+      "sha256": "682555da5e684f19ddcda667db4bb624ab65c0031d772145b3b3f1a913ec153e",
+      "source": "hand-written provenance note",
       "source_commit": null,
       "stamp": null
     },

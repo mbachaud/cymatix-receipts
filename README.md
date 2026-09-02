@@ -21,19 +21,27 @@ mirror/                     tracked receipt corpus exported from the code repo
   docs/benchmarks/          campaign write-ups, BASELINES.md, docs/benchmarks/data/
   docs/research/data/       research datasets
   MIRROR.md                 source repo, commit sha, export date, file and byte counts
+mirror-branches/            receipt-like files that exist only on unmerged (or local-only) branches,
+                            one dir per branch with a SOURCE.md pinning the head sha; BRANCHES.md
 research-inbox/             research captures with no home in the code repo
+  docs-reviews/             gitignored docs/reviews/ folders copied from the main checkout
 untracked/
   benchmarks/results/       result JSONs snapshotted from the main working tree
+  benchmarks/dogfood/       untracked interloper-mining dumps copied out of a bench worktree
   erb-phase2-tooling/       pool-depth probe and verification harnesses, smoke receipts
+captures/                   campaign captures too large for git, or built by hand
+  erb/                      ERB 947k pool-depth capture (checkpoints + receipts)
+  scbench/                  manifest for the SCBench campaign pair receipts published as release assets
 beds/                       manifest for knowledge-store snapshots published as release assets
 scripts/                    regeneration and verification scripts
 index.json                  one entry per archived file, with sha256
 ```
 
 `mirror/` is an export from a pinned commit, never from a working tree, so every
-file in it can be traced back to a single sha. `research-inbox/` and `untracked/`
-are plain file copies of material that is gitignored upstream and would otherwise
-be lost.
+file in it can be traced back to a single sha; `mirror-branches/` is the same
+kind of export, pinned to a branch head instead of master. `research-inbox/` and
+`untracked/` are plain file copies of material that is gitignored (or never
+committed) upstream and would otherwise be lost.
 
 ## Citation convention
 

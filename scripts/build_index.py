@@ -27,6 +27,8 @@ MAIN_CHECKOUT = "F:/Projects/cymatix-context"
 PHASE2_WORKTREE = (
     "F:/Projects/cymatix-context/.claude/worktrees/wave-1-semantic-ranking-5f1dab"
 )
+# bench/semantic-portfolio worktree that held the untracked LoCoMo interloper dumps
+LOCOMO_WORKTREE = "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6"
 
 STAMP_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
 
@@ -82,10 +84,18 @@ def source_of(rel: str) -> str:
         return "scripts/mirror_from_main.py"
     if rel.startswith("mirror/"):
         return rel[len("mirror/"):]
+    if rel.startswith("research-inbox/docs-reviews/"):
+        # gitignored docs/reviews/ folders copied from the main checkout
+        return f"{MAIN_CHECKOUT}/docs/reviews/{rel[len('research-inbox/docs-reviews/'):]}"
     if rel.startswith("research-inbox/"):
         return f"{MAIN_CHECKOUT}/{rel}"
     if rel.startswith("untracked/benchmarks/results/"):
         return f"{MAIN_CHECKOUT}/benchmarks/results/{rel.rsplit('/', 1)[-1]}"
+    if rel.startswith("untracked/benchmarks/dogfood/"):
+        # untracked working-tree receipts copied out of a bench worktree (see its SOURCE.md)
+        if rel.endswith("/SOURCE.md"):
+            return "hand-written provenance note"
+        return f"{LOCOMO_WORKTREE}/{rel[len('untracked/'):]}"
     if rel.startswith("untracked/erb-phase2-tooling/"):
         tail = rel[len("untracked/erb-phase2-tooling/"):]
         if tail.startswith("pool_depth_ck_"):
