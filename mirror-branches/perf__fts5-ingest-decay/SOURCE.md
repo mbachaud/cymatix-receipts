@@ -4,7 +4,7 @@ branch: `perf/fts5-ingest-decay`
 head: `a565dd615c542c1c8d1dbdd5d25e80f08bb37fc3` (refs/remotes/origin/perf/fts5-ingest-decay)
 diff base: `2644c3e44038bf285eb6a5484817bd4c3de126c6` (merge-base with origin/master)
 pr: #424
-exported: 2026-09-01T22:21:47.312670+00:00
+exported: 2026-09-02T00:49:28.822143+00:00
 files: 5
 
 - benchmarks/dogfood/receipts/entity_autolink_equivalence_enronqa.json
