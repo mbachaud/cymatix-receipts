@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T01:37:50+00:00",
+ "generated_at": "2026-09-02T01:40:53+00:00",
  "source_commit": "2644c3e44038bf285eb6a5484817bd4c3de126c6",
  "schema_notes": {
   "paths": "receipt paths are relative to the clone root; mirrored receipts start with mirror/. BASELINES.md cites the same files without that prefix.",
@@ -20,7 +20,7 @@
    "slug": "claude__architecture-hunt-research-e4ee87",
    "branch": "claude/architecture-hunt-research-e4ee87",
    "pr": "local only, no PR",
-   "head": "fb01f6c7e1aae28baaaef1c7b91f768c73c34a61",
+   "head": "45a4055726c8e7c38942095190234f9e1106f4ea",
    "diff_base": "b5eb803d3f634b225185186bf8f3539105c3e194"
   },
   {
@@ -5861,7 +5861,7 @@
    "baselines_row": null,
    "pr": null,
    "git_sha": "b5eb803d3f634b225185186bf8f3539105c3e194",
-   "notes": "Branch mirror: claude/architecture-hunt-research-e4ee87 (local only, no PR), head fb01f6c7e1aae28baaaef1c7b91f768c73c34a61, exported against master b5eb803d3f634b225185186bf8f3539105c3e194. Not on master at the ledger's source commit. Read-only recomputation of ladder_v09x_w24_min_delivered_2026-08-28.json: the 156 mined misses are exactly that receipt's delivered_gold==0 set and every published taxonomy bucket cell reproduces. Probe verdict: PASS",
+   "notes": "Branch mirror: claude/architecture-hunt-research-e4ee87 (local only, no PR), head 45a4055726c8e7c38942095190234f9e1106f4ea, exported against master b5eb803d3f634b225185186bf8f3539105c3e194. Not on master at the ledger's source commit. Read-only recomputation of ladder_v09x_w24_min_delivered_2026-08-28.json: the 156 mined misses are exactly that receipt's delivered_gold==0 set and every published taxonomy bucket cell reproduces. Probe verdict: PASS",
    "final_recall_at_12": null,
    "median_gold_rank": null
   },

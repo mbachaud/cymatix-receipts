@@ -4,7 +4,7 @@ branch: `bench/semantic-portfolio`
 head: `b5eb803d3f634b225185186bf8f3539105c3e194` (refs/remotes/origin/bench/semantic-portfolio)
 diff base: `2644c3e44038bf285eb6a5484817bd4c3de126c6` (merge-base with origin/master)
 pr: #426
-exported: 2026-09-02T01:37:47.797173+00:00
+exported: 2026-09-02T01:40:50.623901+00:00
 files: 54
 
 - benchmarks/dogfood/enronqa/receipts/hit_slate_sample_enron_v2_2026-08-31.json

@@ -1,10 +1,10 @@
 # claude/architecture-hunt-research-e4ee87
 
 branch: `claude/architecture-hunt-research-e4ee87`
-head: `fb01f6c7e1aae28baaaef1c7b91f768c73c34a61` (refs/remotes/origin/claude/architecture-hunt-research-e4ee87)
+head: `45a4055726c8e7c38942095190234f9e1106f4ea` (refs/remotes/origin/claude/architecture-hunt-research-e4ee87)
 diff base: `b5eb803d3f634b225185186bf8f3539105c3e194` (merge-base with parent branch `bench/semantic-portfolio`)
 pr: local only, no PR
-exported: 2026-09-02T01:37:48.860784+00:00
+exported: 2026-09-02T01:40:51.682819+00:00
 files: 31
 
 - benchmarks/dogfood/erb/receipts/absent_term_overlap_2026-09-01.json
