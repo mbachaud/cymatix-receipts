@@ -1,0 +1,540 @@
+{
+  "generated_at": "2026-09-02T05:52:15.352820+00:00",
+  "repo": "mbachaud/cymatix-receipts",
+  "release_tag": "scbench-campaign-receipts-2026-08",
+  "compression": "zstandard level 12, python zstandard 0.25.0",
+  "captures": [
+    {
+      "label": "scbench-luna-pilot-2026-08-08",
+      "campaign": "2026-08-08-codex-pilot",
+      "release_tag": "scbench-campaign-receipts-2026-08",
+      "asset_name": "scbench-luna-pilot-2026-08-08.tar.zst",
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/scbench-campaign-receipts-2026-08/scbench-luna-pilot-2026-08-08.tar.zst",
+      "source_worktree": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\scbench-codex-ab",
+      "source_branch": "codex/scbench-cymatix-ab",
+      "source_head": "9312cde85e88864be130f712d1e8adf97a92a1dd",
+      "frozen_tag": "bench/scbench-luna-2026-08-08",
+      "source_path": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\scbench-codex-ab\\benchmarks\\scbench\\campaigns\\2026-08-08-codex-pilot",
+      "source_items": [
+        "pairs",
+        "preflight.json"
+      ],
+      "source_files": 5071,
+      "source_bytes": 238987760,
+      "dropped_sidecars": {
+        "count": 32,
+        "bytes": 53128960
+      },
+      "sidecar_dbs_checkpointed_on_copy": [
+        {
+          "db": "pairs/code-search-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 794624,
+          "source_db_sha256": "8c6d78921f2c0fc700934512af37e8564ac64bdf1258ff31dbfc591636b662ac",
+          "source_wal_bytes": 2117712,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 794624,
+          "archived_db_sha256": "7de16fe48b321004f69cc4c5bc9ad0bade32780dc6f628b878b961895e708b13"
+        },
+        {
+          "db": "pairs/code-search-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 860160,
+          "source_db_sha256": "67e5875a638d1ab624386ef4cea9ca3c0529ab49aecf0b1fab7eca5166fbc0a6",
+          "source_wal_bytes": 2401992,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 860160,
+          "archived_db_sha256": "2b9f98e7b8917ebc8433c8ea02bf285f4f667015f207fd513a3db56bb949d421"
+        },
+        {
+          "db": "pairs/dag-execution-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 761856,
+          "source_db_sha256": "36cdda887add1f48ed554c289bcbb73a73c97ebec1fdcd1b9995d282a171c8eb",
+          "source_wal_bytes": 1821072,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 761856,
+          "archived_db_sha256": "79932b0c2347f8e66c4783fef640840872f650c6d27afc48ce6ca4f003d91a9f"
+        },
+        {
+          "db": "pairs/dag-execution-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 839680,
+          "source_db_sha256": "57b52a0bd042e37623fd390a752ba533f24270919813ce0be330e818c939efe2",
+          "source_wal_bytes": 2249552,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 839680,
+          "archived_db_sha256": "4d80cff09c6c7a978cb015170b6c3c3b3c9223a28198b0a995aab1f6c219c640"
+        },
+        {
+          "db": "pairs/database-migration-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1228800,
+          "source_db_sha256": "68808dbbdaed4e5ff464ad4b5cdfaf1fd5d666159980d3784838ab49d30d5da5",
+          "source_wal_bytes": 4177712,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1228800,
+          "archived_db_sha256": "f7c797ad8891e02edb9533202dcd88ea4a8dbe694e4e4a2235d07793ffd8f6fd"
+        },
+        {
+          "db": "pairs/database-migration-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1183744,
+          "source_db_sha256": "ef149eec0f328649af25a05569546b1ae935de0452735769955ce7a3336d94e6",
+          "source_wal_bytes": 4198312,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1183744,
+          "archived_db_sha256": "f2c34d785de6472a260b1101c33457c464fce7bda763fbaddcba6196380e336a"
+        },
+        {
+          "db": "pairs/execution-server-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 925696,
+          "source_db_sha256": "a2f62a6d12df1ee20ccc010a8b371ce1d92052cabe8523d5eef58ada9820a50e",
+          "source_wal_bytes": 2101232,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1056768,
+          "archived_db_sha256": "9e8aca0398c12fa3763402723195dfc15537934fa1fa6ccf5636a220a5b3c40f"
+        },
+        {
+          "db": "pairs/execution-server-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 995328,
+          "source_db_sha256": "536d2c66183ebe7792ec6b71dbae88e6246d4c280714b847064a813fb0b3405c",
+          "source_wal_bytes": 2270152,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1114112,
+          "archived_db_sha256": "f0f1acffbb5df7612d0f37cc78059c207f9580c451024b0a72b1e4cac1af2ed0"
+        },
+        {
+          "db": "pairs/file-backup-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1429504,
+          "source_db_sha256": "b2b2324831035677df5a9d60abb8345253fcccd81e24e6eb8a9d3fd682a95f1a",
+          "source_wal_bytes": 4157112,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1429504,
+          "archived_db_sha256": "7ae1bfc91d09857e4e1fafde54b2d47ffafe5c22a4f25fd9c015e2bb50fc93c4"
+        },
+        {
+          "db": "pairs/file-backup-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1376256,
+          "source_db_sha256": "954df45cd80fd6a01e2d7bca26dfab456508830411fbb7f1732930347a8ca6fe",
+          "source_wal_bytes": 4132392,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1376256,
+          "archived_db_sha256": "5ec93f8e4e60d7eb75978172731d3073ef90a4838095b603b9257ac40649da56"
+        },
+        {
+          "db": "pairs/layered-config-synthesizer-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 921600,
+          "source_db_sha256": "0bbb76c178d81ab45ce89cfebd2b7f3d1127e3e2cf46092b2cf052ad5d251618",
+          "source_wal_bytes": 2566792,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 921600,
+          "archived_db_sha256": "715c5b4678ffcd2bfafd27813c68a7bf7afcc0d4466901bd444cb79845ad7215"
+        },
+        {
+          "db": "pairs/layered-config-synthesizer-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 966656,
+          "source_db_sha256": "819018ed773abc4b508e228954664d0a9a4020531df97a023b64763b72799e01",
+          "source_wal_bytes": 3085912,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 966656,
+          "archived_db_sha256": "e19a7c57c4939c7ee475b8cb8c12798d5282ee37fdaf6eab291f23d8561ea70d"
+        },
+        {
+          "db": "pairs/recli-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1810432,
+          "source_db_sha256": "3f54c8c674daf20604915d187c5f469e41def81480008c8f2cfa3f20e063bcb9",
+          "source_wal_bytes": 4412552,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1810432,
+          "archived_db_sha256": "d2075dbc9214aaec226e573636f9916713258b3d954cc1d873cad799bedaed4e"
+        },
+        {
+          "db": "pairs/recli-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1753088,
+          "source_db_sha256": "2bf1e6befac32eb4f02cd2216d3668a22fdcd1a3c096d0efeee1b319674ac19e",
+          "source_wal_bytes": 4367232,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1753088,
+          "archived_db_sha256": "15573e3751ac4bf1fa2b93d7f5390c5070d509a05affdf9dfed152c7b6b53e6e"
+        },
+        {
+          "db": "pairs/trajectory-api-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1388544,
+          "source_db_sha256": "c5eb0589a8d2ec02b7ff9d1032e91e7048273f4968254a6bef691450a7a7ecad",
+          "source_wal_bytes": 4218912,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1388544,
+          "archived_db_sha256": "993a770d85d4a276ac406c3cb8998fc8ff2f38e7a97834de88b7a997214d89b2"
+        },
+        {
+          "db": "pairs/trajectory-api-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1441792,
+          "source_db_sha256": "c66c7c0afd02a1d461e6220c91eed6685cab608fc7810221dc3acb1f06e2996e",
+          "source_wal_bytes": 4326032,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1441792,
+          "archived_db_sha256": "774434559ebd0607fcc109248914aad541899ec20a598629bb6b1b6baa7aee53"
+        }
+      ],
+      "archived_files": 5039,
+      "archived_bytes": 186108656,
+      "tar_bytes": 195164160,
+      "sha256_tar": "ec62da9fc6d39713c5ab47853332b1ccb6ca57e2afd2cdecf694350cc79d219c",
+      "zst_bytes": 13441732,
+      "sha256_zst": "4f21ead8c283499b2f3ce096d054ef72b427443ea5eb4e723bbd014227f349ac",
+      "ratio": 14.52,
+      "roundtrip_ok": true,
+      "seconds": 49.9,
+      "verdict": "Luna pilot: NOT graduated (4/8 predeclared gates fail, issue #359 decision STOP); analysis-v2 (committed on the branch) no_detectable_difference, safety gates pass",
+      "notes": [
+        "tar entries are rooted at benchmarks/scbench/campaigns/2026-08-08-codex-pilot/ so they extract over a checkout of codex/scbench-cymatix-ab",
+        "sidecar cymatix.genome.db files were copied with their -wal, checkpointed (TRUNCATE) on the copy, then the -wal/-shm sidecars were dropped; sources untouched",
+        "checkpoint result: 0 WAL frames applied across 16 sidecar dbs; the archived db differs from the source db only by the journal_mode header (WAL -> DELETE), both sha256 recorded per db",
+        "the pair receipt tree hashes *.json only (integrations/scbench/receipts.py), so the sidecar db header change does not affect verify-receipts replay"
+      ],
+      "asset_size_verified": true
+    },
+    {
+      "label": "scbench-terra-2026-08-11",
+      "campaign": "2026-08-11-codex-terra",
+      "release_tag": "scbench-campaign-receipts-2026-08",
+      "asset_name": "scbench-terra-2026-08-11.tar.zst",
+      "asset_url": "https://github.com/mbachaud/cymatix-receipts/releases/download/scbench-campaign-receipts-2026-08/scbench-terra-2026-08-11.tar.zst",
+      "source_worktree": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\scbench-codex-ab",
+      "source_branch": "codex/scbench-cymatix-ab",
+      "source_head": "9312cde85e88864be130f712d1e8adf97a92a1dd",
+      "frozen_tag": "bench/scbench-terra-2026-08-11",
+      "source_path": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\scbench-codex-ab\\benchmarks\\scbench\\campaigns\\2026-08-11-codex-terra",
+      "source_items": [
+        "pairs",
+        "preflight.json",
+        "analysis-v2.json",
+        "analysis-v2.md"
+      ],
+      "source_files": 4973,
+      "source_bytes": 237489332,
+      "dropped_sidecars": {
+        "count": 32,
+        "bytes": 55250760
+      },
+      "sidecar_dbs_checkpointed_on_copy": [
+        {
+          "db": "pairs/code-search-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 962560,
+          "source_db_sha256": "7cf6c4f8b4ca93e311b66a25d31ca3a495b6b20b7c0de11aa3afd8811df8ee1d",
+          "source_wal_bytes": 2875792,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 962560,
+          "archived_db_sha256": "351d3e1ea834f004d4cca53dc316b8b79508e0e2874badfef3e9246b697d15cd"
+        },
+        {
+          "db": "pairs/code-search-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 851968,
+          "source_db_sha256": "b8551be0a500c0ec4ef734d8207a25357c04d22255275ed963e965ede3e77d60",
+          "source_wal_bytes": 2389632,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 851968,
+          "archived_db_sha256": "d90fe4ab6e39d8c426100092c23effa03ec9bcb09a6fd080030cfb9508d113a9"
+        },
+        {
+          "db": "pairs/dag-execution-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 696320,
+          "source_db_sha256": "b2e551e8ee5a39f98341139eee32cc8163bf4cafc56f1fa28841516727c06aef",
+          "source_wal_bytes": 2533832,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 876544,
+          "archived_db_sha256": "2a9eb1e51fa1dd7f885a317827b9ede218c67c702be6acb90414f6c0737d3150"
+        },
+        {
+          "db": "pairs/dag-execution-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 823296,
+          "source_db_sha256": "7ac911010f5e20440144edbe6f2f13b6927795edaac8bec177be91348dbc7d8f",
+          "source_wal_bytes": 2414352,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 823296,
+          "archived_db_sha256": "863a8627ad48541ece5c725501719cb78d1f24f5cbd85e4b45b53ca431102dde"
+        },
+        {
+          "db": "pairs/database-migration-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1359872,
+          "source_db_sha256": "7ed5ffd10d2d309669f232c5a88b2aa51d078181de82c946a2ebcc89ce4c42e4",
+          "source_wal_bytes": 4132392,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1359872,
+          "archived_db_sha256": "1e9fdb11f695e2823e9ade056a2e57f251c8f409414fc660ef6785f6ef750f99"
+        },
+        {
+          "db": "pairs/database-migration-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1175552,
+          "source_db_sha256": "5856e78fb9ee847cf3fd5d44775e56aca5bb29a053d4c321441987c112cbf031",
+          "source_wal_bytes": 4334272,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1175552,
+          "archived_db_sha256": "4ea0665b53e7b17d2b090129a85a5902ff55e32630feaac9d62d7fb7c588d9eb"
+        },
+        {
+          "db": "pairs/execution-server-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1089536,
+          "source_db_sha256": "6ee44d04734338d243d137c8d0ab3e088405a1c4dd9ac1120f5d6dadb39f6438",
+          "source_wal_bytes": 2109472,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1089536,
+          "archived_db_sha256": "d7b8c705d89f8d2de10c4a75fdd2994bc625740af2539454d73b37ea1e9a50e1"
+        },
+        {
+          "db": "pairs/execution-server-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 995328,
+          "source_db_sha256": "58f48e5eabab28763819f813a924bcefbb1475784f7b0acb585c0c9e0d528241",
+          "source_wal_bytes": 2278392,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1110016,
+          "archived_db_sha256": "c61a66465321ae8b0694b862eb48f21a618ee6f25acb2c2aca6c4364f0e23ab3"
+        },
+        {
+          "db": "pairs/file-backup-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1486848,
+          "source_db_sha256": "3a45f89d773fadecdafa7ad9b9c8b42f70b6ca983b28839bc1576dfd70a2e566",
+          "source_wal_bytes": 4161232,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1486848,
+          "archived_db_sha256": "b170f26673b530048b59536ab5442106a898ef651472afa060c1a3a9375c0d94"
+        },
+        {
+          "db": "pairs/file-backup-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1466368,
+          "source_db_sha256": "1182b4bf04ee413ae4ebe08d583f35acf893dde55b4d03e5c3de4505a6a5cac0",
+          "source_wal_bytes": 4132392,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1466368,
+          "archived_db_sha256": "cecd011849e46ce1da41b1369fce92adcf971a57c945e4e82d547bc321b71c6d"
+        },
+        {
+          "db": "pairs/layered-config-synthesizer-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1032192,
+          "source_db_sha256": "e7c4d4bc31dc04595afb71cdfed94b47e0df4c899d004b71f57f70614c83418b",
+          "source_wal_bytes": 3271312,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1032192,
+          "archived_db_sha256": "f5803e0c86c9cbf27c61a8da25d1c5ff5cda667333822f66a10e0893bdc21f8d"
+        },
+        {
+          "db": "pairs/layered-config-synthesizer-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 974848,
+          "source_db_sha256": "0be9bbc889285dc413343847e1c342573c9bec82ac95fe87a5f56c34833b0532",
+          "source_wal_bytes": 2818112,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 974848,
+          "archived_db_sha256": "45dbb3153db16dccd3755a91aaf6f96e134c82c547ebd7cd0a770b7d3da3a924"
+        },
+        {
+          "db": "pairs/recli-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1945600,
+          "source_db_sha256": "e55b8066ab1cf38d05909a85626184f6b29596e4341808ebd004bf925db7216d",
+          "source_wal_bytes": 4363112,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1945600,
+          "archived_db_sha256": "69d79e63442363a1c2ab42af93a396789ab3dffde0036bc7f057faee96fb3b0d"
+        },
+        {
+          "db": "pairs/recli-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1888256,
+          "source_db_sha256": "9134bb79bc2a6d2f6457f7449b232a02cf2134cc320cc35b09fb8be7268c93f7",
+          "source_wal_bytes": 4354872,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1888256,
+          "archived_db_sha256": "79b130a7070295e94bd5de9de442979cbed51c3ae0368aedd41714e85ea1c5c3"
+        },
+        {
+          "db": "pairs/trajectory-api-r1/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1396736,
+          "source_db_sha256": "94b0a7288691c5a5ea3b4a286a27f903dd3f0c7d29e5de7b1bcb3c38d992db95",
+          "source_wal_bytes": 4276592,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1396736,
+          "archived_db_sha256": "220a2c19bf77cb0c887108875a5277120472cf603d0681865c98237d9fc440ea"
+        },
+        {
+          "db": "pairs/trajectory-api-r2/cymatix/receipts/sidecar/cymatix.genome.db",
+          "source_db_bytes": 1335296,
+          "source_db_sha256": "a1e7d11114abcc13c12e63d5aa68051fc80c5e2a1af26362fc59ddb5f2a9463b",
+          "source_wal_bytes": 4280712,
+          "wal_checkpoint": [
+            0,
+            0,
+            0
+          ],
+          "quick_check": "ok",
+          "archived_db_bytes": 1335296,
+          "archived_db_sha256": "06111193bab084467b5693724b57f678c8235154cec886f1a7ad8bd272e9558b"
+        }
+      ],
+      "archived_files": 4941,
+      "archived_bytes": 182533484,
+      "tar_bytes": 191416320,
+      "sha256_tar": "dd1c859b761e945566da5c81e004da6bd59065cfba41ff2e044c48f6b4999215",
+      "zst_bytes": 13434247,
+      "sha256_zst": "1a0556225c5183daca11ff5c78d5a5d6d27c3d2acee6eb30405332ac250ceec1",
+      "ratio": 14.25,
+      "roundtrip_ok": true,
+      "seconds": 49.4,
+      "verdict": "Terra v2: no_detectable_difference, all 7 safety gates pass (head-to-head cymatix 18 / control 24 / tied 22; input-token ratio 1.13; elapsed 1.08)",
+      "notes": [
+        "tar entries are rooted at benchmarks/scbench/campaigns/2026-08-11-codex-terra/ so they extract over a checkout of codex/scbench-cymatix-ab",
+        "sidecar cymatix.genome.db files were copied with their -wal, checkpointed (TRUNCATE) on the copy, then the -wal/-shm sidecars were dropped; sources untouched",
+        "checkpoint result: 0 WAL frames applied across 16 sidecar dbs; the archived db differs from the source db only by the journal_mode header (WAL -> DELETE), both sha256 recorded per db",
+        "the pair receipt tree hashes *.json only (integrations/scbench/receipts.py), so the sidecar db header change does not affect verify-receipts replay"
+      ],
+      "asset_size_verified": true
+    }
+  ]
+}
