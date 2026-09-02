@@ -1,11 +1,12 @@
 # claude/cutoff-paraphrase-gene-issues-a77235
 
 branch: `claude/cutoff-paraphrase-gene-issues-a77235`
-head: `b266fb814b45af8175070ebc678f09c487450d2d` (refs/remotes/origin/claude/cutoff-paraphrase-gene-issues-a77235)
+head: `b266fb814b45af8175070ebc678f09c487450d2d` (refs/heads/claude/cutoff-paraphrase-gene-issues-a77235)
 diff base: `2644c3e44038bf285eb6a5484817bd4c3de126c6` (merge-base with origin/master)
 pr: #427
-exported: 2026-09-02T01:40:50.818138+00:00
+exported: 2026-09-02T05:56:03.270314+00:00
 files: 9
+bytes: 926790 (largest 396782: `benchmarks/dogfood/erb/receipts/ladder_v09x_floor6_2026-08-30.json`)
 
 - benchmarks/dogfood/erb/configs/w24_min_delivered_6.toml
 - benchmarks/dogfood/erb/receipts/floor_width_curve_947k_2026-08-31.json

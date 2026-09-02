@@ -1,0 +1,9 @@
+dimension,auto_score,auto_confidence,manual_grade,divergent,tier,timestamp
+complexity,1.000,0.80,,False,weekly,2026-08-15T22:51:14
+dep_freshness,0.000,0.85,,True,weekly,2026-08-15T22:51:14
+doc_coverage,0.523,0.80,,False,weekly,2026-08-15T22:51:14
+import_hygiene,0.940,0.85,,False,weekly,2026-08-15T22:51:14
+lint_score,0.780,0.90,,False,weekly,2026-08-15T22:51:14
+security,0.000,0.60,,True,weekly,2026-08-15T22:51:14
+test_coverage,0.999,0.95,,False,weekly,2026-08-15T22:51:14
+type_coverage,0.000,0.85,,True,weekly,2026-08-15T22:51:14

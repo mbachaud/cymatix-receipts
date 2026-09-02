@@ -1,0 +1,94 @@
+{
+  "health": {
+    "ok": false,
+    "grade": "D",
+    "score": 0.53,
+    "divergences": 3,
+    "failing": [
+      "dep_freshness",
+      "security",
+      "type_coverage"
+    ],
+    "ratchet_violations": []
+  },
+  "dimensions": [
+    {
+      "name": "complexity",
+      "auto_score": 1.0,
+      "auto_confidence": 0.8,
+      "manual_grade": null,
+      "divergent": false,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "dep_freshness",
+      "auto_score": 0.0,
+      "auto_confidence": 0.85,
+      "manual_grade": null,
+      "divergent": true,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "doc_coverage",
+      "auto_score": 0.5226257151460403,
+      "auto_confidence": 0.8,
+      "manual_grade": null,
+      "divergent": false,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "import_hygiene",
+      "auto_score": 0.94,
+      "auto_confidence": 0.85,
+      "manual_grade": null,
+      "divergent": false,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "lint_score",
+      "auto_score": 0.78,
+      "auto_confidence": 0.9,
+      "manual_grade": null,
+      "divergent": false,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "security",
+      "auto_score": 0.0,
+      "auto_confidence": 0.6,
+      "manual_grade": null,
+      "divergent": true,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "test_coverage",
+      "auto_score": 0.999475478625754,
+      "auto_confidence": 0.95,
+      "manual_grade": null,
+      "divergent": false,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    },
+    {
+      "name": "type_coverage",
+      "auto_score": 0.0,
+      "auto_confidence": 0.85,
+      "manual_grade": null,
+      "divergent": true,
+      "tier": "weekly",
+      "timestamp": "2026-08-15T22:51:14"
+    }
+  ],
+  "feedback": {
+    "count": 0,
+    "avg_score": null,
+    "min_score": null,
+    "max_score": null
+  }
+}

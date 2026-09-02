@@ -1,0 +1,1 @@
+{"overall": 0.5302626492214743, "grade": "D", "health": {"ok": false, "grade": "D", "score": 0.53, "divergences": 3, "failing": ["dep_freshness", "security", "type_coverage"], "ratchet_violations": []}, "elapsed_seconds": 2788.1}

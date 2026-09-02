@@ -1,0 +1,136 @@
+{
+  "target": "F:\\Projects\\cymatix-context",
+  "tier": "weekly",
+  "pytest_markers_env": null,
+  "pytest_timeout_env": "5400",
+  "started_at": "2026-08-15T22:51:14",
+  "elapsed_seconds": 2788.1,
+  "dimensions": [
+    {
+      "name": "test_coverage",
+      "auto_score": 0.999475478625754,
+      "auto_confidence": 0.95,
+      "divergent": false,
+      "auto_detail": {
+        "passed": 3811,
+        "failed": 2,
+        "total": 3813
+      }
+    },
+    {
+      "name": "lint_score",
+      "auto_score": 0.78,
+      "auto_confidence": 0.9,
+      "divergent": false,
+      "auto_detail": {
+        "errors": 11
+      }
+    },
+    {
+      "name": "type_coverage",
+      "auto_score": 0.0,
+      "auto_confidence": 0.85,
+      "divergent": true,
+      "auto_detail": {
+        "errors": 106
+      }
+    },
+    {
+      "name": "dep_freshness",
+      "auto_score": 0.0,
+      "auto_confidence": 0.85,
+      "divergent": true,
+      "auto_detail": {
+        "outdated": 41,
+        "total": 142,
+        "top5": [
+          {
+            "name": "annotated-doc",
+            "current": "0.0.4",
+            "latest": "0.0.5"
+          },
+          {
+            "name": "annotated-types",
+            "current": "0.7.0",
+            "latest": "0.8.0"
+          },
+          {
+            "name": "ast-grep-cli",
+            "current": "0.44.1",
+            "latest": "0.45.1"
+          },
+          {
+            "name": "cffi",
+            "current": "2.1.0",
+            "latest": "2.1.1"
+          },
+          {
+            "name": "charset-normalizer",
+            "current": "3.4.9",
+            "latest": "3.5.1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "doc_coverage",
+      "auto_score": 0.5226257151460403,
+      "auto_confidence": 0.8,
+      "divergent": false,
+      "auto_detail": {
+        "documented": 10562,
+        "total": 33210,
+        "ratio": 0.318,
+        "readme_exists": true,
+        "files_scanned": 2341
+      }
+    },
+    {
+      "name": "security",
+      "auto_score": 0.0,
+      "auto_confidence": 0.6,
+      "divergent": true,
+      "auto_detail": {
+        "tool": "semgrep",
+        "errors": 0,
+        "warnings": 27,
+        "total": 27
+      }
+    },
+    {
+      "name": "complexity",
+      "auto_score": 1.0,
+      "auto_confidence": 0.8,
+      "divergent": false,
+      "auto_detail": {
+        "tool": "ast",
+        "functions": 37669,
+        "avg_complexity": 3.91,
+        "max_complexity": 155
+      }
+    },
+    {
+      "name": "import_hygiene",
+      "auto_score": 0.94,
+      "auto_confidence": 0.85,
+      "divergent": false,
+      "auto_detail": {
+        "violations": 2
+      }
+    }
+  ],
+  "overall_score": 0.5302626492214743,
+  "overall_grade": "D",
+  "health": {
+    "ok": false,
+    "grade": "D",
+    "score": 0.53,
+    "divergences": 3,
+    "failing": [
+      "dep_freshness",
+      "security",
+      "type_coverage"
+    ],
+    "ratchet_violations": []
+  }
+}
