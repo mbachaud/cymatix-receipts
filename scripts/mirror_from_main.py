@@ -39,6 +39,19 @@ DIR_SPECS = [
     "benchmarks/dogfood/erb/receipts",
     "benchmarks/dogfood/receipts",
     "benchmarks/dogfood/receipts_w32",
+    # 2026-09-02: the seven per-corpus receipt trees below were NOT mirrored
+    # before this date. They were found missing while preparing to untrack
+    # benchmarks/dogfood/**/receipts/ from the main repo -- mirroring without
+    # them would have dropped ~640k lines of evidence (muloc 237k, enronqa
+    # 118k, enronqa_padded 92k, financebench 68k, and three locomo trees).
+    "benchmarks/dogfood/enronqa/receipts",
+    "benchmarks/dogfood/enronqa_padded/receipts",
+    "benchmarks/dogfood/financebench/receipts",
+    "benchmarks/dogfood/locomo/receipts",
+    "benchmarks/dogfood/locomo_obs/receipts",
+    "benchmarks/dogfood/locomo_obs_ctl/receipts",
+    "benchmarks/dogfood/muloc/receipts",
+    "benchmarks/dogfood/code/receipts",
     "benchmarks/snow/results",
     "benchmarks/results/faithfulness",
     "docs/benchmarks",

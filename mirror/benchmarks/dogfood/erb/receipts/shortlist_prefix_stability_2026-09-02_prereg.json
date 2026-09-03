@@ -1,0 +1,26 @@
+{
+  "probe": "shortlist_prefix_stability",
+  "question": "Do the first 50 rows of `... ORDER BY rank LIMIT D` equal the rows of the shipped `... ORDER BY rank LIMIT 50` on every target?",
+  "written_before_any_result_was_read": true,
+  "decision_rule": {
+    "PASS_SINGLE_QUERY": "prefix_set_equal_B AND prefix_set_equal_C true on ALL targets -> tail production may reuse the shipped query with a widened LIMIT (design K1, contract T12)",
+    "FALLBACK_TWO_QUERY": "any target mismatches -> keep the shipped LIMIT-50 query byte-identical and issue a second LIMIT-D query for the tail, taking tail = [g for g in rows[50:D] if g not in shortlist]; priced ~+2.7-3.0 s/query, bench-only",
+    "no_kill": "this probe selects an implementation; it does not decide whether the tail lane is worth building"
+  },
+  "arms": {
+    "A": "'SELECT gene_id FROM genes_fts WHERE genes_fts MATCH ? ORDER BY rank LIMIT ?' @ LIMIT 50 (shipped, byte-for-byte)",
+    "B": "'SELECT gene_id FROM genes_fts WHERE genes_fts MATCH ? ORDER BY rank LIMIT ?' @ LIMIT 1000 (pure-LIMIT prefix question)",
+    "C": "'SELECT gene_id, rank FROM genes_fts WHERE genes_fts MATCH ? ORDER BY rank LIMIT ?' @ LIMIT 1000 (design K1 projection)"
+  },
+  "cache_order_control": "even-indexed targets run A,B,C; odd-indexed run C,B,A; per-order timings reported separately",
+  "secondary_measurements": [
+    "paired SQL cost of the widened LIMIT (the first direct measurement of the design's T11 tail-production budget)",
+    "boundary ties: C[49].rank == C[50].rank (the mechanism that would make a prefix unstable)"
+  ],
+  "bed": "F:\\tmp\\erb_blob_v09x.db",
+  "bed_bytes": 24595255296,
+  "capture": "F:\\Projects\\cymatix-receipts\\captures\\erb\\pool_depth_capture_2026-09-01.sqlite",
+  "n_targets": 216,
+  "bed_access": "READ-ONLY (mode=ro URI); no index created; no pipeline run",
+  "term_source": "capture `terms` table = the pipeline's own captured query_terms for these needles (ARM-1, 2026-09-01), filtered len(t) > 2 exactly as knowledge_store.py:3954 filters them"
+}

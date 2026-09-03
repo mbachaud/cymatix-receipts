@@ -1,0 +1,1273 @@
+{
+  "probe": "tail_only_dense",
+  "stamp": "2026-09-02",
+  "verdict": "DISCARDED_INVALID_NEEDLE_JOIN",
+  "prereg": "tail_only_dense_2026-09-02_prereg.json",
+  "bed": "F:/tmp/erb_blob.db",
+  "bed_note": "829k bed -- a DIFFERENT BASELINES row from the v09x bed the cohort was defined on",
+  "cohort_n": 61,
+  "pool_absent_on_this_bed": 61,
+  "vectors_scanned": 809251,
+  "partial_scan": false,
+  "gold_missing_vector": 0,
+  "dense_rescues": {
+    "1": 0,
+    "3": 0,
+    "6": 0,
+    "12": 0
+  },
+  "bm25_rescues": {
+    "1": 0,
+    "3": 0,
+    "6": 0,
+    "12": 0
+  },
+  "delta_by_R": {
+    "1": 0,
+    "3": 0,
+    "6": 0,
+    "12": 0
+  },
+  "best_R": 1,
+  "held_out_n": 30,
+  "held_out_delta_at_best_R": 0,
+  "scope_limits": [
+    "REACH, not delivery: gold entering the tail is necessary, not sufficient. Blend, tier, trim and session elision run after.",
+    "Cross-bed: the cohort is a v09x construct measured on 829k.",
+    "TOPK=400 retained per query; gold deeper than that reads as no rescue, which is correct for R<=12 but caps the rank reported.",
+    "No latency claim: full-corpus brute force is not a shipped path, which would need an ANN index or the resident matrix."
+  ],
+  "rows": [
+    {
+      "needle": "erb_177",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_179",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_183",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_185",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_186",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_188",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_189",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_190",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_192",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_195",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_200",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_202",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_203",
+      "gold_n": 1,
+      "gold_with_vector": 1,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_206",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_211",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_213",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_215",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_217",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_218",
+      "gold_n": 1,
+      "gold_with_vector": 1,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_219",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_220",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_221",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_223",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_225",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_228",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_230",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_233",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_234",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_239",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_241",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_242",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_243",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_245",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_246",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_247",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_248",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_249",
+      "gold_n": 1,
+      "gold_with_vector": 1,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_250",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_255",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_256",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_259",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_260",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_261",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_262",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_266",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_267",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_269",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_271",
+      "gold_n": 1,
+      "gold_with_vector": 1,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_274",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_275",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_277",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_278",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_281",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_284",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_288",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_292",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_295",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_296",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_297",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_298",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    },
+    {
+      "needle": "erb_299",
+      "gold_n": 2,
+      "gold_with_vector": 2,
+      "pool_absent_here": true,
+      "dense_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "bm25_rescue": {
+        "1": false,
+        "3": false,
+        "6": false,
+        "12": false
+      },
+      "gold_dense_tail_rank": null,
+      "gold_bm25_tail_rank": null
+    }
+  ],
+  "invalidation": {
+    "found": "2026-09-02, by the probe's own author, before the result was used",
+    "defect": "The probe encoded v09x-era question text (needles_resolved_v09x_full.json) and scored it against blob-era gold (gold_by_needle_blob.json) on the 829k bed, joining the two by needle NAME. Needle names are NOT stable question identifiers across bed resolutions: only erb_000..erb_024 share wording between the two banks; 444 of 469 needles are DIFFERENT QUESTIONS. Example: erb_177 asks about edge routing to Southeast Asia in the blob bank and about low-bit-math pass rates in the v09x bank.",
+    "why_the_control_did_not_catch_it": "The 20 positive-control needles were erb_000..erb_023 -- entirely inside the 25-needle identical-wording zone -- so they ranked gold at 1-3 and looked healthy, while every crater needle (erb_177+) was in the divergent zone. The control's pass was an artifact of needle numbering, not evidence of validity.",
+    "what_the_numbers_actually_measured": "The dense rank of an unrelated document for an unrelated question. The '0/61 rescues' and the 41,884-766,684 gold ranks are near-random by construction and carry NO information about tail-only dense.",
+    "what_would_make_it_valid": [
+      "Backfill BGE-M3 on the v09x bed and run the cohort on its own bed, or",
+      "Re-derive a crater cohort entirely inside the blob-era universe (blob questions + blob gold + blob bed), which needs blob-era class labels that no committed file carries."
+    ],
+    "collateral": "The SAME name join invalidates the by_class breakdown of the published receipt dense_ceiling_probe_829k_2026-08-31.json -- see docs/benchmarks/2026-09-02-needle-bank-identity-hazard.md."
+  }
+}

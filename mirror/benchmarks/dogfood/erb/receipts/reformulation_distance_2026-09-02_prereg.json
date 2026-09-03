@@ -1,0 +1,22 @@
+{
+  "probe": "reformulation_distance",
+  "written_before_any_result_was_read": true,
+  "question": "How many gold-specific terms must be added to the query before gold enters the BM25 top-50?",
+  "oracle": "added terms come from the gold chunk itself, ranked by rarity -- the best any reformulator could do with perfect knowledge of the answer; a real rewriter can only be worse",
+  "decision_rule": {
+    "fund_reformulation_first": "median distance <= 2",
+    "reformulation_cannot_win": "median distance >= 5 -- the rewriter would have to already know the answer; the document-side producer is the right shape",
+    "indexing_not_formulation": "gold unreachable at k=12"
+  },
+  "k_steps": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    8,
+    12
+  ],
+  "df_source": "Sidecar X 153,602-document sample (no bed access for DF)",
+  "bed_access": "READ-ONLY (mode=ro); gold text + MATCH queries only"
+}

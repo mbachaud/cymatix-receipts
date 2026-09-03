@@ -1,0 +1,3096 @@
+{
+  "probe": "reformulation_distance",
+  "stamp": "2026-09-02",
+  "prereg": "reformulation_distance_2026-09-02_prereg.json",
+  "verdict": "DISCARDED_CONTAMINATED",
+  "cohort": "pool_absent",
+  "n_targets": 109,
+  "df_sample_docs": 153602,
+  "headline": {
+    "reached_top50_at_some_k": "109/109",
+    "reached_top12_at_some_k": "109/109",
+    "median_distance_to_top50": 2,
+    "median_distance_to_top12": 2,
+    "distance_histogram_top50": {
+      "1": 34,
+      "2": 47,
+      "3": 23,
+      "5": 5
+    },
+    "distance_histogram_top12": {
+      "1": 17,
+      "2": 44,
+      "3": 33,
+      "5": 14,
+      "8": 1
+    },
+    "reached_top50_at_k0": 0
+  },
+  "interpretation": "one or two gold-specific terms suffice; a rewriter that sees only the question has a plausible chance -- run the reformulation producer before funding cards",
+  "scope_limits": [
+    "ORACLE: the added terms come from the gold text itself. A real rewriter sees only the question, so every distance here is a LOWER bound on what a real producer must achieve.",
+    "Rarity is estimated over the 153,602-document Sidecar X sample, not the whole 947k corpus; terms absent from the sample are treated as rarest, which favours the oracle.",
+    "Reach into the BM25 top-50 is admission, not delivery: gold still has to survive fusion and the seat cut.",
+    "ERB pool-absent cohort on one bed; the semantic class is generated under an explicit anti-lexical instruction."
+  ],
+  "rows": [
+    {
+      "needle": "erb_003",
+      "question_type": "basic",
+      "n_query_terms": 40,
+      "n_gold_chunks": 8,
+      "n_candidate_terms": 947,
+      "rarest_added": [
+        "6c4c1c875e704f09b4d791d64d7bc7e5",
+        "9f3c1d",
+        "u201c1m",
+        "u201cclaim",
+        "u201cconsumer",
+        "u201cfeatures",
+        "u201cpaths",
+        "fiers"
+      ],
+      "gold_rank_by_k": {
+        "0": 63,
+        "1": 63,
+        "2": 5,
+        "3": 4,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_006",
+      "question_type": "basic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 450,
+      "rarest_added": [
+        "72ec4a9962ba43e88acd61abbba1052d",
+        "curbing",
+        "nbisection",
+        "bigrams",
+        "earners",
+        "rerouter",
+        "discus",
+        "inequality"
+      ],
+      "gold_rank_by_k": {
+        "0": 55,
+        "1": 55,
+        "2": 18,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_021",
+      "question_type": "basic",
+      "n_query_terms": 29,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 450,
+      "rarest_added": [
+        "f2f019c122154edc8b21f56879661043",
+        "contractdb",
+        "ratably",
+        "atypical",
+        "nprocedure",
+        "arrears",
+        "arrangements",
+        "nexception"
+      ],
+      "gold_rank_by_k": {
+        "0": 181,
+        "1": 59,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_025",
+      "question_type": "basic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 395,
+      "rarest_added": [
+        "c6a6396159964deeb021d646eaaf2b0c",
+        "cke9m0k7m2",
+        "u201crebuild",
+        "u201cguaranteeing",
+        "cascadefg",
+        "u20134am",
+        "redwoodinf",
+        "u201cguarantee"
+      ],
+      "gold_rank_by_k": {
+        "0": 129,
+        "1": 129,
+        "2": 129,
+        "3": 21,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_027",
+      "question_type": "basic",
+      "n_query_terms": 27,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 184,
+      "rarest_added": [
+        "7c0157af909c4a6190e00e1fc6b92b73",
+        "nshasum",
+        "praveen",
+        "npraveen",
+        "ngh",
+        "bugfixes",
+        "confetti",
+        "ball"
+      ],
+      "gold_rank_by_k": {
+        "0": 484,
+        "1": 3,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_030",
+      "question_type": "basic",
+      "n_query_terms": 28,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 448,
+      "rarest_added": [
+        "ascs",
+        "c198dbbcf28a4c73ad1d705809634176",
+        "nconsent",
+        "napplicability",
+        "reprocesses",
+        "redactors",
+        "cps",
+        "scrubbers"
+      ],
+      "gold_rank_by_k": {
+        "0": 59,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_031",
+      "question_type": "basic",
+      "n_query_terms": 36,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 421,
+      "rarest_added": [
+        "39e191ec758c41a8adecd223951b8b93",
+        "stions",
+        "que",
+        "sacrifices",
+        "coarser",
+        "16b",
+        "directives",
+        "allocators"
+      ],
+      "gold_rank_by_k": {
+        "0": 905,
+        "1": 226,
+        "2": 16,
+        "3": 17,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_042",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 264,
+      "rarest_added": [
+        "321eee6325824623833bbe754bf83a0b",
+        "0x6f",
+        "0x34",
+        "0x90",
+        "0x1a2",
+        "kselector",
+        "rc5",
+        "nhugo"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 116,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_050",
+      "question_type": "basic",
+      "n_query_terms": 47,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 297,
+      "rarest_added": [
+        "27bd877a9fb74bcaa4e93871f28f3f4d",
+        "rerate",
+        "sliders",
+        "15t18",
+        "instrumenting",
+        "reacts",
+        "ceil",
+        "impl"
+      ],
+      "gold_rank_by_k": {
+        "0": 125,
+        "1": 6,
+        "2": 6,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_054",
+      "question_type": "basic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 371,
+      "rarest_added": [
+        "27da22aa63b3446387fffc29b45a0883",
+        "mlmig",
+        "8f4a",
+        "lta",
+        "brightai",
+        "04t17",
+        "leniency",
+        "relaxations"
+      ],
+      "gold_rank_by_k": {
+        "0": 473,
+        "1": 16,
+        "2": 16,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_057",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 368,
+      "rarest_added": [
+        "a8f0c8524573431c9b789291d63b716a",
+        "1a2bld",
+        "optimizely",
+        "natt",
+        "u2014sam",
+        "launchdarkly",
+        "att",
+        "platinum"
+      ],
+      "gold_rank_by_k": {
+        "0": 127,
+        "1": 127,
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_061",
+      "question_type": "basic",
+      "n_query_terms": 38,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 446,
+      "rarest_added": [
+        "10kms",
+        "702bc520c52040428799fed41c63c8ca",
+        "translucency",
+        "intersecting",
+        "guerrilla",
+        "60fps",
+        "animates",
+        "brush"
+      ],
+      "gold_rank_by_k": {
+        "0": 80,
+        "1": 80,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_063",
+      "question_type": "basic",
+      "n_query_terms": 32,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 164,
+      "rarest_added": [
+        "d555b86d66ab43a48018e16e0ec90eb0",
+        "n001",
+        "n002",
+        "n003",
+        "redteamco",
+        "wednesdays",
+        "rce",
+        "nid"
+      ],
+      "gold_rank_by_k": {
+        "0": 500,
+        "1": 31,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_071",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 155,
+      "rarest_added": [
+        "0143493e1a514c28a39f1cf55744d37b",
+        "ciqaxxx",
+        "cryptokeydecrypter",
+        "keyid",
+        "nvault",
+        "cloudkms",
+        "revocations",
+        "revokes"
+      ],
+      "gold_rank_by_k": {
+        "0": 429,
+        "1": 16,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_073",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 351,
+      "rarest_added": [
+        "8779ac72d6504759b701178632772f6c",
+        "a1f9c2d",
+        "b2d7e3f",
+        "c3e4b21",
+        "changelo",
+        "d4f5a66",
+        "e5a6d77",
+        "f6b7c3a9e21d4f6a0b123c9dd7a8e0b1c2d3e4f5"
+      ],
+      "gold_rank_by_k": {
+        "0": 94,
+        "1": 8,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_076",
+      "question_type": "basic",
+      "n_query_terms": 30,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 340,
+      "rarest_added": [
+        "88b39d13bd584ef8b1422d76994808c7",
+        "b4e2c10",
+        "c7d9f21",
+        "createstreamconsumer",
+        "d2a7eba",
+        "e3c8f5a",
+        "f1b5c30",
+        "retrywithauthrefresh"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 90,
+        "2": 90,
+        "3": 4,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_086",
+      "question_type": "basic",
+      "n_query_terms": 37,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 345,
+      "rarest_added": [
+        "d921e1d4282b45a7b4990e2366bedc05",
+        "strator",
+        "orche",
+        "anticipation",
+        "overestimates",
+        "ets",
+        "obeys",
+        "slated"
+      ],
+      "gold_rank_by_k": {
+        "0": 63,
+        "1": 63,
+        "2": 9,
+        "3": 6,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_089",
+      "question_type": "basic",
+      "n_query_terms": 25,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 259,
+      "rarest_added": [
+        "4331f37f2b8d4e2cb0f5c5719a033e2f",
+        "1701abcdef",
+        "revvyinsights",
+        "revvy",
+        "titl",
+        "investors",
+        "otter",
+        "moments"
+      ],
+      "gold_rank_by_k": {
+        "0": 137,
+        "1": 137,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_091",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 252,
+      "rarest_added": [
+        "fa7dba9ea186436281a953c7b376bf11",
+        "23t05",
+        "23t02",
+        "nprashant",
+        "prashant",
+        "nraja",
+        "raja",
+        "pypi"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 294,
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_092",
+      "question_type": "basic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 232,
+      "rarest_added": [
+        "1trialbridge",
+        "3bc3170ead63470eaef9a53ca835cec0",
+        "trialbridge",
+        "trialbridgelegal",
+        "trb",
+        "lawtech",
+        "quickstarter",
+        "mixpanel"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 27,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_099",
+      "question_type": "basic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 368,
+      "rarest_added": [
+        "94095ba27ce5414db28e599562c12908",
+        "njose",
+        "skyrocketing",
+        "til",
+        "wavefront",
+        "mqa",
+        "gqa",
+        "ncontinuous"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 107,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_108",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 201,
+      "rarest_added": [
+        "1f9a2b",
+        "c9e70cb6eee1471baba213a976a8dd05",
+        "daystarter",
+        "rply",
+        "nshorthand",
+        "benching",
+        "sold",
+        "nasks"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 33,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_109",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 520,
+      "rarest_added": [
+        "2e4183d040b341cf843366e2c15402af",
+        "nverifiable",
+        "staircases",
+        "shortctx",
+        "confirmable",
+        "nbenchmarking",
+        "runtimectl",
+        "hotpaths"
+      ],
+      "gold_rank_by_k": {
+        "0": 196,
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_115",
+      "question_type": "basic",
+      "n_query_terms": 21,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 357,
+      "rarest_added": [
+        "48b40afb54b84af28b13cebf017c0616",
+        "jaime",
+        "ramon",
+        "pir",
+        "nthings",
+        "permalink",
+        "u2013mar",
+        "diary"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 3,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_120",
+      "question_type": "basic",
+      "n_query_terms": 21,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 533,
+      "rarest_added": [
+        "e3ae91c7f83f46e492209ffec2c7f2b8",
+        "flaggi",
+        "squeezing",
+        "ffx",
+        "mariner",
+        "oob",
+        "essentially",
+        "bye"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 375,
+        "3": 381,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_124",
+      "question_type": "basic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 338,
+      "rarest_added": [
+        "302783937bc849ecb7ef7323233d1efe",
+        "b3d9fa2",
+        "c7e8e6d",
+        "d1f3a4b",
+        "a1f4b2d",
+        "overreacts",
+        "fairer",
+        "sqrt"
+      ],
+      "gold_rank_by_k": {
+        "0": 122,
+        "1": 122,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_127",
+      "question_type": "basic",
+      "n_query_terms": 26,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 332,
+      "rarest_added": [
+        "319db001cae246bbbb16f441b64d9b82",
+        "eviewer",
+        "u201cre",
+        "u201cyes",
+        "u201cchange",
+        "nanswer",
+        "nwithin",
+        "u201cplanned"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_133",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 475,
+      "rarest_added": [
+        "alloctune",
+        "b9542668ae9b4163a932e4d16d26cd42",
+        "conservativekv",
+        "perroutebatching",
+        "globalized",
+        "sensitives",
+        "tcache",
+        "memstats"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 47,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_136",
+      "question_type": "basic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 237,
+      "rarest_added": [
+        "1paperplane",
+        "398e6e782364403a9fcfc73cac68ac5c",
+        "ca1k2m3paperplane",
+        "paperplanecx",
+        "paperplane",
+        "bolt",
+        "hunt",
+        "gthread"
+      ],
+      "gold_rank_by_k": {
+        "0": 130,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_138",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 338,
+      "rarest_added": [
+        "9f92a42dc8d24c93a0a696a0727063b9",
+        "caj12b3x4",
+        "diffsmith",
+        "dxz",
+        "prereceive",
+        "rdinf",
+        "cody",
+        "sourcegraph"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 347,
+        "2": 267,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_139",
+      "question_type": "basic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 377,
+      "rarest_added": [
+        "5a1f2d1",
+        "aa532b5a3c634229b9a068654b945c6c",
+        "b2f3e6a",
+        "c6a7b8f",
+        "d4c5e7b",
+        "e8f9a1c",
+        "policycandidate",
+        "a7b3c4e"
+      ],
+      "gold_rank_by_k": {
+        "0": 967,
+        "1": 32,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_141",
+      "question_type": "basic",
+      "n_query_terms": 38,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 612,
+      "rarest_added": [
+        "06464e95b7cc44de8a9677f3260c336e",
+        "lue",
+        "acorncrm",
+        "replatform",
+        "u2014plus",
+        "nbattlecard",
+        "chung",
+        "superior"
+      ],
+      "gold_rank_by_k": {
+        "0": 194,
+        "1": 146,
+        "2": 146,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_146",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 419,
+      "rarest_added": [
+        "cc9fd576760d4a058a896155657eff06",
+        "ollbacks",
+        "modeldetails",
+        "stringly",
+        "harriet",
+        "deserializing",
+        "serializers",
+        "suresh"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 37,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_152",
+      "question_type": "basic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 155,
+      "rarest_added": [
+        "9a3def814b274050b3d834a66deeb1b5",
+        "lastseen",
+        "glanced",
+        "gofmt",
+        "traceid",
+        "golangci",
+        "directories",
+        "parrot"
+      ],
+      "gold_rank_by_k": {
+        "0": 77,
+        "1": 7,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_157",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 336,
+      "rarest_added": [
+        "ef18282e01d7410a8dc142d4ad0b7bd2",
+        "implementability",
+        "paralysis",
+        "scientists",
+        "internationalization",
+        "visualizes",
+        "illustrations",
+        "carousel"
+      ],
+      "gold_rank_by_k": {
+        "0": 165,
+        "1": 140,
+        "2": 26,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_169",
+      "question_type": "basic",
+      "n_query_terms": 46,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 306,
+      "rarest_added": [
+        "1a2b3ctrialnotes",
+        "1c2e",
+        "1trialpricingdeck",
+        "copperstone",
+        "f8529277bd964d6086d49ca2a30c9ac7",
+        "7b9f",
+        "copper",
+        "publishers"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 9,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_172",
+      "question_type": "basic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 224,
+      "rarest_added": [
+        "0767a662eacd463aaf0935750dba509e",
+        "nsanaa",
+        "sanaa",
+        "mumbai",
+        "nvl",
+        "paris",
+        "positioned",
+        "njavier"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 211,
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_177",
+      "question_type": "semantic",
+      "n_query_terms": 44,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 417,
+      "rarest_added": [
+        "22a7e9af2760474dbdf611c2c21cd231",
+        "annealer",
+        "anneal",
+        "ensembles",
+        "opting",
+        "pronounced",
+        "squashed",
+        "annealing"
+      ],
+      "gold_rank_by_k": {
+        "0": 100,
+        "1": 100,
+        "2": 1,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_179",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 436,
+      "rarest_added": [
+        "730ed8ee5fc84e0b9be761003b9a60d3",
+        "a9d3b7e",
+        "b4f2f11",
+        "c5e8d22",
+        "currentleaseid",
+        "d1e6a33",
+        "ehearse",
+        "f2a1b55"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_183",
+      "question_type": "semantic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 319,
+      "rarest_added": [
+        "74cd6ebda84547e2a534f8f6d1b49739",
+        "cytohealth",
+        "nsoosin",
+        "u20110133",
+        "u2011vpc",
+        "cyto",
+        "u2011ins",
+        "u2011customer"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_185",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 431,
+      "rarest_added": [
+        "0ae9b752fef446ec86e376e2dea49c28",
+        "lda",
+        "turk",
+        "chatlogs",
+        "skimed",
+        "p1678901234000000",
+        "discourse",
+        "projectors"
+      ],
+      "gold_rank_by_k": {
+        "0": 324,
+        "1": 155,
+        "2": 7,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_186",
+      "question_type": "semantic",
+      "n_query_terms": 59,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 414,
+      "rarest_added": [
+        "a27715e7309c494d812c75cf03bcf916",
+        "ac13",
+        "ac14",
+        "ac11",
+        "1fake",
+        "ac12",
+        "submetric",
+        "submetrics"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 300,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_188",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 353,
+      "rarest_added": [
+        "5d54f5f89bbc48a5b06b8dead39729b3",
+        "carver",
+        "enhances",
+        "tuf",
+        "marshaling",
+        "offloading",
+        "origins",
+        "modifies"
+      ],
+      "gold_rank_by_k": {
+        "0": 55,
+        "1": 5,
+        "2": 5,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_189",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 424,
+      "rarest_added": [
+        "b02e6ce0d9814b35af846c309c25e551",
+        "costestimate",
+        "nbuckets",
+        "pet",
+        "codebases",
+        "calculus",
+        "deepa",
+        "nprefix"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 26,
+        "5": 26,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 8
+    },
+    {
+      "needle": "erb_190",
+      "question_type": "semantic",
+      "n_query_terms": 67,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 457,
+      "rarest_added": [
+        "ef7f1d5cba204b728e1f4d7cddda7daa",
+        "falkon",
+        "t09",
+        "rsm",
+        "unflushed",
+        "kumari",
+        "podantiaffinity",
+        "owne"
+      ],
+      "gold_rank_by_k": {
+        "0": 130,
+        "1": 130,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_192",
+      "question_type": "semantic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 293,
+      "rarest_added": [
+        "942ffdd8280a4cb893aca73dcb376ee5",
+        "1a2bonboardatlasbridge",
+        "atlasbridge",
+        "u20110198",
+        "backstops",
+        "amsterdam",
+        "18t17",
+        "hat"
+      ],
+      "gold_rank_by_k": {
+        "0": 416,
+        "1": 416,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_195",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 313,
+      "rarest_added": [
+        "3413f1905a0740d88b66c196b54f4df5",
+        "nfs1",
+        "quarter1",
+        "s1024",
+        "notelet",
+        "s512",
+        "seed42",
+        "nhousekeeping"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 597,
+        "3": 41,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_200",
+      "question_type": "semantic",
+      "n_query_terms": 74,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 355,
+      "rarest_added": [
+        "96e315a4f8644c8bbafe05c2e0c0b775",
+        "nternal",
+        "150rps",
+        "14t20",
+        "pads",
+        "statefulset",
+        "cycling",
+        "nnisha"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 363,
+        "2": 20,
+        "3": 20,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_202",
+      "question_type": "semantic",
+      "n_query_terms": 77,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 369,
+      "rarest_added": [
+        "3d745c88c7e4426c9548350824f0d9b8",
+        "subproject",
+        "shortid",
+        "dormant",
+        "instantiation",
+        "undocumented",
+        "instantiate",
+        "boards"
+      ],
+      "gold_rank_by_k": {
+        "0": 140,
+        "1": 32,
+        "2": 18,
+        "3": 4,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_203",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 334,
+      "rarest_added": [
+        "a45c07f3daaf47c18b7bc75d3cbf2112",
+        "4f8c92",
+        "pillarhaven",
+        "200qps",
+        "insightworks",
+        "9b3f",
+        "pillar",
+        "700k"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 49,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_206",
+      "question_type": "semantic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 276,
+      "rarest_added": [
+        "1653d1ed11a1403ca8e44bef03a610a9",
+        "routetags",
+        "uniqu",
+        "rwid",
+        "e5f6a7b",
+        "b2c3d4e",
+        "c3d4e5f",
+        "d4e5f6a"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 97,
+        "3": 6,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_211",
+      "question_type": "semantic",
+      "n_query_terms": 65,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 466,
+      "rarest_added": [
+        "5085c9f4b4484f298dabd02c99d9ce03",
+        "finessing",
+        "nfourth",
+        "otype",
+        "tff",
+        "nwidget",
+        "nsecond",
+        "kee"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 10,
+        "3": 10,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_213",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 438,
+      "rarest_added": [
+        "303196c831af4d1bb38a1e2546228a09",
+        "invalidinstancetype",
+        "sds",
+        "inappropriate",
+        "ind",
+        "beh",
+        "dealbreaker",
+        "causation"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 538,
+        "3": 11,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_215",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 509,
+      "rarest_added": [
+        "c175ab6b52fe4226baac85697c562c7d",
+        "ll1",
+        "modelinfra",
+        "u201460m",
+        "nbr",
+        "idge",
+        "tribes",
+        "signposts"
+      ],
+      "gold_rank_by_k": {
+        "0": 286,
+        "1": 17,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_217",
+      "question_type": "semantic",
+      "n_query_terms": 52,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 386,
+      "rarest_added": [
+        "1privateclustertests",
+        "462ab0251b704d878310f53e13d6f515",
+        "u2014recommended",
+        "privateconsole",
+        "3a7",
+        "u2014only",
+        "ariana",
+        "navigable"
+      ],
+      "gold_rank_by_k": {
+        "0": 93,
+        "1": 93,
+        "2": 7,
+        "3": 2,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_218",
+      "question_type": "semantic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 411,
+      "rarest_added": [
+        "b395ebb516614698bcd038cdb7933d4b",
+        "u2011bullet",
+        "u2011consult",
+        "heliodocusign",
+        "helioorderform",
+        "mdaniels",
+        "nesoto",
+        "redwoodcounter"
+      ],
+      "gold_rank_by_k": {
+        "0": 889,
+        "1": 460,
+        "2": 59,
+        "3": 59,
+        "5": 4,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_219",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 231,
+      "rarest_added": [
+        "72b2bd3c2a094fdca6d5f3187a752c24",
+        "nfraction",
+        "ruins",
+        "repurposed",
+        "nworkspace",
+        "24mb",
+        "nmonitor",
+        "nallocator"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 50,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_220",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 555,
+      "rarest_added": [
+        "5323aeb9f89042c9a62505d409c4d94a",
+        "nperk",
+        "sabbaticals",
+        "leveled",
+        "ncompetency",
+        "coder",
+        "hackday",
+        "nintro"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 361,
+        "2": 96,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_221",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 532,
+      "rarest_added": [
+        "36d7605113204cdca94405cb30fc2c10",
+        "companied",
+        "datalife",
+        "lowvalue",
+        "identityhub",
+        "opschange",
+        "spendly",
+        "datalake"
+      ],
+      "gold_rank_by_k": {
+        "0": 62,
+        "1": 62,
+        "2": 46,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_223",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 249,
+      "rarest_added": [
+        "96088536cbcc449eb676e94bf800486a",
+        "queryoptions",
+        "fatalf",
+        "nopts",
+        "eventtype",
+        "pagesize",
+        "println",
+        "toc"
+      ],
+      "gold_rank_by_k": {
+        "0": 242,
+        "1": 17,
+        "2": 8,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_225",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 240,
+      "rarest_added": [
+        "09cfdc4bec864c209affc45969e80012",
+        "nstd",
+        "fetchuser",
+        "88a3",
+        "reversed",
+        "mitigates",
+        "serializes",
+        "mutex"
+      ],
+      "gold_rank_by_k": {
+        "0": 142,
+        "1": 142,
+        "2": 33,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_228",
+      "question_type": "semantic",
+      "n_query_terms": 69,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 294,
+      "rarest_added": [
+        "38963978d7944613855e7413fa3a3838",
+        "7f4c21",
+        "casionally",
+        "swarming",
+        "broadening",
+        "sqa",
+        "nida",
+        "21t13"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 789,
+        "2": 181,
+        "3": 41,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_230",
+      "question_type": "semantic",
+      "n_query_terms": 52,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 343,
+      "rarest_added": [
+        "5f46d65ae298435889c524bf559f4948",
+        "nmedicor",
+        "alexr",
+        "medicor",
+        "hangout",
+        "medico",
+        "02t13",
+        "ray"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 353,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_233",
+      "question_type": "semantic",
+      "n_query_terms": 45,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 529,
+      "rarest_added": [
+        "ad58457891774bd7ba480e0bcd13df3a",
+        "inity",
+        "ramakrishnan",
+        "shimmed",
+        "aff",
+        "nphases",
+        "adjuster",
+        "batchers"
+      ],
+      "gold_rank_by_k": {
+        "0": 151,
+        "1": 151,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_234",
+      "question_type": "semantic",
+      "n_query_terms": 37,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 300,
+      "rarest_added": [
+        "590dd1330a4046e28ac0a2f43b7910cc",
+        "greenfieldpay",
+        "riggs",
+        "ntimothy",
+        "cracks",
+        "timothy",
+        "excerpted",
+        "greenfield"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 15,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_239",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 400,
+      "rarest_added": [
+        "5402831508734a51adf649603be4b075",
+        "kane",
+        "monkey",
+        "ith",
+        "starves",
+        "plumb",
+        "epoched",
+        "freshly"
+      ],
+      "gold_rank_by_k": {
+        "0": 276,
+        "1": 276,
+        "2": 276,
+        "3": 19,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_241",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 566,
+      "rarest_added": [
+        "3fc14ed9048e4e1f861e0632b06fc39b",
+        "marketplacelike",
+        "halotech",
+        "deepserve",
+        "homes",
+        "userdata",
+        "adjourned",
+        "efs"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 122,
+        "2": 122,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_242",
+      "question_type": "semantic",
+      "n_query_terms": 57,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 376,
+      "rarest_added": [
+        "908e8464927742829dcdfe0c6165299b",
+        "libfastq",
+        "opt13b",
+        "employs",
+        "cmakelists",
+        "aarch64",
+        "outweighs",
+        "adapting"
+      ],
+      "gold_rank_by_k": {
+        "0": 692,
+        "1": 692,
+        "2": 14,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_243",
+      "question_type": "semantic",
+      "n_query_terms": 54,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 287,
+      "rarest_added": [
+        "37c24c697d9d462fad0e3afeeea9d8c0",
+        "igns",
+        "forging",
+        "issuers",
+        "nusers",
+        "iss",
+        "oauth2",
+        "orig"
+      ],
+      "gold_rank_by_k": {
+        "0": 150,
+        "1": 114,
+        "2": 1,
+        "3": 1,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_245",
+      "question_type": "semantic",
+      "n_query_terms": 29,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 340,
+      "rarest_added": [
+        "a1b3d9f",
+        "c9d1e4b",
+        "devicecaps",
+        "kernelprofile",
+        "wavefrontscheduler",
+        "6f0be39ff1ae49c19ce0662bdd6de352",
+        "b2c4f7a",
+        "d4e5f6c"
+      ],
+      "gold_rank_by_k": {
+        "0": 318,
+        "1": 319,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_246",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 5,
+      "n_candidate_terms": 802,
+      "rarest_added": [
+        "exclusivities",
+        "u2014discussion",
+        "u2014listed",
+        "cc2f84330d014d03b8c49f8e92063b07",
+        "u2014ease",
+        "u2014orbital",
+        "u2014during",
+        "ghtweight"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 208,
+        "2": 88,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_247",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 438,
+      "rarest_added": [
+        "0a2cd37d53ff47d4aced289cd9a76fe8",
+        "hrbps",
+        "curricula",
+        "sholds",
+        "prestart",
+        "specialists",
+        "thre",
+        "hrbp"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 87,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_248",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 364,
+      "rarest_added": [
+        "68650923209a49918491e54f4d4ab329",
+        "networkinfo",
+        "kubeletextraargs",
+        "capacitytype",
+        "clusterconfig",
+        "instancetypes",
+        "v1alpha5",
+        "nnodegroups"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 702,
+        "2": 145,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_249",
+      "question_type": "semantic",
+      "n_query_terms": 44,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 394,
+      "rarest_added": [
+        "3b1c14ab4cc647369b783b7abdfc32f3",
+        "examplecalc",
+        "reservedcommit",
+        "nadditionally",
+        "75x",
+        "35x",
+        "u2014sam",
+        "u20132m"
+      ],
+      "gold_rank_by_k": {
+        "0": 151,
+        "1": 151,
+        "2": 12,
+        "3": 3,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_250",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 247,
+      "rarest_added": [
+        "a15c0247e9de4e128293bd820fc4c659",
+        "pearlegate",
+        "pearlgate",
+        "pgel",
+        "goyal",
+        "zilliz",
+        "1poc",
+        "beat"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 226,
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_255",
+      "question_type": "semantic",
+      "n_query_terms": 97,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 324,
+      "rarest_added": [
+        "0x3b9f",
+        "0x8a2c",
+        "df40f9a66b914f29839322d19f8922bb",
+        "esolver",
+        "inducing",
+        "differed",
+        "nid",
+        "10t18"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 148,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_256",
+      "question_type": "semantic",
+      "n_query_terms": 64,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 367,
+      "rarest_added": [
+        "1xh",
+        "c563b97cd7314d1396553dfd8034e819",
+        "486m",
+        "27kb",
+        "ndar",
+        "nvectorhealth",
+        "vectorhealth",
+        "cale"
+      ],
+      "gold_rank_by_k": {
+        "0": 78,
+        "1": 78,
+        "2": 78,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_259",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 487,
+      "rarest_added": [
+        "9bf09a549d22494c9672ecdd79896878",
+        "ately",
+        "separ",
+        "n43",
+        "dimensionalities",
+        "n44",
+        "n38",
+        "n41"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 29,
+        "2": 29,
+        "3": 29,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_260",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 339,
+      "rarest_added": [
+        "f9e8d7c6b5a4c3d2e1f0a9b8c7d6e5f4a3b2c1d0",
+        "fa1c733deb77445da7bc55dc472d233d",
+        "tations",
+        "lazykv",
+        "limi",
+        "tiler",
+        "e5f6a7b",
+        "convincing"
+      ],
+      "gold_rank_by_k": {
+        "0": 255,
+        "1": 97,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_261",
+      "question_type": "semantic",
+      "n_query_terms": 88,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 349,
+      "rarest_added": [
+        "7f3d9a2",
+        "a12bc34",
+        "apex4521",
+        "apexbanking",
+        "b87d81a8f52646f98e614d2a6394d7a3",
+        "napexbanking",
+        "7a4f",
+        "chainproof"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 338,
+        "2": 14,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_262",
+      "question_type": "semantic",
+      "n_query_terms": 53,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 354,
+      "rarest_added": [
+        "061c09d8eef649eba85cd1421e28a41a",
+        "nattention",
+        "costed",
+        "performant",
+        "unfair",
+        "prefills",
+        "nconfiguration",
+        "9th"
+      ],
+      "gold_rank_by_k": {
+        "0": 352,
+        "1": 352,
+        "2": 46,
+        "3": 5,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_266",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 318,
+      "rarest_added": [
+        "0aebc4d1e7264c6c90136b6b780a0c67",
+        "perfdump",
+        "subrange",
+        "subranges",
+        "nell",
+        "heapmap",
+        "memcopies",
+        "akshay"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 200,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_267",
+      "question_type": "semantic",
+      "n_query_terms": 59,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 380,
+      "rarest_added": [
+        "a990e708840f481795741cfd3fb55691",
+        "reselect",
+        "cinder",
+        "nfixes",
+        "tomasz",
+        "contrib",
+        "enhance",
+        "truncations"
+      ],
+      "gold_rank_by_k": {
+        "0": 323,
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_269",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 147,
+      "rarest_added": [
+        "33de625fcfc045dd967dbc9bdde3a8b4",
+        "nnordbank",
+        "nordbank",
+        "nh2",
+        "unplanned",
+        "acknowledges",
+        "permit",
+        "camila"
+      ],
+      "gold_rank_by_k": {
+        "0": 204,
+        "1": 3,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_271",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 542,
+      "rarest_added": [
+        "329e7ecd6b304c30b61a30e07919e008",
+        "polp",
+        "expirable",
+        "lout",
+        "vendorname",
+        "convened",
+        "rationalization",
+        "retrospectively"
+      ],
+      "gold_rank_by_k": {
+        "0": 257,
+        "1": 194,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_274",
+      "question_type": "semantic",
+      "n_query_terms": 70,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 390,
+      "rarest_added": [
+        "a55032c4c2064671a4b0abf975438e1a",
+        "tersely",
+        "paralysis",
+        "plotting",
+        "hookup",
+        "columnar",
+        "zstd",
+        "benching"
+      ],
+      "gold_rank_by_k": {
+        "0": 857,
+        "1": 42,
+        "2": 32,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_275",
+      "question_type": "semantic",
+      "n_query_terms": 79,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 412,
+      "rarest_added": [
+        "ee6c23c178dc428bbd71af6526c70251",
+        "endtoend",
+        "smoketests",
+        "suggestor",
+        "subcommand",
+        "jade",
+        "microseconds",
+        "nunit"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 367,
+        "3": 8,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_277",
+      "question_type": "semantic",
+      "n_query_terms": 62,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 359,
+      "rarest_added": [
+        "e5298124a9fd4bee8242a18bdb3829e0",
+        "afflicted",
+        "nthere",
+        "aarav",
+        "prorations",
+        "subsequently",
+        "unmatched",
+        "cent"
+      ],
+      "gold_rank_by_k": {
+        "0": 66,
+        "1": 66,
+        "2": 66,
+        "3": 11,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_278",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 275,
+      "rarest_added": [
+        "3f7f32874e9b4ba49ff4fe28c0ef5de0",
+        "allback",
+        "rekeyed",
+        "reimaged",
+        "ath",
+        "ldap",
+        "reimage",
+        "loaner"
+      ],
+      "gold_rank_by_k": {
+        "0": 153,
+        "1": 70,
+        "2": 2,
+        "3": 3,
+        "5": 1,
+        "8": 2,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_281",
+      "question_type": "semantic",
+      "n_query_terms": 54,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 390,
+      "rarest_added": [
+        "9adc7c1c81f54e0a88d0e0bee59a6588",
+        "4f7a2f9b",
+        "6b9f4d3",
+        "8af3cf",
+        "8af3d1",
+        "8af3e2",
+        "overshadowing",
+        "9c2b"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 28,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_284",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 390,
+      "rarest_added": [
+        "59ff5fe3de4c4a3691700ce678801bd2",
+        "wns",
+        "cooldo",
+        "replenishes",
+        "desync",
+        "usp",
+        "edgecase",
+        "dag"
+      ],
+      "gold_rank_by_k": {
+        "0": 188,
+        "1": 188,
+        "2": 81,
+        "3": 43,
+        "5": 5,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_288",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 398,
+      "rarest_added": [
+        "5d8045f7d37d41b99605880834c17329",
+        "1a7b2f4d",
+        "mintlance",
+        "nhypothese",
+        "deng",
+        "ml1",
+        "ntimestamps",
+        "yyyyy"
+      ],
+      "gold_rank_by_k": {
+        "0": 773,
+        "1": 195,
+        "2": 13,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_292",
+      "question_type": "semantic",
+      "n_query_terms": 40,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 384,
+      "rarest_added": [
+        "a8ea8c81885c44ab8aa6b0395360657c",
+        "tableto",
+        "intgplay",
+        "serviceable",
+        "intg",
+        "parameterizable",
+        "playgrounds",
+        "kanban"
+      ],
+      "gold_rank_by_k": {
+        "0": 217,
+        "1": 217,
+        "2": 31,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_295",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 225,
+      "rarest_added": [
+        "0d7ec9095f1b41fba11cca1c8887bc2c",
+        "laser",
+        "trended",
+        "organizer",
+        "cadences",
+        "ndemo",
+        "nalan",
+        "anon"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 30,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_296",
+      "question_type": "semantic",
+      "n_query_terms": 67,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 376,
+      "rarest_added": [
+        "02a6857f487642dca0732a4ac480ea5f",
+        "kla",
+        "autotrack",
+        "c08ab12cd",
+        "p1678001234567890",
+        "stepstair",
+        "taxon",
+        "nhousekeeping"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 206,
+        "3": 206,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_297",
+      "question_type": "semantic",
+      "n_query_terms": 45,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 531,
+      "rarest_added": [
+        "a9d76bcb3bc1475abc9d6f8f83a6eba8",
+        "tethy",
+        "apexcompute",
+        "optimise",
+        "tethys",
+        "margining",
+        "nimbusgrid",
+        "constrains"
+      ],
+      "gold_rank_by_k": {
+        "0": 278,
+        "1": 278,
+        "2": 9,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_298",
+      "question_type": "semantic",
+      "n_query_terms": 53,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 317,
+      "rarest_added": [
+        "243dfdca4bbe4872946fb3a5f686edca",
+        "nretailx",
+        "retailx",
+        "250kb",
+        "basket",
+        "testcase",
+        "testset",
+        "ncontracts"
+      ],
+      "gold_rank_by_k": {
+        "0": 306,
+        "1": 6,
+        "2": 5,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_299",
+      "question_type": "semantic",
+      "n_query_terms": 62,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 411,
+      "rarest_added": [
+        "2ffb84ee56464340885a9e484cfc6f5d",
+        "f3a2c4",
+        "replicability",
+        "may15",
+        "rebenchmark",
+        "100req",
+        "pour",
+        "prohibitively"
+      ],
+      "gold_rank_by_k": {
+        "0": 105,
+        "1": 105,
+        "2": 7,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_302",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 33,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 334,
+      "rarest_added": [
+        "cf4696a68a924cc3aaf48ba4a2c1fab1",
+        "hould",
+        "gathers",
+        "32gb",
+        "archetype",
+        "bose",
+        "suffers",
+        "downgrades"
+      ],
+      "gold_rank_by_k": {
+        "0": 89,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_311",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 19,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 388,
+      "rarest_added": [
+        "c054271735b541ba91e42c4dbe8a4883",
+        "5f9a",
+        "reconc",
+        "monique",
+        "whoops",
+        "parametrize",
+        "clobber",
+        "timeslots"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 49,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_323",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 45,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 343,
+      "rarest_added": [
+        "a92fe998fc534d57a1d54d5a6294c938",
+        "q3metrics",
+        "sprintback",
+        "1mtokens",
+        "1qbr",
+        "detective",
+        "aloud",
+        "04t08"
+      ],
+      "gold_rank_by_k": {
+        "0": 215,
+        "1": 215,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_324",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 21,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 227,
+      "rarest_added": [
+        "bbce440e846642f3983104c786157597",
+        "pencil2",
+        "cutlist",
+        "totp",
+        "nalec",
+        "alec",
+        "forming",
+        "upwards"
+      ],
+      "gold_rank_by_k": {
+        "0": 849,
+        "1": 8,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_328",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 301,
+      "rarest_added": [
+        "f4fbc3f2bcc24bb29f9da2c81e43661f",
+        "nimbuscompliance",
+        "seedability",
+        "spinout",
+        "subproc",
+        "cody",
+        "sourcegraph",
+        "800k"
+      ],
+      "gold_rank_by_k": {
+        "0": 268,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_409",
+      "question_type": "constrained",
+      "n_query_terms": 80,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 246,
+      "rarest_added": [
+        "ab50b630b14e4bfda87847286157b739",
+        "7f3a9",
+        "eyjj",
+        "7f3b1",
+        "midproxy",
+        "envoys",
+        "ncaroline",
+        "frontdoor"
+      ],
+      "gold_rank_by_k": {
+        "0": 152,
+        "1": 152,
+        "2": 6,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_416",
+      "question_type": "conflicting_info",
+      "n_query_terms": 21,
+      "n_gold_chunks": 12,
+      "n_candidate_terms": 1128,
+      "rarest_added": [
+        "201cetcd",
+        "aa97b7293f9f4f3c8180f645e4fe5911",
+        "u201cstatement",
+        "u201ctabletop",
+        "10a589a5ee9048d9a33deb4156037171",
+        "7c3b1e9a",
+        "u201cbyte",
+        "auditretention"
+      ],
+      "gold_rank_by_k": {
+        "0": 59,
+        "1": 59,
+        "2": 19,
+        "3": 5,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_427",
+      "question_type": "conflicting_info",
+      "n_query_terms": 25,
+      "n_gold_chunks": 8,
+      "n_candidate_terms": 822,
+      "rarest_added": [
+        "1214ee9ab5e44de487c800f7a4771d7d",
+        "10559147d3014931898864f22c311e47",
+        "leadingpaymentsco",
+        "noper",
+        "riggs",
+        "ational",
+        "useable",
+        "promp"
+      ],
+      "gold_rank_by_k": {
+        "0": 221,
+        "1": 221,
+        "2": 22,
+        "3": 22,
+        "5": 8,
+        "8": 2,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_436",
+      "question_type": "completeness",
+      "n_query_terms": 25,
+      "n_gold_chunks": 9,
+      "n_candidate_terms": 836,
+      "rarest_added": [
+        "0e0ac7276c864c63a02586fa07ae85e1",
+        "ac94dcaf2e1e4674b2351a8b4177db9e",
+        "c0c93abadf4c438189e23cb45256c6e9",
+        "nseemingly",
+        "15a9d93cc59c4241a97a7e72f749a216",
+        "98943148c00b42db859ec2d84649fe04",
+        "bd7caad8adb2405eaa7ad78c4ffb59d7",
+        "d373a0708d4144d684e495c52c16448a"
+      ],
+      "gold_rank_by_k": {
+        "0": 434,
+        "1": 89,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_438",
+      "question_type": "completeness",
+      "n_query_terms": 40,
+      "n_gold_chunks": 5,
+      "n_candidate_terms": 460,
+      "rarest_added": [
+        "a277ed2dc74c4bad82bc71b534b6356f",
+        "faf3246a6ce845e6b5df0ae52f439399",
+        "4e016427a93c49ffadd31fcdc1dca792",
+        "bf7e79dc1331447598c4eebdc5d2897d",
+        "d3edd63b9ec54523ad12bd9be3d7e996",
+        "deem",
+        "directing",
+        "disrupted"
+      ],
+      "gold_rank_by_k": {
+        "0": 719,
+        "1": 19,
+        "2": 5,
+        "3": 5,
+        "5": 4,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_447",
+      "question_type": "completeness",
+      "n_query_terms": 33,
+      "n_gold_chunks": 7,
+      "n_candidate_terms": 417,
+      "rarest_added": [
+        "5f0ab47fe8de47a89bb6668f8722becf",
+        "84ec014ad9f14f1481b45484da41181a",
+        "b72bd7e0c91a4f8c9d9a13daf6ff3d28",
+        "jellis",
+        "67a8c3300752435296938175e9a1daf5",
+        "6933f9241ef140da9d3bf98be52be867",
+        "b793b06789ae4147884e94681c6beae1",
+        "e91e68b31a6f4935b87d6f74dd07e1f6"
+      ],
+      "gold_rank_by_k": {
+        "0": 69,
+        "1": 69,
+        "2": 69,
+        "3": 69,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    }
+  ],
+  "contamination": {
+    "what": "The oracle's candidate terms were ranked by rarity with no guessability filter, so the rarest term in a gold chunk is almost always the document's own 32-hex UUID (e.g. 22a7e9af2760474dbdf611c2c21cd231, 730ed8ee5fc84e0b9be761003b9a60d3). Adding a document's identifier retrieves that document trivially.",
+    "why_it_invalidates": "No query rewriter can produce a UUID it has never seen, so the measured distances say nothing about whether reformulation is a viable producer. The headline 109/109 reachable at median distance 2 is an artefact of identifier tokens.",
+    "superseded_by": "reformulation_distance_guessable_2026-09-02.json",
+    "fix": "candidate terms must be alphabetic AND appear in >= 5 sample documents (--min-df 5, alphabetic-only), so the oracle may use real domain vocabulary and never an identifier"
+  }
+}

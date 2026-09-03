@@ -1,0 +1,3097 @@
+{
+  "probe": "reformulation_distance",
+  "stamp": "2026-09-02",
+  "prereg": "reformulation_distance_guessable_2026-09-02_prereg.json",
+  "verdict": "FUND_REFORMULATION_FIRST",
+  "cohort": "pool_absent",
+  "n_targets": 109,
+  "df_sample_docs": 153602,
+  "guessability_filter": {
+    "alphabetic_only": true,
+    "min_document_frequency": 5,
+    "why": "a rewriter sees only the question: it can produce domain vocabulary, never a document's UUID/hash/ticket id. Without this filter the oracle adds the gold's own identifier and reaches it trivially -- the first run of this probe was discarded for exactly that contamination"
+  },
+  "headline": {
+    "reached_top50_at_some_k": "109/109",
+    "reached_top12_at_some_k": "109/109",
+    "median_distance_to_top50": 2,
+    "median_distance_to_top12": 2,
+    "distance_histogram_top50": {
+      "1": 52,
+      "2": 29,
+      "3": 16,
+      "5": 11,
+      "8": 1
+    },
+    "distance_histogram_top12": {
+      "1": 26,
+      "12": 2,
+      "2": 33,
+      "3": 29,
+      "5": 17,
+      "8": 2
+    },
+    "reached_top50_at_k0": 0
+  },
+  "interpretation": "one or two gold-specific terms suffice; a rewriter that sees only the question has a plausible chance -- run the reformulation producer before funding cards",
+  "scope_limits": [
+    "ORACLE: the added terms come from the gold text itself. A real rewriter sees only the question, so every distance here is a LOWER bound on what a real producer must achieve.",
+    "Rarity is estimated over the 153,602-document Sidecar X sample, not the whole 947k corpus; terms absent from the sample are treated as rarest, which favours the oracle.",
+    "Reach into the BM25 top-50 is admission, not delivery: gold still has to survive fusion and the seat cut.",
+    "ERB pool-absent cohort on one bed; the semantic class is generated under an explicit anti-lexical instruction."
+  ],
+  "rows": [
+    {
+      "needle": "erb_003",
+      "question_type": "basic",
+      "n_query_terms": 40,
+      "n_gold_chunks": 8,
+      "n_candidate_terms": 880,
+      "rarest_added": [
+        "identi",
+        "mktplace",
+        "theirs",
+        "vanity",
+        "combinatorics",
+        "procured",
+        "universally",
+        "alphanumeric"
+      ],
+      "gold_rank_by_k": {
+        "0": 63,
+        "1": 14,
+        "2": 13,
+        "3": 13,
+        "5": 14,
+        "8": 14,
+        "12": 2
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 12
+    },
+    {
+      "needle": "erb_006",
+      "question_type": "basic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 436,
+      "rarest_added": [
+        "discus",
+        "inequality",
+        "oppose",
+        "endorsing",
+        "nmechanics",
+        "falloff",
+        "political",
+        "multiplicatively"
+      ],
+      "gold_rank_by_k": {
+        "0": 55,
+        "1": 9,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_021",
+      "question_type": "basic",
+      "n_query_terms": 29,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 441,
+      "rarest_added": [
+        "ratably",
+        "atypical",
+        "nprocedure",
+        "arrears",
+        "arrangements",
+        "nexception",
+        "facto",
+        "eleanor"
+      ],
+      "gold_rank_by_k": {
+        "0": 181,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_025",
+      "question_type": "basic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 365,
+      "rarest_added": [
+        "redwoodinf",
+        "nfwd",
+        "pitr",
+        "ncascade",
+        "nauditability",
+        "knowing",
+        "erence",
+        "nbcc"
+      ],
+      "gold_rank_by_k": {
+        "0": 129,
+        "1": 25,
+        "2": 25,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_027",
+      "question_type": "basic",
+      "n_query_terms": 27,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 181,
+      "rarest_added": [
+        "nshasum",
+        "praveen",
+        "npraveen",
+        "ngh",
+        "bugfixes",
+        "confetti",
+        "ball",
+        "nartifact"
+      ],
+      "gold_rank_by_k": {
+        "0": 484,
+        "1": 9,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_030",
+      "question_type": "basic",
+      "n_query_terms": 28,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 438,
+      "rarest_added": [
+        "nconsent",
+        "napplicability",
+        "reprocesses",
+        "redactors",
+        "cps",
+        "scrubbers",
+        "nredaction",
+        "dsar"
+      ],
+      "gold_rank_by_k": {
+        "0": 59,
+        "1": 4,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_031",
+      "question_type": "basic",
+      "n_query_terms": 36,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 413,
+      "rarest_added": [
+        "que",
+        "sacrifices",
+        "coarser",
+        "directives",
+        "allocators",
+        "inspects",
+        "inner",
+        "unlike"
+      ],
+      "gold_rank_by_k": {
+        "0": 905,
+        "1": 49,
+        "2": 3,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_042",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 253,
+      "rarest_added": [
+        "kselector",
+        "nhugo",
+        "hugo",
+        "aux",
+        "recompile",
+        "vectorized",
+        "nli",
+        "nkernel"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 82,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_050",
+      "question_type": "basic",
+      "n_query_terms": 47,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 292,
+      "rarest_added": [
+        "rerate",
+        "sliders",
+        "instrumenting",
+        "reacts",
+        "ceil",
+        "impl",
+        "visuals",
+        "forecasts"
+      ],
+      "gold_rank_by_k": {
+        "0": 125,
+        "1": 12,
+        "2": 12,
+        "3": 11,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_054",
+      "question_type": "basic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 355,
+      "rarest_added": [
+        "lta",
+        "brightai",
+        "leniency",
+        "relaxations",
+        "npropose",
+        "roadmaps",
+        "nrequesting",
+        "nagree"
+      ],
+      "gold_rank_by_k": {
+        "0": 473,
+        "1": 22,
+        "2": 22,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_057",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 360,
+      "rarest_added": [
+        "optimizely",
+        "natt",
+        "launchdarkly",
+        "att",
+        "platinum",
+        "qoq",
+        "ngiven",
+        "addon"
+      ],
+      "gold_rank_by_k": {
+        "0": 127,
+        "1": 7,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_061",
+      "question_type": "basic",
+      "n_query_terms": 38,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 432,
+      "rarest_added": [
+        "intersecting",
+        "guerrilla",
+        "animates",
+        "brush",
+        "beneath",
+        "reflows",
+        "freezing",
+        "pinpoint"
+      ],
+      "gold_rank_by_k": {
+        "0": 80,
+        "1": 80,
+        "2": 4,
+        "3": 4,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_063",
+      "question_type": "basic",
+      "n_query_terms": 32,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 158,
+      "rarest_added": [
+        "redteamco",
+        "wednesdays",
+        "rce",
+        "nid",
+        "nhello",
+        "njulie",
+        "calendars",
+        "julie"
+      ],
+      "gold_rank_by_k": {
+        "0": 500,
+        "1": 15,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_071",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 151,
+      "rarest_added": [
+        "cryptokeydecrypter",
+        "keyid",
+        "nvault",
+        "cloudkms",
+        "revocations",
+        "revokes",
+        "decrypts",
+        "ciphertext"
+      ],
+      "gold_rank_by_k": {
+        "0": 429,
+        "1": 64,
+        "2": 7,
+        "3": 6,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_073",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 337,
+      "rarest_added": [
+        "piecemeal",
+        "staticcheck",
+        "retriggered",
+        "ling",
+        "gofmt",
+        "sculpting",
+        "nuanced",
+        "logprobs"
+      ],
+      "gold_rank_by_k": {
+        "0": 94,
+        "1": 19,
+        "2": 20,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_076",
+      "question_type": "basic",
+      "n_query_terms": 30,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 327,
+      "rarest_added": [
+        "burdening",
+        "streamconsumer",
+        "oncomplete",
+        "footguns",
+        "streamreader",
+        "kuznetsova",
+        "singleflight",
+        "abstractions"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 252,
+        "2": 4,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_086",
+      "question_type": "basic",
+      "n_query_terms": 37,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 336,
+      "rarest_added": [
+        "anticipation",
+        "overestimates",
+        "ets",
+        "obeys",
+        "slated",
+        "inspired",
+        "horizons",
+        "oscillatory"
+      ],
+      "gold_rank_by_k": {
+        "0": 63,
+        "1": 7,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_089",
+      "question_type": "basic",
+      "n_query_terms": 25,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 251,
+      "rarest_added": [
+        "titl",
+        "investors",
+        "otter",
+        "moments",
+        "participant",
+        "digits",
+        "coaching",
+        "searchable"
+      ],
+      "gold_rank_by_k": {
+        "0": 137,
+        "1": 12,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_091",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 245,
+      "rarest_added": [
+        "nprashant",
+        "prashant",
+        "nraja",
+        "raja",
+        "pypi",
+        "adopters",
+        "reactions",
+        "announced"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 143,
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_092",
+      "question_type": "basic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 222,
+      "rarest_added": [
+        "lawtech",
+        "quickstarter",
+        "mixpanel",
+        "choppy",
+        "litigation",
+        "firms",
+        "legaltech",
+        "ndiscovery"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 218,
+        "2": 25,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_099",
+      "question_type": "basic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 354,
+      "rarest_added": [
+        "njose",
+        "skyrocketing",
+        "til",
+        "wavefront",
+        "mqa",
+        "gqa",
+        "ncontinuous",
+        "jose"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 107,
+        "2": 8,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_108",
+      "question_type": "basic",
+      "n_query_terms": 31,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 191,
+      "rarest_added": [
+        "nshorthand",
+        "benching",
+        "sold",
+        "nasks",
+        "ari",
+        "indie",
+        "clicked",
+        "chatbot"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 368,
+        "2": 51,
+        "3": 6,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_109",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 498,
+      "rarest_added": [
+        "shortctx",
+        "confirmable",
+        "nbenchmarking",
+        "runtimectl",
+        "hotpaths",
+        "czf",
+        "causality",
+        "nandakumar"
+      ],
+      "gold_rank_by_k": {
+        "0": 196,
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_115",
+      "question_type": "basic",
+      "n_query_terms": 21,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 354,
+      "rarest_added": [
+        "jaime",
+        "ramon",
+        "pir",
+        "nthings",
+        "permalink",
+        "diary",
+        "ticketed",
+        "nwho"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 16,
+        "2": 1,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_120",
+      "question_type": "basic",
+      "n_query_terms": 21,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 519,
+      "rarest_added": [
+        "squeezing",
+        "ffx",
+        "mariner",
+        "oob",
+        "essentially",
+        "bye",
+        "starters",
+        "nlp"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 852,
+        "2": 53,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_124",
+      "question_type": "basic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 330,
+      "rarest_added": [
+        "overreacts",
+        "fairer",
+        "sqrt",
+        "reworked",
+        "derives",
+        "unfairness",
+        "unfair",
+        "makefile"
+      ],
+      "gold_rank_by_k": {
+        "0": 122,
+        "1": 12,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_127",
+      "question_type": "basic",
+      "n_query_terms": 26,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 320,
+      "rarest_added": [
+        "nanswer",
+        "nwithin",
+        "exempted",
+        "bearing",
+        "familiar",
+        "freezes",
+        "constitutes",
+        "accountable"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 83,
+        "2": 24,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_133",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 457,
+      "rarest_added": [
+        "sensitives",
+        "tcache",
+        "memstats",
+        "misclassifies",
+        "inferring",
+        "compounds",
+        "sculptor",
+        "encountering"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 314,
+        "2": 12,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_136",
+      "question_type": "basic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 225,
+      "rarest_added": [
+        "bolt",
+        "hunt",
+        "gthread",
+        "economy",
+        "intercom",
+        "ellis",
+        "serverless",
+        "upsell"
+      ],
+      "gold_rank_by_k": {
+        "0": 130,
+        "1": 20,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_138",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 326,
+      "rarest_added": [
+        "rdinf",
+        "cody",
+        "sourcegraph",
+        "llamax",
+        "debuggable",
+        "january",
+        "monorepo",
+        "technically"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 546,
+        "2": 58,
+        "3": 5,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_139",
+      "question_type": "basic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 360,
+      "rarest_added": [
+        "ommit",
+        "hotlist",
+        "rcs",
+        "analyzed",
+        "aiden",
+        "surrogate",
+        "synthesizer",
+        "nbackwards"
+      ],
+      "gold_rank_by_k": {
+        "0": 967,
+        "1": 187,
+        "2": 187,
+        "3": 11,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_141",
+      "question_type": "basic",
+      "n_query_terms": 38,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 589,
+      "rarest_added": [
+        "replatform",
+        "nbattlecard",
+        "chung",
+        "superior",
+        "storyline",
+        "tal",
+        "npitch",
+        "predominantly"
+      ],
+      "gold_rank_by_k": {
+        "0": 194,
+        "1": 14,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_146",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 413,
+      "rarest_added": [
+        "stringly",
+        "harriet",
+        "deserializing",
+        "serializers",
+        "suresh",
+        "discover",
+        "umbrella",
+        "tsx"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 33,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_152",
+      "question_type": "basic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 152,
+      "rarest_added": [
+        "lastseen",
+        "glanced",
+        "gofmt",
+        "traceid",
+        "golangci",
+        "directories",
+        "parrot",
+        "requestid"
+      ],
+      "gold_rank_by_k": {
+        "0": 77,
+        "1": 11,
+        "2": 5,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_157",
+      "question_type": "basic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 330,
+      "rarest_added": [
+        "implementability",
+        "paralysis",
+        "scientists",
+        "internationalization",
+        "visualizes",
+        "illustrations",
+        "carousel",
+        "moderated"
+      ],
+      "gold_rank_by_k": {
+        "0": 165,
+        "1": 26,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_169",
+      "question_type": "basic",
+      "n_query_terms": 46,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 294,
+      "rarest_added": [
+        "copper",
+        "publishers",
+        "unpredictability",
+        "ctl",
+        "stone",
+        "digital",
+        "likelihood",
+        "conscious"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 13,
+        "2": 13,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_172",
+      "question_type": "basic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 215,
+      "rarest_added": [
+        "sanaa",
+        "mumbai",
+        "nvl",
+        "paris",
+        "positioned",
+        "njavier",
+        "nrajesh",
+        "javier"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 95,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_177",
+      "question_type": "semantic",
+      "n_query_terms": 44,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 407,
+      "rarest_added": [
+        "annealer",
+        "anneal",
+        "ensembles",
+        "opting",
+        "pronounced",
+        "squashed",
+        "annealing",
+        "andre"
+      ],
+      "gold_rank_by_k": {
+        "0": 100,
+        "1": 110,
+        "2": 5,
+        "3": 4,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_179",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 416,
+      "rarest_added": [
+        "nimplemented",
+        "responsewriter",
+        "commi",
+        "nselected",
+        "nfunc",
+        "golangci",
+        "samplers",
+        "sqlite"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 396,
+        "2": 56,
+        "3": 5,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_183",
+      "question_type": "semantic",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 290,
+      "rarest_added": [
+        "nalexandra",
+        "ntue",
+        "alexandra",
+        "rds",
+        "parking",
+        "hope",
+        "companies",
+        "nperfect"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 262,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_185",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 417,
+      "rarest_added": [
+        "brainstorms",
+        "nreading",
+        "rehydrations",
+        "fractured",
+        "iclr",
+        "mechanical",
+        "topical",
+        "headaches"
+      ],
+      "gold_rank_by_k": {
+        "0": 324,
+        "1": 325,
+        "2": 14,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_186",
+      "question_type": "semantic",
+      "n_query_terms": 59,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 392,
+      "rarest_added": [
+        "mdes",
+        "frequentist",
+        "mde",
+        "conforms",
+        "shocks",
+        "codified",
+        "stratification",
+        "posterior"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 496,
+        "3": 11,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_188",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 349,
+      "rarest_added": [
+        "carver",
+        "enhances",
+        "tuf",
+        "marshaling",
+        "offloading",
+        "origins",
+        "modifies",
+        "mitigates"
+      ],
+      "gold_rank_by_k": {
+        "0": 55,
+        "1": 9,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_189",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 411,
+      "rarest_added": [
+        "nbuckets",
+        "pet",
+        "codebases",
+        "calculus",
+        "deepa",
+        "nprefix",
+        "conservatism",
+        "ensembles"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 228,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_190",
+      "question_type": "semantic",
+      "n_query_terms": 67,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 437,
+      "rarest_added": [
+        "rsm",
+        "unflushed",
+        "kumari",
+        "podantiaffinity",
+        "owne",
+        "postincident",
+        "raul",
+        "ncontributing"
+      ],
+      "gold_rank_by_k": {
+        "0": 130,
+        "1": 3,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_192",
+      "question_type": "semantic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 281,
+      "rarest_added": [
+        "backstops",
+        "amsterdam",
+        "hat",
+        "teammates",
+        "nare",
+        "berlin",
+        "rbw",
+        "prework"
+      ],
+      "gold_rank_by_k": {
+        "0": 416,
+        "1": 12,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_195",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 299,
+      "rarest_added": [
+        "nhousekeeping",
+        "snips",
+        "mse",
+        "passage",
+        "condense",
+        "roleplay",
+        "layerwise",
+        "nloose"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 263,
+        "3": 48,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_200",
+      "question_type": "semantic",
+      "n_query_terms": 74,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 340,
+      "rarest_added": [
+        "nternal",
+        "pads",
+        "statefulset",
+        "cycling",
+        "nnisha",
+        "nisha",
+        "cronjob",
+        "suspended"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 251,
+        "3": 256,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_202",
+      "question_type": "semantic",
+      "n_query_terms": 77,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 367,
+      "rarest_added": [
+        "subproject",
+        "shortid",
+        "dormant",
+        "instantiation",
+        "undocumented",
+        "instantiate",
+        "boards",
+        "dynamodb"
+      ],
+      "gold_rank_by_k": {
+        "0": 140,
+        "1": 18,
+        "2": 4,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_203",
+      "question_type": "semantic",
+      "n_query_terms": 48,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 317,
+      "rarest_added": [
+        "insightworks",
+        "pillar",
+        "attractive",
+        "allowances",
+        "nambiar",
+        "mail",
+        "blue",
+        "biggest"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 66,
+        "2": 5,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_206",
+      "question_type": "semantic",
+      "n_query_terms": 35,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 265,
+      "rarest_added": [
+        "rwid",
+        "informative",
+        "flaked",
+        "enriches",
+        "idx",
+        "processors",
+        "compacted",
+        "srv"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 63,
+        "2": 63,
+        "3": 65,
+        "5": 4,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_211",
+      "question_type": "semantic",
+      "n_query_terms": 65,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 452,
+      "rarest_added": [
+        "nwidget",
+        "nsecond",
+        "kee",
+        "nthird",
+        "prot",
+        "nth",
+        "nspan",
+        "errs"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 100,
+        "3": 18,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_213",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 420,
+      "rarest_added": [
+        "sds",
+        "inappropriate",
+        "ind",
+        "beh",
+        "dealbreaker",
+        "causation",
+        "instantiate",
+        "reproductions"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 754,
+        "3": 177,
+        "5": 4,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_215",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 494,
+      "rarest_added": [
+        "signposts",
+        "tribe",
+        "fallb",
+        "ntls",
+        "nservices",
+        "fss",
+        "snaps",
+        "joiners"
+      ],
+      "gold_rank_by_k": {
+        "0": 286,
+        "1": 17,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_217",
+      "question_type": "semantic",
+      "n_query_terms": 52,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 377,
+      "rarest_added": [
+        "privateconsole",
+        "ariana",
+        "navigable",
+        "moderated",
+        "decimals",
+        "restricts",
+        "viewers",
+        "modals"
+      ],
+      "gold_rank_by_k": {
+        "0": 93,
+        "1": 19,
+        "2": 5,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_218",
+      "question_type": "semantic",
+      "n_query_terms": 43,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 372,
+      "rarest_added": [
+        "daniels",
+        "presumption",
+        "rebuttable",
+        "exte",
+        "impair",
+        "wrongdoing",
+        "dislike",
+        "unilaterally"
+      ],
+      "gold_rank_by_k": {
+        "0": 889,
+        "1": 88,
+        "2": 15,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_219",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 219,
+      "rarest_added": [
+        "ruins",
+        "repurposed",
+        "nworkspace",
+        "nmonitor",
+        "nallocator",
+        "nprefetch",
+        "invalidates",
+        "segregation"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 128,
+        "2": 8,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_220",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 543,
+      "rarest_added": [
+        "sabbaticals",
+        "leveled",
+        "ncompetency",
+        "coder",
+        "hackday",
+        "nintro",
+        "courses",
+        "managerial"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 328,
+        "2": 22,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_221",
+      "question_type": "semantic",
+      "n_query_terms": 60,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 515,
+      "rarest_added": [
+        "datalake",
+        "ncontractual",
+        "disciplinary",
+        "procureflow",
+        "traveler",
+        "compendium",
+        "noffboarding",
+        "fulfilled"
+      ],
+      "gold_rank_by_k": {
+        "0": 62,
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_223",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 244,
+      "rarest_added": [
+        "eventtype",
+        "pagesize",
+        "println",
+        "toc",
+        "nctx",
+        "enumerating",
+        "rob",
+        "nstream"
+      ],
+      "gold_rank_by_k": {
+        "0": 242,
+        "1": 9,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_225",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 234,
+      "rarest_added": [
+        "fetchuser",
+        "reversed",
+        "mitigates",
+        "serializes",
+        "mutex",
+        "interleave",
+        "swapped",
+        "transformation"
+      ],
+      "gold_rank_by_k": {
+        "0": 142,
+        "1": 5,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_228",
+      "question_type": "semantic",
+      "n_query_terms": 69,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 285,
+      "rarest_added": [
+        "swarming",
+        "broadening",
+        "sqa",
+        "nida",
+        "ida",
+        "swarm",
+        "signers",
+        "ecdsa"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 323,
+        "2": 65,
+        "3": 68,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_230",
+      "question_type": "semantic",
+      "n_query_terms": 52,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 333,
+      "rarest_added": [
+        "alexr",
+        "medicor",
+        "hangout",
+        "medico",
+        "ray",
+        "onshore",
+        "unencrypted",
+        "exportability"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 168,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_233",
+      "question_type": "semantic",
+      "n_query_terms": 45,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 513,
+      "rarest_added": [
+        "shimmed",
+        "aff",
+        "nphases",
+        "adjuster",
+        "batchers",
+        "rwdctl",
+        "ncontacts",
+        "preparation"
+      ],
+      "gold_rank_by_k": {
+        "0": 151,
+        "1": 155,
+        "2": 156,
+        "3": 6,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_234",
+      "question_type": "semantic",
+      "n_query_terms": 37,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 291,
+      "rarest_added": [
+        "ntimothy",
+        "cracks",
+        "timothy",
+        "excerpted",
+        "greenfield",
+        "circle",
+        "gentle",
+        "art"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 30,
+        "2": 31,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_239",
+      "question_type": "semantic",
+      "n_query_terms": 55,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 389,
+      "rarest_added": [
+        "kane",
+        "monkey",
+        "ith",
+        "starves",
+        "plumb",
+        "epoched",
+        "freshly",
+        "deferring"
+      ],
+      "gold_rank_by_k": {
+        "0": 276,
+        "1": 276,
+        "2": 278,
+        "3": 30,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_241",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 558,
+      "rarest_added": [
+        "deepserve",
+        "homes",
+        "userdata",
+        "adjourned",
+        "efs",
+        "maa",
+        "cloudvendorx",
+        "rejoined"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 256,
+        "2": 41,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_242",
+      "question_type": "semantic",
+      "n_query_terms": 57,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 366,
+      "rarest_added": [
+        "employs",
+        "cmakelists",
+        "outweighs",
+        "adapting",
+        "smoothquant",
+        "dyn",
+        "requant",
+        "opposite"
+      ],
+      "gold_rank_by_k": {
+        "0": 692,
+        "1": 47,
+        "2": 47,
+        "3": 5,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_243",
+      "question_type": "semantic",
+      "n_query_terms": 54,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 281,
+      "rarest_added": [
+        "forging",
+        "issuers",
+        "nusers",
+        "iss",
+        "orig",
+        "retirement",
+        "disagree",
+        "datastore"
+      ],
+      "gold_rank_by_k": {
+        "0": 150,
+        "1": 150,
+        "2": 12,
+        "3": 2,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_245",
+      "question_type": "semantic",
+      "n_query_terms": 29,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 319,
+      "rarest_added": [
+        "mlperf",
+        "wavefronts",
+        "thoroughly",
+        "wavefront",
+        "reworked",
+        "naively",
+        "autotuner",
+        "collectives"
+      ],
+      "gold_rank_by_k": {
+        "0": 318,
+        "1": 318,
+        "2": 42,
+        "3": 7,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_246",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 5,
+      "n_candidate_terms": 769,
+      "rarest_added": [
+        "dif",
+        "inferex",
+        "erika",
+        "threefold",
+        "conclude",
+        "dedication",
+        "ela",
+        "tangent"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 664,
+        "2": 131,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_247",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 426,
+      "rarest_added": [
+        "sholds",
+        "prestart",
+        "specialists",
+        "thre",
+        "hrbp",
+        "atypical",
+        "immersion",
+        "preboarding"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 511,
+        "2": 100,
+        "3": 103,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_248",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 349,
+      "rarest_added": [
+        "instancetypes",
+        "nnodegroups",
+        "bottlerocket",
+        "instancetype",
+        "prefernoschedule",
+        "minsize",
+        "poddisruptionbudgets",
+        "efa"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 234,
+        "2": 15,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_249",
+      "question_type": "semantic",
+      "n_query_terms": 44,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 372,
+      "rarest_added": [
+        "nadditionally",
+        "nworked",
+        "jenkins",
+        "draw",
+        "cooldowns",
+        "converting",
+        "outlines",
+        "effectively"
+      ],
+      "gold_rank_by_k": {
+        "0": 151,
+        "1": 152,
+        "2": 18,
+        "3": 2,
+        "5": 3,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_250",
+      "question_type": "semantic",
+      "n_query_terms": 50,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 234,
+      "rarest_added": [
+        "goyal",
+        "zilliz",
+        "beat",
+        "milvus",
+        "integrating",
+        "postgres",
+        "weaviate",
+        "rank"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 502,
+        "2": 13,
+        "3": 3,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_255",
+      "question_type": "semantic",
+      "n_query_terms": 97,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 308,
+      "rarest_added": [
+        "inducing",
+        "differed",
+        "nid",
+        "unpinned",
+        "differing",
+        "honoring",
+        "noticing",
+        "equivalence"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 115,
+        "5": 11,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_256",
+      "question_type": "semantic",
+      "n_query_terms": 64,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 342,
+      "rarest_added": [
+        "vectorhealth",
+        "cale",
+        "jacobs",
+        "marcuslin",
+        "marc",
+        "anonymization",
+        "weekday",
+        "extracted"
+      ],
+      "gold_rank_by_k": {
+        "0": 78,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_259",
+      "question_type": "semantic",
+      "n_query_terms": 41,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 459,
+      "rarest_added": [
+        "dimensionalities",
+        "comparables",
+        "sandstone",
+        "embedders",
+        "noises",
+        "numpy",
+        "pinpoint",
+        "laggy"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 425,
+        "2": 33,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_260",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 325,
+      "rarest_added": [
+        "limi",
+        "tiler",
+        "convincing",
+        "neon",
+        "churns",
+        "eagerly",
+        "streamer",
+        "microkernel"
+      ],
+      "gold_rank_by_k": {
+        "0": 255,
+        "1": 29,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_261",
+      "question_type": "semantic",
+      "n_query_terms": 88,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 333,
+      "rarest_added": [
+        "chainproof",
+        "ftps",
+        "dropbox",
+        "hmacs",
+        "pseudonym",
+        "apex",
+        "retired",
+        "nprod"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 434,
+        "2": 62,
+        "3": 19,
+        "5": 6,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_262",
+      "question_type": "semantic",
+      "n_query_terms": 53,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 344,
+      "rarest_added": [
+        "nattention",
+        "costed",
+        "performant",
+        "unfair",
+        "prefills",
+        "nconfiguration",
+        "peers",
+        "slowdown"
+      ],
+      "gold_rank_by_k": {
+        "0": 352,
+        "1": 46,
+        "2": 5,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_266",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 306,
+      "rarest_added": [
+        "subrange",
+        "subranges",
+        "nell",
+        "heapmap",
+        "memcopies",
+        "akshay",
+        "nakshay",
+        "salvage"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 674,
+        "3": 21,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_267",
+      "question_type": "semantic",
+      "n_query_terms": 59,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 373,
+      "rarest_added": [
+        "reselect",
+        "cinder",
+        "nfixes",
+        "tomasz",
+        "contrib",
+        "enhance",
+        "truncations",
+        "idempotently"
+      ],
+      "gold_rank_by_k": {
+        "0": 323,
+        "1": 22,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_269",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 143,
+      "rarest_added": [
+        "nordbank",
+        "unplanned",
+        "acknowledges",
+        "permit",
+        "camila",
+        "associated",
+        "rahman",
+        "natarajan"
+      ],
+      "gold_rank_by_k": {
+        "0": 204,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_271",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 537,
+      "rarest_added": [
+        "expirable",
+        "lout",
+        "vendorname",
+        "convened",
+        "rationalization",
+        "retrospectively",
+        "shred",
+        "visas"
+      ],
+      "gold_rank_by_k": {
+        "0": 257,
+        "1": 13,
+        "2": 13,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_274",
+      "question_type": "semantic",
+      "n_query_terms": 70,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 383,
+      "rarest_added": [
+        "paralysis",
+        "plotting",
+        "hookup",
+        "columnar",
+        "zstd",
+        "benching",
+        "optimizes",
+        "voss"
+      ],
+      "gold_rank_by_k": {
+        "0": 857,
+        "1": 47,
+        "2": 8,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_275",
+      "question_type": "semantic",
+      "n_query_terms": 79,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 404,
+      "rarest_added": [
+        "endtoend",
+        "smoketests",
+        "suggestor",
+        "subcommand",
+        "jade",
+        "microseconds",
+        "nunit",
+        "tuples"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 367,
+        "2": 8,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_277",
+      "question_type": "semantic",
+      "n_query_terms": 62,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 357,
+      "rarest_added": [
+        "afflicted",
+        "nthere",
+        "aarav",
+        "prorations",
+        "subsequently",
+        "unmatched",
+        "cent",
+        "nfix"
+      ],
+      "gold_rank_by_k": {
+        "0": 66,
+        "1": 66,
+        "2": 11,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_278",
+      "question_type": "semantic",
+      "n_query_terms": 39,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 273,
+      "rarest_added": [
+        "allback",
+        "rekeyed",
+        "reimaged",
+        "ath",
+        "ldap",
+        "reimage",
+        "loaner",
+        "macbook"
+      ],
+      "gold_rank_by_k": {
+        "0": 153,
+        "1": 153,
+        "2": 8,
+        "3": 8,
+        "5": 3,
+        "8": 2,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_281",
+      "question_type": "semantic",
+      "n_query_terms": 54,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 378,
+      "rarest_added": [
+        "deficiency",
+        "fortnightly",
+        "novum",
+        "engaging",
+        "omission",
+        "demoted",
+        "forum",
+        "modifying"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 100,
+        "5": 30,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 8
+    },
+    {
+      "needle": "erb_284",
+      "question_type": "semantic",
+      "n_query_terms": 63,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 374,
+      "rarest_added": [
+        "replenishes",
+        "desync",
+        "usp",
+        "edgecase",
+        "dag",
+        "ejection",
+        "imminent",
+        "predicts"
+      ],
+      "gold_rank_by_k": {
+        "0": 188,
+        "1": 32,
+        "2": 32,
+        "3": 32,
+        "5": 32,
+        "8": 1,
+        "12": 2
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 8
+    },
+    {
+      "needle": "erb_288",
+      "question_type": "semantic",
+      "n_query_terms": 51,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 390,
+      "rarest_added": [
+        "yyyyy",
+        "retrigger",
+        "nfixes",
+        "pivoting",
+        "proceeded",
+        "postincident",
+        "preheat",
+        "terminations"
+      ],
+      "gold_rank_by_k": {
+        "0": 773,
+        "1": 34,
+        "2": 34,
+        "3": 28,
+        "5": 2,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_292",
+      "question_type": "semantic",
+      "n_query_terms": 40,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 378,
+      "rarest_added": [
+        "serviceable",
+        "intg",
+        "parameterizable",
+        "playgrounds",
+        "kanban",
+        "cloned",
+        "parameterize",
+        "cicd"
+      ],
+      "gold_rank_by_k": {
+        "0": 217,
+        "1": 5,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_295",
+      "question_type": "semantic",
+      "n_query_terms": 33,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 222,
+      "rarest_added": [
+        "laser",
+        "trended",
+        "organizer",
+        "cadences",
+        "ndemo",
+        "nalan",
+        "anon",
+        "integ"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": 52,
+        "3": 4,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 3
+    },
+    {
+      "needle": "erb_296",
+      "question_type": "semantic",
+      "n_query_terms": 67,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 354,
+      "rarest_added": [
+        "nhousekeeping",
+        "generat",
+        "nkill",
+        "frac",
+        "headings",
+        "handy",
+        "backoffs",
+        "ion"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "5": 403,
+        "8": 30,
+        "12": 1
+      },
+      "distance_to_top50": 8,
+      "distance_to_top12": 12
+    },
+    {
+      "needle": "erb_297",
+      "question_type": "semantic",
+      "n_query_terms": 45,
+      "n_gold_chunks": 4,
+      "n_candidate_terms": 522,
+      "rarest_added": [
+        "apexcompute",
+        "optimise",
+        "tethys",
+        "margining",
+        "nimbusgrid",
+        "constrains",
+        "distributor",
+        "fear"
+      ],
+      "gold_rank_by_k": {
+        "0": 278,
+        "1": 6,
+        "2": 6,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_298",
+      "question_type": "semantic",
+      "n_query_terms": 53,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 304,
+      "rarest_added": [
+        "retailx",
+        "basket",
+        "testcase",
+        "testset",
+        "ncontracts",
+        "takedown",
+        "promptpack",
+        "powerformid"
+      ],
+      "gold_rank_by_k": {
+        "0": 306,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_299",
+      "question_type": "semantic",
+      "n_query_terms": 62,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 391,
+      "rarest_added": [
+        "rebenchmark",
+        "pour",
+        "prohibitively",
+        "nconfigs",
+        "snappier",
+        "presentations",
+        "compounds",
+        "nhybrid"
+      ],
+      "gold_rank_by_k": {
+        "0": 105,
+        "1": 105,
+        "2": 7,
+        "3": 7,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_302",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 33,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 323,
+      "rarest_added": [
+        "hould",
+        "gathers",
+        "archetype",
+        "bose",
+        "suffers",
+        "downgrades",
+        "archetypes",
+        "revamp"
+      ],
+      "gold_rank_by_k": {
+        "0": 89,
+        "1": 7,
+        "2": 7,
+        "3": 8,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_311",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 19,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 373,
+      "rarest_added": [
+        "reconc",
+        "monique",
+        "whoops",
+        "parametrize",
+        "clobber",
+        "timeslots",
+        "sundays",
+        "adjourned"
+      ],
+      "gold_rank_by_k": {
+        "0": null,
+        "1": 4,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_323",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 45,
+      "n_gold_chunks": 3,
+      "n_candidate_terms": 333,
+      "rarest_added": [
+        "detective",
+        "aloud",
+        "guessing",
+        "nupdate",
+        "ive",
+        "possibility",
+        "qat",
+        "skimmed"
+      ],
+      "gold_rank_by_k": {
+        "0": 215,
+        "1": 215,
+        "2": 196,
+        "3": 13,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 3,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_324",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 21,
+      "n_gold_chunks": 1,
+      "n_candidate_terms": 220,
+      "rarest_added": [
+        "cutlist",
+        "totp",
+        "nalec",
+        "alec",
+        "forming",
+        "upwards",
+        "sms",
+        "synced"
+      ],
+      "gold_rank_by_k": {
+        "0": 849,
+        "1": 15,
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_328",
+      "question_type": "intra_document_reasoning",
+      "n_query_terms": 42,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 290,
+      "rarest_added": [
+        "subproc",
+        "cody",
+        "sourcegraph",
+        "desirable",
+        "rourke",
+        "negotiating",
+        "copilot",
+        "ide"
+      ],
+      "gold_rank_by_k": {
+        "0": 268,
+        "1": 15,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 2
+    },
+    {
+      "needle": "erb_409",
+      "question_type": "constrained",
+      "n_query_terms": 80,
+      "n_gold_chunks": 2,
+      "n_candidate_terms": 234,
+      "rarest_added": [
+        "midproxy",
+        "envoys",
+        "ncaroline",
+        "frontdoor",
+        "caroline",
+        "untrusted",
+        "engops",
+        "oversized"
+      ],
+      "gold_rank_by_k": {
+        "0": 152,
+        "1": 10,
+        "2": 2,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_416",
+      "question_type": "conflicting_info",
+      "n_query_terms": 21,
+      "n_gold_chunks": 12,
+      "n_candidate_terms": 1085,
+      "rarest_added": [
+        "cursoring",
+        "misconfigures",
+        "nexporter",
+        "norganizer",
+        "entrust",
+        "messing",
+        "proliferating",
+        "nbackups"
+      ],
+      "gold_rank_by_k": {
+        "0": 59,
+        "1": 59,
+        "2": 60,
+        "3": 60,
+        "5": 6,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_427",
+      "question_type": "conflicting_info",
+      "n_query_terms": 25,
+      "n_gold_chunks": 8,
+      "n_candidate_terms": 777,
+      "rarest_added": [
+        "ational",
+        "useable",
+        "promp",
+        "unresolvable",
+        "giveaways",
+        "cities",
+        "npitch",
+        "nelevator"
+      ],
+      "gold_rank_by_k": {
+        "0": 221,
+        "1": 221,
+        "2": 56,
+        "3": 56,
+        "5": 8,
+        "8": 2,
+        "12": 2
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_436",
+      "question_type": "completeness",
+      "n_query_terms": 25,
+      "n_gold_chunks": 9,
+      "n_candidate_terms": 811,
+      "rarest_added": [
+        "behaviorally",
+        "ndetected",
+        "rigor",
+        "nfailover",
+        "differed",
+        "fragmenting",
+        "explosions",
+        "reingest"
+      ],
+      "gold_rank_by_k": {
+        "0": 434,
+        "1": 10,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 1,
+      "distance_to_top12": 1
+    },
+    {
+      "needle": "erb_438",
+      "question_type": "completeness",
+      "n_query_terms": 40,
+      "n_gold_chunks": 5,
+      "n_candidate_terms": 443,
+      "rarest_added": [
+        "directing",
+        "disrupted",
+        "ineligible",
+        "emphasizing",
+        "jointly",
+        "brought",
+        "impairment",
+        "inadvertently"
+      ],
+      "gold_rank_by_k": {
+        "0": 719,
+        "1": 88,
+        "2": 89,
+        "3": 90,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 5,
+      "distance_to_top12": 5
+    },
+    {
+      "needle": "erb_447",
+      "question_type": "completeness",
+      "n_query_terms": 33,
+      "n_gold_chunks": 7,
+      "n_candidate_terms": 398,
+      "rarest_added": [
+        "northstarbank",
+        "naddendum",
+        "nnotwithstanding",
+        "nsignatures",
+        "nhelio",
+        "ncontractual",
+        "nwell",
+        "varga"
+      ],
+      "gold_rank_by_k": {
+        "0": 69,
+        "1": 71,
+        "2": 19,
+        "3": 1,
+        "5": 1,
+        "8": 1,
+        "12": 1
+      },
+      "distance_to_top50": 2,
+      "distance_to_top12": 3
+    }
+  ]
+}

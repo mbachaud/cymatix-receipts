@@ -1,0 +1,17 @@
+{
+  "probe": "identifier_reach",
+  "written_before_any_result_was_read": true,
+  "question": "What does camelCase cost under the shipped tokenizer -- reach, discrimination, or nothing?",
+  "arms": {
+    "prose_rich": "gold carries a natural identifier-specific comment",
+    "identifier_only": "signature + symbols, no English sentence",
+    "prose_shared": "gold AND siblings carry identical boilerplate, so only the identifier can discriminate"
+  },
+  "reading": {
+    "CONFIRMED_REACH": "arm identifier_only: separator reach - camel reach >= 0.5",
+    "CONFIRMED_DISCRIMINATION": "arm prose_shared: gold's mean rank is better under separator conventions by >= 2 positions, or camel gold unranked",
+    "REFUTED": "both gaps inside 0.2 / 0.5 positions"
+  },
+  "no_kill": "measures a substrate property that bounds every lane above it",
+  "corpus": "closed synthetic; no bed, no pipeline, no network"
+}

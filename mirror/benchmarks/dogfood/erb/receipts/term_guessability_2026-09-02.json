@@ -1,0 +1,1697 @@
+{
+  "probe": "term_guessability",
+  "stamp": "2026-09-02",
+  "prereg": "term_guessability_2026-09-02_prereg.json",
+  "verdict": "REFORMULATION_CANNOT_WIN",
+  "distance_receipt": "reformulation_distance_clean_2026-09-02.json",
+  "overall": {
+    "n": 109,
+    "mean_guessable_fraction": 0.124,
+    "median_guessable_fraction": 0.0,
+    "needles_where_every_winning_term_is_incidental": 87,
+    "needles_where_all_terms_guessable": 9
+  },
+  "by_question_type": {
+    "basic": {
+      "n": 37,
+      "mean_guessable_fraction": 0.117,
+      "median_guessable_fraction": 0.0,
+      "needles_where_every_winning_term_is_incidental": 31,
+      "needles_where_all_terms_guessable": 3
+    },
+    "completeness": {
+      "n": 3,
+      "mean_guessable_fraction": 0.067,
+      "median_guessable_fraction": 0.0,
+      "needles_where_every_winning_term_is_incidental": 2,
+      "needles_where_all_terms_guessable": 0
+    },
+    "conflicting_info": {
+      "n": 2,
+      "mean_guessable_fraction": 0.0,
+      "median_guessable_fraction": 0.0,
+      "needles_where_every_winning_term_is_incidental": 2,
+      "needles_where_all_terms_guessable": 0
+    },
+    "constrained": {
+      "n": 1,
+      "mean_guessable_fraction": 1.0,
+      "median_guessable_fraction": 1.0,
+      "needles_where_every_winning_term_is_incidental": 0,
+      "needles_where_all_terms_guessable": 1
+    },
+    "intra_document_reasoning": {
+      "n": 5,
+      "mean_guessable_fraction": 0.2,
+      "median_guessable_fraction": 0.0,
+      "needles_where_every_winning_term_is_incidental": 4,
+      "needles_where_all_terms_guessable": 1
+    },
+    "semantic": {
+      "n": 61,
+      "mean_guessable_fraction": 0.114,
+      "median_guessable_fraction": 0.0,
+      "needles_where_every_winning_term_is_incidental": 48,
+      "needles_where_all_terms_guessable": 4
+    }
+  },
+  "reading": "Distance says HOW MANY terms are needed; this says WHETHER a question-only rewriter could have produced them. A short distance made of incidental vocabulary is not a reformulation opportunity -- it is precisely the case the document-side producer exists for, because a document can advertise its own vocabulary while a query cannot guess it.",
+  "scope_limits": [
+    "The proxy is generous: a term counts as guessable if it appears anywhere in the shipped map, including for reasons unrelated to the query's meaning. The true guessable fraction is lower.",
+    "It says nothing about whether a rewriter WOULD produce a term it could produce -- only that the vocabulary is within the query's reach. A real rewriter arm is still owed.",
+    "Winning terms are the oracle's rarest-first choice; a different selection rule would pick different terms."
+  ],
+  "rows": [
+    {
+      "needle": "erb_003",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "identi"
+      ],
+      "in_shipped_map_vocab": {
+        "identi": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_006",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "discus"
+      ],
+      "in_shipped_map_vocab": {
+        "discus": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_021",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "ratably"
+      ],
+      "in_shipped_map_vocab": {
+        "ratably": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_025",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "redwoodinf"
+      ],
+      "in_shipped_map_vocab": {
+        "redwoodinf": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_027",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "nshasum"
+      ],
+      "in_shipped_map_vocab": {
+        "nshasum": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_030",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "reprocesses"
+      ],
+      "in_shipped_map_vocab": {
+        "reprocesses": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_031",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "que"
+      ],
+      "in_shipped_map_vocab": {
+        "que": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_042",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "kselector",
+        "nhugo"
+      ],
+      "in_shipped_map_vocab": {
+        "kselector": false,
+        "nhugo": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_050",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "rerate"
+      ],
+      "in_shipped_map_vocab": {
+        "rerate": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_054",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "lta"
+      ],
+      "in_shipped_map_vocab": {
+        "lta": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_057",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "optimizely"
+      ],
+      "in_shipped_map_vocab": {
+        "optimizely": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_061",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "intersecting",
+        "guerrilla"
+      ],
+      "in_shipped_map_vocab": {
+        "intersecting": false,
+        "guerrilla": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_063",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "redteamco"
+      ],
+      "in_shipped_map_vocab": {
+        "redteamco": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_071",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "cryptokeydecrypter",
+        "keyid"
+      ],
+      "in_shipped_map_vocab": {
+        "cryptokeydecrypter": true,
+        "keyid": false
+      },
+      "guessable_fraction": 0.5,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_073",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "piecemeal"
+      ],
+      "in_shipped_map_vocab": {
+        "piecemeal": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_076",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "burdening",
+        "streamconsumer"
+      ],
+      "in_shipped_map_vocab": {
+        "burdening": false,
+        "streamconsumer": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_086",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "anticipation"
+      ],
+      "in_shipped_map_vocab": {
+        "anticipation": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_089",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "titl"
+      ],
+      "in_shipped_map_vocab": {
+        "titl": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_091",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "nprashant",
+        "prashant"
+      ],
+      "in_shipped_map_vocab": {
+        "nprashant": false,
+        "prashant": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_092",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "lawtech",
+        "quickstarter"
+      ],
+      "in_shipped_map_vocab": {
+        "lawtech": false,
+        "quickstarter": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_099",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "skyrocketing",
+        "til"
+      ],
+      "in_shipped_map_vocab": {
+        "skyrocketing": true,
+        "til": false
+      },
+      "guessable_fraction": 0.5,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_108",
+      "question_type": "basic",
+      "distance": 3,
+      "winning_terms": [
+        "benching",
+        "sold",
+        "ari"
+      ],
+      "in_shipped_map_vocab": {
+        "benching": false,
+        "sold": false,
+        "ari": true
+      },
+      "guessable_fraction": 0.333,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_109",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "shortctx"
+      ],
+      "in_shipped_map_vocab": {
+        "shortctx": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_115",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "jaime"
+      ],
+      "in_shipped_map_vocab": {
+        "jaime": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_120",
+      "question_type": "basic",
+      "distance": 3,
+      "winning_terms": [
+        "squeezing",
+        "ffx",
+        "mariner"
+      ],
+      "in_shipped_map_vocab": {
+        "squeezing": true,
+        "ffx": true,
+        "mariner": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_124",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "overreacts"
+      ],
+      "in_shipped_map_vocab": {
+        "overreacts": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_127",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "exempted"
+      ],
+      "in_shipped_map_vocab": {
+        "exempted": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_133",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "sensitives",
+        "memstats"
+      ],
+      "in_shipped_map_vocab": {
+        "sensitives": false,
+        "memstats": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_136",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "bolt"
+      ],
+      "in_shipped_map_vocab": {
+        "bolt": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_138",
+      "question_type": "basic",
+      "distance": 3,
+      "winning_terms": [
+        "rdinf",
+        "cody",
+        "sourcegraph"
+      ],
+      "in_shipped_map_vocab": {
+        "rdinf": false,
+        "cody": false,
+        "sourcegraph": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_139",
+      "question_type": "basic",
+      "distance": 3,
+      "winning_terms": [
+        "ommit",
+        "hotlist",
+        "rcs"
+      ],
+      "in_shipped_map_vocab": {
+        "ommit": false,
+        "hotlist": false,
+        "rcs": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_141",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "replatform"
+      ],
+      "in_shipped_map_vocab": {
+        "replatform": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_146",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "stringly"
+      ],
+      "in_shipped_map_vocab": {
+        "stringly": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_152",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "lastseen"
+      ],
+      "in_shipped_map_vocab": {
+        "lastseen": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_157",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "implementability"
+      ],
+      "in_shipped_map_vocab": {
+        "implementability": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_169",
+      "question_type": "basic",
+      "distance": 1,
+      "winning_terms": [
+        "copper"
+      ],
+      "in_shipped_map_vocab": {
+        "copper": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_172",
+      "question_type": "basic",
+      "distance": 2,
+      "winning_terms": [
+        "sanaa",
+        "mumbai"
+      ],
+      "in_shipped_map_vocab": {
+        "sanaa": false,
+        "mumbai": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_177",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "annealer",
+        "anneal"
+      ],
+      "in_shipped_map_vocab": {
+        "annealer": false,
+        "anneal": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_179",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "responsewriter",
+        "commi"
+      ],
+      "in_shipped_map_vocab": {
+        "responsewriter": false,
+        "commi": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_183",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "alexandra"
+      ],
+      "in_shipped_map_vocab": {
+        "alexandra": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_185",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "brainstorms",
+        "rehydrations"
+      ],
+      "in_shipped_map_vocab": {
+        "brainstorms": false,
+        "rehydrations": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_186",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "mdes",
+        "frequentist",
+        "mde"
+      ],
+      "in_shipped_map_vocab": {
+        "mdes": false,
+        "frequentist": false,
+        "mde": true
+      },
+      "guessable_fraction": 0.333,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_188",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "carver"
+      ],
+      "in_shipped_map_vocab": {
+        "carver": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_189",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "pet",
+        "codebases",
+        "calculus",
+        "deepa",
+        "conservatism"
+      ],
+      "in_shipped_map_vocab": {
+        "pet": false,
+        "codebases": false,
+        "calculus": false,
+        "deepa": false,
+        "conservatism": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_190",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "rsm"
+      ],
+      "in_shipped_map_vocab": {
+        "rsm": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_192",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "backstops"
+      ],
+      "in_shipped_map_vocab": {
+        "backstops": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_195",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "snips",
+        "mse",
+        "passage"
+      ],
+      "in_shipped_map_vocab": {
+        "snips": false,
+        "mse": false,
+        "passage": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_200",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "nternal",
+        "pads",
+        "statefulset",
+        "cycling",
+        "nnisha"
+      ],
+      "in_shipped_map_vocab": {
+        "nternal": false,
+        "pads": false,
+        "statefulset": false,
+        "cycling": false,
+        "nnisha": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_202",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "subproject"
+      ],
+      "in_shipped_map_vocab": {
+        "subproject": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_203",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "insightworks",
+        "pillar"
+      ],
+      "in_shipped_map_vocab": {
+        "insightworks": false,
+        "pillar": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_206",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "rwid",
+        "informative",
+        "flaked",
+        "enriches",
+        "idx"
+      ],
+      "in_shipped_map_vocab": {
+        "rwid": false,
+        "informative": false,
+        "flaked": false,
+        "enriches": true,
+        "idx": false
+      },
+      "guessable_fraction": 0.2,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_211",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "kee",
+        "prot",
+        "nth"
+      ],
+      "in_shipped_map_vocab": {
+        "kee": false,
+        "prot": false,
+        "nth": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_213",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "sds",
+        "inappropriate",
+        "ind",
+        "beh",
+        "dealbreaker"
+      ],
+      "in_shipped_map_vocab": {
+        "sds": false,
+        "inappropriate": false,
+        "ind": false,
+        "beh": false,
+        "dealbreaker": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_215",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "signposts"
+      ],
+      "in_shipped_map_vocab": {
+        "signposts": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_217",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "privateconsole"
+      ],
+      "in_shipped_map_vocab": {
+        "privateconsole": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_218",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "daniels",
+        "presumption"
+      ],
+      "in_shipped_map_vocab": {
+        "daniels": false,
+        "presumption": true
+      },
+      "guessable_fraction": 0.5,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_219",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "ruins",
+        "repurposed"
+      ],
+      "in_shipped_map_vocab": {
+        "ruins": false,
+        "repurposed": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_220",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "sabbaticals",
+        "leveled"
+      ],
+      "in_shipped_map_vocab": {
+        "sabbaticals": false,
+        "leveled": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_221",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "datalake"
+      ],
+      "in_shipped_map_vocab": {
+        "datalake": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_223",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "eventtype"
+      ],
+      "in_shipped_map_vocab": {
+        "eventtype": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_225",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "fetchuser"
+      ],
+      "in_shipped_map_vocab": {
+        "fetchuser": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_228",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "swarming",
+        "broadening",
+        "sqa",
+        "nida",
+        "ida"
+      ],
+      "in_shipped_map_vocab": {
+        "swarming": false,
+        "broadening": false,
+        "sqa": false,
+        "nida": true,
+        "ida": true
+      },
+      "guessable_fraction": 0.4,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_230",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "alexr",
+        "medicor"
+      ],
+      "in_shipped_map_vocab": {
+        "alexr": false,
+        "medicor": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_233",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "shimmed",
+        "aff",
+        "adjuster"
+      ],
+      "in_shipped_map_vocab": {
+        "shimmed": false,
+        "aff": false,
+        "adjuster": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_234",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "cracks",
+        "timothy"
+      ],
+      "in_shipped_map_vocab": {
+        "cracks": false,
+        "timothy": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_239",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "kane",
+        "monkey",
+        "ith"
+      ],
+      "in_shipped_map_vocab": {
+        "kane": false,
+        "monkey": false,
+        "ith": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_241",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "deepserve",
+        "homes"
+      ],
+      "in_shipped_map_vocab": {
+        "deepserve": false,
+        "homes": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_242",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "employs"
+      ],
+      "in_shipped_map_vocab": {
+        "employs": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_243",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "forging",
+        "issuers"
+      ],
+      "in_shipped_map_vocab": {
+        "forging": true,
+        "issuers": false
+      },
+      "guessable_fraction": 0.5,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_245",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "mlperf",
+        "wavefronts"
+      ],
+      "in_shipped_map_vocab": {
+        "mlperf": false,
+        "wavefronts": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_246",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "dif",
+        "inferex",
+        "erika"
+      ],
+      "in_shipped_map_vocab": {
+        "dif": false,
+        "inferex": false,
+        "erika": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_247",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "sholds",
+        "prestart",
+        "specialists",
+        "thre",
+        "hrbp"
+      ],
+      "in_shipped_map_vocab": {
+        "sholds": false,
+        "prestart": false,
+        "specialists": false,
+        "thre": false,
+        "hrbp": true
+      },
+      "guessable_fraction": 0.2,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_248",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "instancetypes",
+        "bottlerocket"
+      ],
+      "in_shipped_map_vocab": {
+        "instancetypes": false,
+        "bottlerocket": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_249",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "jenkins"
+      ],
+      "in_shipped_map_vocab": {
+        "jenkins": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_250",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "goyal",
+        "zilliz"
+      ],
+      "in_shipped_map_vocab": {
+        "goyal": false,
+        "zilliz": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_255",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "inducing",
+        "differed",
+        "nid",
+        "unpinned",
+        "differing"
+      ],
+      "in_shipped_map_vocab": {
+        "inducing": false,
+        "differed": false,
+        "nid": false,
+        "unpinned": false,
+        "differing": true
+      },
+      "guessable_fraction": 0.2,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_256",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "vectorhealth"
+      ],
+      "in_shipped_map_vocab": {
+        "vectorhealth": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_259",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "dimensionalities",
+        "comparables"
+      ],
+      "in_shipped_map_vocab": {
+        "dimensionalities": false,
+        "comparables": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_260",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "limi"
+      ],
+      "in_shipped_map_vocab": {
+        "limi": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_261",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "chainproof",
+        "ftps",
+        "dropbox"
+      ],
+      "in_shipped_map_vocab": {
+        "chainproof": false,
+        "ftps": false,
+        "dropbox": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_262",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "costed"
+      ],
+      "in_shipped_map_vocab": {
+        "costed": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_266",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "subrange",
+        "subranges",
+        "nell"
+      ],
+      "in_shipped_map_vocab": {
+        "subrange": false,
+        "subranges": false,
+        "nell": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_267",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "reselect"
+      ],
+      "in_shipped_map_vocab": {
+        "reselect": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_269",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "nordbank"
+      ],
+      "in_shipped_map_vocab": {
+        "nordbank": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_271",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "expirable"
+      ],
+      "in_shipped_map_vocab": {
+        "expirable": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_274",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "paralysis"
+      ],
+      "in_shipped_map_vocab": {
+        "paralysis": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_275",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "endtoend",
+        "smoketests"
+      ],
+      "in_shipped_map_vocab": {
+        "endtoend": false,
+        "smoketests": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_277",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "afflicted",
+        "aarav"
+      ],
+      "in_shipped_map_vocab": {
+        "afflicted": false,
+        "aarav": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_278",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "allback",
+        "rekeyed"
+      ],
+      "in_shipped_map_vocab": {
+        "allback": false,
+        "rekeyed": true
+      },
+      "guessable_fraction": 0.5,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_281",
+      "question_type": "semantic",
+      "distance": 5,
+      "winning_terms": [
+        "deficiency",
+        "fortnightly",
+        "novum",
+        "engaging",
+        "omission"
+      ],
+      "in_shipped_map_vocab": {
+        "deficiency": false,
+        "fortnightly": false,
+        "novum": false,
+        "engaging": false,
+        "omission": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_284",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "replenishes"
+      ],
+      "in_shipped_map_vocab": {
+        "replenishes": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_288",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "yyyyy"
+      ],
+      "in_shipped_map_vocab": {
+        "yyyyy": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_292",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "serviceable"
+      ],
+      "in_shipped_map_vocab": {
+        "serviceable": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_295",
+      "question_type": "semantic",
+      "distance": 3,
+      "winning_terms": [
+        "laser",
+        "trended",
+        "organizer"
+      ],
+      "in_shipped_map_vocab": {
+        "laser": false,
+        "trended": false,
+        "organizer": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_296",
+      "question_type": "semantic",
+      "distance": 8,
+      "winning_terms": [
+        "generat",
+        "frac",
+        "headings",
+        "handy",
+        "backoffs",
+        "ion",
+        "solo",
+        "averages"
+      ],
+      "in_shipped_map_vocab": {
+        "generat": false,
+        "frac": false,
+        "headings": false,
+        "handy": false,
+        "backoffs": false,
+        "ion": false,
+        "solo": false,
+        "averages": true
+      },
+      "guessable_fraction": 0.125,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_297",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "apexcompute"
+      ],
+      "in_shipped_map_vocab": {
+        "apexcompute": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_298",
+      "question_type": "semantic",
+      "distance": 1,
+      "winning_terms": [
+        "retailx"
+      ],
+      "in_shipped_map_vocab": {
+        "retailx": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_299",
+      "question_type": "semantic",
+      "distance": 2,
+      "winning_terms": [
+        "rebenchmark",
+        "pour"
+      ],
+      "in_shipped_map_vocab": {
+        "rebenchmark": false,
+        "pour": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_302",
+      "question_type": "intra_document_reasoning",
+      "distance": 1,
+      "winning_terms": [
+        "hould"
+      ],
+      "in_shipped_map_vocab": {
+        "hould": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_311",
+      "question_type": "intra_document_reasoning",
+      "distance": 1,
+      "winning_terms": [
+        "reconc"
+      ],
+      "in_shipped_map_vocab": {
+        "reconc": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_323",
+      "question_type": "intra_document_reasoning",
+      "distance": 3,
+      "winning_terms": [
+        "detective",
+        "aloud",
+        "guessing"
+      ],
+      "in_shipped_map_vocab": {
+        "detective": false,
+        "aloud": false,
+        "guessing": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_324",
+      "question_type": "intra_document_reasoning",
+      "distance": 1,
+      "winning_terms": [
+        "cutlist"
+      ],
+      "in_shipped_map_vocab": {
+        "cutlist": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_328",
+      "question_type": "intra_document_reasoning",
+      "distance": 1,
+      "winning_terms": [
+        "subproc"
+      ],
+      "in_shipped_map_vocab": {
+        "subproc": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_409",
+      "question_type": "constrained",
+      "distance": 1,
+      "winning_terms": [
+        "midproxy"
+      ],
+      "in_shipped_map_vocab": {
+        "midproxy": true
+      },
+      "guessable_fraction": 1.0,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_416",
+      "question_type": "conflicting_info",
+      "distance": 3,
+      "winning_terms": [
+        "cursoring",
+        "misconfigures",
+        "entrust"
+      ],
+      "in_shipped_map_vocab": {
+        "cursoring": false,
+        "misconfigures": false,
+        "entrust": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_427",
+      "question_type": "conflicting_info",
+      "distance": 5,
+      "winning_terms": [
+        "ational",
+        "useable",
+        "promp",
+        "unresolvable",
+        "giveaways"
+      ],
+      "in_shipped_map_vocab": {
+        "ational": false,
+        "useable": false,
+        "promp": false,
+        "unresolvable": false,
+        "giveaways": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_436",
+      "question_type": "completeness",
+      "distance": 1,
+      "winning_terms": [
+        "behaviorally"
+      ],
+      "in_shipped_map_vocab": {
+        "behaviorally": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    },
+    {
+      "needle": "erb_438",
+      "question_type": "completeness",
+      "distance": 5,
+      "winning_terms": [
+        "directing",
+        "disrupted",
+        "ineligible",
+        "emphasizing",
+        "jointly"
+      ],
+      "in_shipped_map_vocab": {
+        "directing": false,
+        "disrupted": false,
+        "ineligible": false,
+        "emphasizing": false,
+        "jointly": true
+      },
+      "guessable_fraction": 0.2,
+      "all_incidental": false
+    },
+    {
+      "needle": "erb_447",
+      "question_type": "completeness",
+      "distance": 3,
+      "winning_terms": [
+        "northstarbank",
+        "varga",
+        "mchen"
+      ],
+      "in_shipped_map_vocab": {
+        "northstarbank": false,
+        "varga": false,
+        "mchen": false
+      },
+      "guessable_fraction": 0.0,
+      "all_incidental": true
+    }
+  ]
+}

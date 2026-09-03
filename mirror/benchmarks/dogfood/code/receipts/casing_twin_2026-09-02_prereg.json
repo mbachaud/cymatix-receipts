@@ -1,0 +1,15 @@
+{
+  "probe": "casing_twin",
+  "written_before_any_result_was_read": true,
+  "question": "How much query-term overlap does real gold lose when its snake_case identifiers are rewritten to camelCase and nothing else changes?",
+  "reading": {
+    "CONFIRMED": "median loss >= 0.30 AND >= 50% of needles lose >= 30%",
+    "KILLED": "median loss < 0.10 -- the tokenizer is exonerated as a recall mechanism and a non-Python code bed loses its stated justification",
+    "GREY": "anything between"
+  },
+  "does_not_license": "a tokenize= change: it rebuilds genes_fts and changes which units are matched on every corpus, invalidating every BASELINES ranking receipt at once",
+  "query_side": "cymatix_context.accel.extract_query_signals + len(t) > 2",
+  "doc_side": "FTS5 unicode61 read from fts5vocab (not reimplemented)",
+  "corpus": "F:/Projects/mulocbench/corpus",
+  "bed_access": "NONE -- source files on disk only"
+}

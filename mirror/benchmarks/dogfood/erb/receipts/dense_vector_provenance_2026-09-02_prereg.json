@@ -1,0 +1,11 @@
+{
+  "probe": "dense_vector_provenance",
+  "written_before_any_result_was_read": true,
+  "question": "Does the current environment's BGEM3Codec reproduce the vectors stored in this bed's embedding_dense_v2?",
+  "decision_rule": {
+    "REPRODUCED": "median self-cosine >= 0.99 at some max_seq_length",
+    "SAME_MODEL_DIFFERENT_SETTINGS": "median self-cosine >= 0.85 but < 0.99, and far above the off-diagonal control -- genuine BGE-M3 written by a different backend or truncation",
+    "NOT_THIS_MODEL": "median self-cosine near the off-diagonal control -- the column was not written by BGE-M3 and must not be reused"
+  },
+  "bed_access": "read-only (mode=ro), no write, no pipeline run"
+}

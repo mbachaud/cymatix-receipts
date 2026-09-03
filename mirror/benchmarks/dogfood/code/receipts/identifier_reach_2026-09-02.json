@@ -1,0 +1,2128 @@
+{
+  "probe": "identifier_reach",
+  "stamp": "2026-09-02",
+  "prereg": "identifier_reach_2026-09-02_prereg.json",
+  "verdicts": {
+    "reach": "CONFIRMED",
+    "discrimination": "CONFIRMED"
+  },
+  "sqlite_version": "3.50.4",
+  "headline_by_arm": {
+    "prose_rich": {
+      "nl_reach_separator": 1.0,
+      "nl_reach_camel": 1.0,
+      "nl_reach_delta": 0.0,
+      "nl_mean_rank_separator": 7.0,
+      "nl_mean_rank_camel": 11.25,
+      "exact_reach_separator": 0.5,
+      "exact_reach_camel": 1.0
+    },
+    "identifier_only": {
+      "nl_reach_separator": 1.0,
+      "nl_reach_camel": 0.25,
+      "nl_reach_delta": 0.75,
+      "nl_mean_rank_separator": 6.83,
+      "nl_mean_rank_camel": 9.0,
+      "exact_reach_separator": 0.5,
+      "exact_reach_camel": 0.5
+    },
+    "prose_shared": {
+      "nl_reach_separator": 1.0,
+      "nl_reach_camel": 1.0,
+      "nl_reach_delta": 0.0,
+      "nl_mean_rank_separator": 5.83,
+      "nl_mean_rank_camel": 11.83,
+      "exact_reach_separator": 0.5,
+      "exact_reach_camel": 1.0
+    }
+  },
+  "identifier_index_tokens": {
+    "python:get_user_by_id": [
+      "by",
+      "get",
+      "id",
+      "user"
+    ],
+    "clojure:get-user-by-id": [
+      "by",
+      "get",
+      "id",
+      "user"
+    ],
+    "config:user.get.by.id": [
+      "by",
+      "get",
+      "id",
+      "user"
+    ],
+    "c:GET_USER_BY_ID": [
+      "by",
+      "get",
+      "id",
+      "user"
+    ],
+    "javascript:getUserById": [
+      "getuserbyid"
+    ],
+    "java:getUserById": [
+      "getuserbyid"
+    ],
+    "csharp:GetUserById": [
+      "getuserbyid"
+    ],
+    "go:GetUserByID": [
+      "getuserbyid"
+    ]
+  },
+  "mechanism": "unicode61 splits on non-alphanumerics and lowercases, so get_user_by_id / get-user-by-id / user.get.by.id / GET_USER_BY_ID all index as the separate tokens a natural-language query produces, while getUserById / GetUserById / GetUserByID index as one opaque token sharing no term with that query. The extractor cannot help: it lowercases before splitting and splits only on _, - and /, never on case.",
+  "reading": "Arm prose_rich shows the cost is ZERO for reach when a natural comment is present -- English prose carries the chunk. The identifier-only and prose-shared arms isolate what the comment was hiding.",
+  "why_it_matters": "MULocBench (108k genes, delivered .449) is the only code bed and is Python-heavy. Any camelCase corpus (Java, JS/TS, Go, C#) inherits whatever gap these arms measure, for a reason no ranking change can reach -- it is upstream of every lane.",
+  "scope_limits": [
+    "Closed synthetic corpus (8 gold + 10 siblings per arm): measures tokenizer behaviour, not ranking on a real bed.",
+    "Says nothing about how often real code queries are natural language versus pasted identifiers -- a real code bed answers that.",
+    "Comment density is the hidden variable: prose_rich is the well-commented extreme, identifier_only the uncommented extreme. Real corpora sit between them.",
+    "BM25 ranking over 18 documents is not the shipped funnel; the rank columns show separation, not delivered position."
+  ],
+  "rows": [
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 16,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 11,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 16,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 11,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 16,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 17,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 16,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 11,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_rich",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 4
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 6,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 9
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 11,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 15
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 6,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "identifier_only",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 8
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": false,
+      "rank": null,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_camel",
+      "query": "getUserById",
+      "extracted_terms": [
+        "getuserbyid",
+        "getuserbyids"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 4
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "exact_identifier_snake",
+      "query": "get_user_by_id",
+      "extracted_terms": [
+        "get_user_by_id",
+        "get_user_by_ids",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 14,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 3,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 2,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 14,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language",
+      "query": "how do I get a user by id",
+      "extracted_terms": [
+        "get",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 15,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 10,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 8,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 1,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 16,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "natural_language_2",
+      "query": "function that returns the user row for a user id",
+      "extracted_terms": [
+        "function",
+        "functions",
+        "return",
+        "returns",
+        "row",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "snake_case",
+      "language": "python",
+      "identifier": "get_user_by_id",
+      "reached": true,
+      "rank": 7,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "kebab-case",
+      "language": "clojure",
+      "identifier": "get-user-by-id",
+      "reached": true,
+      "rank": 5,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "dotted",
+      "language": "config",
+      "identifier": "user.get.by.id",
+      "reached": true,
+      "rank": 4,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "SCREAMING_SNAKE",
+      "language": "c",
+      "identifier": "GET_USER_BY_ID",
+      "reached": true,
+      "rank": 6,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "javascript",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 9,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "camelCase",
+      "language": "java",
+      "identifier": "getUserById",
+      "reached": true,
+      "rank": 12,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "PascalCase",
+      "language": "csharp",
+      "identifier": "GetUserById",
+      "reached": true,
+      "rank": 13,
+      "n_ranked": 18
+    },
+    {
+      "arm": "prose_shared",
+      "query_name": "sub_identifier",
+      "query": "user by id lookup",
+      "extracted_terms": [
+        "lookup",
+        "lookups",
+        "user",
+        "users"
+      ],
+      "convention": "MixedCaps",
+      "language": "go",
+      "identifier": "GetUserByID",
+      "reached": true,
+      "rank": 14,
+      "n_ranked": 18
+    }
+  ]
+}

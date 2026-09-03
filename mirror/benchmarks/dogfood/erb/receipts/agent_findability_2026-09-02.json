@@ -1,0 +1,802 @@
+{
+  "probe": "agent_findability",
+  "stamp": "2026-09-02",
+  "verdict": "AGENT_REACHES_THE_CRATER \u2014 the information is findable and ranking is the bottleneck",
+  "bed": "F:/tmp/erb_blob_v09x.db (947,531 genes)",
+  "bank": "v09x (questions, gold and class labels all from the v09x bank)",
+  "arms": {
+    "crater": {
+      "n": 24,
+      "hit_any_rank": 14,
+      "hit_rate": 0.583,
+      "hit_at_rank_1": 14,
+      "median_hit_rank": 1,
+      "claimed_found_answer": 21,
+      "claimed_and_correct": 14,
+      "claimed_but_wrong": 7,
+      "median_queries": 24
+    },
+    "control": {
+      "n": 12,
+      "hit_any_rank": 11,
+      "hit_rate": 0.917,
+      "hit_at_rank_1": 11,
+      "median_hit_rank": 1,
+      "claimed_found_answer": 11,
+      "claimed_and_correct": 11,
+      "claimed_but_wrong": 0,
+      "median_queries": 17
+    }
+  },
+  "leakage_check": {
+    "transcripts_scanned": true,
+    "agents_touching_forbidden_paths": {},
+    "clean": true
+  },
+  "scope_limits": [
+    "An agent has advantages the retriever does not: unlimited queries, the ability to read documents and reformulate, and no latency or token budget. This is an upper bound on findability, not a comparison at equal cost.",
+    "Gold is the ERB label set. An agent finding a DIFFERENT document that answers the question scores as a miss here -- read the `answer` field before concluding the agent failed.",
+    "n is a sample of the 61-needle crater, not the whole cohort."
+  ],
+  "rows": [
+    {
+      "needle": "erb_179",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "medium",
+      "queries_tried": 18,
+      "obstacle": "Not a retrieval failure \u2014 a disambiguation failure. The corpus contains many independently-named mechanisms that all satisfy every clause of the question (a new, named, opt-in rollout-system gate that runs a dry run using replayed/sampled production requests plus synthetic smoke sets, and blocks promotion until it passes). I found at least six credible ones within the first four queries and could not tell which is authoritative from content alone, because they are mutually consistent rather than contradictory: they read as parallel synthetic variations on one template, not as competing accounts of one system. Semantic search actively hurt here \u2014 every additional relevant-sounding query returned more equally-good candidates. What finally separated them was not meaning but a rare-phrase fingerprint (\"full commit traffic\", unique to one document), which is a lexical accident of how the question was worded rather than something an agent could rely on in general.",
+      "answer": "The mechanism is the **\"Turnstile\" safety lane** (the Turnstile controller / `rolloutPolicy.turnstile`), introduced in redwood PR #487651, \"Turnstile safety lane with snapshot quarantine and synthetic-smoke bridge for incremental ABs\" (author Maya Nguyen, merged 2026-02-18; gene_id d1a7308f71e8818b).\n\nThe PR describes it as \"a lightweight, auditable safety lane to introduce tiny A/B fractions and shadow rehearsals without risking full commit traffic\" \u2014 \"an opt-in side-path in the rollout runtime that holds traffic in a quarantine snapshot, runs synthetic-smoke rehearsals and an observation-driven gate before any traffic is promoted.\"\n\nIts three named parts map directly onto the question:\n- snapshot-quarantine \u2014 captures a deterministic request slice and KV snapshot at rollout start, kept isolated for replay/smoke (the \"replayed requests\")\n- synthetic-smoke-bridge \u2014 exercises the candidate with engineered synthetic prompts plus a small randomized live sample, recording diffs to a \"smoke ledger\" (the \"smoke checks\")\n- incremental-ab-toggle + auto-backout-agent \u2014 telemetry-confidence-driven fractional promotion, with automatic rollback when metric envelopes are exceeded or smoke-run asserts fail\n\nImplementation: `TurnstileController` in `orchestrator/`, config object `rolloutPolicy.turnstile` (fields snapshotWindowMs, smokeSetRef, initialFraction, confidenceThresholds, maxGraceRevertSecs), feature flag `rollout.turnstile.enabled`, runbook at docs/runbooks/turnstile.md. Release notes: \"Introduces an opt-in 'Turnstile' safety lane for rollouts that provides snapshot quarantine, synthetic smoke rehearsals, and automated rollback triggers... Intended for teams that need reproducible pre-promotion validation and deterministic replay.\"\n\nCaveat on confidence: the corpus contains several other separately-named mechanisms with nearly the same description, most notably \"Rehearsal Lanes\" (PR #431210, gene_id 2debdf954ffa5f67 \u2014 \"a new rollout primitive... deterministic dry-run cohorts... replay recent production sessions or run synthetic smoke vectors... rehearsal failures can be wired to block canary promotion\") and \"Rehearsal Runway\" (PR #214589, c27632ce43b00e83). Rehearsal Lanes matches the words \"dry run\" and \"smoke\" more literally; Turnstile matches \"full ... traffic\" uniquely. I ranked Turnstile first on the lexical-fingerprint evidence below.",
+      "method": "Cast wide with BM25 on the question's paraphrase, then pivoted to the corpus's own vocabulary. Early searches revealed the domain is Redwood's rollout runtime, and that the corpus is saturated with synthetically near-duplicated \"rollout safety gate\" documents (dozens of PRs/tickets each introducing a differently-named pre-promotion mechanism: Rehearsal Lanes, Rehearsal Runway, Chronos Rehearsal, Release Doorway, Gatekeeper harness, Chronicle, Holdpoint orchestrators, Reservoired shadow seeding, CECQ, Dry-run Rehearsal Scheduler).\n\nDiscrimination strategy: since every candidate matched \"replay\" + \"smoke\" + \"dry run\" + \"gate\", I used AND-searches on 4-5 terms to shortlist, then read full documents. That left three near-tied candidates and no way to adjudicate on semantics alone.\n\nThe tie was broken lexically. I hypothesised the question's unusual phrase \"full user traffic\" was a paraphrase of a rare corpus phrase, and ran two phrase probes:\n- phrase \"full user traffic\" -> 1 unrelated hit (a PM quantization rollout playbook)\n- phrase \"full commit traffic\" -> exactly 1 hit, gene_id d1a7308f71e8818b, the Turnstile safety lane PR\n\n\"commit traffic\" is idiosyncratic phrasing that appears nowhere else in a 947k-document corpus, and it sits in the same sentence as \"shadow rehearsals\", with the same document supplying snapshot-quarantine replay and the synthetic-smoke bridge. That is the strongest available evidence for which of the near-duplicates the question was generated from.\n\nRanking rationale: both chunks of PR #487651 first (main description chunk, then the release-notes/commits chunk), then the two strongest semantic rivals (Rehearsal Lanes, both chunks; Rehearsal Runway), then the remaining named pre-promotion gates in descending overlap.\n\n18 CLI calls, all read-only through agent_search_cli.py. No answer-key or receipts files were opened.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_188",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 16,
+      "obstacle": null,
+      "answer": "The private-installer (offline/on-prem) release pipeline exposes per-component provenance through an `origins` aggregate block added to the release index JSON (index schema v2), landed in redwood PR #87103, \"aggregate artifact origins into release index for private-installer\" (Maya Patel, merged 2025-11-12, branch feature/release-index-artifact-origins, linked ENG-7091 / PM-482 / SUP-2142).\n\nHow it works:\n- The release index now carries, per artifact, the source repository, the pipeline job id, the build commit, and optional SBOM/cosign references \u2014 so an operator can see exactly which build pipeline and commit produced each piece of the bundle.\n- A new origin-mapper microservice (Go) merges build metadata across the internal Buildkite / Jenkins job-run APIs and returns a normalized origin statement for an artifact digest; the private-installer indexer job calls it and cross-references artifact digests to upstream build metadata.\n- The release pipeline gained origin-stage and sign-origin steps that attach signed origin blobs to the TUF/manifest staging area; the indexer validates cosign signatures on those origin blobs and records the verification result in the index (unsigned third-party/mirrored artifacts are recorded as `verified: false`, with `source: mirror` plus a mirror-ref when upstream job metadata is unavailable).\n- Enforcement is opt-in: in review, Zoe asked for an operator flag to make failed verification a hard fail for critical releases, and the author added the indexer CLI flag `--enforce-origin-verification`, with recommended usage documented in the operator docs (docs/private-installer/origins.md). Without it, missing/unverifiable attestations are tolerated and merely recorded; with it, they fail the index step.\n- Schema v2 is backward compatible (tooling falls back to v1); rollout emitted v2 indexes to a staging bucket for two release cycles.",
+      "method": "Started with a wide BM25 search on the question's own words (offline installer / supply chain / provenance / attestation), which returned a large cluster of near-identical private-installer release-signing PRs and airgap bundle docs \u2014 classic distractor field. Switched to an AND query (`all provenance index installer`) to force the intersection of the three load-bearing concepts, which surfaced ~15 candidate PRs in redwood / redwood-private-installer. Read the most title-relevant ones in pairs (87103 artifact origins, 146233 release-metadata-generator, 90214 attestation gating, 38122 signed artifact index, 76321 release indexer, 30321 signed provenance, 66412 shard envelopes, 10483 staged indexer, 135412 compact index, 17634 delta index). PR 87103 matched the \"which build system and commit\" half exactly (an `origins` block with source repo, pipeline job id, build commit, plus an origin-mapper service with Buildkite/Jenkins adapters), but its first chunk read as fail-open (\"if present\", \"tolerate missing SBOM references\"). Ran `near` on that gene_id, which returned a second chunk containing the review conversation \u2014 where reviewer Zoe asks for an operator flag to make failed verification a hard fail and the author adds the indexer CLI flag `--enforce-origin-verification`. Confirmed uniqueness with a phrase search for \"enforce-origin-verification\" (1 hit) and an AND query on `origins indexer artifact` (2 hits, both chunks of the same PR).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_203",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 55,
+      "obstacle": "Not a failure, but the dominant difficulty was distractor density: the corpus contains well over a hundred HubSpot records that are mid-market, 'SaaS - product analytics', 201-1000 employees, interested in hosted_api + dedicated, with an in-app assistant use case and vpc deployment requirements. Every facet-style AND query returned 20-25 of them and BM25 relevance ordering was useless because the matching terms all live in the identical JSON header of each record. The discriminator that finally worked was tense/stage ('planning a short trial' vs 'already ran the trial'), which only exists in prose fields, so it had to be found by phrase-matching plan language rather than by facet filtering.",
+      "answer": "The account is **Tritium Loop Systems** (company_id TRIT-000342, tritiumloop.ai) \u2014 a mid-market B2B analytics SaaS doing \"product analytics + in-app assistant\", currently on OpenAI, \"looking to reduce unit cost and get predictable regional capacity,\" whose #1 non-functional requirement is prompt parity (\"same prompts, same outputs\"), and whose stated path is \"Hosted API as low-friction migration path, then move to Dedicated for committed throughput and data isolation\" (deployment_requirements: public_cloud, vpc).\n\nImmediate follow-up actions (the record's `next_step`):\n\"Start 2-week POC on Hosted API; deliver perf + cost report; follow-up Dedicated sizing call week of 2026-03-22.\"\n\nSupporting timeline entries in the same record:\n- 2026-03-15: POC kickoff planned (two-week Hosted API evaluation with provided prompt set)\n- 2026-03-22: Dedicated sizing follow-up call (pending POC outputs)\n\nPOC asks tied to those actions: 2-week Hosted API POC on a canonical prompt set, streaming parity check, function-call mapping, embedding/semantic-search baseline vs OpenAI, plus token accounting and a cost-delta report. Success criteria include <=5% metric drift vs baseline outputs, P95 latency parity or better, and >=15% per-token cost savings. Open blockers: prompt-parity regressions, legal review of Redwood TOS, budget alignment for the Dedicated commit. Owner: AE Priya Shah; SE Miguel Torres; budget owner VP Product Elena Park; customer wants POC results by end of March 2026 for a Q2 Dedicated decision.\n\nSource: F:\\tmp\\enterprise_rag_500k\\sources\\hubspot\\company-tritium-loop-systems.json (chunks e5e9e9cc7441b642 = header/notes/next_step, 55a5a10c06a7302d = timeline tail, technical requirements, POC success criteria, migration risks).",
+      "method": "Started with a wide BM25 search on the question's own wording, which surfaced a huge cluster of near-identical HubSpot company records (a synthetic 'Redwood Inference' CRM corpus with hundreds of mid-market product-analytics SaaS deals). Learned the corpus's own vocabulary from the first few reads: Hosted API = the shared service, Dedicated/Private + VPC = the network-isolated deployment, `next_step` = the immediate follow-up actions field, `industry: SaaS - product analytics`, `use_cases: in-app-assistant`, `deployment_requirements: vpc`. Because facet AND-queries still returned 20+ indistinguishable distractors, I pivoted to the one facet the question makes temporally distinctive: the trial is PLANNED, not finished. Phrase-probing plan language ('2-week hosted', 'two-week hosted', 'then move to Dedicated', 'start with Hosted API') cut through the distractors and surfaced company-tritium-loop-systems.json, whose next_step is literally 'Start 2-week POC on Hosted API; deliver perf + cost report; follow-up Dedicated sizing call week of 2026-03-22'. Confirmed the other three constraints in its notes (reduce unit cost = cheaper; prompt parity / 'same prompts, same outputs' = more consistent responses; 'then move to Dedicated for committed throughput and data isolation' + vpc = private network isolated deployment; 60% workload = interactive product assistant). Ranked remaining candidates by how many of the four constraints they satisfy, with Verdantly Product Intelligence second (same profile but its hosted POC had already started and its driver is PII redaction, not cost) and Auric Skyline third (2-week Hosted API POC, but latency-driven rather than cost-driven).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_217",
+      "arm": "crater",
+      "returned": 10,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 9,
+      "obstacle": "None \u2014 the target was found. The one near-failure worth recording: the question's literal wording (\"outage summary tile\", \"on call engineers\", \"safer model option\") appears nowhere in the corpus, which uses \"incident card\", \"SRE\", and \"fallback variant\". Query 1 in the question's own words returned zero useful hits and would have led into the large on-call-runbook cluster; the paraphrase into product vocabulary was what actually found it. There is also genuine near-miss density here \u2014 DES-73614, DES-99801, DES-652410 and ENG-420301 are all compact-card-for-private-cluster design tickets with pause/rollback actions, and only the model-variant action disambiguates DES-97431.",
+      "answer": "Linear issue DES-97431, \"Actionable incident cards + cost-aware rollout controls for private clusters\" (team: design, status In Review, creator Ariana Cho, assignee Marcus Lee, project \"Private Console 2.0\", release console-2025.02), gene_id c22160a18f951894, file sources/linear/design/DES-97431-actionable-incident-cards-cost-aware-rollout-controls.json.\n\nAcceptance criterion 2 states that the compact incident cards, which appear in the Private Cluster \"Status\" panel, each expose these primary actions:\n  1. Add to Canary\n  2. Pause Rollout\n  3. Trigger Fallback Variant\n  4. Open Debug Shell (link)\n  5. Mark Investigating\n\nThe two the question asks about: \"Pause Rollout\" stops a risky release, and \"Trigger Fallback Variant\" switches to a safer model option. Destructive actions require confirmation flows.\n\nSupporting detail from the same document: design notes say the card uses a \"compact 3-line summary layout\" to avoid vertical noise on the Status page, and that primary actions are contextual \u2014 \"if a rollout is active, show Pause/Abort; if model variant fallback exists, surface it with a confidence score.\" Decision 3 records that \"Trigger Fallback Variant\" will call the existing runtime API from ENG-2201 and that design includes a confirmation modal with rollback preview.",
+      "method": "Query 1 used the question's own wording (\"outage summary tile quick actions ... rollback safer model\") and returned mostly generic on-call/incident-response playbooks \u2014 a miss, but it showed the corpus has a large SRE/incident cluster that would drown the target. Query 2 re-cast the question into plausible enterprise-product vocabulary (\"VPC console incident summary card pause rollout fallback model quick actions\") and put four strong design-ticket candidates in the top 8, all with \"private clusters\" in the title. I read the three best (DES-73614, DES-97431, DES-99801). DES-73614 and DES-99801 both have compact private-cluster cards with pause/rollback affordances but no model-variant action; DES-97431 has the exact pair the question needs. I then confirmed uniqueness two ways: phrase \"Trigger Fallback Variant\" returns DES-97431 first with only unrelated Slack/PRD chatter behind it, and an AND query (private+cluster+incident+card+fallback+rollout) puts DES-97431 at rank 1. `near`/`src` showed the source file splits into exactly two chunks; the answer text lives in chunk c22160a18f951894, so that is ranked first and its sibling 38224e944bf46521 second.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_219",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 1,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 11,
+      "obstacle": null,
+      "answer": "Enabling slab coalescing with a longer block reuse age, plus backing off the lookahead/coalescing knobs, drove OOMs to zero.\n\nConcretely (Slack #eng-runtime thread 1919002468, \"KV prefetch + batch trigger block heuristic\"): repeated OOM spikes appeared on paged-attention when KV prefetch was on together with `batch_trigger: 8` on long-context workloads (config was `prefetch_window: 6`, `batch_trigger: 8`, `workspace_size_mb: 2048`, `kv_cache_policy: paged`, `allocator: default`, model redwood/open-6b, ~4096-token seqs). Ravi's diagnosis: prefetch_window 6 pre-allocates blocks for lookahead, and batch_trigger 8 coalesces many streams that each allocate ephemeral workspace slices, so compaction runs constantly, fragments memory, and the kernel falls back to naive attention.\n\nMike's mitigation, validated by Anna on a 200-request canary: reduce `prefetch_window` to 2 and `batch_trigger` to 4, and set `slab_coalesce=true` with `max_reuse_age=3` so freed blocks are repurposed instead of triggering compaction. Result: peak GPU memory down ~12%, compaction_events 14 -> 4, OOMs -> 0, at a cost of p50 +3 ms and p95 +18 ms (\"acceptable for this workload\") \u2014 i.e., the slight tail-latency increase the question refers to.",
+      "method": "Started with a wide BM25 search on the question's own wording (GPU/OOM/lookahead/coalescing/long context), which surfaced the serving-runtime neighbourhood (redwood repo, eng-runtime Slack, ENG tickets) but no exact hit. Then narrowed with AND queries on the corpus's own vocabulary: `all lookahead coalescing`, `all lookahead OOM`, and finally the three-way `all lookahead coalescing oom`, which returned only four documents. The fourth, 1919002468-kv-prefetch-batch-trigger-block-heuristic.json, was an eng-runtime thread whose opening line was literally \"repeated OOM spikes on paged-attn when KV prefetch is enabled together with batch_trigger=8 ... on long-context workloads\". `get` on gene 3499737785c1b35f read the full thread and confirmed the fix and the latency trade-off (OOMs -> 0, p50 +3ms, p95 +18ms). `near` showed the source is a single chunk, and two confirming AND queries (`slab_coalesce max_reuse_age`, `batch_trigger prefetch_window`) showed the config-key vocabulary is essentially unique to this document, so there is no competing authority. A near-miss I checked and rejected: the incident thread 4378901234-kv-window-threshold-regression-live-triage (genes b0b2bd44567e723a / 9d3caffed0eb968b), which rolls back batching.lookahead_ms=80 and sets prefetch.conservative_mode=true but only gets OOMs down to 0.7%, not eliminated, and says nothing about a tail-latency cost.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_223",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 6,
+      "obstacle": null,
+      "answer": "Examples in the public audit-log query documentation should use actor_id instead of user_email / a person's email address - and specifically the tokenized form, tokenized_actor_id. In the #docs thread reviewing docs PR #4199 (redwood-inference/docs), elaine writes: \"re: examples that reference 'user_email' we should switch to 'actor_id' to avoid showing emails in docs.\" sec_ari adds: \"good catch on actor_id ... We should call out tokenization: prefer tokenized_actor_id in examples,\" and jess-docs converts the examples accordingly - the shipped CLI and Go SDK snippets in the same thread filter on tokenized_actor_id (e.g. redwood audit export --filter 'tokenized_actor_id = \\\"tok_...\\\"'). The same thread also has compliance_rob asking that concrete PII be replaced with placeholders ({PERSONAL_ID}, {FINANCIAL_TOKEN}) and that the term \\\"PII\\\" be changed to \\\"sensitive_personal_data\\\", which matches the question's wording.",
+      "method": "Four searches. (1) A wide BM25 search on the question's paraphrase surfaced the docs-channel neighbourhood (de-id audit export wording, SOC2 audit export examples) but nothing on point. (2) An AND search was swamped by CRM company records - useless. (3) The winning move was re-querying with the corpus's own field vocabulary: a free-text search including the guessed field name 'actor_id' plus 'public docs audit log search example instead of email', which put 1876543210-audit-log-query-snippet-and-link-rot-fix.json at rank 1; a parallel exact-phrase search on 'actor_id' confirmed the field name is real corpus vocabulary. (4) get on that gene_id read the full thread, then near confirmed it is a 2-chunk source and that the answering exchange lives in the first chunk. Ordering: the answering chunk first, its sibling second, then adjacent audit-redaction/actor-id docs as fallbacks.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_225",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 12,
+      "obstacle": "None - the answer was located and read. The one friction point worth recording: the question's paraphrase (\"argument-buffer interleaving\", \"structured function-invocation outputs\", \"partial rollout\") shares almost no surface tokens with the corpus's phrasing (\"params interleaving\", \"tool call\", \"canary\"), so free-text BM25 on the question wording ranked three mechanically similar but wrong incidents above the true document. The gold doc only surfaced once I stopped querying the question's vocabulary and used an AND of incident-specific literals (the 10:00 timestamp plus tool_call/arguments).",
+      "answer": "The hotfix was a tiny lock guard added to the batching path in `serving/runtime/batcher.cc`, serializing per-request parameter writes:\n\n    std::scoped_lock lock(params_write_mutex);\n    // preserve param append order per-request\n\nContext (gene f6c9f01c40ad3130, source slack/support/1709123456-fn-params-interleaving-after-canary.json): AcmeCorp escalated after the 10:00 UTC canary (deploy id deploy-20240227-7, variant redwood-v1-chat@v1-quant-p3, rollout=10% of traffic). Symptom: tool calls came back with arguments in swapped order ({session_id, user_id} instead of {user_id, session_id}) or the CALL was omitted entirely; internal repro was 3/10 runs with swapped param order and 2/10 with the tool call dropped. Olga's hypothesis was a race in the continuous-batching path for short sequences where concurrent requests sharing a batching slot merged their param buffers (the 10:00 push was the request-mapper + batching kernel change at ts 1709118000). She pushed the scoped_lock guard \"to prevent buffer interleave\" alongside Dave's rollback of the request-mapper change on the canary group; the guard merged to the hotfix branch and deployed to the canary edge at 1709123860. 1000 synthetic calls showed no interleaving after the guard on the p3 quant nodes, and Acme confirmed no more missed tool calls after rollback + hotfix. Kevin then drafted a postmortem and added CI regression tests for param ordering plus end-to-end toolcall checks (tail chunk 426811ddd3a5efcf).",
+      "method": "Cast wide with the question's wording first, which found the right topical neighbourhood but three wrong incidents. Read them anyway to learn the corpus's own vocabulary: it says \"params interleaving\" / \"tool call\" / \"canary\", not \"argument-buffer interleaving\" / \"function-invocation\" / \"partial rollout\". Near-misses read and eliminated: 1e053149e5c9cb71 (args truncated at a stream chunk boundary by the json-slicer, 07:12Z deploy of redwood-runtime@v3.14.2), 03899256de954743 (KV-prefix mismatch breaking batch composition after a serializer v2 change), and d5f16d38f0a4ebbe/3672721d9a2d802b (merged JSON objects across requests from pooled output buffers reused during prefix-cache eviction, hotfix = per-request buffer tagging + end-of-stream sentinel) - that last one matches the mechanism and even the word \"interleaving\" closely enough to be a genuine trap, but its symptom is concatenated JSON objects, not swapped tool-call argument fields, and its timeline is 14:22Z/22:40Z. The decisive query was an AND of the three most incident-specific tokens: `all 10:00 tool_call arguments`, which returned the corpus's descriptively named source file 1709123456-fn-params-interleaving-after-canary.json. A `get` on it contained the full thread including the literal patch, and `near` confirmed only one sibling chunk (the postmortem tail).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_239",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 10,
+      "obstacle": null,
+      "answer": "Root cause: a race between quota epoch transitions and policy-cache refresh in the rate limiter, documented in ENG-158239 (\"Investigate & fix rate-policy jitter that starves tenant capacity during regional failovers\", P0, creator Maya Chen, assignee Luis Alvarez, project rate-limits-stability).\n\nDuring a regional failover window \u2014 or an orchestrator restart overlapping a proxy rolling restart \u2014 the rate limiter's burst evaluation enters a transient \"jitter\" state because the epoch anchors used by the proxy, the orchestrator, and the host-level rate controllers disagree. Reproduced in staging as a 200-800 ms window in which the orchestrator computes burst credits from previous-epoch metadata while the proxy uses a freshly persisted marker. The mismatch causes double-counting of tokens and premature eviction of tenant tickets.\n\nThe policy evaluator then treats missing/old anchors as \"no-burst\" and aggressively evicts in-flight capacity rather than deferring or reconciling, so tenants are throttled well beyond their configured quota (capacity starvation). Customer-visible symptom is multi-minute spikes of 429s plus some downstream 503s across hosted, dedicated and private deployments. Private deployments with slower KMS / commit-confirmation had a longer misalignment window.\n\nUnderlying defect: policy cache refresh is asynchronous and not versioned atomically with the token epoch transition. Diagnostic metrics are quota_epoch_skew, burst_claim_mismatch, tenant_admission_rejected.\n\nMitigation shipped: a 250-500 ms guard window at proxy and orchestrator to ignore epoch flips for immediate decisions (reduced severity, did not fix root cause). Long-term fix: atomic epoched policy reads (annotate policy cache entries with epoch_id so any admission decision reads a consistent epoch across proxy+orchestrator+host) plus idempotent burst-claim reconciliation that computes a conservative merged credit when an epoch mismatch is detected.",
+      "method": "Cast wide with a BM25 OR-search on the question's mechanism words (rate limit window boundary skew multi region failover 429 503). The first hit was already ENG-158239. Read the top candidates to learn the corpus's own vocabulary: it calls the time boundary an \"epoch anchor\" / \"last_reset_ts\" / \"window boundary alignment\", and calls the traffic gatekeeper a \"rate limiter\" split across \"proxy, orchestrator, and host-level rate controllers\". Re-queried with those terms.\n\nThe corpus is saturated with deliberate near-duplicate distractors on this exact theme (at least eight plausible tickets about epoch/window skew causing throttles), so the deciding move was conjunctive AND-search on the full clause set rather than ranked OR-search. `all failover 429 503 epoch` returns ENG-158239 as effectively the only rate-limiter ticket in the corpus carrying all four, and `all regional failover rate-limiter window disagree` returns it again. Rivals each drop a clause: ENG-781234 is a Private->Dedicated switchover (not multi-region) with 429s and no 503s; ENG-930001 has opaque 503s but explicitly \"no clear quota 429s\" and no region event; ENG-254321 is a regional autoscaling event with 429 storms only; SUP-914500 is geo failover with soft 429s only; SUP-1004444 is an epoch swap for a single dedicated tenant, 429s only.\n\nENG-158239 maps clause-for-clause: \"regional failover window\" and a multi-region staging repro = multi region switchover; \"multi-minute spikes of 429 and some downstream 503s\" = bursty too many requests plus occasional service unavailable; \"epoch anchors between proxy, orchestrator, and host-level rate controllers disagree\" = different parts of the traffic gatekeeper disagreeing briefly on the time boundary; \"burst evaluation\", \"burst credits\", \"quota_epoch_skew\" = quota calculations.\n\nRanking: the ENG-158239 head chunk first, its only sibling chunk (the long-term-fix continuation) second, then the near-miss tickets ordered by how many question clauses they satisfy.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_241",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 4,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": false,
+      "confidence": "low",
+      "queries_tried": 60,
+      "obstacle": "Two compounding failures, and they are separable. First, vocabulary: the question's distinctive noun phrase does not exist in the corpus in any near form \u2014 \"image security smoke\", \"image scan smoke test\", \"smoke test the image\" and \"publication smoke\" all return zero exact-phrase hits, and the one phrase that does exist, \"security smoke test\" (17 documents), appears exclusively in POC/onboarding/sales contexts with no marketplace, catalog, or listing document among them. So there is no lexical bridge from the question to the gold sentence. Second, and the reason I could not brute-force past that: the target neighbourhood is a massive near-duplicate cluster. There are 258 partner-call transcripts under fireflies/partners alone, of which ~80 are explicitly about getting a service listed in a cloud marketplace/catalog, plus several hundred more Slack partnerships threads on the same topic, and they are structurally interchangeable \u2014 most feature a security participant, container image scanning or SBOM requirements, a publish checklist, and dated action items. ~25 of them satisfy image AND smoke AND listing AND security simultaneously. Without the phrase-level anchor, every discriminator I tried (security-lead role label, \"cloud catalog\", \"preflight\", \"gate review\", \"pre-publication\") returned a plausible handful whose contents I read and disconfirmed, rather than converging. I would characterise this as \"the question's words never appear anywhere in the corpus\" as the primary cause, with \"many similar documents, no way to tell which is authoritative\" as the reason the fallback strategy also failed.",
+      "answer": null,
+      "method": "Started from the question's own words (image / security / smoke / publication / catalog / partner), then switched to corpus vocabulary. Mapped the source tree with `src`: the corpus stores calls under sources/fireflies/** with a dedicated sources/fireflies/partners/ folder (258 partner-call transcripts, date-prefixed filenames), Slack under sources/slack/partnerships/**, email under sources/gmail/**, and Drive docs under google_drive/shared_drives/go-to-market/**. Read one partner transcript in full to learn its schema (call_type, redwood_attendees, customer_attendees with role labels, next_steps, action_items with explicit \"due YYYY-MM-DD\"), which told me the answer would most likely live in an action_items line owned by someone labelled \"(Security Lead)\".\n\nI then read the CLI source to confirm `phrase` is a true FTS5 phrase query, and used exact-phrase probes as a presence/absence oracle. Results: \"image security smoke\" = 0 hits corpus-wide, \"image security smoke test\" = 0, \"image scan smoke test\" = 0, \"smoke test the image\" = 0, \"publication smoke\" = 0, \"pre-publication smoke\" = 0, \"security check on the image\" = 0, \"image security check\" = 0. The phrase \"security smoke test\" exists in exactly 17 documents, none of which is a marketplace/catalog/listing document (they are POC-ops, onboarding, and sales threads). \"security smoke\" adds ~40 more, again none marketplace-related.\n\nI then triangulated by intersecting two large sets: (a) documents containing image AND smoke AND listing AND security (~25 partner-call transcripts plus ~180 other docs, enumerated), and (b) documents containing the exact phrase \"security lead\" (used as an attendee role label in fireflies transcripts). The intersection yielded only two partner calls \u2014 2027-11-10-solarflare-hybrid-listing-gate-review (Nadia Chen, Security Lead) and 2028-03-09-silkrun-marketplace-onprem-connector-hackday (Owen Reed, Security Lead) \u2014 and I read both headers/action items in full. In both, the security lead's dated action item is SOC2/ISO artifact sharing and KMS policy, not an image security smoke test. I also read 2025-11-29-jupiter-systems-azure-listing-preflight-sync (Priya Menon, Security Lead; the closest structural match: an Azure Marketplace pre-publication \"preflight\" call with dated action items and a smoke run dated 2025-12-04 \u2014 but that smoke is a perf/KV-cache benchmark owned by the Redwood SE, not an image security test owned by the security lead), plus roughly a dozen Slack partnerships threads and Drive playbooks that pair a security participant with container image scanning and a publish checklist (marketplace-refkit-ci-smoke-slim, cloudlist-publisher-runbook-onboarding, refkit-quickstart-publish-check, marketplace-iac-onboarding-smokeplan, edgeconnect-marketplace-image-cert-and-arch-handoff, isv-connector-cert-sync, llamaindex-marketplace-preflight, cloud-catalog-security-packet-submission, marketplace-quickstart-approval-and-cert-sync, partner-shelf-launch-brief, partner-listing-security-and-asset-retirement-checklist, cloudvent-quickstart-smoke-handoff). None contains a security lead's target date for a pre-publication image security smoke test.\n\nThe returned gene_ids are ranked by how many of the question's constraints each document satisfies simultaneously (partner integration call > security-lead role present > catalog/listing publication context > container-image security scanning > dated commitments), not by any confirmed sighting of the answer.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_242",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "medium",
+      "queries_tried": 50,
+      "obstacle": "Not a vocabulary failure \u2014 a disambiguation failure. The corpus contains a deliberately dense cluster of at least ten near-identical serving-runtime documents (ENG-981234, ENG-12841, ENG-58210, ENG-10357, ENG-30311, ENG-117642, ENG-395001, ENG-305007, ENG-52741, ENG-88012, plus several merged redwood PRs) that all describe \"KV/attention-memory-aware batch formation to cut P95/P99 while holding P50 flat\", all dated Feb-Mar 2026, all status \"In Progress\", all with feature-flag canary rollouts and similar measured wins (P95 -15% to -20%, P99 -18% to -29%, median unchanged). No document uses the question's trigger phrasing (\"attention memory footprint abruptly shifted\"), and the two most defensible readings of that phrase point at different documents: KV-cache growth forcing GPU slab relocation (ENG-981234) versus an attention-kernel switch at batch-formation boundaries changing the scratchpad/KV footprint (sequence-mix synthesis log). I read a document that answers a question of exactly this shape, but I cannot certify it is the authoritative one rather than one of its nine twins.",
+      "answer": "Best candidate (gene 07ac34f1de49beda, Linear ENG-981234, \"Shared-KV Slab Fragmenter for Low-Jitter Streaming Batch Formation\", creator Maya Patel / assignee Liam Chen, project \"Streaming Inference Efficiency\"): the streaming batcher was coalescing chat turns into microbatches purely on time-window/token-count, which produced large P95 latency spikes whenever KV-cache growth forced GPU slab relocations or memory oversubscription. The change was a KV-cache-aware, memory-reservable batch-formation heuristic \u2014 the \"slab fragmenter\": (a) shard-aware microbatching that groups turns by KV-profile fingerprint (prefix-reuse ratio, length delta); (b) a per-batch GPU slab reservation window derived from session TTL and observed KV growth; (c) if a candidate batch's predicted slab exceeds the reservation, split it into fragments at safe token boundaries (turn/sentence) so each fragment's estimated KV working set fits the reservation and no kernel-level reallocation is triggered, with ordered streaming and incremental KV attach/detach across fragments; (d) hot-KV slot pinning into a reserved fast-slab region; (e) graceful spill of non-critical prefetched prefixes under pressure. Acceptance criterion is explicitly \"P50 latency remains unchanged; P95 improves by at least 15%\"; the 24h 10%-traffic A/B (2026-02-24) measured P95 down 18% on high-KV sessions (>2k entries), +12% GPU memory headroom, ~+3% scheduler CPU, fragment formation <200us per batch.\n\nStrong alternative reading (genes 122fc846e3ad952b / a824b032bdbe7ca4, Drive doc \"Sequence-mix throughput synthesis log\", owner Ravi Menon): the scheduler allowed attention-kernel switches (flash / paged / fused-op, each with a different memory footprint and scratchpad) at batch-formation boundaries; each handoff reinitialized scratchpad and KV-cache state while microbatches were inflight, giving p99 spikes to 1.2s during bursts. The change was windowed hysteresis in the kernel selector (hold T~200-500ms and N=3 batches before switching), which gave p50 12ms -> 12.5ms (nearly flat) and p99 210ms -> 63ms, with tail-event frequency down ~70% at 2-3% throughput cost. This one matches the \"median nearly flat\" numbers most literally, but the trigger is kernel-path churn rather than a memory-footprint change per se.",
+      "method": "Started with a wide BM25 pass on the question's literal concepts (GPU inference, latency spike, attention memory, batch formation) and immediately landed in a very dense serving-runtime neighbourhood (Linear ENG-*, redwood GitHub PRs, eng-runtime Slack, Drive serving-runtime docs). Because the question is a heavy paraphrase, I switched from question wording to result-shaped and cause-shaped corpus vocabulary: phrase probes for \"p50 unchanged\", \"median unchanged\", \"p50 flat\" to find documents that report exactly the tail-down/median-flat signature; phrase probes for the causal mechanism (\"slab relocation\", \"workspace reallocation\", \"scratchpad reinit\", \"kv footprint\", \"attention footprint\", \"step change\", \"abrupt change\", \"footprint discontinuity\"); AND-queries combining {attention, footprint, batch, p50, p99}; and `src` listings to enumerate the file-naming clusters (batch-formation, slab, kv-reserve). I then read the ~8 best hits in full and compared them clause-by-clause against the question. ENG-981234 is the only document I found in which every clause of the question has a direct counterpart: \"merges many request streams\" = streaming batcher coalescing turns into microbatches; \"attention memory footprint abruptly shifted\" = KV cache growth forcing GPU slab relocations; \"during batch formation\" = the batch-formation heuristic being changed; \"worst case latency spikes ... median nearly flat\" = the literal acceptance criterion \"P50 latency remains unchanged; P95 latency improves by at least 15%\", with a measured -18% P95. The sequence-mix synthesis log is the runner-up because its numbers (p50 12 -> 12.5ms, p99 210 -> 63ms) are the single best fit to \"median nearly flat\", with the shift happening literally at batch-formation boundaries. I could not find any document containing the question's own trigger phrasing, so I could not break the tie from the corpus itself. Ranking below the top four is by how many clauses each near-duplicate ticket satisfies. I used only the agent_search_cli.py tool and read no answer-key or docs/ files.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_247",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "medium",
+      "queries_tried": 37,
+      "obstacle": "Not a failure, but the real difficulty was authority disambiguation, not vocabulary: the corpus contains at least six mutually inconsistent versions of this rule (recruiter-to-+10% / People Partner to +20%; VP at >12% and People+CFO at >22%; VP+People Lead at >10%; comp committee at >12%; Finance director's director at >20%; TA Lead at midpoint+5%, Director at +8%), spread across email threads from different years and orgs, with no single ratified policy page that supersedes them. I picked the one whose threshold and \"strong candidate\" framing match the question most exactly, but a grader keyed to a different thread would score this as a near miss.",
+      "answer": "Redwood Inference's offer-banding rules (the H2-2026 \"Offer banding & geo anchor operational matrix\", owned by Talent / People Ops) set the OFFER CEILING at midpoint + 20%, explicitly reserved for \"candidate premium / strong fit\" (later restated as \"exceptional candidates\"). The approval tiers are:\n\n- Offer <= midpoint + 10% for IC1-IC5: RECRUITER-approved (auto-approval, no escalation).\n- Offer above midpoint + 10% and up to midpoint + 20%: requires PEOPLE PARTNER sign-off. This is the tier a ~20%-above-midpoint offer for a strong candidate lands in.\n- Director+ level roles: People Lead approval PLUS Finance sign-off (regardless of tier).\n- Michael Grant's final decision message adds the audit condition: recruiters may keep using ceiling = midpoint + 20% for exceptional candidates, but ANY discretionary uplift exceeding midpoint + 10% must be entered in the weekly Hires log and flagged for People Ops review. Discretionary geo uplifts (Bay Area +7%, APAC adjustments) must likewise be logged and reviewed weekly by People Ops.\n\nSo: the People Partner signs it off (People Lead + Finance if the role is Director+), and the exception must be logged in the weekly Hires log for People Ops review. Going ABOVE midpoint + 20% is outside the published ceiling entirely and becomes a band exception.\n\nCaveat on authority: the corpus contains several overlapping, differently-calibrated thresholds, so if the question was drawn from a different document the intended approver may differ. The nearest alternatives are: (a) Markus Klein (Director, Finance Operations) in the Priya Sharma offer thread \u2014 \"if the candidate requests >20% above midpoint, route to my director for sign-off\"; (b) the 2026-08 anchoring policy decision record \u2014 \"VP signoff at >12% above midpoint; People+CFO signoff at >22%\" (20% would be VP sign-off); (c) the comp-band-specs workstream \u2014 \"any offer > 10% above midpoint requires VP + People Lead signoff\"; (d) the remote-hiring localization thread \u2014 \">12% above midpoint requires comp committee sign-off\".",
+      "method": "Started from the question's own concepts (offer above midpoint, approval) with BM25, then switched to the corpus's vocabulary once it appeared: \"midpoint\", \"band exception\", \"signoff\", \"offer ceiling\", \"People Partner\". Phrase search on \"20% above midpoint\" plus AND-searches (midpoint + 20% + approval / recruiter / exceptional; midpoint + CFO + signoff) narrowed to a handful of policy-bearing threads. Read each candidate in full with `get`, then used `near` to pull sibling chunks of the winning source file, which contained the final decision message confirming the rule. The decisive document is F:\\tmp\\enterprise_rag_500k\\sources\\gmail\\michael_grant\\20260714-offer-bands-operational-matrix.json (chunks bc35d77a74649a3d and 4fb12d59669e6e2e): it is the only document that pairs the exact ~20%-above-midpoint threshold WITH the \"strong fit / exceptional candidate\" framing WITH a named approver, and it was also the top BM25 hit for a natural-language restatement of the question.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_249",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "medium",
+      "queries_tried": 60,
+      "obstacle": "Not a retrieval failure \u2014 a disambiguation one. I found documents that answer the question; I cannot be certain which is authoritative. This corpus has no canonical product/pricing spec for the Dedicated GPU plan. The cooldown default lives only inside individual customer sales threads, and each thread quotes a different number to a different account: 15 minutes (Helio Health), 60 minutes (Mosaic Retail), 10 minutes (Atlas Health), 4 weeks between burst activations (Acme Cloud), 2 hours for the mid-tier surge band (Finnotech). The question's two identifying clues point at different threads: \"treated as part of the same billable overage event\" is a near-verbatim lift from the 15-minute Helio doc (the only place in 947k documents using \"part of the same burst\"/\"one billable burst window\"), while \"prepaid overage credits\" better describes the 60-minute Mosaic doc, whose \"Spike Slab (pool of credit hours)\" is the corpus's clearest instance of prepaid credits drawn down on overage. Without an authoritative spec to arbitrate, the tie-break is a judgment call about which half of the question paraphrases the source sentence; I weighted the mechanism clause over the plan descriptor because \"billable\" is a direct lexical lift.",
+      "answer": "15 minutes.\n\nFrom `gmail/connor_obrien/20260612-burst-surge-commit-questions.json` (gene 95a5abf113e37853), Connor O'Brien's \"Summary of behavior (defaults)\" for Redwood Inference's Dedicated reserved-pool + burst add-on:\n\n\"Cooldown window = default 15 minutes. If two spikes happen within the cooldown, we consider them part of the same burst for metering. If spikes are separated by >cooldown, they are billed as separate bursts. Cooldown is configurable at contract time.\"\n\nThe sibling chunk (c27fcdcc905eb0a0) restates it as \"multiple spikes within 15 mi[nutes] merge into one billable burst window.\" The plan in question pairs a reserved GPU pool with either a prepaid flat burst bundle (a monthly bolt-on covering N burst-hours, overage at 1.8x) or metered surge. In this same thread Redwood's Head of Sales instructs the rep to set the cooldown to 30 minutes for this specific account, and the customer asks for 30 minutes contractually \u2014 confirming 15 minutes is the default that is being negotiated away from.\n\nCAVEAT \u2014 competing candidate: `gmail/marissa_cole/20270322-spike-absorber-slab-cooldown-clarify.json` (8890ee8d1442d812 / 183137d0775994f3) describes a Dedicated commit plus a \"Spike Slab (pool of credit hours)\" \u2014 an even more literal match for \"prepaid overage credits\" \u2014 and states \"Standard cooldown window: 60 minutes by default. While in cooldown, re-spikes ... are absorbed by the slab without re-triggering a full new allocation,\" restated as \"any re-scale within 60 minutes will try to re-use slab credits and not double-count allocation steps.\" If the intended source document is that one, the answer is 60 minutes. A third, weaker candidate (debd979712c881eb, Atlas Health) pairs \"Flexible burst credits: prepaid credit bucket\" with \"Cooldown defaults: 10 minutes,\" but there the cooldown is a scale-down guardrail, not a billing-merge window.",
+      "method": "Opened with a wide BM25 search on the question's own wording, which surfaced the corpus's real vocabulary: the vendor is \"Redwood Inference,\" the product is \"Dedicated\" (reserved GPU pools), and spikes above the pool are called \"burst\" or \"surge,\" absorbed by a prepaid \"slab\" / \"bundle\" / \"credit bucket.\" The question's words \"overage event\" and \"spike window\" are near-absent as phrases, so I stopped querying the question's language and started querying the mechanism instead.\n\nThe breakthrough was guessing the sentence shape a sales email would use rather than the concept name. Phrase probes on \"one billable\" and \"part of the same burst\" both returned exactly one source file \u2014 the Helio Health burst/cooldown thread \u2014 which states the default outright. `near` then pulled the sibling chunk with the \"merge into one billable burst window\" restatement and the internal negotiating note setting this account to 30 minutes, which corroborates 15 as the standing default.\n\nAlong the way I enumerated the competing neighbourhood deliberately (phrase \"cooldown window\", \"spike credits\", \"overage credits\", AND-searches on prepaid/credits/spike/cooldown) so I could tell whether the corpus has one answer or several. It has several: at least three Dedicated-plan sales threads quote a different default cooldown (15 / 60 / 10 minutes) to different customers, because each is a per-deal negotiation, not a published plan spec.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_250",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 1,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": false,
+      "confidence": "low",
+      "queries_tried": 52,
+      "obstacle": "Distractor saturation, not vocabulary failure. The corpus contains hundreds of structurally identical HubSpot pre-sales records \u2014 mid-market SaaS, 201-1000 employees, evaluating embeddings + semantic search \u2014 and dozens of them state exactly the pair of targets the question asks about (a nightly/overnight batch-embedding window, and a p95 latency for top-10 retrieval) with different numbers. The question's one distinguishing detail, \"internal docs and support chats\", never appears verbatim anywhere; the records instead say things like \"support articles + product docs\", \"KB articles + support transcripts\", \"product docs, support logs, and KB\", or \"customer docs\", none of which is a unique fingerprint. So I found many equally plausible documents and had no way to tell which one is authoritative \u2014 a discrimination failure, not a retrieval failure.",
+      "answer": "I could not isolate a single authoritative document. The corpus neighbourhood is F:\\tmp\\enterprise_rag_500k\\sources\\hubspot\\company-*.json \u2014 HubSpot CRM records for prospects of \"Redwood Inference\", most of them mid_market SaaS companies evaluating embeddings + semantic search, each carrying pre-sales notes with a nightly/overnight batch-embedding target and a p95 top-10 retrieval latency target. Several fit the question's shape almost exactly, with different numbers:\n\n- Stonewell Ontree Analytics (00b0bb7d12c8ed0d, mid-market B2B SaaS): \"want to embed 100k docs overnight (3-6 hour window)\"; \"Semantic search latency target: 50-150ms p95 for top-10 retrieval in production.\" This is the closest lexical match to the question's wording (\"overnight\", \"top-10\").\n- CopperCove Vectors (43062ad6c7acc8a5, mid-market SaaS knowledge management): \"Sustained batch embedding throughput: ingest 120k docs in <8 hours (target ~4k docs/hour)\"; \"End-to-end semantic search latency (query -> top-10): <200ms P95\"; overnight batch of ~120k docs.\n- SynerFlow Cognify (e096b2dbe6fa2255, mid-market SaaS): \"nightly batch to finish <4 hours for 2M new/updated rows; real-time search p95 <100ms for top-10; 200 qps sustained.\"\n- FluxFrame Insights (0567ef73e1845387 / ea008c6e278c746f, mid-market SaaS \"knowledge search for support & product docs\"): nightly batch ~50k docs in a 2-hour nightly index window, embedding throughput 25-35/sec, \"p95 <120ms for top-10\".\n- Ivyline SemanticWorks (c09a531517db4094): \"Batch: nightly windows to process 500k legacy docs; target >=50k embeddings/hour\"; \"Realtime search: p95 <120ms for top-10 retrieval.\"\n\nIf forced to answer, my best single guess is Stonewell Ontree Analytics: embed 100k docs overnight inside a 3-6 hour window, and 50-150ms p95 for top-10 retrieval. But I did not verify that this is the record the question was written from, and I would not assert it as the answer.",
+      "method": "Started with BM25 free-text on the question's own words (useless \u2014 every term is common in this corpus). Read one hubspot company record and learned the corpus's real shape: F:\\tmp\\enterprise_rag_500k\\sources\\{hubspot,slack,gmail,fireflies,drive,jira}\\..., where \"pre-sales notes\" = the notes/requirements_summary/poc_scope fields of company-<name>.json CRM records for a vendor called Redwood Inference. Switched to AND-queries over the corpus's own vocabulary rather than the question's: overnight/nightly + vectorization + embeddings + top-10 + latency, plus phrase searches (\"overnight window\", \"nightly index\", \"top-10 results\", \"support chats\", \"chat transcripts\", \"internal docs\", \"AI-powered search\", \"vectorization run\"). Also mined the structured use_case enum tokens the records use (batch_vectorization, knowledge_base_search, internal_knowledge_search, doc_search) to slice the company set, then cross-ANDed those against nightly/overnight/top-10. Opened ~20 candidate records in full and used `near` to pull sibling chunks so I could read the company profile (account_tier, industry, use_case_summary) together with the numeric targets. Narrowed to a family of mid-market SaaS records that each state both requested targets; could not discriminate further.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_256",
+      "arm": "crater",
+      "returned": 3,
+      "gold_n": 3,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 7,
+      "obstacle": null,
+      "answer": "~486 million tokens per month (combined prompt + completion) at the Month-3 steady state.\n\nSource: \"VectorHealth \u2014 Implementation handoff: model pin recommendations & sizing\" (Marcus Lin, Redwood Inference, 2027-02-15), in the thread \"VectorHealth \u2014 Model shortlist & token profile (handoff)\" for VectorHealth's conversational healthcare chat / clinical-triage rollout (deal VH-2397).\n\nStated assumptions behind the number:\n- MAU ramp: Month 1 = 3k, Month 2 = 8k, Month 3 = 15k (steady-state assumption), supplied by Alyssa Turner (Product Lead, Conversational UX, VectorHealth).\n- Weekly active sessions ~25% of MAU; avg 3.8 queries per session.\n- Conservative token assumptions: avg prompt 120 tokens, avg completion 150 tokens (mix of short answers plus occasional 400-600 token summaries).\n- Resulting volume: ~1.8M requests/month => ~486M tokens/month combined prompt+completion (\u2248270 tokens/request \u00d7 1.8M). Breakdowns by query type were in the attached token_profile_v1.xlsx.\n\nBen Carter was asked to build the SOW draft using this Month-3 burn as the baseline.",
+      "method": "Started with a wide BM25 search on the question's own wording (\"healthcare chat monthly active users token consumption projection\") \u2014 that surfaced the right genre of document (sales/onboarding token-sizing email threads at \"Redwood Inference\") but the wrong accounts (Atlas Health at 3,000 clinicians / 20.25M tokens, Optima Health at 20k-60k MAU / 1.44B tokens). Reading those two taught me the corpus's own vocabulary: these are Gmail threads titled \"model shortlist ... token projection / traffic estimate\", they state a MAU ramp and then a per-request token arithmetic. I then pivoted from the question's paraphrase (\"about fifteen thousand monthly active users\") to the corpus's literal notation and ran two phrase queries: \"15,000 MAU\" (no matches) and \"15k MAU\" (9 hits). Hit #9 was 20270215-vectorhealth-modeling-handoff.json, whose snippet already showed \"If VectorHealth expects 15k MAU...\". `get` on that chunk gave the exact match: Month1=3k, Month2=8k, Month3=15k, avg prompt 120 / completion 150 tokens, avg 3.8 queries/session, \"~1.8M requests/month => ~486M tokens/month\". I confirmed with `near` (3 sibling chunks; the first chunk carries the 15k MAU ask and the session/prompt assumptions, so it is a legitimate secondary gold candidate) and with a phrase search on \"486M tokens\", which returned exactly one chunk in the whole 947k corpus \u2014 no competing restatement, so no authority ambiguity. 7 CLI calls total.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_261",
+      "arm": "crater",
+      "returned": 6,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 10,
+      "obstacle": null,
+      "answer": "SUP-329476 \u2014 \"Per-request audit sampling proof and SIEM forwarder integrity request for PCI scope\" (Jira, customer-support), customer ApexBanking, tier enterprise, environment prod:eu-west, tenant_id=apex-4521, created 2026-03-12, reporter Aisha Romero, assignee Liam Patel, P1/Sev1, components audit-delivery / siem-ingest / forwarder / hsm, labels pci, signed-manifest, per-request-sample, eu-data.\n\nThe customer ran an on-demand Console export for 2026-03-01T00:00:00Z to 2026-03-03T23:59:59Z (export UUID export-20260301-72-apex4521) delivered via s3-transfer -> ftps -> their customer SFTP endpoint, and saw ~0.7% fewer events in the delivered NDJSON than their token-metered usage predicted. They need cryptographic proof that per-request audit events for interactive generation API calls reached their SIEM without loss or re-ordering, because it blocks internal compliance sign-off for a production rollout in PCI scope.\n\nThe requested proof package is three parts:\n(A) an HSM-attested / signed sample bundle covering the 72-hour window, preserving per-request request_id and hashed user_id fields (customer later required SHA256-with-tenant-salt masked user identifiers plus a redacted hashed_user_id -> pseudonym_id mapping file);\n(B) a chainproof mapping request_id -> delivered object path + per-batch HMAC;\n(C) verification steps the customer can run locally \u2014 a short python/bash script and runbook to validate the HMAC chain and confirm event counts.\nAcceptance criteria also require a resume token per file in the bundle, key-version metadata (KEK v3 signed manifests from 2026-03-01T00:00:00Z, KEK v2 retired 2026-02-28) with cert chain, and a reconcile report if events are genuinely missing (source redaction vs forwarder drop vs delivery-retry failure).\n\nInvestigation so far: forwarder lambda had 2 transient 5xx retries on 2026-03-01 03:12Z; Kafka consumer-group lag spiked 2026-03-01T03:10-03:15Z on partition p-7 (carries generation events for apex-4521), ~1.2k messages delayed but later consumed and forwarded in batch-20260301-03:17:xx; no hard ack failures; tenant policy mask_payment_data: true can reduce line count vs raw token-meter counts. Preliminary hypothesis is re-batching plus dedup of system telemetry, not actual loss. Referenced runbooks: EXPORT-PLAYBOOK and HSM-ATTESTATION-RUNBOOK on redwood.internal/confluence. Related commits: forwarder 7f3d9a2, exports a12bc34.",
+      "method": "Two wide BM25 probes translated the question's paraphrases into the corpus's own vocabulary: \"tamper-evident proof package\" -> signed/attested manifest + chainproof; \"hardware-backed signed index\" -> HSM-attested manifest with per-batch HMACs; \"file-drop security tool\" -> SIEM ingest over s3-transfer/ftps/SFTP; \"per-call audit records\" -> per-request audit events. The second probe surfaced SUP-329476 at rank 1 on the strength of \"per-request audit sampling proof and SIEM forwarder integrity request for PCI scope\". Reading both chunks confirmed every constraint independently: eu-west production rollout, ApexBanking in PCI scope (card-industry regulated bank), the 2026-03-01..2026-03-03 72-hour Console Activity export, SFTP delivery target, \"without loss or re-ordering\", HSM/attested manifest with key-version metadata, and explicit acceptance criterion (C) for locally runnable verification steps. Uniqueness was then established three ways: `near` and `src SUP-329476` both return exactly these two chunks (so the source file is fully enumerated); a search for \"ApexBanking apex-4521\" returns only this file, meaning the customer identity is unique in the 947k corpus; and an AND search on pci+hsm+manifest+export ranked it first, with the nearest decoys (SUP-673902 per-tenant SIEM replay forensic index, SUP-773900 Kafka replay PCI evidence package for a QSA) sharing the crypto machinery but not the bank, the region, the 3-day window, or the file-drop delivery path. The two linked tickets named in the record, SUP-214990 (proof-of-exclusion delta CSV) and SUP-612842 (SAML SAR evidence handoff), were checked via `src` and are unrelated subjects. Ranking puts the header/description chunk first since it carries the full A/B/C ask and all the qualifying attributes, the comments/next-steps chunk second, then the topical near-misses as low-probability backups.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_262",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 45,
+      "obstacle": null,
+      "answer": "Target: reduce 99.9th-percentile token latency (worst-case per-token latency) for latency-sensitive routes by 35-50%, while losing no more than 10% aggregate throughput on heavy mixed workloads. The acceptance criterion pins the gate at \">= 35%\" improvement in 99.9th token latency for the latency-tagged route under a mixed synthetic workload (short chat probe + long prefill), with P99/P99.9 on throughput-only benchmarks degrading by <10% vs baseline.\n\nSource: Linear ticket ENG-23109, \"Graceful batching backpressure and latency isolation for continuous prefill/decode\" (team engineering, P1, created 2026-03-10, creator Asha Patel, assignee Marco Ruiz, project runtime-performance-batching, release runtime-1.24, parent ENG-21456, deps ENG-22670/ENG-19708). File: F:\\tmp\\enterprise_rag_500k\\sources\\linear\\engineering\\ENG-23109-batching-backpressure-latency-isolation.json\n\nVerbatim from the description: \"under certain request mixes (short chat turns mixed with long-prefills) we see tail latency spikes and unfair slowdown of latency-sensitive routes... The goal is to reduce 99.9th token latency for latency-sensitive routes by 35-50% without losing >10% aggregate throughput on heavy mixed workloads.\"",
+      "method": "Cast wide with BM25 on the question's own wording and immediately learned the corpus vocabulary: it is a synthetic enterprise corpus for \"Redwood Inference\", where this topic lives as Linear tickets about prefill/decode scheduling, continuous batching, tail latency, TTFT/TPOT. The hazard was that the corpus contains roughly a hundred near-duplicate scheduler tickets, each with a slightly different goal line (p99 decode -20% / throughput 5%, p99 -25% / 6%, p95 decode -25% / 7%, p99 decode -40% / 2%, and so on). Prose querying could not discriminate among them.\n\nThe breakthrough was discovering that the tokenizer preserves literal percent tokens, so \"10%\" works as a term inside the `all` (AND) mode. I then used the question's one hard numeric constraint - throughput loss under about ten percent - as a filter rather than as prose, ANDing \"10%\" against p99 / decode / prefill / interactive / throughput / loss / reduce. That collapsed the candidate set from ~100 to 8, and the first read of ENG-23109 hit the exact sentence. I also tried ANDing \"10%\" together with guessed reduction figures (\"30%\", \"40%\") to exploit the fact that the needle sentence contains two numbers; that was useful for ranking even though the true figure was a 35-50% range.\n\nAlong the way I ruled out several strong decoys by reading them in full: ENG-887776 TokenFlow Divider (>=25% p99 for latency-tier, throughput degradation <=6%, acceptance \"no >10% throughput loss\"), ENG-34678 hybrid priority queue (p99 decode >=20%, throughput within 5%), ENG-22670 prefill-decode orchestrator (p99 decode >=40%, throughput regression <=2%), ENG-9534 (p99 decode >=30%, <=5%), ENG-219307 (P95 >=25%, throughput loss <5%), ENG-554321 (P99 >=25%, <5%), ENG-51674 (p95 decode >=25%, tokens/sec drop <=7%), and the entire ENG-2417 mixed-workload-scheduler initiative plus PM-612 (p95 TTFT >=15%, throughput guardrail 3-5%), which matches the \"short/long prompt mix\" framing but targets TTFT/e2e p95, not per-token latency, and uses a much tighter throughput budget.\n\nENG-23109 is the unique document pairing all three elements of the question: the short-chat-plus-long-prefill mix, a worst-case PER-TOKEN metric (99.9th token latency, not TTFT and not end-to-end), and the ~10% aggregate throughput bound.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_266",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": false,
+      "confidence": "low",
+      "queries_tried": 40,
+      "obstacle": "Not vocabulary absence -- saturation. The corpus contains what looks like hundreds of deliberately near-identical synthetic documents describing exactly this mechanism (mixed/skewed sequence lengths -> transient workspace/scratch growth -> attention kernel selector demotes flash to cuBLASLt/Triton/paged/generic -> p99 regression), spread across slack threads, drive lab notes, PRs and Linear tickets. Every query I ran returned 12-20 fresh plausible candidates and I could not tell which was authoritative. Two specific things blocked disambiguation: (1) the question's ranking clause (\"biggest reduction in tail latency\") never co-occurs with the mechanism -- phrase searches for \"biggest win\", \"biggest reduction\", \"largest reduction\", \"biggest improvement\", \"largest single\" all landed in unrelated docs, so I had no lexical handle on the one doc that ranks fixes; (2) \"load test\" in this corpus is almost entirely sales/POC scheduling language (gmail, fireflies), while the engineering docs say \"perf sweep\", \"loadgen\", \"microbench\", \"canary\", \"nightly run\" -- so the question's framing actively steers away from the right neighbourhood. Also directional: nearly every doc I read describes deliberately switching TO the slower kernel to avoid OOM, which is the inverse of the question's \"prevented the switch\", making the fine-grained match harder rather than easier.",
+      "answer": null,
+      "method": "Cast wide with BM25 on the question's mechanism (GPU serving, tail latency, attention kernel fallback, scratch/workspace growth), then switched to the corpus's own vocabulary once it surfaced: \"kernel chooser\", \"kernel selector\", \"transient headroom\", \"workspace_exceeded\", \"kernel_routing_reason\", \"fallback_rate\", \"pre_reserve_mb\", \"flash -> cuBLASLt/Triton/paged/sdpa\". Used phrase() to test candidate answer-shapes (chunked prefill, varlen/unpadded, length bucketing, hysteresis, sticky kernel, pre-reserve, workspace inflation, transient scratch) and all() conjunctions to narrow (skew+kernel+latency+scratch, pad+variance+kernel+p99, mixed+lengths+p99+flash+reserve, loadgen+skew+kernel+p99). Used src() to map the corpus layout (slack/eng-runtime, google_drive/shared_drives/engineering/serving-runtime, github/redwood PRs, linear ENG tickets, confluence/eng-serving-runtime) and near() to pull sibling chunks of the most promising doc. Read 14 full documents in the dense serving-runtime cluster.\n\nClosest match found: adaptive-kernel-degradation-hypotheses (Sophia Chen, shared_drives/engineering/serving-runtime). It matches the workload (80% seq<=64 interleaved with 20% seq>=1024, i.e. highly uneven prompt lengths), matches the failure mode (scheduler flip-flops between flash_attn_fwd_v2 and paged_attn_main, with workspace/alloc churn at the switch points), and it is the only doc I found that ranks changes by measured tail impact: kernel hysteresis (5s stability window) cut p99 from 230ms to 95ms, and naive workspace pooling (single pooled workspace sized max(flash, paged)) took it further to ~60ms. If the gold is this doc, the answer is one of those two -- most likely kernel-selection hysteresis by magnitude, or workspace pooling if \"due to temporary scratch memory growth\" is the operative clause. But the doc attributes the switching to transient sequence-length distribution rather than to scratch growth per se, so I will not claim it.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_271",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 28,
+      "obstacle": "Not a failure, but the real hazard was near-duplicate authority: the corpus contains at least a dozen overlapping \"consolidated company-wide ops policy\" Confluence pages, all in policies-and-process, all owned by finance-legal or people-ops, all published, that quote different approval SLAs (24 business hours, 48 hours, 2 business days, 72 hours, 5 business days). Plain BM25 on the question's wording ranks several of these equally, and reading any one of them in isolation yields a confident wrong answer. The tie was only broken by matching the question's exact lexical frame (\"target\" + \"routine approvals\") as a literal phrase, which isolated a single document; a semantic-only retriever with no exact-phrase capability would likely have returned the 48-hour variant instead.",
+      "answer": "72 business hours. Redwood Inference's canonical company-wide operations page (\"Ops Orchestra: Company-wide Access, Change, Data, Procurement, Vendor, and Travel Procedures\", policies-and-process space, owner_team finance-legal, last updated 2026-09-12) states in its \"Owners and SLAs\" header block: \"Target SLA for routine approvals: 72 business hours\" \u2014 with \"Emergency/expedited approvals: same-day (see Emergency change section)\". This is the cross-cutting default that spans access, change, data, procurement, vendor, and travel requests. Note the corpus contains a family of overlapping consolidated ops policy pages that give DIFFERENT numbers for narrower request classes (48 hours for routine access requests in ops-access-change-travel-guidance-2025 and integrated-ops-playbook-for-small-teams-2029; 72 hours for routine manager access approval in ops-playbook-access-change-data-procurement-2025; 24 business hours in unified-authz-procurement-playbook-2026; 2 business days default approver SLA in authorization-and-travel-matrix-templates-2026), so 72 business hours is the answer specifically for the stated company-wide \"target ... routine approvals\" default.",
+      "method": "Cast wide with BM25 on the question's own words, which immediately surfaced the corpus's vocabulary: this is a synthetic \"Redwood Inference\" enterprise, and the relevant neighbourhood is the Confluence space `policies-and-process`, which holds a large family of near-duplicate consolidated ops-policy pages (authorization matrices, ops playbooks, permissions handbooks). Phrase search on \"approval SLA\" found that family. Reading four of them (authorization-and-travel-matrix-templates-2026, ops-playbook-access-change-data-procurement-2025, permissions-and-change-orchestration-handbook-2025, central-policy-index-and-core-processes-2025) produced CONFLICTING numbers (2 business days, 72 hours, 48 hours, 5 business days), so the real work was disambiguation rather than retrieval. I re-queried using the question's distinctive words as literal corpus phrases: `phrase \"for routine requests\"` and then `phrase \"routine approvals\"`. The latter returned only five documents, one of which \u2014 ops-orchestra-procedures-2026.json \u2014 carries the line \"Target SLA for routine approvals: 72 business hours\" in a top-level \"Owners and SLAs\" block. I then confirmed uniqueness two ways: `phrase \"Target SLA for routine approvals\"` returns exactly one gene (bd88ae13703d9d0b), and `phrase \"72 business hours\"` returns no other internal-policy document (all other hits are customer-facing email threads about legal redline turnaround). The winning document also self-describes as the \"canonical, company-wide procedures\" covering access, change, data, procurement, vendor and travel, which matches the question's \"across operational requests\" scope, whereas the 48-hour and 2-business-day figures are scoped to access requests specifically. `near` on the winner confirmed it is the head chunk of a 3-chunk source, so the answer sits in the chunk returned. Ranked the remaining candidates by how close their stated default is to a company-wide routine-approval target.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_278",
+      "arm": "crater",
+      "returned": 8,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 6,
+      "obstacle": null,
+      "answer": "2026-03-24, 02:00-04:00 UTC.\n\nFrom Jira ticket INT-892311 (\"Phased access ramp for contractor->employee conversion with device entitlement hold\", internal-support, reporter Ava Chen, assignee Jordan Lee, created 2026-03-10). The contractor converts to full-time with an official start date of 2026-03-22.\n\nRequested change #2 in the description: \"Schedule KMS rekey and rotate service-account keys during off-hours (window requested 2026-03-24 02:00-04:00 UTC).\"\n\nConfirmed in the comments: \"2026-03-11 09:45 - Omar Ruiz (SRE): KMS rekey window ok. Will run in maintenance window 2026-03-24 02:00-04:00 UTC; will exercise rollback plan in staging first.\"\n\nThe automation accounts in question are the service accounts svc-ci-build and svc-data-sync (svc-data-sync is used by the nightly ETL, so rotation needed coordinated downtime). Source file: F:\\tmp\\enterprise_rag_500k\\sources\\jira\\internal-support\\INT-892311-phased-access-ramp-contractor-to-employee-device-hold.json",
+      "method": "One wide BM25 `search` combining the question's concepts (rotate/rekey/secrets/automation accounts/contractor/full time/transition/overnight/window/March) returned the answer document at rank 1. I then translated the question's wording into the corpus's own vocabulary -- \"KMS rekey\", \"rotate service-account keys\", \"off-hours/maintenance window\", \"contractor->employee conversion\" -- and read the top two contractor-conversion tickets in full with `get`. That separated the decoy from the hit: INT-39876 (rank 8) also covers a contractor-to-full-time merge with service-account key rotation, but its window is 2026-03-15 09:00 PT, which is neither overnight nor late March. INT-892311 states the window twice (description item 2 and Omar Ruiz's SRE comment), which is a strong internal corroboration signal. I used `near` to pull the sibling chunk of the answer doc so both chunks of the source file are ranked, and a `phrase` search on the exact string \"2026-03-24 02:00-04:00 UTC\" returned only chunk 76a536bd614d093d as a genuine phrase hit, confirming there is no competing authoritative document. 6 CLI calls total.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_281",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "medium",
+      "queries_tried": 36,
+      "obstacle": "Not a retrieval failure so much as a disambiguation failure: the corpus contains a deliberately confusable cluster of 40+ near-identical SUP-* tickets (\"pin lost during canary/rollout -> served by another variant\"), many of them dedicated-tier healthcare customers in us-east (Lexico Health, NimbusHealth, Brightline Health, Lumina Health, BrightHealth AI, Acme Health, Satori Health, NexaHealth, Lyra Health, BrightHealthAI). Every facet in the question is shared by several of them, and the one facet that should have been decisive \u2014 \"experimental\" \u2014 does not appear literally in any of these incidents (verified by chunk-level AND probes), so I had to guess that \"experimental fallback\" paraphrases \"canary variant\". That guess, plus \"traffic surge\" vs. the ticket's \"sudden traffic shift / hot traffic\", is where my remaining uncertainty sits: SUP-40720 wins on customer identity (healthcare + dedicated) while SUP-9311 wins on the literal trigger phrasing (\"traffic surge\", \"Dedicated cluster with reserved capacity\") but has a non-healthcare customer. Also worth flagging: the search index is chunk-level, so multi-term AND queries silently miss documents whose terms are split across chunks \u2014 that cost me several early queries.",
+      "answer": "Best match: SUP-40720 \"Session stickiness reset under sudden traffic shift during canary weight adjustment\" (customer Lexico Health, customer_tier=dedicated, environment \"prod | us-east\", Dedicated pool #lexico-dedicated-3, medical QA workflow).\n\nWhy pinned conversations got served by the canary: during a canary weight ramp for rw-chat-7b-quant (10% -> 25% over 3 minutes) the dedicated pool came under scheduling pressure \u2014 the autoscaler triggered a reallocation and a spot eviction caused a short host-rebalancing window, so the primary host set began returning overload errors (503). The routing layer has a latency-optimized fast fallback path: on serve_host unavailability it calls select_fallback(host_group) and returns WITHOUT evaluating the session-pin cookie / session-affinity header. So for requests that hit that fast path, the explicit session pin (rw-instruct-13b-v1, set via session.pin) was simply never consulted, and canary-weight policy selected the canary model instead \u2014 router traces show \"select_route session_id=ab12cd pinned_model=rw-instruct-13b-v1 decision=CANARY weight=12% reason=weight-adjustment\". Roughly 120 active sessions saw mixed-model responses mid-conversation, plus KV-cache misses and ~+180 ms median latency. Mitigation: canary ramp paused at 12% and session-affinity enforcement forced in routing config for lexicod-pool-3; permanent fix PR-5123 makes session-affinity checks mandatory on all fallback paths, plus a rollout pre-check that blocks weight increases while the dedicated pool is rebalancing.\n\nClose alternative (same failure shape, explicitly titled \"traffic surge\", \"Dedicated cluster with reserved capacity\", prod-us-east, but customer is NovaChat Inc., tier=enterprise, so not healthcare): SUP-9311 \u2014 during a ~1200 QPS spike the autoscaler spawned new router instances; routers created within ~120s of the scale event loaded the default rollout policy (which included the canary) before the pinned-route config delta had been applied/acknowledged, so pin state was still 'pending' and canary_policy_eval won despite pin_header_present=true.",
+      "method": "Cast wide with BM25 on the question's own words, discovered the corpus vocabulary (Redwood Inference; \"model pin\"/\"version anchor\"/\"session affinity\"; \"canary variant\"; Jira SUP-* customer-support tickets with structured fields customer_company / customer_tier / environment / affected_models / affected_regions). Found a very large confusable cluster (40+ near-identical SUP tickets, all \"pin lost during canary/rollout -> fallback to some other variant\"), so I discriminated on metadata rather than prose: I used `all <ticket-number> <term>` probes (the index is chunk-level, so this only tests co-occurrence within the metadata chunk) and then `get` to read customer_company / customer_tier / environment for ~25 candidates. That isolated the dedicated-tier healthcare customers in us-east: Lexico Health, NimbusHealth, Brightline Health, Lumina Health, BrightHealth AI, Acme Health, Satori Health, NexaHealth, Lyra Health, BrightHealthAI. Cross-cutting that set with \"traffic surge\" as the trigger and \"served by the canary/new variant despite the pin\" as the symptom left SUP-40720 as the best fit, with SUP-9311 a close structural twin. Note: the literal word \"experimental\" appears nowhere in any SUP incident (verified with several chunk-level AND probes); I read it as the question-writer's paraphrase of \"canary variant\".",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_288",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 14,
+      "obstacle": null,
+      "answer": "The incident is SUP-83012 \u2014 \"Spectrum Health: repeated streaming truncation causing SLO penalties and billing disputes\" (P0/Sev0, Major Incident, 2026-03-10 11:55\u201313:40 UTC, related_incident_id INC-2026-03-10-2311). Environment: prod-us-east, customer enterprise dedicated pool on reserved dGPU cluster rp-dedicated-43, region us-east-1, models redwood-3-large / redwood-3-quantized, SSE/chunked streaming chat endpoint.\n\nRoot cause: a regression in edge-proxy PR 207 changed connection *drain* semantics during quota soft-throttle events. If the throttler window opened and closed within a live streaming session, the proxy closed the upstream connection prematurely \u2014 before the serving-runtime flushed the final chunk \u2014 so streams ended without a terminator and the last chunk was dropped (\"streamer: connection-reset-by-peer after last-chunk 200ms\"; client-side \"stream closed before completion\").\n\nTwo contributing factors: (2) KV-cache invalidations from a rolling deploy of the cache-invalidation service raised latency on some requests, which increased the chance of hitting a soft-throttle window (serving-runtime WARN \"kv-cache-invalidated mid-session ...; emitting partial-reply\"); and (3) the customer's aggressive client-side automated retries amplified the window \u2014 roughly 12k affected streams at ~500 reqs/min peak \u2014 so partial completions were re-charged and usage/billing spiked.\n\nFix: reverted the edge-proxy drain-behavior regression (edge-proxy PR 209, canary 13:20 UTC, prod 13:50 UTC), plus serving-runtime PR 4621 for graceful flush on close, and soft-throttle thresholds adjusted for the affected dedicated pool. Truncation returned to \u22640.02% baseline. Remediation: provisional billing credit for the spike window and a temporary waiver of retry counts pending final token reconciliation. Follow-ups included changing soft-throttle policy to prefer token slowdown over connection close for streaming, and a stream.partial-rate alert for dedicated pools.",
+      "method": "Started with a wide BM25 OR-query using the question's paraphrased concepts (streaming/truncated/mid-stream/dedicated/billing/double-counted/retries), which immediately revealed the corpus's own vocabulary: \"streaming truncation\", \"dedicated pool\", \"prod-us-east\", \"us-east-1\", SUP-/ENG-/PR- file naming, and the fictional vendor \"Redwood\". Then ran AND-queries to intersect the four discriminating facets at once (dedicated AND us-east-1 AND truncation AND billing; dedicated AND truncation AND billing AND 2026-03). SUP-83012 surfaced in every intersection and was the only March-2026 doc combining a us-east dedicated pool, mid-stream truncation, and retry-driven billing surge. Read the head chunk via `get`, pulled the rest of the source with `near` (3 chunks total), and read chunks 2 and 3 for the root cause and resolution. Confirmed uniqueness with a `phrase` search on the incident id INC-2026-03-10-2311 (single hit) and a `src` check for the linked SUP-82999 (absent from the corpus), ruling out a companion post-incident doc.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_296",
+      "arm": "crater",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 24,
+      "obstacle": null,
+      "answer": "Document: \"mini-canary-solo-notebook\" (owner Morgan Ellis, team eng-release, google_drive/users/mini-canary-solo-notebook-rp.json) \u2014 a very small, solo mini-canary for KV-cache tuning (kv.default_ttl + kv.prefix_eviction alpha flag) on the hosted-api runtime, single region us-west1, cohort client_id prefix test-mini-2026, traffic 0.05% -> 0.5% -> 2% over ~4 hours.\n\nFirst-hour pass/fail thresholds (stated as \"Quick goals (success criteria)\"):\n- Error rate: no 5xx spike greater than 0.1% relative in the first 60 minutes.\n- Tail latency: P99 latency change must be no more than +10 ms versus baseline for the pinned cohort.\n- (Third, non-asked criterion: cache hit ratio must rise at least 3 percentage points for warm requests in the cohort.)\n\nThe same pair is restated in the post-deploy validation section (0-4h) as: \"Metric: rolling 1h window p99 within +10ms, 5xx <= +0.1%\" (plus golden-test suite pass rate >= 99.5%). Rollback if breached is a single call: route_rule.remove rc-mini-2026-1, or image revert to runtime:sha-2480.",
+      "method": "Cast wide on the concept (KV cache eviction + canary + thresholds), read the corpus's own vocabulary, then chased the \"small/tiny experiment\" framing. Generic searches kept returning big SRE guardrail pages (hosted-api-tail-latency-guardrails, eviction-throttle-dynconfig notes) that had rollback triggers but no first-hour numbers. The break came from a rare-term BM25 search on canary size vocabulary (\"microcanary mini-canary nanocanary micro-experiment ...\"), which surfaced users/mini-canary-solo-notebook-rp.json. Reading it (gene b4ea6ce5ebe1f115) gave the exact success criteria, and its sibling chunk (1a1317bfb84448f7, found via near/same source) repeats the same numbers as a rolling 1h post-deploy gate.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_297",
+      "arm": "crater",
+      "returned": 7,
+      "gold_n": 4,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 40,
+      "obstacle": null,
+      "answer": "2\u20134 weeks. On the Tethys Systems SI/Channel intro discovery call (2025-03-27), Sofia Alvarez (Tethys) asked for the provisioning time for a Private deployment in their EU region given EU data-residency needs, and Jonas Reed (Redwood SE) answered: \"For Private VPC in EU, provisioning is typically 2\u20134 weeks depending on customer infra readiness and KMS/HSM setup.\" (Hosted in an EU region is immediate by contrast.) The internal follow-up notes for the same call (tethys-si-channel-discovery-notes-v2.json) later revised the figure upward: \"EU Private (VPC) lead time updated: plan for 3\u20135 weeks (was previously stated as 2\u20134) depending on peering/private link approvals and key management setup.\" So: told 2\u20134 weeks on the call; revised to 3\u20135 weeks in the v2 notes.",
+      "method": "Cast wide with BM25 on the question's own wording first (mostly noise: dozens of near-identical deployment/residency threads). Switched to AND-queries on distinctive co-occurring tokens. Two things unlocked it: (1) noticing the CLI drops 2-letter tokens like \"EU\", so I had to reach for corpus-native surrogates (residency, Frankfurt, eu-central-1, europe); (2) `all resell operate isolated`, which is almost a verbatim echo of the question's \"resells and operates\" \u2014 that returned only 2 docs and pointed me at the partner/channel-discovery neighbourhood in fireflies/partners. The decisive query was `all customer-managed lead weeks partner`, which surfaced the Google Drive notes doc tethys-si-channel-discovery-notes-v2.json. Its summary says verbatim \"Tethys wants to resell and operate Redwood inference for enterprise customers\" and its key_updates section carries \"EU Private (VPC) lead time updated: plan for 3\u20135 weeks (was previously stated as 2\u20134)\". That doc's meeting_reference field (tethys-20250327-01) named the source call, and `near` on the fireflies transcript gave the chunk with the actual spoken answer (2\u20134 weeks). File-path descriptiveness plus `near`/`src` were far more useful than free-text search once I had one foothold.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_299",
+      "arm": "crater",
+      "returned": 6,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 4,
+      "obstacle": null,
+      "answer": "The centralized batching path \u2014 \"core-tiling-multiplex\" \u2014 was cheapest on the mid-thread (medium-length) workload at $0.062 per 1k tokens.\n\nSource: \"Dispatch surface playback: edge vs core econ memo\" (Maya Patel, product-optimize, created 2026-05-15, last modified 2026-05-20), path shared_drives/product/optimize/dispatch-surface-playback-memo-may15-2026.\n\nMid-thread workload (60% 128-256 tok, 40% 256-512 tok), 10k requests per config:\n\n  edge-dispatch-prefetch   p50 72ms  | p95 180ms | p99 420ms  | 1,350 tok/s | $0.145 /1k\n  core-tiling-multiplex    p50 120ms | p95 350ms | p99 1,150ms| 3,800 tok/s | $0.062 /1k\n  hybrid-evict             p50 95ms  | p95 240ms | p99 470ms  | 2,200 tok/s | $0.085 /1k\n\nMapping to the question's wording: \"nearby low latency serving path\" = edge-dispatch-prefetch (nearest edge cell, 16-token prefetch, int8 quantized T4-equivalent nodes); \"centralized high throughput batching path\" = core-tiling-multiplex (central core fleet, 50ms batching window, fp16 on A100x2); \"starts local then hands off when the response gets longer\" = hybrid-evict (routes initial tokens to edge with prefetch 32, then stitches/resumes on core if session length > 256 tokens or a long tail is predicted).\n\nNote the memo's own TL;DR is slightly softer than its table \u2014 it says hybrid-evict gives \"solid $/1k for mid-length responses\" \u2014 but the raw annotated numbers for the mid-thread workload show core-tiling-multiplex as the outright cheapest at $0.062, with hybrid at $0.085 buying better p99 (470ms vs 1,150ms). For context, on the short-burst workload core was also cheapest at $0.058, and on long-pour the memo says core \"dominates in $/1k\" while edge becomes prohibitively expensive above 512-token outputs.",
+      "method": "Single wide BM25 search combining the question's paraphrased concepts with the enterprise vocabulary I guessed the corpus would use (\"cost per 1k tokens edge inference centralized batching hybrid latency routing\"). Hit 3 in that first result set was titled \"Dispatch surface playback: edge vs core econ memo\" \u2014 an exact structural match for the question's three-way comparison. I read a decoy first (b2148813fa33d3d8, an edge-to-core serving architecture draft with no cost table), then read be6be72d61e871ed, which contained the full mid-thread $/1k table. `near` confirmed the source has exactly two chunks and I read the second (d2da25cff632b04a) to verify no later section revised the numbers \u2014 it did not; it only adds the CDF buckets, caveats and next steps. Four CLI calls total. The question's paraphrase mapped cleanly onto the memo's own config names: \"nearby low latency\" -> edge-dispatch-prefetch, \"centralized high throughput batching\" -> core-tiling-multiplex (50ms batching window), \"starts local then hands off when the response gets longer\" -> hybrid-evict (stitch to core when session length > 256 tokens).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_191",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 7,
+      "obstacle": null,
+      "answer": "GPU inference runtime = the `redwood` repo's serving runtime. The change was PR #21807, \"dynamic-scratch-reuse-and-fanout-aware-kernel-selection-to-reduce-peak-gpu-workspace\" (author Maya Chen, opened 2026-02-18, merged 2026-02-23, branch feature/dynamic-scratch-fanout-kernels).\n\nIt introduced two complementary mechanisms; the one that targets the worst-case transient spike is DYNAMIC SCRATCH REUSE: a runtime scratch allocator (new `runtime/scratch_manager.{cpp,h}`) with a lock-free free-list per size-class and lifetime-tagging. It tracks short-lived temp regions by lifetime buckets and reuses buffers across operators within the same execution frame, instead of each kernel allocating its own per-op temp buffer. The scratch allocation path was hooked into the kernel interface and the critical kernels -- attention, rotary, layernorm -- were modified to request scratch via the manager. The kernel interface signature was extended with an optional `scratch_token` that defaults to nullptr, so it is backward compatible.\n\nThe second, complementary mechanism is FANOUT-AWARE KERNEL SELECTION: a fanout heuristic in `runtime/kernel_selector.cpp` that uses observed Q*K fanout counters (collected per model) to choose between tiled/packed attention kernels and low-memory fused attention kernels, trading compute for lower transient memory. A compatibility path keeps models pinned to older kernel profiles on the legacy selector.\n\nMotivation stated in the PR: high peak GPU workspace for mixed-sequence inference (short+long requests) and multi-query fanout workloads, where existing arena tuning plus static activation checkpointing still left (1) transient scratch buffer spikes from kernels that allocate per-op temp buffers and (2) suboptimal kernel choices as operator fanout changes.\n\nMeasured results: on A100-40GB with a GPT-2 style 1B-param model and a mixed workload (50% seq_len=32, 50% seq_len=1024), peak workspace dropped from 16.8GB to 12.1GB (~28% reduction). For high-fanout Q=16 tests the transient peak fell ~34% when the fanout-aware kernel was selected. Cost: median latency for long requests rose ~2.3% in the worst-case knob-on scenario where the low-memory kernel is chosen; a policy-level config flag exposes the latency-vs-memory preference.\n\nRollout: gated behind `runtime.scratch_reuse.enabled=false` by default in the PR, with a phased plan (non-production clusters for 2 weeks, then opt-in for Dedicated clusters under memory pressure, then flip the default after a week of metrics). The kernel heuristic is additive and disableable via `runtime.kernel_selector.fanout_heuristic=false`. New telemetry: `runtime.scratch_reuse.alloc_reuse_ratio`, `kernel_selector.fanout_decision_count`, `memory.scratch_peak_by_model`. Benchmarks added under benchmark-lab/ including `fanout_memory_profile.py` and an e2e memory test simulating interleaved short/long requests. The PR deliberately did not change global arena sizing heuristics; that was deferred to follow-up ENG-1919.",
+      "method": "1) Broad BM25 search on the question's literal wording (GPU inference runtime temporary device memory spike attention) surfaced the right neighbourhood -- a dense cluster of `redwood` repo PRs and serving-runtime Drive docs -- but no single winner. 2) Read a promising Slack thread (712b65415e5f60e5, persistent attention workspace pool) which was topically adjacent but about TP inference footprint, not short/long interleaving. 3) Second broad search on synthesized vocabulary (shared scratch workspace arena preallocated peak transient allocation mixed batch) revealed the corpus has ~8 near-identical PR titles all about reducing peak GPU workspace -- a deliberate distractor field. 4) Switched to an AND query on the discriminating dimension the distractors lacked: `all interleaved short long requests workspace attention`. PR #21807 ranked first. 5) `get c3aed0bc45f5b296` confirmed an exact semantic match on every clause of the question: mixed-sequence inference (short+long requests), transient scratch buffer spikes from kernels that allocate per-op temp buffers, attention/rotary/layernorm kernels rewired to a lifetime-bucketed scratch manager, and an e2e test simulating interleaved short/long requests. 6) `near` showed the source file chunks into exactly two genes; c3aed0bc45f5b296 carries the answer, 1a9324d0c09579ac is the tail. 7) `phrase \\\"per-op temp buffers\\\"` returned exactly ONE document corpus-wide -- that same gene -- which settled authoritativeness against the distractor cluster. Ranked the two chunks of PR #21807 first, then the near-miss workspace/scratch PRs in rough order of semantic proximity (PR #26789 kernel workspace pool is the strongest decoy: it also replaces per-kernel scratch buffers and touches attention kernels, but frames the problem as continuous batching and KV residency rather than short/long interleaving).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_194",
+      "arm": "control",
+      "returned": 2,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 50,
+      "obstacle": null,
+      "answer": "$31.6 per 1M tokens. From \"Throughput-Latency Phase Portrait \u2014 mini benchmark heuristic\" (owner Claire Nguyen, shared_drives/engineering/console-and-tooling, created_at 2029-05-14, \"Date: May 2029, quick lab runs in eu-west-1 dedicated test pool (sandbox)\"). Hardware profiles were H100x1 (80GB), A100x1 (40GB), A10Gx1 (24GB); models rw-7b-fp16, rw-34b-int8, rw-70b-fp16. Under workload \"3) long-generate (avg 300 tokens)\" the line reads: \"rw-70b-fp16 on A100 (fastpath): throughput 430 tok/s, p50 310ms, p90 820ms, p99 2.7s, $/1M tok = $31.6\". rw-70b is the largest model in the set and A100x1 is the 40GB single-GPU profile; \"fastpath\" is the corpus's term for the aggressive single-request, no-batching low-latency mode (the batched comparator, \"window50ms\", is $23.8/1M tok).",
+      "method": "Cast wide with BM25 and AND-searches on the question's own wording (40GB, sandbox, microbench, eu-west, cost per 1M tokens, batch size 1, 300 output tokens) \u2014 all failed, because the corpus does not use any of those phrasings. src searches on \"microbench\" and \"2029-05\" narrowed the neighbourhood but the target document has neither a date nor \"microbench\" in its path. The break came from a deliberately noisy BM25 OR bag (\"sandbox microbench eu-west 2029 estimated dollars per million tokens single GPU 40GB batch one long generation 300 tokens\"): the ranked snippet for gene 0c1d7213454b72ec surfaced the corpus's actual vocabulary \u2014 \"$/1M tok\", \"long-generate (avg 300 tokens)\", \"fastpath\" vs \"window50ms\", and model names rw-7b / rw-34b / rw-70b. `get` on that chunk gave the cost line; `get` on the head chunk (30664e909e7fb4f2) confirmed the provenance (\"Date: May 2029, quick lab runs in eu-west-1 dedicated test pool (sandbox)\") and the hardware ladder that identifies A100x1 as the 40GB profile. `near` confirmed the source file has exactly these two chunks, so the answer chunk is ranked first.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_201",
+      "arm": "control",
+      "returned": 2,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 19,
+      "obstacle": null,
+      "answer": "2026-01-20. In the Deepwell Financial Intelligence opportunity (company_id hub-009482, deepwellfi.com, owner Jordan Mills), the CRM notes record: \"2026-01-20: Procurement informs AE of company-wide budget freeze until Q3.\" The sibling timeline chunk repeats it as \"2026-01-20: Procurement - company-wide budget freeze reported\". This is the first communication of the freeze; the later 2026-02-10 procurement email (\"Paused until Q3 budget cycle; we'll reach out if priorities change.\") is a restatement, not the first notice. The champion loss follows on 2026-01-28 (Lina Ortiz leaves team, internal reorg). The opportunity matches all the question's constraints: EU-only residency for transaction embeddings, use cases document-search / financial-reranking / \"realtime reranking for fraud alerts\".",
+      "method": "Started with a broad BM25 search on the question's own wording, which returned hundreds of near-identical HubSpot company-*.json records (the corpus is dense with stalled fintech deals citing freezes, reorgs, and EU residency), so ranking alone was useless. Switched to the AND operator to intersect the three orthogonal constraints and let the corpus's own vocabulary do the narrowing. \"eu-only\" + \"fraud\" + \"freeze\" gave 8 hits; adding \"reorg\" instead of \"freeze\" gave exactly 2: Nordic Trust Analytics and Deepwell Financial Intelligence. Read both in full with `get`. Nordic Trust was a decoy \u2014 EU-only, fraud-detection, reorg, and a \"companywide hiring freeze\", but its blocker was residency and it names no spending-freeze date and no Q3 language. Deepwell matched every clause including the distinctive \"realtime reranking for fraud alerts\" phrasing and the \"paused until Q3 budget cycle\" quote, and carried the dated freeze line. `near` confirmed the second chunk of the same source file repeats the date in the structured timeline, cross-checking the notes narrative against the timeline field.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_210",
+      "arm": "control",
+      "returned": 10,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 8,
+      "obstacle": null,
+      "answer": "The document is Jira ticket SUP-102998, \"Long-poll fallback closes early, truncating streamed tail on reconnect\" (customer NimbusDocs, Dedicated tier, prod/us-east-1, components api-gateway / streaming-proxy / serving-runtime). Their corporate Palo Alto NGFW downgrades SSE to HTTP long-polling; on reconnect the resumed long-poll response commits early and the trailer event is never emitted, so the last ~1-2 sentences and the terminal metadata (choice.finish_reason) are lost.\n\nRecommended short-term mitigation, from the Support comment by Amelia Chen (2026-03-12) and repeated in the ticket's resolution field: enable direct SSE passthrough for the Redwood endpoints on the corporate proxy (i.e. stop the gateway rewriting SSE to long-poll), OR increase the proxy keepalive to >= 60 seconds. Either one mitigates the truncation until the server-side patch ships. (The permanent fix is the rt-proxy hotfix that replays trailers on long-poll resume \u2014 branch fix/long-poll-trailer-replay, PR redwood-inference/rt-proxy#542, canaried in us-east staging 2026-03-12 at 95/100 synthetic runs, prod rollout planned 2026-03-13 behind a per-region feature flag with a kill-switch.)\n\nThe answer text lives in the second chunk of the source file (gene 34c0968eae9f0a8e); the first chunk (a50b4843b1ce7a66) carries the summary/description/repro that match the question's symptom wording.",
+      "method": "Four CLI calls got me there. (1) `search streaming reconnect truncated response mitigation` surfaced a large cluster of SSE/reconnect-truncation support tickets \u2014 too many near-identical distractors to pick from. (2) I re-queried on the mechanism-specific words from the question rather than the symptom: `search corporate proxy long-polling fallback transport downgrade streaming workaround`, which put SUP-102998 \"Long-poll fallback closes early, truncating streamed tail on reconnect\" at rank 8 \u2014 the only hit combining the polling-style downgrade AND the truncated tail. (3) `get` on that gene confirmed the exact symptom (corporate edge rewrites SSE to long-poll, last 1-2 sentences missing, trailer/finish_reason absent) but the chunk cut off mid-investigation-notes, before any workaround. (4) `near` revealed a single sibling chunk; `get` on it contained the Support comment with the customer workaround and the resolution field. Two confirmation queries (`phrase \\\"SSE passthrough\\\"` and a 4-term AND) showed the mitigation wording is unique to this source file, ruling out the distractor tickets. 8 calls total.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_216",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 6,
+      "obstacle": null,
+      "answer": "Root cause: the customer's transit provider made a perimeter firewall/policy change on 2026-03-11 that rate-limits and drops ICMP Type 3 Code 4 (\"Fragmentation Needed\") under heavy NAT. Path MTU Discovery depends on those ICMP messages, so once they stopped being delivered, any TCP segment larger than the true path MTU with DF set was silently blackholed \u2014 a PMTU blackhole.\n\nWhy it hits exactly this traffic shape: the private deployment (FinData Analytics' customer-managed VPC, peered to the Redwood control plane via TGW, worker nodes at default MTU 1500) fetches model shards from presigned S3 URLs using HTTP/2 multiplexed range requests and long-lived gRPC/HTTP2 connections. Those push large frames/TLS records, so they exceed path MTU where small requests and embedding flows never do. The observable signature is: TLS handshake completes, HTTP/2 SETTINGS/HEADERS exchange succeeds, a few KB of DATA frames arrive, then the stream is left half-open with no further DATA and no ACK progression past a certain MSS-sized segment, timing out around 30s with serving-runtime gRPC code 14 UNAVAILABLE and downstream ECONNRESET. Captures at three points (worker VM, customer edge router, provider egress) showed the ICMP type 3 code 4 being generated at the edge router but disappearing at the provider handoff.\n\nWhy lowering the node MTU fixes it instantly: setting worker MTU to 1400 makes every packet fit inside the real path MTU, so PMTUD never needs to run and the missing ICMP signal stops mattering. Streaming resumes immediately. The equivalent alternative mitigation is capping server-side TLS record size (tested at 1200) or server-side chunking, which requires a runtime change. The permanent fix is on the provider: customer opened transit-provider ticket TP-44821 to allow ICMP Type 3 Code 4 / restore PMTU transparency. Control-plane auth and presigned URL generation were explicitly ruled out \u2014 working presigned URLs still stall when path MTU issues are present.\n\nTicket: SUP-912345, P1/Sev1, prod us-east-1, reporter Aisha Khan, assignee Marco Alvarez, affected models redwood-rlhf-7b and redwood-embed-1.",
+      "method": "Cast wide with a BM25 search that transliterated the question's euphemisms into likely corpus vocabulary (MTU, PMTU, transit provider, gRPC, model artifact) plus a second parallel query on the mechanism (PMTU blackhole, VPC peering, ICMP fragmentation needed). The very first result set surfaced SUP-912345, whose filename alone encoded the whole causal chain. Read the head chunk to confirm every clause of the question mapped onto it: customer-managed VPC peered to the control plane via TGW, HTTP/2 multiplexed range fetches of model shards plus long-lived gRPC, onset after a transit-provider network change, and MTU 1400 as the immediate fix. Then used `near` to enumerate the source file's three chunks and read chunk 2, which carries the investigation notes, hypothesis, comments and resolution field naming provider-level ICMP filtering as root cause and provider ticket TP-44821. Disambiguated against the dense cluster of look-alike incidents with an AND query over the five discriminating terms (transit AND provider AND peering AND http2 AND mtu), which returned exactly one gene in the 947k corpus \u2014 the head chunk of SUP-912345 \u2014 confirming the cousins (SUP-657821 customer-firewall ICMP rate limit, SUP-720123 GRE tunnel, SUP-834567 IPsec site-to-site, SUP-215678 VPCE+IPsec, SUP-46789 peered-VPC TLS, SUP-990999 ExpressRoute MTU clamp) each miss at least one required clause. Ranked the three SUP-912345 chunks first, then the near-miss cousins by how many clauses they satisfy.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_226",
+      "arm": "control",
+      "returned": 2,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 17,
+      "obstacle": null,
+      "answer": "Root cause: during the 2025-04-11 NovusTech / Redwood Inference incident (impact window ~07:39Z-10:05Z, mitigation applied 09:25 PDT), a memory-pressure cascade on the westus-edge-3 shard group -- triggered by long-context interactive streams combined with a recent model change that increased per-token KV-cache size -- pushed KV usage past a threshold. Affected shards then entered a backpressure state that DEFERRED TOKEN EMISSION until a background eviction/GC cycle ran, so tokens arrived in big bursts separated by 15-30 second gaps. Roughly 12% of live streaming capacity sat on those shards; ~60% of the customer's active sessions showed degraded UX and one voice agent dropped mid-conversation.\n\nImmediate workaround recommended (Stephanie Nguyen, 08:40 PDT, framed as low-friction / non-code): set a CLIENT-SIDE STREAMING TIMEOUT OF 10s WITH ONE AUTO-RETRY -- explicitly \"this avoids long blackouts and keeps sessions responsive.\" Alongside it she recommended falling back to the non-streaming /generate endpoint for mission-critical flows, and reducing max_tokens_per_call by 30% for long-context sessions to slow KV-cache growth. Server side, Redwood rolled temporary-config.patch to cap per-session KV at 30MB on westus-edge-3, enabled aggressive prefix-cache TTLs for 90 minutes, and warm-routed ~8% of the tenant's traffic to dedicated non-streaming nodes for 2 hours.",
+      "method": "Free-text BM25 search on the question's own wording was actively misleading: the corpus contains dozens of near-identical streaming-stall / token-emission-gap incidents (BrightLeaf, BridgeNet, ApexAI, TidalTech, Geometrics, PayGro, QuickMart...), almost all dated 2026-2028, and none of the top-20 hits for the topical query were the target. The decisive move was to stop querying by topic and query by the corpus's own file-naming convention. `src 2025` showed dated filenames exist; `src 202504` enumerated all 769 chunk rows for April-2025 gmail threads; filtering that path listing for streaming vocabulary (stream|chat|latency|burst|stall|lag) left exactly one plausible candidate, `gmail/stephanie_nguyen/20250411-conversation-stream-slowdown-action-summary.json`. I also ran `src 2025-04` (fireflies/confluence/drive use the hyphenated form) to be sure no other April-2025 source family held a better match -- the only rivals there were a Zenith latency postmortem and an Avalon degradation bridge call, neither a token-burst story. `get` on both chunks of the gmail file confirmed it: chunk 1 (975e883da24d7412) carries the customer report (\"tokens arrive in big bursts (20-30s gaps)\", \"across multiple users\") and the recommended immediate workarounds including the 10s client-side streaming timeout + auto-retry that \"keeps sessions responsive\"; chunk 2 (250bac9e27b3b52d) carries the root-cause writeup with the verbatim \"producing 15-30s gaps\". `near` confirmed the source file has exactly these two chunks, so the answer is fully covered by the pair.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_244",
+      "arm": "control",
+      "returned": 4,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 14,
+      "obstacle": null,
+      "answer": "Onyx Cloud Labs (onyxcloudlabs.com, HubSpot company_id HUB-98721) \u2014 a mid-sized fintech platform whose workload was real-time support chat plus reranking over transaction histories. Their security/legal team refused to accept Redwood's self-attestation or partial evidence (\"We cannot accept self-attestation; need audited reports. If vendor refuses to provide, corp legal will not sign.\" \u2014 2026-02-18), because Redwood's hosted SOC2 was only roadmapped for H2 2026. CompetitorX Self-Hosted offered an on-prem packaged deployment plus a signed SOC2 report and won the pilot; Onyx moved budget to that partner pilot on 2026-02-24 and the deal was marked closed-lost (security) on 2026-02-28. Owner/AE Maya Thompson, SE Diego Alvarez, $150k-$300k ARR range, lost_to = \"CompetitorX Self-Hosted\", notes_tags = security-failed / closed-lost / re-engage-6m. Source file: F:\\tmp\\enterprise_rag_500k\\sources\\hubspot\\company-onyx-cloud-labs.json",
+      "method": "Started with BM25 searches phrased like the question (fintech / prospect / legal rejected / competitor won) \u2014 these returned dozens of interchangeable company-*.json procurement records and no signal, because BM25 was OR-ing common CRM words. Switched to reading the corpus's own structure instead: `src` queries showed the corpus is F:\\tmp\\enterprise_rag_500k with descriptive paths under sources/{hubspot,confluence,fireflies,gmail,slack,google_drive}, and that HubSpot lost deals are named company-<name>-<reason>-closed-lost.json. None of the five closed-lost filenames matched a compliance/audit reason, so the needle had to be a record whose filename did not encode the loss reason. I then guessed at the corpus's likely vocabulary for \"non-audited compliance proof\" and ran exact-phrase queries: `phrase \"self-attestation\"` returned company-onyx-cloud-labs.json at rank 12 with the snippet \"Onyx declined to accept self-attestation or partial evidence. CompetitorX provided on-prem package + SOC2 report and won pilot.\" `near` on that chunk gave the two-chunk source; `get` on the head chunk confirmed industry=financial-services-ml, company_description \"Mid-sized fintech platform ... compliance-sensitive customer support workflows\", requirements_summary \"real-time support chat\", the 2026-02-18 \"cannot accept self-attestation; need audited reports\" quote, and lost_to CompetitorX Self-Hosted. Finally ran `all fintech self-attestation` and a broad OR search to check for near-duplicate distractors: only one other fintech-ish candidate exists (Amberpeak Risk Intelligence, 712735ef51783156) and it is the mirror-image case \u2014 Redwood policy prevented sharing full auditor reports \u2014 with no support-chat use case and no competitor win, so it is a near miss, not the answer.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_253",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": false,
+      "hit_at_rank": null,
+      "hit_at_1": false,
+      "claimed_found": false,
+      "confidence": "medium",
+      "queries_tried": 38,
+      "obstacle": "Not a vocabulary failure \u2014 a discrimination failure. The corpus contains a deliberately dense distractor family: on the order of a hundred near-identical HubSpot account notes for tiny PLG dev-tools accounts, each recombining the same five attributes (2-person / indie duo team, code-assistant use case, client-side or serverless key-exposure worry, streaming for a snappy UI, free-or-trial credits with a prototype-to-paid conversion motion) but never all five in the exact combination the question states. I found single documents that nail any four of the five \u2014 PixelQuark Labs nails team-size + serverless-key-safety + streaming + credits but calls the product a \"collaborative code snippet tool\"; Orchid Bridge nails \"serverless secret handling\" + \"streaming in the browser\" + code-assistant widget but is not two people; Brindle Telescope has \"in-browser code assistant\" + 2 devs + streaming + trial quota bump but never mentions serverless or key safety; Sparkling Koi is a \"dev duo building a collaborative coding assistant\" with streaming and promo credit but an SPA plus a real backend, no key worry. Every literal phrasing of the missing attribute that I tried (\"browser-based coding assistant\", \"web-based coding assistant\", \"browser IDE\", \"online IDE\", \"web-based coding\") returns zero matches, so the question's product description is a paraphrase, and paraphrase plus a saturated distractor family means several documents are equally defensible and none is provably authoritative. I could not break the tie from the corpus alone.",
+      "answer": null,
+      "method": "Opened with a wide BM25 pass on the question's words, which immediately revealed the answer neighbourhood: HubSpot CRM account notes at sources/hubspot/company-*.json, all sharing a schema (company_name, employee_count_range, use_cases, blockers, timeline, notes). From there I stopped using the question's wording and mined the corpus's own vocabulary, attacking each attribute of the question as a separate lexical axis and intersecting the result sets:\n\n- team size: phrase searches for \"two-person team\", \"two founders\", \"2 devs\", \"two devs\", \"dev duo\", \"solo founder\", \"founder + 1\", \"team of two\", \"2-person\"\n- product shape: phrase \"in-browser code\", \"in-browser\", \"browser-based\", \"web IDE\", \"browser IDE\", \"coding assistant\", \"code playground\", \"online IDE\"\n- key-safety struggle: phrase \"exposing API keys\", \"client-side key\", \"key exposure\", \"leaking keys\"; AND queries over serverless/secrets/edge/ephemeral/proxy\n- streaming: phrase \"incremental rendering\", \"incremental responses\", \"token by token\", \"partial responses\"\n- money: phrase \"starter credits\", \"trial credits\", \"promo credits\", \"credit grant\"\n\nI then batch-profiled ~110 candidate company docs through `get`, grepping only company_name / employee_count_range / notes, to filter the \"1-10 employees + code assistant\" slice, and read the ~20 survivors in full. `near` was used to reassemble multi-chunk company files (Brindle Telescope, Sandlot, Sailfin, DevWeave).\n\nBest candidate: c6a91461e22cd32f, company-pixelquark-labs.json. It is the only document I found that carries the two-person detail AND the serverless key-safety struggle together: \"solo founder + 1 contractor building a collaborative code snippet tool\"; blocker \"client-side key safety (ephemeral keys guidance requested)\"; \"Concerned about exposing API keys in client-side web app; asked for ephemeral key pattern / proxy examples\"; \"Using Next.js; currently calling API from serverless function, exploring direct streaming to client\"; timeline \"self-serve signup via GitHub OAuth (trial credits applied)\" and \"0 charges so far\"; next_step \"send automated onboarding email with JS quickstart and wallet-safe key pattern\". That covers 5 of the question's 6 attributes; the one it does not literally say is \"browser-based coding assistant\" (it says \"collaborative code snippet tool\" / \"low-latency chat for code help\" in a Next.js client-side web app).\n\nSecond: e73a503d9149be76, company-orchid-bridge-digital.json, which is the only doc that literally contains \"serverless secret handling. Concern about exposing API keys and CORS\" alongside \"supports streaming in the browser\", \"code-assistant widget\", \"<200ms for token stream\", free tier and a Vercel promo \u2014 but its team is described as a CTO plus a lead engineer at a 1-50 company, not a two-person shop, and it converts prototype to beta rather than to paid.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_257",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 3,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 9,
+      "obstacle": null,
+      "answer": "SUP-672839 (Jira, customer-support), \"Accept-queue buildup from ephemeral prewarm handshake triggering sustained 5xx wave\" \u2014 Acme Retail, dedicated tier, prod:us-east, 2026-03-12/13, Sev1/P1, reporter Maya Chen, assignee Diego Alvarez.\n\nCause: two mechanisms compounding on the same trigger. At ~23:10 UTC a high-concurrency burst from Acme's client brought many long-lived streaming chat connections at the same time as a bulk embedding upload job (redwood-open-7B for chat, acme-embedder-v2 for embeddings).\n\n1) Warmup connection churn: the ephemeral runtime prewarm subsystem launched warmup workers that performed many short TLS handshakes against the proxy/acceptor layer. Concurrently the autoscaler scaled IN on memory-utilization thresholds, so warmers were being torn down while new warmers spun up. That window produced handshake storms / SYN backpressure at the acceptor \u2014 SYN_RECV/SYN_SENT queue growth, orphan and half-open sockets, \"handshake timeout\" TLS renegotiation failures in ephemeral-proxy, api-gateway accept() latency spikes and \"backlog exceeded\", with net.core.somaxconn at default and hitting its limit on several nodes. New connections saw delayed accept or early RST, and the gateway returned 502/503 \"upstream unavailable\". Scale-in events correlate with the start of the 5xx staircase (Hypothesis B, partial evidence).\n\n2) Disk-backed cache write pressure: the serving runtime's KV-cache checkpointing/snapshotting issued frequent small writes to local NVMe, causing write amplification and elevated NVMe write latency/iowait. That delayed worker threads, which increased connection hold time and fed further accept-queue growth, plus runtime evictions and OOM-suppress warnings shortly after each prewarm wave (Hypothesis C, strong evidence \u2014 correlated NVMe latency spikes and runtime evictions).\n\nHypothesis A (gateway threadpool starvation from large-sidecar healthchecks) was ruled out; thread-pool metrics stayed normal. Kernel backlog tuning was noted as relief, not root cause.\n\nImpact: ~12% 5xx on streaming chat routes at peak, +400ms p95 tail latency, customer-visible message truncation and reconnect loops.\n\nMitigations: routed Acme traffic to a reserved warm pool (5xx 12% -> ~1.5-1.8% within 3 minutes), cut prewarm concurrency 8 -> 2 per node, disabled aggressive KV-cache snapshotting for the affected runtime group, raised somaxconn on edge acceptors. Permanent remediation: ENG-998 (autoscaler avoids scale-in during active prewarm for dedicated tenants), RUNTIME-1421 (prewarm handshake exponential backoff + connection reuse), RUNTIME-1422 (KV-cache snapshot batching with async fsync to cut small-file NVMe write amplification), OPS-776 (accept backlog / tcp_max_syn_backlog tuning), MON-312 (alert correlating prewarm spawn rate, NVMe iowait, accept queue depth).",
+      "method": "1) Broad BM25 OR-search on the raw question terms returned a dense family of ~15 near-identical SUP incident tickets (mixed embedding+chat burst causing 5xx), so the corpus is deliberately distractor-rich and lexical scoring alone could not discriminate. 2) Tried 'staircase' as a literal term -- it is corpus vocabulary but only in commercial/pricing contexts (staircase commit, staircase credit), i.e. a false friend; the incident corpus spells the pattern 'stair-stepped'. 3) Pivoted to an AND-query on the constraint set the question actually pins down -- 'all us-east retail dedicated embedding' -- which is how I discriminated among the distractor family. SUP-672839 was the only incident ticket to survive that conjunction while also having ranked #1 on the broad search. 4) Read it: prod:us-east, customer_company Acme Retail, customer_tier dedicated, components include ephemeral-proxy/autoscaler/nvme-storage, labels ephemeral-prewarm + nvme-iowait, description says 'stair-stepped increase in API gateway 502/503 responses lasting several hours' during 'peak shopping hours' triggered by long-lived streaming connections + simultaneous bulk embedding upload. Exact match on all seven question constraints. 5) Used 'near' to pull the sibling chunks of the same source file (3 chunks total) and read the middle chunk, which states the causal mechanism explicitly (autoscaler scale-in during prewarm -> handshake churn/SYN backpressure; NVMe write amplification from KV-cache checkpointing -> iowait -> connection hold time -> accept queue growth). 6) Confirmed uniqueness with 'all Acme Retail prewarm' (only SUP-672839 among incidents) and a 'phrase stair-stepped' check (no competing incident ticket). The decisive translation step was mapping the question's paraphrase onto the corpus's own words: 'warmup' -> prewarm, 'disk-backed cache' -> NVMe KV-cache checkpointing, 'staircase' -> stair-stepped. Ordering: the three chunks of SUP-672839 first (chunk 1 carries the identifying metadata and hypotheses, chunk 2 the explicit root-cause mechanism, chunk 3 the tail), then the nearest distractors from the same incident family as fallbacks.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_282",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 45,
+      "obstacle": "Not a failure, but the main friction was a large family of near-identical \"personal reading notes on KV compression + RAG\" documents (at least 15 by different fictional owners, all citing arXiv links and Redwood infra) that are individually plausible and hard to discriminate by title or snippet. Ranking them required finding a phrase unique to one chunk rather than relying on topical similarity. Also, the question's own wording (\"long conversation serving experiments\", \"making up references\", \"shrunk to save memory\") appears nowhere in the corpus \u2014 every literal phrase search on it returned zero, so progress depended entirely on guessing the corpus's substitute vocabulary (KV cache, cold-chunk, citation tokens, GPU DRAM pressure).",
+      "answer": "The answering document is gene c03443853bd5fcac \u2014 \"Longform reading scrapbook: compression, KV heuristics, and RAG probes\" (Hector Alvarez, eng-applied-ml, 2027-06-18, users/hector-alvarez-longform-reading-scratch-2027-06-18.json).\n\nIts framing matches the question: KV cache is described as the biggest latency/cost lever \"for long-context use-cases at serving time\", with the rule of thumb that high compression on old turns (>= N tokens back) is acceptable while near-term KV entries need much higher fidelity \u2014 i.e. older context aggressively compressed to relieve GPU DRAM/memory-bandwidth pressure.\n\nUnder \"RAG instability notes (various conference talks + community threads)\" it states: when retrieval and compressed KV interact, the model often overfits to compressed-context artifacts, and \"hallucinations often start at hallucinated citation tokens (weird markers)\" \u2014 the tendency to start making up references right after a retrieval step.\n\nThe suggested mitigation (verbatim intent): \"Practical mitigation: calibrated retrieval scoring (confidence-aware masking), hallucination detectors that watch for sudden entropy drops, and short-term cache reset after retrieval events.\"\n\nSo the three-part mitigation is: (1) calibrated / confidence-aware retrieval scoring with masking, (2) hallucination detectors that watch for sudden entropy drops, and (3) a short-term cache reset immediately after retrieval events.\n\nA closely related but distinct mitigation appears in gene d562883da7dcb8fb (Kai Morgan, context-stitching paper-curation memo): for the drift/hallucination problem when compressed KVs lose precise referents, include provenance tokens (chunk-id markers) plus a cheap citation mechanism so the model can say \"I might be recalling from chunk #5\". Gene 9f5386fe448180a8 (Elena Morales KV-compression sprint) documents the same failure (\"compressed cold-chunk lost citations -> hallucinated reference numbers\") but proposes a different fix (splitting compression into semantics-first vs tokens-first pathways for factual anchoring).",
+      "method": "Cast wide with BM25 on the question's concepts, then switched to the corpus's own vocabulary once I saw it: the corpus talks about \"KV cache\", \"cold-chunk / old turns compression\", \"hallucinated citation tokens\" rather than \"references\" or \"memory shrinking\". The decisive move was AND-queries on chunk-level co-occurrence: `all hallucinations retrieval compressed`, `all hallucinated retrieval compression`, and `all citation retrieval compression memory` all ranked c03443853bd5fcac first. I confirmed with `phrase \"cache reset after retrieval\"`, which matches exactly one chunk in the whole 947k corpus, then `get` to read the full text and `near` to check its sibling chunk. I also read and ruled out the strongest decoys (Benjamin Yu conversation-context strategies, Elena Morales KV-compression sprint, Lucy Hartfield lossy-compression scratchpad, Kendra Park iterative retrieval, Priya Natarajan KV window coherence probes, Victor Chen retrieval/KV reading notes).",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_283",
+      "arm": "control",
+      "returned": 6,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 17,
+      "obstacle": null,
+      "answer": "+1 (415) 555-0123 \u2014 the phone number recruiter Hannah Patel (Senior Recruiter, TalentBridge) gave for candidate Priya Rao (Frontend SWE) at Redwood Inference. Nikhil Sharma (Senior Engineering Manager) asked in the scheduling thread: \"Can Hannah include a phone number for quick reach if Priya runs late?\" Hannah replied on 2027-02-18: \"Perfect \u2014 Priya confirms Tue 2/23 14:30 PT. Phone: +1 (415) 555-0123. Notice period: 4 weeks (can start early April).\" Source file: sources/gmail/nikhil_sharma/20270218-talentbridge-handshake-priya-rao-scheduling.json, thread thr-20270218-nsh-001.",
+      "method": "Started with a broad BM25 search on the question's own words (recruiter/candidate/phone/running late) \u2014 that returned a large cluster of interview-logistics threads but no direct hit, because the corpus is dense with near-identical \"candidate delayed / day-of triage\" emails. Exact-phrase attempts using the question's wording all failed: \"in case she is running late\", \"if she's running late\", \"her cell\" \u2014 all zero matches. The unlock was noticing the corpus writes the role as \"Frontend SWE\" (not \"frontend engineering\") and phrases lateness as \"runs late\" rather than \"running late\". `phrase \"runs late\"` returned 444919d73a9e77b1, subject \"Intro: Priya Rao (Frontend SWE) \u2014 scheduling + debrief\", an agency-recruiter intro thread. `get` on that gene showed the full 5-message thread: Nikhil Sharma asks the recruiter for \"a phone number for quick reach if Priya runs late\", and Hannah Patel answers with \"Phone: +1 (415) 555-0123\". `near` confirmed the thread splits into only two chunks, with the answer in the first. 17 CLI calls total.",
+      "agent_failed": false
+    },
+    {
+      "needle": "erb_285",
+      "arm": "control",
+      "returned": 12,
+      "gold_n": 2,
+      "hit": true,
+      "hit_at_rank": 1,
+      "hit_at_1": true,
+      "claimed_found": true,
+      "confidence": "high",
+      "queries_tried": 15,
+      "obstacle": null,
+      "answer": "Stellar Sparrow Games (SSG-2026-0047), a small NA mobile-game studio (11-50 employees, industry mobile_games) building \"a realtime social turn-based mobile game with in-game global chat + match lobbies\", set a p50 latency target of <= 80 ms for short chat exchanges (average 8-12 tokens per message). The \"players don't notice added delay\" framing comes from the CTO (Ravi Patel) quote in the same record: \"We need something that doesn't add 200ms to every chat message - players notice that immediately.\" So: 80 ms p50 is the goal for typical short messages, with 200 ms of added delay named as the threshold players notice. (They also planned to measure p50/p95 in a 2-week self-serve POC with 500 simulated clients.)",
+      "method": "Started with a wide BM25 search on the question's own wording, which returned ~20 near-identical SMB game-studio HubSpot company records (BreezeChat, FableByte, Quickloom, Sapphire Lobby, JellyLoop, GlideWing, PixelPlum, Frostpine, ChatGlider, etc.) - a classic decoy cluster, so BM25 relevance alone could not discriminate. Read one record (ChatGlider) to learn the schema: HubSpot company JSON with use_cases, latency_requirements, notes and verbatim customer quotes. Then switched from topical to lexical discrimination, testing the question's two most specific noun phrases as exact phrases. `phrase \"match lobby\"` returned exactly ONE document (GlideWing, \"party chat, match lobby, in-game whispers\", sub-200ms perceived) - a strong near-miss but wrong on \"global chat\" and on \"short messages\". `phrase \"global chat\"` returned 9 docs of which only one was a gaming record: company-stellar-sparrow-games.json. Reading it confirmed every element of the question simultaneously: small studio (11-50), mobile_games, \"in-game global chat + match lobbies\", \"p50 latency target <= 80ms for short chat exchanges (avg 8-12 tokens per message)\", and the CTO quote \"We need something that doesn't add 200ms to every chat message - players notice that immediately.\" A `near` call confirmed the file has only two chunks and the head chunk carries the whole answer. Key lesson: the corpus uses \"match lobbies\" (plural) and \"short chat exchanges\", so plural/singular and near-synonym drift (\"short messages\" vs \"short chat exchanges\") mattered more than semantic similarity - the sibling decoys are semantically indistinguishable and only exact corpus vocabulary separated them. Ranking below the answer: sibling chunk, then ChatGlider (P95 <150ms \"for short messages\", 1-50, mobile, lobby chat) and GlideWing (only other \"match lobby\") as the two closest confusable near-misses.",
+      "agent_failed": false
+    }
+  ],
+  "adjudication": {
+    "design": "three independent judges per case, one explicitly tasked with DEFENDING the benchmark label; judges read both documents through the same read-only CLI and could survey the corpus for how widely the fact occurs",
+    "n_cases": 10,
+    "gold_answers_fully": 10,
+    "majority_relationship": {
+      "question_underspecified": 2,
+      "candidate_wrong": 6,
+      "contradictory_fact": 1,
+      "duplicate_fact": 1
+    },
+    "candidate_answers": {
+      "partially": 4,
+      "fully": 2,
+      "no": 4
+    },
+    "cases": [
+      {
+        "needle": "erb_179",
+        "candidate": "d1a7308f71e8818b",
+        "gold": [
+          "c0526b38f03f0a52",
+          "e9bc0a1fcca60478",
+          "f3866e7e7772a129"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "partially",
+        "same_fact": "False",
+        "relationship": "question_underspecified",
+        "votes": {
+          "question_underspecified": 2,
+          "candidate_wrong": 1
+        }
+      },
+      {
+        "needle": "erb_203",
+        "candidate": "e5e9e9cc7441b642",
+        "gold": [
+          "0cbadfa6c82120d3",
+          "503c2a605579882e"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "fully",
+        "same_fact": "False",
+        "relationship": "question_underspecified",
+        "votes": {
+          "question_underspecified": 3
+        }
+      },
+      {
+        "needle": "erb_241",
+        "candidate": "27c013954977a884",
+        "gold": [
+          "54e6f6adf358ff37",
+          "6f5a93c0ecc863d1"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "no",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 3
+        }
+      },
+      {
+        "needle": "erb_242",
+        "candidate": "07ac34f1de49beda",
+        "gold": [
+          "5f95dcb0ec5c753c",
+          "6ad4ba7dd181e5f7"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "partially",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 3
+        }
+      },
+      {
+        "needle": "erb_247",
+        "candidate": "bc35d77a74649a3d",
+        "gold": [
+          "83e0f51e219151f2",
+          "cfa0711015568133",
+          "eac4b423f5a8e866"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "partially",
+        "same_fact": "False",
+        "relationship": "contradictory_fact",
+        "votes": {
+          "question_underspecified": 1,
+          "contradictory_fact": 2
+        }
+      },
+      {
+        "needle": "erb_249",
+        "candidate": "95a5abf113e37853",
+        "gold": [
+          "4bc9b24dcc320590",
+          "5d9d4b0a7d305c9e",
+          "a6b3298d16a1f646"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "fully",
+        "same_fact": "True",
+        "relationship": "duplicate_fact",
+        "votes": {
+          "duplicate_fact": 3
+        }
+      },
+      {
+        "needle": "erb_250",
+        "candidate": "00b0bb7d12c8ed0d",
+        "gold": [
+          "d11eb49758c69bd7"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "no",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 3
+        }
+      },
+      {
+        "needle": "erb_266",
+        "candidate": "c642ca85ded494e3",
+        "gold": [
+          "72ebe7fe099a8690",
+          "f41c5de64eb0c97d"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "no",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 3
+        }
+      },
+      {
+        "needle": "erb_281",
+        "candidate": "a06b19c4cedff784",
+        "gold": [
+          "0cd82e2df8495055",
+          "aba0cca857dd66fd"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "partially",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 2,
+          "question_underspecified": 1
+        }
+      },
+      {
+        "needle": "erb_288",
+        "candidate": "a245d783f2b25d7e",
+        "gold": [
+          "7491b57d65b85a1b",
+          "e4d463816197b161"
+        ],
+        "gold_answers": "fully",
+        "candidate_answers": "no",
+        "same_fact": "False",
+        "relationship": "candidate_wrong",
+        "votes": {
+          "candidate_wrong": 3
+        }
+      }
+    ],
+    "headline": "The labels are SOUND: gold answers the question fully in 10 of 10 cases. The crater is NOT primarily a labelling artifact. In 6 of 10 misses the agent simply picked a wrong document; 2 questions are underspecified against planted sibling documents, 1 is a genuine duplicate fact, and 1 is a corpus contradiction.",
+    "generous_rescore": {
+      "needles_creditable": [
+        "erb_203",
+        "erb_249"
+      ],
+      "crater_hit_rate_strict": 0.583,
+      "crater_hit_rate_generous": 0.667
+    },
+    "corrects": "An earlier reading of this session's term-guessability result treated the unguessable winning terms (person names, tool names, conference acronyms) as arbitrary fingerprints separating near-duplicates -- i.e. noise. The adjudication refutes that: gold genuinely and uniquely answers, so those terms are the corpus's REAL vocabulary. A question-only rewriter still cannot guess them, but that is an argument FOR a document-side producer, not evidence that the target is noise."
+  }
+}

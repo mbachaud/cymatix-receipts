@@ -1,0 +1,18 @@
+{
+  "probe": "tail_only_dense",
+  "written_before_any_result_was_read": true,
+  "cohort": "61 needles: semantic AND pool_absent on the v09x bed",
+  "bed": "erb_blob.db (829k) -- a DIFFERENT BASELINES row from v09x",
+  "control": "BM25 ranks 51..1000 of the same shortlist query",
+  "decision_rule": {
+    "KILL": "dense tail rescues <= the BM25 tail at every R in {1,3,6,12} -- a dense producer buys nothing the cheap control does not already buy",
+    "PASS_TO_BED_ARM": "dense - bm25 >= +6 of the cohort at some R <= 12 AND the held-out half shows the same SIGN. n=61 is too small to gate on a split magnitude, so the split is a robustness check, not the bar.",
+    "GREY": "anything between"
+  },
+  "known_confounds": [
+    "Cohort membership was fixed on v09x; pool-absence is re-derived on this bed and needles that are NOT pool-absent here are reported separately rather than silently included.",
+    "Gold with no stored vector is unreachable by dense at any depth and is counted separately.",
+    "This measures REACH (does gold enter the tail), not delivery. Blend, tier, trim and session elision all run after."
+  ],
+  "bed_access": "read-only (mode=ro), no index created, no pipeline run"
+}

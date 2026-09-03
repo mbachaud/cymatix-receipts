@@ -1,0 +1,18 @@
+pre-registration written: benchmarks\dogfood\erb\receipts\shortlist_prefix_stability_2026-09-02_prereg.json
+  25/216 targets  (2.9 min elapsed)
+  50/216 targets  (5.7 min elapsed)
+  75/216 targets  (8.5 min elapsed)
+  100/216 targets  (12.0 min elapsed)
+  125/216 targets  (16.1 min elapsed)
+  150/216 targets  (19.8 min elapsed)
+  175/216 targets  (23.6 min elapsed)
+  200/216 targets  (27.4 min elapsed)
+
+VERDICT: PASS_SINGLE_QUERY
+  prefix_set_equal_B   216/216
+  prefix_order_equal_B 216/216
+  prefix_set_equal_C   216/216
+  prefix_order_equal_C 216/216
+  boundary ties        0/216
+  paired B-A p50       102.1 ms
+receipt: benchmarks\dogfood\erb\receipts\shortlist_prefix_stability_2026-09-02.json

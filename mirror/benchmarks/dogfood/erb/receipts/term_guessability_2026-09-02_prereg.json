@@ -1,0 +1,11 @@
+{
+  "probe": "term_guessability",
+  "written_before_any_result_was_read": true,
+  "question": "Of the terms that would rescue gold, what fraction could a question-only rewriter plausibly have produced?",
+  "proxy": "a winning term counts as guessable-ish if it already occurs in >= 1 document of the query's shipped BM25 top-50 map; deliberately generous to reformulation",
+  "decision_rule": {
+    "reformulation_viable": "guessable fraction >= 0.5 on the semantic cohort",
+    "reformulation_cannot_win": "guessable fraction <= 0.25 -- the rescuing vocabulary is incidental to the gold document, so a rewriter would have to know the answer; the document-side producer is the right shape"
+  },
+  "bed_access": "NONE (capture + sidecar only)"
+}
