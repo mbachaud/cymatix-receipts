@@ -145,6 +145,11 @@ def main() -> int:
         action="store_true",
         help="skip `git fetch` in the source checkout",
     )
+    parser.add_argument(
+        "--allow-shrink",
+        action="store_true",
+        help="replace mirror/ even when the ref tracks fewer receipt files than it holds",
+    )
     args = parser.parse_args()
 
     source = Path(args.source)
@@ -161,6 +166,19 @@ def main() -> int:
     # every receipt tree from the ref itself; DIR_SPECS stays as a floor.
     receipt_files = tracked_receipt_files(source, args.ref)
     specs = sorted(set(DIR_SPECS) | set(discovered_receipt_dirs(receipt_files)))
+
+    # Shrink guard (2026-10-04): once the code repo stops tracking its receipt
+    # trees, exporting a later ref would find none and the wholesale replace
+    # below would empty the receipt half of mirror/. Refuse unless asked.
+    held = [p for p in walk_files(MIRROR_DIR)
+            if any(part.startswith("receipts")
+                   for part in p.relative_to(MIRROR_DIR).parts[:-1])] if MIRROR_DIR.exists() else []
+    if len(receipt_files) < len(held) and not args.allow_shrink:
+        raise SystemExit(
+            f"{args.ref} tracks {len(receipt_files)} receipt files but mirror/ holds {len(held)}; "
+            "the code repo has likely untracked them. Keep this mirror (its pinned commit is "
+            "the last export) and archive new receipts with scripts/archive_working_receipts.py, "
+            "or pass --allow-shrink to replace mirror/ anyway.")
 
     if MIRROR_DIR.exists():
         shutil.rmtree(MIRROR_DIR)
