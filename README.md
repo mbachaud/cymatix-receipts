@@ -113,11 +113,33 @@ python scripts/verify_index.py
 
 `mirror_from_main.py` streams `git archive` from the requested ref, so it never
 reads the source working tree and cannot pick up uncommitted state. It replaces
-`mirror/` wholesale on each run.
+`mirror/` wholesale on each run. It discovers every `receipts*` directory from
+the ref's own tree and exits non-zero if any tracked receipt file is missing
+from the export. It also refuses to run when the ref tracks fewer receipt files
+than `mirror/` already holds (`--allow-shrink` overrides): that is what a ref
+looks like after the code repo stops tracking its receipt trees, and replacing
+`mirror/` from it would empty the receipt half of the mirror.
 
-`research-inbox/` and `untracked/` are captured by hand rather than by script,
-because their sources are gitignored working-tree paths that move between
-worktrees. `build_index.py` picks up whatever is present in them.
+`research-inbox/` is captured by hand, because its sources are gitignored
+working-tree paths that move between worktrees. `build_index.py` picks up
+whatever is present in it and in `untracked/`.
+
+### Receipts written after the code repo stops tracking them
+
+Once `benchmarks/dogfood/**/receipts/` is ignored upstream, new receipts exist
+only in the working tree (or worktree) that produced them. Archive them here:
+
+```bash
+python scripts/archive_working_receipts.py --source <path-to-checkout-or-worktree> --dry-run
+python scripts/archive_working_receipts.py --source <path-to-checkout-or-worktree>
+python scripts/build_index.py
+python scripts/verify_index.py
+```
+
+Copies land in `untracked/<same relative path>`. A file already archived
+byte-identically (in `mirror/` or `untracked/`) is skipped; a file whose bytes
+differ from an archived copy of the same name is reported as a conflict and not
+overwritten, because a receipt is immutable and a re-run needs a new name.
 
 A `.gitattributes` at the repository root disables all text conversion (`* -text`).
 This matters: without it, git would rewrite line endings on checkout and every
