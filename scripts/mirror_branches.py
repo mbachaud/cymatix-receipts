@@ -36,6 +36,8 @@ KEEP_SUFFIX = (".json", ".jsonl", ".md", ".toml", ".csv", ".txt", ".sqlite")
 EXTRA_KEEP = {
     "docs/audits/": (".db", ".log", ".py", ".bat"),
     "benchmarks/scbench/": (".db", ".log", ".yaml", ".yml", ".py"),
+    # Run logs committed next to receipts (e.g. shortlist_prefix_stability_*.log).
+    "benchmarks/dogfood/erb/receipts/": (".log",),
 }
 # Per-branch extra pathspecs outside PATHS (e.g. a repo-root pin file that
 # belongs with the archived run).
@@ -82,6 +84,22 @@ NOTES = {
         "annotations later superseded on beta by #354/#388). Code from this branch landed partially\n"
         "via PR #391; the rest is a port decision, not a receipt."
     ),
+    "claude/wider-funnel-architecture-f7d3b6": (
+        "## Reading note: pinned below the tip\n\n"
+        "Local-only branch (never pushed). Its 2026-09-03 commit abe4f246 adds the 2026-09-02\n"
+        "research receipts and write-ups: wider-funnel tail-lane probes, agent findability on the\n"
+        "crater, the beta 947k full check, the needle-bank identity hazard, code-path identifier\n"
+        "receipts. The branch tip df6284b5 then untracks every receipt tree, so exporting the tip\n"
+        "would capture nothing; this mirror is pinned to abe4f246 instead (PINS in\n"
+        "scripts/mirror_branches.py). Until 2026-10-04 these files sat in mirror/ via the 78b33df\n"
+        "export, which was taken from abe4f246 rather than master; they moved here when mirror/ was\n"
+        "re-exported from origin/master."
+    ),
+}
+# Export a branch at a fixed commit instead of its head, when the head is not
+# the commit that carries the receipts (e.g. a tip that untracks them).
+PINS = {
+    "claude/wider-funnel-architecture-f7d3b6": "abe4f246",
 }
 BRANCHES = [
     ("bench/semantic-portfolio", 426),
@@ -94,6 +112,7 @@ BRANCHES = [
     ("claude/ab-data-cymatics-pki-dff9c6", None),
     ("claude/codebase-audit-weaknesses-96a7da", None),
     ("codex/scbench-cymatix-ab", None),
+    ("claude/wider-funnel-architecture-f7d3b6", None),
 ]
 # Keep every pathspec batch comfortably under the Windows command-line limit.
 ARCHIVE_ARG_BYTES = 24000
@@ -152,15 +171,25 @@ def export(src, sha, files, out):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", required=True)
+    ap.add_argument("--only", help="re-export just this branch and update only its row in "
+                                   "BRANCHES.md (other mirrors, possibly of deleted branches, untouched)")
     args = ap.parse_args()
     src = Path(args.source)
     git(src, "fetch", "origin", "--quiet")
     master = git(src, "rev-parse", "origin/master").strip()
     rows = []
-    for entry in BRANCHES:
+    entries = [e for e in BRANCHES if not args.only or e[0] == args.only]
+    if args.only and not entries:
+        raise SystemExit("--only %s: not in BRANCHES" % args.only)
+    for entry in entries:
         branch, pr = entry[0], entry[1]
         parent = entry[2] if len(entry) > 2 else None
         sha, ref = resolve(src, branch)
+        if sha and branch in PINS:
+            pinned = git(src, "rev-parse", "--verify", PINS[branch] + "^{commit}").strip()
+            git(src, "merge-base", "--is-ancestor", pinned, sha)  # raises unless on the branch
+            ref = "pinned %s (branch head %s via %s)" % (pinned[:12], sha[:12], ref)
+            sha = pinned
         slug = branch.replace("/", "__")
         out = DEST / slug
         if not sha:
@@ -194,6 +223,15 @@ def main():
         rows.append((branch, pr, sha[:12], len(files), "ok" if biggest[1] < 95 * 1000 * 1000 else "ok (file over 95 MB: %s)" % biggest[0]))
         print("%-48s %s %4d files %10d bytes (%s)" % (branch, sha[:12], len(files), sum(sizes.values()), ref))
     DEST.mkdir(exist_ok=True)
+    if args.only:
+        index = DEST / "BRANCHES.md"
+        b, pr, sha, n, st = rows[0]
+        row = "| `%s` | %s | `%s` | %d | %s |" % (b, ("#%d" % pr) if pr else "local", sha or "", n, st)
+        old = index.read_text(encoding="utf-8").splitlines()
+        kept = [ln for ln in old if not ln.startswith("| `%s` |" % b)]
+        index.write_text("\n".join(kept + [row]) + "\n", encoding="utf-8")
+        print("updated row in", index)
+        return
     lines = ["# Branch mirrors", "",
              "Receipt-like files that exist only on unmerged branches of Cymatix-Context, exported at the branch head",
              "relative to origin/master `%s`. Paths scanned: %s. Regenerate with `scripts/mirror_branches.py`." % (master[:12], ", ".join("`" + p + "`" for p in PATHS)),

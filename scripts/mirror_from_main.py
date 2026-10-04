@@ -75,6 +75,31 @@ def git(source: Path, *args: str) -> str:
     return proc.stdout
 
 
+def tracked_receipt_files(source: Path, ref: str) -> list[str]:
+    """Every file at `ref` with a path component starting with `receipts`.
+
+    Covers `receipts/` and siblings such as `receipts_w32/` at any depth, so a
+    receipt tree added upstream after DIR_SPECS was written is still found.
+    """
+    out = git(source, "ls-tree", "-r", "--name-only", ref, "--", "benchmarks/")
+    return sorted(
+        line for line in out.splitlines()
+        if any(part.startswith("receipts") for part in line.split("/")[:-1])
+    )
+
+
+def discovered_receipt_dirs(files: list[str]) -> list[str]:
+    """The receipt directory (path up to its `receipts*` component) of each file."""
+    dirs = set()
+    for path in files:
+        parts = path.split("/")
+        for i, part in enumerate(parts[:-1]):
+            if part.startswith("receipts"):
+                dirs.add("/".join(parts[: i + 1]))
+                break
+    return sorted(dirs)
+
+
 def flat_json_files(source: Path, ref: str, directory: str) -> list[str]:
     out = git(source, "ls-tree", "--name-only", ref, "--", directory + "/")
     return sorted(
@@ -131,13 +156,24 @@ def main() -> int:
 
     sha = git(source, "rev-parse", args.ref).strip()
 
+    # 2026-10-04: DIR_SPECS missed four receipt trees added upstream on
+    # 2026-09-04 (coderag_solutions, coderag_docs, cosqa, swebench). Discover
+    # every receipt tree from the ref itself; DIR_SPECS stays as a floor.
+    receipt_files = tracked_receipt_files(source, args.ref)
+    specs = sorted(set(DIR_SPECS) | set(discovered_receipt_dirs(receipt_files)))
+
     if MIRROR_DIR.exists():
         shutil.rmtree(MIRROR_DIR)
     MIRROR_DIR.mkdir(parents=True)
 
-    export(source, args.ref, DIR_SPECS, MIRROR_DIR)
+    export(source, args.ref, specs, MIRROR_DIR)
     for directory in FLAT_JSON_DIRS:
         export(source, args.ref, flat_json_files(source, args.ref, directory), MIRROR_DIR)
+
+    missing = [p for p in receipt_files if not (MIRROR_DIR / p).is_file()]
+    if missing:
+        raise SystemExit(f"{len(missing)} tracked receipt files absent from the mirror, "
+                         f"first: {missing[:5]}")
 
     files = walk_files(MIRROR_DIR)
     total_bytes = sum(f.stat().st_size for f in files)
@@ -159,9 +195,11 @@ def main() -> int:
         "## Exported paths",
         "",
     ]
-    for spec in DIR_SPECS:
+    for spec in specs:
         count = len([f for f in files if str(f.relative_to(MIRROR_DIR)).replace("\\", "/").startswith(spec + "/")])
         lines.append(f"- `{spec}/` ({count} files)")
+    lines.append(f"- tracked receipt files at the ref (any `receipts*` dir): "
+                 f"{len(receipt_files)}, all present")
     flat_total = sum(len(flat_json_files(source, args.ref, d)) for d in FLAT_JSON_DIRS)
     for directory in FLAT_JSON_DIRS:
         lines.append(f"- `{directory}/*.json` ({flat_total} files, non-recursive)")
