@@ -1,0 +1,4894 @@
+{
+ "tool": "benchmarks/dogfood/beir/beir_ndcg.py",
+ "tag": "beir_cqadupstack_wordpress",
+ "receipt": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\cymatix-tuning-progression-1d3a3c\\benchmarks\\dogfood\\beir_cqadupstack_wordpress\\receipts\\ladder_beir_cqadupstack_wordpress_diag_tag_lanes_muted_seed0_2026-10-04.json",
+ "arm": "baseline",
+ "basis": "score_ranked_ids",
+ "db": "F:\\tmp\\beir_cqadupstack_wordpress_bed\\beir_cqadupstack_wordpress.db",
+ "corpus_root": "F:\\Projects\\beir\\beir_cqadupstack_wordpress\\corpus",
+ "rank_dump_depth_genes": 50,
+ "recall@100_note": "lower bound when docs_in_dump < 100 (dump depth is in genes)",
+ "n_emitted": 541,
+ "n_ran": 541,
+ "mean_over_ran": {
+  "ndcg@10": 0.2084,
+  "recall@10": 0.3077,
+  "recall@100": 0.4241
+ },
+ "beir_comparable_ndcg@10": 0.2084,
+ "self_doc_excluded_needles": 0,
+ "qrel_docs": 744,
+ "qrel_docs_with_byte_twins": 0,
+ "genes_unmapped_to_corpus": 0,
+ "per_query": [
+  {
+   "needle": "beir_cqadupstack_wordpress_100230",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_100547",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_100726",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_100833",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_100939",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_101042",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_101619",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_101834",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_102451",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_10310",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_103181",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_103227",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_104061",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_104307",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_104373",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_104722",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_105641",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_105772",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_10582",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_105940",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_106",
+   "ran": true,
+   "ndcg@10": 0.48247555939075504,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_106371",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_106451",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_106559",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_10706",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_107249",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_109333",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_109646",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_109793",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_109985",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_110349",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_110766",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_110768",
+   "ran": true,
+   "ndcg@10": 0.16958010263680806,
+   "recall@10": 0.2,
+   "recall@100": 0.2,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_11085",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_111254",
+   "ran": true,
+   "ndcg@10": 0.4415801103577823,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_112010",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_112043",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_112088",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_112685",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_112773",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_113196",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_113211",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_113235",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_113631",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_113901",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114225",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114271",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114350",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114581",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114673",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114734",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114909",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_114914",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_115020",
+   "ran": true,
+   "ndcg@10": 0.3065735963827292,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_115021",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_115278",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_115676",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_115783",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116260",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116288",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116514",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116609",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116880",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116917",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_116953",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_11722",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_117349",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_117353",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_117385",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_117546",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_11798",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_11822",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_118731",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_118742",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_11920",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_119271",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_119560",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_119899",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_119988",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120122",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120126",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120193",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120216",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120247",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120339",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120377",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120675",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120710",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_120772",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121058",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121132",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121143",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121219",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121406",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121464",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121540",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_121686",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_12201",
+   "ran": true,
+   "ndcg@10": 0.6978817289434457,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_123135",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_123182",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_123237",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_12360",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124300",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124341",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124344",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124354",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124358",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.016129032258064516,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124420",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124555",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124573",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124626",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_124848",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125050",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125066",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125200",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_12531",
+   "ran": true,
+   "ndcg@10": 0.6131471927654584,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125356",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125634",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125937",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_125980",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_126186",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_126266",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_126871",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_126942",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_127252",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_127277",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_127487",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_127653",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_128323",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_128535",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_128768",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_12889",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_128969",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_128979",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_129425",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_129497",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_129512",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_129620",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_129865",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_13",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_130158",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_130519",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_130675",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_130926",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131190",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131399",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131405",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131589",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131758",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131767",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131890",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_131958",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_132179",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_132260",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_132282",
+   "ran": true,
+   "ndcg@10": 0.23719771276929622,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_133545",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_133665",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_133674",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_133953",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_133985",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134026",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134062",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134069",
+   "ran": true,
+   "ndcg@10": 0.3235866969737877,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134128",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134249",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134661",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_134839",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_135083",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_135315",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_135581",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_136322",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_13636",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_136756",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_137307",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_137409",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_137986",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_138051",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_138076",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_138329",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_138627",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_138977",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_139269",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_1395",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_139638",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_139850",
+   "ran": true,
+   "ndcg@10": 0.6934264036172708,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_140139",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_140141",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_140444",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_140966",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_141017",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_141110",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_141117",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_141132",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_141149",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_14169",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_142221",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_142792",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_14306",
+   "ran": true,
+   "ndcg@10": 0.3065735963827292,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_143301",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_143303",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_143540",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_143727",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_144627",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_145589",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_145692",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_145811",
+   "ran": true,
+   "ndcg@10": 0.18457569677956817,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_14677",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_147194",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_147385",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_14773",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_147797",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_147867",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_147885",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_149013",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_149263",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_149850",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_150122",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_1507",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_151384",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_152253",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_152334",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_152453",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_15251",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_15376",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_154271",
+   "ran": true,
+   "ndcg@10": 0.6131471927654584,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_154454",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_154470",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_154579",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_154873",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_156820",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_15699",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_15764",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_157779",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_157865",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158089",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158113",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158194",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158284",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_15840",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158432",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158469",
+   "ran": true,
+   "ndcg@10": 0.20438239758848611,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_158874",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_159089",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_159238",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_16004",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_160041",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_160568",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_160595",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_16414",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_16709",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_16727",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_175",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_17715",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_17947",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_19031",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_194",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_19446",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_19607",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_199",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_20194",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_20196",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_20923",
+   "ran": true,
+   "ndcg@10": 0.14126697285982898,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_2100",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21152",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21341",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21367",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21634",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21742",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_21952",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_22134",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_222",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_22943",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_23089",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_23263",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_23710",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_24173",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_24443",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_24650",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_24652",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_24924",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_25099",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_25118",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_25344",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_25385",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_25461",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_26110",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_2623",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_26595",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_2680",
+   "ran": true,
+   "ndcg@10": 0.8315546295836225,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_27832",
+   "ran": true,
+   "ndcg@10": 0.6934264036172708,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_27840",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_27941",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_29338",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_29822",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 39,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_30139",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_3041",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_3068",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_31143",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_31512",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_31531",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_32004",
+   "ran": true,
+   "ndcg@10": 0.6131471927654584,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_32297",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_32584",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_33072",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_33193",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_33198",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_33913",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_3396",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_35139",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_35416",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36017",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36118",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36149",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36174",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36493",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_36772",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_3725",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_37256",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_3727",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_37828",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_38361",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_39446",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_39665",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_40173",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_40353",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_40805",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_40994",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_41207",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_41634",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_41934",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_42120",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_42586",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4259",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_42882",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_42891",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_42893",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_43004",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4307",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4336",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_43643",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_43657",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_44110",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_44516",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4514",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_45437",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_458",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_46136",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_46398",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_46469",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_46547",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_47049",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_47346",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4751",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_477",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4789",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_48145",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_49020",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_49154",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_49339",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_4984",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50033",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50044",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50092",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50478",
+   "ran": true,
+   "ndcg@10": 0.6713860725233041,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50530",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_50649",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_51005",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_51281",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_51444",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_52002",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_5220",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_52330",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_52400",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_52489",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_5331",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_53403",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_53486",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_53866",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_5422",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_55227",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_55522",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_55550",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56206",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56256",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56343",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56476",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56652",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56775",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56779",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56781",
+   "ran": true,
+   "ndcg@10": 0.13032376591037065,
+   "recall@10": 0.16666666666666666,
+   "recall@100": 0.16666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_56966",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_5742",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_57446",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_5748",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_57512",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_57944",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_58391",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_58481",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_58903",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_59590",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_59753",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_59767",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_59891",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_60132",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_60383",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_60831",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_6106",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_61455",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_6163",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_61749",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_62036",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_62054",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_6247",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_62573",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_62820",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_62999",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63041",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63098",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63277",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63292",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63418",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63424",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63840",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_63917",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_64001",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_64050",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_64389",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_64808",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_65446",
+   "ran": true,
+   "ndcg@10": 0.35125161163747765,
+   "recall@10": 0.6,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_66180",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_6645",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_66606",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_66943",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_66944",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_67065",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_67480",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_6774",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_67780",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_67790",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_68040",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_69386",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_69388",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_69460",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_69772",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_70203",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_70519",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_70979",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_71000",
+   "ran": true,
+   "ndcg@10": 0.23719771276929622,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_71005",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.2,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_71304",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_71381",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_71922",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_72116",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_73031",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_73367",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_73385",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_73782",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_74160",
+   "ran": true,
+   "ndcg@10": 0.5640920940185894,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_74517",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_74853",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_75565",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_75665",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_75723",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76072",
+   "ran": true,
+   "ndcg@10": 0.2960819109658652,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76125",
+   "ran": true,
+   "ndcg@10": 0.6509209298071326,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76216",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76334",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76720",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_76943",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_77012",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_77227",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_77424",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_77597",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_77661",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78062",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78325",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78357",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78368",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78544",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78630",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78792",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_78881",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_79894",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_79903",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_79914",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_80266",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_80454",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_8050",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_81591",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_82051",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_82343",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_82718",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_83102",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_83435",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_83650",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_84254",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_84314",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_84986",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_85416",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_859",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_87264",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_87478",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_87514",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_87746",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_87779",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_88062",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_88093",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_88549",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_89409",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_89886",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_90199",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_90241",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_90939",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_91166",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_9202",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_92103",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_9231",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_92551",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_9308",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_93830",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_94615",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_94682",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_94705",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_95576",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_95799",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_96199",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_96361",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_96563",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_96762",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_96945",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_97895",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_98226",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_98899",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_98913",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_98939",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_98995",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_99042",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_99138",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_99282",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_99338",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_cqadupstack_wordpress_99386",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  }
+ ]
+}

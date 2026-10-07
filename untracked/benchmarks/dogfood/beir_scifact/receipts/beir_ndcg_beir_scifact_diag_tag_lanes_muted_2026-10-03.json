@@ -1,0 +1,2725 @@
+{
+ "tool": "benchmarks/dogfood/beir/beir_ndcg.py",
+ "tag": "beir_scifact",
+ "receipt": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\cymatix-tuning-progression-1d3a3c\\benchmarks\\dogfood\\beir_scifact\\receipts\\ladder_beir_scifact_diag_tag_lanes_muted_seed0_2026-10-03.json",
+ "arm": "baseline",
+ "basis": "score_ranked_ids",
+ "db": "F:\\tmp\\beir_scifact_bed\\beir_scifact.db",
+ "corpus_root": "F:\\Projects\\beir\\beir_scifact\\corpus",
+ "rank_dump_depth_genes": 50,
+ "recall@100_note": "lower bound when docs_in_dump < 100 (dump depth is in genes)",
+ "n_emitted": 300,
+ "n_ran": 300,
+ "mean_over_ran": {
+  "ndcg@10": 0.5831,
+  "recall@10": 0.7246,
+  "recall@100": 0.8281
+ },
+ "beir_comparable_ndcg@10": 0.5831,
+ "self_doc_excluded_needles": 0,
+ "qrel_docs": 283,
+ "qrel_docs_with_byte_twins": 0,
+ "genes_unmapped_to_corpus": 0,
+ "per_query": [
+  {
+   "needle": "beir_scifact_1",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_100",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1012",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1014",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1019",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1020",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1021",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1024",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1029",
+   "ran": true,
+   "ndcg@10": 0.9060254355346823,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1041",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1049",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1062",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1086",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1088",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1089",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1099",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1100",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1104",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1107",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1110",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1121",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_113",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1130",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1132",
+   "ran": true,
+   "ndcg@10": 0.2640681225725909,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1137",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1140",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1144",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1146",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_115",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1150",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1163",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1175",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1179",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_118",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1180",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1185",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1187",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1191",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1194",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1196",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1197",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1199",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1200",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1202",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1204",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1207",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1213",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1216",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1221",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1225",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1226",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1232",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_124",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1241",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1245",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1259",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1262",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1266",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_127",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1270",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1271",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1272",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1273",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1274",
+   "ran": true,
+   "ndcg@10": 0.8529278650606567,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1278",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1279",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_128",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1280",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1281",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1282",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_129",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1290",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1292",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1298",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_13",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_130",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1303",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1316",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1319",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_132",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1320",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_133",
+   "ran": true,
+   "ndcg@10": 0.7227265726449519,
+   "recall@10": 0.6,
+   "recall@100": 0.8,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1332",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1335",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1336",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1337",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1339",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1344",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1352",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1359",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1362",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1363",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1368",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_137",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1370",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1379",
+   "ran": true,
+   "ndcg@10": 0.4517623092632536,
+   "recall@10": 0.75,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1382",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1385",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1389",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_1395",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_141",
+   "ran": true,
+   "ndcg@10": 0.8772153153380493,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_142",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_143",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_146",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_148",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_163",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_171",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_179",
+   "ran": true,
+   "ndcg@10": 0.5855700749881525,
+   "recall@10": 0.5,
+   "recall@100": 0.75,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_180",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_183",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_185",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_198",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_208",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_212",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_213",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_216",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_217",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_218",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_219",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_230",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_232",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_233",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_236",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_237",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_238",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_239",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_248",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_249",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_261",
+   "ran": true,
+   "ndcg@10": 0.23719771276929622,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_268",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_269",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_274",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_275",
+   "ran": true,
+   "ndcg@10": 0.6049306994552042,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_279",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_294",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_295",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_298",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_3",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_300",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_303",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_312",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_314",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_324",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_327",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_338",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_343",
+   "ran": true,
+   "ndcg@10": 0.5706417189553201,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_350",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_354",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_36",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_362",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_380",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_384",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_385",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_386",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_388",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_399",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_410",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_411",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_415",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_42",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_421",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_431",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_436",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_437",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_439",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_440",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_443",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_452",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_475",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_478",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_48",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_49",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_491",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_5",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_50",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_501",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_502",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_507",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_508",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_51",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_513",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_514",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_516",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_517",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_521",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_525",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_527",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_528",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_53",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_532",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_533",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_535",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_536",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_539",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_54",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_540",
+   "ran": true,
+   "ndcg@10": 0.21840743681816419,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_544",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_549",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_551",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_552",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_554",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_56",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_560",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_569",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_57",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_575",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_577",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_578",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_587",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_589",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_593",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_597",
+   "ran": true,
+   "ndcg@10": 0.7653606369886217,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_598",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_613",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_619",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_623",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_628",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_636",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_637",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_641",
+   "ran": true,
+   "ndcg@10": 0.8315546295836225,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_644",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_649",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_659",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_660",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_674",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_684",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_690",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_691",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_692",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_693",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_70",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_700",
+   "ran": true,
+   "ndcg@10": 0.3333333333333333,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_702",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_715",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_716",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_718",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_72",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_721",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_723",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_727",
+   "ran": true,
+   "ndcg@10": 0.31546487678572877,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_728",
+   "ran": true,
+   "ndcg@10": 0.21840743681816419,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_729",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_742",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_743",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_744",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_75",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_756",
+   "ran": true,
+   "ndcg@10": 0.2890648263178879,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_759",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_768",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_770",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_775",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_781",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_783",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_784",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_785",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_793",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_800",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_805",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_808",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_811",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_814",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_820",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_821",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_823",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_830",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_831",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_832",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_834",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_837",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_839",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_845",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_847",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_852",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_859",
+   "ran": true,
+   "ndcg@10": 0.3010299956639812,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_870",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_873",
+   "ran": true,
+   "ndcg@10": 0.10209739512291163,
+   "recall@10": 0.2,
+   "recall@100": 0.2,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_879",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_880",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_882",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_887",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_903",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_904",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_907",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_911",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_913",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_914",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_921",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_922",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_936",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_94",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_956",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_957",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_960",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_967",
+   "ran": true,
+   "ndcg@10": 0.9197207891481876,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_971",
+   "ran": true,
+   "ndcg@10": 0.715663226334951,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_975",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_982",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_985",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_99",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_scifact_993",
+   "ran": true,
+   "ndcg@10": 0.6309297535714575,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  }
+ ]
+}
