@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-08T03:05:32+00:00",
+  "generated_at": "2026-10-08T20:50:55+00:00",
   "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-  "file_count": 912,
-  "total_bytes": 645528667,
+  "file_count": 915,
+  "total_bytes": 646276208,
   "files": [
     {
       "path": "mirror/benchmarks/dogfood/code/receipts/dogfood_baseline_beta_2026-09-04.json",
@@ -6366,6 +6366,33 @@
       "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/know_replay_muted_erb_947k_2026-10-05.json",
       "source_commit": null,
       "stamp": "2026-10-05"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 695342,
+      "sha256": "43fe790ae69f6b36759a2da774924fd6b72aacf011b0b64cc89ea8d747c10524",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08_arm.toml",
+      "kind": "data",
+      "bytes": 51142,
+      "sha256": "c434b13cdd4c84c10fed64644614742f44650dd38b3a4f80657b0b831a80babd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08_arm.toml",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08_run.json",
+      "kind": "receipt",
+      "bytes": 1057,
+      "sha256": "60fdd32514e5573c77b53763b00baed2b471a2676021b06a3004162c82f2c2f8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/know_replay_source_lanes_erb_947k_2026-10-08_run.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
     },
     {
       "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_erb_947k_diag_tag_lanes_muted_seed0_2026-10-04.json",

@@ -1,0 +1,29 @@
+{
+ "cmd": [
+  "F:\\Projects\\cymatix-context\\.venv\\Scripts\\python.exe",
+  "-P",
+  "F:\\Projects\\cymatix-context\\.worktrees\\erb-know-replay-20261008\\benchmarks\\dogfood\\erb\\know_abstain_replay.py",
+  "--genome",
+  "F:\\tmp\\witness-v0111-candidate\\erb_blob_v09x.db",
+  "--resolved",
+  "F:\\Projects\\cymatix-context\\.worktrees\\erb-know-replay-20261008\\benchmarks\\dogfood\\erb\\needles_resolved_v09x_full.json",
+  "--gold",
+  "F:\\Projects\\cymatix-context\\.worktrees\\erb-know-replay-20261008\\benchmarks\\dogfood\\erb\\gold_by_needle_v09x.json",
+  "--limit",
+  "0",
+  "--k",
+  "12",
+  "--arms",
+  "postflip_default",
+  "--config",
+  "F:\\tmp\\erb-know-replay-20261008\\arm_source_lanes.toml",
+  "--stamp",
+  "2026-10-08",
+  "--out",
+  "F:\\tmp\\erb-know-replay-20261008\\know_replay_source_lanes_erb_947k_2026-10-08.json"
+ ],
+ "rc": 0,
+ "wall_s": 12806.2,
+ "worktree_head": "841e44428ee993d6e1f7854421baacffb238a4f7",
+ "out": "F:\\tmp\\erb-know-replay-20261008\\know_replay_source_lanes_erb_947k_2026-10-08.json"
+}
