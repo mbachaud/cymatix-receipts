@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-07T19:13:36+00:00",
+  "generated_at": "2026-10-08T03:05:32+00:00",
   "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-  "file_count": 906,
-  "total_bytes": 641924914,
+  "file_count": 912,
+  "total_bytes": 645528667,
   "files": [
     {
       "path": "mirror/benchmarks/dogfood/code/receipts/dogfood_baseline_beta_2026-09-04.json",
@@ -6377,6 +6377,24 @@
       "stamp": "2026-10-04"
     },
     {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_v0110_control_witness_947k_2026-10-07.json",
+      "kind": "receipt",
+      "bytes": 1795236,
+      "sha256": "d89e26d7d73c6289e207c9a736fc1357b60e06902d8d53c367a110573dcd902e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/ladder_v0110_control_witness_947k_2026-10-07.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_v0111_merged_witness_947k_2026-10-07.json",
+      "kind": "receipt",
+      "bytes": 1795234,
+      "sha256": "b11bcc19930ff7b9001fef3496d4bb0a824ee912b899f492c4046794548bf9c1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/ladder_v0111_merged_witness_947k_2026-10-07.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
+    },
+    {
       "path": "untracked/benchmarks/dogfood/financebench/receipts/know_replay_financebench_2026-10-04.json",
       "kind": "receipt",
       "bytes": 180619,
@@ -6483,6 +6501,42 @@
       "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/muloc/receipts/know_replay_muted_muloc_2026-10-05.json",
       "source_commit": null,
       "stamp": "2026-10-05"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0111_control_947k_2026-10-07.json",
+      "kind": "receipt",
+      "bytes": 1792,
+      "sha256": "d58d08fae39e6aac95cf6316d5696428fab7f2119d951e589eeb992cbaec9d63",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0111_control_947k_2026-10-07.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0111_control_947k_2026-10-07_manifest.json",
+      "kind": "receipt",
+      "bytes": 4754,
+      "sha256": "887728d0487fa3dd153c591e286e6a3fae44628ac5b5010e9a4c1aec997ef6f1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0111_control_947k_2026-10-07_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0111_witness_947k_2026-10-07.json",
+      "kind": "receipt",
+      "bytes": 1801,
+      "sha256": "dd46a5d6ee176270612b5b85eea7ffdca945afc8670bba5d92493215ba6d7c13",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0111_witness_947k_2026-10-07.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0111_witness_947k_2026-10-07_manifest.json",
+      "kind": "receipt",
+      "bytes": 4936,
+      "sha256": "8dcf27c389b6a2f5e5f6f08ca30968e2778756fcfd8cf7a9330392cd703a328e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0111_witness_947k_2026-10-07_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-07"
     },
     {
       "path": "untracked/benchmarks/dogfood/SOURCE.md",
