@@ -1,0 +1,62 @@
+{
+ "tool": "scripts/calibrate_know_store.py",
+ "issue": "#482",
+ "at": "2026-10-09T13:26:27",
+ "receipts": [
+  "F:/tmp/ce-replays-20261008/receipts/know_replay_ce_erb_947k_2026-10-08.json"
+ ],
+ "config": "C:/Users/max/AppData/Local/Temp/claude/F--Projects-cymatix-context--claude-worktrees-haiku-workers-testing-ci-333d4e/85eb5687-6f81-453a-a358-c1e696e3b30e/scratchpad/know/know_lanes_ce_no_erb.toml",
+ "label": "gold at score-map rank 1",
+ "n": 470,
+ "base_rate": 0.32127659574468087,
+ "target_precision": 0.7,
+ "min_support": 5,
+ "cross_validation": {
+  "folds": [
+   {
+    "fold": 0,
+    "platt_a": 0.9773818410399709,
+    "platt_b": 2.4137134691218667,
+    "floor": 0.429988,
+    "held_out_kept": 19,
+    "held_out_correct": 12
+   },
+   {
+    "fold": 1,
+    "platt_a": 0.7841777525025094,
+    "platt_b": 1.7321198654646068,
+    "floor": 0.422174,
+    "held_out_kept": 13,
+    "held_out_correct": 13
+   },
+   {
+    "fold": 2,
+    "platt_a": 0.8467962523743711,
+    "platt_b": 1.9922094506126748,
+    "floor": 0.412768,
+    "held_out_kept": 17,
+    "held_out_correct": 10
+   },
+   {
+    "fold": 3,
+    "platt_a": 0.7955080088625829,
+    "platt_b": 1.8634346697216078,
+    "floor": 0.418102,
+    "held_out_kept": 19,
+    "held_out_correct": 13
+   },
+   {
+    "fold": 4,
+    "platt_a": 0.8740783599456252,
+    "platt_b": 2.0523245309355285,
+    "floor": 0.411353,
+    "held_out_kept": 21,
+    "held_out_correct": 14
+   }
+  ],
+  "held_out_coverage": 0.18936170212765957,
+  "held_out_precision": 0.6966292134831461,
+  "held_out_kept": 89
+ },
+ "verdict": "no_usable_floor"
+}

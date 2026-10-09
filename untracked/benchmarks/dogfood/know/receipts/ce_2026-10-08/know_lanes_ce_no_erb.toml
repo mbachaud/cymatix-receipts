@@ -1,0 +1,8 @@
+# [know] model = "lanes", fit by scripts/fit_know_lanes.py (#482).
+# 33479 queries over 29 corpora; leave-one-corpus-out pooled AUC 0.8235; report C:/Users/max/AppData/Local/Temp/claude/F--Projects-cymatix-context--claude-worktrees-haiku-workers-testing-ci-333d4e/85eb5687-6f81-453a-a358-c1e696e3b30e/scratchpad/know/fit_ce_no_erb.json
+[know]
+model = "lanes"
+emit_floor = 0.45
+lanes_intercept = 0.342136
+lanes_betas = { log_ratio_top2 = 6.15768, rel_gap = -9.2032, coordinate_confidence = 0.371585, log_pool_size = -0.960811, lanes_fired = 0.261486, top1_lanes = -0.459564, top1_lanes_missing = -2.37028, lanes_top3_agree = 0.445579, lanes_top3_agree_missing = -2.37028, frac_lanes_agree = -2.02288, frac_lanes_agree_missing = -2.37028, fts5_top1_is_fused_top1 = -0.105927, fts5_top1_is_fused_top1_missing = -9.4683, query_term_coverage = 0.682136, query_term_coverage_missing = -11.7851, ce_top1 = 2.47583, ce_top1_missing = -2.37028, ce_margin = 1.1968, ce_margin_missing = 22.4425 }
+lanes_ce_model = "cross-encoder/ms-marco-MiniLM-L-6-v2"
