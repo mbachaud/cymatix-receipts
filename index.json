@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-08T20:50:55+00:00",
+  "generated_at": "2026-10-09T10:03:26+00:00",
   "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-  "file_count": 915,
-  "total_bytes": 646276208,
+  "file_count": 949,
+  "total_bytes": 702002615,
   "files": [
     {
       "path": "mirror/benchmarks/dogfood/code/receipts/dogfood_baseline_beta_2026-09-04.json",
@@ -6456,6 +6456,312 @@
       "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/financebench/receipts/ladder_financebench_diag_tag_lanes_muted_seed0_2026-10-04.json",
       "source_commit": null,
       "stamp": "2026-10-04"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/fit_lanes_loco_base_30corpora.json",
+      "kind": "receipt",
+      "bytes": 14223,
+      "sha256": "ba2effc207fe2843c0689e75c3a888c9e67a3cd98dee1f48fff9da0e2493504f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/fit_lanes_loco_base_30corpora.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/fit_lanes_loco_ce_30corpora.json",
+      "kind": "receipt",
+      "bytes": 14544,
+      "sha256": "544dfaa4d982ef745a132648b2bee1a0e1e7a854276afdb82c1e12b4668ae900",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/fit_lanes_loco_ce_30corpora.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_arguana_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 2327686,
+      "sha256": "80f464061b73983f91a891dd11b7250ef848f37049150d21d17a2f0b469d98d8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_arguana_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_android_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1150793,
+      "sha256": "6deca6fa9f7bf232d14514b7a3c6fca6fe01407c0f9c1c6815213ade11009a36",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_android_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_english_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 2569012,
+      "sha256": "58c9bdbc2d3a8f3da9148480c76e69aa8de04eca4e35322b0fc4269e80f8c655",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_english_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_gaming_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 2622609,
+      "sha256": "9ce2043cbcbde18035a8e06f0e9fec1e1181f1b114aabbd68b42ba1795e4fe98",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_gaming_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_gis_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1448605,
+      "sha256": "b72019ab7c5ca5a3a8c069575119325a7a47cd63f55a64a86bee1b87fb9a33ca",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_gis_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_mathematica_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1323835,
+      "sha256": "f08a8369d915e8b75fb89c0b57c61a88df7bd2d9d208afe22b4187d336b80776",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_mathematica_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_physics_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1704440,
+      "sha256": "cd99a9d093efffcce9edc8a683a2bd210390349fc3e7c02ee271693003cfc5fb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_physics_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_programmers_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1442100,
+      "sha256": "13d71547cebc59f32872d3ac90cdc7b51a227f1d2956fd6274ce7a2c710448d5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_programmers_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_stats_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1067890,
+      "sha256": "b0f9775d235871425e82c7f40eebeec0e79a1ce501a4d6ff16ce73488b0b7e61",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_stats_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_tex_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 4737014,
+      "sha256": "8e98f0a064ae35d58fe7fd8fd3f1d304cb2bcd669cb86e993081ac69feb14405",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_tex_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_unix_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1750409,
+      "sha256": "198ef148897e53d15b159d876fe163c866a41494941cd0cf58087110a114a214",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_unix_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_webmasters_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 834711,
+      "sha256": "3932230d151d1c83ecffc565fa21c2c6a07db20ffe486770f1e5db375a8bb308",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_webmasters_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_wordpress_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 889192,
+      "sha256": "fb330c651ecf9607f42904ec37b0b86ce06bb30823fce02b0ff69d038d7a80b5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_cqadupstack_wordpress_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_fiqa_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1057765,
+      "sha256": "a48a3579a3aefa6e54b7bd3a4eed269b98f6e37b5db82af510410936814df6fe",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_fiqa_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_nfcorpus_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 551647,
+      "sha256": "e1b3af76879b29db41a7dd514006bf4068a939436f08a355abbbda72caac34b8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_nfcorpus_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_quora_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 16308025,
+      "sha256": "eddabd039bfc5dc920ce420c66d0cc1c38d08fd729e8623c43a5b8af540ea4e3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_quora_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_scidocs_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1676282,
+      "sha256": "8ce1d10b8caaed6cd9327b92218867292c62674bf519577e09c24679f1affb50",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_scidocs_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_scifact_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 494425,
+      "sha256": "a5342753538b80ee885dcc1ea2636cf2d46a2b214dda38e6cfff5e684aa67789",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_scifact_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_trec_covid_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 104020,
+      "sha256": "fc007c15d09c91d7808b5e9a69451045e880070ea540d011b43ef47ab784f4fa",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_trec_covid_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_webis_touche2020_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 90145,
+      "sha256": "7d21377a965af62d1a2051f3cde143ba8097c4f7707791e9f834a815c3c4b728",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_beir_webis_touche2020_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_coderag_docs_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1161246,
+      "sha256": "9680e9d403bcee75c50b8e96db10f8293a93d5894c51f87a0b10d8700ca557b0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_coderag_docs_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_coderag_solutions_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1083219,
+      "sha256": "57b08eb072410e1e769a8f4a0f39e0046ad4f87417dd30eae2d99d3da5d622af",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_coderag_solutions_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_cosqa_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 813530,
+      "sha256": "8c6463bba02f1f883b6662f6151c4861594d7536d9601f1f8b59a61fa0596ad6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_cosqa_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_enronqa_padded_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 819411,
+      "sha256": "afaed89d80f741274e48567010cf92d6e25ec2b7d09e677cab1194ba7829ff30",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_enronqa_padded_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_enronqa_v2_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 820905,
+      "sha256": "2bdf30f3b6ed27adaf59678124cd837de98d6b97d07ade608da999bab0857c8d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_enronqa_v2_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_erb_947k_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 777437,
+      "sha256": "3c85309cd15fb34806336210b468386a7bcb4153e5b27b80d72c08b695c70d0c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_erb_947k_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_financebench_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 249141,
+      "sha256": "7df89f61c22c8243c068d9d70c189ad80f983540682ea1817281722e07c645be",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_financebench_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_locomo_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 3853868,
+      "sha256": "2774df228ba9856bca42270ccc665b1827935654545f5810c21dbf28bca40d17",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_locomo_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_muloc_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 1131346,
+      "sha256": "a28040a11098ab11575839593c98b0c9d0245d9f47c1848500e081819a7ee025",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_muloc_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_swebench_2026-10-08.json",
+      "kind": "receipt",
+      "bytes": 829716,
+      "sha256": "9b243081b1b706076d9cd829f22e9e1bf6e711673933674b6f29a270564efc54",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/know_replay_ce_swebench_2026-10-08.json",
+      "source_commit": null,
+      "stamp": "2026-10-08"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/progress.jsonl",
+      "kind": "receipt",
+      "bytes": 2537,
+      "sha256": "20ee70b61b7eede7db6709de4199ea73471c2b9259bdb43ef7ea503dba420345",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/progress.jsonl",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/know/receipts/ce_2026-10-08/run_ce.py",
+      "kind": "tooling",
+      "bytes": 4679,
+      "sha256": "1d62e40e4b914112753de05f9063decee70ff33f8f3be676242d96a400bc6144",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/know/receipts/ce_2026-10-08/run_ce.py",
+      "source_commit": null,
+      "stamp": null
     },
     {
       "path": "untracked/benchmarks/dogfood/locomo/receipts/interloper_mine_locomo_2026-08-31.json",
