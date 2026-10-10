@@ -1,0 +1,96 @@
+{
+ "expected_head": "8318826140715e4ab78161fe6a230eec26a83925",
+ "worktree": "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code",
+ "snapshot_identity": {
+  "method": "sqlite3.backup, source mode=ro+query_only",
+  "elapsed_seconds": 65.96,
+  "source_before": {
+   "": {
+    "bytes": 24710254592,
+    "mtime_ns": 1791250351868922300
+   },
+   "-wal": {
+    "bytes": 0,
+    "mtime_ns": 1791404414208369700
+   },
+   "-shm": {
+    "bytes": 32768,
+    "mtime_ns": 1791596663086138700
+   }
+  },
+  "source_after": {
+   "": {
+    "bytes": 24710254592,
+    "mtime_ns": 1791250351868922300
+   },
+   "-wal": {
+    "bytes": 0,
+    "mtime_ns": 1791404414208369700
+   },
+   "-shm": {
+    "bytes": 32768,
+    "mtime_ns": 1791596667073459600
+   }
+  },
+  "snapshot_bytes": 24710254592,
+  "gene_count": 947531,
+  "gene_id_set_sha256": "729ca5d9fe20bebb00eb5451cd6d6cfd072746faba4a3f9b492e1caafc1bcd23",
+  "bed_provenance": [
+   {
+    "id": 1,
+    "event": "build",
+    "ingest_c": 6,
+    "identity_sha256": "11a05b915f8c6d5597edfa1fb57bfa2ba104ec74006a2b48ad04263de998bda6",
+    "gene_count": 947531
+   }
+  ]
+ },
+ "headroom_state": {
+  "ccr_store.db": "69168e976d4ea3eb77887e355ddfe3175adc23630a3277ce54c6c063092c76cf",
+  "toin.json": "4399b7bc431aef5ff975fcf8a95cd9132ad7452ece71dd4c950e4acb6d0eaa3b"
+ },
+ "command": [
+  "F:\\Projects\\cymatix-context\\.venv\\Scripts\\python.exe",
+  "-P",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code\\benchmarks\\dogfood\\erb\\ablation_ladder.py",
+  "--genome",
+  "F:\\tmp\\release-witness-v0112\\erb_blob_v09x.db",
+  "--resolved",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code\\benchmarks\\dogfood\\erb\\needles_resolved_v09x_full.json",
+  "--gold",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code\\benchmarks\\dogfood\\erb\\gold_by_needle_v09x.json",
+  "--limit",
+  "0",
+  "--k",
+  "12",
+  "--arms",
+  "baseline",
+  "--config",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code\\cymatix.toml",
+  "--per-query",
+  "--stamp",
+  "v0112-merged-witness-2026-10-09",
+  "--out",
+  "F:\\tmp\\release-witness-v0112\\ladder_v0112-merged-witness-2026-10-09_947k.json"
+ ],
+ "env_pins": {
+  "PYTHONHASHSEED": "0",
+  "PYTHONUTF8": "1",
+  "PYTHONPATH": "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0112-code",
+  "CYMATIX_DISABLE_LEARN": "1",
+  "CYMATIX_SQLITE_CACHE_SIZE": "-12582912",
+  "HEADROOM_WORKSPACE_DIR": "F:\\tmp\\release-witness-v0112\\headroom-state",
+  "HEADROOM_TOIN_PATH": "F:\\tmp\\release-witness-v0112\\headroom-state\\toin.json",
+  "HEADROOM_CCR_SQLITE_PATH": "F:\\tmp\\release-witness-v0112\\headroom-state\\ccr_store.db",
+  "HEADROOM_CONFIG_DIR": "C:\\Users\\max\\.headroom\\config"
+ },
+ "config_sha256": "86bc41a91459ce8d13087488beb6a2794eac8481176d573483cfa257058fa855",
+ "resolved_sha256": "c09b630613cb18d317195148254f3e3cd68980add29e3d79dc09c88a2e850cae",
+ "gold_sha256": "d0d203b88281fecf4b86948b0f86b37c6878f48ce5f7d7506088e4546f2b223a",
+ "started": "Fri Oct  9 18:45:33 2026",
+ "ladder": {
+  "rc": 0,
+  "wall_s": 11346.9,
+  "out": "F:\\tmp\\release-witness-v0112\\ladder_v0112-merged-witness-2026-10-09_947k.json"
+ }
+}

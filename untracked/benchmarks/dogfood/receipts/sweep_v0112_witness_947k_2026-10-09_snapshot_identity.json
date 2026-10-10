@@ -1,0 +1,44 @@
+{
+ "method": "sqlite3.backup, source mode=ro+query_only",
+ "elapsed_seconds": 65.96,
+ "source_before": {
+  "": {
+   "bytes": 24710254592,
+   "mtime_ns": 1791250351868922300
+  },
+  "-wal": {
+   "bytes": 0,
+   "mtime_ns": 1791404414208369700
+  },
+  "-shm": {
+   "bytes": 32768,
+   "mtime_ns": 1791596663086138700
+  }
+ },
+ "source_after": {
+  "": {
+   "bytes": 24710254592,
+   "mtime_ns": 1791250351868922300
+  },
+  "-wal": {
+   "bytes": 0,
+   "mtime_ns": 1791404414208369700
+  },
+  "-shm": {
+   "bytes": 32768,
+   "mtime_ns": 1791596667073459600
+  }
+ },
+ "snapshot_bytes": 24710254592,
+ "gene_count": 947531,
+ "gene_id_set_sha256": "729ca5d9fe20bebb00eb5451cd6d6cfd072746faba4a3f9b492e1caafc1bcd23",
+ "bed_provenance": [
+  {
+   "id": 1,
+   "event": "build",
+   "ingest_c": 6,
+   "identity_sha256": "11a05b915f8c6d5597edfa1fb57bfa2ba104ec74006a2b48ad04263de998bda6",
+   "gene_count": 947531
+  }
+ ]
+}
