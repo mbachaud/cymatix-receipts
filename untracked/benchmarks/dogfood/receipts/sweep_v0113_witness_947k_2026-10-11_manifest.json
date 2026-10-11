@@ -1,0 +1,115 @@
+{
+ "expected_head": "00358af5adb48a6dc0048cd2b7dc79e385270e1f",
+ "worktree": "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code",
+ "snapshot_identity": {
+  "method": "sqlite3.backup, source mode=ro+query_only",
+  "elapsed_seconds": 53.72,
+  "source_before": {
+   "": {
+    "bytes": 24710254592,
+    "mtime_ns": 1791250351868922300
+   },
+   "-wal": {
+    "bytes": 0,
+    "mtime_ns": 1791404414208369700
+   },
+   "-shm": {
+    "bytes": 32768,
+    "mtime_ns": 1791596667073459600
+   }
+  },
+  "source_after": {
+   "": {
+    "bytes": 24710254592,
+    "mtime_ns": 1791250351868922300
+   },
+   "-wal": {
+    "bytes": 0,
+    "mtime_ns": 1791404414208369700
+   },
+   "-shm": {
+    "bytes": 32768,
+    "mtime_ns": 1791735491512402300
+   }
+  },
+  "snapshot_bytes": 24710254592,
+  "gene_count": 947531,
+  "gene_id_set_sha256": "729ca5d9fe20bebb00eb5451cd6d6cfd072746faba4a3f9b492e1caafc1bcd23",
+  "bed_provenance": [
+   {
+    "id": 1,
+    "at_utc": "2026-08-26T06:43:06Z",
+    "event": "build",
+    "provenance_version": 1,
+    "cymatix_version": "0.9.0",
+    "git_sha": "5f5c67748937267bda9fa16cbd66ba48a46105d2",
+    "git_dirty": 1,
+    "ingest_c": 6,
+    "config_json": "{\"cymatics.harmonic_links\": true, \"genome.synchronous\": \"NORMAL\", \"ingestion.backend\": \"cpu\", \"ingestion.citation_path_anchors\": [\"Projects\", \"sources\"], \"ingestion.dense_embed_on_ingest\": false, \"ingestion.dense_passage_char_cap\": 2000, \"ingestion.entity_graph\": true, \"ingestion.locale_demotion_enabled\": true, \"ingestion.sema_embed_on_ingest\": false, \"ingestion.splade_content_cap\": 1000, \"ingestion.splade_enabled\": false, \"ingestion.symbol_graph\": false}",
+    "gene_count": 947531,
+    "fts_count": 947531,
+    "identity_sha256": "11a05b915f8c6d5597edfa1fb57bfa2ba104ec74006a2b48ad04263de998bda6",
+    "corpus_id": "enterprise_rag_500k",
+    "notes": "ERB 500k at v0.9.x shipped defaults; direct blob; ordered parallel drain; resumed after write-path A/B (cache + index-deferral both refuted, receipts ingest_write_path_ab.json)"
+   }
+  ]
+ },
+ "headroom_state": {
+  "toin.json": {
+   "source_sha256": "6bd9b10f2c72c44b79fd96f7d01efef61bbe0021c2c0e3741cd229b41e9e348e",
+   "copy_sha256": "6bd9b10f2c72c44b79fd96f7d01efef61bbe0021c2c0e3741cd229b41e9e348e"
+  },
+  "ccr_store.db": {
+   "source_sha256": "6985aaa546dc59e6448f87c7adde5cc317a02260eb87eb91f4cfbcea3d15edbe",
+   "copy_sha256": "6985aaa546dc59e6448f87c7adde5cc317a02260eb87eb91f4cfbcea3d15edbe"
+  }
+ },
+ "command": [
+  "F:\\Projects\\cymatix-context\\.venv\\Scripts\\python.exe",
+  "-P",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code\\benchmarks\\dogfood\\erb\\ablation_ladder.py",
+  "--genome",
+  "F:\\tmp\\release-witness-v0113\\erb_blob_v09x.db",
+  "--resolved",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code\\benchmarks\\dogfood\\erb\\needles_resolved_v09x_full.json",
+  "--gold",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code\\benchmarks\\dogfood\\erb\\gold_by_needle_v09x.json",
+  "--limit",
+  "0",
+  "--k",
+  "12",
+  "--arms",
+  "baseline",
+  "--config",
+  "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code\\cymatix.toml",
+  "--per-query",
+  "--stamp",
+  "v0113-merged-witness-trace-2026-10-11",
+  "--out",
+  "F:\\tmp\\release-witness-v0113\\ladder_v0113-merged-witness-trace-2026-10-11_947k.json",
+  "--trace-dir",
+  "F:\\tmp\\release-witness-v0113\\traces",
+  "--trace-level",
+  "metadata"
+ ],
+ "env_pins": {
+  "PYTHONHASHSEED": "0",
+  "PYTHONUTF8": "1",
+  "PYTHONPATH": "F:\\Projects\\cymatix-context\\.worktrees\\release-witness-v0113-code",
+  "CYMATIX_DISABLE_LEARN": "1",
+  "CYMATIX_SQLITE_CACHE_SIZE": "-12582912",
+  "HEADROOM_WORKSPACE_DIR": "F:\\tmp\\release-witness-v0113\\headroom-state",
+  "HEADROOM_TOIN_PATH": "F:\\tmp\\release-witness-v0113\\headroom-state\\toin.json",
+  "HEADROOM_CCR_SQLITE_PATH": "F:\\tmp\\release-witness-v0113\\headroom-state\\ccr_store.db",
+  "HEADROOM_CONFIG_DIR": "C:\\Users\\max\\.headroom\\config"
+ },
+ "config_sha256": "86bc41a91459ce8d13087488beb6a2794eac8481176d573483cfa257058fa855",
+ "resolved_sha256": "c09b630613cb18d317195148254f3e3cd68980add29e3d79dc09c88a2e850cae",
+ "gold_sha256": "d0d203b88281fecf4b86948b0f86b37c6878f48ce5f7d7506088e4546f2b223a",
+ "started": "Sun Oct 11 09:19:06 2026",
+ "ladder": {
+  "rc": 0,
+  "wall_s": 10359.3,
+  "out": "F:\\tmp\\release-witness-v0113\\ladder_v0113-merged-witness-trace-2026-10-11_947k.json"
+ }
+}

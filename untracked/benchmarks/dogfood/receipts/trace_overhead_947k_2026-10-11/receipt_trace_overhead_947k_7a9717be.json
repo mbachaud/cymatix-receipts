@@ -1,0 +1,227 @@
+{
+  "bench": "trace_overhead_e2e_context",
+  "git_sha": "7a9717be75138146337646c4596bd5545253bee1",
+  "commits_behind_master": "0",
+  "python": "3.14.3",
+  "machine": "Windows-11-10.0.26200-SP0 / AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "n": 150,
+  "warmup": 10,
+  "mode": "genome",
+  "docs": null,
+  "genome": "F:/tmp/trace-overhead-947k-493-fix2/erb_blob_v09x.db",
+  "queries_file": "needles_resolved_v09x_full.json",
+  "queries_distinct": 160,
+  "learn_disabled": "1",
+  "method": "FastAPI TestClient, 4 apps (off/off2/metadata/full), same queries, rotating-order interleave, hash_chain=true on ON arms, ignore_delivered=true, read_only=true; direct trace cost = perf_counter around tracer.sampled..emit on the request thread",
+  "config_dump": {
+    "budget.max_genes_per_turn": 4,
+    "trace_arms": {
+      "off": {
+        "enabled": false,
+        "level": "metadata",
+        "hash_chain": false,
+        "sampler_ratio": 1.0
+      },
+      "off2": {
+        "enabled": false,
+        "level": "metadata",
+        "hash_chain": false,
+        "sampler_ratio": 1.0
+      },
+      "metadata": {
+        "enabled": true,
+        "level": "metadata",
+        "hash_chain": true,
+        "sampler_ratio": 1.0
+      },
+      "full": {
+        "enabled": true,
+        "level": "full",
+        "hash_chain": true,
+        "sampler_ratio": 1.0
+      }
+    }
+  },
+  "observed_runtime_knob": {
+    "off": {
+      "enabled": false,
+      "level": "metadata",
+      "hash_chain": false,
+      "writer_present": false,
+      "trace_dir": "F:\\tmp\\trace-overhead-947k-493-fix2\\traces\\off\\traces"
+    },
+    "off2": {
+      "enabled": false,
+      "level": "metadata",
+      "hash_chain": false,
+      "writer_present": false,
+      "trace_dir": "F:\\tmp\\trace-overhead-947k-493-fix2\\traces\\off2\\traces"
+    },
+    "metadata": {
+      "enabled": true,
+      "level": "metadata",
+      "hash_chain": true,
+      "writer_present": true,
+      "trace_dir": "F:\\tmp\\trace-overhead-947k-493-fix2\\traces\\metadata\\traces"
+    },
+    "full": {
+      "enabled": true,
+      "level": "full",
+      "hash_chain": true,
+      "writer_present": true,
+      "trace_dir": "F:\\tmp\\trace-overhead-947k-493-fix2\\traces\\full\\traces"
+    }
+  },
+  "trace_lines_written": {
+    "off": 0,
+    "off2": 0,
+    "metadata": 160,
+    "full": 160
+  },
+  "wrapper_call_counts": {
+    "metadata": {
+      "sampled": 160,
+      "emit": 160
+    },
+    "full": {
+      "sampled": 160,
+      "emit": 160
+    }
+  },
+  "direct_trace_cost_us": {
+    "metadata": {
+      "p50": 185.8,
+      "p95": 695.2,
+      "p99": 740.5,
+      "max": 1019.4,
+      "mean": 291.8
+    },
+    "full": {
+      "p50": 198.5,
+      "p95": 644.7,
+      "p99": 715.2,
+      "max": 717.2,
+      "mean": 272.7
+    }
+  },
+  "direct_trace_under_1ms": {
+    "metadata": {
+      "p50": true,
+      "p95": true
+    },
+    "full": {
+      "p50": true,
+      "p95": true
+    }
+  },
+  "latency_us": {
+    "off": {
+      "p50": 17823596.9,
+      "p95": 34644519.2,
+      "p99": 46461587.0,
+      "max": 51830241.7,
+      "mean": 18700467.0
+    },
+    "off2": {
+      "p50": 17736516.8,
+      "p95": 34941580.6,
+      "p99": 49210179.3,
+      "max": 52285276.8,
+      "mean": 18700032.9
+    },
+    "metadata": {
+      "p50": 17565748.8,
+      "p95": 34409894.7,
+      "p99": 49005622.4,
+      "max": 52031988.9,
+      "mean": 18668020.2
+    },
+    "full": {
+      "p50": 17710951.6,
+      "p95": 34596831.1,
+      "p99": 48801537.8,
+      "max": 51410153.2,
+      "mean": 18681192.8
+    }
+  },
+  "paired_delta_us": {
+    "off2": {
+      "p50": 28916.9,
+      "p95": 750801.2,
+      "p99": 1094751.4,
+      "max": 22820208.0,
+      "mean": -434.1
+    },
+    "metadata": {
+      "p50": -51379.5,
+      "p95": 733394.7,
+      "p99": 2025470.2,
+      "max": 22615651.1,
+      "mean": -32446.8
+    },
+    "full": {
+      "p50": -26641.6,
+      "p95": 777366.9,
+      "p99": 22411566.5,
+      "max": 22573585.1,
+      "mean": -19274.2
+    }
+  },
+  "bootstrap_ci95_us": {
+    "off2": {
+      "p50": {
+        "point_us": -87080.1,
+        "ci95_lo_us": -704573.6,
+        "ci95_hi_us": 276290.8
+      },
+      "p95": {
+        "point_us": 297061.4,
+        "ci95_lo_us": -881329.1,
+        "ci95_hi_us": 5996890.0
+      }
+    },
+    "metadata": {
+      "p50": {
+        "point_us": -257848.1,
+        "ci95_lo_us": -671902.7,
+        "ci95_hi_us": 429152.1
+      },
+      "p95": {
+        "point_us": -234624.5,
+        "ci95_lo_us": -773765.8,
+        "ci95_hi_us": 6051843.6
+      }
+    },
+    "full": {
+      "p50": {
+        "point_us": -112645.3,
+        "ci95_lo_us": -707060.1,
+        "ci95_hi_us": 485514.3
+      },
+      "p95": {
+        "point_us": -47688.1,
+        "ci95_lo_us": -3609590.2,
+        "ci95_hi_us": 4343308.8
+      }
+    }
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 493,
+    "paired": true
+  },
+  "under_1ms": {
+    "off2": {
+      "p50": false,
+      "p95": false
+    },
+    "metadata": {
+      "p50": true,
+      "p95": false
+    },
+    "full": {
+      "p50": true,
+      "p95": false
+    }
+  }
+}

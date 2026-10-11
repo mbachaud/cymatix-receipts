@@ -1,0 +1,7 @@
+﻿rounds 431
+metadata trace_us p50 46923 p95 56553 p99 67992 max 70898 over1ms 397
+full trace_us p50 47170 p95 59315 p99 75982 max 80403 over1ms 394
+off req_ms p50 20406 p95 44499
+off2 req_ms p50 20402 p95 43648
+metadata req_ms p50 20525 p95 44646
+full req_ms p50 20577 p95 44729
