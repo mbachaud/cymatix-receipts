@@ -1,0 +1,823 @@
+{
+ "bed": "beir_trec_covid",
+ "corpus": "BEIR trec_covid",
+ "commit": "da55e457a6dbed1c89de9f3299fa61babaf686d3",
+ "stamp": "traced-sweep-2026-10-11",
+ "source_db": "F:\\tmp\\beir_trec_covid_bed\\beir_trec_covid.db",
+ "source_bytes": 4031098880,
+ "ingest_c": "4",
+ "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+ "sqlite": "3.50.4",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "env_pins": {
+  "PYTHONHASHSEED": "0",
+  "PYTHONUTF8": "1",
+  "CYMATIX_DISABLE_LEARN": "1",
+  "CYMATIX_SQLITE_CACHE_SIZE": "-12582912"
+ },
+ "resolved": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\benchmarks\\dogfood\\beir_trec_covid\\needles_resolved_beir_trec_covid_full.json",
+ "resolved_sha256": "4d3327bf7c2bd31104e68e307eab5d0dd8d73629beef6187878071bf5cf39b32",
+ "gold": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\benchmarks\\dogfood\\beir_trec_covid\\gold_by_needle_beir_trec_covid.json",
+ "gold_sha256": "a8e6a3ef6f2d8be575de975b0ec396b4a99d3dbfdbbba4d021aa97fd17d6b993",
+ "started": "2026-10-11T23:29:47",
+ "snapshot_s": 12.22,
+ "identity": {
+  "bytes": 4031098880,
+  "gene_count": 172143,
+  "gene_id_set_sha256": "a9382a86dcdbcb17f9db652f3fa6613cb4ae2142c15e7512d884137461e319b2"
+ },
+ "config": {
+  "file": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\cymatix.toml",
+  "file_sha256": "86bc41a91459ce8d13087488beb6a2794eac8481176d573483cfa257058fa855",
+  "loaded": {
+   "ribosome": {
+    "enabled": false,
+    "model": "gemma4:e2b",
+    "base_url": "http://localhost:11434",
+    "timeout": 120.0,
+    "keep_alive": "30m",
+    "warmup": false,
+    "backend": "none",
+    "claude_model": "claude-haiku-4-5-20251001",
+    "claude_base_url": "",
+    "litellm_model": "gemini/gemini-2.5-flash",
+    "rerank_model_path": "training/models/rerank",
+    "splice_model_path": "training/models/splice",
+    "splice_threshold": 0.5,
+    "nli_model_path": "training/models/nli",
+    "nli_splice_bonus": 0.15,
+    "nli_splice_penalty": 0.15,
+    "device": "auto",
+    "query_expansion_enabled": false,
+    "query_decomposition_enabled": false
+   },
+   "budget": {
+    "ribosome_tokens": 3000,
+    "expression_tokens": 7000,
+    "full_text_delivery": false,
+    "companion_chunks": 4,
+    "context_max_chars": 100000,
+    "max_genes_per_turn": 12,
+    "max_fingerprints_per_turn": 40,
+    "splice_aggressiveness": 0.3,
+    "decoder_mode": "condensed",
+    "wire_format": "legacy",
+    "decoder_mode_overrides": {},
+    "legibility_enabled": true,
+    "slate_char_budget": 1500,
+    "session_delivery_enabled": true,
+    "neutralize_control_tags": true,
+    "min_delivered_docs": 12,
+    "tier_seat_floor_enabled": false,
+    "abstain_enabled": true,
+    "foveated_enabled": false,
+    "foveated_alpha": 1.0,
+    "foveated_c_min": 0.15,
+    "foveated_base_chars": 1000,
+    "splice_target_chars": 0,
+    "tier_tight_ratio": 3.0,
+    "tier_focused_ratio": 1.8,
+    "tier_hard_floor_frac": 0.15,
+    "tier_lagrange_frac": 0.7
+   },
+   "genome": {
+    "path": "genomes/main/genome.db",
+    "compact_interval": 3600.0,
+    "cold_start_threshold": 10,
+    "replicas": [],
+    "replica_sync_interval": 100,
+    "synchronous": "NORMAL"
+   },
+   "server": {
+    "host": "127.0.0.1",
+    "port": 11437,
+    "upstream": "http://localhost:11434",
+    "bench_enabled": false,
+    "bench_port": 11439,
+    "bench_genome_path": "genomes/bench/bench.genome.db",
+    "upstream_timeout": 180.0,
+    "admin_token": "",
+    "swap_db_roots": []
+   },
+   "telemetry": {
+    "enabled": false,
+    "endpoint": "localhost:4317",
+    "insecure": true,
+    "sampler_ratio": 1.0,
+    "redact_query": true,
+    "logs_enabled": true,
+    "logs_level": "INFO"
+   },
+   "trace": {
+    "enabled": false,
+    "level": "metadata",
+    "path": "",
+    "hash_chain": false,
+    "sampler_ratio": 1.0,
+    "rotate_bytes": 67108864
+   },
+   "ingestion": {
+    "backend": "cpu",
+    "splade_enabled": false,
+    "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "entity_graph": true,
+    "entity_autolink_hub_cutoff": 200,
+    "dense_embed_on_ingest": false,
+    "sema_embed_on_ingest": false,
+    "symbol_graph": false,
+    "splade_auto_enable_below_genes": 0,
+    "splade_auto_disable_above_genes": 0,
+    "splade_model": "naver/splade-cocondenser-ensembledistil",
+    "sema_model": "all-MiniLM-L6-v2",
+    "splade_content_cap": 1000,
+    "dense_passage_char_cap": 2000,
+    "citation_path_anchors": [
+     "sources",
+     "Projects"
+    ],
+    "deny_list_extra": [],
+    "locale_demotion_enabled": true
+   },
+   "context": {
+    "cold_tier_enabled": false,
+    "cold_tier_min_hot_genes": 0,
+    "cold_tier_k": 3,
+    "cold_tier_min_cosine": 0.15,
+    "fingerprint_mode_profile": "balanced",
+    "freshness_basis": "clock"
+   },
+   "cymatics": {
+    "enabled": true,
+    "peak_width": null,
+    "harmonic_links": true,
+    "distance_metric": "cosine"
+   },
+   "retrieval": {
+    "sr_enabled": false,
+    "sr_gamma": 0.85,
+    "sr_k_steps": 4,
+    "sr_weight": 1.5,
+    "sr_cap": 3.0,
+    "ray_trace_theta": false,
+    "theta_weight": 1.0,
+    "seeded_edges_enabled": false,
+    "symbol_expansion_cap": 8,
+    "filename_anchor_enabled": true,
+    "filename_anchor_weight": 4.0,
+    "bm25_shortlist_enabled": true,
+    "bm25_shortlist_size": 50,
+    "bm25_prefilter_enabled": false,
+    "bm25_prefilter_size": 200,
+    "fts5_candidate_depth": 0,
+    "entity_graph_retrieval_enabled": false,
+    "dense_embedding_enabled": false,
+    "dense_embedding_dim": 1024,
+    "dense_model": "BAAI/bge-m3",
+    "ann_similarity_threshold": 0.58,
+    "ann_threshold_min_genes": 1,
+    "ann_threshold_max_genes": 12,
+    "ann_threshold_mode": "absolute",
+    "ann_threshold_sigma_multiplier": 3.0,
+    "dense_pool_floor_genes": 8,
+    "dense_pool_size": 500,
+    "fusion_mode": "rrf",
+    "rrf_k": 20,
+    "rrf_gate_enabled": false,
+    "rrf_gate_top_m": 0,
+    "rrf_gate_min_score": 0.0,
+    "cover_walk_enabled": false,
+    "cover_walk_seed_m": 12,
+    "cover_walk_hops": 2,
+    "cover_walk_gamma": 0.5,
+    "cover_walk_degree_cap": 1000,
+    "cover_walk_frontier_cap": 2000,
+    "cover_walk_append_slots": 3,
+    "cover_walk_append_min_mass": 0.0,
+    "cover_walk_band_weight": 1.0,
+    "rerank_combinator": "additive",
+    "rerank_band_delta": 0.05,
+    "rerank_tier_weight": 1.0,
+    "rerank_combinator_by_class": {
+     "arithmetic": "eps_band",
+     "factual": "eps_band",
+     "procedural": "eps_band",
+     "multi_hop": "eps_band",
+     "default": "eps_band"
+    },
+    "blend_mode": "scale_relative",
+    "fts5_weight": 3.0,
+    "splade_weight": 3.5,
+    "tag_exact_weight": 3.0,
+    "tag_prefix_weight": 1.5,
+    "tag_idf_enabled": false,
+    "tag_df_cap": 0.0,
+    "splade_df_cap_fraction": 0.0,
+    "sema_boost_weight": 2.0,
+    "sema_cold_weight": 3.0,
+    "lex_anchor_weight": 1.5,
+    "harmonic_weight": 1.0,
+    "harmonic_batching_enabled": false,
+    "entity_graph_weight": 0.5,
+    "dense_weight": 1.0,
+    "dense_additive_weight": 4.0,
+    "dense_additive_min_cosine": 0.15,
+    "semantic_dense_additive_weight": 16.0,
+    "semantic_broaden_routing": true,
+    "pki_weight": 1.0,
+    "pki_enabled": false,
+    "shard_fetch_multiplier": 2.0,
+    "shard_fetch_scale_with_shards": false,
+    "coact_reserved_slots": 0,
+    "coact_link_boost": 0.5,
+    "doc_type_boost_mode": "additive",
+    "authority_path_selectivity": false,
+    "rerank_enabled": false,
+    "rerank_depth": 50,
+    "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "rerank_enabled_by_class": {}
+   },
+   "abstain": {
+    "mode": "global",
+    "ratio_threshold": 1.8,
+    "ratio_threshold_rrf_norm": 1.5,
+    "per_class": {}
+   },
+   "session": {
+    "default_party_id": "default",
+    "synthetic_session_window_s": 300,
+    "synthetic_session_enabled": true
+   },
+   "plr": {
+    "enabled": true,
+    "model_path": "training/models/stacked_plr.joblib",
+    "expected_sha256": "",
+    "high_risk_threshold": 0.5
+   },
+   "headroom": {
+    "enabled": true,
+    "autostart": true,
+    "host": "127.0.0.1",
+    "port": 8787,
+    "mode": "token",
+    "dashboard_path": "/dashboard",
+    "route_upstream": false
+   },
+   "classifier": {
+    "enabled": true
+   },
+   "know": {
+    "emit_floor": 0.45,
+    "s_ref": 4.2503,
+    "g_ref": 0.4386,
+    "betas": [
+     -2.1222,
+     -1.1442,
+     0.8794,
+     0.9407,
+     0.2999,
+     0.7979
+    ],
+    "calibrated_at": "2026-07-07T01:39:23+00:00",
+    "calibrated_on_n": 1617,
+    "stale_after_days": 30,
+    "neutral": null,
+    "fitted_inputs": null,
+    "model": "legacy",
+    "lanes_intercept": 0.0,
+    "lanes_betas": {},
+    "lanes_platt_a": 1.0,
+    "lanes_platt_b": 0.0,
+    "lanes_ce_model": ""
+   },
+   "hardware": {
+    "device": "auto",
+    "dense_device": "auto",
+    "splade_device": "auto",
+    "sema_device": "auto",
+    "rerank_device": "auto",
+    "batch_sizes": {},
+    "low_vram_threshold_gb": 4.0,
+    "lazy_encoders": true
+   },
+   "vault": {
+    "enabled": false,
+    "path": "~/.cymatix/vault",
+    "party_id": "",
+    "fan_out_threshold": 5000,
+    "redact_body": false,
+    "stale_threshold": 0.5,
+    "traces": {
+     "enabled": true,
+     "retention_hours": 48,
+     "max_retention_hours_hard": 720,
+     "max_count": 10000,
+     "rollup_enabled": true,
+     "rollup_shard": "hour",
+     "prune_interval_minutes": 60,
+     "trigger_only": false
+    }
+   },
+   "synonym_map": {
+    "slow": [
+     "performance",
+     "latency",
+     "bottleneck",
+     "timeout",
+     "lag"
+    ],
+    "fast": [
+     "performance",
+     "speed",
+     "optimization",
+     "cache"
+    ],
+    "cache": [
+     "redis",
+     "ttl",
+     "invalidation",
+     "cdn",
+     "caching",
+     "eviction"
+    ],
+    "auth": [
+     "jwt",
+     "login",
+     "security",
+     "token",
+     "session",
+     "oauth"
+    ],
+    "protein": [
+     "folding",
+     "amino",
+     "alpha_helix",
+     "beta_sheet",
+     "alphafold",
+     "biochemistry"
+    ],
+    "tree": [
+     "btree",
+     "b-tree",
+     "data_structures",
+     "index",
+     "binary_tree"
+    ],
+    "cymatix": [
+     "genome",
+     "ribosome",
+     "codons",
+     "splice",
+     "chromatin",
+     "promoter",
+     "context compression"
+    ],
+    "pipeline": [
+     "steps",
+     "expression",
+     "workflow",
+     "process",
+     "stages"
+    ],
+    "scoring": [
+     "divergence",
+     "audit",
+     "grades",
+     "ratchet",
+     "dimensions"
+    ],
+    "compress": [
+     "compression",
+     "ratio",
+     "target",
+     "context_compression"
+    ],
+    "ratio": [
+     "compression",
+     "ratio",
+     "target",
+     "factor"
+    ],
+    "error": [
+     "exception",
+     "crash",
+     "failure",
+     "bug",
+     "traceback"
+    ],
+    "port": [
+     "proxy",
+     "server",
+     "configuration",
+     "system_settings",
+     "api"
+    ],
+    "threshold": [
+     "divergence",
+     "scoring",
+     "reconciliation",
+     "configuration"
+    ],
+    "model": [
+     "ollama",
+     "llm",
+     "configuration",
+     "deployment",
+     "agent_frameworks"
+    ],
+    "skills": [
+     "fleet",
+     "agent",
+     "worker",
+     "llm_systems",
+     "systems_architecture"
+    ],
+    "monetary": [
+     "decimal",
+     "financial",
+     "data_processing",
+     "bookkeeping"
+    ],
+    "budget": [
+     "tokens",
+     "configuration",
+     "ribosome",
+     "expression"
+    ],
+    "dimensions": [
+     "audit",
+     "scoring",
+     "preset",
+     "ci_cd"
+    ],
+    "binary": [
+     "rust",
+     "deployment",
+     "packaging",
+     "compatibility"
+    ],
+    "default": [
+     "configuration",
+     "system_settings",
+     "deployment"
+    ],
+    "db": [
+     "database",
+     "sqlite",
+     "postgres",
+     "sql",
+     "query",
+     "schema"
+    ],
+    "api": [
+     "endpoint",
+     "route",
+     "rest",
+     "http",
+     "request",
+     "response"
+    ],
+    "ui": [
+     "frontend",
+     "component",
+     "render",
+     "layout",
+     "css",
+     "style"
+    ],
+    "test": [
+     "pytest",
+     "unittest",
+     "mock",
+     "assert",
+     "coverage"
+    ],
+    "deploy": [
+     "docker",
+     "kubernetes",
+     "ci",
+     "cd",
+     "pipeline",
+     "helm"
+    ],
+    "config": [
+     "settings",
+     "toml",
+     "env",
+     "environment",
+     "dotenv"
+    ],
+    "conductor": [
+     "llm",
+     "agent",
+     "orchestration",
+     "model",
+     "fleet"
+    ],
+    "vacuum": [
+     "reclaim",
+     "sqlite",
+     "pages",
+     "compact",
+     "shrink",
+     "admin"
+    ],
+    "sike": [
+     "scale_invariant",
+     "benchmark",
+     "retrieval",
+     "sike_score"
+    ],
+    "moe": [
+     "mixture_of_experts",
+     "sliding_window",
+     "swa",
+     "gemma4",
+     "tissue",
+     "answer_slate"
+    ],
+    "slate": [
+     "answer_slate",
+     "kv_facts",
+     "front_loaded",
+     "extraction",
+     "moe"
+    ],
+    "decoder": [
+     "decoder_mode",
+     "condensed",
+     "moe",
+     "ribosome_prompt",
+     "instructions"
+    ],
+    "maintenance": [
+     "admin",
+     "vacuum",
+     "refresh",
+     "checkpoint",
+     "compact"
+    ],
+    "ribosome": [
+     "decoder",
+     "ribosome_prompt",
+     "compressor",
+     "splice",
+     "budget",
+     "tokens"
+    ],
+    "expression": [
+     "pipeline",
+     "stages",
+     "steps",
+     "expressed_context",
+     "decoder"
+    ],
+    "agents": [
+     "agent",
+     "fleet",
+     "conductor",
+     "worker",
+     "orchestration"
+    ],
+    "dashboard": [
+     "port",
+     "ui",
+     "frontend",
+     "server",
+     "fleet"
+    ],
+    "tables": [
+     "database",
+     "db",
+     "sqlite",
+     "schema",
+     "ddl"
+    ]
+   },
+   "encoder_daemon": {
+    "url": ""
+   },
+   "sync": {
+    "enabled": false,
+    "roots": [],
+    "include": [
+     ".txt",
+     ".md",
+     ".rst",
+     ".py",
+     ".ts",
+     ".js",
+     ".json",
+     ".toml",
+     ".yml",
+     ".yaml"
+    ],
+    "exclude": [
+     ".git",
+     "node_modules",
+     ".venv",
+     "venv",
+     "__pycache__",
+     "genomes",
+     ".claude",
+     "dist",
+     "build"
+    ],
+    "interval_s": 30.0,
+    "max_delete_fraction": 0.2,
+    "max_files_per_pass": 200,
+    "max_file_bytes": 2000000
+   },
+   "lanes": []
+  }
+ },
+ "command": [
+  "F:\\Projects\\cymatix-context\\.venv\\Scripts\\python.exe",
+  "-P",
+  "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\benchmarks\\dogfood\\erb\\ablation_ladder.py",
+  "--genome",
+  "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\snapshot\\beir_trec_covid.db",
+  "--resolved",
+  "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\benchmarks\\dogfood\\beir_trec_covid\\needles_resolved_beir_trec_covid_full.json",
+  "--gold",
+  "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\benchmarks\\dogfood\\beir_trec_covid\\gold_by_needle_beir_trec_covid.json",
+  "--limit",
+  "0",
+  "--k",
+  "12",
+  "--arms",
+  "baseline",
+  "--config",
+  "F:\\Projects\\cymatix-context\\.claude\\worktrees\\agent-aae5e45feb80d3c28\\cymatix.toml",
+  "--per-query",
+  "--rank-dump",
+  "200",
+  "--stamp",
+  "traced-sweep-2026-10-11",
+  "--out",
+  "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\ladder_beir_trec_covid_traced.json",
+  "--trace-dir",
+  "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\traces",
+  "--trace-level",
+  "metadata"
+ ],
+ "ladder": {
+  "rc": 0,
+  "wall_s": 139.7,
+  "out": "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\ladder_beir_trec_covid_traced.json"
+ },
+ "ndcg": {
+  "rc": 0,
+  "wall_s": 1010.5,
+  "out": "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\beir_ndcg_beir_trec_covid_traced.json"
+ },
+ "trace": {
+  "trace_dir": "F:\\tmp\\traced_sweep_2026-10-11\\beir_trec_covid\\traces",
+  "trace_level": "metadata",
+  "packets_written": 50,
+  "chain_verified": true
+ },
+ "comparison": {
+  "verdict": "EXACT_REPRODUCE",
+  "n": 50,
+  "per_needle_field_diffs": {
+   "delivered_gold": 0,
+   "recall_hit": 0,
+   "final_recall_hit": 0,
+   "rank_of_first_gold": 0,
+   "final_rank_of_first_gold": 0,
+   "delivered_gold_rank": 0,
+   "delivered_count": 0,
+   "gold_ranks": 0,
+   "floor_appended": 0,
+   "gate_kept": 0,
+   "splice_n_candidates": 0,
+   "cover_walk": 0
+  },
+  "paired_delivered": "+0/-0",
+  "summary": {
+   "recall_at_k": {
+    "new": 0.94,
+    "ref": 0.94
+   },
+   "final_recall_at_k": {
+    "new": 0.94,
+    "ref": 0.94
+   },
+   "delivered_gold_rate": {
+    "new": 0.94,
+    "ref": 0.94
+   },
+   "n_queries": {
+    "new": 50,
+    "ref": 50
+   }
+  },
+  "ref": "F:\\Projects\\cymatix-context\\.claude\\worktrees\\cymatix-tuning-progression-1d3a3c\\benchmarks\\dogfood\\beir_trec_covid\\receipts\\ladder_beir_trec_covid_seed0_2026-10-04.json"
+ },
+ "latency_profile": {
+  "packets": 50,
+  "stages": {
+   "assemble": {
+    "p50": 4.6,
+    "p95": 5.79,
+    "n": 50
+   },
+   "classify": {
+    "p50": 0.04,
+    "p95": 0.06,
+    "n": 50
+   },
+   "express": {
+    "p50": 2633.47,
+    "p95": 2992.4,
+    "n": 50
+   },
+   "extract": {
+    "p50": 0.05,
+    "p95": 0.12,
+    "n": 50
+   },
+   "rerank": {
+    "p50": 3.45,
+    "p95": 4.75,
+    "n": 50
+   },
+   "splice": {
+    "p50": 0.07,
+    "p95": 2177.96,
+    "n": 50
+   },
+   "tail_writes": {
+    "p50": 0.93,
+    "p95": 1.43,
+    "n": 50
+   }
+  },
+  "signals": {
+   "body_fetch": {
+    "p50": 3.19,
+    "p95": 5.99,
+    "n": 50
+   },
+   "coact_expand": {
+    "p50": 0.12,
+    "p95": 0.17,
+    "n": 50
+   },
+   "fts5": {
+    "p50": 375.29,
+    "p95": 461.2,
+    "n": 50
+   },
+   "lex_anchor": {
+    "p50": 141.84,
+    "p95": 264.09,
+    "n": 50
+   },
+   "tag_exact": {
+    "p50": 292.92,
+    "p95": 423.59,
+    "n": 50
+   },
+   "tag_prefix": {
+    "p50": 250.4,
+    "p95": 322.35,
+    "n": 50
+   }
+  },
+  "pools": {
+   "authority": {
+    "p50": 42067.0,
+    "p95": 42894.0,
+    "n": 41
+   },
+   "fts5": {
+    "p50": 48.0,
+    "p95": 48.0,
+    "n": 50
+   },
+   "lex_anchor": {
+    "p50": 37120.0,
+    "p95": 37376.0,
+    "n": 50
+   },
+   "tag_exact": {
+    "p50": 37120.0,
+    "p95": 37376.0,
+    "n": 50
+   },
+   "tag_prefix": {
+    "p50": 42014.0,
+    "p95": 42872.0,
+    "n": 50
+   }
+  },
+  "pool_total": {
+   "p50": 42032.0,
+   "p95": 42894.0,
+   "n": 50
+  }
+ },
+ "status": "OK",
+ "ended": "2026-10-11T23:49:10"
+}

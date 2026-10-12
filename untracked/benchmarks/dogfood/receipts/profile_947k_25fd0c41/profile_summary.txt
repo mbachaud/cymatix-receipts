@@ -1,0 +1,24 @@
+﻿records 470
+
+stages (s)        p50    p95    max   share
+  express         17.09  40.09  85.52  76.5%
+  splice           8.44   9.83  21.43  23.4%
+  assemble         0.03   0.04   0.44   0.1%
+  rerank           0.01   0.01   0.02   0.0%
+  tail_writes      0.00   0.00   0.09   0.0%
+  extract          0.00   0.00   0.00   0.0%
+  classify         0.00   0.00   0.00   0.0%
+
+signals (s)        p50    p95    max   share
+  fts5             2.79   4.68   7.49  39.2%
+  tag_prefix       1.52   4.30   8.92  24.4%
+  tag_exact        1.36   3.77  22.14  23.1%
+  lex_anchor       0.81   2.25   4.06  13.0%
+  body_fetch       0.02   0.03   0.06   0.3%
+  coact_expand     0.00   0.00   0.01   0.0%
+
+pool_total p50 172526 p95 387191 max 550127
+corr(express, pool_total) = 0.912
+express not covered by signals p50 10.37s
+splice > 1s on 318/470
+express+splice p50 24.2s p95 48.8s

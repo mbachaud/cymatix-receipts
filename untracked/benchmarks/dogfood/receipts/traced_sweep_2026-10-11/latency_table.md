@@ -1,0 +1,32 @@
+﻿| bed | docs | GB | verdict | pool p50 | express p50 / p95 s | splice p50 s | fts5 s | tag tiers s |
+|---|---|---|---|---|---|---|---|---|
+| beir_arguana | ? | 0.00 | RANK_AXES_MOVED +4/-0 | 1,062 | 0.17 / 0.39 | 0.00 | 0.05 | 0.01 |
+| beir_cqadupstack_android | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 783 | 0.06 / 0.44 | 0.00 | 0.02 | 0.01 |
+| beir_cqadupstack_english | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 69 | 0.03 / 0.09 | 0.00 | 0.01 | 0.00 |
+| beir_cqadupstack_gaming | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 172 | 0.03 / 0.10 | 0.00 | 0.01 | 0.00 |
+| beir_cqadupstack_gis | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 2,989 | 0.16 / 0.43 | 0.00 | 0.02 | 0.02 |
+| beir_cqadupstack_mathematica | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 409 | 0.04 / 0.35 | 0.45 | 0.01 | 0.00 |
+| beir_cqadupstack_physics | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 128 | 0.04 / 0.10 | 0.00 | 0.01 | 0.00 |
+| beir_cqadupstack_programmers | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 321 | 0.06 / 0.19 | 0.00 | 0.02 | 0.00 |
+| beir_cqadupstack_stats | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 344 | 0.08 / 0.40 | 0.00 | 0.03 | 0.00 |
+| beir_cqadupstack_tex | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 639 | 0.13 / 0.64 | 0.46 | 0.04 | 0.01 |
+| beir_cqadupstack_unix | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 604 | 0.09 / 0.33 | 0.00 | 0.03 | 0.01 |
+| beir_cqadupstack_webmasters | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 406 | 0.05 / 0.24 | 0.00 | 0.01 | 0.00 |
+| beir_cqadupstack_wordpress | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 2,390 | 0.19 / 0.75 | 0.64 | 0.05 | 0.02 |
+| beir_fiqa | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 216 | 0.07 / 0.14 | 0.00 | 0.03 | 0.00 |
+| beir_nfcorpus | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 48 | 0.01 / 0.02 | 0.00 | 0.00 | 0.00 |
+| beir_quora | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 153 | 0.07 / 0.82 | 0.00 | 0.03 | 0.00 |
+| beir_scidocs | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 235 | 0.05 / 0.11 | 0.00 | 0.02 | 0.00 |
+| beir_scifact | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 62 | 0.02 / 0.04 | 0.00 | 0.01 | 0.00 |
+| beir_trec_covid | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 42,032 | 2.63 / 2.99 | 0.00 | 0.38 | 0.54 |
+| beir_webis_touche2020 | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 1,044 | 0.25 / 0.74 | 2.78 | 0.08 | 0.02 |
+| coderag_docs | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 6,365 | 0.47 / 0.94 | 5.12 | 0.05 | 0.06 |
+| coderag_solutions | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 76 | 0.01 / 0.03 | 0.00 | 0.00 | 0.00 |
+| cosqa | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 340 | 0.02 / 0.04 | 0.00 | 0.00 | 0.00 |
+| enronqa_padded | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 22,658 | 2.32 / 13.40 | 3.26 | 0.53 | 0.29 |
+| enronqa_v2 | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 3,445 | 0.34 / 1.42 | 2.10 | 0.09 | 0.03 |
+| erb_947k | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 171,642 | 15.06 / 32.44 | 7.67 | 2.47 | 2.51 |
+| financebench | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 6,425 | 0.59 / 0.99 | 7.57 | 0.10 | 0.05 |
+| locomo | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 177 | 0.01 / 0.03 | 0.00 | 0.00 | 0.00 |
+| muloc | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 33,609 | 2.98 / 7.31 | 6.09 | 0.55 | 0.30 |
+| swebench | ? | 0.00 | EXACT_REPRODUCE +0/-0 | 13,629 | 1.14 / 2.33 | 6.39 | 0.21 | 0.12 |

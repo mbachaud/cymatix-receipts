@@ -1,0 +1,22 @@
+{
+ "n": 470,
+ "delivered": [
+  314,
+  314
+ ],
+ "per_needle_field_diffs": {
+  "delivered_gold": 0,
+  "recall_hit": 0,
+  "final_recall_hit": 0,
+  "rank_of_first_gold": 0,
+  "final_rank_of_first_gold": 0,
+  "delivered_gold_rank": 0,
+  "delivered_count": 0,
+  "gold_ranks": 0,
+  "floor_appended": 0,
+  "gate_kept": 0,
+  "splice_n_candidates": 0,
+  "cover_walk": 0
+ },
+ "verdict": "EXACT_REPRODUCE"
+}
