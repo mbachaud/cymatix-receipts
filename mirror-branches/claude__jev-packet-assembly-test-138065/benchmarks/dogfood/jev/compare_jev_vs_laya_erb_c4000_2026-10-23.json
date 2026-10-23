@@ -1,0 +1,99 @@
+{
+ "a": {
+  "receipt": "benchmarks/dogfood/jev/jev_erb_packet_know_c4000_classcap_noincoming_2026-10-23.json",
+  "arm": "no_incoming",
+  "commit": "29ae7e7f359e3d81c7eb7306ad9a8f31861669fb"
+ },
+ "b": {
+  "receipt": "benchmarks/dogfood/jev/laya_erb_packet_know_c4000_classcap_multilingual8192_2026-10-23.json",
+  "arm": "no_incoming",
+  "commit": "49cd5859ea64664546558ebfbfe7b63a213f4fc1"
+ },
+ "n_needles": 470,
+ "truth_know": 291,
+ "packets_identical": true,
+ "stats_a": {
+  "auroc_packet": 0.9005,
+  "auroc_max_chunk": 0.816,
+  "acc_packet_0.5": 0.8,
+  "fp_0.5": 58,
+  "fn_0.5": 36,
+  "mean_p_know": 0.811,
+  "mean_p_miss": 0.38,
+  "chunk_auroc_answers": 0.8133,
+  "chunk_auroc_typed": 0.8155,
+  "chunk_auroc_relevance": 0.8661,
+  "rerank_mrr": 0.914,
+  "rerank_top1": 248
+ },
+ "stats_b": {
+  "auroc_packet": 0.5633,
+  "auroc_max_chunk": 0.5243,
+  "acc_packet_0.5": 0.615,
+  "fp_0.5": 174,
+  "fn_0.5": 7,
+  "mean_p_know": 0.744,
+  "mean_p_miss": 0.723,
+  "chunk_auroc_answers": 0.5323,
+  "chunk_auroc_typed": 0.5618,
+  "chunk_auroc_relevance": 0.5461,
+  "rerank_mrr": 0.567,
+  "rerank_top1": 114
+ },
+ "packet_auroc_delta_b_minus_a": {
+  "point": -0.3372,
+  "boot_ci95": [
+   -0.3935,
+   -0.2752
+  ],
+  "boot_n": 2000,
+  "seed": 239
+ },
+ "flips_at_0.5": {
+  "a_right_b_wrong": 123,
+  "a_wrong_b_right": 36
+ },
+ "mean_abs_packet_diff": 0.269,
+ "by_erb_type": {
+  "basic": {
+   "n": 175,
+   "auroc_a": 0.9172,
+   "auroc_b": 0.5744
+  },
+  "completeness": {
+   "n": 20,
+   "auroc_a": 0.8407,
+   "auroc_b": 0.8352
+  },
+  "conflicting_info": {
+   "n": 20,
+   "auroc_a": 0.9444,
+   "auroc_b": 0.4722
+  },
+  "constrained": {
+   "n": 30,
+   "auroc_a": 0.8819,
+   "auroc_b": 0.5729
+  },
+  "intra_document_reasoning": {
+   "n": 40,
+   "auroc_a": 0.9437,
+   "auroc_b": 0.7121
+  },
+  "miscellaneous": {
+   "n": 20,
+   "auroc_a": 1.0,
+   "auroc_b": 0.4722
+  },
+  "project_related": {
+   "n": 40,
+   "auroc_a": null,
+   "auroc_b": null
+  },
+  "semantic": {
+   "n": 125,
+   "auroc_a": 0.8756,
+   "auroc_b": 0.5665
+  }
+ }
+}

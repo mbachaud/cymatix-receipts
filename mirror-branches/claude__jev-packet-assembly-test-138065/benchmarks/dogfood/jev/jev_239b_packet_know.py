@@ -96,10 +96,58 @@ RELEVANCE_LEVELS = [
 ]
 
 
+def configure_provider(url=None, model=None, extra_body=None, timeout_s=None,
+                       min_interval_s=None) -> dict:
+    """Point jev_call at another System One endpoint (e.g. a local Laya server).
+
+    ``extra_body`` adds provider-specific request fields (Laya: ``max_len``).
+    Returns the effective provider settings for the receipt.
+    """
+    global API_URL, MODEL, EXTRA_BODY, TIMEOUT_S, MIN_INTERVAL_S
+    API_URL = url or API_URL
+    MODEL = model or MODEL
+    EXTRA_BODY = dict(extra_body or {})
+    TIMEOUT_S = timeout_s or TIMEOUT_S
+    MIN_INTERVAL_S = MIN_INTERVAL_S if min_interval_s is None else min_interval_s
+    return {"url": API_URL, "model": MODEL, "extra_body": EXTRA_BODY,
+            "timeout_s": TIMEOUT_S, "min_interval_s": MIN_INTERVAL_S}
+
+
+EXTRA_BODY: dict = {}
+TIMEOUT_S = 30
+
+
+def add_provider_args(ap) -> None:
+    ap.add_argument("--api-url", default=None,
+                    help="System One endpoint (default: TypeSafe Jev); e.g. a local "
+                         "laya-serve at http://127.0.0.1:8010/v1/systemone")
+    ap.add_argument("--model", default=None, help="model id sent in the body (Laya: "
+                                                   "english / multilingual / typed-decisions)")
+    ap.add_argument("--max-len", type=int, default=None,
+                    help="Laya: per-request token budget (max_len body field)")
+    ap.add_argument("--timeout-s", type=float, default=None)
+    ap.add_argument("--min-interval-s", type=float, default=None)
+    ap.add_argument("--local", action="store_true",
+                    help="local provider: no API key needed (sends a placeholder bearer)")
+
+
+def provider_from_args(args, dry: bool = False):
+    """(api_key, key_var, provider settings) after applying the CLI overrides."""
+    extra = {"max_len": args.max_len} if args.max_len else {}
+    provider = configure_provider(args.api_url, args.model, extra, args.timeout_s,
+                                  args.min_interval_s)
+    if args.local:
+        return "local", None, provider
+    key_var = next((v for v in ("JEV_API_KEY", "TYPESAFE_API_KEY") if os.environ.get(v)), None)
+    if not dry and key_var is None:
+        raise SystemExit("ERROR: neither JEV_API_KEY nor TYPESAFE_API_KEY is set (or pass --local)")
+    return (os.environ.get(key_var) if key_var else None), key_var, provider
+
+
 def jev_call(api_key: str, state, questions: dict, last_call: list) -> dict:
-    """One Jev request with pacing and backoff on 429/529."""
-    body = json.dumps({"model": MODEL, "state": state,
-                       "questions": questions}).encode("utf-8")
+    """One System One request with pacing and backoff on 429/529."""
+    body = json.dumps({"model": MODEL, "state": state, "questions": questions,
+                       **EXTRA_BODY}).encode("utf-8")
     for attempt in range(5):
         wait = MIN_INTERVAL_S - (time.monotonic() - last_call[0])
         if wait > 0:
@@ -110,7 +158,7 @@ def jev_call(api_key: str, state, questions: dict, last_call: list) -> dict:
                      "Content-Type": "application/json"})
         last_call[0] = time.monotonic()
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=TIMEOUT_S) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", "replace")[:500]
@@ -332,6 +380,7 @@ def main() -> int:
     ap.add_argument("--rescore", action="store_true", help="recompute summary from --out cache only")
     ap.add_argument("--out", default=None)
     ap.add_argument("--workdir", default=str(Path(tempfile.gettempdir()) / "jev_239b_c4000"))
+    add_provider_args(ap)
     args = ap.parse_args()
 
     if os.environ.get("PYTHONHASHSEED") != "0":
@@ -349,11 +398,7 @@ def main() -> int:
         print(json.dumps(prev["summary"], indent=1))
         return 0
 
-    key_var = next((v for v in ("JEV_API_KEY", "TYPESAFE_API_KEY") if os.environ.get(v)), None)
-    if not args.dry and key_var is None:
-        print("ERROR: neither JEV_API_KEY nor TYPESAFE_API_KEY is set", file=sys.stderr)
-        return 2
-    api_key = os.environ.get(key_var) if key_var else None
+    api_key, key_var, provider = provider_from_args(args, dry=args.dry)
 
     cache = {}
     if out_path.exists() and not args.dry:
@@ -514,7 +559,8 @@ def main() -> int:
         "loaded_config": loaded_cfg,
         "pythonhashseed": os.environ.get("PYTHONHASHSEED"),
         "api_key_var": key_var,
-        "jev_model_requested": MODEL,
+        "provider": provider,
+        "jev_model_requested": provider["model"],
         "jev_models": sorted(m for m in jev_models if m),
         "jev_input_tokens_this_run": usage_in[0],
         "wall_s": round(time.monotonic() - t0, 1),

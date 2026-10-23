@@ -1,0 +1,165 @@
+﻿{
+ "receipt": "benchmarks/dogfood/jev/laya_erb_packet_know_c4000_classcap_multilingual8192_2026-10-23.json",
+ "provider": {
+  "url": "http://127.0.0.1:8010/v1/systemone",
+  "model": "multilingual",
+  "extra_body": {
+   "max_len": 8192
+  },
+  "timeout_s": 120.0,
+  "min_interval_s": 0.0
+ },
+ "chunk": {
+  "calls": 3344,
+  "truncated": 0,
+  "state_tokens_p50": 1217.0,
+  "read_tokens_p50": 1217.0,
+  "dropped_frac_mean": 0.0
+ },
+ "packet": {
+  "calls": 470,
+  "truncated": 281,
+  "state_tokens_p50": 8962.0,
+  "read_tokens_p50": 8111.0,
+  "dropped_frac_mean": 0.129
+ },
+ "qtype": {
+  "calls": 470,
+  "truncated": 0,
+  "state_tokens_p50": 40.0,
+  "read_tokens_p50": 40.0,
+  "dropped_frac_mean": 0.0
+ }
+}
+{
+ "receipt": "benchmarks/dogfood/jev/laya_erb_packet_know_c4000_classcap_typeddecisions1024_2026-10-23.json",
+ "provider": {
+  "url": "http://127.0.0.1:8010/v1/systemone",
+  "model": "typed-decisions",
+  "extra_body": {
+   "max_len": 1024
+  },
+  "timeout_s": 120.0,
+  "min_interval_s": 0.0
+ },
+ "chunk": {
+  "calls": 3344,
+  "truncated": 3018,
+  "state_tokens_p50": 1227.0,
+  "read_tokens_p50": 947.0,
+  "dropped_frac_mean": 0.213
+ },
+ "packet": {
+  "calls": 470,
+  "truncated": 470,
+  "state_tokens_p50": 9057.0,
+  "read_tokens_p50": 944.0,
+  "dropped_frac_mean": 0.849
+ },
+ "qtype": {
+  "calls": 470,
+  "truncated": 0,
+  "state_tokens_p50": 41.0,
+  "read_tokens_p50": 41.0,
+  "dropped_frac_mean": 0.0
+ }
+}
+{
+ "receipt": "benchmarks/dogfood/jev/laya_239b_packet_know_grain_c4000_classcap_english512_2026-10-23.json",
+ "provider": {
+  "url": "http://127.0.0.1:8010/v1/systemone",
+  "model": "english",
+  "extra_body": {
+   "max_len": 512
+  },
+  "timeout_s": 120.0,
+  "min_interval_s": 0.0
+ },
+ "chunk": {
+  "calls": 864,
+  "truncated": 0,
+  "state_tokens_p50": 87.0,
+  "read_tokens_p50": 87.0,
+  "dropped_frac_mean": 0.0
+ },
+ "packet": {
+  "calls": 72,
+  "truncated": 72,
+  "state_tokens_p50": 547.0,
+  "read_tokens_p50": 432.0,
+  "dropped_frac_mean": 0.212
+ },
+ "qtype": {
+  "calls": 72,
+  "truncated": 0,
+  "state_tokens_p50": 18.0,
+  "read_tokens_p50": 18.0,
+  "dropped_frac_mean": 0.0
+ }
+}
+{
+ "receipt": "benchmarks/dogfood/jev/laya_239b_packet_know_grain_c4000_classcap_multilingual8192_2026-10-23.json",
+ "provider": {
+  "url": "http://127.0.0.1:8010/v1/systemone",
+  "model": "multilingual",
+  "extra_body": {
+   "max_len": 8192
+  },
+  "timeout_s": 120.0,
+  "min_interval_s": 0.0
+ },
+ "chunk": {
+  "calls": 864,
+  "truncated": 0,
+  "state_tokens_p50": 85.0,
+  "read_tokens_p50": 85.0,
+  "dropped_frac_mean": 0.0
+ },
+ "packet": {
+  "calls": 72,
+  "truncated": 0,
+  "state_tokens_p50": 569.0,
+  "read_tokens_p50": 569.0,
+  "dropped_frac_mean": 0.0
+ },
+ "qtype": {
+  "calls": 72,
+  "truncated": 0,
+  "state_tokens_p50": 15.0,
+  "read_tokens_p50": 15.0,
+  "dropped_frac_mean": 0.0
+ }
+}
+{
+ "receipt": "benchmarks/dogfood/jev/laya_239b_packet_know_grain_c4000_classcap_typeddecisions1024_2026-10-23.json",
+ "provider": {
+  "url": "http://127.0.0.1:8010/v1/systemone",
+  "model": "typed-decisions",
+  "extra_body": {
+   "max_len": 1024
+  },
+  "timeout_s": 120.0,
+  "min_interval_s": 0.0
+ },
+ "chunk": {
+  "calls": 864,
+  "truncated": 0,
+  "state_tokens_p50": 87.0,
+  "read_tokens_p50": 87.0,
+  "dropped_frac_mean": 0.0
+ },
+ "packet": {
+  "calls": 72,
+  "truncated": 0,
+  "state_tokens_p50": 547.0,
+  "read_tokens_p50": 547.0,
+  "dropped_frac_mean": 0.0
+ },
+ "qtype": {
+  "calls": 72,
+  "truncated": 0,
+  "state_tokens_p50": 18.0,
+  "read_tokens_p50": 18.0,
+  "dropped_frac_mean": 0.0
+ }
+}

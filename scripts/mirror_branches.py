@@ -106,7 +106,13 @@ NOTES = {
         "incoming rankings (packet AUROC 0.906; delivery identical to the 10-19 ladder 470/470),\n"
         "and the paired no-incoming ablation (0.900, delta CI [-0.015, +0.004]). Each receipt\n"
         "carries every raw Jev response, so `--rescore` needs no key. Write-up:\n"
-        "`docs/benchmarks/2026-10-23-jev-system-one-packet-judge.md` on the System One PR."
+        "`docs/benchmarks/2026-10-23-jev-system-one-packet-judge.md` on the System One PR (#522).\n\n"
+        "Local comparison (`laya_*.json`): Laya 0.4.14 (ConvAI Innovations, Apache-2.0) served by\n"
+        "laya-serve on an RTX 3080 Ti, checkpoints english@512 / multilingual@8192 /\n"
+        "typed-decisions@1024 (revision 7b928d82), same no-incoming questions and the same 470 ERB\n"
+        "packets as the Jev arm. ERB packet AUROC 0.563 (multilingual) / 0.480 (typed-decisions) vs\n"
+        "Jev 0.900; `laya_truncation_2026-10-23.txt` gives Laya's own truncation counts (typed-decisions\n"
+        "read p50 944 of 9,057 packet tokens)."
     ),
 }
 # Export a branch at a fixed commit instead of its head, when the head is not

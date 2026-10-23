@@ -50,8 +50,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from jev_239b_packet_know import (  # noqa: E402
-    MODEL, REPO_ROOT, SHEET, auroc, chunk_questions, confusion, git, jev_call,
-    packet_questions, qtype_questions,
+    REPO_ROOT, SHEET, add_provider_args, auroc, chunk_questions, confusion, git, jev_call,
+    packet_questions, provider_from_args, qtype_questions,
 )
 
 MAX_CHUNK_CHARS = 60_000    # well under Jev's ~150k-char per-question budget
@@ -199,6 +199,27 @@ def summarize(needle_rows: list, chunks: list, ladder: dict) -> dict:
     return out
 
 
+def fit_packet(pstate: dict, max_chars: int):
+    """Trim every packet item to one shared cap so the serialized state fits.
+
+    For providers with a state-size limit (laya-serve rejects > 50,000 chars).
+    Even trimming keeps the head of every item instead of dropping the tail
+    items. Returns the per-item cap applied, or None when nothing was trimmed.
+    """
+    items = pstate["packet"]
+    if not items or len(json.dumps(pstate)) <= max_chars:
+        return None
+    overhead = len(json.dumps(pstate)) - sum(len(json.dumps(it["text"])) for it in items)
+    cap = max(200, (max_chars - overhead) // len(items) - 16)
+    for it in items:
+        it["text"] = it["text"][:cap]
+    while len(json.dumps(pstate)) > max_chars and cap > 200:  # escapes inflate JSON length
+        cap = int(cap * 0.95)
+        for it in items:
+            it["text"] = it["text"][:cap]
+    return cap
+
+
 def load_progress(path: Path):
     rows, chunks, cache = [], [], {}
     if path.exists():
@@ -231,6 +252,9 @@ def main() -> int:
     ap.add_argument("--packets-from", default=None,
                     help="reuse delivered packets + cymatix fields from a prior receipt instead "
                          "of re-running retrieval; chunk text is read from --bed read-only")
+    ap.add_argument("--max-state-chars", type=int, default=0,
+                    help="trim packet items evenly so the packet state fits (laya-serve: 50000)")
+    add_provider_args(ap)
     args = ap.parse_args()
 
     if os.environ.get("PYTHONHASHSEED") != "0":
@@ -248,11 +272,7 @@ def main() -> int:
         print(json.dumps(prev["summary"], indent=1))
         return 0
 
-    key_var = next((v for v in ("JEV_API_KEY", "TYPESAFE_API_KEY") if os.environ.get(v)), None)
-    if not args.dry and key_var is None:
-        print("ERROR: neither JEV_API_KEY nor TYPESAFE_API_KEY is set", file=sys.stderr)
-        return 2
-    api_key = os.environ.get(key_var) if key_var else None
+    api_key, key_var, provider = provider_from_args(args, dry=args.dry)
 
     if not args.dry:
         if lock.exists():
@@ -429,6 +449,8 @@ def main() -> int:
                       "retrieval": {**incoming, "know_miss": contract},
                       "packet": [{"rank": d["rank"], "fused_score": d["score"],
                                   "source": d["source"], "text": d["text"]} for d in delivered]}
+        if args.max_state_chars:
+            row["packet_trim_cap"] = fit_packet(pstate, args.max_state_chars)
         pk = call(f"{name}::packet::{qtype}", pstate, packet_questions())
         row.update({"qtype": qtype, "qtype_probs": qt.get("probabilities"),
                     "jev_packet_answers": pk["packet_answers"]["noul"],
@@ -462,7 +484,9 @@ def main() -> int:
         "loaded_config": loaded_cfg,
         "pythonhashseed": os.environ.get("PYTHONHASHSEED"),
         "api_key_var": key_var,
-        "jev_model_requested": MODEL,
+        "provider": provider,
+        "max_state_chars": args.max_state_chars or None,
+        "jev_model_requested": provider["model"],
         "jev_models": sorted(m for m in jev_models if m),
         "jev_input_tokens": sum(v.get("usage", {}).get("input_tokens", 0) for v in cache.values()),
         "wall_s_this_session": round(time.monotonic() - t0, 1),
