@@ -20,3 +20,4 @@ Some mirrored trees (`codex__scbench-cymatix-ab`) carry paths over 200 character
 | `claude/codebase-audit-weaknesses-96a7da` | local | `70e2a2fa9d83` | 2 | ok |
 | `codex/scbench-cymatix-ab` | local | `9312cde85e88` | 985 | ok |
 | `claude/wider-funnel-architecture-f7d3b6` | local | `abe4f2462d25` | 30 | ok |
+| `claude/jev-packet-assembly-test-138065` | local | `49cd5859ea64` | 7 | ok |

@@ -38,6 +38,8 @@ EXTRA_KEEP = {
     "benchmarks/scbench/": (".db", ".log", ".yaml", ".yml", ".py"),
     # Run logs committed next to receipts (e.g. shortlist_prefix_stability_*.log).
     "benchmarks/dogfood/erb/receipts/": (".log",),
+    # Jev (System One) harnesses live next to their receipts on a local-only branch.
+    "benchmarks/dogfood/jev/": (".py",),
 }
 # Per-branch extra pathspecs outside PATHS (e.g. a repo-root pin file that
 # belongs with the archived run).
@@ -95,6 +97,17 @@ NOTES = {
         "export, which was taken from abe4f246 rather than master; they moved here when mirror/ was\n"
         "re-exported from origin/master."
     ),
+    "claude/jev-packet-assembly-test-138065": (
+        "## Reading note: EXPERIMENTAL external model\n\n"
+        "Local-only branch (never pushed), cut from `bench/c580-multicorpus` for its c4000 classcap\n"
+        "profile; the diff base is that branch, so only the Jev files are here. Jev (TypeSafe\n"
+        "\"System One\", jev-1.14.0) is a proprietary hosted API, not part of the cymatix pipeline.\n"
+        "Receipts: 239b synthetic bed (know/miss 72/72), ERB 947k c4000 classcap with cymatix\n"
+        "incoming rankings (packet AUROC 0.906; delivery identical to the 10-19 ladder 470/470),\n"
+        "and the paired no-incoming ablation (0.900, delta CI [-0.015, +0.004]). Each receipt\n"
+        "carries every raw Jev response, so `--rescore` needs no key. Write-up:\n"
+        "`docs/benchmarks/2026-10-23-jev-system-one-packet-judge.md` on the System One PR."
+    ),
 }
 # Export a branch at a fixed commit instead of its head, when the head is not
 # the commit that carries the receipts (e.g. a tip that untracks them).
@@ -113,6 +126,7 @@ BRANCHES = [
     ("claude/codebase-audit-weaknesses-96a7da", None),
     ("codex/scbench-cymatix-ab", None),
     ("claude/wider-funnel-architecture-f7d3b6", None),
+    ("claude/jev-packet-assembly-test-138065", None, "bench/c580-multicorpus"),
 ]
 # Keep every pathspec batch comfortably under the Windows command-line limit.
 ARCHIVE_ARG_BYTES = 24000
