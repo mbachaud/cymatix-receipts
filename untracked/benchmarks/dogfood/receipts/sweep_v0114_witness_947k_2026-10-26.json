@@ -1,0 +1,59 @@
+{
+  "new": "F:\\tmp\\release-witness-v0114\\ladder_v0114-merged-witness-trace-2026-10-26_947k.json",
+  "ref": "F:\\Projects\\cymatix-receipts\\untracked\\benchmarks\\dogfood\\erb\\receipts\\ladder_v0113_merged_witness_trace_947k_2026-10-11.json",
+  "n": 470,
+  "summary": {
+    "recall_at_k": {
+      "new": 0.6809,
+      "ref": 0.6809
+    },
+    "final_recall_at_k": {
+      "new": 0.683,
+      "ref": 0.683
+    },
+    "delivered_gold_rate": {
+      "new": 0.6680851063829787,
+      "ref": 0.6680851063829787
+    },
+    "mean_rank_of_gold": {
+      "new": 5.25,
+      "ref": 5.25
+    },
+    "median_rank_of_gold": {
+      "new": 2.0,
+      "ref": 2.0
+    },
+    "gold_found_queries": {
+      "new": 361,
+      "ref": 361
+    },
+    "delivered_gold_queries": {
+      "new": 314,
+      "ref": 314
+    },
+    "pool_delivery_gap": {
+      "new": 0.0128,
+      "ref": 0.0128
+    },
+    "n_queries": {
+      "new": 470,
+      "ref": 470
+    }
+  },
+  "per_needle_field_diffs": {
+    "delivered_gold": 0,
+    "recall_hit": 0,
+    "final_recall_hit": 0,
+    "rank_of_first_gold": 0,
+    "final_rank_of_first_gold": 0,
+    "delivered_gold_rank": 0,
+    "delivered_count": 0,
+    "gold_ranks": 0,
+    "floor_appended": 0,
+    "gate_kept": 0,
+    "splice_n_candidates": 0,
+    "cover_walk": 0
+  },
+  "paired_delivered": "+0/-0",
+  "verdict": "EXACT_REPRODUCE"
+}
