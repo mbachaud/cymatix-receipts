@@ -1,0 +1,12 @@
+18:04:32 INFO    [2984 files, 3008 genes] 92.3 genes/s
+18:04:37 INFO    [3496 files, 3520 genes] 93.7 genes/s
+18:04:38 INFO    ============================================================
+18:04:38 INFO    DONE beir_nfcorpus (parallel) in 38.8s
+18:04:38 INFO      files=3633 genes=3657 skipped=0 errors=0
+18:04:38 INFO      total_genes=3617 harmonic_links=0 bytes=32514048
+18:04:38 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_nfcorpus_bed/beir_nfcorpus.db
+18:04:38 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_nfcorpus_bed/beir_nfcorpus.db
+18:04:38 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_nfcorpus_bed/manifest.json (key=beir_nfcorpus)
+18:04:38 INFO    ============================================================
+18:04:38 INFO    SUMMARY (blob)
+18:04:38 INFO      beir_nfcorpus genes=3617 bytes=32665600 elapsed=38.8s (files=3633 errors=0 missing=0)

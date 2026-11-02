@@ -1,0 +1,42 @@
+{
+  "bench": "fixture_matrix",
+  "spec": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
+  "created_at": "2026-11-02T18:25:49.875499+00:00",
+  "targets": {
+    "beir_arguana": {
+      "mode": "parallel",
+      "tagger_version": 2,
+      "profile": "beir_arguana",
+      "label": "BEIR arguana corpus (issue #482 round 1)",
+      "active_roots": 1,
+      "roots": [
+        "/home/user/bench/corpus/beir_arguana/corpus"
+      ],
+      "db_path": "/home/user/bench/beds_nosplade_floor50/beir_arguana_bed/beir_arguana.db",
+      "started_at": "2026-11-02T18:24:40.567133+00:00",
+      "files": 8673,
+      "genes": 8702,
+      "skipped": 1,
+      "errors": 0,
+      "missing_roots": [],
+      "entity_autolink": true,
+      "discovered_files": 8673,
+      "resumed_files_remaining": 8673,
+      "commit_batch": 0,
+      "batched_commits": 0,
+      "valve_trips": 0,
+      "workers": 4,
+      "elapsed_s": 69.2,
+      "finished_at": "2026-11-02T18:25:49.794602+00:00",
+      "total_genes": 8652,
+      "compression_ratio": 2.3552,
+      "harmonic_links": 0,
+      "bytes": 71344128,
+      "cover_index": true,
+      "cover_index_s": 0.0,
+      "dense_coverage": 0.0,
+      "dense_genes_populated": 0
+    }
+  },
+  "updated_at": "2026-11-02T18:25:49.875538+00:00"
+}

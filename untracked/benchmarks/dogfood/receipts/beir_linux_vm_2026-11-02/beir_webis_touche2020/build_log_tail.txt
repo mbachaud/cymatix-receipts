@@ -1,0 +1,12 @@
+21:52:18 INFO    [381953 files, 498048 genes] 107.3 genes/s
+21:52:23 INFO    [382353 files, 498560 genes] 107.3 genes/s
+21:52:28 INFO    ============================================================
+21:52:28 INFO    DONE beir_webis_touche2020 (parallel) in 4648.2s
+21:52:28 INFO      files=382545 genes=498809 skipped=0 errors=0
+21:52:28 INFO      total_genes=458690 harmonic_links=0 bytes=3695079424
+21:52:30 INFO    cover index built in 0.8s: /home/user/bench/beds_nosplade/beir_webis_touche2020_bed/beir_webis_touche2020.db
+21:52:30 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_webis_touche2020_bed/beir_webis_touche2020.db
+21:52:30 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_webis_touche2020_bed/manifest.json (key=beir_webis_touche2020)
+21:52:30 INFO    ============================================================
+21:52:30 INFO    SUMMARY (blob)
+21:52:30 INFO      beir_webis_touche2020 genes=458690 bytes=3707162624 elapsed=4648.2s (files=382545 errors=0 missing=0)

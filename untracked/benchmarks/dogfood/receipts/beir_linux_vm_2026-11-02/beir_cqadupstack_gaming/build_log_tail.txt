@@ -1,0 +1,12 @@
+19:32:18 INFO    [44744 files, 45056 genes] 201.7 genes/s
+19:32:21 INFO    [45192 files, 45504 genes] 201.5 genes/s
+19:32:21 INFO    ============================================================
+19:32:21 INFO    DONE beir_cqadupstack_gaming (parallel) in 226.2s
+19:32:21 INFO      files=45301 genes=45613 skipped=0 errors=0
+19:32:21 INFO      total_genes=45613 harmonic_links=0 bytes=195629056
+19:32:21 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_cqadupstack_gaming_bed/beir_cqadupstack_gaming.db
+19:32:21 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_cqadupstack_gaming_bed/beir_cqadupstack_gaming.db
+19:32:21 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_cqadupstack_gaming_bed/manifest.json (key=beir_cqadupstack_gaming)
+19:32:21 INFO    ============================================================
+19:32:21 INFO    SUMMARY (blob)
+19:32:21 INFO      beir_cqadupstack_gaming genes=45613 bytes=196841472 elapsed=226.2s (files=45301 errors=0 missing=0)

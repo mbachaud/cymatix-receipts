@@ -1,0 +1,12 @@
+18:25:44 INFO    [7974 files, 8000 genes] 125.1 genes/s
+18:25:48 INFO    [8486 files, 8512 genes] 125.6 genes/s
+18:25:49 INFO    ============================================================
+18:25:49 INFO    DONE beir_arguana (parallel) in 69.2s
+18:25:49 INFO      files=8673 genes=8702 skipped=1 errors=0
+18:25:49 INFO      total_genes=8652 harmonic_links=0 bytes=71110656
+18:25:49 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade_floor50/beir_arguana_bed/beir_arguana.db
+18:25:49 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade_floor50/beir_arguana_bed/beir_arguana.db
+18:25:49 INFO    manifest updated: /home/user/bench/beds_nosplade_floor50/beir_arguana_bed/manifest.json (key=beir_arguana)
+18:25:49 INFO    ============================================================
+18:25:49 INFO    SUMMARY (blob)
+18:25:49 INFO      beir_arguana genes=8652 bytes=71344128 elapsed=69.2s (files=8673 errors=0 missing=0)

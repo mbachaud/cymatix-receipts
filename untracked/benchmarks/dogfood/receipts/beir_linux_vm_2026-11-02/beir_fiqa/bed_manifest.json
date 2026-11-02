@@ -1,0 +1,43 @@
+{
+  "bench": "fixture_matrix",
+  "spec": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
+  "created_at": "2026-11-02T18:23:09.200814+00:00",
+  "targets": {
+    "beir_fiqa": {
+      "mode": "parallel",
+      "tagger_version": 2,
+      "profile": "beir_fiqa",
+      "label": "BEIR fiqa corpus (issue #482 round 1)",
+      "active_roots": 1,
+      "roots": [
+        "/home/user/bench/corpus/beir_fiqa/corpus"
+      ],
+      "db_path": "/home/user/bench/beds_nosplade/beir_fiqa_bed/beir_fiqa.db",
+      "started_at": "2026-11-02T18:16:41.042969+00:00",
+      "files": 57600,
+      "genes": 58079,
+      "skipped": 38,
+      "errors": 0,
+      "missing_roots": [],
+      "entity_autolink": true,
+      "min_file_bytes": 1,
+      "discovered_files": 57600,
+      "resumed_files_remaining": 57600,
+      "commit_batch": 0,
+      "batched_commits": 0,
+      "valve_trips": 0,
+      "workers": 4,
+      "elapsed_s": 387.8,
+      "finished_at": "2026-11-02T18:23:08.858552+00:00",
+      "total_genes": 58074,
+      "compression_ratio": 2.1297,
+      "harmonic_links": 0,
+      "bytes": 293588992,
+      "cover_index": true,
+      "cover_index_s": 0.1,
+      "dense_coverage": 0.0,
+      "dense_genes_populated": 0
+    }
+  },
+  "updated_at": "2026-11-02T18:23:09.200866+00:00"
+}

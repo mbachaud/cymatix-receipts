@@ -1,0 +1,12 @@
+18:35:41 INFO    [25034 files, 25536 genes] 126.6 genes/s
+18:35:45 INFO    [25525 files, 26048 genes] 126.6 genes/s
+18:35:45 INFO    ============================================================
+18:35:45 INFO    DONE beir_scidocs (parallel) in 205.9s
+18:35:45 INFO      files=25549 genes=26072 skipped=108 errors=0
+18:35:45 INFO      total_genes=26071 harmonic_links=0 bytes=190623744
+18:35:46 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade_floor50/beir_scidocs_bed/beir_scidocs.db
+18:35:46 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade_floor50/beir_scidocs_bed/beir_scidocs.db
+18:35:46 INFO    manifest updated: /home/user/bench/beds_nosplade_floor50/beir_scidocs_bed/manifest.json (key=beir_scidocs)
+18:35:46 INFO    ============================================================
+18:35:46 INFO    SUMMARY (blob)
+18:35:46 INFO      beir_scidocs genes=26071 bytes=191295488 elapsed=205.9s (files=25549 errors=0 missing=0)

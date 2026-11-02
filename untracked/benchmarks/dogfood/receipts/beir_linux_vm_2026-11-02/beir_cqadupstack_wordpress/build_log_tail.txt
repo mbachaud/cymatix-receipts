@@ -1,0 +1,12 @@
+19:50:14 INFO    [48076 files, 51520 genes] 129.0 genes/s
+19:50:18 INFO    [48551 files, 52032 genes] 129.0 genes/s
+19:50:19 INFO    ============================================================
+19:50:19 INFO    DONE beir_cqadupstack_wordpress (parallel) in 403.7s
+19:50:19 INFO      files=48605 genes=52086 skipped=0 errors=0
+19:50:19 INFO      total_genes=52072 harmonic_links=0 bytes=380538880
+19:50:19 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_cqadupstack_wordpress_bed/beir_cqadupstack_wordpress.db
+19:50:19 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_cqadupstack_wordpress_bed/beir_cqadupstack_wordpress.db
+19:50:19 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_cqadupstack_wordpress_bed/manifest.json (key=beir_cqadupstack_wordpress)
+19:50:19 INFO    ============================================================
+19:50:19 INFO    SUMMARY (blob)
+19:50:19 INFO      beir_cqadupstack_wordpress genes=52072 bytes=381460480 elapsed=403.7s (files=48605 errors=0 missing=0)

@@ -1,0 +1,12 @@
+19:19:10 INFO    [39507 files, 39552 genes] 212.6 genes/s
+19:19:12 INFO    [39955 files, 40000 genes] 212.8 genes/s
+19:19:14 INFO    ============================================================
+19:19:14 INFO    DONE beir_cqadupstack_english (parallel) in 189.2s
+19:19:14 INFO      files=40221 genes=40266 skipped=0 errors=0
+19:19:14 INFO      total_genes=40266 harmonic_links=0 bytes=158244864
+19:19:14 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_cqadupstack_english_bed/beir_cqadupstack_english.db
+19:19:14 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_cqadupstack_english_bed/beir_cqadupstack_english.db
+19:19:14 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_cqadupstack_english_bed/manifest.json (key=beir_cqadupstack_english)
+19:19:14 INFO    ============================================================
+19:19:14 INFO    SUMMARY (blob)
+19:19:14 INFO      beir_cqadupstack_english genes=40266 bytes=159322112 elapsed=189.2s (files=40221 errors=0 missing=0)

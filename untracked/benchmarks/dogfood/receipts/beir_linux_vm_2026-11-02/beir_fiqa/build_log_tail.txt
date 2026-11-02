@@ -1,0 +1,12 @@
+18:23:05 INFO    [57062 files, 57536 genes] 149.7 genes/s
+18:23:08 INFO    [57570 files, 58048 genes] 149.7 genes/s
+18:23:09 INFO    ============================================================
+18:23:09 INFO    DONE beir_fiqa (parallel) in 387.8s
+18:23:09 INFO      files=57600 genes=58079 skipped=38 errors=0
+18:23:09 INFO      total_genes=58074 harmonic_links=0 bytes=292081664
+18:23:09 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_fiqa_bed/beir_fiqa.db
+18:23:09 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_fiqa_bed/beir_fiqa.db
+18:23:09 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_fiqa_bed/manifest.json (key=beir_fiqa)
+18:23:09 INFO    ============================================================
+18:23:09 INFO    SUMMARY (blob)
+18:23:09 INFO      beir_fiqa genes=58074 bytes=293588992 elapsed=387.8s (files=57600 errors=0 missing=0)
