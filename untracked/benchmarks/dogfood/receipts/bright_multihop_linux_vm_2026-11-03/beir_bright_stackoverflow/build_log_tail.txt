@@ -1,0 +1,12 @@
+17:44:10 INFO    [106495 files, 112512 genes] 113.7 genes/s
+17:44:14 INFO    [106970 files, 113024 genes] 113.7 genes/s
+17:44:15 INFO    ============================================================
+17:44:15 INFO    DONE beir_bright_stackoverflow (parallel) in 995.0s
+17:44:15 INFO      files=107081 genes=113142 skipped=0 errors=0
+17:44:15 INFO      total_genes=67763 harmonic_links=0 bytes=613036032
+17:44:16 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_bright_stackoverflow_bed/beir_bright_stackoverflow.db
+17:44:16 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_stackoverflow_bed/beir_bright_stackoverflow.db
+17:44:16 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_stackoverflow_bed/manifest.json (key=beir_bright_stackoverflow)
+17:44:16 INFO    ============================================================
+17:44:16 INFO    SUMMARY (blob)
+17:44:16 INFO      beir_bright_stackoverflow genes=67763 bytes=614776832 elapsed=995.0s (files=107081 errors=0 missing=0)

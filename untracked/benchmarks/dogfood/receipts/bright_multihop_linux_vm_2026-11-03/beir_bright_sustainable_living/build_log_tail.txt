@@ -1,0 +1,12 @@
+17:19:52 INFO    [59876 files, 60544 genes] 318.9 genes/s
+17:19:53 INFO    [60381 files, 61056 genes] 319.4 genes/s
+17:19:54 INFO    ============================================================
+17:19:54 INFO    DONE beir_bright_sustainable_living (parallel) in 192.1s
+17:19:54 INFO      files=60792 genes=61468 skipped=0 errors=0
+17:19:54 INFO      total_genes=50795 harmonic_links=0 bytes=276553728
+17:19:55 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_bright_sustainable_living_bed/beir_bright_sustainable_living.db
+17:19:55 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_sustainable_living_bed/beir_bright_sustainable_living.db
+17:19:55 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_sustainable_living_bed/manifest.json (key=beir_bright_sustainable_living)
+17:19:55 INFO    ============================================================
+17:19:55 INFO    SUMMARY (blob)
+17:19:55 INFO      beir_bright_sustainable_living genes=50795 bytes=277934080 elapsed=192.1s (files=60792 errors=0 missing=0)

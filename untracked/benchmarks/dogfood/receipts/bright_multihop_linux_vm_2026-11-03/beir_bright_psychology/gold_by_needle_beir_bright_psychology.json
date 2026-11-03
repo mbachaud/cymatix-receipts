@@ -1,0 +1,993 @@
+{
+ "beir_bright_psychology_0": [
+  "1358bfefa6d00187",
+  "27a7845bc5397c54",
+  "33b9c512c1f27485",
+  "671c1d1ab116874b",
+  "7849a46a385ae206",
+  "a7e74b767e9305fd",
+  "adebeb10d4d7299d"
+ ],
+ "beir_bright_psychology_1": [
+  "01aac9a6a78bed3e",
+  "04340d6401b8461e",
+  "0edde5484a61b090",
+  "17df0bb6be505508",
+  "1a8cf783257519bd",
+  "3844d0f8fb0e2713",
+  "3d8d0cd47f8c933d",
+  "49ab3b3e83c39643",
+  "5c2ad8c4071dc66f",
+  "636d3abdb401f1dc",
+  "65e84adbe881f87e",
+  "76d841e657c22e89",
+  "811477ddcde1afb4",
+  "84627f268916e438",
+  "96bf1f32376a023e",
+  "98ca1f765492ee74",
+  "9c72b68a3f2da2c3",
+  "a4e89441985b57f3",
+  "ad960931c7642fca",
+  "b39749aca2de7379",
+  "bb7960fb64744ffd",
+  "e9afd4070fd1c78c"
+ ],
+ "beir_bright_psychology_10": [
+  "7849a46a385ae206",
+  "a7e74b767e9305fd",
+  "d32a046b73a52923"
+ ],
+ "beir_bright_psychology_100": [
+  "2f8b7e4c512d8d92"
+ ],
+ "beir_bright_psychology_11": [
+  "08739d4ee1b8e031",
+  "0b34587d2f7e6ed8",
+  "1575c9353010f487",
+  "3c833c4bf39c16ed",
+  "4643a91eda94499a",
+  "540e34eb74586b81",
+  "55ae40c8a715009d",
+  "6e5796aa9dc2ae21",
+  "76195ff5784ccffe",
+  "8f9201995fa88fb4",
+  "96c5d9dcd71f48b4",
+  "b5aa737b66a78f7b",
+  "c088fe3b87363e69",
+  "c1d5365b67b35100",
+  "caa3a27b2204776b",
+  "cdb8e51777f2fd90",
+  "d15089e3d92eab37",
+  "d5a54a87289de13e",
+  "eaa609503b43d7e1",
+  "eaf98c38a7ae81bd"
+ ],
+ "beir_bright_psychology_12": [
+  "220eedf280e21eaf"
+ ],
+ "beir_bright_psychology_13": [
+  "00e18b6baf342bb1",
+  "16a0f3130b047778",
+  "35ce0839b7fff45b",
+  "48ea75dd8609adb9",
+  "4aa7ee669d50d080",
+  "5e318f4ffd285604",
+  "6aa8099ffc7539b1",
+  "6ccda3544cbc8b52",
+  "83c2639a5b06e86a",
+  "be2021f92e28da52",
+  "c3965154a88469aa",
+  "ca8b700f2b444f9a",
+  "d0bada9cdd8007b0",
+  "f18ed916724ded2a"
+ ],
+ "beir_bright_psychology_14": [
+  "aa8e3c62559c8978",
+  "bde1e2f369da543b"
+ ],
+ "beir_bright_psychology_15": [
+  "0359ebd4a9bf2b00",
+  "0d49c5e3d44c9ea2",
+  "0f6e85f7f56d15de",
+  "1437418b4662136a",
+  "15b8ddb4868672e3",
+  "1f6621944b5cd260",
+  "2decbdb21549c115",
+  "3609459d42b1f701",
+  "36cc6ba575bc18a6",
+  "3daff5fa524d4194",
+  "40b8a2d9d84829b8",
+  "4118d8ff4eabab72",
+  "4aab4d6c0db5f785",
+  "4c76b2b2c3efc1bc",
+  "53ff838f4bb934eb",
+  "568d0316e8c5df94",
+  "597d8bc6b40c5d94",
+  "5f58d569c60b6918",
+  "668c00c3e9f010d0",
+  "6af542abb79e6e50",
+  "7fe85fce05e1b2ca",
+  "912662d1e798ad7b",
+  "920c4073eb90264a",
+  "97c85d53f1350dd2",
+  "98eb7287981359e5",
+  "9f6060199f450f03",
+  "dfcffa394c51b82c",
+  "dfe258e545430316",
+  "e1e5b7152720ac56",
+  "e2c0e9c50fc8f5cf",
+  "e5b59b8329201e43",
+  "e6f71e1b3ad4d2a6",
+  "e732d2f0c09960d7",
+  "eb23427234c6ced7",
+  "f0794061b220d729",
+  "f9b7b8db5590d118",
+  "fbe658b04e0d1250"
+ ],
+ "beir_bright_psychology_16": [
+  "536133a8c421a1e5",
+  "8f01b9108fcaae6e",
+  "c4d82615de5b679c",
+  "e14dfdc8dbef97e4",
+  "eecddc8b328a1948"
+ ],
+ "beir_bright_psychology_17": [
+  "7a99f44e5f8b36b5"
+ ],
+ "beir_bright_psychology_18": [
+  "04552594d8b18d2a",
+  "0a35caadacab9ca7",
+  "38521c860009d183",
+  "588a12e7189b5e40",
+  "6fff57792d9d52d6",
+  "802e63b18429e30f",
+  "c202951a200751b7",
+  "cbb4e91e41c422b5",
+  "d4f85afb57ec88be",
+  "fbe6d71912b2bf98",
+  "fdc56cc71eba89e6"
+ ],
+ "beir_bright_psychology_19": [
+  "22c56300b5161f23",
+  "4586193bc4350768",
+  "496466e9f6894166",
+  "88c4bf3e1b4fd4e6",
+  "956f6d59d3f4183e"
+ ],
+ "beir_bright_psychology_2": [
+  "62726d8172dea62e",
+  "98a332382d7e1b7d"
+ ],
+ "beir_bright_psychology_20": [
+  "153808232f98b406",
+  "2ffa8c01eaefe9c7",
+  "d34bf03890923843"
+ ],
+ "beir_bright_psychology_21": [
+  "130dd46b9d0984e4",
+  "1d1b52203b5006f5",
+  "3eb93711d63ec887",
+  "40475b359b988350",
+  "588456afb0bb8f58",
+  "591b5a90541ba381",
+  "627ab270022941bb",
+  "649dc54cc5cb062f",
+  "65269e502594f2d6",
+  "6ec1c17ad4f75581",
+  "6fd8a824c888d6ba",
+  "751a954a6c88fa0c",
+  "83806e994416a563",
+  "8da845a1815c628d",
+  "93d58d73afb4f9b2",
+  "960b8ddd85889ddc",
+  "965da12267d05053",
+  "980e52581b996cd7",
+  "9c36085b3556b332",
+  "9d8613485555a6ae",
+  "a0f1442c892eee33",
+  "a47f87b236680a8b",
+  "aa81d62a94cd1b60",
+  "aabdb541b77b3d97",
+  "b38096cc425b7b69",
+  "b8d9b329729b6af9",
+  "c32e37137c23169d",
+  "c6089eb61ed1ea68",
+  "d98a2f8aae5388ba",
+  "e350548a6cf9b645",
+  "eec5a814b6926bc9",
+  "f097a4f4dc612a29",
+  "fc55ca6ddb3691f1"
+ ],
+ "beir_bright_psychology_22": [
+  "0e621cba84d109b0",
+  "524e8e40cd52b882",
+  "5f6cb9458dce3d57"
+ ],
+ "beir_bright_psychology_23": [
+  "15ef58c003913142",
+  "3fc5aa7ea7e64aa3",
+  "519da138aebc1bb0",
+  "6359c87302fbc209",
+  "8bdc28137cb8737e",
+  "aecf71f9dea04c5a",
+  "ebd2d42d1631dd98"
+ ],
+ "beir_bright_psychology_24": [
+  "c0a39d12701795d9"
+ ],
+ "beir_bright_psychology_25": [
+  "185b3f01013e90a0",
+  "1c96aaf110c171f1",
+  "23c0da38d1942b3a",
+  "2641c9ccd75d47df",
+  "28f18da9893a8e88",
+  "58dce3b1f21c8c6f",
+  "60de3cf5f59a2401",
+  "c18f3936e9b4d637",
+  "c4bf0f7ff4fbc3c8",
+  "ed16f231845c3d53"
+ ],
+ "beir_bright_psychology_26": [
+  "06a591878a24c3c2"
+ ],
+ "beir_bright_psychology_27": [
+  "14e581b2b55c50de",
+  "18cda99db74a32e1",
+  "303a1ef5befa43c1",
+  "4a0392e62399df63",
+  "6606059db2c151fb",
+  "77bde49f5b7a07a6",
+  "883b9548a954d384",
+  "964e3937fbc1b160",
+  "db5a69c3a5d7913a",
+  "de7242b6da1c875c",
+  "f0ea616b8e2c1b74"
+ ],
+ "beir_bright_psychology_28": [
+  "1e1ce575bb14ca2f",
+  "421996abb371de87",
+  "91b1360a44491c3c"
+ ],
+ "beir_bright_psychology_29": [
+  "2696551dc114c0ce",
+  "3105d353d7dd9c42",
+  "690c9a04b7cf0ed5",
+  "a14f0931cdf1859f",
+  "b3ad11da0b5ecde5",
+  "d7636febaeb12ab9"
+ ],
+ "beir_bright_psychology_3": [
+  "36d1edfdb7753487",
+  "f51b4a03970f8825"
+ ],
+ "beir_bright_psychology_30": [
+  "3980013f9ba15afd",
+  "5bce143e6f711641",
+  "68b9d342b9cefdb6",
+  "de23ae08f8e27be9"
+ ],
+ "beir_bright_psychology_31": [
+  "12bf95a319283f8b",
+  "18fdd6899ed8bbf0",
+  "78c0d7dd5444c58d"
+ ],
+ "beir_bright_psychology_32": [
+  "1a4a56c4e6461a16",
+  "8eb9a10fba9d45e7",
+  "b93f852ea959bddf"
+ ],
+ "beir_bright_psychology_33": [
+  "c561a1f629f1d178"
+ ],
+ "beir_bright_psychology_34": [
+  "58f8daf91e9edeab"
+ ],
+ "beir_bright_psychology_35": [
+  "0269686c0bebb45c",
+  "0632bc395134e031",
+  "0ffcc52334b1f63a",
+  "14f0996a98e836f7",
+  "157d3ea99606b5f3",
+  "2942e4703415fe64",
+  "429e0d3b50747bce",
+  "42f617c448cfcdf0",
+  "52800f2bda67cc44",
+  "5466f69867c3f12f",
+  "55c75824472734b5",
+  "58b90bf423cc24d7",
+  "61802a0fffd146be",
+  "6c67aa6924d8d28d",
+  "7f2783d7af393df1",
+  "8d9ee05c9f6e9263",
+  "8ea57b0af75f14ac",
+  "969872b228c11a1b",
+  "9891a195c8c17c0b",
+  "a4a6f987c53f134f",
+  "ba52f5c70943825f",
+  "c157ac93ffc36d24",
+  "c32412843ad00d48",
+  "ce694b8d8d68436f",
+  "d3020379acc4bb8c",
+  "f1d254ac8cb6467a"
+ ],
+ "beir_bright_psychology_36": [
+  "46f80c7e13c6f914",
+  "e7d8df17918e2ef9"
+ ],
+ "beir_bright_psychology_37": [
+  "0eb0926436e012f1",
+  "17827d5b12544f54",
+  "1ba34617bfbe89ff",
+  "265dcf7917ea3eae",
+  "2679bb6efd01e0ed",
+  "267b584df0622715",
+  "28229bc306db3133",
+  "310de2ac32418284",
+  "358496c4b2fcdec3",
+  "392bf70fdd30cead",
+  "3aeae8c23faa9243",
+  "3c216ce96faf0394",
+  "45b9e72e019bc93a",
+  "4b0eec490c0cab03",
+  "4e6295dd82a25652",
+  "4ef9252053a79364",
+  "5c0e907f49f81235",
+  "66165831f61930a6",
+  "67d06c2c5616e4fb",
+  "745345c9e13624e5",
+  "7d24a5cf898567f8",
+  "80ab1fce62c52554",
+  "888efe91aedd4757",
+  "8fa80faec412f872",
+  "91330509b7661b9c",
+  "958433a5fcf6a741",
+  "98ea2dd38b885418",
+  "9d377a2ecebd5c6f",
+  "a27c5bbdf6533346",
+  "a7ad634a478e1e89",
+  "ab329c8832485a9f",
+  "af2f20d07d37ba80",
+  "b1fcbaf433a75d7e",
+  "b98c44a62f99bfb1",
+  "ba923c6bd6b8b195",
+  "c1b9ba86c0260730",
+  "c2f284fae7f56f56",
+  "ce78d2b579220627",
+  "d6cff5281147a7a5",
+  "d78fccde09f219e4",
+  "e0df306a4cd1c7a1"
+ ],
+ "beir_bright_psychology_38": [
+  "54788eaffac1b604",
+  "dfa2f56ad481a9ab"
+ ],
+ "beir_bright_psychology_39": [
+  "045bd165268bdc85",
+  "05b877837e388f73",
+  "33892be5f76b1862",
+  "4fd5562ac7b9ab72",
+  "54b2aee138c02e45",
+  "55ce11d50a70a5b5",
+  "62d441d7aaad11ad",
+  "65dd79bdfafefd8b",
+  "6b7b23c2a0c89eca",
+  "87d3e0b9ee248471",
+  "88f3f00a93e89d6b",
+  "917a1b107e5e3822",
+  "972ed62f1fff56e8",
+  "b592fc7b306114a2",
+  "c16e34502462ba8e",
+  "c42044932ad18515",
+  "d5c1b75f9b988fa5",
+  "dca56f8854d8f43c",
+  "e492b8bdcf4c7bc1",
+  "e5d07ecccaf285e1",
+  "ef45062536a60a04",
+  "fe7939a3451eb750"
+ ],
+ "beir_bright_psychology_4": [
+  "330ce867ee943bd2",
+  "7254ffd2994cb80a"
+ ],
+ "beir_bright_psychology_40": [
+  "048bf4cd9b27405b",
+  "78375fbdb86055ab"
+ ],
+ "beir_bright_psychology_41": [
+  "46f80c7e13c6f914",
+  "d861486f9a96d9c4",
+  "e7d8df17918e2ef9"
+ ],
+ "beir_bright_psychology_42": [
+  "0191ad5053217ca8",
+  "0d769401b7e3d3d7",
+  "0e57e078e707e050",
+  "2945bef00c4de898",
+  "30a8dd107c2adfe3",
+  "32e94e43c92ff2d7",
+  "39efac97262509b2",
+  "44bbb9e6bda376a3",
+  "464d21ec030a17e4",
+  "46d375a901c350d6",
+  "4767299f5f2e024e",
+  "5936a8a818ee875f",
+  "5cf626cdf3f3fb07",
+  "635a4bdf422dd390",
+  "691dcc28ed190a03",
+  "6e0183b5c1c4895b",
+  "71eda459c02bffd9",
+  "8864f8a05585b6bd",
+  "8c9f8586a5ac29fc",
+  "8e66e3a925d168e9",
+  "8f1573329d5b255e",
+  "961f826d5ba35b63",
+  "9ae27281450ec228",
+  "9b7bb99b5aaca409",
+  "9e4100a400cf0729",
+  "a40bea498e76473b",
+  "c7094980cc69e8d1",
+  "cf71bf2bdf1ecd34",
+  "d08ca77ec5ac3bb5",
+  "ddfff15c731e9dc9",
+  "e097640660dcb468",
+  "e5c05f219920bf77",
+  "ef447c40cbce244a",
+  "fe47770a5aa85fbe"
+ ],
+ "beir_bright_psychology_43": [
+  "9ac2356929442345",
+  "ed97735519088805"
+ ],
+ "beir_bright_psychology_44": [
+  "d9d6e27507f186ac"
+ ],
+ "beir_bright_psychology_45": [
+  "7d6bc07c033b8b1a",
+  "b5ad490e48ec6860"
+ ],
+ "beir_bright_psychology_46": [
+  "19b879d2f4c27508",
+  "29cc068b4fc16a53",
+  "506c4c58c6ddaa3e",
+  "854d79b33c99facb",
+  "8d82180aa1b7a489",
+  "923a1941cfa236c1",
+  "a393243c4b6f1805",
+  "acbcce2a016b3981",
+  "b871a5c9105a2c3b",
+  "c865ee0146b9d243",
+  "d7cbef6eb46075ee",
+  "e6841e981d82d312",
+  "eefd1c04a6218fb4",
+  "f2a90e93100a3144",
+  "f88fdbc90dad373f"
+ ],
+ "beir_bright_psychology_47": [
+  "0517465ef06fcdbf",
+  "140ff73119963b94",
+  "18adcbe07fe71fce",
+  "2ed84a1409b890ae",
+  "2ffe66f55bf4ba2c",
+  "4602ef4f96874060",
+  "59445d9f2b7fc728",
+  "59d7448fe50ba8ea",
+  "6f840bd392cc37f2",
+  "701ac5172b7aa41d",
+  "767c96d0376545e4",
+  "79ecbe243de8f99e",
+  "c1ecf2871821e99d",
+  "db1a977a4b8b7960",
+  "e0233b0dc5dec6e4",
+  "e7dbc56cc32ec6aa",
+  "ee17f32567cb11a7",
+  "f36e59184443ac6f",
+  "fdb7545b7edf58b2"
+ ],
+ "beir_bright_psychology_48": [
+  "847fe881eccb6ffe",
+  "a72e554570967056",
+  "a7c636ef6817e9b2"
+ ],
+ "beir_bright_psychology_49": [
+  "c352b9beee4b1f2c"
+ ],
+ "beir_bright_psychology_5": [
+  "0d124534f01f5a03",
+  "0d8220498c69af40",
+  "2722a1c0ba2c2ee1",
+  "3fc18670d45dd959",
+  "4aa33e29b5effbed",
+  "72158427a82fcfd5",
+  "8f8e8af697993d04",
+  "8fc8750c46269d2b",
+  "a17d3e36c239a352",
+  "a512dfbc23d06376",
+  "c22b01aba8fad115",
+  "c8c62c3d84f737f9",
+  "f5a59e6653b4fab1"
+ ],
+ "beir_bright_psychology_50": [
+  "0c0dd05081c9dde4",
+  "19212d03eee83a0c",
+  "1adfab3403484315",
+  "1c7ae8cde28e405a",
+  "1e2a5b9edb477e81",
+  "21b85605f3d24643",
+  "29fb3611876aca4d",
+  "2a665a4bb4d1b354",
+  "2c9d1254e8b99385",
+  "2d0061a1195f1bda",
+  "2d895cc31eab7d66",
+  "2df8c23e8c446872",
+  "2f06be992847f4f5",
+  "349f269551dbeff6",
+  "3911065a520822dd",
+  "452667c77c501bc6",
+  "56697cd75b8bd10a",
+  "597536302ddb5941",
+  "5dfea9b2516bf1ee",
+  "61b2c68e6452f7d1",
+  "66e06abf9bea8b06",
+  "6c449cee01bc3c85",
+  "7276053767ffddb4",
+  "7c07bf3a4740f570",
+  "87157fd4115ad482",
+  "96c57156145c9268",
+  "96edf5ff8568d85d",
+  "9c9f651365ff0227",
+  "9ebad8fbeec5814a",
+  "a607960d75308965",
+  "a6785d9e83a6fc86",
+  "a86eb95495d0e6e3",
+  "ab6f686b48eef579",
+  "ac6ad723c3dfad90",
+  "b4034cc78cc668e2",
+  "bec960dd0db553fe",
+  "c0468b630bd1147f",
+  "c08241935e63aee1",
+  "c1f0eee74c59ba99",
+  "c4688678e42d88e7",
+  "c670e821c5d8aada",
+  "c68ff5fe2cdcbc66",
+  "cb3ff0a8e75d240d",
+  "ce62680151ea7442",
+  "d853c63ba87aa055",
+  "d8f82ed504b8e61a",
+  "dc4ae854651934a3",
+  "dff52be0d1e2aab8",
+  "e9ea1f24d25aaafb",
+  "f0cdb972b6eaa2ee",
+  "f2d2232cbc6779b3",
+  "f5af7d50116b7056",
+  "f70dd3624ae10197",
+  "fdbaf102f57cedcf"
+ ],
+ "beir_bright_psychology_51": [
+  "a474bde87c2dacd8",
+  "fabff8d0bff24534"
+ ],
+ "beir_bright_psychology_52": [
+  "a28c13245df02afc"
+ ],
+ "beir_bright_psychology_53": [
+  "6d82f8622ad3a117"
+ ],
+ "beir_bright_psychology_54": [
+  "0eada716caba2358",
+  "486927a9d5ce6702",
+  "d9da474713a2bc1e"
+ ],
+ "beir_bright_psychology_55": [
+  "08838954f9c7fa12",
+  "24e71ad59d63f018",
+  "2864204e10971d32",
+  "8a1ac21b4f9291f9"
+ ],
+ "beir_bright_psychology_56": [
+  "5f7ceea6c84a360b",
+  "9603a35f6de84a4f",
+  "ba8b14daa9f5c300",
+  "f9c193549edc6f7f"
+ ],
+ "beir_bright_psychology_57": [
+  "079064aa4c064631",
+  "116d6abc88fb05a1",
+  "251d0f4c0e0c8255",
+  "35663c75261efc2a",
+  "3b830ddc92001db2",
+  "69e8bd32111a075a",
+  "729722013af97081",
+  "7de384ac7ca0f0a8",
+  "8cce29967e74561f",
+  "93557f29642333cf",
+  "a4a8eb052f8bb4ea",
+  "bb6f3710155e0eaf",
+  "be898d121e646a75",
+  "dbd76bf012a71ba2",
+  "dc9b4c7141746ff5",
+  "e1dcca3b906ae155",
+  "e3eecba0e8cc495b"
+ ],
+ "beir_bright_psychology_58": [
+  "133a9dafacf91a46",
+  "255c4ccf7cc7cc33",
+  "3e19e3a1a015d2e1",
+  "ba3f6f6acabeb36f",
+  "e086c36c7bbd1f4c"
+ ],
+ "beir_bright_psychology_59": [
+  "5dbcee2e082af374",
+  "6a0e639cb03f05a7",
+  "c7239b00d40b505b",
+  "df11ae4133d65c8f",
+  "f21db5105ca4bdc9"
+ ],
+ "beir_bright_psychology_6": [
+  "1039f7413e94b594",
+  "4abef0a4c81aaca7",
+  "bd92f00c70693372",
+  "e35b2bf1d4744f69"
+ ],
+ "beir_bright_psychology_60": [
+  "44ae46008333640f",
+  "62ad588fc5718c05",
+  "7aa48bccd02decec",
+  "87070296dbabdd23",
+  "9ceb3200d6fc9cbd",
+  "bcabcd55349b61ad",
+  "c04233d4d95808fe",
+  "fe48cf0423656897"
+ ],
+ "beir_bright_psychology_61": [
+  "30ce6b5a52e727ce",
+  "e59ddc78ab06c14d"
+ ],
+ "beir_bright_psychology_62": [
+  "28fac0e0799be85c"
+ ],
+ "beir_bright_psychology_63": [
+  "37e69bef1ba5a37d",
+  "391bcdf58ce3d913",
+  "675852c6cf780b08",
+  "72ac9552c152af66",
+  "93b8f3f34791c8c2",
+  "c1231da600804910",
+  "ca25a8c7dd9ddaef",
+  "e61ff26237b0e0f5"
+ ],
+ "beir_bright_psychology_64": [
+  "0d86d2b800cb597b"
+ ],
+ "beir_bright_psychology_65": [
+  "004d8429e835f4fe",
+  "041d8a62305d8ae5",
+  "95228ba0ee5caecc",
+  "b492d8841bd8f51f",
+  "fd26993ec6c7c274"
+ ],
+ "beir_bright_psychology_66": [
+  "bc6d5123a82de036"
+ ],
+ "beir_bright_psychology_67": [
+  "f1eb49c509dad9ba",
+  "fc74c6aa24e951d1"
+ ],
+ "beir_bright_psychology_68": [
+  "0ca389ca529accc7"
+ ],
+ "beir_bright_psychology_69": [
+  "57c9e8fec94acb28"
+ ],
+ "beir_bright_psychology_7": [
+  "0d5d474f6bb2a379",
+  "3ef92ceb2a5c00e5",
+  "762dfe0cc01d6728",
+  "b72c49a62e434010",
+  "b97b4f8a06296cf7",
+  "ce21c623e8cefbf1"
+ ],
+ "beir_bright_psychology_70": [
+  "37c7b0184027e1fe"
+ ],
+ "beir_bright_psychology_71": [
+  "04280c5b9382514f",
+  "0f8be284a4b8d28b",
+  "0fb431123b04a113",
+  "1ca091fcdfdd3aad",
+  "1f68a05bb149f6ab",
+  "27a7c796de119d7c",
+  "2ae6c34cbce269f2",
+  "2c6048bc323e6024",
+  "2e180a2662634a3c",
+  "2ea3b4d42db16945",
+  "3f19c26364bd6e53",
+  "4089afda2c8a3e74",
+  "462fbeccb7de1d1d",
+  "4b6bbff35bdbe4a5",
+  "4c0b956902aef5d3",
+  "4eeabfb35088c2b8",
+  "4ff9f4cc5cbac777",
+  "5bd092b3bcbb2e5b",
+  "6236582c6437430b",
+  "62d1ab80f394403a",
+  "66edc5d902b6e75b",
+  "6e6ff59b9b92aa01",
+  "706acf7eddf84ac1",
+  "70744a6b00907db1",
+  "75c555f37c2daa7d",
+  "777f3e0f5b71f894",
+  "78653220e8b48ee8",
+  "795184a16ab79af9",
+  "7ce8a9d15f88e99a",
+  "805d7b364494a1d7",
+  "8efc8f74d6bd46c7",
+  "91be65dd198c7385",
+  "9e4b5d31a307406d",
+  "a6aaa459154f9e16",
+  "b05b718b26206448",
+  "c4349b4b302d3efa",
+  "c4c2ccb340b4c7f2",
+  "cae8af738840957b",
+  "cc4e614724f0c11e"
+ ],
+ "beir_bright_psychology_72": [
+  "15d26e2eaa5efa6d",
+  "1b6ba7052746ddbd",
+  "26e50273b811e366",
+  "309e56eb4717b492",
+  "35822384ffb0be6f",
+  "39fef0061af76ff2",
+  "4d8803aee0b5e324",
+  "517daff108b8271f",
+  "66fcb3bd906ce65e",
+  "71905f878fb719d5",
+  "83a17502bb49b96e",
+  "a0a97e52adc5ad37",
+  "aa38dcf38126e027",
+  "ab1da19550275dbf",
+  "abbcb6eb988afb88",
+  "ac03c20ed87745fe",
+  "ac509f1ee33aab0f",
+  "ad70826f6d07900e",
+  "adfd3f15751b90d7",
+  "ae4d23a18db14ebc",
+  "b0b8db061e3f0cc4",
+  "b60dc43acb2db75d",
+  "b861c68d236ac709",
+  "bf80105ee33428e4",
+  "c1b10c3107810667",
+  "c5e1010076571b84",
+  "c862f2c8dcdb8e30",
+  "e0cbc70b215898da",
+  "e87cf1ff96a729ab",
+  "eca681239a4f6cdf",
+  "f4da06ee49788d95",
+  "f8410556d28f677d"
+ ],
+ "beir_bright_psychology_73": [
+  "80a2b212e4e25a4f"
+ ],
+ "beir_bright_psychology_74": [
+  "8ba13fca8e3c7acb",
+  "95ce4d2504d77a23",
+  "b057c7662c47926e"
+ ],
+ "beir_bright_psychology_75": [
+  "fd13767e413ac02a"
+ ],
+ "beir_bright_psychology_76": [
+  "0396a9ffd796ead9",
+  "1f9392dc2f8bf4e1",
+  "25ab90f2b2975bb4",
+  "2a134224b5dc69ec",
+  "34346206adcb3579",
+  "418d46fda1ad9f50",
+  "501161b7ee8540bc",
+  "6ac89aab1c91f4ff",
+  "a4e25d017b67f03d",
+  "cc642aa79816bebc",
+  "d0abbda3b8e305ff",
+  "fd56a6d3769f17c3"
+ ],
+ "beir_bright_psychology_77": [
+  "cb7cf30c4f435787"
+ ],
+ "beir_bright_psychology_78": [
+  "714f30dd1a33f944",
+  "fee6e897ab3bed73"
+ ],
+ "beir_bright_psychology_79": [
+  "66ac6193c3235e4e"
+ ],
+ "beir_bright_psychology_8": [
+  "42bd1d3ad02aad76"
+ ],
+ "beir_bright_psychology_80": [
+  "9dc43aa10ee9b2ec"
+ ],
+ "beir_bright_psychology_81": [
+  "4add76cbfc416792"
+ ],
+ "beir_bright_psychology_82": [
+  "aabc08b6de50e426",
+  "cfa6faed7f66cd17",
+  "d66447500fc8c65e"
+ ],
+ "beir_bright_psychology_83": [
+  "04cd148ef6833219",
+  "1b1e183770a5d63a",
+  "1b6a38d13caf0f5b",
+  "2e92807733850c57",
+  "4b2734a13817db0a",
+  "4d0ca3ef4b25ef07",
+  "5116042f46a84b02",
+  "5949402118bf14c5",
+  "6d2162ec3e85bdbe",
+  "719ec8b541422873",
+  "753bbb5ff4bd9703",
+  "8eab9bdb8638b1fb",
+  "91687bdbdffe4571",
+  "955e105387a5821a",
+  "975dbbeb4e0732ff",
+  "b69aee184d2fefc7",
+  "ba61b24ecaa60c42",
+  "c4f479b658a0b2db",
+  "e4f40e930ba4f7ae",
+  "eac31cd26e171118",
+  "ee5032cef15a3a28"
+ ],
+ "beir_bright_psychology_84": [
+  "244d6013fc8ae935",
+  "3bbea33274e4fe11",
+  "40ef4458847b7c68",
+  "5336c01759fa3c55",
+  "5bef93a02485779c",
+  "6da88c34ba124c41",
+  "73635ccb657c25b7",
+  "86a3644192c28581",
+  "877f391a87c73f42",
+  "abe79456a615a942",
+  "b314054236e15b85",
+  "b6452e580a75b730",
+  "c024c3247f001b56",
+  "ce3cdb224bfc60c0",
+  "dc04194933b4b2a6",
+  "e11a41285e57f6ed"
+ ],
+ "beir_bright_psychology_85": [
+  "e3d9ea15b477be6b"
+ ],
+ "beir_bright_psychology_86": [
+  "090db7e6f331c9eb",
+  "0ed904f1bd5c6297",
+  "64b491bd7dd5c8ef",
+  "8684912d059e0747",
+  "af461023c8bc760e",
+  "c5a906141f6b256f"
+ ],
+ "beir_bright_psychology_87": [
+  "77fb31e740a7b11b"
+ ],
+ "beir_bright_psychology_88": [
+  "002f0ff5814e76b9"
+ ],
+ "beir_bright_psychology_89": [
+  "927fe0b7b80ec641",
+  "c9e376dd17e03010"
+ ],
+ "beir_bright_psychology_9": [
+  "08b6bfc77ad058e1",
+  "130f74e0918261c0",
+  "2159402411df8f0b",
+  "50d347b6a3880efb",
+  "51988e375abdcefb",
+  "5e42886963663536",
+  "633184c36969fdd7",
+  "7a210f18f5b49f8d",
+  "d5399a15c387342f"
+ ],
+ "beir_bright_psychology_90": [
+  "4b462d1e9c8c0a27"
+ ],
+ "beir_bright_psychology_91": [
+  "287952eca846b3e8",
+  "342b4890bd35def6",
+  "3cf89f767cf0c25a",
+  "84036c899dac2ef9",
+  "875cd85bdecdec00",
+  "c4a52e76cf8ebe07",
+  "cb90a86c4bb611f0",
+  "f3e203655cb65a00"
+ ],
+ "beir_bright_psychology_92": [
+  "0a0669fba0dcee0b",
+  "329f66068737807c",
+  "589185da0bc252bb",
+  "9e886bef3c8f3919",
+  "de465182f7b8c466",
+  "efbc95f5c0bfa072",
+  "fa9eb34e2ec71191"
+ ],
+ "beir_bright_psychology_93": [
+  "28fa8eed5f62b70c",
+  "6eb9b5bf52022276",
+  "88df56bc8920d039",
+  "cb5e2323d2262a2b",
+  "cf2143001bd11c5c"
+ ],
+ "beir_bright_psychology_94": [
+  "392df5b8fb254f42",
+  "3eb995c3a60b1fba",
+  "3f21d79fd3184cba",
+  "6ea459eba42342c0",
+  "743d71d00dcb2bfa",
+  "a35cff24c528ca8b"
+ ],
+ "beir_bright_psychology_95": [
+  "f8d56368099a7604"
+ ],
+ "beir_bright_psychology_96": [
+  "0ef338cedb913312",
+  "1bc30b9242dfc44b",
+  "418f480ce0f42777"
+ ],
+ "beir_bright_psychology_97": [
+  "00d4384a791526e9",
+  "048f93b989fbeae5",
+  "147cf98893812a9f",
+  "1ee550cd8886a209",
+  "241236790052380a",
+  "3ff711ac99d493a4",
+  "415a92baa04589e0",
+  "4f5db721a3ce9f32",
+  "89bac1df5669baed",
+  "8fac81dcba3a0363",
+  "8fb1980b922379f7",
+  "90c1cf0be9ed1fc1",
+  "9fff7f7cf0205007",
+  "a245cd6f26358c4b",
+  "a8d7f22e171ea830",
+  "acc9701c2a876b27",
+  "b02c805116bc1da7",
+  "b22babc5341b8b15",
+  "b23a61cc5c2d8ff1",
+  "b2aed7b39d63e51e",
+  "b4c78edb5e568a97",
+  "b6146b31d41f7a8e",
+  "d3847c2c6cb66602",
+  "d499d4e462ea46e7",
+  "de9e99b457dcb103",
+  "df2b6da1a0dde6ba",
+  "e3a000bdf00f568e",
+  "e5d2e1fe0bba6f77",
+  "e61e3950efc8f623",
+  "ef540a6799668d8b",
+  "f2dbb3acc104d3f5",
+  "faca6439dd333dca",
+  "fd2cec6166d06dd3"
+ ],
+ "beir_bright_psychology_98": [
+  "066b81d925ce68d2",
+  "6b56048cd1c80f00",
+  "72728390b663c33b",
+  "8e52452366f0141a",
+  "b2bd69864344f3b9",
+  "bb3b6cdae6fdb235",
+  "d24700168559cff6",
+  "e8f0c2f4b3049b73",
+  "f6cf108a99a85be2"
+ ],
+ "beir_bright_psychology_99": [
+  "25c7656ab3521178",
+  "28b083b109a31c5c",
+  "5779a57933dd9846",
+  "5b62ac7667df232d",
+  "6e53b1c3d8b5a842",
+  "841318ba38a4a873",
+  "9b1b940e0d134f62",
+  "b93c51399f21da58",
+  "bbd4a25b45011aac",
+  "c13925b12d077d6d",
+  "cd5ce8e5e6ed87ea"
+ ]
+}

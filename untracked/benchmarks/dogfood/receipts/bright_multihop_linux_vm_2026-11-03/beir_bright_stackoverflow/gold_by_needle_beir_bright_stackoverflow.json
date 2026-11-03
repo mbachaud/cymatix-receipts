@@ -1,0 +1,732 @@
+{
+ "beir_bright_stackoverflow_0": [
+  "02e172261da7fff7",
+  "091cdce7c5d8357c",
+  "3af6d19791220ddc",
+  "52f12f685ea47bd2",
+  "6e7884987c93a8da",
+  "948f64723fded740",
+  "a4eca5ad85d0c2d1",
+  "b7c55679b90c5947",
+  "e5c059882a2fda5a"
+ ],
+ "beir_bright_stackoverflow_1": [
+  "a16fe89685313674",
+  "e328ec1d429f8857"
+ ],
+ "beir_bright_stackoverflow_10": [
+  "03fe9cfcab737d70",
+  "29a6ac507936a330",
+  "48224ee34c417ac6",
+  "50067cd9d1575f73",
+  "6fe9277dc5766cb3",
+  "90d62e56e3ac4038",
+  "bfce8ce8200d060f"
+ ],
+ "beir_bright_stackoverflow_100": [
+  "093e84c2bac17225",
+  "c1188d2fd496d5f6"
+ ],
+ "beir_bright_stackoverflow_101": [
+  "45b52c4f514a0cab",
+  "98e45b8770bfe5e5"
+ ],
+ "beir_bright_stackoverflow_102": [
+  "07504b939be2756a",
+  "ab0540c902b92d09"
+ ],
+ "beir_bright_stackoverflow_103": [
+  "ef5d0aed0d8b6218"
+ ],
+ "beir_bright_stackoverflow_104": [
+  "78482a25bdb0ca97",
+  "c43b08f8972807d5"
+ ],
+ "beir_bright_stackoverflow_105": [
+  "0835a3f0510ea9f5",
+  "1c55766639c37a7d",
+  "23c1b190208c720a",
+  "75b92b96fb6e581a",
+  "d9907e0d4038bd61"
+ ],
+ "beir_bright_stackoverflow_106": [
+  "18248554eb4826a3",
+  "3766fa2f25194230"
+ ],
+ "beir_bright_stackoverflow_107": [
+  "6e6112d056173d95"
+ ],
+ "beir_bright_stackoverflow_108": [
+  "3642635c6f182dd1",
+  "6739ef927baddebf",
+  "6efa0d5115a72aff",
+  "8eec4ad400f91e11",
+  "b7512eee6afc10cb",
+  "be869630abfad864",
+  "c7f25d093b6dce2f",
+  "cedbfeb96f6c47fc",
+  "fae536c0e4e37065"
+ ],
+ "beir_bright_stackoverflow_109": [
+  "88e4b52640732069"
+ ],
+ "beir_bright_stackoverflow_11": [
+  "74fe0a22f974e218"
+ ],
+ "beir_bright_stackoverflow_110": [
+  "7be9bd1c578a691e"
+ ],
+ "beir_bright_stackoverflow_111": [
+  "099e84c5e6c2595d",
+  "0b685d58941a90b2",
+  "1b2d4e080f665d85",
+  "28b1c613cbb0289e",
+  "2930c87deabfee76",
+  "327bd245998b78c7",
+  "32bc6b7b20d4bb33",
+  "3a9ff5b7ea3294ab",
+  "69d46bd53a0b4555",
+  "6b6a15b51cee74fe",
+  "7f187bb78f5ad9ba",
+  "a1f44b32cd901671",
+  "a6c8e943a228b325",
+  "cce48b3e751fd8cf",
+  "de567a1b9f724815",
+  "df9139ad719753bb",
+  "e520887863d868f1",
+  "e9d04504b44280b2",
+  "f8d03f15c219aad5"
+ ],
+ "beir_bright_stackoverflow_112": [
+  "144ae7af6036fa13",
+  "4ae6ae9c3620723c",
+  "520333d07963d34c",
+  "617e9907012e33eb",
+  "63b54d19603e6262",
+  "717d14540d76b45e",
+  "737be53465e4d512",
+  "9104490472de47f1",
+  "9ca92dc9d466718f",
+  "b4ca83871d8eb48d",
+  "c02d9401c63804ff",
+  "ce0f5f15f243bb02",
+  "d46124419e8bd864",
+  "ef0ebd8757f44739",
+  "fefa23320d69e683"
+ ],
+ "beir_bright_stackoverflow_113": [
+  "20ad71eb29e07575"
+ ],
+ "beir_bright_stackoverflow_114": [
+  "186c1a34ea66d903",
+  "cb72e6186b1f3f00",
+  "d7779a23b5599f96",
+  "ff811450b3ad53a7"
+ ],
+ "beir_bright_stackoverflow_115": [
+  "3a079de05efb208b",
+  "78362d11696a5e89"
+ ],
+ "beir_bright_stackoverflow_116": [
+  "1d12c9b96ed87e8f",
+  "bbaa6d3688b74a03",
+  "da328a34b88043ec"
+ ],
+ "beir_bright_stackoverflow_12": [
+  "0570a24f731a8a96",
+  "05930c450940f956",
+  "05a95d1d2f905247",
+  "0f636dae40c33331",
+  "138eba7aea071333",
+  "1479ab6e29cb5d27",
+  "1eb47389f90049ff",
+  "201ca59177893dfe",
+  "22db6ca13cd34261",
+  "26c6530a908976e7",
+  "395807db72eda730",
+  "408438e790d106f2",
+  "409c12cff2a31eda",
+  "472fb1dcb74dc468",
+  "4bc4acd8108aa53a",
+  "4de24285ebd8b13e",
+  "50c981293ad8b10e",
+  "57a7c34b8787589f",
+  "587ffc2f004d92f9",
+  "59141b384773c4ef",
+  "5db23071aece7e6e",
+  "66dd4bc909d02f86",
+  "682bb19e8116f84e",
+  "68d4e59879e89c08",
+  "68fadc7881d41fee",
+  "6974a5f240f53cb1",
+  "714989c928fadc0b",
+  "7759d1f85a26e6f0",
+  "79185fed3cea0311",
+  "86fd83fbcbc56195",
+  "881e2030201176dc",
+  "8e3cfc6b5f728d8f",
+  "9040b1dea732f26c",
+  "962656b770631553",
+  "a387a52f92ab304e",
+  "a6ab30d37c612b3a",
+  "a704273f059bf996",
+  "ace7ad8873c614ad",
+  "aceead9221ec0fe6",
+  "b18ee97dafcdb31f",
+  "b70daa661b65df3b",
+  "bace849556ceb0b2",
+  "c08baf772ef92b34",
+  "c136105df9af0044",
+  "c2c891c1dc299176",
+  "c302ec163df9c24e",
+  "c51ba8f74c7253c0",
+  "c6aba853c7d6af98",
+  "c7441a5d33a4a199",
+  "cf11894cf4c7b5e5",
+  "d3ad97056015b2ec",
+  "db016593021fb935",
+  "e0c918dee284144a",
+  "e2e00761bf2d2467",
+  "f139d7d2e95b5502",
+  "f3c6d6c2bb6bb751",
+  "fa6d151c26fabd00",
+  "fcced32aacf01fcd",
+  "ff57b4a3158af1e1"
+ ],
+ "beir_bright_stackoverflow_13": [
+  "48caa96e3531a72f",
+  "97cdd9c8a7f51906",
+  "ccc0bbf47cbcbb1a"
+ ],
+ "beir_bright_stackoverflow_14": [
+  "249245831f26e35e"
+ ],
+ "beir_bright_stackoverflow_15": [
+  "82a0e16bfa37aeff",
+  "9e4f11b24c2ad527"
+ ],
+ "beir_bright_stackoverflow_16": [
+  "362da2cb733c3ecd",
+  "a5ef73bf586befc7"
+ ],
+ "beir_bright_stackoverflow_17": [
+  "1a81d6b58a32528b",
+  "25dfd0c7e3a1d73e",
+  "5f802a3657946ba1",
+  "6555520b5fafa712"
+ ],
+ "beir_bright_stackoverflow_18": [
+  "121e8522cd19818b",
+  "4cc265ab01cd75da",
+  "65a0520b0b578486",
+  "76ee4da082dca746",
+  "8bb5ad4cf22f1da4",
+  "a9eed18db5d87aad",
+  "d16a2b8678e7e778",
+  "d489606053945ae0",
+  "ecbd54c4d8b7e0a4"
+ ],
+ "beir_bright_stackoverflow_19": [
+  "07416a5a7db63b03",
+  "d765e764f7d18a77"
+ ],
+ "beir_bright_stackoverflow_2": [
+  "020c59728c39a264",
+  "a33819270f06088c"
+ ],
+ "beir_bright_stackoverflow_20": [
+  "3d5102eab3e2590a",
+  "cd0d33e932bdbead"
+ ],
+ "beir_bright_stackoverflow_21": [
+  "000a8fa071810273",
+  "7d4b1925f685ee10",
+  "8d7ab2c990fc3541",
+  "b5ba50ad83de43c9",
+  "d252d7dc4effa089",
+  "d6d271d6e45eda30"
+ ],
+ "beir_bright_stackoverflow_22": [
+  "01e24159a5a79735",
+  "0d9b4865cbd9f15b",
+  "9d8335f995d25fa0",
+  "9da86f9366248c99",
+  "ac5aedb1c323bb6d",
+  "cdac389aa5a4bec2",
+  "fb225cdf9280ea10"
+ ],
+ "beir_bright_stackoverflow_23": [
+  "80dc58f2e8c5e27d"
+ ],
+ "beir_bright_stackoverflow_24": [
+  "1cd1a23e1ab17c50",
+  "5bf57819a9f97fc1"
+ ],
+ "beir_bright_stackoverflow_25": [
+  "05a48b160c3f7ec9",
+  "2d4f10a5074f5400",
+  "a89965edd47794de"
+ ],
+ "beir_bright_stackoverflow_26": [
+  "eb531d9879a626d7"
+ ],
+ "beir_bright_stackoverflow_27": [
+  "8b187123b6994159",
+  "a5a349860449c8dd"
+ ],
+ "beir_bright_stackoverflow_28": [
+  "5d009ce0aff0e186",
+  "df782a5d054e8dfd",
+  "fa0c9117efd0297a"
+ ],
+ "beir_bright_stackoverflow_29": [
+  "4fa15bc8cd745325"
+ ],
+ "beir_bright_stackoverflow_3": [
+  "a5b706519c2e5096",
+  "cae121cad7dd512a"
+ ],
+ "beir_bright_stackoverflow_30": [
+  "0018c0a27236cf94",
+  "01061174c1881e8d",
+  "02876f67c4f8f14a",
+  "18f8187e330043b6",
+  "28e27a4f5100284e",
+  "33c8674d21355ce8",
+  "41aee2856d71ee4d",
+  "4e1d418a4218579a",
+  "5f7b857936acc78f",
+  "60c76de247ed1fb9",
+  "755e29c3195fdf83",
+  "a23675f35ad49481",
+  "cff2909c5c974e19"
+ ],
+ "beir_bright_stackoverflow_31": [
+  "43bd8af560059fe7",
+  "7c862fa37531570d",
+  "95369e147e2f04f3"
+ ],
+ "beir_bright_stackoverflow_32": [
+  "dfe7f31bbccb97b4"
+ ],
+ "beir_bright_stackoverflow_33": [
+  "2b914ac27110e7d3",
+  "4538820b16f9e3b3",
+  "624690fd9b2d6533",
+  "70c08367a0b3b314",
+  "be74093378965151",
+  "c5dd0f34d9fe4c64",
+  "d540cd84c4bbaee4",
+  "e790a8abffe45e8e",
+  "fc64f51cd7109067"
+ ],
+ "beir_bright_stackoverflow_34": [
+  "b99d2c676e2150ba"
+ ],
+ "beir_bright_stackoverflow_35": [
+  "0d6d488696fdabd4",
+  "289b16fa647152e7",
+  "3b9efbb093c7be05",
+  "46d4203059bdedb1",
+  "5398412064072f7d",
+  "55649784fe463286",
+  "58b0621ea96882b7",
+  "74e0fecaf14a4480",
+  "776f2b7ebb4dff4b",
+  "8322572ce9225c1e",
+  "838bb42dba97de71",
+  "a238e023fbe7f319",
+  "c79e4e8a120e383b"
+ ],
+ "beir_bright_stackoverflow_36": [
+  "1ee204be3587c10e",
+  "4babdec20ce20b04",
+  "562e94ee6e029b87"
+ ],
+ "beir_bright_stackoverflow_37": [
+  "1e5be620eda72791",
+  "2ff49f134a73a142"
+ ],
+ "beir_bright_stackoverflow_38": [
+  "f1b33410b2b3cb31"
+ ],
+ "beir_bright_stackoverflow_39": [
+  "fcc43aed213d0a18"
+ ],
+ "beir_bright_stackoverflow_4": [
+  "2058c1d6228e3156"
+ ],
+ "beir_bright_stackoverflow_40": [
+  "bc474acf85e9487e"
+ ],
+ "beir_bright_stackoverflow_41": [
+  "3bf23ab14ca10549",
+  "564b524d352a0e07",
+  "67a7f056206ff801",
+  "7886e5652963c6b3",
+  "91f0384eacc65399",
+  "9839d0daddebe0f9",
+  "9e6306cc6ac801eb",
+  "9fdfcfaa52ddac86",
+  "c21c2c2f8ae8886a",
+  "f6398baf3d42c26a",
+  "fc382af434ee0334"
+ ],
+ "beir_bright_stackoverflow_42": [
+  "4aaea2c9ae3a558d",
+  "cb021a41de1f9b5d",
+  "e9ac9a5a03ea6e62"
+ ],
+ "beir_bright_stackoverflow_43": [
+  "1946469ed13a6102",
+  "2ee59a3045654eb5",
+  "455b47d22e66762d",
+  "61027cbb45c7c2d9",
+  "81e29d4b87c8b89b",
+  "b93225d304666e2d"
+ ],
+ "beir_bright_stackoverflow_44": [
+  "4e12a5db3a3ffec2",
+  "55eebbc3bb7f33be",
+  "d498a712cd5b699c"
+ ],
+ "beir_bright_stackoverflow_45": [
+  "7238ffc1c504ea45",
+  "fe636afe7d6778fb"
+ ],
+ "beir_bright_stackoverflow_46": [
+  "92d2b4f46d8f355c"
+ ],
+ "beir_bright_stackoverflow_47": [
+  "458bbb6c79f16ca1",
+  "549dc9b6e352cd2a"
+ ],
+ "beir_bright_stackoverflow_48": [
+  "64b791cc89a64ab2"
+ ],
+ "beir_bright_stackoverflow_49": [
+  "0882f6ece96c8183",
+  "1220a1d180a8755f",
+  "2a6381a87baf68e9",
+  "2df77bd688db4e85",
+  "306724de7a7f8576",
+  "33992126002d2e1d",
+  "425e7f222e1615d7",
+  "557515698d79a6d6",
+  "61206c33eb5ee3ad",
+  "622e9817ad5167b8",
+  "7c12e8bbbcd44b62",
+  "84ef94e37c7baed9",
+  "8af125f3e28a2b31",
+  "a561a09f90b021c2",
+  "b7bc2c3ac0f8e349",
+  "c5896b5f0607aaa3",
+  "e658905b27b2605a",
+  "e969684fc97ce4be",
+  "edd87d309c2a4a8c",
+  "f5ea69f2aa728899"
+ ],
+ "beir_bright_stackoverflow_5": [
+  "a9d1ab0ff271241c",
+  "f775ab69b0b5c158"
+ ],
+ "beir_bright_stackoverflow_50": [
+  "c08d711ef11089cd"
+ ],
+ "beir_bright_stackoverflow_51": [
+  "28eb9d840a5bdef4",
+  "3d4fe4c8860f7d74",
+  "6dc85c0a0b7c6777",
+  "e11522303ededce8",
+  "e50e4dd2806b6ea6"
+ ],
+ "beir_bright_stackoverflow_52": [
+  "008d101ca403e568",
+  "00964089dd4de048",
+  "3083a297da2587df",
+  "70aad836ecd83366",
+  "7ab7ca36a2eba449",
+  "ad48719aebfe6231"
+ ],
+ "beir_bright_stackoverflow_53": [
+  "301e168acf51f837",
+  "357a89d4fec20ecd",
+  "5384f9f6b73b92ab",
+  "b528dc7acfd322cd"
+ ],
+ "beir_bright_stackoverflow_54": [
+  "473cecf3677f373d",
+  "538e5ff31f4f78e8",
+  "928cbf4e463a43d3",
+  "a71965a9f4539520",
+  "aad64df22ae2335c",
+  "f3cad4b5cca82297"
+ ],
+ "beir_bright_stackoverflow_55": [
+  "1daadcbe11425730"
+ ],
+ "beir_bright_stackoverflow_56": [
+  "1658c820708a8fe4",
+  "1f7beac5e3c674d2",
+  "42a51220bdbda5aa",
+  "4cbd3d61037e299f",
+  "84327ce1cc7933c1",
+  "b01ea70c589466a0",
+  "d727f9887ad71bb1"
+ ],
+ "beir_bright_stackoverflow_57": [
+  "2b6ae1a12b6a415a",
+  "c12c840d568392f0"
+ ],
+ "beir_bright_stackoverflow_58": [
+  "ab98cbccc76a1557"
+ ],
+ "beir_bright_stackoverflow_59": [
+  "52cedd00ae22375e"
+ ],
+ "beir_bright_stackoverflow_6": [
+  "830b8a8a527c4f84",
+  "fe25bfb28506f516"
+ ],
+ "beir_bright_stackoverflow_60": [
+  "7e70d17413f9524d"
+ ],
+ "beir_bright_stackoverflow_61": [
+  "519e6368cb492a33",
+  "f5d46308b800137a"
+ ],
+ "beir_bright_stackoverflow_62": [
+  "79a175069fe6af4f",
+  "c045fdf8e41a3196"
+ ],
+ "beir_bright_stackoverflow_63": [
+  "72323a87474e4eda"
+ ],
+ "beir_bright_stackoverflow_64": [
+  "078afe251d8b74b3",
+  "4e61962ac5becb15",
+  "9915b8c0172287b8"
+ ],
+ "beir_bright_stackoverflow_65": [
+  "3b0cd0fef0cf7d15",
+  "48f962e9d7169744",
+  "c3f47cd2ffc323a3"
+ ],
+ "beir_bright_stackoverflow_66": [
+  "33bb23997686e00d"
+ ],
+ "beir_bright_stackoverflow_67": [
+  "1a4f1bb625242545",
+  "39e1047727b2134c",
+  "88056a8228dec631",
+  "ebc0a9fcef23db67"
+ ],
+ "beir_bright_stackoverflow_68": [
+  "b7a7bb436f557b44"
+ ],
+ "beir_bright_stackoverflow_69": [
+  "8519b324d8e9d838"
+ ],
+ "beir_bright_stackoverflow_7": [
+  "81ef746f4aa7ebcd",
+  "9c9c8b2d929bde7e"
+ ],
+ "beir_bright_stackoverflow_70": [
+  "89d9c2096586e55f"
+ ],
+ "beir_bright_stackoverflow_71": [
+  "398f645bc1733c40",
+  "39f4a61bc76b43da",
+  "3e7323c061672e65",
+  "496ec7fc9a0b7717",
+  "586bb423eb95008f",
+  "5c8510017dd7575f",
+  "5f4289ac31c8f35c",
+  "6112e59cd8d44f1b",
+  "6981ffeddfd953e6",
+  "6b9f76c38b0bb039",
+  "71e180e0bd4ef4eb",
+  "7e4d24829852931c",
+  "880013ad955198bc",
+  "89d20b3fca00d436",
+  "8be05fa512f6c2d3",
+  "8d58ec9eb8a5b1fd",
+  "9fdbf1f774a33954",
+  "a388b672f7e62cf2",
+  "b0f853c1652eb316",
+  "b2a52dbb8cc92a48",
+  "b5270cac0027d054",
+  "b561546a48b8c8f9",
+  "b9379246f583e763",
+  "baaa0237072e8b6d",
+  "bf1bb8524f1864bc",
+  "c32fa5865a9532b0",
+  "cd5e17e1cd58b0ac",
+  "d283e6d5e513ffd6",
+  "db598dd9532151ab",
+  "ed4b6b43dbd290f5",
+  "f1bde6622fc7b0ec",
+  "f5586b5f6251fce3",
+  "f8caf5f099bbebc6"
+ ],
+ "beir_bright_stackoverflow_72": [
+  "29d8841799b1448a",
+  "408491374a057e05",
+  "49afb117f1f9f17b",
+  "6b5aa0ae07ddb6a6",
+  "a8c555184e48d922",
+  "e319fe269ff0a49b"
+ ],
+ "beir_bright_stackoverflow_73": [
+  "09b9743cecfcc299"
+ ],
+ "beir_bright_stackoverflow_74": [
+  "167655fcd764a5a1",
+  "e700314cade5fe53"
+ ],
+ "beir_bright_stackoverflow_75": [
+  "92de0aaac4929487",
+  "b0c960a154b9cfc4"
+ ],
+ "beir_bright_stackoverflow_76": [
+  "61be3746067c82c4",
+  "7fe90fd63f242d93",
+  "a7c2e3314bb27d30"
+ ],
+ "beir_bright_stackoverflow_77": [
+  "a9add31c0da5fa71"
+ ],
+ "beir_bright_stackoverflow_78": [
+  "09bf165846bbad7f",
+  "4f1955d9a15e3ccf",
+  "a9a7fcab115ff0f2",
+  "c9a7346aa7a7ac72"
+ ],
+ "beir_bright_stackoverflow_79": [
+  "475d373b23994153",
+  "9b39c814fa01d409",
+  "a2b6d272f758ef3c",
+  "efcec2f3b1f87018",
+  "ffd6c153c4ca1b18"
+ ],
+ "beir_bright_stackoverflow_8": [
+  "37699e55ae18412e",
+  "4e5598ef5d9d0429",
+  "559cde5e7ca4d395",
+  "5dd4980d5cd1c505",
+  "931667ada34fbdac",
+  "9edfb34a62923f8f"
+ ],
+ "beir_bright_stackoverflow_80": [
+  "7e5f34b9b4aa66bd",
+  "d7774d60ab71a005"
+ ],
+ "beir_bright_stackoverflow_81": [
+  "3a89c649d37716be"
+ ],
+ "beir_bright_stackoverflow_82": [
+  "29a1702e08d94a2d",
+  "5ceb0520e9b03d13",
+  "e8e0a8e961e34d09"
+ ],
+ "beir_bright_stackoverflow_83": [
+  "f797b326d362ac96"
+ ],
+ "beir_bright_stackoverflow_84": [
+  "05ae1cfad8db114e",
+  "4985041dc6630d83",
+  "57f55a78828c4bb6",
+  "987e24e2e5d68fe4",
+  "9955a71bdb309d8c",
+  "dc943cabd77e7dfa"
+ ],
+ "beir_bright_stackoverflow_85": [
+  "105de591b7199076",
+  "2d6205b705f9186e",
+  "33514a295f73f61e",
+  "36df441895f460db",
+  "3e0ab304c7a6d6dc",
+  "85e298ab358cb62c",
+  "b00a21f3586f7304"
+ ],
+ "beir_bright_stackoverflow_86": [
+  "14ca26e81987796c"
+ ],
+ "beir_bright_stackoverflow_87": [
+  "0a51494397f678f3",
+  "0cb729fa0296c16e",
+  "19cc1dcdbd57510c",
+  "8fa9682f7c199b1d",
+  "fb818e4271348180"
+ ],
+ "beir_bright_stackoverflow_88": [
+  "4b38bb3cef3a750d",
+  "6d8d4228f93b2417",
+  "95fe35137b058e12",
+  "a09291b3e28c1e9f",
+  "b05e5d2301293ffe"
+ ],
+ "beir_bright_stackoverflow_89": [
+  "b9ec2fe5b351b723",
+  "ca1fb2e8c84e5602"
+ ],
+ "beir_bright_stackoverflow_9": [
+  "ef806f1b2356c95d"
+ ],
+ "beir_bright_stackoverflow_90": [
+  "c20d8069a8813698",
+  "d6f372c79b9e6188",
+  "f591edbc53abbec1"
+ ],
+ "beir_bright_stackoverflow_91": [
+  "755a501268ec4e8c"
+ ],
+ "beir_bright_stackoverflow_92": [
+  "1d12c9b96ed87e8f",
+  "284aaa3c4bbaee75",
+  "a6f664e3017934cc",
+  "bbaa6d3688b74a03",
+  "da328a34b88043ec"
+ ],
+ "beir_bright_stackoverflow_93": [
+  "d73d0a98e344a2d8"
+ ],
+ "beir_bright_stackoverflow_94": [
+  "0c34ebb573c7ede4",
+  "2dc91d4d349d753f",
+  "51bc493ca3544499"
+ ],
+ "beir_bright_stackoverflow_95": [
+  "3df28214fc4923af",
+  "822d63e7f748c538",
+  "b6a3bdaeeb473b09",
+  "fdacd5aa2aa1f2d0"
+ ],
+ "beir_bright_stackoverflow_96": [
+  "6ea61fafc11fdf8c",
+  "85291102f97ec5c4",
+  "8cba7fe61fc4dbe1"
+ ],
+ "beir_bright_stackoverflow_97": [
+  "23dffbca815ddb7a",
+  "3dfcb735e05c961d",
+  "590b3f2dd65cd8fd",
+  "9f4dbaa63ee9ec3a",
+  "beb4a452589a7512"
+ ],
+ "beir_bright_stackoverflow_98": [
+  "2366e3aa5c7f2dc9",
+  "273e341049f4eea0",
+  "533a91a45a08db94",
+  "7980005adcf02a2f",
+  "93892fa8cbe381d1",
+  "a9bbd3ce8bb225ed",
+  "ac19a5c2db3de87a",
+  "be2a0b76e3584e56",
+  "e4f9bac21ab62e68"
+ ],
+ "beir_bright_stackoverflow_99": [
+  "086be36681ce35f3",
+  "b0b6c321e0fc4984"
+ ]
+}

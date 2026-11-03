@@ -1,0 +1,724 @@
+{
+ "beir_bright_robotics_0": [
+  "61636e171c38b161",
+  "9c9efe19a59a550c"
+ ],
+ "beir_bright_robotics_1": [
+  "244d86def756c5be",
+  "af30fe789af90da7",
+  "b4e91d451d53774e",
+  "cd50763ede2edfbb"
+ ],
+ "beir_bright_robotics_10": [
+  "10e34fb9db4b9f5a",
+  "1791cf2b7bbb9b29",
+  "1db1c62c262b22aa",
+  "2b3705049c54c170",
+  "307667cb8516db9f",
+  "31b718e7013f9ee3",
+  "44302e5d08088638",
+  "47e3dd803aa91f29",
+  "5cdbd2d3c3fa6e67",
+  "5dd9ef3118316f53",
+  "6c597f46752f0de3",
+  "6e8887c4d574256a",
+  "72a83d89b50ed827",
+  "7ef8e23774dc6093",
+  "88f1deeaae9d44e9",
+  "9a0ae62f34be3995",
+  "a034bd9e89f77341",
+  "aa61ebe7d39c1e8e",
+  "b1fcd13988e37142",
+  "b9f99f46066b4a6f",
+  "df4df616de832cad",
+  "e66d4fe934d5a53f",
+  "edf90c11ba7ea773",
+  "f8844584489eb784"
+ ],
+ "beir_bright_robotics_100": [
+  "922427aa676d6dd6"
+ ],
+ "beir_bright_robotics_11": [
+  "a69b95ac0ec8a780"
+ ],
+ "beir_bright_robotics_12": [
+  "662b8ddffbefd8ef",
+  "bf0334f6dbf6d45a",
+  "c46bfa60b6725983",
+  "ceb2c66bd1d26b62",
+  "df13c3651db17c51",
+  "f1dfd2602ae6be9d",
+  "f30dc3bf13c3434e"
+ ],
+ "beir_bright_robotics_13": [
+  "52e6ad1cdcc201cc"
+ ],
+ "beir_bright_robotics_14": [
+  "08a335812e3243e1",
+  "4e72dab840b29af8",
+  "65955384b451ac9e",
+  "6bf75e74e2d3679b",
+  "753045060017291f",
+  "845bc1fd5546c4b8",
+  "c0045c6252078b5a",
+  "c8ac85c61b7f68d9",
+  "ecbb5735b6ab701c"
+ ],
+ "beir_bright_robotics_15": [
+  "3b61d37dcaedf0a4"
+ ],
+ "beir_bright_robotics_16": [
+  "04b2c7d9497e3236",
+  "32e90001b0774a60",
+  "35dafecadb94e583",
+  "3eaea54067a0b1d0",
+  "4194e7f2cd0e5e41",
+  "5ef97521b3f2d61e",
+  "71ea5cc8da513f34",
+  "884417f5220f6eda",
+  "a252c13f23361bfd",
+  "abb26ad05eb9c2f1",
+  "b24b29809d3c4292",
+  "b51cd63dbd163053",
+  "be2baa3086f0c25d",
+  "c65da4545212d49e",
+  "cfd40e7f50488607",
+  "d0a7ff18f4ad21da",
+  "ddc771f63e222b31",
+  "f31f1a4d6c680397",
+  "f49611d494a864f9",
+  "f6105531cbe6e6c6",
+  "fb77e74b446c241a"
+ ],
+ "beir_bright_robotics_17": [
+  "6123b2e4b7e641e4",
+  "6c94ab73b1020357",
+  "b93fe2038e81451f",
+  "d4190cee30b5bf04",
+  "f7c1029b4d340063"
+ ],
+ "beir_bright_robotics_18": [
+  "642430c11eeb9dc4",
+  "ba7163b2cf925914"
+ ],
+ "beir_bright_robotics_19": [
+  "d53d459e71c692ab"
+ ],
+ "beir_bright_robotics_2": [
+  "103bcf5cc574282d",
+  "6bc8985ef8d19ab6",
+  "7fa6e6a151527377",
+  "dee35c45bc64c15f"
+ ],
+ "beir_bright_robotics_20": [
+  "01817495cc89b9bc",
+  "151e3f20444db74c",
+  "17b6c7704568486e",
+  "1f2b6ef5ac597e16",
+  "2f48b68113f734d4",
+  "3a4752d9e87740a6",
+  "3b6ef96dfd330fec",
+  "3b894f5cca956604",
+  "3dc9ae376c243c2f",
+  "4d57d63651e6d8f1",
+  "5c3737cf27ca52cc",
+  "6c3ce6ae0112c6c6",
+  "7b01648fc96a6922",
+  "7eac3bbc3a38970a",
+  "7eb2041a0a92b918",
+  "81328eb37e7fc910",
+  "8a2876d6ae832be3",
+  "8d2a78c0b1a06923",
+  "a7ee58948263e045",
+  "a8a8ca3cf0f343f5",
+  "ab5688be6fe9dd19",
+  "af015d9c7f1aa807",
+  "be3226d101cd5a40",
+  "c46886faa0bdb373",
+  "c72cc7dd574954cc",
+  "ca54605a3f41c468",
+  "ceb4b4f456640f79",
+  "d1e6aa982f676f8f",
+  "d65cd1cba9c9b405",
+  "e54d9f3c45279112",
+  "e62c7ad42e0417e9",
+  "e80ec464c02e3ca8",
+  "ee0334d2601ed3bb"
+ ],
+ "beir_bright_robotics_21": [
+  "6244862f4724483a"
+ ],
+ "beir_bright_robotics_22": [
+  "d2a55f2906729815"
+ ],
+ "beir_bright_robotics_23": [
+  "7a857d666bc6965d"
+ ],
+ "beir_bright_robotics_24": [
+  "10bcdf90c74bdc69",
+  "1bf5f739f0d1c05b",
+  "1e1bd43d2961b8ce",
+  "2356be6a823036f2",
+  "2ad34a14b2a412c9",
+  "3751a91999c216be",
+  "643dd531b93a46c6",
+  "7bf492217d279b41",
+  "8b6fbaabab640b24",
+  "9727266b581f3818",
+  "9bbeb70c8a15453f",
+  "ae1691180c16b811",
+  "b02fb49efddf12d8",
+  "c38f84373d125d62",
+  "ce96f8512a2e42d2",
+  "d5bbe08d7fab9358",
+  "e4baf742e3adb646",
+  "fd303068e32f34bd"
+ ],
+ "beir_bright_robotics_25": [
+  "80a019e201f1c088"
+ ],
+ "beir_bright_robotics_26": [
+  "14e7c61286d3a087",
+  "23a5bd737d2bc2ef",
+  "942c5f758021d34b",
+  "a4e4648bba142af4",
+  "bb31ff15acdde504",
+  "f7c41802b7768397"
+ ],
+ "beir_bright_robotics_27": [
+  "b82a956c7295ec47",
+  "bf3fa2d1b8a232a6"
+ ],
+ "beir_bright_robotics_28": [
+  "c2de59bea1cdaac6",
+  "f16cdc4b4ecc22eb"
+ ],
+ "beir_bright_robotics_29": [
+  "69d5d0d5304c092b"
+ ],
+ "beir_bright_robotics_3": [
+  "9e027503a1d98667",
+  "eb6c9133663a1425"
+ ],
+ "beir_bright_robotics_30": [
+  "10c38aa7256ff2c6",
+  "769472ceccc720b0"
+ ],
+ "beir_bright_robotics_31": [
+  "4316c435928f3b05",
+  "efaa327c3cec391c"
+ ],
+ "beir_bright_robotics_32": [
+  "062d217a0129131e",
+  "5337529a58fd7d63",
+  "7e522253584cf6cf",
+  "cd83c7ea2e6067e6",
+  "ef03a88c6f8c91e4"
+ ],
+ "beir_bright_robotics_33": [
+  "ea85a823433158c1",
+  "f23b333dee916b87"
+ ],
+ "beir_bright_robotics_34": [
+  "6fed5da65762a0ad"
+ ],
+ "beir_bright_robotics_35": [
+  "311ccfa344207ffa",
+  "a9723be701020f13"
+ ],
+ "beir_bright_robotics_36": [
+  "5356f60975b4d3ca",
+  "dec93ff26fd99333"
+ ],
+ "beir_bright_robotics_37": [
+  "17e3c7b9d9548a2b"
+ ],
+ "beir_bright_robotics_38": [
+  "3ad09a93bf8fd522",
+  "8a31a38538e72ecf",
+  "9197b9ffb2a928d7",
+  "9726bfc7976e1f67",
+  "b6783c301a14805e",
+  "bcf747d17154315f",
+  "c0e49fb64f235e3d"
+ ],
+ "beir_bright_robotics_39": [
+  "005e8466e6fa1fc2",
+  "00b53c68fbc86337",
+  "14c4c8578c136bd3",
+  "167ec2c03d8e1dd4",
+  "206336b7e3c4f6f0",
+  "241c98683b51484d",
+  "255b7de3bcebfa9b",
+  "25e0eb27dbe29011",
+  "2d384674f55e12fa",
+  "3501121530da8423",
+  "3c1c8976bf5388f6",
+  "41f33d24330970cd",
+  "4c70a8825679be67",
+  "5c8107be838f86d1",
+  "70f8be634f78774f",
+  "72e12722e460a3a1",
+  "7d1cf974f5d0f4bf",
+  "83029ae0bc61f29a",
+  "8d164d13369e4867",
+  "9850a1da4a1dcb16",
+  "a13af8c0e4aa0e55",
+  "b3a9a4ad4f8e9dfe",
+  "c7358f48a1285f67",
+  "dd7fb00f97432963",
+  "df39699db5594c7d",
+  "e1f8a1c42127a64d",
+  "e5ad6150e3a4a754",
+  "e6014556c1a25e90",
+  "ed92a3f580a10b0b",
+  "fc737f4d7e956984"
+ ],
+ "beir_bright_robotics_4": [
+  "1f9a5e39969221aa"
+ ],
+ "beir_bright_robotics_40": [
+  "1c4d7bdcfd260227",
+  "205f61e893ffa455",
+  "3ee1ea9461ba8ba3",
+  "724054642510ea68",
+  "8e93689d4d4d4cf5"
+ ],
+ "beir_bright_robotics_41": [
+  "9ae62a598103e594",
+  "d2f7e6b3e4de4b7b"
+ ],
+ "beir_bright_robotics_42": [
+  "200af39260e747f7",
+  "26f0f8d9a026f492",
+  "2efd21d61ead974f",
+  "3337218e8f5cec04",
+  "3b7d740960f53bd6",
+  "3e897feb402cd655",
+  "56d495ec6c44df90",
+  "5ef06ec318e127cf",
+  "5fe82338dd18ce82",
+  "9ee95c23d1a3e1a1",
+  "a75c401c710d9e5c",
+  "bf9a2e1be56da7ef",
+  "e6a39ce0c9506b48",
+  "e7dcfc617851b1df",
+  "e8b8a194803121a8",
+  "ff439415420659a0"
+ ],
+ "beir_bright_robotics_43": [
+  "056a3774afc0bf77",
+  "0ea7d21f79b5ac36",
+  "13fd233237670bdb",
+  "4d548fcb1c82b45b",
+  "b42b358456d54b80",
+  "caa3ffa0bad9d75d",
+  "dcbb6a574740bddd"
+ ],
+ "beir_bright_robotics_44": [
+  "4cac636befc696ed",
+  "d0f3db6a34fb531d"
+ ],
+ "beir_bright_robotics_45": [
+  "f3f8feb23a5ad2fb",
+  "fffb08f8b7cb9f9b"
+ ],
+ "beir_bright_robotics_46": [
+  "414e54e1bb46b804"
+ ],
+ "beir_bright_robotics_47": [
+  "06c309e5ec0e7b87",
+  "1bf68454451c7c79",
+  "3aa9ecf0a9cdf73d",
+  "9a97e833eb8f31a4"
+ ],
+ "beir_bright_robotics_48": [
+  "4999cff098120a76",
+  "544b00b34cd88fd1"
+ ],
+ "beir_bright_robotics_49": [
+  "d1f81cdaa6b09412"
+ ],
+ "beir_bright_robotics_5": [
+  "8fafddd59bca7de1",
+  "b9f6697a46d66385"
+ ],
+ "beir_bright_robotics_50": [
+  "068fca3fd6c7d460",
+  "1fcbc214f4eb106f",
+  "37107c4bc05d642e",
+  "3fecaefc74df94e5",
+  "5061fb430adf4980",
+  "56be4d5788eab0c5",
+  "597bb6559fd5ecfc",
+  "8a052033b5e4ea46",
+  "8c2cd6d68f254a06",
+  "8f8ff19f2ac7ab53",
+  "c395668eb7c3557b",
+  "e665c9023932d472"
+ ],
+ "beir_bright_robotics_51": [
+  "613556238decc8cc"
+ ],
+ "beir_bright_robotics_52": [
+  "af41108f67330b13"
+ ],
+ "beir_bright_robotics_53": [
+  "7093cd88fb9440e6",
+  "80aa6522195017c1"
+ ],
+ "beir_bright_robotics_54": [
+  "15bafcee11805b55",
+  "396ee9c3da10b311",
+  "b16391dcfe0729c7",
+  "d0b79490a54cebc8",
+  "dbe318ccfaf5ee2d"
+ ],
+ "beir_bright_robotics_55": [
+  "3e5752c7ae04eb81",
+  "4b2e6e44f46761a2",
+  "548623178d529926",
+  "6b649f82c0988b27",
+  "a05a48c17cc1bdef",
+  "d0a6975d9fd1a968"
+ ],
+ "beir_bright_robotics_56": [
+  "b5004528e2147d9b"
+ ],
+ "beir_bright_robotics_57": [
+  "90c70c4a4b87e9c2"
+ ],
+ "beir_bright_robotics_58": [
+  "41a4c39750e741c7",
+  "6d78be2b39e842ef",
+  "6e31eea258ed074a"
+ ],
+ "beir_bright_robotics_59": [
+  "1324b9e778206355",
+  "15d6a673ca3c93ce",
+  "1ce2ad688561dd95",
+  "39078f8035b3b4f3",
+  "3f78e8db297d39ea",
+  "53969bee49cc36ba",
+  "5a7a0d16c0f29e02",
+  "6d6299cf368b53c2",
+  "9064a7de284d4101",
+  "97e1a4643d09feee",
+  "9b0a6d1adcacc9fd",
+  "ad4306624216c7fe",
+  "b2d5dbf52ab376a8",
+  "d95a085e5a43ba16",
+  "e7dbb6029cdc780c"
+ ],
+ "beir_bright_robotics_6": [
+  "27be8ce9cc7242b9",
+  "7dbc46faed960372"
+ ],
+ "beir_bright_robotics_60": [
+  "aa3ec0a6f4d13c81"
+ ],
+ "beir_bright_robotics_61": [
+  "63b98660dcf02edb"
+ ],
+ "beir_bright_robotics_62": [
+  "04f6c0b50ad3174a",
+  "13ae593b656d38cf",
+  "17d602e6c154a44b",
+  "196221ff5f0b1e90",
+  "24df518b0dddbb0b",
+  "5164ab874c646681",
+  "53825c642c52a788",
+  "6deb04891fb0ee7c",
+  "6fbae4411af0f0e8",
+  "8379806384457d4e",
+  "bab0fe306aa40c13",
+  "bdea38cd4d59a051",
+  "d33ffa776ef8058b",
+  "e184ebeb94564939",
+  "ebf0e39c9d262256",
+  "f13ba4ec0cca5949",
+  "f14808c75e70f32d"
+ ],
+ "beir_bright_robotics_63": [
+  "97ac2c8fa56c6a68"
+ ],
+ "beir_bright_robotics_64": [
+  "24ed9a2ad2a98a27",
+  "896cb65cf7891e7e",
+  "d0f915db8abe34ca",
+  "f1b4e9084097dcaf"
+ ],
+ "beir_bright_robotics_65": [
+  "55dcabe65bd76456"
+ ],
+ "beir_bright_robotics_66": [
+  "0f697339c12ed523",
+  "105f41c20b82d3bb",
+  "28045d17e674c4ea",
+  "417ab8fe6af45ce4",
+  "580391165438a710",
+  "799d35b4483046a9",
+  "9cf9aa9745134a4c",
+  "b18c9489f82a4631",
+  "ea218ebcbb9d3435",
+  "f67cef0ffb55fd94"
+ ],
+ "beir_bright_robotics_67": [
+  "2b01907daeb15087"
+ ],
+ "beir_bright_robotics_68": [
+  "229e70ff09462396",
+  "2354e3e931ccd71e",
+  "30d8ee5895d47a79",
+  "399560d8f4cc285f",
+  "479aa36b9e10011f",
+  "4d75787741848e8c",
+  "504209fde4f2ec6a",
+  "5f4282190c95af5c",
+  "c322edc7fb2c423a",
+  "c46f7f8d7a363e77",
+  "dbc46f91b311bbe5",
+  "e7b0a16604329753",
+  "ef85d08ac745c4d0",
+  "fcb816c753d5345e"
+ ],
+ "beir_bright_robotics_69": [
+  "0da668e1e4e0ebe0",
+  "17bd80294fddbac9",
+  "1c96e31b96362c27",
+  "2a0a01e91dd8cd3b",
+  "7b71398c69789b5c",
+  "8ac4e6a5c40c78fc",
+  "93c9941f2fb208c3",
+  "addda5a4a953c407",
+  "f946acdc8cd8537b"
+ ],
+ "beir_bright_robotics_7": [
+  "152597964e4ed34b",
+  "32744a898d5dc37f",
+  "345ffcd012d66802",
+  "3df02e73e164b014",
+  "47791d6defc4cf11",
+  "744a475d32590619",
+  "90c7bcb80f486852",
+  "adbfe8eae4358b27",
+  "bd670882aafd77c1",
+  "c3331d140b7706ba",
+  "c8af1c219189e0a6",
+  "ca51bc7975dc1549",
+  "d3483a272757c0d7",
+  "d8757de83dbcfbc8",
+  "e1243f2f1c86646b",
+  "e7a7da0f583840a9",
+  "f346d1d1f35ef04d"
+ ],
+ "beir_bright_robotics_70": [
+  "3441b94f9a8e89bd",
+  "48e023e1f0677f94",
+  "59ac493bd910080c",
+  "9726119b1c02702c",
+  "9da543398741f0e5",
+  "a0716cac00a75091",
+  "dfc930102120723e"
+ ],
+ "beir_bright_robotics_71": [
+  "2fd743fd2222b24a"
+ ],
+ "beir_bright_robotics_72": [
+  "49386eb500150739",
+  "760055d3124b8f02",
+  "e9de8436cb5f2ce2"
+ ],
+ "beir_bright_robotics_73": [
+  "13bf5348d58a2604",
+  "4ac7540bda90e8a3",
+  "5220cf643abd16ce",
+  "6337e4a9325ab56d",
+  "9aa7cae882c3e82f",
+  "aed3222ae3b34dd6",
+  "bbd2be5690779901",
+  "c315a756e5eaf1a8",
+  "cec439e26c42367f",
+  "cedd2214a5fc4ca8",
+  "ec1a67590a1de048",
+  "fa043c1419de88e2"
+ ],
+ "beir_bright_robotics_74": [
+  "e0a4f41dd2364b4f"
+ ],
+ "beir_bright_robotics_75": [
+  "8a8f5736edb13bd4",
+  "a6c2ac50dce184ed",
+  "bdec8092ee91c7fa"
+ ],
+ "beir_bright_robotics_76": [
+  "3ab670c92e14f242"
+ ],
+ "beir_bright_robotics_77": [
+  "039bf285083dc6d7",
+  "13eaa49b3b67e6d6",
+  "520059d5fb543ae2",
+  "82a4c57723213428"
+ ],
+ "beir_bright_robotics_78": [
+  "08e4a39efb53b4da",
+  "124525b9bdad2372",
+  "87c5d51ac1efa039",
+  "9b7ce73f56b3dbf5",
+  "e14068dd0e48bb5e"
+ ],
+ "beir_bright_robotics_79": [
+  "57bf17bfa0580476"
+ ],
+ "beir_bright_robotics_8": [
+  "6f64ce1175ba2c2b",
+  "9b283bb496a563ad",
+  "a81048ea9bc19338",
+  "c1a8a28eed3ec9f6"
+ ],
+ "beir_bright_robotics_80": [
+  "4fee5eb2ec936943",
+  "6341fde2017972d8",
+  "82779666d2f4a3ce",
+  "8f8abe846815b33b",
+  "a89828fd5239c43c",
+  "ba2fee6b06eb1d8a",
+  "cab7e0aa26436fc5",
+  "de4b1f5d1d441212",
+  "ea9c5adf4ce0fa2a"
+ ],
+ "beir_bright_robotics_81": [
+  "20b8705e0b419b21",
+  "578e75655f8a62ac",
+  "a282a1b7e8b3ddfe"
+ ],
+ "beir_bright_robotics_82": [
+  "f137349a79bf03af"
+ ],
+ "beir_bright_robotics_83": [
+  "52bd7855712a4597"
+ ],
+ "beir_bright_robotics_84": [
+  "04f1ceac105fc755",
+  "07fea47e9b660afe",
+  "1a91008c6221821b",
+  "1c4a7bd7961468de",
+  "1d1f7dd94d4e1945",
+  "201d997d9a85fc4f",
+  "22429f77fe0a18cd",
+  "39ed42b022820997",
+  "46dd7ef620600beb",
+  "5d8a21d381da1139",
+  "7060ee24c28bc9fa",
+  "7fbeef7d1c728e16",
+  "80895e24cd709210",
+  "93acc24153f6b41d",
+  "9e8e621d337a9b52",
+  "a768eccb7ef8b1d6",
+  "ac49004637347111",
+  "bc4d3759cc81fceb",
+  "c4b6ee2950a63eb1",
+  "d3493202c0b9b7eb",
+  "de69a24efa45b58d",
+  "e4ad88304e52c1a6",
+  "e85a672c7dcf127b",
+  "ec798bc147fc7f94",
+  "f7d052c2ef3ee8a3",
+  "f8b501b58192d8c4",
+  "fafad832a1551fe8"
+ ],
+ "beir_bright_robotics_85": [
+  "4625a45ab32c51ff",
+  "72e68c58fca62489",
+  "ad6253683d0e8f45",
+  "d5c04d11a8663b01"
+ ],
+ "beir_bright_robotics_86": [
+  "b3d3b088412ccad6",
+  "c45ba043e8ecc998"
+ ],
+ "beir_bright_robotics_87": [
+  "28b1ed75e216a56d",
+  "2ffe887514ffb956",
+  "5838a67ee7eb9c33"
+ ],
+ "beir_bright_robotics_88": [
+  "15454bcdeac0e6f6",
+  "23f0f796c194f5b1",
+  "b6d774270edf1a30",
+  "ee3639022e039cb4",
+  "f27b108c3ca7c253"
+ ],
+ "beir_bright_robotics_89": [
+  "116264484a854ad3",
+  "33d05343314636f6",
+  "3d282a2b9c374a5f",
+  "42324bf13e2fbbc5",
+  "67784fe4c163985a",
+  "a3d3175e66a08d74"
+ ],
+ "beir_bright_robotics_9": [
+  "d7fe9bbdbe4eb23f",
+  "eb42a61977a30f74"
+ ],
+ "beir_bright_robotics_90": [
+  "307211d5b85c92f3",
+  "35095a5a150931b5",
+  "372d34d3703c7aae",
+  "411b6222deea9740",
+  "44a695b58cba9eb3",
+  "589c18db0740a2fd",
+  "5ee514a9ef385e16",
+  "9da20351fef7e8f5",
+  "b36fa4dba5517ef3",
+  "c03f80dd5e13ab70",
+  "ecc35488e9542d83",
+  "f44a99afbb1917e0"
+ ],
+ "beir_bright_robotics_91": [
+  "14cd9320feda379e"
+ ],
+ "beir_bright_robotics_92": [
+  "a40e6d52dc4d88ac"
+ ],
+ "beir_bright_robotics_93": [
+  "0b5c3bdcd10e32e0",
+  "17980357b3131b15",
+  "24bcd36994bb76e4",
+  "4bf8313c238f911a",
+  "850f41bf2aed3a47",
+  "ac00eb2f5bb3dd93"
+ ],
+ "beir_bright_robotics_94": [
+  "3fcd59fa4e853098"
+ ],
+ "beir_bright_robotics_95": [
+  "ee2480626ae5e289"
+ ],
+ "beir_bright_robotics_96": [
+  "8e7be6f73714e577"
+ ],
+ "beir_bright_robotics_97": [
+  "11a1d20ef16a5225",
+  "16e9d11ac1599d8f",
+  "25d9274c057703dd",
+  "2f34f7c5095ff1f5",
+  "3f7b131875e364d8",
+  "40c4889413f5ce6b",
+  "523bc96699ff8400",
+  "5523b53c72a7e704",
+  "8ace2cfe657c4cf1",
+  "b9336c812ae4a020",
+  "d797c54004c4aabb",
+  "e28b8427018fb1a7",
+  "f690f1723840b122"
+ ],
+ "beir_bright_robotics_98": [
+  "0f510b4201e8f77f",
+  "3f0714a11e2321af",
+  "6720f4257200ad09"
+ ],
+ "beir_bright_robotics_99": [
+  "52e3e357cc3e3847"
+ ]
+}

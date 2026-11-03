@@ -1,0 +1,831 @@
+{
+ "beir_bright_sustainable_living_0": [
+  "005d8cb2a21efef3",
+  "05f50a0b4d3dba6d",
+  "0c09d33974df6858",
+  "13ad36ba965d3d70",
+  "2935db36ba16b24d",
+  "34768e040ac68014",
+  "3b6ca97dfef4f91d",
+  "3bd90ef2cefc9e32",
+  "47287cd5e00f1a52",
+  "50bbe53f256281ae",
+  "5aa786afe77e8e47",
+  "5ce8def329221207",
+  "61fa51b44ac583f1",
+  "72f769a1dbe9cf22",
+  "83d613fc5e998ce4",
+  "963cf05bbb95871b",
+  "a43ef365ed481222",
+  "aff62c717cac166e",
+  "b7f477b91b55a60c",
+  "c8b62cc0d6095dd3",
+  "e0c9857d5c7a0596",
+  "f1ebed8a48fabfd0",
+  "f854937e153cdbe5",
+  "fc82c3a1d2922110",
+  "fc91861603bafea8"
+ ],
+ "beir_bright_sustainable_living_1": [
+  "760c166bf8ea2149"
+ ],
+ "beir_bright_sustainable_living_10": [
+  "c3743ddba76f68cd",
+  "ead1fa99ab2dce85"
+ ],
+ "beir_bright_sustainable_living_100": [
+  "2c7bcfa0cba3a53c",
+  "38afb39f807416da",
+  "3bb5b81d5a55a8de",
+  "450c2eb6e120252d",
+  "4b253dc0a091bf8e",
+  "ca6050d13422402b",
+  "d2cd561a7cfeed84",
+  "decb0d462c752c88",
+  "eea189d673d2a4a6",
+  "efe6913bd3195f59"
+ ],
+ "beir_bright_sustainable_living_101": [
+  "1f773d10b86be1a0",
+  "a3fc4c065bc5619a",
+  "c0964e65519da262",
+  "f7d27faef8a1910e"
+ ],
+ "beir_bright_sustainable_living_102": [
+  "15e8e234944ee1e8",
+  "3592e1a623f430a0",
+  "7bdea5bcda4b6aea",
+  "c6cf55a8c423fdc1",
+  "d8e266f09ba89721",
+  "ed51e93eb0c464ae",
+  "f4b06b2db7889283",
+  "fb82b56a2bf95ed6"
+ ],
+ "beir_bright_sustainable_living_103": [
+  "20db34e4a35ab3ed",
+  "37880801ad7bdc6d",
+  "89fe1fbaeaacbd3e",
+  "8ef42add38492329"
+ ],
+ "beir_bright_sustainable_living_104": [
+  "1bb138e2ffcd0b6d",
+  "1c4e47c95617c3ae",
+  "332b34d3a26e953b",
+  "56730f33ce1033ba",
+  "7eb847b643a79b97",
+  "81976eac9f359515",
+  "8aaa2d455022e653",
+  "9b9fe97ab85711a5",
+  "a1c48e04eb7a6cc2",
+  "a1d5c696b44814f9",
+  "a7509439d5b80ea7",
+  "a8fd0d49fe59ae32",
+  "d24cb6de40f45fbd",
+  "d2934044de5c27db",
+  "d3ffec4b7d5136bb",
+  "e2464734fcc21c56",
+  "f302f77e46c96420",
+  "f7617925d5095d45",
+  "f89321dd8072142a"
+ ],
+ "beir_bright_sustainable_living_105": [
+  "1d36b27ba7a29aa3",
+  "40beb0780635dd84",
+  "639ffd6ae1bee001",
+  "7c0b3a1adca6a3e3"
+ ],
+ "beir_bright_sustainable_living_106": [
+  "0d5dd1c502caeee8",
+  "1b42dc59ecfa08f7",
+  "29818942a15db500",
+  "2fa897ffd1b30d60",
+  "3585c1f6111cf6bb",
+  "3685546ba67cdf71",
+  "3945e0273f50ba14",
+  "47ca89cfc77f3fd9",
+  "494cee5d6f6784eb",
+  "4e1597eb777702ae",
+  "4e9bd34ea8c4be6d",
+  "5a66229d26aa5e53",
+  "5a974c4d86ef5b4b",
+  "664e6f3449043a46",
+  "6a276ce6786581a2",
+  "6b378b06c6393959",
+  "7314fb889b613499",
+  "7cd41ce14dccbd41",
+  "8a7ff77dc1c7d0be",
+  "9a50a0906a569d0d",
+  "9a94707a5ec19ec3",
+  "9c905b7d58a6b834",
+  "a50cc7d56c9824ef",
+  "a944c362d59c67b2",
+  "ac02e0ecf1368f8b",
+  "b9bf2198bbfdf824",
+  "c2c056bb29b2e27b",
+  "cc436c876b972a59",
+  "d3968c96a2769ba4",
+  "d46af8ac850ea9e5",
+  "d49f98e6cc9d4551",
+  "d6d24616547e517b",
+  "e48252b29bb998e2",
+  "e82c4dc85577d1ec",
+  "f0f198ddfb38d6e5",
+  "fdd954e45ce95a3b"
+ ],
+ "beir_bright_sustainable_living_107": [
+  "05fe83907075560e",
+  "41246b3c6f13ce20",
+  "52e68e8bffaa6f23",
+  "592481c18cb400d9",
+  "6734d17b0fd27e37",
+  "83b95a74b44a280f",
+  "a07224112768cf62",
+  "a99945535b73bc24",
+  "bfac0323b2bd28a2",
+  "ef669cfde99887f6",
+  "f1e04a52bc2a8e12"
+ ],
+ "beir_bright_sustainable_living_11": [
+  "8bc495407395cb58"
+ ],
+ "beir_bright_sustainable_living_12": [
+  "21724456cc74a79e",
+  "42846cc2238d393e",
+  "814240d2f0bae30a",
+  "d368391c3f74b0fd"
+ ],
+ "beir_bright_sustainable_living_13": [
+  "0ff9c0c2e1a5898a",
+  "249b11fdfe6d6245",
+  "38698e9956632148",
+  "5103599118bb40cd",
+  "57c2e00b591874d9",
+  "766d6360c4c98d4a",
+  "80647c879dbd3633",
+  "8d611c9010203900",
+  "8ed7c38d0e411860",
+  "9766dd418eeb4194",
+  "ad9d4469935f8bb1",
+  "c784b49a62b040e8",
+  "cb1f15ece03f69f8",
+  "cd0e95b80973321f",
+  "cdcd3921852410cb",
+  "dd9005edf2bd6e6e",
+  "fa8ef3fc9d17be80"
+ ],
+ "beir_bright_sustainable_living_14": [
+  "54444c4e16d3975d"
+ ],
+ "beir_bright_sustainable_living_15": [
+  "0ccca0764fc26241",
+  "0cd34c2bf092bda4",
+  "16d378770b298331",
+  "18135230e89324cd",
+  "1991ce641595c0b3",
+  "1be0452d3fc5a0c5",
+  "1ca92b864f190d10",
+  "1d267237d91ebb8a",
+  "24d07bc9a5031af5",
+  "27e4af6a14fa1bd1",
+  "28e820cffdb48d24",
+  "31c9e9e44de219ef",
+  "3be231f58c00d3d2",
+  "3d7e131520d10f3e",
+  "3e199d28a2f0756a",
+  "440bd1ed6cd168e6",
+  "4ee189952bbbe258",
+  "4febd3fb92625e6a",
+  "57cbee50bb27a204",
+  "59d3914f787c3fc9",
+  "5bf2b53669f45073",
+  "6282f968c6d082d9",
+  "6950170dd30d3149",
+  "6b41718060b144af",
+  "6c973dacdefe60fe",
+  "6cb358e24fd24b1b",
+  "6db68a2ef036b19a",
+  "6e6473f246533e7c",
+  "737ad9e885facdc0",
+  "7aa137d5056ca192",
+  "80a6db58f9bd919c",
+  "853027e0701b6b76",
+  "8fd716342b8506e0",
+  "9085b0c94df9d00f",
+  "963ba3ba205c07c8",
+  "a4d056f9396340c3",
+  "a7f897b90248ac62",
+  "ad39d05f4694bb4b",
+  "b25e381f71798640",
+  "b41c46faabb27f8c",
+  "b4ce033d9d786dcc",
+  "b68567b27b8817c2",
+  "cbcdd10e93508205",
+  "cbf2a19b8911f590",
+  "cc89580411e048e1",
+  "d1e8949e2287d96b",
+  "d9d8597fb9041875",
+  "de133a435dedcfe1",
+  "e405be4fd67eaf95",
+  "e544f48f794e6d98",
+  "ea4a583a5dd32fa9",
+  "ee2e5c8a0ebbffcd",
+  "f1942bc6d7a46f65",
+  "f25fcbc63a0ad06f",
+  "f7d7f91204a98b26"
+ ],
+ "beir_bright_sustainable_living_16": [
+  "952489622575ccee"
+ ],
+ "beir_bright_sustainable_living_17": [
+  "0a31429198b6b510",
+  "1eab303b2888ca39",
+  "2003f4dfa74ce97c",
+  "537e01e17b931125",
+  "54055df15070e5ed",
+  "65726718b8cffdf3",
+  "6cbefb9de91062b7",
+  "6ea3ea1b4dee7612",
+  "710ebc88adc5a30d",
+  "9fa782c4cc394c5f"
+ ],
+ "beir_bright_sustainable_living_18": [
+  "083cc565b82eb7ec",
+  "98f003c2481422d1",
+  "d9fdec1e2c401b6c",
+  "eab208dd5ec49404",
+  "ee2dfb86683dca79"
+ ],
+ "beir_bright_sustainable_living_19": [
+  "72e5907e3ce85252",
+  "d8f7076c3eea22c0"
+ ],
+ "beir_bright_sustainable_living_2": [
+  "5cd7049283d8fad7",
+  "90619a9449756a53"
+ ],
+ "beir_bright_sustainable_living_20": [
+  "5c70a5d108bfd5d9",
+  "6ee015ab9c560174",
+  "be844b9bb33ee770",
+  "fad5a61b169cd631"
+ ],
+ "beir_bright_sustainable_living_21": [
+  "5895f755be11ec4e",
+  "da7ebe9801273fc2"
+ ],
+ "beir_bright_sustainable_living_22": [
+  "1fff59a9a81c2587",
+  "309702e6a5a37d12",
+  "425b16b0e5970a04",
+  "496dd8d1b198037a",
+  "533073956a18ae7a",
+  "5e41f9154a0e8a36",
+  "9d9a9039606c71b2",
+  "a04aeca08c695d5c",
+  "a77820f4835ff6a0",
+  "b617e002b74f9077",
+  "c6d6087bfcb45331",
+  "d128f18255fa3ea1",
+  "d18ea2932caaaa3c",
+  "d8f0ba0b93a9ed45",
+  "fbe8559ef5e8d261"
+ ],
+ "beir_bright_sustainable_living_23": [
+  "8f771b025ce8dec0",
+  "be8b363f8e22fbd8",
+  "c676f463a55328be"
+ ],
+ "beir_bright_sustainable_living_24": [
+  "3773cc697410a988",
+  "44185a3d7a63ce6e",
+  "49bfbc3c488653a6",
+  "590546372944527b",
+  "5cb63a85d4433f07",
+  "93b7e17ebc3920a4",
+  "c94aabd5a9ad1bdd",
+  "f915e70c3093a1e1"
+ ],
+ "beir_bright_sustainable_living_25": [
+  "2fb49c86134ea2f1",
+  "a6473ccf3567f2cd",
+  "bc9b22c9e7f1d1ae",
+  "dc307ac3fc0070be",
+  "de2a88b24c096261"
+ ],
+ "beir_bright_sustainable_living_26": [
+  "13db852518b2bef0",
+  "4a12d5a79275c880",
+  "4a5b801a6a8cd85a",
+  "647d1dce1bd777dc",
+  "7255969a972a3ed8",
+  "9d6a118dcd3c3c43",
+  "d8629ea1ee7760c3",
+  "df98082d1b415874"
+ ],
+ "beir_bright_sustainable_living_27": [
+  "b16a108c9ba72269"
+ ],
+ "beir_bright_sustainable_living_28": [
+  "05222144e84bb72e",
+  "531bc8a76c2da309",
+  "643c712bd2d83397",
+  "82637b47bf12b1f6",
+  "891c1f5b8bc1d8f6",
+  "9d040ca6a8823aa9",
+  "bb4a41f5b6a35ee9",
+  "cfc89ffa0a14258b",
+  "d57819651aaa02d2"
+ ],
+ "beir_bright_sustainable_living_29": [
+  "4095b485dc4e02b4",
+  "5d13a8db830d7913",
+  "888b0bcea5e4628b",
+  "8d8fc3ed9bfcc310",
+  "9f17b7941146e4f4"
+ ],
+ "beir_bright_sustainable_living_3": [
+  "5b3a3add1b56b380",
+  "6d72769981bb9803",
+  "8161ced7b4e1339d",
+  "96fdbc71cbf09b3f",
+  "a3c28e1f55c1ceee"
+ ],
+ "beir_bright_sustainable_living_30": [
+  "1c1fd515654c5e60",
+  "2a910b0c9ed1552b",
+  "31eb0c1203f6482f",
+  "7057e5154525fa19",
+  "f7a960a2b8380c2f"
+ ],
+ "beir_bright_sustainable_living_31": [
+  "ced20eb5267bca84"
+ ],
+ "beir_bright_sustainable_living_32": [
+  "460c8cc4dab852f1",
+  "5316f35849f1960f",
+  "650f2c396ab8b6e3"
+ ],
+ "beir_bright_sustainable_living_33": [
+  "e66ba14140e54652"
+ ],
+ "beir_bright_sustainable_living_34": [
+  "40f335f9229160c7",
+  "b98e924f8fb85465"
+ ],
+ "beir_bright_sustainable_living_35": [
+  "07d5a52ae8143ef2",
+  "25af2017c2a1c84c",
+  "5f586e3cab92dc2f",
+  "6b8e699781982140",
+  "713666bfa62e2f03",
+  "9044ef6bc79dc9b5",
+  "c28be01efff0bf71",
+  "ea6616f05f2c40ac",
+  "eaf3d65dba0fee45"
+ ],
+ "beir_bright_sustainable_living_36": [
+  "085b67410e9b5d0a",
+  "2f52bd2b248471b2",
+  "48bf3c4127ee8ff5",
+  "6298c36facf02047",
+  "aa7a103375170401",
+  "bc0eada5ea215348",
+  "c594ad553bd8cc69",
+  "d2e38341082a5959",
+  "d53661591db57179"
+ ],
+ "beir_bright_sustainable_living_37": [
+  "0cde25cda9afd9f5",
+  "3df87a404a2c7b04",
+  "621ff5c2e65329f4",
+  "67f07acb78abd028",
+  "a2199d14062f2d9d",
+  "c134f27d4e6ea084",
+  "ca627042d3815813"
+ ],
+ "beir_bright_sustainable_living_38": [
+  "588849e1c93dbf1c",
+  "6489888de5ef44e3",
+  "6531c0472501a85b",
+  "71ac4f2fcc4aff9c",
+  "78f6ec8113d94847",
+  "828ca29ca2364a37"
+ ],
+ "beir_bright_sustainable_living_39": [
+  "26764e756e6e0e8d",
+  "391795f65cb8a074",
+  "3fd5ab30ee913821",
+  "686690bad1eadfc6",
+  "914430e93b36c7d2",
+  "a481db5394d1acf3",
+  "aa8b1a2cfd85cabd",
+  "dd38b408f41015b9",
+  "f69853500226f8f0"
+ ],
+ "beir_bright_sustainable_living_4": [
+  "7434622f02414f8b"
+ ],
+ "beir_bright_sustainable_living_40": [
+  "33a110bce0aa9d1a",
+  "7b2865517515e7ed"
+ ],
+ "beir_bright_sustainable_living_41": [
+  "165663fd033cfa2c",
+  "3d79e52ebe70a03f",
+  "ff7385ff52268177"
+ ],
+ "beir_bright_sustainable_living_42": [
+  "0d9896b17ec2d107",
+  "48ec220ede037f0a",
+  "5d080b65beb98ce4",
+  "6bbeedc8ec8ff8eb",
+  "71faedde6ee33b40",
+  "9a19b04fab1d0d05"
+ ],
+ "beir_bright_sustainable_living_43": [
+  "2648a1046038ec20",
+  "e5c3beac1161bdf4"
+ ],
+ "beir_bright_sustainable_living_44": [
+  "280667c67c4d99a2"
+ ],
+ "beir_bright_sustainable_living_45": [
+  "db79accf59f4f3db"
+ ],
+ "beir_bright_sustainable_living_46": [
+  "31245ad627b14371",
+  "7a6e5a4039b81b10"
+ ],
+ "beir_bright_sustainable_living_47": [
+  "cd82b5d376967cb0"
+ ],
+ "beir_bright_sustainable_living_48": [
+  "014a804ee9af07f6",
+  "072837bedf41065b",
+  "0f18d7792c2c76e1",
+  "2c13f971c7a4ab89",
+  "46d6911621de33db",
+  "5208c5a8356764f5",
+  "5d8d5d5539d908c0",
+  "692e113dbf3135cf",
+  "7a5e97c2b1eaf49d",
+  "7efe81bdec1d6834",
+  "8e13921066861072",
+  "982e72fc03154b5f",
+  "a6d7c01b16ab4ad6",
+  "aa035511a0762202",
+  "e24a0cd202db744d",
+  "ea52925a1bfe2bef",
+  "fb6a91331770a968"
+ ],
+ "beir_bright_sustainable_living_49": [
+  "00284123f07d7f00",
+  "100c18a64a48b0b5"
+ ],
+ "beir_bright_sustainable_living_5": [
+  "0d4436202e2f3d64",
+  "161e81b1e886ef7e"
+ ],
+ "beir_bright_sustainable_living_50": [
+  "973ad2b250df0bc7",
+  "c1e52e57034ed359"
+ ],
+ "beir_bright_sustainable_living_51": [
+  "8257fdabd0d383c8"
+ ],
+ "beir_bright_sustainable_living_52": [
+  "33476b56c2afbdd6",
+  "4aa39448a50a399f",
+  "5553f6b9be293a58",
+  "5796504d19ac4aef",
+  "63a15849417294f7",
+  "7b3b3a3d63ad1e74",
+  "891aa9be02cef7f5",
+  "9266166bfa2fa431",
+  "a11ff1edfc9fbe83",
+  "bb03dad728fa683a",
+  "c2396de1b5bc6443",
+  "d2288d7b8d43eaaf",
+  "e5b2af52938342b4",
+  "e70b08da0c1e73df",
+  "e9f21e73d96d26ef",
+  "f1d76b1512f44dfa",
+  "fbdd1aa1f4991e25"
+ ],
+ "beir_bright_sustainable_living_53": [
+  "2a7ab8d0dd4c5575",
+  "3db65f8c2a7d1861",
+  "412a47967cccac39",
+  "49c266baaaa70981",
+  "74c2fb2231342579",
+  "97b0c61b99f65f9e",
+  "a88b00626ea2fa85",
+  "b538ec9ba0c215c6",
+  "c18d4f542bf2c667",
+  "d5dd8aad832ec8c0"
+ ],
+ "beir_bright_sustainable_living_54": [
+  "b4ee109ce7d6c9c0"
+ ],
+ "beir_bright_sustainable_living_55": [
+  "5028920efc861cf0",
+  "8e12bb25e1c963df",
+  "92dbb04d31ca4c07",
+  "d681cb3bc51ad5d8",
+  "e60871c12b30e792",
+  "ea8d9de60c404a5a"
+ ],
+ "beir_bright_sustainable_living_56": [
+  "cf560d34f67572a3"
+ ],
+ "beir_bright_sustainable_living_57": [
+  "00e440bfd2a782a5",
+  "5d3d232b493a8740",
+  "6561784d61d7ca63",
+  "7575a952139677c0",
+  "accc1927b8d8fc4f"
+ ],
+ "beir_bright_sustainable_living_58": [
+  "326c66c5a2101bce",
+  "46b94e464e2720d7",
+  "8dcbbcf4635a0691",
+  "b4894b96750415ac",
+  "c4148e9f9b61c79c"
+ ],
+ "beir_bright_sustainable_living_59": [
+  "a8b66664aa9167d7",
+  "f559ea7bc9131d1c"
+ ],
+ "beir_bright_sustainable_living_6": [
+  "01adcdcb3c53c302",
+  "020ed4b60399ddb4",
+  "07fc7759d7cf8c48",
+  "0d8785e6490575b8",
+  "10364e58b16e2f56",
+  "168041a11916a225",
+  "4c4f2fa84b43f7a2",
+  "53c45e9fc77cbdfc",
+  "5b845a450f46c4ae",
+  "5db372dbffb1e6ba",
+  "6133d9f3019d3c3a",
+  "796fa45250629bc7",
+  "8c379500da875046",
+  "99c8eee5abbac0f7",
+  "abf4fd01491b36b5",
+  "acfd11fdc4683922"
+ ],
+ "beir_bright_sustainable_living_60": [
+  "542236c16c0c2cda",
+  "e319714e47709b11",
+  "ff1b058c2826a476"
+ ],
+ "beir_bright_sustainable_living_61": [
+  "289e6426c238bef3"
+ ],
+ "beir_bright_sustainable_living_62": [
+  "11c74ba0234cc07b",
+  "2586ce15f6abda03",
+  "c39e2c1bf332fc0e"
+ ],
+ "beir_bright_sustainable_living_63": [
+  "a6c76f14d9b43833"
+ ],
+ "beir_bright_sustainable_living_64": [
+  "d2b03336cda39244"
+ ],
+ "beir_bright_sustainable_living_65": [
+  "39ccfd118b0ffe89",
+  "6105fd02cdc8459d",
+  "a1198d9739e10a74",
+  "cc22f8eeba457b43"
+ ],
+ "beir_bright_sustainable_living_66": [
+  "0abde52ce1974bd6",
+  "19f3e5975ce2b392",
+  "45e3ae999ccb606a",
+  "8ebe822f2611af73",
+  "bba906b3db275e88"
+ ],
+ "beir_bright_sustainable_living_67": [
+  "1c481e09f1f527a4",
+  "73e1dc963d9eb81b",
+  "c1491e3017793b82"
+ ],
+ "beir_bright_sustainable_living_68": [
+  "1f5f34e6776973a5",
+  "301e66352bab2ee6",
+  "416ca9c4adfb22c1",
+  "436c26e5c7b0ebbe",
+  "4f3d068f5f00e655",
+  "70165054b00184ab",
+  "76486f67d12bc138",
+  "ce3e2c2ad12613b5",
+  "e4063a96b0bd6e87",
+  "ea5ead11794cf673"
+ ],
+ "beir_bright_sustainable_living_69": [
+  "17d5e308a14164ad",
+  "353b2b511e14296b",
+  "4a2c3651f0fa56c9",
+  "8f8748cac417ddd9",
+  "a5f3aad25d4842c5",
+  "efccb4fdad0b021b"
+ ],
+ "beir_bright_sustainable_living_7": [
+  "016f234dbf78421c",
+  "051f83991331566e",
+  "06164380e9c2dba7",
+  "2b19e77cb78ca458",
+  "3dc70b88c1081d9c",
+  "4615f13c954f9400",
+  "49611ef26e893716",
+  "5f551f5c85973bf2",
+  "78aeb5560a32e9fb"
+ ],
+ "beir_bright_sustainable_living_70": [
+  "0975c33057319b4a",
+  "0b2c668d8e3aab94",
+  "6f19574cce050182",
+  "ccc3a2d948c5fc22",
+  "f40ef4e59f0d1a78",
+  "fe856ee567d77254"
+ ],
+ "beir_bright_sustainable_living_71": [
+  "79eb1a714fef13be"
+ ],
+ "beir_bright_sustainable_living_72": [
+  "084ae50a37fe3674",
+  "69adfbe59bcb9f27",
+  "8019207ddc1da1be",
+  "bc6b7baa6f02c793",
+  "e24718dd02ca6d4a",
+  "ea0513a7d2d3ac38",
+  "ef18df8d12a2858d",
+  "fce759d6ebe2dfa9"
+ ],
+ "beir_bright_sustainable_living_73": [
+  "76dd5deccf033183",
+  "ebfe6f5e9e28d280"
+ ],
+ "beir_bright_sustainable_living_74": [
+  "f4c1e706dee5c110",
+  "f61dc979acd7ac51"
+ ],
+ "beir_bright_sustainable_living_75": [
+  "ba32b4fd8cb350f2"
+ ],
+ "beir_bright_sustainable_living_76": [
+  "13526639fe8e050c",
+  "35cd9e519797e69f",
+  "4d40db88492cde9b",
+  "5425e61490f1a4b5",
+  "5ae2a934385c744b",
+  "a2a109eafef4a30b",
+  "c269e6c7f19a47c8",
+  "ef4bd5f4df01a6ab"
+ ],
+ "beir_bright_sustainable_living_77": [
+  "18195d2da93776f1",
+  "1b65f2ca97091c0c",
+  "272d31470d5fe7b4",
+  "423621b67c6407c9",
+  "8c3aa16e4f81dd20",
+  "8e0a9bc8cd717cfb",
+  "908547999e9f7f5d",
+  "977bdfc86b54b376",
+  "b5b821b59bee1279",
+  "e061adac1f6bbd03"
+ ],
+ "beir_bright_sustainable_living_78": [
+  "14d9247fdc793c20",
+  "87638595f7bec512",
+  "b4d97ffd3920f250",
+  "d928f0328eca9346",
+  "d9c05fbb0c7b6abf"
+ ],
+ "beir_bright_sustainable_living_79": [
+  "d887340b70255b78"
+ ],
+ "beir_bright_sustainable_living_8": [
+  "6ce32381b0cd06e3",
+  "c4b49c1d19222bb4",
+  "c66485d8cf4e0307"
+ ],
+ "beir_bright_sustainable_living_80": [
+  "ead48d83611dba69"
+ ],
+ "beir_bright_sustainable_living_81": [
+  "3ccc0bcf8d30a648",
+  "47b6a801ac241e6a"
+ ],
+ "beir_bright_sustainable_living_82": [
+  "2a2c02aff9e84467",
+  "4a40a75246e01e04",
+  "8064b858b9a2b366"
+ ],
+ "beir_bright_sustainable_living_83": [
+  "0b6d08a880c51914",
+  "35f51352559dfccb",
+  "4a38590a6cb88575",
+  "529d67a46b24fc0e",
+  "bf404923bbb2c462",
+  "dce5dac7dec20685",
+  "dd74d13ac89a4034"
+ ],
+ "beir_bright_sustainable_living_84": [
+  "296d7816fb455dfd",
+  "3814a105c5ae55fb",
+  "56ab4f4d6d1b33a0",
+  "7c2597a85de0ee3a",
+  "81a687ce871ec589",
+  "89527636c48741ad"
+ ],
+ "beir_bright_sustainable_living_85": [
+  "3e3ac05b8a37b580"
+ ],
+ "beir_bright_sustainable_living_86": [
+  "d5e97026b03bf667"
+ ],
+ "beir_bright_sustainable_living_87": [
+  "e194fff229d3ed56"
+ ],
+ "beir_bright_sustainable_living_88": [
+  "2f0d1a88ae0022c1"
+ ],
+ "beir_bright_sustainable_living_89": [
+  "53fc3deb4c2d0258"
+ ],
+ "beir_bright_sustainable_living_9": [
+  "02be746f7b013b34",
+  "2f167c02242d7cc7",
+  "3dbfb00ced9c0327",
+  "4109f07e0298124e",
+  "7fdd6ee473f63e50"
+ ],
+ "beir_bright_sustainable_living_90": [
+  "51528ef17ca0cc7b"
+ ],
+ "beir_bright_sustainable_living_91": [
+  "1d02349600b91cb9"
+ ],
+ "beir_bright_sustainable_living_92": [
+  "0bcb60c7340f0163",
+  "0f69f2c78587eb60",
+  "1cf95f67eb79a63e",
+  "243c9510aeb60830",
+  "2635d70d1f025b6f",
+  "263b0244929897f8",
+  "29283e05552b75b1",
+  "3c59e0cd11ca88f0",
+  "5cd983c7d5823d4e",
+  "86f91d670cc2a8fa",
+  "c4cf6a6600154c9a",
+  "ca6c8941e0fe67a6",
+  "ca8654aab45e688d",
+  "f6741d807b45c389"
+ ],
+ "beir_bright_sustainable_living_93": [
+  "03d7c9f3789c70d8",
+  "264fd260e7fb86e9"
+ ],
+ "beir_bright_sustainable_living_94": [
+  "be402510ead37a7f",
+  "e82ed23db84237ac",
+  "f32c57daedd8f107"
+ ],
+ "beir_bright_sustainable_living_95": [
+  "703fd9526f819029"
+ ],
+ "beir_bright_sustainable_living_96": [
+  "4392895a58ee4fd5",
+  "c63adc39853e5ae1"
+ ],
+ "beir_bright_sustainable_living_97": [
+  "45b2199e38728d9b"
+ ],
+ "beir_bright_sustainable_living_98": [
+  "48d0ae7f9d35bd4d",
+  "54c75d24a26fd185",
+  "b249cc2f68e241d1"
+ ],
+ "beir_bright_sustainable_living_99": [
+  "0be93c234b20695c",
+  "0f3f6bcfe6710155",
+  "1abe067853fa93a9",
+  "34d0bc24d9b5479e",
+  "46b2fa5c8207d506",
+  "494eef29cd784658",
+  "59d13fef9590eaeb",
+  "5cae9bc3446ac6f8",
+  "5fe3a7669aa94507",
+  "872b05b8df289600",
+  "8ccfeed8818488bf",
+  "92b0ca5fbdc86252",
+  "93ab1767195524ea",
+  "99e1540b829a40ed",
+  "cc0ac3a1f340d636",
+  "cc90234fc1904e06",
+  "dab8b4ecf20dfaf8",
+  "e2b2c7b165210150"
+ ]
+}

@@ -1,0 +1,726 @@
+{
+ "beir_bright_biology_0": [
+  "051d559f25ab5dda",
+  "0a4984a67d1f0575",
+  "22de93d7edac9e72",
+  "f361bccf0318086d",
+  "f5be621b3c20aec0",
+  "f98d94796132a9f9"
+ ],
+ "beir_bright_biology_1": [
+  "83e9de58e47b23f0",
+  "92845639bb5007b0",
+  "c166035c403b19c2",
+  "c16cfb4d3ec17320",
+  "c2620f1b088f5eb2",
+  "de2f45bb0753489b"
+ ],
+ "beir_bright_biology_10": [
+  "09305ce89f5e65ec",
+  "131d9c45bde0b37a",
+  "1cc6a67184de8ddf",
+  "2d1a7704d7f34877",
+  "34cfc831eefd53dd",
+  "42c145d0dd17ea8a",
+  "95b0b287bdbe7449",
+  "aace8d05bc6a6886",
+  "ef6b0a51b307b90c"
+ ],
+ "beir_bright_biology_100": [
+  "c1cca810642b53af",
+  "ea2bdfc291a13b84"
+ ],
+ "beir_bright_biology_101": [
+  "66d4c80591e6dba1",
+  "a46f120c5d7e0aac"
+ ],
+ "beir_bright_biology_102": [
+  "b3258bc60fb01a8c"
+ ],
+ "beir_bright_biology_11": [
+  "07f97f0c170b9f1d",
+  "2a2f2b57776aa2ae",
+  "7009397d3e270c60",
+  "7f8d5f6e4a66dfb3",
+  "baf417f1667bdfd7",
+  "d21b7b0e77b8830d"
+ ],
+ "beir_bright_biology_12": [
+  "112d7266c43647da",
+  "7ff33281e57972eb",
+  "881b3db1fad4a4b5",
+  "f4a898e612148a14"
+ ],
+ "beir_bright_biology_13": [
+  "16be8f52f59d1641",
+  "245b86cf6186c6e9",
+  "4775526bde7dc2d0",
+  "4a55b07b436f0dfd",
+  "52708c260f08f79e",
+  "5eb60973b7016e0e",
+  "641ee175a3c581d4",
+  "6c0855e7bf30a65c",
+  "826832869c3fa3e0",
+  "965d318c4d2ae805",
+  "9cff375ea4de5dd6",
+  "c889fc080f23334a",
+  "d57b9265cc546a1e",
+  "d6eec627ae5426ae",
+  "db3505d82482fcdd",
+  "de80ae533d1b0e55",
+  "f83aed6c558a2790",
+  "fcefacbc2e516e95"
+ ],
+ "beir_bright_biology_14": [
+  "3deee337d3bb9ad5",
+  "4c81f5d6b49ad138",
+  "66b657cc8734b1d2",
+  "68d5eeeb46746ae8",
+  "81e3847be77a825c",
+  "ac57315c067eef1d",
+  "b6d75c2be955186e",
+  "d18060cd72e0bfbe",
+  "d408424b8f2cd521",
+  "ee48b62ba334f730"
+ ],
+ "beir_bright_biology_15": [
+  "03df19b0f94857dd",
+  "2e8247565f31ab08",
+  "54dba9c463025aab",
+  "5d27a368cd9d4cb0",
+  "dfed86ce44c42e86"
+ ],
+ "beir_bright_biology_16": [
+  "27d1dbcfff113877"
+ ],
+ "beir_bright_biology_17": [
+  "0c20503de597614b",
+  "2f01207d60d82d9f",
+  "472f373da630e3de",
+  "81fb91ee1ba20936",
+  "9a7dd10bddbd4d98",
+  "a2af000af9457c9f",
+  "aa3c295760c7459f",
+  "d6fba6f3ef2e59a4"
+ ],
+ "beir_bright_biology_18": [
+  "4a216dcaa5e2fca5",
+  "5f0c1ce9c2f837a6",
+  "e62fff08333300e6"
+ ],
+ "beir_bright_biology_19": [
+  "d0d48d955bf964c4"
+ ],
+ "beir_bright_biology_2": [
+  "0fa4337bf50826db",
+  "1405eca45d8c0634",
+  "1726f05bfc978a3b",
+  "180690a5174c7b5b",
+  "2dddc19758165954",
+  "352d16a3cc9592b0",
+  "4a00c7b71657c71d",
+  "d16514406a9b79d0",
+  "d29fa811f236d87b",
+  "e3596edcaed2d067",
+  "fe4e38ce1df07f5d"
+ ],
+ "beir_bright_biology_20": [
+  "2fde4e1b285cf46a",
+  "3c0d7e664dac64ae",
+  "6273e5907f3c285d",
+  "99e19ff7e893ea1f",
+  "cb47e29208fe1e6b",
+  "d9a67f3bda639832"
+ ],
+ "beir_bright_biology_21": [
+  "14d85b6b97ca0154",
+  "5a8f0d05a3f47880",
+  "78ae463cbaca689b",
+  "8899c2ba3d791e28",
+  "977a1380db8c53bd",
+  "bb168d760d66c6a8",
+  "c1e3939fc9a711d3",
+  "d8f3d212e4759db2",
+  "e3b3246ba0b7af7c",
+  "ec62ee819fb26b59",
+  "eca1e8399442a00b",
+  "ff939ca316e5c8dd"
+ ],
+ "beir_bright_biology_22": [
+  "c8186bee4979004b",
+  "d3d90c6df0e868e3"
+ ],
+ "beir_bright_biology_23": [
+  "463909fe7adace11",
+  "5639137edf5a4615",
+  "7713869c08d3c44c",
+  "abfae7b1aa9f2e30",
+  "f945ec3392b3e3d4",
+  "fa44c30013e543f7"
+ ],
+ "beir_bright_biology_24": [
+  "47aa88e5a04dfdee",
+  "6a66a3287a7045f9",
+  "93431f9353f60e6d",
+  "c2353c389685579a",
+  "c8e6417b891cd42f"
+ ],
+ "beir_bright_biology_25": [
+  "0079b7d91575e18c",
+  "0171cc37a826e864",
+  "0aca75a8d57b5cd6",
+  "37606787fd1e4c66",
+  "42fdc4100ef7fcfd",
+  "a11e93be31c2b311",
+  "ad56edbdc1ae9210",
+  "b0160d9c27f11680",
+  "b4cf69c5a0f403f6",
+  "bdbae39f93e0d057",
+  "f15a1cab32300ae6"
+ ],
+ "beir_bright_biology_26": [
+  "06214a4389409e66"
+ ],
+ "beir_bright_biology_27": [
+  "1c1666c3528f22b5",
+  "5ddcac47f10bbfe9",
+  "ab4fbc48f9fff580",
+  "b1135ff1b764e669",
+  "bb6c1f367c765cfb",
+  "be13b88b0026250a",
+  "dec9bdb014b0e6a9",
+  "f9d833baa55c58a1"
+ ],
+ "beir_bright_biology_28": [
+  "06fb7aa1a0070b81",
+  "a746012d9366d62b"
+ ],
+ "beir_bright_biology_29": [
+  "51e75ccf22f54ca2",
+  "fb0a00b0ee58cdba"
+ ],
+ "beir_bright_biology_3": [
+  "375d94a12c2cf2f0",
+  "5bc414d563c7502c",
+  "6fdddfa39bde5c17",
+  "cb26000ed567b50a"
+ ],
+ "beir_bright_biology_30": [
+  "28e5f63aabdf6074",
+  "3ac1d716411b34c4",
+  "3f7ee1685e91472f",
+  "49f655c85655017a",
+  "4f0356fcd9d4967a",
+  "56144815339a0b48",
+  "a014293bed4882e9",
+  "cdf6132a9c0431b5"
+ ],
+ "beir_bright_biology_31": [
+  "72ae94dcf2a0da10",
+  "759a581ca6c54da3",
+  "c59db4fba7a444bd"
+ ],
+ "beir_bright_biology_32": [
+  "6c57d8408c67589d",
+  "f7f69e3d3ab48afb"
+ ],
+ "beir_bright_biology_33": [
+  "1d30d3b9d3ff3e63",
+  "1e8ac9c75dbe1c7c",
+  "7183b2accda6d9ba",
+  "daa853074beebc77",
+  "dc5559d954a19448",
+  "f17574a76adc49d8"
+ ],
+ "beir_bright_biology_34": [
+  "1ef3831dd87af06c",
+  "621236e3f6d4af73",
+  "6606189782482164",
+  "780c7e88e6935933",
+  "81672a6f601b15f9",
+  "9e6bb5296233bc9a",
+  "a2cbd8fcdaf2615d",
+  "a836b42a22b14098",
+  "e3eb2420972c8978",
+  "f6bc76b77aea6aec"
+ ],
+ "beir_bright_biology_35": [
+  "1d83881e5d3fdabe",
+  "320da93aeb9cfd86",
+  "609fd9ab400c8e27",
+  "6983e62aec1e36b9",
+  "916c4ca7d1fa1497",
+  "9578a0feb498754e",
+  "d810da3349855d97",
+  "edbac90f1f59f7b7"
+ ],
+ "beir_bright_biology_36": [
+  "141aa9b0151a2447",
+  "25447b2360f644bf",
+  "27c8d82e15a9eb12",
+  "3c238715767eaeff",
+  "867ee38f9a33070e",
+  "990f1c246e8aeb9c",
+  "bc1129dc89b83f1e",
+  "d9d88f4c81a97dad"
+ ],
+ "beir_bright_biology_37": [
+  "db0dd4cbe07af385",
+  "ead44a6526d1ac46"
+ ],
+ "beir_bright_biology_38": [
+  "08916e3808c28dd6",
+  "84ffdd55eb5240f5",
+  "d00aa2e27e094cc1",
+  "dc9a4a3d5fdb46c0",
+  "f5e8a548038f8770"
+ ],
+ "beir_bright_biology_39": [
+  "cf8c34f95cdf5f8e",
+  "d3d000b75116ad70"
+ ],
+ "beir_bright_biology_4": [
+  "0b43d5ffaf30ca5c",
+  "10e8d6343e9379d9",
+  "14e01e8606e10352",
+  "253ad6e4b488b47a",
+  "27b67c9ebc669afe",
+  "47178ba71bea07fd",
+  "5e43c25478944c14",
+  "6c1048865a262c65",
+  "79317667876dd1d3",
+  "7ddb40513936a1b3",
+  "8bdc29895ed75acb",
+  "92fdbd1dacd10892",
+  "a2a352c233952c7d",
+  "c9dddb872f21dd0a"
+ ],
+ "beir_bright_biology_40": [
+  "0947fb938925cd56",
+  "495d8b3c508bd6ac",
+  "7ac6988891fecd19"
+ ],
+ "beir_bright_biology_41": [
+  "50f4404d808fec31",
+  "9e3b629b7befc4d9",
+  "a74b89a2d457fb73"
+ ],
+ "beir_bright_biology_42": [
+  "26861cba169e5d01",
+  "63089e092c32f5be",
+  "aa1a1b7968f8d53f",
+  "b1f8b3a0d45e57a6",
+  "d568abed9dded95b",
+  "ebee120416c6a65b"
+ ],
+ "beir_bright_biology_43": [
+  "052489d1f7fb28c5",
+  "1899366fb2de1908",
+  "457f6843a0250505",
+  "a156f738931c42c2"
+ ],
+ "beir_bright_biology_44": [
+  "38138d4d2525f955",
+  "eda1cce23ae4dcad"
+ ],
+ "beir_bright_biology_45": [
+  "81dc3f2ea2152e1a",
+  "b69ee0ec39cf0e94"
+ ],
+ "beir_bright_biology_46": [
+  "ed1d7ec613879532"
+ ],
+ "beir_bright_biology_47": [
+  "12bc2c926a85c2a6",
+  "6236d7054dd3fe4d",
+  "b8369b629df4be89",
+  "c795923bd8c96bfb",
+  "ec1ff22df2bf9b38"
+ ],
+ "beir_bright_biology_48": [
+  "3deee337d3bb9ad5",
+  "ac57315c067eef1d",
+  "d18060cd72e0bfbe",
+  "ee48b62ba334f730"
+ ],
+ "beir_bright_biology_49": [
+  "31fe88645ad8940a",
+  "694e7012da064a3e"
+ ],
+ "beir_bright_biology_5": [
+  "17825cd2b41ba196",
+  "3f40dfd69a9f1d0e",
+  "834aa03c669ae1b1",
+  "8b48c4623a1768b5",
+  "a3053002fcae8a07"
+ ],
+ "beir_bright_biology_50": [
+  "04a670ef671c4212",
+  "513dedf0069e47ca",
+  "78af008ce177fdd3",
+  "ef180454b18ebf54"
+ ],
+ "beir_bright_biology_51": [
+  "6d8a414048bca287",
+  "b5d8400464f06a9f",
+  "da5b1a1a95b87b15",
+  "fdaf0259a3a7ff8c"
+ ],
+ "beir_bright_biology_52": [
+  "6229d755099ebed1",
+  "7ca4e3547bc3a3e4",
+  "8161bd781ac07926"
+ ],
+ "beir_bright_biology_53": [
+  "0da848e8ee7f068d",
+  "14639c2a199aaf67",
+  "3f0f6b164328b82c",
+  "9ca893e021b428db"
+ ],
+ "beir_bright_biology_54": [
+  "b0b10b47c8781197",
+  "b8d396d109f505ac",
+  "d94e66d8421a5901"
+ ],
+ "beir_bright_biology_55": [
+  "153996c3f34ae0c7",
+  "6f4ed0070bc18b75",
+  "6fe135f93840e3d0",
+  "786c2f1e8e5d95b6",
+  "b2aaf7f9e332089b"
+ ],
+ "beir_bright_biology_56": [
+  "5096d431cb68e966",
+  "86e61f5271474629",
+  "ab596e00bd68487b"
+ ],
+ "beir_bright_biology_57": [
+  "67da52685d01a033",
+  "82a5c7cc74ffb23a",
+  "9aaf1b8b97c91e92",
+  "bfd7656d1b89a89a"
+ ],
+ "beir_bright_biology_58": [
+  "37fda36d3d8cbc16",
+  "ae08f9641deefe22",
+  "d94ba1d7243dc6b0",
+  "fb8b0f30b483df1d"
+ ],
+ "beir_bright_biology_59": [
+  "21940db0bbf7b9c7",
+  "49ce9f53e0c0c498",
+  "6d273fddbb55217b",
+  "86377c2c6e80a345",
+  "864a8329c240b744",
+  "92ded39a661d46e5",
+  "f474e86a5b6c5215"
+ ],
+ "beir_bright_biology_6": [
+  "199765a62ab563c6",
+  "28081b293571bece",
+  "2adef54e750b8a75",
+  "360a0e2a749905d7",
+  "40a5674fd8307c68",
+  "460c583711a6da92",
+  "64d87699d8b4dc98",
+  "6dde9215fbb3ff8a",
+  "70122019bc95092b",
+  "7c310ed22ee45ba6",
+  "821e876720083883",
+  "8a408355c531c31d",
+  "8bbf919d9a0d320f",
+  "8c7df4260ee15075",
+  "94f4f089d487ef5c",
+  "9b3cca0489fcf2a7",
+  "9dfe45d226cae8d0",
+  "b1a6c4fb1ec7ceaf",
+  "bb03b81fb402b01d",
+  "c094b6e06bb264ae",
+  "c335f1127ef6876a",
+  "efd7e31a566cafc4",
+  "f89d39c7b75ce5dd"
+ ],
+ "beir_bright_biology_60": [
+  "5b770c04fb7531ec",
+  "5de043bb70dd0076",
+  "5f65923267e2c99f",
+  "6c71b383784d3801",
+  "d9c9d81257176884"
+ ],
+ "beir_bright_biology_61": [
+  "3ec4289dd126d300",
+  "4ffb00f25c248057",
+  "6cadfb9b239205f7",
+  "7ae8174364fc7a2c",
+  "b467ef8a80dd9867",
+  "b6e5335e0e9b42d9"
+ ],
+ "beir_bright_biology_62": [
+  "31fe88645ad8940a",
+  "694e7012da064a3e",
+  "6e0325a18a8a8a76"
+ ],
+ "beir_bright_biology_63": [
+  "2ac5cf1ec757e759",
+  "422cb221c147c09d",
+  "51932c5d72414abe",
+  "771807e0304f02d2",
+  "90a550a4d7379f65",
+  "a095fa65274b4a14",
+  "b792b2197c8bdc7c"
+ ],
+ "beir_bright_biology_64": [
+  "3e2701d7ee15e988",
+  "e7d28cc351952e26"
+ ],
+ "beir_bright_biology_65": [
+  "67da52685d01a033",
+  "6eb2897fc6c5632c",
+  "82a5c7cc74ffb23a",
+  "9aaf1b8b97c91e92",
+  "bfd7656d1b89a89a",
+  "cb46d916947d7ba9"
+ ],
+ "beir_bright_biology_66": [
+  "13f2fa8c4c2ee32f",
+  "32426db3b58e3f5d",
+  "4cdcba7140ffb7b9",
+  "76d7e288e764c8a6",
+  "7761ee258c642996",
+  "81b4f480068ab079",
+  "90e54a3f1595eb79",
+  "ae4630aeb4f8a274"
+ ],
+ "beir_bright_biology_67": [
+  "02464cc616e820c0",
+  "4e5001b8fbea3251",
+  "608e3796b7ecbdfc",
+  "9f3b36e2119276c3",
+  "c88adaa943dcd744"
+ ],
+ "beir_bright_biology_68": [
+  "366d80d5e08fd6ce",
+  "447c35e7578c0173",
+  "56c8581d3fa7cb9d",
+  "5f357a1934b00c84",
+  "681b0d9b251622bb",
+  "75ef9bf30c598f38",
+  "86187b292081d812",
+  "9090ba6927080dd4",
+  "c19fd9eb7da13970",
+  "de51ef9e0b146956",
+  "e904b084d70c82a3"
+ ],
+ "beir_bright_biology_69": [
+  "07566d7fd24cbb5e",
+  "12e83f237af9df51",
+  "24bb6deed65f60fd",
+  "457b443f28778830",
+  "6643da6afeee4b6f",
+  "c55d7700660fffbf"
+ ],
+ "beir_bright_biology_7": [
+  "0ea273e1ba6bd276",
+  "2cc4a26ff8f08359",
+  "ae96d2bcd7662ee1"
+ ],
+ "beir_bright_biology_70": [
+  "3a887d2fa334290e",
+  "750091cee94446e5",
+  "826d71021333028c",
+  "92dddc4cf6bc4adf"
+ ],
+ "beir_bright_biology_71": [
+  "2eb33fa608a64d45",
+  "33c0363caed5d343",
+  "50c1fca031351b85",
+  "67834b292e016fe0",
+  "8a39c25c8a9f6f08",
+  "98523f2425cf4087",
+  "9917fc842df1dee2"
+ ],
+ "beir_bright_biology_72": [
+  "0223fad7d7c951bb",
+  "07bf54f9b02035de",
+  "26b2f05966c2ab96",
+  "2b35dd135506121c",
+  "5799977879d80beb",
+  "80cd69f733b14013",
+  "8c1b9f099096fc98",
+  "a4ca279d278f6884",
+  "c9b74cfb389c134a",
+  "ec15a28d37e278f3",
+  "ff3b0b0b9b0b52db"
+ ],
+ "beir_bright_biology_73": [
+  "691c2f94cb1d3401",
+  "893290e63689a40b",
+  "8980cef790381fa4",
+  "9da2ad9cb978f06a",
+  "a2272a923d35a6b7",
+  "cf68d6636bb83d83"
+ ],
+ "beir_bright_biology_74": [
+  "2d058b434f2fd44f",
+  "6dc266416fda6595",
+  "7a70bd774828e82e",
+  "b3212c514fb36462"
+ ],
+ "beir_bright_biology_75": [
+  "39eae5765c8b7faa",
+  "4fe014a23d304af4",
+  "e7b5e7e391adeaa6"
+ ],
+ "beir_bright_biology_76": [
+  "0b0b8cea40b3eb86",
+  "1072ec3fdf0bb8c4",
+  "764305a799d70a16",
+  "b1f1920353d19690",
+  "fdc5126f4f772ddd"
+ ],
+ "beir_bright_biology_77": [
+  "6a5e4ca9446fb02e",
+  "cd439ebd8da3123c"
+ ],
+ "beir_bright_biology_78": [
+  "8db6c28c3f700bec",
+  "94103e4b23c6408e",
+  "b003e2cf9f209072"
+ ],
+ "beir_bright_biology_79": [
+  "0241dfe8bc87a4f7",
+  "2ae45155986bff36",
+  "4301d97658202de2",
+  "5b94ad1914157071",
+  "ae502d715f7b9684",
+  "e41b2aeed38eb6df"
+ ],
+ "beir_bright_biology_8": [
+  "5605cbb8cbecb21c",
+  "725c8dfec9657ccb",
+  "780bfd1f7e019e83",
+  "a0d53beb284db4da",
+  "a1793fbeb51de8c4"
+ ],
+ "beir_bright_biology_80": [
+  "0e8a8f1568e833a6",
+  "3cd7cfc179c0c0e5",
+  "4dd20674110a272c",
+  "7d07671421ccb4b5"
+ ],
+ "beir_bright_biology_81": [
+  "7bf9e66160e7c9df",
+  "87f8654fa674ef34",
+  "fd2f90ed5cb0d34a"
+ ],
+ "beir_bright_biology_82": [
+  "54593e73fb9ac3d6",
+  "98291690ce17958f"
+ ],
+ "beir_bright_biology_83": [
+  "17529cc45e0dc19f",
+  "2862e5816c2e8248"
+ ],
+ "beir_bright_biology_84": [
+  "3a72b2ac7882c7b6",
+  "40fafdf19673eb35",
+  "69ddf4fbb535584d",
+  "7f41088af53257c7"
+ ],
+ "beir_bright_biology_85": [
+  "2a3159233cd826b9",
+  "f0ea766560be24af"
+ ],
+ "beir_bright_biology_86": [
+  "0ba95d5c81305c6f",
+  "2f717a17813b77d9",
+  "34d57ac59552f759",
+  "3aa583c520260b3c",
+  "56e8f8efea353867",
+  "69729265dc59ff5d",
+  "7051225cef1297d7",
+  "7e0d3a1adcd0066c",
+  "7e4e043acda74527",
+  "89ebcb642f4c1948",
+  "94664b74b09ffb99",
+  "a7848e854ae8be52",
+  "d96a144565b1c5a2"
+ ],
+ "beir_bright_biology_87": [
+  "a85bb1f12670e443",
+  "ecc3566fd5477ff7"
+ ],
+ "beir_bright_biology_88": [
+  "36a351449335953e",
+  "4e234938752aac9f",
+  "bbd2c48f6c642a71",
+  "ca5ccaeaf747dfa7",
+  "d2254601a5254375",
+  "e2b4209855666886"
+ ],
+ "beir_bright_biology_89": [
+  "4d6bebdc5daa7a73",
+  "50bcebe36bd7eb49",
+  "cfe73183b84ca2b8"
+ ],
+ "beir_bright_biology_9": [
+  "2e97d819fa5e5e40",
+  "319b2582789e032c",
+  "820636cdf464ad0d",
+  "d91390d7537e2047",
+  "edac2becd201e445",
+  "edad06602145d8c9",
+  "f8bd98f2d7100ef8"
+ ],
+ "beir_bright_biology_90": [
+  "ec535554b9e1b782",
+  "eed259b572c10f25"
+ ],
+ "beir_bright_biology_91": [
+  "008f2484defbc643",
+  "184a2576e98c3c32",
+  "3110a276cd7205bd",
+  "41fce90a560732fe",
+  "dbd7ef5f2ee5647c",
+  "dfd5a9224e5d391e"
+ ],
+ "beir_bright_biology_92": [
+  "7ae728dffba6fde9",
+  "b3836419e8c9a81e"
+ ],
+ "beir_bright_biology_93": [
+  "9743ea7306de69a4"
+ ],
+ "beir_bright_biology_94": [
+  "401bd5cf4cb276cc",
+  "6226254d44453b6f",
+  "a6e093554ef44683",
+  "e09ba824cf1ea66f"
+ ],
+ "beir_bright_biology_95": [
+  "70e49a9ddde6a283",
+  "f940ca5ce237d90d"
+ ],
+ "beir_bright_biology_96": [
+  "5b41b04cbd04295f",
+  "605b56b72251f010",
+  "726be9aacd6771cd",
+  "88736a69ab9d33d3",
+  "d005cb6eea556936",
+  "f396b4f21d4e736e"
+ ],
+ "beir_bright_biology_97": [
+  "6d75bd48f18cd172",
+  "6e7d93f611b0a812"
+ ],
+ "beir_bright_biology_98": [
+  "0e9ec1c881d173ac",
+  "8eb023edf79da3ff",
+  "973db4e2bf733357"
+ ],
+ "beir_bright_biology_99": [
+  "37b7e5c5201a28c3",
+  "45c9727a92458b22",
+  "aa3e6abcbd9ac5e4"
+ ]
+}

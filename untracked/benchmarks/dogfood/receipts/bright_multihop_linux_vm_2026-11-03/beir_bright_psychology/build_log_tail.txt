@@ -1,0 +1,12 @@
+17:16:06 INFO    [52016 files, 53056 genes] 304.6 genes/s
+17:16:07 INFO    [52453 files, 53504 genes] 305.2 genes/s
+17:16:08 INFO    ============================================================
+17:16:08 INFO    DONE beir_bright_psychology (parallel) in 176.3s
+17:16:08 INFO      files=52834 genes=53891 skipped=1 errors=0
+17:16:08 INFO      total_genes=44775 harmonic_links=0 bytes=257527808
+17:16:08 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_bright_psychology_bed/beir_bright_psychology.db
+17:16:08 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_psychology_bed/beir_bright_psychology.db
+17:16:09 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_psychology_bed/manifest.json (key=beir_bright_psychology)
+17:16:09 INFO    ============================================================
+17:16:09 INFO    SUMMARY (blob)
+17:16:09 INFO      beir_bright_psychology genes=44775 bytes=258625536 elapsed=176.3s (files=52834 errors=0 missing=0)

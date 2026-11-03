@@ -1,0 +1,43 @@
+{
+  "bench": "fixture_matrix",
+  "spec": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
+  "created_at": "2026-11-03T19:22:07.162679+00:00",
+  "targets": {
+    "beir_bright_leetcode": {
+      "mode": "parallel",
+      "tagger_version": 2,
+      "profile": "beir_bright_leetcode",
+      "label": "beir_bright_leetcode",
+      "active_roots": 1,
+      "roots": [
+        "/home/user/bench/corpus/beir_bright_leetcode/corpus"
+      ],
+      "db_path": "/home/user/bench/beds_nosplade/beir_bright_leetcode_bed/beir_bright_leetcode.db",
+      "started_at": "2026-11-03T18:37:03.069637+00:00",
+      "files": 413932,
+      "genes": 431354,
+      "skipped": 0,
+      "errors": 0,
+      "missing_roots": [],
+      "entity_autolink": true,
+      "min_file_bytes": 1,
+      "discovered_files": 413932,
+      "resumed_files_remaining": 413932,
+      "commit_batch": 0,
+      "batched_commits": 0,
+      "valve_trips": 0,
+      "workers": 4,
+      "elapsed_s": 2691.7,
+      "finished_at": "2026-11-03T19:21:54.776773+00:00",
+      "total_genes": 431258,
+      "compression_ratio": 1.4993,
+      "harmonic_links": 0,
+      "bytes": 4609232896,
+      "cover_index": true,
+      "cover_index_s": 0.8,
+      "dense_coverage": 0.0,
+      "dense_genes_populated": 0
+    }
+  },
+  "updated_at": "2026-11-03T19:22:07.162740+00:00"
+}

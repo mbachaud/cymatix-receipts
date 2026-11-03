@@ -1,0 +1,1024 @@
+{
+ "tool": "benchmarks/dogfood/beir/beir_ndcg.py",
+ "tag": "beir_bright_aops",
+ "receipt": "/home/user/bench/out_nosplade/ladder_beir_bright_aops_seed0_2026-11-03.json",
+ "arm": "baseline",
+ "basis": "score_ranked_ids",
+ "db": "/home/user/bench/beds_nosplade/beir_bright_aops_bed/beir_bright_aops.db",
+ "corpus_root": "/home/user/bench/corpus/beir_bright_aops/corpus",
+ "rank_dump_depth_genes": 50,
+ "recall@100_note": "lower bound when docs_in_dump < 100 (dump depth is in genes)",
+ "n_emitted": 111,
+ "n_ran": 111,
+ "mean_over_ran": {
+  "ndcg@10": 0.0587,
+  "recall@10": 0.0512,
+  "recall@100": 0.0836
+ },
+ "beir_comparable_ndcg@10": 0.0587,
+ "self_doc_excluded_needles": 111,
+ "qrel_docs": 111,
+ "qrel_docs_with_byte_twins": 0,
+ "genes_unmapped_to_corpus": 0,
+ "per_query": [
+  {
+   "needle": "beir_bright_aops_aops_1959_IMO_Problems/Problem_1",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 36,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1971_AHSME_Problems/Problem_26",
+   "ran": true,
+   "ndcg@10": 0.2529427027676571,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 12,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1971_Canadian_MO_Problems/Problem_1",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 28,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1981_IMO_Problems/Problem_3",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1985_AIME_Problems/Problem_6",
+   "ran": true,
+   "ndcg@10": 0.1089364926177559,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 26,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1987_IMO_Problems/Problem_1",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 39,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1988_AIME_Problems/Problem_12",
+   "ran": true,
+   "ndcg@10": 0.15958907712489637,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 25,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1990_AIME_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1994_AIME_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_1998_AIME_Problems/Problem_2",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2000_AIME_I_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2000_AMC_12_Problems/Problem_14",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 30,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2000_AMC_12_Problems/Problem_4",
+   "ran": true,
+   "ndcg@10": 0.11284514134893527,
+   "recall@10": 0.25,
+   "recall@100": 0.5,
+   "docs_in_dump": 32,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2001_AMC_10_Problems/Problem_19",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2002_AIME_I_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.15130120674940675,
+   "recall@10": 0.16666666666666666,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 17,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2002_AIME_I_Problems/Problem_6",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2004_AIME_I_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2005_AMC_12A_Problems/Problem_18",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 38,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2005_IMO_Problems/Problem_4",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 14,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2005_USAMO_Problems/Problem_2",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2007_AIME_II_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2007_AIME_I_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 27,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2007_iTest_Problems/Problem_6",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 34,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2008_AMC_12A_Problems/Problem_15",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 38,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2008_AMC_12A_Problems/Problem_16",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 20,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2008_AMC_12B_Problems/Problem_16",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2009_AMC_12A_Problems/Problem_17",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 22,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2011_AMC_8_Problems/Problem_6",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2013_AMC_12A_Problems/Problem_13",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 16,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2015_AIME_I_Problems/Problem_4",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 30,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2015_AMC_10B_Problems/Problem_15",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2015_AMC_12A_Problems/Problem_22",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2016_AIME_II_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.5546406709327603,
+   "recall@10": 0.42857142857142855,
+   "recall@100": 0.42857142857142855,
+   "docs_in_dump": 12,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2016_AIME_I_Problems/Problem_15",
+   "ran": true,
+   "ndcg@10": 0.27487633291429087,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.14285714285714285,
+   "docs_in_dump": 44,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2016_AMC_10A_Problems/Problem_19",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.125,
+   "docs_in_dump": 16,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2016_AMC_10A_Problems/Problem_7",
+   "ran": true,
+   "ndcg@10": 0.7653606369886217,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 20,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2017_AIME_II_Problems/Problem_1",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 33,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2017_AIME_II_Problems/Problem_3",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2017_AMC_10B_Problems/Problem_13",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2017_AMC_10B_Problems/Problem_14",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2018_AMC_10A_Problems/Problem_11",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2018_AMC_8_Problems/Problem_23",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2019_AIME_I_Problems/Problem_3",
+   "ran": true,
+   "ndcg@10": 0.6013124342022591,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 13,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2019_AMC_10A_Problems/Problem_12",
+   "ran": true,
+   "ndcg@10": 0.7653606369886217,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 21,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2019_AMC_12A_Problems/Problem_17",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 21,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2019_AMC_8_Problems/Problem_25",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.125,
+   "docs_in_dump": 41,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2020_AIME_II_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2020_AIME_I_Problems/Problem_15",
+   "ran": true,
+   "ndcg@10": 0.38121301394452073,
+   "recall@10": 0.2857142857142857,
+   "recall@100": 0.2857142857142857,
+   "docs_in_dump": 13,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2020_AMC_10A_Problems/Problem_24",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 23,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2020_AMC_10B_Problems/Problem_25",
+   "ran": true,
+   "ndcg@10": 0.2529427027676571,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 20,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2020_AMC_8_Problems/Problem_12",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 33,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2021_AIME_II_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 34,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2021_AIME_I_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 37,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2021_AIME_I_Problems/Problem_14",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 6,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2021_AMC_12B_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 16,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2021_Fall_AMC_12A_Problems/Problem_12",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 20,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2022_AIME_I_Problems/Problem_11",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 9,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2022_AMC_10B_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 32,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2023_AIME_II_Problems/Problem_9",
+   "ran": true,
+   "ndcg@10": 0.27487633291429087,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.14285714285714285,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2023_AIME_I_Problems/Problem_5",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 31,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2024_AIME_I_Problems/Problem_10",
+   "ran": true,
+   "ndcg@10": 0.4911720512196216,
+   "recall@10": 0.42857142857142855,
+   "recall@100": 0.5714285714285714,
+   "docs_in_dump": 11,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_aops_2024_AIME_I_Problems/Problem_13",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 18,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_algebra_1208",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 17,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_counting_and_probability_1003",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 7,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_counting_and_probability_1009",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_counting_and_probability_430",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_counting_and_probability_838",
+   "ran": true,
+   "ndcg@10": 0.13012668333070054,
+   "recall@10": 0.25,
+   "recall@100": 0.25,
+   "docs_in_dump": 42,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_geometry_454",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 11,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_intermediate_algebra_1179",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 23,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_intermediate_algebra_1812",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_intermediate_algebra_951",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 9,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_test_prealgebra_1987",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 20,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_algebra_2521",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 31,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_algebra_2826",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5011",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5024",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5035",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5045",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5047",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5048",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5064",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5111",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_5131",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 37,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_counting_and_probability_822",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 24,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_317",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 8,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6018",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 17,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6022",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 18,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6051",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6060",
+   "ran": true,
+   "ndcg@10": 0.15958907712489637,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 7,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6078",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 37,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6092",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 10,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6105",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6112",
+   "ran": true,
+   "ndcg@10": 0.15130120674940675,
+   "recall@10": 0.16666666666666666,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 42,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6115",
+   "ran": true,
+   "ndcg@10": 0.07311683844390995,
+   "recall@10": 0.125,
+   "recall@100": 0.25,
+   "docs_in_dump": 21,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6116",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 13,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_6173",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_geometry_747",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 36,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_1268",
+   "ran": true,
+   "ndcg@10": 0.46927872602275644,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 38,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_1822",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 11,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_2060",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 17,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_477",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_513",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 23,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_intermediate_algebra_659",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7003",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 25,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7012",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 30,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7016",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 16,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7030",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7066",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 38,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7078",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 37,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_7095",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 32,
+   "self_doc_excluded": true
+  },
+  {
+   "needle": "beir_bright_aops_math_train_number_theory_839",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 41,
+   "self_doc_excluded": true
+  }
+ ]
+}

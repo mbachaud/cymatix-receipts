@@ -1,0 +1,309 @@
+{
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/econ_micro_7.json": [
+  "c390cb0e29bedbe2"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_1.json": [
+  "fe7f3d05cc99a885"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_1_2.json": [
+  "755c7d6fe7fcf385",
+  "fe7f3d05cc99a885"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_3_2.json": [
+  "094cb21e6965a309",
+  "edcb741b41343dd9",
+  "ff98a21df3a9d807"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_4.json": [
+  "20f0a9e0474ec5ab",
+  "3031a04d69fe352f",
+  "47958ba2631a8ae1",
+  "d93ca89fbb78ee93"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_4_3.json": [
+  "3e5658469011d13c"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_5.json": [
+  "04f3a37d35a92749",
+  "2d79430782a49e3e",
+  "3c7c7becd07ca571",
+  "746961cd850b153c",
+  "8c2adbb3fa2a8f48",
+  "fb97d410f0fd240e"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_algebra_7_2.json": [
+  "e391b564be6c2234",
+  "e64d0b1978589a6a"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_calculus_12.json": [
+  "72cb98fdc14e8e32"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_calculus_2_11.json": [
+  "2b9427523fbaf74a",
+  "bb23ab68ef914de8",
+  "f8471d3752602a50",
+  "f98a975a3ab7d0b3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_calculus_2_7.json": [
+  "433cda90dc25506c",
+  "95687d07c2eee620",
+  "ed71bb064552dd4d"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_elainewan/math_calculus_3_8.json": [
+  "72cb98fdc14e8e32"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Binomial_2.json": [
+  "2916cecfc5330307"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Binomial_3.json": [
+  "26370a7cf763ca7d",
+  "481015734be272d1",
+  "5291fcf0064c6711"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Binomial_4.json": [
+  "26370a7cf763ca7d",
+  "2916cecfc5330307",
+  "7f21a67f2f9f5ca3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Binomial_5.json": [
+  "26370a7cf763ca7d",
+  "5291fcf0064c6711"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Binomial_6.json": [
+  "12cf3182a0524755",
+  "26370a7cf763ca7d",
+  "2916cecfc5330307",
+  "7f21a67f2f9f5ca3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Catalan_1.json": [
+  "bd32a8b45af598f0"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Catalan_2.json": [
+  "bd32a8b45af598f0"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Cayley_3.json": [
+  "c0e38e0f8633bcf7"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Graph_2.json": [
+  "5d6d186bdeefb81d",
+  "c0e38e0f8633bcf7"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Multinomial_1.json": [
+  "2916cecfc5330307",
+  "5291fcf0064c6711",
+  "da42d0bff63c6247"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Multinomial_2.json": [
+  "2916cecfc5330307",
+  "da42d0bff63c6247"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Multinomial_3.json": [
+  "2916cecfc5330307",
+  "da42d0bff63c6247"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Multinomial_4.json": [
+  "2916cecfc5330307",
+  "da42d0bff63c6247"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Multinomial_6.json": [
+  "da42d0bff63c6247"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Ramsey_2.json": [
+  "154e16ea73cfda24",
+  "dd14cc83ddfe5322"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Ramsey_3.json": [
+  "154e16ea73cfda24",
+  "dd14cc83ddfe5322"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Ramsey_4.json": [
+  "154e16ea73cfda24",
+  "dd14cc83ddfe5322"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Ramsey_5.json": [
+  "154e16ea73cfda24",
+  "dd14cc83ddfe5322"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Ramsey_6.json": [
+  "154e16ea73cfda24",
+  "dd14cc83ddfe5322"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Stirling_number_first_kind_5.json": [
+  "fabc49186a7d0821"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Stirling_number_second_kind_3.json": [
+  "3564e620343e7364",
+  "62a23b064a606dd0",
+  "a0529acc59cce7a3",
+  "eaf6702703b77fe5"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/Stirling_number_second_kind_5.json": [
+  "a0529acc59cce7a3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/pigeonhole_1.json": [
+  "0b8475f45c1958b7",
+  "5549aff4fe04db99"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/pigeonhole_2.json": [
+  "0b8475f45c1958b7"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/pigeonhole_3.json": [
+  "0b8475f45c1958b7"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_jianyu_xu/pigeonhole_4.json": [
+  "0b8475f45c1958b7",
+  "5549aff4fe04db99"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_maxku/ipnetwork13-hammingdist.json": [
+  "74ba6930664bdad3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_maxku/signalprocessing11-nyquist.json": [
+  "bd1fc506118b8807"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_mingyin/Fundamental-Theorem-of-Calculus3.json": [
+  "c242b77b9251aea4"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_mingyin/Lebesgue-measure1.json": [
+  "504a725e9bd3d01d",
+  "a4ef47d68ce64bb4"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_mingyin/cauchy-integral-theorem1.json": [
+  "3d27fd83f23e2799"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_mingyin/convexity1.json": [
+  "91103e5ed9389c23"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_mingyin/series2.json": [
+  "4f1dc1fedb3413cb"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_panlu/gravitational_force2.json": [
+  "274c97dc11287daf",
+  "c2fc873f1d088d5f"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_panlu/rigid-body3.json": [
+  "43917d91e85fcd98",
+  "78a7e208cd46b201"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_panlu/similarity2.json": [
+  "93088dba42a9708c",
+  "96426ba4e33b3567"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_panlu/similarity3.json": [
+  "93088dba42a9708c"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_tonyxia/maxplanar1.json": [
+  "2fd955cd0de88ad3",
+  "d92747887e2c41a2"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_tonyxia/maxplanar3.json": [
+  "2fd955cd0de88ad3",
+  "d92747887e2c41a2"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/L'H\u00f4pital_rule1.json": [
+  "120c747700006801"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/Liouville\u2019s_theorem1.json": [
+  "985a0b6f61f64bdc",
+  "c80e845e6ad1528a",
+  "e56ffecc967bb7fb"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/Liouville\u2019s_theorem2.json": [
+  "985a0b6f61f64bdc",
+  "c80e845e6ad1528a",
+  "e56ffecc967bb7fb"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/ODE2.json": [
+  "05f4ed1e9a76eb4b",
+  "0bc335b5cc1e9e66",
+  "852d5e3525c986a8",
+  "9db8abafcaf61e32"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/ODE3.json": [
+  "595af09060b58ecb",
+  "ce73b25fa8448414",
+  "ee586b428457c571"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/Rolle's_theorem.json": [
+  "c1f27dbdd5608061",
+  "fe7ce62c910d1cb9"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/cauchy_integral1.json": [
+  "3d27fd83f23e2799"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/definite_matrix1.json": [
+  "463a371c1cbe8a5d",
+  "7fee88544488fbfb"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/eigen_value1.json": [
+  "e391b564be6c2234",
+  "e64d0b1978589a6a"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/jensen1.json": [
+  "3116ea028d1d6794",
+  "cb89e2dc862194ab",
+  "e25524ea2fd3074f"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/kepler's_law1.json": [
+  "ba185d7ba3ae2278"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/kepler's_law3.json": [
+  "2663f1ca8dba804f",
+  "ba185d7ba3ae2278"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/series_convergen2.json": [
+  "0997155dc9175b26",
+  "2c1833fb71696302",
+  "4f1dc1fedb3413cb",
+  "537cdca2bc07c13b"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/t_test1.json": [
+  "b3e2476adc1ddb47",
+  "c69cdb16dc689e8d"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/t_test2.json": [
+  "b3e2476adc1ddb47",
+  "c69cdb16dc689e8d"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/t_test3.json": [
+  "b3e2476adc1ddb47",
+  "c69cdb16dc689e8d"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/trapezoidal_rule3.json": [
+  "cd4ae89004ba7a57"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_wenhuchen/viterbi2.json": [
+  "baf6b2d956a26e7f"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xinyi/dag_1.json": [
+  "0686ac8dee534b6a",
+  "6121b207b730b18d",
+  "c7170084e1de1b84"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xinyi/dag_2.json": [
+  "6121b207b730b18d",
+  "c7170084e1de1b84",
+  "e862dbf2ed28822e"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xinyi/dag_3.json": [
+  "c7170084e1de1b84"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xinyi/linear_projection.json": [
+  "8c2adbb3fa2a8f48"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xinyi/maximum_entropy_2.json": [
+  "69e4e52f827f2754"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xueguangma/intermediate_value_theorem.json": [
+  "2b9427523fbaf74a",
+  "b9ec8c1ff0dd07b8",
+  "bb23ab68ef914de8",
+  "decb3d19f1f4b201",
+  "f8471d3752602a50",
+  "f94d5c48cbbbefb7",
+  "f98a975a3ab7d0b3"
+ ],
+ "beir_bright_theoremqa_theorems_TheoremQA_xueguangma/taylors_approximation_theorem.json": [
+  "2af6983926c78ccd",
+  "71a2886f6b794f67"
+ ]
+}

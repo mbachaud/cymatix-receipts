@@ -1,0 +1,12 @@
+19:36:41 INFO    entity_autolink_hub_cutoff=200 (CYMATIX_BFM_HUB_CUTOFF)
+19:36:41 INFO    parallel ingest: 0 files, 4 workers, batch_size=64, ordered=True
+19:36:41 INFO    ============================================================
+19:36:41 INFO    DONE beir_mh_musique (parallel) in 0.0s
+19:36:41 INFO      files=0 genes=0 skipped=0 errors=0
+19:36:41 INFO      total_genes=0 harmonic_links=0 bytes=4096
+19:36:41 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_mh_musique_bed/beir_mh_musique.db
+19:36:41 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_mh_musique_bed/beir_mh_musique.db
+19:36:41 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_mh_musique_bed/manifest.json (key=beir_mh_musique)
+19:36:41 INFO    ============================================================
+19:36:41 INFO    SUMMARY (blob)
+19:36:41 INFO      beir_mh_musique genes=0 bytes=356352 elapsed=0.0s (files=0 errors=0 missing=1)
