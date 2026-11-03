@@ -1,0 +1,12 @@
+17:54:18 INFO    [120444 files, 121536 genes] 257.6 genes/s
+17:54:19 INFO    [120956 files, 122048 genes] 257.9 genes/s
+17:54:20 INFO    ============================================================
+17:54:20 INFO    DONE beir_bright_earth_science (parallel) in 473.9s
+17:54:20 INFO      files=121247 genes=122339 skipped=2 errors=0
+17:54:20 INFO      total_genes=118693 harmonic_links=0 bytes=717107200
+17:54:21 INFO    cover index built in 0.2s: /home/user/bench/beds_nosplade/beir_bright_earth_science_bed/beir_bright_earth_science.db
+17:54:21 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_earth_science_bed/beir_bright_earth_science.db
+17:54:21 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_earth_science_bed/manifest.json (key=beir_bright_earth_science)
+17:54:21 INFO    ============================================================
+17:54:21 INFO    SUMMARY (blob)
+17:54:21 INFO      beir_bright_earth_science genes=118693 bytes=720216064 elapsed=473.9s (files=121247 errors=0 missing=0)

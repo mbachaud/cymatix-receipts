@@ -1,0 +1,12 @@
+17:23:22 INFO    [61221 files, 61504 genes] 372.4 genes/s
+17:23:23 INFO    [61730 files, 62016 genes] 373.3 genes/s
+17:23:24 INFO    ============================================================
+17:23:24 INFO    DONE beir_bright_robotics (parallel) in 166.6s
+17:23:24 INFO      files=61961 genes=62247 skipped=0 errors=0
+17:23:24 INFO      total_genes=40673 harmonic_links=0 bytes=228433920
+17:23:24 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_bright_robotics_bed/beir_bright_robotics.db
+17:23:24 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_robotics_bed/beir_bright_robotics.db
+17:23:24 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_robotics_bed/manifest.json (key=beir_bright_robotics)
+17:23:24 INFO    ============================================================
+17:23:24 INFO    SUMMARY (blob)
+17:23:24 INFO      beir_bright_robotics genes=40673 bytes=229482496 elapsed=166.6s (files=61961 errors=0 missing=0)

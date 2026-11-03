@@ -1,0 +1,12 @@
+20:31:41 INFO    [170652 files, 171520 genes] 145.3 genes/s
+20:31:44 INFO    [171162 files, 172032 genes] 145.3 genes/s
+20:31:46 INFO    ============================================================
+20:31:46 INFO    DONE beir_trec_covid (parallel) in 1185.1s
+20:31:46 INFO      files=171331 genes=172201 skipped=1 errors=0
+20:31:46 INFO      total_genes=172143 harmonic_links=0 bytes=1177133056
+20:31:46 INFO    cover index built in 0.3s: /home/user/bench/beds_nosplade/beir_trec_covid_bed/beir_trec_covid.db
+20:31:46 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_trec_covid_bed/beir_trec_covid.db
+20:31:46 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_trec_covid_bed/manifest.json (key=beir_trec_covid)
+20:31:46 INFO    ============================================================
+20:31:46 INFO    SUMMARY (blob)
+20:31:46 INFO      beir_trec_covid genes=172143 bytes=1181614080 elapsed=1185.1s (files=171331 errors=0 missing=0)

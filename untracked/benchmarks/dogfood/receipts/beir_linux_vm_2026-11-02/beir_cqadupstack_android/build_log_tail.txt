@@ -1,0 +1,12 @@
+19:01:50 INFO    entity_autolink_hub_cutoff=200 (CYMATIX_BFM_HUB_CUTOFF)
+19:01:50 INFO    parallel ingest: 0 files, 4 workers, batch_size=64, ordered=True
+19:01:50 INFO    ============================================================
+19:01:50 INFO    DONE beir_cqadupstack_android (parallel) in 0.0s
+19:01:50 INFO      files=0 genes=0 skipped=0 errors=0
+19:01:50 INFO      total_genes=0 harmonic_links=0 bytes=4096
+19:01:50 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_cqadupstack_android_bed/beir_cqadupstack_android.db
+19:01:50 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_cqadupstack_android_bed/beir_cqadupstack_android.db
+19:01:50 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_cqadupstack_android_bed/manifest.json (key=beir_cqadupstack_android)
+19:01:50 INFO    ============================================================
+19:01:50 INFO    SUMMARY (blob)
+19:01:50 INFO      beir_cqadupstack_android genes=0 bytes=356352 elapsed=0.0s (files=0 errors=0 missing=1)

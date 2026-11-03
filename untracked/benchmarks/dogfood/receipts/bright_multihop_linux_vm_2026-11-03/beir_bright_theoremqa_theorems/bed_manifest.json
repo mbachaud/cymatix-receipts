@@ -1,0 +1,43 @@
+{
+  "bench": "fixture_matrix",
+  "spec": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
+  "created_at": "2026-11-03T17:27:20.404409+00:00",
+  "targets": {
+    "beir_bright_theoremqa_theorems": {
+      "mode": "parallel",
+      "tagger_version": 2,
+      "profile": "beir_bright_theoremqa_theorems",
+      "label": "beir_bright_theoremqa_theorems",
+      "active_roots": 1,
+      "roots": [
+        "/home/user/bench/corpus/beir_bright_theoremqa_theorems/corpus"
+      ],
+      "db_path": "/home/user/bench/beds_nosplade/beir_bright_theoremqa_theorems_bed/beir_bright_theoremqa_theorems.db",
+      "started_at": "2026-11-03T17:24:31.804351+00:00",
+      "files": 23839,
+      "genes": 24253,
+      "skipped": 0,
+      "errors": 0,
+      "missing_roots": [],
+      "entity_autolink": true,
+      "min_file_bytes": 1,
+      "discovered_files": 23839,
+      "resumed_files_remaining": 23839,
+      "commit_batch": 0,
+      "batched_commits": 0,
+      "valve_trips": 0,
+      "workers": 4,
+      "elapsed_s": 168.4,
+      "finished_at": "2026-11-03T17:27:20.233760+00:00",
+      "total_genes": 24253,
+      "compression_ratio": 1.3678,
+      "harmonic_links": 0,
+      "bytes": 184197120,
+      "cover_index": true,
+      "cover_index_s": 0.0,
+      "dense_coverage": 0.0,
+      "dense_genes_populated": 0
+    }
+  },
+  "updated_at": "2026-11-03T17:27:20.404457+00:00"
+}

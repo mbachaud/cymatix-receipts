@@ -1,0 +1,12 @@
+17:08:43 INFO    [56878 files, 57024 genes] 246.9 genes/s
+17:08:45 INFO    [57359 files, 57505 genes] 247.1 genes/s
+17:08:45 INFO    ============================================================
+17:08:45 INFO    DONE beir_bright_biology (parallel) in 232.8s
+17:08:45 INFO      files=57359 genes=57505 skipped=0 errors=0
+17:08:45 INFO      total_genes=49579 harmonic_links=0 bytes=273625088
+17:08:45 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_bright_biology_bed/beir_bright_biology.db
+17:08:45 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_biology_bed/beir_bright_biology.db
+17:08:45 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_biology_bed/manifest.json (key=beir_bright_biology)
+17:08:45 INFO    ============================================================
+17:08:45 INFO    SUMMARY (blob)
+17:08:45 INFO      beir_bright_biology genes=49579 bytes=274776064 elapsed=232.8s (files=57359 errors=0 missing=0)

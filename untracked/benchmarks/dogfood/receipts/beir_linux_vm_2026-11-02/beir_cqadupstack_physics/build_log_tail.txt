@@ -1,0 +1,12 @@
+19:14:52 INFO    [37540 files, 38016 genes] 160.1 genes/s
+19:14:55 INFO    [38048 files, 38528 genes] 159.9 genes/s
+19:14:57 INFO    ============================================================
+19:14:57 INFO    DONE beir_cqadupstack_physics (parallel) in 242.4s
+19:14:57 INFO      files=38316 genes=38800 skipped=0 errors=0
+19:14:57 INFO      total_genes=38798 harmonic_links=0 bytes=217124864
+19:14:57 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_cqadupstack_physics_bed/beir_cqadupstack_physics.db
+19:14:57 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_cqadupstack_physics_bed/beir_cqadupstack_physics.db
+19:14:57 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_cqadupstack_physics_bed/manifest.json (key=beir_cqadupstack_physics)
+19:14:57 INFO    ============================================================
+19:14:57 INFO    SUMMARY (blob)
+19:14:57 INFO      beir_cqadupstack_physics genes=38798 bytes=218103808 elapsed=242.4s (files=38316 errors=0 missing=0)

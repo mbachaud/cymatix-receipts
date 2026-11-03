@@ -1,0 +1,160 @@
+{
+ "engine_commit": "bd3c541f (beta 091dab94 + PR #534)",
+ "bright": [
+  {
+   "domain": "aops",
+   "n": 111,
+   "cymatix_ndcg@10": 0.0587,
+   "cymatix_recall@100": 0.0836,
+   "paper_bm25_ndcg@10": 0.062,
+   "bm25_ndcg@10": 0.0498,
+   "bm25_recall@100": 0.1687
+  },
+  {
+   "domain": "biology",
+   "n": 103,
+   "cymatix_ndcg@10": 0.1242,
+   "cymatix_recall@100": 0.3006,
+   "paper_bm25_ndcg@10": 0.189,
+   "bm25_ndcg@10": 0.0775,
+   "bm25_recall@100": 0.3092
+  },
+  {
+   "domain": "earth_science",
+   "n": 116,
+   "cymatix_ndcg@10": 0.2352,
+   "cymatix_recall@100": 0.4389,
+   "paper_bm25_ndcg@10": 0.272,
+   "bm25_ndcg@10": 0.1283,
+   "bm25_recall@100": 0.3948
+  },
+  {
+   "domain": "economics",
+   "n": 103,
+   "cymatix_ndcg@10": 0.1108,
+   "cymatix_recall@100": 0.3053,
+   "paper_bm25_ndcg@10": 0.149,
+   "bm25_ndcg@10": 0.1026,
+   "bm25_recall@100": 0.3405
+  },
+  {
+   "domain": "leetcode",
+   "n": 142,
+   "cymatix_ndcg@10": 0.2327,
+   "cymatix_recall@100": 0.3822,
+   "paper_bm25_ndcg@10": 0.244,
+   "bm25_ndcg@10": 0.2532,
+   "bm25_recall@100": 0.4455
+  },
+  {
+   "domain": "pony",
+   "n": 112,
+   "cymatix_ndcg@10": 0.0594,
+   "cymatix_recall@100": 0.0788,
+   "paper_bm25_ndcg@10": 0.079,
+   "bm25_ndcg@10": 0.0226,
+   "bm25_recall@100": 0.1245
+  },
+  {
+   "domain": "psychology",
+   "n": 101,
+   "cymatix_ndcg@10": 0.1037,
+   "cymatix_recall@100": 0.3091,
+   "paper_bm25_ndcg@10": 0.125,
+   "bm25_ndcg@10": 0.0764,
+   "bm25_recall@100": 0.2979
+  },
+  {
+   "domain": "robotics",
+   "n": 101,
+   "cymatix_ndcg@10": 0.1471,
+   "cymatix_recall@100": 0.3713,
+   "paper_bm25_ndcg@10": 0.136,
+   "bm25_ndcg@10": 0.0623,
+   "bm25_recall@100": 0.3278
+  },
+  {
+   "domain": "stackoverflow",
+   "n": 117,
+   "cymatix_ndcg@10": 0.1351,
+   "cymatix_recall@100": 0.4293,
+   "paper_bm25_ndcg@10": 0.184,
+   "bm25_ndcg@10": 0.1636,
+   "bm25_recall@100": 0.5089
+  },
+  {
+   "domain": "sustainable_living",
+   "n": 108,
+   "cymatix_ndcg@10": 0.1034,
+   "cymatix_recall@100": 0.3297,
+   "paper_bm25_ndcg@10": 0.15,
+   "bm25_ndcg@10": 0.0851,
+   "bm25_recall@100": 0.3881
+  },
+  {
+   "domain": "theoremqa_questions",
+   "n": 194,
+   "cymatix_ndcg@10": 0.0411,
+   "cymatix_recall@100": 0.1143,
+   "paper_bm25_ndcg@10": 0.104,
+   "bm25_ndcg@10": 0.0735,
+   "bm25_recall@100": 0.1474
+  },
+  {
+   "domain": "theoremqa_theorems",
+   "n": 76,
+   "cymatix_ndcg@10": 0.0396,
+   "cymatix_recall@100": 0.1184,
+   "paper_bm25_ndcg@10": 0.049,
+   "bm25_ndcg@10": 0.0051,
+   "bm25_recall@100": 0.1096
+  }
+ ],
+ "multihop": [
+  {
+   "set": "2wiki",
+   "ndcg@10": 0.4357,
+   "all@10": 0.261,
+   "all@100": 0.4068,
+   "all_delivered": 0.2487,
+   "any_delivered": 0.9133,
+   "frac_delivered": 0.5591,
+   "bm25_all@10": 0.3488,
+   "bm25_all@12": 0.3637,
+   "bm25_all@100": 0.4713,
+   "bm25_frac@12": 0.6782,
+   "delivered_chars_median": 6583.0,
+   "n": 12576
+  },
+  {
+   "set": "hotpotqa",
+   "ndcg@10": 0.4789,
+   "all@10": 0.4203,
+   "all@100": 0.7057,
+   "all_delivered": 0.4053,
+   "any_delivered": 0.9229,
+   "frac_delivered": 0.6641,
+   "bm25_all@10": 0.6101,
+   "bm25_all@12": 0.644,
+   "bm25_all@100": 0.834,
+   "bm25_frac@12": 0.8137,
+   "delivered_chars_median": 7222,
+   "n": 7405
+  },
+  {
+   "set": "musique",
+   "ndcg@10": 0.3132,
+   "all@10": 0.0914,
+   "all@100": 0.2255,
+   "all_delivered": 0.0803,
+   "any_delivered": 0.7782,
+   "frac_delivered": 0.3909,
+   "bm25_all@10": 0.1415,
+   "bm25_all@12": 0.1535,
+   "bm25_all@100": 0.3612,
+   "bm25_frac@12": 0.5043,
+   "delivered_chars_median": 6562,
+   "n": 2417
+  }
+ ]
+}

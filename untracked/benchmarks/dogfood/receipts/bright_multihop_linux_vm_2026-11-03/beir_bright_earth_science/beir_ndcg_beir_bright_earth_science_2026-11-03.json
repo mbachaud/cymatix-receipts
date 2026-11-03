@@ -1,0 +1,1069 @@
+{
+ "tool": "benchmarks/dogfood/beir/beir_ndcg.py",
+ "tag": "beir_bright_earth_science",
+ "receipt": "/home/user/bench/out_nosplade/ladder_beir_bright_earth_science_seed0_2026-11-03.json",
+ "arm": "baseline",
+ "basis": "score_ranked_ids",
+ "db": "/home/user/bench/beds_nosplade/beir_bright_earth_science_bed/beir_bright_earth_science.db",
+ "corpus_root": "/home/user/bench/corpus/beir_bright_earth_science/corpus",
+ "rank_dump_depth_genes": 50,
+ "recall@100_note": "lower bound when docs_in_dump < 100 (dump depth is in genes)",
+ "n_emitted": 116,
+ "n_ran": 116,
+ "mean_over_ran": {
+  "ndcg@10": 0.2352,
+  "recall@10": 0.2883,
+  "recall@100": 0.4389
+ },
+ "beir_comparable_ndcg@10": 0.2352,
+ "self_doc_excluded_needles": 0,
+ "qrel_docs": 585,
+ "qrel_docs_with_byte_twins": 16,
+ "genes_unmapped_to_corpus": 0,
+ "per_query": [
+  {
+   "needle": "beir_bright_earth_science_0",
+   "ran": true,
+   "ndcg@10": 0.20438239758848611,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_1",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 41,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_10",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_100",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_101",
+   "ran": true,
+   "ndcg@10": 0.9197207891481876,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_102",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_103",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_104",
+   "ran": true,
+   "ndcg@10": 0.45749452618986164,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 36,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_105",
+   "ran": true,
+   "ndcg@10": 0.20210734650054757,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_106",
+   "ran": true,
+   "ndcg@10": 0.3026024134988135,
+   "recall@10": 0.16666666666666666,
+   "recall@100": 0.16666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_107",
+   "ran": true,
+   "ndcg@10": 0.3391602052736161,
+   "recall@10": 0.2,
+   "recall@100": 0.4,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_108",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_109",
+   "ran": true,
+   "ndcg@10": 0.09803928583135704,
+   "recall@10": 0.2,
+   "recall@100": 1.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_11",
+   "ran": true,
+   "ndcg@10": 0.3638184934971571,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_110",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_111",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_112",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_113",
+   "ran": true,
+   "ndcg@10": 0.1478294909154526,
+   "recall@10": 0.2,
+   "recall@100": 0.4,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_114",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.75,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_115",
+   "ran": true,
+   "ndcg@10": 0.26687965254220064,
+   "recall@10": 0.4,
+   "recall@100": 0.8,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_12",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_13",
+   "ran": true,
+   "ndcg@10": 0.2984900352767555,
+   "recall@10": 0.18181818181818182,
+   "recall@100": 0.36363636363636365,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_14",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.25,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_15",
+   "ran": true,
+   "ndcg@10": 0.24630238874073,
+   "recall@10": 0.25,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_16",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.1111111111111111,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_17",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_18",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_19",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.4444444444444444,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_2",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.16666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_20",
+   "ran": true,
+   "ndcg@10": 0.4690000933206748,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.47619047619047616,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_21",
+   "ran": true,
+   "ndcg@10": 0.39806284658828084,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_22",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_23",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_24",
+   "ran": true,
+   "ndcg@10": 0.5390031312763821,
+   "recall@10": 0.375,
+   "recall@100": 0.5,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_25",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_26",
+   "ran": true,
+   "ndcg@10": 0.06943122193677727,
+   "recall@10": 0.09090909090909091,
+   "recall@100": 0.36363636363636365,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_27",
+   "ran": true,
+   "ndcg@10": 0.31488013066763093,
+   "recall@10": 0.09090909090909091,
+   "recall@100": 0.09090909090909091,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_28",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.14285714285714285,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_29",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_3",
+   "ran": true,
+   "ndcg@10": 0.3065735963827292,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_30",
+   "ran": true,
+   "ndcg@10": 0.07839826897867533,
+   "recall@10": 0.1111111111111111,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_31",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_32",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_33",
+   "ran": true,
+   "ndcg@10": 0.07945707943276742,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.2857142857142857,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_34",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 40,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_35",
+   "ran": true,
+   "ndcg@10": 0.19518900079066107,
+   "recall@10": 0.125,
+   "recall@100": 0.4375,
+   "docs_in_dump": 41,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_36",
+   "ran": true,
+   "ndcg@10": 0.38685280723454163,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_37",
+   "ran": true,
+   "ndcg@10": 0.08514311764162098,
+   "recall@10": 0.05263157894736842,
+   "recall@100": 0.10526315789473684,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_38",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_39",
+   "ran": true,
+   "ndcg@10": 0.46845052016107697,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_4",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 35,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_40",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_41",
+   "ran": true,
+   "ndcg@10": 0.23719771276929622,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_42",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_43",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 40,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_44",
+   "ran": true,
+   "ndcg@10": 0.6131471927654584,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_45",
+   "ran": true,
+   "ndcg@10": 0.3936948167222716,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.5,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_46",
+   "ran": true,
+   "ndcg@10": 0.37590633587120725,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_47",
+   "ran": true,
+   "ndcg@10": 0.9032021360513368,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 32,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_48",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 41,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_49",
+   "ran": true,
+   "ndcg@10": 0.3562071871080222,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 42,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_5",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_50",
+   "ran": true,
+   "ndcg@10": 0.43067655807339306,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_51",
+   "ran": true,
+   "ndcg@10": 0.6509209298071326,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 38,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_52",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_53",
+   "ran": true,
+   "ndcg@10": 0.3065735963827292,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_54",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_55",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_56",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_57",
+   "ran": true,
+   "ndcg@10": 0.0901000086523677,
+   "recall@10": 0.125,
+   "recall@100": 0.125,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_58",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_59",
+   "ran": true,
+   "ndcg@10": 0.9674679834891693,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_6",
+   "ran": true,
+   "ndcg@10": 0.13565197343244778,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_60",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_61",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_62",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_63",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_64",
+   "ran": true,
+   "ndcg@10": 0.21840743681816419,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_65",
+   "ran": true,
+   "ndcg@10": 0.5,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_66",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_67",
+   "ran": true,
+   "ndcg@10": 0.13012668333070054,
+   "recall@10": 0.25,
+   "recall@100": 0.5,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_68",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.4,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_69",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.5,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_7",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_70",
+   "ran": true,
+   "ndcg@10": 0.14606834984270645,
+   "recall@10": 0.2,
+   "recall@100": 0.2,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_71",
+   "ran": true,
+   "ndcg@10": 0.8248239677678634,
+   "recall@10": 0.8,
+   "recall@100": 0.8,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_72",
+   "ran": true,
+   "ndcg@10": 0.7036997876179215,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_73",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_74",
+   "ran": true,
+   "ndcg@10": 0.23719771276929622,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 50,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_75",
+   "ran": true,
+   "ndcg@10": 0.5585075862632192,
+   "recall@10": 0.5,
+   "recall@100": 0.5,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_76",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_77",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_78",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.14285714285714285,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_79",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_8",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_80",
+   "ran": true,
+   "ndcg@10": 0.2683637998873703,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_81",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 45,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_82",
+   "ran": true,
+   "ndcg@10": 0.17723928678404774,
+   "recall@10": 0.5,
+   "recall@100": 1.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_83",
+   "ran": true,
+   "ndcg@10": 0.9292442392789195,
+   "recall@10": 0.8888888888888888,
+   "recall@100": 1.0,
+   "docs_in_dump": 35,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_84",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_85",
+   "ran": true,
+   "ndcg@10": 0.17342765698823948,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.14285714285714285,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_86",
+   "ran": true,
+   "ndcg@10": 0.11305340175787204,
+   "recall@10": 0.2,
+   "recall@100": 0.4,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_87",
+   "ran": true,
+   "ndcg@10": 1.0,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "docs_in_dump": 49,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_88",
+   "ran": true,
+   "ndcg@10": 0.6366824387328317,
+   "recall@10": 0.5,
+   "recall@100": 0.75,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_89",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 47,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_9",
+   "ran": true,
+   "ndcg@10": 0.15130120674940675,
+   "recall@10": 0.16666666666666666,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_90",
+   "ran": true,
+   "ndcg@10": 0.7039180890341347,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 40,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_91",
+   "ran": true,
+   "ndcg@10": 0.2960819109658652,
+   "recall@10": 0.3333333333333333,
+   "recall@100": 0.3333333333333333,
+   "docs_in_dump": 46,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_92",
+   "ran": true,
+   "ndcg@10": 0.13743816645714543,
+   "recall@10": 0.14285714285714285,
+   "recall@100": 0.2857142857142857,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_93",
+   "ran": true,
+   "ndcg@10": 0.6364391809889587,
+   "recall@10": 0.6666666666666666,
+   "recall@100": 1.0,
+   "docs_in_dump": 43,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_94",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 44,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_95",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.25,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_96",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.6666666666666666,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_97",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_98",
+   "ran": true,
+   "ndcg@10": 0.6174310718287019,
+   "recall@10": 0.8,
+   "recall@100": 1.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  },
+  {
+   "needle": "beir_bright_earth_science_99",
+   "ran": true,
+   "ndcg@10": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "docs_in_dump": 48,
+   "self_doc_excluded": false
+  }
+ ]
+}

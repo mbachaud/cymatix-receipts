@@ -1,0 +1,548 @@
+{
+ "beir_bright_leetcode_0": [
+  "0814fdddf61de36b",
+  "343a3b6dae742f42",
+  "8a4d35a3ca3cd34e"
+ ],
+ "beir_bright_leetcode_1": [
+  "96b86b57dfb710c2",
+  "bc7b9016efe93299"
+ ],
+ "beir_bright_leetcode_10": [
+  "a40ae741920863b9",
+  "cdddacfbd2022662",
+  "e812f7029f52dc21"
+ ],
+ "beir_bright_leetcode_100": [
+  "15338ae35e147c50",
+  "1f6fe0c174c8e0ee",
+  "65fa4030e6d6b56a",
+  "aef7ffe135560435",
+  "b0dcc38b3745b6c5"
+ ],
+ "beir_bright_leetcode_101": [
+  "0896b0e24c6b1fc5",
+  "46032e07ad2343db",
+  "6193124ef7b9b412",
+  "7c40d56e02f245f2"
+ ],
+ "beir_bright_leetcode_102": [
+  "becfe9aa58b5ca3f"
+ ],
+ "beir_bright_leetcode_103": [
+  "4f4b87dea886854a"
+ ],
+ "beir_bright_leetcode_104": [
+  "8f6db13fcfb56962"
+ ],
+ "beir_bright_leetcode_105": [
+  "19c43e5da1af6cee",
+  "f6e9948763b0b186"
+ ],
+ "beir_bright_leetcode_106": [
+  "ceffcd06058a5db9"
+ ],
+ "beir_bright_leetcode_107": [
+  "001a0577ebd8e029",
+  "b5f745347fc43057",
+  "ba0c9e21faafd150"
+ ],
+ "beir_bright_leetcode_108": [
+  "327a4e13680e8d76",
+  "eaa7760075ec050f",
+  "f9eeb86856391f8f"
+ ],
+ "beir_bright_leetcode_109": [
+  "d8e817660c60205e"
+ ],
+ "beir_bright_leetcode_11": [
+  "ceffcd06058a5db9"
+ ],
+ "beir_bright_leetcode_110": [
+  "423719dc092e3ad1",
+  "b26f6d9302d8c2eb"
+ ],
+ "beir_bright_leetcode_111": [
+  "9852c5ad4aa78569"
+ ],
+ "beir_bright_leetcode_112": [
+  "008eceb60bfd83f0"
+ ],
+ "beir_bright_leetcode_113": [
+  "428f6eebdc055b9b",
+  "7e6aa3bd0bd06dd7"
+ ],
+ "beir_bright_leetcode_114": [
+  "589dfc9448773416",
+  "bc9a6fe550f1bf5e"
+ ],
+ "beir_bright_leetcode_115": [
+  "9029c26970f0fafe"
+ ],
+ "beir_bright_leetcode_116": [
+  "2982858a6edc6c29"
+ ],
+ "beir_bright_leetcode_117": [
+  "2982858a6edc6c29"
+ ],
+ "beir_bright_leetcode_118": [
+  "1de3ef9e718bed05"
+ ],
+ "beir_bright_leetcode_119": [
+  "57e4c53ad40d00de"
+ ],
+ "beir_bright_leetcode_12": [
+  "22bf3a31fd29290b"
+ ],
+ "beir_bright_leetcode_120": [
+  "2a3091693fe8d8b1"
+ ],
+ "beir_bright_leetcode_121": [
+  "60f1157621fc8169",
+  "83315f94f46ba7a6"
+ ],
+ "beir_bright_leetcode_122": [
+  "a44edbd14c40a018"
+ ],
+ "beir_bright_leetcode_123": [
+  "4dc204d13cc065a1"
+ ],
+ "beir_bright_leetcode_124": [
+  "1d891dd9001da332",
+  "d47c303f4ca83c17"
+ ],
+ "beir_bright_leetcode_125": [
+  "05021f323ba4be4e",
+  "be452d15cc00322e"
+ ],
+ "beir_bright_leetcode_126": [
+  "5dfa7a1f2a6a5eea",
+  "6645f67fe0e174dc"
+ ],
+ "beir_bright_leetcode_127": [
+  "39cae0482c1064ff"
+ ],
+ "beir_bright_leetcode_128": [
+  "7acc9787613fd441",
+  "b5f04863ac666537"
+ ],
+ "beir_bright_leetcode_129": [
+  "11aa0ce955378b40",
+  "8d15f9712bb6e164"
+ ],
+ "beir_bright_leetcode_13": [
+  "039bfc88da3c2db1",
+  "ab7b1bb3c490f492",
+  "e6bb0ba5c0f54646"
+ ],
+ "beir_bright_leetcode_130": [
+  "b201c312502a4289",
+  "cf1b17ae9caf3c73"
+ ],
+ "beir_bright_leetcode_131": [
+  "2a241aef402f1755"
+ ],
+ "beir_bright_leetcode_132": [
+  "4a8b208a9a7f3286",
+  "5227586ab6781274"
+ ],
+ "beir_bright_leetcode_133": [
+  "41e43ef8388402aa"
+ ],
+ "beir_bright_leetcode_134": [
+  "72c44c4648e38a31",
+  "926715758f02188d"
+ ],
+ "beir_bright_leetcode_135": [
+  "ad0d9ca8fd3b84b5"
+ ],
+ "beir_bright_leetcode_136": [
+  "1150d1f163b296a3",
+  "7a93d6513d6ae8ca"
+ ],
+ "beir_bright_leetcode_137": [
+  "345c5086240c901b",
+  "48cc96764383523b"
+ ],
+ "beir_bright_leetcode_138": [
+  "162c6dcc1273c24c"
+ ],
+ "beir_bright_leetcode_139": [
+  "4c4e372de4d7eb43",
+  "c6486ef6bc5bb1db"
+ ],
+ "beir_bright_leetcode_14": [
+  "45bb372ec94ae02c",
+  "4bb11543bae68280",
+  "5f7a9c4ab783b71b",
+  "7c6c9f27a5fdbc5e"
+ ],
+ "beir_bright_leetcode_140": [
+  "60581c941f7d5840",
+  "70e243077b0254f1"
+ ],
+ "beir_bright_leetcode_141": [
+  "47aa4ab0c6eee574"
+ ],
+ "beir_bright_leetcode_15": [
+  "37021f286678f4f8"
+ ],
+ "beir_bright_leetcode_16": [
+  "7c32290bcd4f1801"
+ ],
+ "beir_bright_leetcode_17": [
+  "140f312472bad7dc",
+  "5e5f5939836b4e31",
+  "7cd32a77e5728550"
+ ],
+ "beir_bright_leetcode_18": [
+  "058967c594eddb62",
+  "140f312472bad7dc",
+  "cdddacfbd2022662"
+ ],
+ "beir_bright_leetcode_19": [
+  "719cc73f413e4adf"
+ ],
+ "beir_bright_leetcode_2": [
+  "98497b9f52029a71"
+ ],
+ "beir_bright_leetcode_20": [
+  "a66640911d218851",
+  "b5f745347fc43057"
+ ],
+ "beir_bright_leetcode_21": [
+  "0e24824292fbef37",
+  "20270ce47a1c4dfc",
+  "46032e07ad2343db"
+ ],
+ "beir_bright_leetcode_22": [
+  "14f071a5123a2862",
+  "7cd32a77e5728550"
+ ],
+ "beir_bright_leetcode_23": [
+  "1d147aa29e31c6ef"
+ ],
+ "beir_bright_leetcode_24": [
+  "058967c594eddb62"
+ ],
+ "beir_bright_leetcode_25": [
+  "2392fb2f398e0e94"
+ ],
+ "beir_bright_leetcode_26": [
+  "6fe03b7a1d5e4085",
+  "893cce15376686d8",
+  "a978a493989744f4",
+  "c0663380e14ef81b"
+ ],
+ "beir_bright_leetcode_27": [
+  "2de1f4b98e829cc1",
+  "e1bba95d2a3b1758"
+ ],
+ "beir_bright_leetcode_28": [
+  "caa50c27c668e9f9"
+ ],
+ "beir_bright_leetcode_29": [
+  "742bbe0828a719f4",
+  "7c40d56e02f245f2"
+ ],
+ "beir_bright_leetcode_3": [
+  "8c83be18293e2b65",
+  "d5b66998dfa5738c"
+ ],
+ "beir_bright_leetcode_30": [
+  "097eed52cc24ad25",
+  "fd5815105746c911",
+  "fdbfe4d6d21ba91e"
+ ],
+ "beir_bright_leetcode_31": [
+  "5f7a9c4ab783b71b",
+  "fef7c24acddd1166"
+ ],
+ "beir_bright_leetcode_32": [
+  "ba89c5d8000193d3"
+ ],
+ "beir_bright_leetcode_33": [
+  "2617d245ce1201bb",
+  "3aca5111c8e1f507",
+  "9bdd775f93de2d42",
+  "b5c28ae0cbca49ed"
+ ],
+ "beir_bright_leetcode_34": [
+  "077343eebd3b4366",
+  "6b84c10459f4c38e",
+  "9a3fc2979d79b600"
+ ],
+ "beir_bright_leetcode_35": [
+  "49f991390486580f"
+ ],
+ "beir_bright_leetcode_36": [
+  "060bb235ee8c2796"
+ ],
+ "beir_bright_leetcode_37": [
+  "f8384a21ff94fafd"
+ ],
+ "beir_bright_leetcode_38": [
+  "8a3593f3f04a06db",
+  "8efdffeca5e1cf45",
+  "92fc96f348bd381e"
+ ],
+ "beir_bright_leetcode_39": [
+  "1e78fe55be8bbe81"
+ ],
+ "beir_bright_leetcode_4": [
+  "75a3910dc51224ed"
+ ],
+ "beir_bright_leetcode_40": [
+  "772171ccd1e0c3eb"
+ ],
+ "beir_bright_leetcode_41": [
+  "039bfc88da3c2db1",
+  "4ac316b13fb507fc",
+  "4c60bc9c6722a906"
+ ],
+ "beir_bright_leetcode_42": [
+  "0a09316e87f725c3",
+  "26ca8e80143e6450"
+ ],
+ "beir_bright_leetcode_43": [
+  "52e65c44616b0f0c",
+  "7f9249aa672834e0"
+ ],
+ "beir_bright_leetcode_44": [
+  "2392fb2f398e0e94"
+ ],
+ "beir_bright_leetcode_45": [
+  "affe45228ba3b7de"
+ ],
+ "beir_bright_leetcode_46": [
+  "514ca380402b5792",
+  "bdfc8dfabd91b91f",
+  "d6511cd061c5abdc"
+ ],
+ "beir_bright_leetcode_47": [
+  "3da13939ebcaa133"
+ ],
+ "beir_bright_leetcode_48": [
+  "6c3ba18b04d7e65f"
+ ],
+ "beir_bright_leetcode_49": [
+  "0bc4298943519b35",
+  "6afd608f4a0cb713"
+ ],
+ "beir_bright_leetcode_5": [
+  "70e243077b0254f1",
+  "ab7b1bb3c490f492",
+  "bca8cc35dbe8e8a0",
+  "ed4d08841db1d5b5"
+ ],
+ "beir_bright_leetcode_50": [
+  "001a0577ebd8e029",
+  "3cdaf3f5927fdad3",
+  "a313f5bd96cb4d77",
+  "cb17db29be1e424a"
+ ],
+ "beir_bright_leetcode_51": [
+  "f108a745165cdca6"
+ ],
+ "beir_bright_leetcode_52": [
+  "60581c941f7d5840"
+ ],
+ "beir_bright_leetcode_53": [
+  "0ba9212e713f7bb8",
+  "4272d1f28ab7138b",
+  "a469dbdcb6265977"
+ ],
+ "beir_bright_leetcode_54": [
+  "077343eebd3b4366",
+  "514e9372be705278"
+ ],
+ "beir_bright_leetcode_55": [
+  "591ff809fa3a9684"
+ ],
+ "beir_bright_leetcode_56": [
+  "71b5e099d2e26682"
+ ],
+ "beir_bright_leetcode_57": [
+  "98cf5627b27262b9"
+ ],
+ "beir_bright_leetcode_58": [
+  "3477f2ac36ebf58c",
+  "65e63e77827aad10",
+  "889bdf50f0f1719e",
+  "9d6ad235667f6be8",
+  "b84ebf4ca5825f08"
+ ],
+ "beir_bright_leetcode_59": [
+  "39cae0482c1064ff"
+ ],
+ "beir_bright_leetcode_6": [
+  "467ac006398399db",
+  "70e243077b0254f1",
+  "bca8cc35dbe8e8a0",
+  "e6bb0ba5c0f54646",
+  "ed4d08841db1d5b5"
+ ],
+ "beir_bright_leetcode_60": [
+  "13d770527891ba0c"
+ ],
+ "beir_bright_leetcode_61": [
+  "6278186f99e82954"
+ ],
+ "beir_bright_leetcode_62": [
+  "3477f2ac36ebf58c",
+  "65e63e77827aad10",
+  "889bdf50f0f1719e",
+  "9d6ad235667f6be8",
+  "b84ebf4ca5825f08"
+ ],
+ "beir_bright_leetcode_63": [
+  "8345818f9fc6cc23"
+ ],
+ "beir_bright_leetcode_64": [
+  "0caabfba10d02241"
+ ],
+ "beir_bright_leetcode_65": [
+  "03607b3ba3444cfb",
+  "a527a6b889cf4a22"
+ ],
+ "beir_bright_leetcode_66": [
+  "52e65c44616b0f0c"
+ ],
+ "beir_bright_leetcode_67": [
+  "3477f2ac36ebf58c",
+  "65e63e77827aad10",
+  "889bdf50f0f1719e",
+  "9d6ad235667f6be8",
+  "b84ebf4ca5825f08"
+ ],
+ "beir_bright_leetcode_68": [
+  "24aa7d2d3c7e1ce1"
+ ],
+ "beir_bright_leetcode_69": [
+  "1624ea299b191438"
+ ],
+ "beir_bright_leetcode_7": [
+  "cafc0d7402dd3a2a",
+  "cbe4597dbb59f21a"
+ ],
+ "beir_bright_leetcode_70": [
+  "23ddffdf90beb0d7"
+ ],
+ "beir_bright_leetcode_71": [
+  "73479b58fbbaf17c",
+  "c488c5fe10e7203b"
+ ],
+ "beir_bright_leetcode_72": [
+  "4afc2ab4c6cd8b61",
+  "7b087803169f845f"
+ ],
+ "beir_bright_leetcode_73": [
+  "4724cd4770caa714"
+ ],
+ "beir_bright_leetcode_74": [
+  "45500c6277e2f2fa"
+ ],
+ "beir_bright_leetcode_75": [
+  "021797ed5b96d021",
+  "b430d2c70e8b11a3",
+  "ce7eb4c77411bd05"
+ ],
+ "beir_bright_leetcode_76": [
+  "0255c1919ece8dd7"
+ ],
+ "beir_bright_leetcode_77": [
+  "f5bee83ea943c88f"
+ ],
+ "beir_bright_leetcode_78": [
+  "7956a96f1ef513b6"
+ ],
+ "beir_bright_leetcode_79": [
+  "5178968571db2781",
+  "993278613136c656"
+ ],
+ "beir_bright_leetcode_8": [
+  "9018b03256ea9ebf"
+ ],
+ "beir_bright_leetcode_80": [
+  "4c4e372de4d7eb43",
+  "6cfc9139b3291435",
+  "9400a60b205e888e",
+  "c73395721d7d4f8c"
+ ],
+ "beir_bright_leetcode_81": [
+  "01da321a0ea1805d",
+  "52e65c44616b0f0c"
+ ],
+ "beir_bright_leetcode_82": [
+  "4cf25a906081ffb8"
+ ],
+ "beir_bright_leetcode_83": [
+  "963136a44839d9cc",
+  "b711a17710299586"
+ ],
+ "beir_bright_leetcode_84": [
+  "cbe4597dbb59f21a"
+ ],
+ "beir_bright_leetcode_85": [
+  "6cad500aa88790c9"
+ ],
+ "beir_bright_leetcode_86": [
+  "cbe4597dbb59f21a"
+ ],
+ "beir_bright_leetcode_87": [
+  "d0d0af034de55566",
+  "f1cbab8facf33783"
+ ],
+ "beir_bright_leetcode_88": [
+  "926715758f02188d",
+  "dd0494d79254879b"
+ ],
+ "beir_bright_leetcode_89": [
+  "2de1f4b98e829cc1"
+ ],
+ "beir_bright_leetcode_9": [
+  "e93514c70a2e8acb"
+ ],
+ "beir_bright_leetcode_90": [
+  "11cdd9a421b819f4",
+  "13d770527891ba0c",
+  "6645f67fe0e174dc"
+ ],
+ "beir_bright_leetcode_91": [
+  "e7c4b70ba43f7ae6"
+ ],
+ "beir_bright_leetcode_92": [
+  "3d246912a8f819d5",
+  "a848def9ee00ead9",
+  "e9fb25d0fe19e7b2"
+ ],
+ "beir_bright_leetcode_93": [
+  "f6efb98ce777ed18"
+ ],
+ "beir_bright_leetcode_94": [
+  "9400a60b205e888e",
+  "ce946b89f41f9d30",
+  "e280168911620cbe"
+ ],
+ "beir_bright_leetcode_95": [
+  "05021f323ba4be4e",
+  "8cbe6afab56ec3c4"
+ ],
+ "beir_bright_leetcode_96": [
+  "09a4325e5452bb83",
+  "79b5c1cf823d5ba0",
+  "d87031efa12177f0"
+ ],
+ "beir_bright_leetcode_97": [
+  "60581c941f7d5840"
+ ],
+ "beir_bright_leetcode_98": [
+  "2617d245ce1201bb",
+  "28ddad362ae74a26",
+  "878ffcf8aefb0ae7",
+  "bca8cc35dbe8e8a0"
+ ],
+ "beir_bright_leetcode_99": [
+  "9d03135da3f3a3ac"
+ ]
+}

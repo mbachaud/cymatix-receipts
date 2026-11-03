@@ -1,0 +1,12 @@
+18:03:23 INFO    [4509 files, 4544 genes] 104.3 genes/s
+18:03:28 INFO    [5017 files, 5056 genes] 105.5 genes/s
+18:03:29 INFO    ============================================================
+18:03:29 INFO    DONE beir_scifact (parallel) in 49.3s
+18:03:29 INFO      files=5183 genes=5222 skipped=0 errors=0
+18:03:29 INFO      total_genes=5222 harmonic_links=0 bytes=39321600
+18:03:29 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_scifact_bed/beir_scifact.db
+18:03:29 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_scifact_bed/beir_scifact.db
+18:03:29 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_scifact_bed/manifest.json (key=beir_scifact)
+18:03:29 INFO    ============================================================
+18:03:29 INFO    SUMMARY (blob)
+18:03:29 INFO      beir_scifact genes=5222 bytes=39366656 elapsed=49.3s (files=5183 errors=0 missing=0)

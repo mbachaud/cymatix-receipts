@@ -1,9 +1,18 @@
 {
-  "generated_at": "2026-10-09T20:28:00+00:00",
+  "generated_at": "2026-11-03T20:22:24+00:00",
   "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-  "file_count": 955,
-  "total_bytes": 702023991,
+  "file_count": 1304,
+  "total_bytes": 1329950539,
   "files": [
+    {
+      "path": "mirror/MIRROR.md",
+      "kind": "doc",
+      "bytes": 1574,
+      "sha256": "1e4a0e822640d4869d2ab536d1819df1262bec3a2314548a7d589470f2eee77a",
+      "source": "scripts/mirror_from_main.py",
+      "source_commit": null,
+      "stamp": null
+    },
     {
       "path": "mirror/benchmarks/dogfood/code/receipts/dogfood_baseline_beta_2026-09-04.json",
       "kind": "receipt",
@@ -1310,20 +1319,20 @@
       "stamp": null
     },
     {
-      "path": "mirror/benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.json",
-      "kind": "receipt",
-      "bytes": 6568,
-      "sha256": "852549421e284bae4f430c44d0135d7a14786cdd13d6274dee281d65fe1a2d43",
-      "source": "benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.json",
-      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-      "stamp": "2026-09-01"
-    },
-    {
       "path": "mirror/benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.NOTE.md",
       "kind": "doc",
       "bytes": 1243,
       "sha256": "aa05afa9e7108a5bddfcec685cec650524951167170043289a351745b0cf05c3",
       "source": "benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.NOTE.md",
+      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
+      "stamp": "2026-09-01"
+    },
+    {
+      "path": "mirror/benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.json",
+      "kind": "receipt",
+      "bytes": 6568,
+      "sha256": "852549421e284bae4f430c44d0135d7a14786cdd13d6274dee281d65fe1a2d43",
+      "source": "benchmarks/dogfood/erb/receipts/pool_depth_addendum_2026-09-01.json",
       "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
       "stamp": "2026-09-01"
     },
@@ -2804,6 +2813,15 @@
       "stamp": null
     },
     {
+      "path": "mirror/benchmarks/results/faithfulness/README.md",
+      "kind": "doc",
+      "bytes": 3898,
+      "sha256": "3fed51e9feb82211a621700360601f2a238aa68f8fc933d37b30739597f03236",
+      "source": "benchmarks/results/faithfulness/README.md",
+      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
+      "stamp": null
+    },
+    {
       "path": "mirror/benchmarks/results/faithfulness/expressed_contexts.json",
       "kind": "receipt",
       "bytes": 9958,
@@ -2872,15 +2890,6 @@
       "bytes": 4801,
       "sha256": "504a630cdc0e3043c6cf2129f9599821f58a81ff19b61c67d0b0f7e0d707385c",
       "source": "benchmarks/results/faithfulness/qwen_scaled.txt",
-      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-      "stamp": null
-    },
-    {
-      "path": "mirror/benchmarks/results/faithfulness/README.md",
-      "kind": "doc",
-      "bytes": 3898,
-      "sha256": "3fed51e9feb82211a621700360601f2a238aa68f8fc933d37b30739597f03236",
-      "source": "benchmarks/results/faithfulness/README.md",
       "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
       "stamp": null
     },
@@ -3524,20 +3533,20 @@
       "stamp": "2026-09-29"
     },
     {
-      "path": "mirror/docs/benchmarks/assets/crossbed_retrieval_2026-08-31.png",
-      "kind": "receipt",
-      "bytes": 197652,
-      "sha256": "644222279dec9b2de402bf77a2c11761aa46b9ca59782782da0f4d53d1301fb6",
-      "source": "docs/benchmarks/assets/crossbed_retrieval_2026-08-31.png",
-      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-      "stamp": "2026-08-31"
-    },
-    {
       "path": "mirror/docs/benchmarks/BASELINES.md",
       "kind": "doc",
       "bytes": 49477,
       "sha256": "e1f995bfb0ef2206bd61ae84d678aad5b66d42928ddf13795d28a7d33e4a0246",
       "source": "docs/benchmarks/BASELINES.md",
+      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
+      "stamp": null
+    },
+    {
+      "path": "mirror/docs/benchmarks/BENCHMARKS.md",
+      "kind": "doc",
+      "bytes": 40339,
+      "sha256": "254f2d2b6165c6cc70d20491f39b18936158062d483f6c9e923866cc6827998f",
+      "source": "docs/benchmarks/BENCHMARKS.md",
       "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
       "stamp": null
     },
@@ -3560,13 +3569,31 @@
       "stamp": null
     },
     {
-      "path": "mirror/docs/benchmarks/BENCHMARKS.md",
+      "path": "mirror/docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
       "kind": "doc",
-      "bytes": 40339,
-      "sha256": "254f2d2b6165c6cc70d20491f39b18936158062d483f6c9e923866cc6827998f",
-      "source": "docs/benchmarks/BENCHMARKS.md",
+      "bytes": 13612,
+      "sha256": "c1d47e49c37c20d86f178096f1da5a7720f1bd1e2cd24a26e7f0a3e573260f32",
+      "source": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
       "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
       "stamp": null
+    },
+    {
+      "path": "mirror/docs/benchmarks/MULTI_VALID_GOLD.md",
+      "kind": "doc",
+      "bytes": 22733,
+      "sha256": "5d3cdf698d8204b41fa5a7a906b7eef85c6814ac7d9bd4210cbe0d4c05ffd0e3",
+      "source": "docs/benchmarks/MULTI_VALID_GOLD.md",
+      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
+      "stamp": null
+    },
+    {
+      "path": "mirror/docs/benchmarks/assets/crossbed_retrieval_2026-08-31.png",
+      "kind": "receipt",
+      "bytes": 197652,
+      "sha256": "644222279dec9b2de402bf77a2c11761aa46b9ca59782782da0f4d53d1301fb6",
+      "source": "docs/benchmarks/assets/crossbed_retrieval_2026-08-31.png",
+      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
+      "stamp": "2026-08-31"
     },
     {
       "path": "mirror/docs/benchmarks/code-track-regression-log.md",
@@ -4033,24 +4060,6 @@
       "bytes": 4638,
       "sha256": "9cdc180c007907f8e374a8b68f928c576b1c02951c3383ec152391b25be17c86",
       "source": "docs/benchmarks/data/eval_located_union_full_rrf.json",
-      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-      "stamp": null
-    },
-    {
-      "path": "mirror/docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
-      "kind": "doc",
-      "bytes": 13612,
-      "sha256": "c1d47e49c37c20d86f178096f1da5a7720f1bd1e2cd24a26e7f0a3e573260f32",
-      "source": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
-      "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
-      "stamp": null
-    },
-    {
-      "path": "mirror/docs/benchmarks/MULTI_VALID_GOLD.md",
-      "kind": "doc",
-      "bytes": 22733,
-      "sha256": "5d3cdf698d8204b41fa5a7a906b7eef85c6814ac7d9bd4210cbe0d4c05ffd0e3",
-      "source": "docs/benchmarks/MULTI_VALID_GOLD.md",
       "source_commit": "e3825e4b0463069e5d23f4d0a9f429f9ba7d651e",
       "stamp": null
     },
@@ -4685,13 +4694,13 @@
       "stamp": "2026-07-16"
     },
     {
-      "path": "mirror/MIRROR.md",
-      "kind": "doc",
-      "bytes": 1574,
-      "sha256": "1e4a0e822640d4869d2ab536d1819df1262bec3a2314548a7d589470f2eee77a",
-      "source": "scripts/mirror_from_main.py",
+      "path": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
+      "kind": "research",
+      "bytes": 4849,
+      "sha256": "306038eacdd8bd8b5dadc753208a1ce37e9b282e1ef76dc9a90c41e68ca7d9da",
+      "source": "F:/Projects/cymatix-context/research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
       "source_commit": null,
-      "stamp": null
+      "stamp": "2026-08-31"
     },
     {
       "path": "research-inbox/2026-08-31-basic-miss-taxonomy.json",
@@ -4744,15 +4753,6 @@
       "bytes": 5022,
       "sha256": "05f7c35129d0edfc9f63b2c8b979dea88f3908fff72c85be7c931fe5fb7dbea1",
       "source": "F:/Projects/cymatix-context/research-inbox/2026-08-31-sol-deterministic-representation-plan.md",
-      "source_commit": null,
-      "stamp": "2026-08-31"
-    },
-    {
-      "path": "research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
-      "kind": "research",
-      "bytes": 4849,
-      "sha256": "306038eacdd8bd8b5dadc753208a1ce37e9b282e1ef76dc9a90c41e68ca7d9da",
-      "source": "F:/Projects/cymatix-context/research-inbox/2026-08-31-SYNTHESIS-representation-campaign.md",
       "source_commit": null,
       "stamp": "2026-08-31"
     },
@@ -4892,6 +4892,15 @@
       "stamp": null
     },
     {
+      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/README.md",
+      "kind": "research",
+      "bytes": 517,
+      "sha256": "e2a6543579550c1b0785209490baa56185e109cc21c0a069cca17ae7d52ae660",
+      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/README.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
       "path": "research-inbox/docs-reviews/2026-05-16-deep-review/pipeline-01-ingest.md",
       "kind": "research",
       "bytes": 18056,
@@ -4919,15 +4928,6 @@
       "stamp": null
     },
     {
-      "path": "research-inbox/docs-reviews/2026-05-16-deep-review/README.md",
-      "kind": "research",
-      "bytes": 517,
-      "sha256": "e2a6543579550c1b0785209490baa56185e109cc21c0a069cca17ae7d52ae660",
-      "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/README.md",
-      "source_commit": null,
-      "stamp": null
-    },
-    {
       "path": "research-inbox/docs-reviews/2026-05-16-deep-review/research-ingest-data-processing.md",
       "kind": "research",
       "bytes": 30442,
@@ -4942,6 +4942,15 @@
       "bytes": 38625,
       "sha256": "27967a55c50d67b0fde1f0fd62c67f57fa0dbaa8f383709fe146373709b23251",
       "source": "F:/Projects/cymatix-context/docs/reviews/2026-05-16-deep-review/research-kv-tagging.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/SOURCE.md",
+      "kind": "doc",
+      "bytes": 1793,
+      "sha256": "682555da5e684f19ddcda667db4bb624ab65c0031d772145b3b3f1a913ec153e",
+      "source": "hand-written provenance note",
       "source_commit": null,
       "stamp": null
     },
@@ -6422,6 +6431,33 @@
       "stamp": "2026-10-07"
     },
     {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_v0112_merged_witness_947k_2026-10-09.json",
+      "kind": "receipt",
+      "bytes": 1794687,
+      "sha256": "d5194db946eda8d63330d77b6e53aca5e1a5c369af42145298ea945b420421bd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/ladder_v0112_merged_witness_947k_2026-10-09.json",
+      "source_commit": null,
+      "stamp": "2026-10-09"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_v0113_merged_witness_trace_947k_2026-10-11.json",
+      "kind": "receipt",
+      "bytes": 1794723,
+      "sha256": "5d77f607c5835dc51d863f6c3e27ba8d5fb519c0162a344ad72c969350189a50",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/ladder_v0113_merged_witness_trace_947k_2026-10-11.json",
+      "source_commit": null,
+      "stamp": "2026-10-11"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/erb/receipts/ladder_v0114_merged_witness_trace_947k_2026-10-26.json",
+      "kind": "receipt",
+      "bytes": 2129217,
+      "sha256": "435abdcecfbf0fd5fe356c29f5d63eee07c3b2c41863e9f47f8f0417ccb26677",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/erb/receipts/ladder_v0114_merged_witness_trace_947k_2026-10-26.json",
+      "source_commit": null,
+      "stamp": "2026-10-26"
+    },
+    {
       "path": "untracked/benchmarks/dogfood/financebench/receipts/know_replay_financebench_2026-10-04.json",
       "kind": "receipt",
       "bytes": 180619,
@@ -6890,6 +6926,2283 @@
       "stamp": "2026-10-05"
     },
     {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/README.md",
+      "kind": "doc",
+      "bytes": 5145,
+      "sha256": "f5142e69fc6860f4e135276c08e32ffafe2f2591fb2c61aa73a018337229c7d3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/README.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/SUMMARY.json",
+      "kind": "receipt",
+      "bytes": 7442,
+      "sha256": "e520fc9bef3e3250339440c82a9a3ae227ecb73207d8e132228395592c3ea56e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/SUMMARY.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/TABLE.md",
+      "kind": "doc",
+      "bytes": 2465,
+      "sha256": "2c16df72c58dbcadf2c9805599333c175372f4f2f3dbb10acce307e0da4af0c1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/TABLE.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1274,
+      "sha256": "fe471c878e31ae0da5642cf70c4ef43792929aa7c297b05ee2e873289566b867",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/beir_ndcg_beir_arguana_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 292250,
+      "sha256": "a90b21611f5952851ec08e143fac0a8270ce72d5475b557333b301d34ea6f52d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/beir_ndcg_beir_arguana_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 947,
+      "sha256": "71147dd0feaa8a05ac8089611abeaba4d407b2941178e7498444ea32b91032fd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1255,
+      "sha256": "11ecc93299db1c5137b12d309fafb928ee9d75ca847c998c852cb21bf33fb77d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/beir_ndcg_beir_arguana_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 292266,
+      "sha256": "9750238fe702ab74cae9e9c818617d478f03dd9a894a8127d13de6c8c82f6922",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/beir_ndcg_beir_arguana_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 971,
+      "sha256": "d74b63d37c066772b2338f3bf3983f75d658aa193d09baec0269a064d030ab9f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/gold_by_needle_beir_arguana.json",
+      "kind": "receipt",
+      "bytes": 107511,
+      "sha256": "640636358b42b135b818f5e55c9cb9894382946910475254af89f659b9a79e0d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/gold_by_needle_beir_arguana.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/ladder_beir_arguana_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 9004945,
+      "sha256": "4838e6493635bf1749d42c1e22726352b2d3e79da1884fb5ef2f34acc6058498",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/ladder_beir_arguana_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/needles_resolved_beir_arguana_full.json",
+      "kind": "receipt",
+      "bytes": 1848653,
+      "sha256": "c78e831d0f67d1b9f459aa3d6b90c0d427ac2deca875012a542cae43e1ae78bc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/floor50/needles_resolved_beir_arguana_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/gold_by_needle_beir_arguana.json",
+      "kind": "receipt",
+      "bytes": 107511,
+      "sha256": "640636358b42b135b818f5e55c9cb9894382946910475254af89f659b9a79e0d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/gold_by_needle_beir_arguana.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/ladder_beir_arguana_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 9004691,
+      "sha256": "3284867cb42e2c308f0398ece0b1641ff9c3ba9429ce27a686b31cfb89febb24",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/ladder_beir_arguana_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/needles_resolved_beir_arguana_full.json",
+      "kind": "receipt",
+      "bytes": 1848653,
+      "sha256": "c78e831d0f67d1b9f459aa3d6b90c0d427ac2deca875012a542cae43e1ae78bc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_arguana/needles_resolved_beir_arguana_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/beir_ndcg_beir_cqadupstack_android_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 136291,
+      "sha256": "9596b6ebf77409e51e2072a46f02ceffee4f9f6553072e8d0636d4c600d9e9e8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/beir_ndcg_beir_cqadupstack_android_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1063,
+      "sha256": "1805e2cdf74a631845c6a9700a06159f7a4c2be44560e38bff89c4bfb12df71d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/gold_by_needle_beir_cqadupstack_android.json",
+      "kind": "receipt",
+      "bytes": 65193,
+      "sha256": "acce1f992c15e95a1253083bf5bb32bb8c94879eb8bbb5cfb163eea4b76d4a57",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/gold_by_needle_beir_cqadupstack_android.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/ladder_beir_cqadupstack_android_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 4475324,
+      "sha256": "d0fee99decc9f385be83b263142228adc1a4da8918665e9e25c1fbc5960f76fb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/ladder_beir_cqadupstack_android_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/needles_resolved_beir_cqadupstack_android_full.json",
+      "kind": "receipt",
+      "bytes": 117949,
+      "sha256": "8cfcc4e2597f42896c2bbe6087a70e1b0615fc69b534bf3608b7a96aa7f6e8f0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_android/needles_resolved_beir_cqadupstack_android_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/beir_ndcg_beir_cqadupstack_english_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 304035,
+      "sha256": "9c9d20f2725ece1c2ee0dbb94fefd350e8eaf05e148aaaba57a14a2db598e7e8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/beir_ndcg_beir_cqadupstack_english_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1056,
+      "sha256": "580be16bb7aa1c97a6045808f5693115a8c7d3643784f2ea992c7cfd45d0c19d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/gold_by_needle_beir_cqadupstack_english.json",
+      "kind": "receipt",
+      "bytes": 146146,
+      "sha256": "ff86ed4d5797217eaebe94e3ac56e1e700bff41d869a025c79c848bfc6ca9a47",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/gold_by_needle_beir_cqadupstack_english.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/ladder_beir_cqadupstack_english_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 9812250,
+      "sha256": "dd5aaa0297554efcd02ba2c8f9fbda34a84ea74ce341504e476c8ae86cb98218",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/ladder_beir_cqadupstack_english_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/needles_resolved_beir_cqadupstack_english_full.json",
+      "kind": "receipt",
+      "bytes": 263054,
+      "sha256": "f229dd5d4ba94d6667efb2d9eef2796cdd24d943730082512c957969aba42d88",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_english/needles_resolved_beir_cqadupstack_english_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/beir_ndcg_beir_cqadupstack_gaming_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 308744,
+      "sha256": "f01e0441a477c73a2586f92e8ed22539b674d6ffe46307bcb2e2f02edd9c25fb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/beir_ndcg_beir_cqadupstack_gaming_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1048,
+      "sha256": "7ca68f4d1e4070841df6d008f548d45b3d174db70ffe1bdd8782bb0ccd0849c5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/gold_by_needle_beir_cqadupstack_gaming.json",
+      "kind": "receipt",
+      "bytes": 112746,
+      "sha256": "20ebeb2c4a2ef33eefcc6833bedcb88b02fdc8497082e7456cd33c2cb7b05018",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/gold_by_needle_beir_cqadupstack_gaming.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/ladder_beir_cqadupstack_gaming_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 10177726,
+      "sha256": "354e4f307874da66ab3b92349dcd702940c0f09d26f2374d79bc43b0d5a1d6ca",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/ladder_beir_cqadupstack_gaming_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/needles_resolved_beir_cqadupstack_gaming_full.json",
+      "kind": "receipt",
+      "bytes": 261965,
+      "sha256": "83201b20c713bb7f810e992968f2ce6dac6ef4694545220f0dd43a4c6bde5348",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gaming/needles_resolved_beir_cqadupstack_gaming_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/beir_ndcg_beir_cqadupstack_gis_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 166609,
+      "sha256": "9fb23c03a2b17e8553b145735903e4acf0dd5cbb4db984ce1293b26766cc6cb9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/beir_ndcg_beir_cqadupstack_gis_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1024,
+      "sha256": "33947987a8218f27690b699cd489072cae691281ee03d16e669b3ad5ca4d4149",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/gold_by_needle_beir_cqadupstack_gis.json",
+      "kind": "receipt",
+      "bytes": 57138,
+      "sha256": "89466c3713d77474b261427d1a8cc7a625837f5a886da957ff54715aa746aeed",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/gold_by_needle_beir_cqadupstack_gis.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/ladder_beir_cqadupstack_gis_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 5550619,
+      "sha256": "06d81a0caf6a5f05043f501a1efe0cbc3cf385ed503dc103a55055c96021cc90",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/ladder_beir_cqadupstack_gis_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/needles_resolved_beir_cqadupstack_gis_full.json",
+      "kind": "receipt",
+      "bytes": 142711,
+      "sha256": "ba6648fafad996318deac02737e559a8b9f46bad2bd897ad3d2b7d375c3f13a6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_gis/needles_resolved_beir_cqadupstack_gis_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/beir_ndcg_beir_cqadupstack_mathematica_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 158147,
+      "sha256": "b7bd5599b462e8279897f52071138f98c723aa7ef3efb2ffd4490a3698c774e4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/beir_ndcg_beir_cqadupstack_mathematica_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1095,
+      "sha256": "e8aa931cb353b7568d4d09225085d0c3c91777911596c87de71403fed26da65e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/gold_by_needle_beir_cqadupstack_mathematica.json",
+      "kind": "receipt",
+      "bytes": 65690,
+      "sha256": "59879b9f0f9151e0a9e6b70cf301269e5a3b30f0f0cf246e888a8e4a561da8ad",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/gold_by_needle_beir_cqadupstack_mathematica.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/ladder_beir_cqadupstack_mathematica_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 5043334,
+      "sha256": "289ab32a26e37a0dc3082d3a4af22f014c874859694fd3f1aede6d83df759f7c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/ladder_beir_cqadupstack_mathematica_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/needles_resolved_beir_cqadupstack_mathematica_full.json",
+      "kind": "receipt",
+      "bytes": 139715,
+      "sha256": "0cd3b4d4f0df9b760a7b52fa167486211576f18a1a9b4efc1f4e54f66f0c7dfb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_mathematica/needles_resolved_beir_cqadupstack_mathematica_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/beir_ndcg_beir_cqadupstack_physics_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 201990,
+      "sha256": "6e9750c0ddc714d8a50dba12c2a6ccd6173598260189408b354a3f3135d54fbc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/beir_ndcg_beir_cqadupstack_physics_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1056,
+      "sha256": "2b404c8d94bbc417791751c1eb10bb5afe4a57556eea695bd8c690035168e167",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/gold_by_needle_beir_cqadupstack_physics.json",
+      "kind": "receipt",
+      "bytes": 84388,
+      "sha256": "d02e7d1d1508aec0f84775e5829c216e0cdf27cd7a394d1768ce4052aa532945",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/gold_by_needle_beir_cqadupstack_physics.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/ladder_beir_cqadupstack_physics_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 6538493,
+      "sha256": "11a2307dc58048285b9840e3ab1e61c5b5507bcdf69e3a6659034323538b4910",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/ladder_beir_cqadupstack_physics_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/needles_resolved_beir_cqadupstack_physics_full.json",
+      "kind": "receipt",
+      "bytes": 177260,
+      "sha256": "c3af7e61e306e4520fa86c0306eafc84753ad45e0e385781fa71b96c18225f1a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_physics/needles_resolved_beir_cqadupstack_physics_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/beir_ndcg_beir_cqadupstack_programmers_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 173295,
+      "sha256": "54524eb1dd82fa6ed08774c607877ce1d59be4e1d4b8bd26598f06e22fb5b8df",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/beir_ndcg_beir_cqadupstack_programmers_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1088,
+      "sha256": "0c7dacd6c3c7c3b6ad0cbcba93b2f3afa89557896334e0848480738f68b2c4c7",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/gold_by_needle_beir_cqadupstack_programmers.json",
+      "kind": "receipt",
+      "bytes": 76604,
+      "sha256": "1cbdcfb961f6209cc028d425465a1f72cd84804a24ead8250965d6009e0d7648",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/gold_by_needle_beir_cqadupstack_programmers.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/ladder_beir_cqadupstack_programmers_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 5489704,
+      "sha256": "198d01bdc0d7ecd9e8eaf4944c5bf72fee3a4acea2f581a0305a030717449b1a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/ladder_beir_cqadupstack_programmers_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/needles_resolved_beir_cqadupstack_programmers_full.json",
+      "kind": "receipt",
+      "bytes": 158488,
+      "sha256": "b0885e3c30d76e9f82e853be3c7723c6d3847cb5f5fabd0941d5568eca7a840d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_programmers/needles_resolved_beir_cqadupstack_programmers_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/beir_ndcg_beir_cqadupstack_stats_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 124235,
+      "sha256": "26306847cac49d6b97977b47b751c57e61323bb00599259c51496f72b7e3e516",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/beir_ndcg_beir_cqadupstack_stats_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1040,
+      "sha256": "f7ef66fc3809ec9aeca0bcc1ea8556fe3253fdb5e43f7feaa1db75a6a2b5ab0b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/gold_by_needle_beir_cqadupstack_stats.json",
+      "kind": "receipt",
+      "bytes": 45237,
+      "sha256": "e1f01be4d2d5544dddaad3dd5143a7c0c1fcf218165049ee2bc4e8638ef62f47",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/gold_by_needle_beir_cqadupstack_stats.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/ladder_beir_cqadupstack_stats_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 4068508,
+      "sha256": "6a4a9b0ec574aba50812872821348689d9d13552b896f97826fb8fa03ea73df6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/ladder_beir_cqadupstack_stats_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/needles_resolved_beir_cqadupstack_stats_full.json",
+      "kind": "receipt",
+      "bytes": 110470,
+      "sha256": "f516db68159abc3fbb7f0aac58617d696f03e4a37f5635579f6a90b9e2761524",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_stats/needles_resolved_beir_cqadupstack_stats_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/beir_ndcg_beir_cqadupstack_tex_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 546117,
+      "sha256": "d87b44216313dbe6b806d2b4de4324ce8cef6f8776faf7f194e33d0a67eb75c9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/beir_ndcg_beir_cqadupstack_tex_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1024,
+      "sha256": "1a18ea0f5bf954a9501dcb91bfff3cb378aa64aaf49e3468d5bca2f9ac55f571",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/gold_by_needle_beir_cqadupstack_tex.json",
+      "kind": "receipt",
+      "bytes": 224088,
+      "sha256": "5f1a224a70345c9e79da02be2a46dbbe9583b082f8b46dcc964be7ebb4be6af9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/gold_by_needle_beir_cqadupstack_tex.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/ladder_beir_cqadupstack_tex_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 18111543,
+      "sha256": "8db53ed0bd0a25d3182cc36e1f31d075e286f6d39aa9d5fe5b813e2b308f4481",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/ladder_beir_cqadupstack_tex_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/needles_resolved_beir_cqadupstack_tex_full.json",
+      "kind": "receipt",
+      "bytes": 454928,
+      "sha256": "449fcca1062f58f44bf9e01d2c151b4fa70bf57bb923de53726b9f5b34ccc10d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_tex/needles_resolved_beir_cqadupstack_tex_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/beir_ndcg_beir_cqadupstack_unix_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 202954,
+      "sha256": "1566dfd51e52b3a022db43a9c4a2134ec64d52bd06f5dd800eee63d4ff23311f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/beir_ndcg_beir_cqadupstack_unix_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1032,
+      "sha256": "1efa7b533cb99ae06ef81d310b292cdd5ed1d676fcc126818f8a7fc34cd7a00e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/gold_by_needle_beir_cqadupstack_unix.json",
+      "kind": "receipt",
+      "bytes": 78033,
+      "sha256": "0c1b12198601b24db42fc4e5e99c7df078a2c8b859648e03c2875a803a9771c0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/gold_by_needle_beir_cqadupstack_unix.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/ladder_beir_cqadupstack_unix_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 6692282,
+      "sha256": "3e921be86f6ca2ee8a243d9003f07073a73dc0de81b8439c8bf22faa31d57588",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/ladder_beir_cqadupstack_unix_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/needles_resolved_beir_cqadupstack_unix_full.json",
+      "kind": "receipt",
+      "bytes": 173267,
+      "sha256": "0c9f6bb46824dbac4dbbd20fd948cd7b952fe9700422038fcb3ba3abc5be8541",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_unix/needles_resolved_beir_cqadupstack_unix_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/beir_ndcg_beir_cqadupstack_webmasters_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 99769,
+      "sha256": "ce7d49408300b62bd4fef210968a8175ccbcfbe19d429d77700dcab1c14a1ac6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/beir_ndcg_beir_cqadupstack_webmasters_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1087,
+      "sha256": "4a8f6cec06d6aca8ac2030defcf19c09f8bb01ad0bcec55b3499396b28022312",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/gold_by_needle_beir_cqadupstack_webmasters.json",
+      "kind": "receipt",
+      "bytes": 52463,
+      "sha256": "f05c10db170359bf7995f03d05a018ef17f15e5debff797282212dd4e34d6b7f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/gold_by_needle_beir_cqadupstack_webmasters.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/ladder_beir_cqadupstack_webmasters_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 3223672,
+      "sha256": "510b484754a7b6c66d2dc3c9b093e8e071b5f29ab1437872734d34617eee5696",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/ladder_beir_cqadupstack_webmasters_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/needles_resolved_beir_cqadupstack_webmasters_full.json",
+      "kind": "receipt",
+      "bytes": 88485,
+      "sha256": "5c5a21c72730bef8d6c794eb7e4981459ccbcff5000b01e6572406986be043f4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_webmasters/needles_resolved_beir_cqadupstack_webmasters_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/beir_ndcg_beir_cqadupstack_wordpress_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 105200,
+      "sha256": "fc01396fd993160fedb062ed88e3d67ca1483e4f35728ec3f6d1c81da7e4e62a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/beir_ndcg_beir_cqadupstack_wordpress_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1072,
+      "sha256": "1790f32e989e6599850c8a7086faaf0183383b89942470fccfddaffeb4106f45",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/gold_by_needle_beir_cqadupstack_wordpress.json",
+      "kind": "receipt",
+      "bytes": 40363,
+      "sha256": "c049fde38c74d0e0e685d454ae9ca6ee407df747e5a66f750b38c1781357e1bf",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/gold_by_needle_beir_cqadupstack_wordpress.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/ladder_beir_cqadupstack_wordpress_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 3387949,
+      "sha256": "381d97037ca38bfe375792dceccd41fc1c4e8b38b6c2f32f204f6abec8a2c3f2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/ladder_beir_cqadupstack_wordpress_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/needles_resolved_beir_cqadupstack_wordpress_full.json",
+      "kind": "receipt",
+      "bytes": 92053,
+      "sha256": "263da71b9a7db651c2a2b5391d99a19c58791b32764675f97c0f2f32414a6c06",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_cqadupstack_wordpress/needles_resolved_beir_cqadupstack_wordpress_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1264,
+      "sha256": "c7779a8ca2d109056e0b1559907a1956126fcc36acc53be78f254f781c26e3fa",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/beir_ndcg_beir_fiqa_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 117528,
+      "sha256": "8eee54d2e0c81ef153a8909ca2680e0ac99794ec72c509ae4b0c20737e46ba1e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/beir_ndcg_beir_fiqa_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 937,
+      "sha256": "e676b5bb880debcfcb4450dc03fd7bc27506a59a4853182063a871550be0fd47",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1246,
+      "sha256": "c04e54d2d562166c003f630fe6f5df77e214afa3ac73b6004c0ba2cec4e29744",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/beir_ndcg_beir_fiqa_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 117560,
+      "sha256": "92f2cede8d3be626f35cc731402510ccbcec8d495272847112600f78acf0351b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/beir_ndcg_beir_fiqa_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 962,
+      "sha256": "6fb40879553308631bc068c5abe5f9450dfc3e055f989ee3762370911e60416f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/gold_by_needle_beir_fiqa.json",
+      "kind": "receipt",
+      "bytes": 53489,
+      "sha256": "a9c081c271a391551d8c97ccee46b6c658ac49acb59de74ff2fc4f95a62372b0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/gold_by_needle_beir_fiqa.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/ladder_beir_fiqa_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 4090749,
+      "sha256": "90794b6297ff6c0bb502bc3a46e4f95c307ae1054a41043a5930da19aab6a136",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/ladder_beir_fiqa_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/needles_resolved_beir_fiqa_full.json",
+      "kind": "receipt",
+      "bytes": 96506,
+      "sha256": "cd7db5feb05be468d1c446579484ee8379f3021ec1c5d0f89af7d00d6327e152",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/floor50/needles_resolved_beir_fiqa_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/gold_by_needle_beir_fiqa.json",
+      "kind": "receipt",
+      "bytes": 53577,
+      "sha256": "95f5f55207bef99e42259f9a55749ff1743ce278b6806fa2c836d1ae38935698",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/gold_by_needle_beir_fiqa.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/ladder_beir_fiqa_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 4090411,
+      "sha256": "6e005c3cd2c4305f13222fea695a4bf51f86bc2260789f32fdb500c88f0693e3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/ladder_beir_fiqa_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/needles_resolved_beir_fiqa_full.json",
+      "kind": "receipt",
+      "bytes": 96506,
+      "sha256": "cd7db5feb05be468d1c446579484ee8379f3021ec1c5d0f89af7d00d6327e152",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_fiqa/needles_resolved_beir_fiqa_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1279,
+      "sha256": "60f51e4ad910d5fdbf9d89b72613d93b26f699882acba7bf832157fc9a24d463",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/beir_ndcg_beir_nfcorpus_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 67656,
+      "sha256": "35c310bea68d0e22b23993f2041c6a7965174cef29b57040e76d90b82b7a0d99",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/beir_ndcg_beir_nfcorpus_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 953,
+      "sha256": "b962192870bacccb5d4e22611d5ecbecd2c648930faf23ee0f2c4380d4c863be",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/gold_by_needle_beir_nfcorpus.json",
+      "kind": "receipt",
+      "bytes": 282143,
+      "sha256": "b2d9370d6a59f36a7413ddb6a892340ba4398c1a9c591a8187602c4db50f2fde",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/gold_by_needle_beir_nfcorpus.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/ladder_beir_nfcorpus_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 2239565,
+      "sha256": "bd5ba60125851edc052cdfe3913fcdc9b0b30d78f744fcc0b6830fee0d9bbb52",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/ladder_beir_nfcorpus_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/needles_resolved_beir_nfcorpus_full.json",
+      "kind": "receipt",
+      "bytes": 39259,
+      "sha256": "cdeae2bafe0771cf6d1b2c149a43c17da283cce870b4f44a8f84bd47689c3eea",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_nfcorpus/needles_resolved_beir_nfcorpus_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/beir_ndcg_beir_quora_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 1820089,
+      "sha256": "0dc5bb7cf6894b86e9ba604ad9115b016b4494ebafa9eea1fca2c466b8812bc6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/beir_ndcg_beir_quora_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 955,
+      "sha256": "0340edbf3dab435ffff5042d57c440fd47611b2d6ae91c7dc2d918283bd05c87",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/gold_by_needle_beir_quora.json",
+      "kind": "receipt",
+      "bytes": 612579,
+      "sha256": "5a03dc6abb198b9e2fe04f850e86eb309dfad6436e6799757b5ac400d5a3fee2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/gold_by_needle_beir_quora.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/ladder_beir_quora_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 65571663,
+      "sha256": "85bc25b5e7bee62488e56a9fa3331fa70b3526f88821a576507253a172c61969",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/ladder_beir_quora_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/needles_resolved_beir_quora_full.json",
+      "kind": "receipt",
+      "bytes": 1413614,
+      "sha256": "ffa0cdb94f0b1d6bac3f8b6a0ce5a45ad35ddb0361ed80cea6a4af4ba028de9b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_quora/needles_resolved_beir_quora_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1281,
+      "sha256": "d7a22a90e81a64f677b4287439f5d1c504215505e2b6048878a76416644a2bf9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/beir_ndcg_beir_scidocs_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 217663,
+      "sha256": "7136dd0bc5e25a27bc45ee2798bfd5aa32b992d39203c816ddbda7ab336f7af5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/beir_ndcg_beir_scidocs_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 960,
+      "sha256": "cae19af01c155a3b879e2e41e17f21c7ee6d832d4ed5ca751641ab93175e65e8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1264,
+      "sha256": "d656222997b4cb693b7c505f1a24b8bacb74a8233215a1ae08e00dd3df5998ee",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/beir_ndcg_beir_scidocs_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 217680,
+      "sha256": "067839b2e37028b26cc598d7092d3cc483b338a0179f61dbc0f81341f41fcb19",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/beir_ndcg_beir_scidocs_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 986,
+      "sha256": "c46ea2022f04128f0a18703b0dbfff86eeec107318975c52c2273ff06d9626a6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/gold_by_needle_beir_scidocs.json",
+      "kind": "receipt",
+      "bytes": 171682,
+      "sha256": "a5d1adff73872b062fd0ffef59c91f2148bc755c855cb57763d43914bd615b31",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/gold_by_needle_beir_scidocs.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/ladder_beir_scidocs_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 6468815,
+      "sha256": "09b398ef2c97629e04ff098f0efd8fa9d6821f4881c55de327aecbe06857a5e4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/ladder_beir_scidocs_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/needles_resolved_beir_scidocs_full.json",
+      "kind": "receipt",
+      "bytes": 199742,
+      "sha256": "f2207babb37eaf9e35364b1586bf9ed07cb2d3aba187a9ea9daf3aef0d6cbcd9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/floor50/needles_resolved_beir_scidocs_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/gold_by_needle_beir_scidocs.json",
+      "kind": "receipt",
+      "bytes": 173772,
+      "sha256": "1f8ef6b17a568ce949ee920afc5a55be90127b3d699a79f0fef95db874646e28",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/gold_by_needle_beir_scidocs.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/ladder_beir_scidocs_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 6470693,
+      "sha256": "ea11f65bc8de5e3ed7ffb0dfd384823deb5f1eddd13a4f8c32178ddb361e6ead",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/ladder_beir_scidocs_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/needles_resolved_beir_scidocs_full.json",
+      "kind": "receipt",
+      "bytes": 199742,
+      "sha256": "f2207babb37eaf9e35364b1586bf9ed07cb2d3aba187a9ea9daf3aef0d6cbcd9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scidocs/needles_resolved_beir_scidocs_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1274,
+      "sha256": "706f3adfd5ada3c70f9854eb14300e72a9f3778365d33b4185b394f53a299aa9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/beir_ndcg_beir_scifact_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 54470,
+      "sha256": "2eedd0373774f3b1aac840e95a5bc07e073f5084f8df43e9e53e1161f2c8d743",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/beir_ndcg_beir_scifact_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 947,
+      "sha256": "0c519b8ae72fcfeb9539bd35eaa75c67d52711705b1366bdc265dc923f6abb0e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/gold_by_needle_beir_scifact.json",
+      "kind": "receipt",
+      "bytes": 15544,
+      "sha256": "2edb8ac99992e10e083123de1a264af94b969a32743527c71ff3271e237169ca",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/gold_by_needle_beir_scifact.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/ladder_beir_scifact_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 1916362,
+      "sha256": "311c459ae7f041e0ef7040de32576896233561b615550a573a11364f784ffccc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/ladder_beir_scifact_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/needles_resolved_beir_scifact_full.json",
+      "kind": "receipt",
+      "bytes": 54496,
+      "sha256": "74bbe733e268e10b9dd8be6078b03dda2f53d2d93f9ecf405960e5c556e09d79",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/needles_resolved_beir_scifact_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/beir_ndcg_beir_scifact_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 54452,
+      "sha256": "0f09319a6bcea476ad2a37183fc1f3233f4846779b67301ad54e47fcf3f4da7f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/beir_ndcg_beir_scifact_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 922,
+      "sha256": "04830fef635f7dc279b9f2727c9a8a512931612115c71cb3651f283c821a52a2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/gold_by_needle_beir_scifact.json",
+      "kind": "receipt",
+      "bytes": 15544,
+      "sha256": "2edb8ac99992e10e083123de1a264af94b969a32743527c71ff3271e237169ca",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/gold_by_needle_beir_scifact.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/ladder_beir_scifact_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 1916425,
+      "sha256": "e08e62a0080fc4fdd487528e3406b2b1449dd90d1d6dc868145e377ad9fd73c4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/ladder_beir_scifact_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/needles_resolved_beir_scifact_full.json",
+      "kind": "receipt",
+      "bytes": 54496,
+      "sha256": "74bbe733e268e10b9dd8be6078b03dda2f53d2d93f9ecf405960e5c556e09d79",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_scifact/splade_on/needles_resolved_beir_scifact_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/beir_ndcg_beir_trec_covid_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 11864,
+      "sha256": "141a5168f1b570cc6d349a889ea289c7a5da10f23791e205ca128cde427c20b1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/beir_ndcg_beir_trec_covid_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 997,
+      "sha256": "04263b4807c32ec99c594e3ced406526465ec064d489505bc044b7552fd6fc8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/gold_by_needle_beir_trec_covid.json",
+      "kind": "receipt",
+      "bytes": 550403,
+      "sha256": "be780e83e34af53c06b0d249a9dd5536121d304992d134d0f65da3af0d248e49",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/gold_by_needle_beir_trec_covid.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/ladder_beir_trec_covid_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 1167521,
+      "sha256": "3b361e9bfda505b72a1990ea218e8ef898b4466e093f3e9e3a0bc9e799f8ef31",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/ladder_beir_trec_covid_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/needles_resolved_beir_trec_covid_full.json",
+      "kind": "receipt",
+      "bytes": 8272,
+      "sha256": "5d101fc019ee201de9bccd5f9908ee468dc481c33e2052a0472003bba8a9dbba",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_trec_covid/needles_resolved_beir_trec_covid_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/beir_ndcg_beir_webis_touche2020_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 11455,
+      "sha256": "402fa058488b08bd07cc565bcfb929c8bdd23a50c410c9db34fc41cea1e5676c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/beir_ndcg_beir_webis_touche2020_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1045,
+      "sha256": "617f9c6d5d29d56501eb3e1cfc3d540ad2903e1d6d39e7653ecdc8a9f60edee6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/gold_by_needle_beir_webis_touche2020.json",
+      "kind": "receipt",
+      "bytes": 37563,
+      "sha256": "c58bc5d0488dae8ffe56e7500d2f4ca21f3a998c884e0178fa1fac50fef7e9e7",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/gold_by_needle_beir_webis_touche2020.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/ladder_beir_webis_touche2020_seed0_2026-11-02.json",
+      "kind": "receipt",
+      "bytes": 432335,
+      "sha256": "78ba6f93e64ccbf70922e26af72eccf757400e6f3a49233c200b891524d73065",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/ladder_beir_webis_touche2020_seed0_2026-11-02.json",
+      "source_commit": null,
+      "stamp": "2026-11-02"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/needles_resolved_beir_webis_touche2020_full.json",
+      "kind": "receipt",
+      "bytes": 7430,
+      "sha256": "c258d591c3d09fe934910b709cab1fe6f280ba2f4a4e3e75390b5fb957b22166",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/beir_webis_touche2020/needles_resolved_beir_webis_touche2020_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/compare.py",
+      "kind": "tooling",
+      "bytes": 1102,
+      "sha256": "2508527f86aef868036fd8c3e1b8f114f9d42780869e3b7a12366205e53767b3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/compare.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/run_beir_linux.py",
+      "kind": "tooling",
+      "bytes": 5171,
+      "sha256": "67a888c12ab675cbad41d1acdfa3548fc6dbd31324eb906cb89d49e7a10a7e1b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/beir_linux_vm_2026-11-02/run_beir_linux.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/README.md",
+      "kind": "doc",
+      "bytes": 3946,
+      "sha256": "26913ff40e62c3ba6b60a90d1db1e937c26f51aca0dc701270992970d49206a5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/README.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/SUMMARY.json",
+      "kind": "receipt",
+      "bytes": 3503,
+      "sha256": "501068b80b3a9db607031a7df9067335578fea8b31fc2a0fc9948822065e2973",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/SUMMARY.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/TABLE.md",
+      "kind": "doc",
+      "bytes": 1573,
+      "sha256": "293844fd11565549d4b07e202bc293d86488042aa340a3c7bc497d6fa1ba5d94",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/TABLE.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1284,
+      "sha256": "b69cb56b82de15e4d966303daead755c69082c19c4c188748ff3d816eb1c6104",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/beir_ndcg_beir_bright_aops_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 24415,
+      "sha256": "d76f499ea494e507cbe46e29107e9e61ba1bdaa0779281c978203b7b3aed84d8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/beir_ndcg_beir_bright_aops_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1005,
+      "sha256": "11ee13f75a1fe0c87cba2858ee3cefb06523f884ee67177779111cfb577e560b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/excluded_beir_bright_aops.json",
+      "kind": "receipt",
+      "bytes": 18284444,
+      "sha256": "8e8d21ccbb45889a1a70de419d594db7204badd1e832704ba55c6fbd5da82cbe",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/excluded_beir_bright_aops.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/gold_by_needle_beir_bright_aops.json",
+      "kind": "receipt",
+      "bytes": 18267,
+      "sha256": "b3f4d57c5d085180c7f5fc4ea80cdf9acb45711b408c7cf4856b1385c95d0694",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/gold_by_needle_beir_bright_aops.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/ladder_beir_bright_aops_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 697434,
+      "sha256": "e2c1c29b69423c7a3296f6f752bd83936db27e48b69eb6bcca713a6f19d232a0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/ladder_beir_bright_aops_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/needles_resolved_beir_bright_aops_full.json",
+      "kind": "receipt",
+      "bytes": 50920,
+      "sha256": "cbf70ef9caaad006ca5eab6b3b18e6e7c707e7d27547938f7b9bf1cb18fc9a63",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_aops/needles_resolved_beir_bright_aops_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1295,
+      "sha256": "16edb5001f90665edaf56fd951ef044621c7dcc3e0e24811a951ca17bdb2235f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/beir_ndcg_beir_bright_biology_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 20267,
+      "sha256": "92697e4730ae237c8715d4956de48b9e2564636bf06fff7c832fc3b0946b5571",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/beir_ndcg_beir_bright_biology_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1016,
+      "sha256": "8b782e6aa54e4c86d268c9b036ee1523d7ca1aec47643b99a13959fd92cd6d60",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/excluded_beir_bright_biology.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/excluded_beir_bright_biology.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/gold_by_needle_beir_bright_biology.json",
+      "kind": "receipt",
+      "bytes": 14687,
+      "sha256": "36b2860510a84c592622ac42721c54f9658c56bb4173a1f32f4a443e32c425a1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/gold_by_needle_beir_bright_biology.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/ladder_beir_bright_biology_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 676446,
+      "sha256": "6384087717034213eeece20164adfdad201284f5e5378f0086982548d0d5f00e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/ladder_beir_bright_biology_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/needles_resolved_beir_bright_biology_full.json",
+      "kind": "receipt",
+      "bytes": 64964,
+      "sha256": "2594e5551563530bbfdb947732387ff69422292772ee431043086093e9eebd4c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_biology/needles_resolved_beir_bright_biology_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1336,
+      "sha256": "e18cef24109ad873527d346e6bb1a9512a3152a577b1df163907f74a9c28e9a5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/beir_ndcg_beir_bright_earth_science_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 23915,
+      "sha256": "84ed3a649400f21d2a9b55bed870c647a133b39042333e2575413f4be0fc2562",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/beir_ndcg_beir_bright_earth_science_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1073,
+      "sha256": "8cdfea08ded5a0efe0a37a2c201a98f36a361caea3152191acbabd395b2180fc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/excluded_beir_bright_earth_science.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/excluded_beir_bright_earth_science.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/gold_by_needle_beir_bright_earth_science.json",
+      "kind": "receipt",
+      "bytes": 36206,
+      "sha256": "104c3074cc3b8d4da27cfe33e01bf390ea2250be3d8f09aa5475269443b279de",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/gold_by_needle_beir_bright_earth_science.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/ladder_beir_bright_earth_science_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 824832,
+      "sha256": "3064113eb4e740497fa003bc3715235b7095f8c0512d7a55c7f6237645d95d70",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/ladder_beir_bright_earth_science_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/needles_resolved_beir_bright_earth_science_full.json",
+      "kind": "receipt",
+      "bytes": 69539,
+      "sha256": "6e652210204c38cde2053a80386c40166fc8aa0415d7182f37c728dfdfefe81b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_earth_science/needles_resolved_beir_bright_earth_science_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1307,
+      "sha256": "310bb84718a7893846feec54328a4981b8223bb1bbfc71b3498ed7350c9b8a83",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/beir_ndcg_beir_bright_economics_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 20461,
+      "sha256": "b39f24c8351903c7d23803f70a33f7c5446bc2c0f21caf36c0617d18dd74868d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/beir_ndcg_beir_bright_economics_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1032,
+      "sha256": "563aecba0253725e6bdc3c6a79c4e5e84c727529d74fcaaa03235237bc8be906",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/excluded_beir_bright_economics.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/excluded_beir_bright_economics.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/gold_by_needle_beir_bright_economics.json",
+      "kind": "receipt",
+      "bytes": 22219,
+      "sha256": "6d132b66bb79b294a79faf1e05f9b77e7e020c57f39c0c5fac149d305b76675b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/gold_by_needle_beir_bright_economics.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/ladder_beir_bright_economics_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 692049,
+      "sha256": "4b0614ce4f3749523b585c334173451d9ab4e4a7509f8778f23a10f58deaaaa7",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/ladder_beir_bright_economics_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/needles_resolved_beir_bright_economics_full.json",
+      "kind": "receipt",
+      "bytes": 89740,
+      "sha256": "708df903872cb0d1d15196827850caff22ed3265485e8b2cd243423232517246",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_economics/needles_resolved_beir_bright_economics_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1308,
+      "sha256": "1ccf43396a4bdc906899e45b667d2f951844fee82dbc2b7c5c392b8cf0b64eb2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/beir_ndcg_beir_bright_leetcode_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 27209,
+      "sha256": "7a8a0a5c9aeec26d26bec13010cf8434147529d0782407aa84bb0e4f2e60bf8f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/beir_ndcg_beir_bright_leetcode_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1037,
+      "sha256": "f5ac03b106da13c34ffb801fd414bfb6f55f4deb67a730d5e9ec3ef0a27b2353",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/excluded_beir_bright_leetcode.json",
+      "kind": "receipt",
+      "bytes": 1778855,
+      "sha256": "0ce68c78a4d4a9ebbbc27b5a1d76e04785bbb929ca0d97c18167823d50234a40",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/excluded_beir_bright_leetcode.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/gold_by_needle_beir_bright_leetcode.json",
+      "kind": "receipt",
+      "bytes": 10484,
+      "sha256": "7d596bd011e14ebf10ba61f44036831c9a46829fab858a8931568faa1a0d0d56",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/gold_by_needle_beir_bright_leetcode.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/ladder_beir_bright_leetcode_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 910003,
+      "sha256": "5ea92a7a35109496da077c3d6f792210f5f7f80831a8210fbb0fafa9ce981365",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/ladder_beir_bright_leetcode_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/needles_resolved_beir_bright_leetcode_full.json",
+      "kind": "receipt",
+      "bytes": 229759,
+      "sha256": "637e1f882cccf89bb258a537977f4f222aa59d709e4c66ff8c8b28b7d255e1ec",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_leetcode/needles_resolved_beir_bright_leetcode_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1270,
+      "sha256": "4aff2566017c4ec941b901954ca5a7927071d9fb52a7bbc9c7613beca2837d83",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/beir_ndcg_beir_bright_pony_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 22804,
+      "sha256": "8ec3c92307b726cec0fbd8a9000d67d36877171596ea9397d72fdd706b764700",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/beir_ndcg_beir_bright_pony_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 979,
+      "sha256": "f990b522243ad6a55903d476faab05189e72ef15042463c32475589a126c8f29",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/excluded_beir_bright_pony.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/excluded_beir_bright_pony.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/gold_by_needle_beir_bright_pony.json",
+      "kind": "receipt",
+      "bytes": 52070,
+      "sha256": "00cbac7302ca29f4f87fe8a946eaecebcd81782506e4c4788a11f9d0b2a9f5e1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/gold_by_needle_beir_bright_pony.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/ladder_beir_bright_pony_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 786667,
+      "sha256": "0016c80693228dce0d14fad29e2ecb10b6c1aa4005728c8d0c2ec0c267689875",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/ladder_beir_bright_pony_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/needles_resolved_beir_bright_pony_full.json",
+      "kind": "receipt",
+      "bytes": 55418,
+      "sha256": "e68ae73a3d1373fc02856b22df0e8b01c2566554da0ffebb3809696e85a0e135",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_pony/needles_resolved_beir_bright_pony_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1313,
+      "sha256": "014ed50402b9380e5941e69a154dafb8f6ffa660d5dab0b7cf7e47dabe095dfa",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/beir_ndcg_beir_bright_psychology_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 20175,
+      "sha256": "47160559e99f88d0630a581c0d17bb9c081fd69e4ee32e32f792bd3f2a3a213a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/beir_ndcg_beir_bright_psychology_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1040,
+      "sha256": "afd4da265bb1b85d09a816e25671b86758ab5596a8ac3e81e3c3aacacdcb0e5a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/excluded_beir_bright_psychology.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/excluded_beir_bright_psychology.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/gold_by_needle_beir_bright_psychology.json",
+      "kind": "receipt",
+      "bytes": 20886,
+      "sha256": "300e09da214d83ed3d8af34fe0963bab26226addbbd5cdbb6c4c2904af59abb4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/gold_by_needle_beir_bright_psychology.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/ladder_beir_bright_psychology_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 662958,
+      "sha256": "adaad45c377deaf1f579e5064fb6b2c86669b3c8dec758bafc3ece31867de0ea",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/ladder_beir_bright_psychology_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/needles_resolved_beir_bright_psychology_full.json",
+      "kind": "receipt",
+      "bytes": 81977,
+      "sha256": "7f519aa223a70c7070ec0c4963fcb8df59753bc407b6d74333ba9b9610979773",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_psychology/needles_resolved_beir_bright_psychology_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1301,
+      "sha256": "10b7aa26932a92422b624573e232c55783e43adf86079f49f182103faec77b35",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/beir_ndcg_beir_bright_robotics_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 19988,
+      "sha256": "79bd485e05e37a6b995b5db94658d8a467cecb8c68c07019c5d79f569bec2905",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/beir_ndcg_beir_bright_robotics_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1024,
+      "sha256": "1f3b389a550ccd6074815ee61ab590b345ab43340ab0fec746e2c6c9ee7c6ac8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/excluded_beir_bright_robotics.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/excluded_beir_bright_robotics.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/gold_by_needle_beir_bright_robotics.json",
+      "kind": "receipt",
+      "bytes": 14766,
+      "sha256": "27364739d6399edd4a4bd7f7dcbcbb8f469e64fe122739a27de6eb5266fbd218",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/gold_by_needle_beir_bright_robotics.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/ladder_beir_bright_robotics_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 669085,
+      "sha256": "198887fd83cf05c46e3705ef454bcc286fd54f4a208f5f68a3e1bc0e9fe9bf3b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/ladder_beir_bright_robotics_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/needles_resolved_beir_bright_robotics_full.json",
+      "kind": "receipt",
+      "bytes": 235913,
+      "sha256": "fd0fcd2266e899b9be5ea252a56a1ca2070d7a9a41876c64135a7984f0682a80",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_robotics/needles_resolved_beir_bright_robotics_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1334,
+      "sha256": "2d010e6f9ff7fbe3fad342dcc53852387266965ede7e4f9dd5b93e331abfa17d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/beir_ndcg_beir_bright_stackoverflow_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 23586,
+      "sha256": "80c797bf0b9f29807dd7d47eb4475acc171b2dccb8e9a3d2bb8356b6cf25ecf2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/beir_ndcg_beir_bright_stackoverflow_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1071,
+      "sha256": "9898bd9aa090c2a944364ec0f061d32c361de17d3b95c590dbbfff63f3622366",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/excluded_beir_bright_stackoverflow.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/excluded_beir_bright_stackoverflow.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/gold_by_needle_beir_bright_stackoverflow.json",
+      "kind": "receipt",
+      "bytes": 15367,
+      "sha256": "30cb7c17a72c13b62eebc030d60f030f2ee04bef61772a6c682c3278b63249da",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/gold_by_needle_beir_bright_stackoverflow.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/ladder_beir_bright_stackoverflow_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 794070,
+      "sha256": "b30b49269147de679be6426228db5b0efc7b3928d28c89c7198558228203fbae",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/ladder_beir_bright_stackoverflow_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/needles_resolved_beir_bright_stackoverflow_full.json",
+      "kind": "receipt",
+      "bytes": 170750,
+      "sha256": "a8215a0b4f6434c44b78a1d3c613c5826b6bc14d9864e619079942d3c1ea41dd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_stackoverflow/needles_resolved_beir_bright_stackoverflow_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1361,
+      "sha256": "20e08c0efc783b8e8c80744a291378bfe684f1759fc4560de98a6d38083d59a9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/beir_ndcg_beir_bright_sustainable_living_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 22270,
+      "sha256": "4484bb88431b763c83e19492a4fc9ffbd7af15ad51015117701867a9d8870fa8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/beir_ndcg_beir_bright_sustainable_living_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1104,
+      "sha256": "ef233dfc6cffc3df7d278d8f2122556dfc929862100092f32fef67d26ccb1cd2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/excluded_beir_bright_sustainable_living.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/excluded_beir_bright_sustainable_living.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/gold_by_needle_beir_bright_sustainable_living.json",
+      "kind": "receipt",
+      "bytes": 18130,
+      "sha256": "59dd84d0dac36b6b14ae2cbb0f5253a6608b2e9a96160c367c903a6ea6813a02",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/gold_by_needle_beir_bright_sustainable_living.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/ladder_beir_bright_sustainable_living_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 706252,
+      "sha256": "613d17379e80dbdf2f88ee051d639c35fcd262db1ff1efaa462d2200d721c71a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/ladder_beir_bright_sustainable_living_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/needles_resolved_beir_bright_sustainable_living_full.json",
+      "kind": "receipt",
+      "bytes": 88118,
+      "sha256": "eb18280f6df099265c3221bab36bf3802ad9151e289c4375e1d3830edec47a51",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_sustainable_living/needles_resolved_beir_bright_sustainable_living_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1374,
+      "sha256": "3d5372b3cff811d77ba6c7aad09127a0a11c48770dbac9a0d17082031051eab1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/beir_ndcg_beir_bright_theoremqa_questions_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 45281,
+      "sha256": "b81ed994893576c60258c0e89ca2a97a2582093fa4e747b70115e0fd9dcac7f9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/beir_ndcg_beir_bright_theoremqa_questions_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1125,
+      "sha256": "8864a4a5c54103b0294b7f3cc04466800eb9c5a7c49f936bf49eef83f6802529",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/excluded_beir_bright_theoremqa_questions.json",
+      "kind": "receipt",
+      "bytes": 16944074,
+      "sha256": "d9ebb4cdd376f144b64cf4575bc2dd522609631e1f6bd5db54d63720b95e0b98",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/excluded_beir_bright_theoremqa_questions.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/gold_by_needle_beir_bright_theoremqa_questions.json",
+      "kind": "receipt",
+      "bytes": 25514,
+      "sha256": "b2936a6e38381acec5c33e87cd197e2861cfb6f787373348c1277ae497130d43",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/gold_by_needle_beir_bright_theoremqa_questions.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/ladder_beir_bright_theoremqa_questions_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 1198643,
+      "sha256": "ab669322ffd8861a4550598bb621c4d617f593b14fd46b53d7428671bfdc340e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/ladder_beir_bright_theoremqa_questions_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/needles_resolved_beir_bright_theoremqa_questions_full.json",
+      "kind": "receipt",
+      "bytes": 114823,
+      "sha256": "162fc151ee16c32e2b1ec48d9cb81aa7da0c517b555b911c4dbf67a5b5bb1074",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_questions/needles_resolved_beir_bright_theoremqa_questions_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1361,
+      "sha256": "9bbf7a4c296daa5436958aaecbc51f635f1d6303d4f8189ceb0ac6462843cd4c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/beir_ndcg_beir_bright_theoremqa_theorems_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 18190,
+      "sha256": "4dd3a809ddf7b08846dcb27ec1148d73c3eadc0bbfc72b3d37d63d8bb1c0b085",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/beir_ndcg_beir_bright_theoremqa_theorems_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 1104,
+      "sha256": "0b9cdd9939822c61751ccd78b104f0994697d43a767634d55ea236564b040bf6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/excluded_beir_bright_theoremqa_theorems.json",
+      "kind": "receipt",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/excluded_beir_bright_theoremqa_theorems.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/gold_by_needle_beir_bright_theoremqa_theorems.json",
+      "kind": "receipt",
+      "bytes": 9429,
+      "sha256": "c3931c4373c498661838672aac278e25db445bab34d1a2dbafc17548cc16de8d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/gold_by_needle_beir_bright_theoremqa_theorems.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/ladder_beir_bright_theoremqa_theorems_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 474884,
+      "sha256": "cfe4ece25bdb842db6200f869502149b868016aeed8d432fdef6a52aa2b8036d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/ladder_beir_bright_theoremqa_theorems_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/needles_resolved_beir_bright_theoremqa_theorems_full.json",
+      "kind": "receipt",
+      "bytes": 43966,
+      "sha256": "4317d6022883b1a43b0eb9ba3885830a8e2ef569270a5c91e01a40c369c2e454",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_bright_theoremqa_theorems/needles_resolved_beir_bright_theoremqa_theorems_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1259,
+      "sha256": "e800a491bb08fc915f00bb28779fb170ddc225c6f9fd4a87931821df74d2ebba",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/beir_ndcg_beir_mh_2wiki_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 2724640,
+      "sha256": "e7cdace952ea4c90b974da3e193b0d18d7a2e2705df7338c7844bd0fc3e98324",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/beir_ndcg_beir_mh_2wiki_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 968,
+      "sha256": "814b2445a6cfd5c2e087ac7db2508ada859070c6f850a08ce3ae935408731b26",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/gold_by_needle_beir_mh_2wiki.json",
+      "kind": "receipt",
+      "bytes": 1381352,
+      "sha256": "84cae819365ca72b3bfa38e8e7071d000716e1aecbac9fdd2226b8e12131c6a7",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/gold_by_needle_beir_mh_2wiki.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/ladder_beir_mh_2wiki_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 84034903,
+      "sha256": "502cac54544bafa2a43fcfb19423d71cb654bbe6a87f3b9438150706280ec032",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/ladder_beir_mh_2wiki_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/mh_score_beir_mh_2wiki_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 4191752,
+      "sha256": "855d2760974a3941cd087875c56fbaa9e32eeac03e16e683160f764deb7ff0fc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/mh_score_beir_mh_2wiki_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/needles_resolved_beir_mh_2wiki_full.json",
+      "kind": "receipt",
+      "bytes": 2396387,
+      "sha256": "1a73bca994a877ab6abb561b86356cfa356f48938f434ff36fd5ab40d44d1f18",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_2wiki/needles_resolved_beir_mh_2wiki_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1277,
+      "sha256": "a8baacb4f0c9bdd9ac70edc27108215f1bf30163a925ca2caac07591f4844d34",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/beir_ndcg_beir_mh_hotpotqa_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 1567078,
+      "sha256": "d0380a2543c75f3340fcd14f2371a7a1b70cf89697ec3e48164ce4ba3a53e168",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/beir_ndcg_beir_mh_hotpotqa_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 992,
+      "sha256": "a1a1117d73bfd99e53b70c6074949b766201ef763a2be8eb8276d86feff9cd90",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/gold_by_needle_beir_mh_hotpotqa.json",
+      "kind": "receipt",
+      "bytes": 703477,
+      "sha256": "e93e59857af512a30ac1d7186d7592ab86536453ca5afa264a68900d6d12d6b5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/gold_by_needle_beir_mh_hotpotqa.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/ladder_beir_mh_hotpotqa_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 49813621,
+      "sha256": "b3517f2da62e3537b919ae0f62934f2c29288e9440e9838ad36f785c8890454d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/ladder_beir_mh_hotpotqa_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/mh_score_beir_mh_hotpotqa_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 2418483,
+      "sha256": "d1c05f3d50b14c46f49704d555fda9c4d5fa6702f83bb23e0585829c60afaecb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/mh_score_beir_mh_hotpotqa_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/needles_resolved_beir_mh_hotpotqa_full.json",
+      "kind": "receipt",
+      "bytes": 1574025,
+      "sha256": "987e5e7cdaf257be35581eee6683bc49fa2ab680a06d804d243b8fd321ffafe0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_hotpotqa/needles_resolved_beir_mh_hotpotqa_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/bed_manifest.json",
+      "kind": "receipt",
+      "bytes": 1307,
+      "sha256": "5fd366f6835b37c433dc11bb179931dd365106ca504b11afb210aad704f9cf35",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/bed_manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/beir_ndcg_beir_mh_musique_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 521632,
+      "sha256": "690a6d1e328abf634b4c61ac9ecd4856b3d080b3df0cdd0f5d0bc11fe4ec0bdb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/beir_ndcg_beir_mh_musique_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/build_log_tail.txt",
+      "kind": "receipt",
+      "bytes": 991,
+      "sha256": "5f53c8ddd6f14ef8b4cff760fa5ddc2c41f37b18ea4c26eb5bd15d5a4fa01a99",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/build_log_tail.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/gold_by_needle_beir_mh_musique.json",
+      "kind": "receipt",
+      "bytes": 258243,
+      "sha256": "5048d835eec3d3c97706b9af2efdd92d19842535a7dcd902bd0b1be8fa0ce1cb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/gold_by_needle_beir_mh_musique.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/ladder_beir_mh_musique_seed0_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 15950256,
+      "sha256": "2eb5cf71ffd0087e328b350a49e4aab708d17a3abaaa56534bb8fbeaf63e749c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/ladder_beir_mh_musique_seed0_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/mh_score_beir_mh_musique_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 809737,
+      "sha256": "6ede4fe812e7e19e216e3e9f1ce63da18c0b236dab19e6c90915d1c62c5e1a91",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/mh_score_beir_mh_musique_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/needles_resolved_beir_mh_musique_full.json",
+      "kind": "receipt",
+      "bytes": 527274,
+      "sha256": "40c1a700ee741917b5780dd4a43165822bd3b386adc3de7dce083d09c8906c69",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/beir_mh_musique/needles_resolved_beir_mh_musique_full.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/bright_bm25_same_corpus_2026-11-03.json",
+      "kind": "receipt",
+      "bytes": 1057,
+      "sha256": "01d8fcb4605a842ca434694936805c89a30ebd0d8062e5909bc9154ad7655ff8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/bright_bm25_same_corpus_2026-11-03.json",
+      "source_commit": null,
+      "stamp": "2026-11-03"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/package.py",
+      "kind": "tooling",
+      "bytes": 4048,
+      "sha256": "24fdea11ab8db3d5bae6efbb74213a6055447d13218107e1fce2b32f044f80e3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/package.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/run_beir_linux.py",
+      "kind": "tooling",
+      "bytes": 6121,
+      "sha256": "188336fdde567d3b1d2be78e07ac284dc0340294af2299602cf510aa97f2ffff",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/run_beir_linux.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/beir_ndcg_multi.py",
+      "kind": "tooling",
+      "bytes": 9189,
+      "sha256": "4aead9ee37120c8e54d04c6d28e586a57408a2713f8f62ef7a19bf416f9b493f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/beir_ndcg_multi.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/bright_bm25.py",
+      "kind": "tooling",
+      "bytes": 2081,
+      "sha256": "eeea9f44acdb56a33c9f3213029ca3992ab4f42523732ca23e73560ab21c2725",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/bright_bm25.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/bright_to_beir.py",
+      "kind": "tooling",
+      "bytes": 1434,
+      "sha256": "234ad912c5179b421955c03c1d0d573e651d47d151858ff311235ae984600838",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/bright_to_beir.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/mh_score.py",
+      "kind": "tooling",
+      "bytes": 3823,
+      "sha256": "23424bf48a47797afeab61a59b044a03b2f7a3d1b73b5002225b08c5101ae264",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/mh_score.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/multihop_to_beir.py",
+      "kind": "tooling",
+      "bytes": 2841,
+      "sha256": "50a5ac314776f1e8cad0df25effc495eab36dba2b3a6391893d496018fa5a14f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/bright_multihop_linux_vm_2026-11-03/tools/multihop_to_beir.py",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/profile_947k_25fd0c41/compare_vs_v0113.json",
+      "kind": "receipt",
+      "bytes": 416,
+      "sha256": "00f29f891b1bbbd9cede7b7abf92b5725fa76f559b420bb5a3018a32e7109e85",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/profile_947k_25fd0c41/compare_vs_v0113.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/profile_947k_25fd0c41/ladder_profile-947k-25fd0c41-2026-10-11_947k.json",
+      "kind": "receipt",
+      "bytes": 1794839,
+      "sha256": "762c77d55274312c6114e8a7f86be2548c51fed2cfb9ee853e493a0c5f772397",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/profile_947k_25fd0c41/ladder_profile-947k-25fd0c41-2026-10-11_947k.json",
+      "source_commit": null,
+      "stamp": "2026-10-11"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/profile_947k_25fd0c41/profile_summary.txt",
+      "kind": "receipt",
+      "bytes": 894,
+      "sha256": "d239026d4a324baba52c9723b1f6d326d21c6904f769e3ab29297d022e7174da",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/profile_947k_25fd0c41/profile_summary.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/profile_947k_25fd0c41/sweep_v0113_witness_947k_2026-10-11_manifest.json",
+      "kind": "receipt",
+      "bytes": 4520,
+      "sha256": "e6611a1253ba19d07a09282f920b34057c12b948fbb224a8b00935cd975d3574",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/profile_947k_25fd0c41/sweep_v0113_witness_947k_2026-10-11_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-11"
+    },
+    {
       "path": "untracked/benchmarks/dogfood/receipts/sweep_v0111_control_947k_2026-10-07.json",
       "kind": "receipt",
       "bytes": 1792,
@@ -6926,11 +9239,839 @@
       "stamp": "2026-10-07"
     },
     {
-      "path": "untracked/benchmarks/dogfood/SOURCE.md",
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09.json",
+      "kind": "receipt",
+      "bytes": 2234,
+      "sha256": "11478d5172138b391b75343b5fd0063fc4396e83d6b0f3e6ac91acdd45946159",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09.json",
+      "source_commit": null,
+      "stamp": "2026-10-09"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09_manifest.json",
+      "kind": "receipt",
+      "bytes": 3284,
+      "sha256": "3ef5cb40263fc3195a815d3fabecf1388c73adc93fbcee323fae9838cceac372",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-09"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09_snapshot_identity.json",
+      "kind": "receipt",
+      "bytes": 939,
+      "sha256": "ebc50cbf56326cadc8bd2e8ff29b4bc62b4374eeba5a8cf594fcfc6e1a8b8ed2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0112_witness_947k_2026-10-09_snapshot_identity.json",
+      "source_commit": null,
+      "stamp": "2026-10-09"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0113_witness_947k_2026-10-11.json",
+      "kind": "receipt",
+      "bytes": 1402,
+      "sha256": "f18316e57e14eea2f64fea835e6b38cc721980e594701a08de8b5566de69ee5f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0113_witness_947k_2026-10-11.json",
+      "source_commit": null,
+      "stamp": "2026-10-11"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0113_witness_947k_2026-10-11_manifest.json",
+      "kind": "receipt",
+      "bytes": 4589,
+      "sha256": "97148049215be9897dc883a1f8c9cc005519efbcffcb6286081a61d7e867b74c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0113_witness_947k_2026-10-11_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-11"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0114_witness_947k_2026-10-26.json",
+      "kind": "receipt",
+      "bytes": 1408,
+      "sha256": "7b5c4c6bbde20a0e901259e394ad59a5634f2eb735bb221de1acb7e789371280",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0114_witness_947k_2026-10-26.json",
+      "source_commit": null,
+      "stamp": "2026-10-26"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/sweep_v0114_witness_947k_2026-10-26_manifest.json",
+      "kind": "receipt",
+      "bytes": 4589,
+      "sha256": "4a32daf767d7e9565cc8dc13ec4b575d3088f4afd49c1872a017d07915fcccbf",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/sweep_v0114_witness_947k_2026-10-26_manifest.json",
+      "source_commit": null,
+      "stamp": "2026-10-26"
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_7a9717be.json",
+      "kind": "receipt",
+      "bytes": 5310,
+      "sha256": "cb49e24da53f479bef86f4ec2fda2c05313b43e0cba2a2e209d8467024db0827",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_7a9717be.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_89f7b23c.json",
+      "kind": "receipt",
+      "bytes": 5322,
+      "sha256": "8700ba36c27effef8d6f86a9a9f54f1ba2dd3a59f03c9ebe3995a6974c539596",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_89f7b23c.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_d8036fdd.rounds.jsonl",
+      "kind": "receipt",
+      "bytes": 108038,
+      "sha256": "6b7e1495f6ecd7a1d1739426260c77d68d7c0142eb19a66394608828670f0e9b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/receipt_trace_overhead_947k_d8036fdd.rounds.jsonl",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/summary_before_fix.txt",
+      "kind": "receipt",
+      "bytes": 288,
+      "sha256": "86de4eac18d7733527ca7619877ab1b2f0e420c6e100768e2fd479be3e7b7de2",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/trace_overhead_947k_2026-10-11/summary_before_fix.txt",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/SUMMARY.json",
+      "kind": "receipt",
+      "bytes": 40903,
+      "sha256": "70fd42f4d079af9760068df619593232ba0b33a98691d58c95724e6335b3cd24",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/SUMMARY.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/beir_ndcg_beir_arguana_traced.json",
+      "kind": "receipt",
+      "bytes": 304959,
+      "sha256": "8c150386d66d76a6fce1fb3363c2c8bc436ccaf7c22b4d0ebb2cc8a0dc4abe7d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/beir_ndcg_beir_arguana_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/ladder_beir_arguana_traced.json",
+      "kind": "receipt",
+      "bytes": 8365768,
+      "sha256": "5ce370e9fdf01c2e467711debe628bf5c2de99265723349b53694d5b4cab7319",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/ladder_beir_arguana_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/manifest.json",
+      "kind": "receipt",
+      "bytes": 18901,
+      "sha256": "4c218ff633cd9f32c2de43c8616723a54fe1d56f315088e8b3df95610933e6fc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_arguana/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/beir_ndcg_beir_cqadupstack_android_traced.json",
+      "kind": "receipt",
+      "bytes": 142666,
+      "sha256": "9b189cd96ab739dc7f6bbc73beb26ef91f5a4f476b53299efa044d68e7a5405d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/beir_ndcg_beir_cqadupstack_android_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/ladder_beir_cqadupstack_android_traced.json",
+      "kind": "receipt",
+      "bytes": 4132503,
+      "sha256": "b01e30a6446ec67fccda41bf0f188600096b3e53b54df19947ff152c26e09131",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/ladder_beir_cqadupstack_android_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/manifest.json",
+      "kind": "receipt",
+      "bytes": 19241,
+      "sha256": "1c91c2b6d4d4d70c50073e249c7a576907193ed44cf4a59e51204ed08d6d6f34",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_android/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/beir_ndcg_beir_cqadupstack_english_traced.json",
+      "kind": "receipt",
+      "bytes": 318278,
+      "sha256": "f70d318f4b4c88ec61fd93a91d9aee0b852f14f1b45dbe99f45260ea3ecda25c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/beir_ndcg_beir_cqadupstack_english_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/ladder_beir_cqadupstack_english_traced.json",
+      "kind": "receipt",
+      "bytes": 9022686,
+      "sha256": "957380a9d3f373c144b44ae5ebdd7e8f7c7d84e936ad51d0aa0a7913bf280b9a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/ladder_beir_cqadupstack_english_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/manifest.json",
+      "kind": "receipt",
+      "bytes": 19246,
+      "sha256": "d9bb534f7bd7782dace75386a4a9150a0d3336dd0e51730ad00d2eaf8d8078fd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_english/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/beir_ndcg_beir_cqadupstack_gaming_traced.json",
+      "kind": "receipt",
+      "bytes": 323132,
+      "sha256": "3614912d0bac9beeed4294466dd1b07325fa233dd06132b6f0ec1c031b136804",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/beir_ndcg_beir_cqadupstack_gaming_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/ladder_beir_cqadupstack_gaming_traced.json",
+      "kind": "receipt",
+      "bytes": 9413374,
+      "sha256": "519b5433b8f1831768b3f4ae17e339648da2d9ac46ec78b58766cccd9feea529",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/ladder_beir_cqadupstack_gaming_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/manifest.json",
+      "kind": "receipt",
+      "bytes": 19150,
+      "sha256": "c48225c24d6e6951cf86b68713267a2a7e8505c5cf53b2c88f1b8b50632cdc6d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gaming/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/beir_ndcg_beir_cqadupstack_gis_traced.json",
+      "kind": "receipt",
+      "bytes": 174621,
+      "sha256": "a2ad39ea4286c8a851e77022012acfa755e237ede809f5ba245a366dd05f39c6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/beir_ndcg_beir_cqadupstack_gis_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/ladder_beir_cqadupstack_gis_traced.json",
+      "kind": "receipt",
+      "bytes": 5112781,
+      "sha256": "fb968122837cb3ff2910dd26087e1331dbc842726b45376ab7dc3b0287b414f3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/ladder_beir_cqadupstack_gis_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/manifest.json",
+      "kind": "receipt",
+      "bytes": 19150,
+      "sha256": "1e1eab5d1006420595f69e739ab82dce2662054379ec697a54a96ffd6cace91c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_gis/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/beir_ndcg_beir_cqadupstack_mathematica_traced.json",
+      "kind": "receipt",
+      "bytes": 165438,
+      "sha256": "b5aef35bd647a28788ab778ee9fa166b32458849c880db6ff49a1a4adde57a38",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/beir_ndcg_beir_cqadupstack_mathematica_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/ladder_beir_cqadupstack_mathematica_traced.json",
+      "kind": "receipt",
+      "bytes": 4640751,
+      "sha256": "f8f60f9426c7e26d314fc27f12df7d7fee8b5b25ef6883111b897ee9f18ce26c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/ladder_beir_cqadupstack_mathematica_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/manifest.json",
+      "kind": "receipt",
+      "bytes": 19260,
+      "sha256": "0d85f7622ddb3aae563d573cad02c95ac3a5387598a4af60ce97dc27af637d2c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_mathematica/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/beir_ndcg_beir_cqadupstack_physics_traced.json",
+      "kind": "receipt",
+      "bytes": 211401,
+      "sha256": "e24a925a35cf75fa3590c4b1e30835cbeb9977d82e72ac0abfbf2a8bbf3da663",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/beir_ndcg_beir_cqadupstack_physics_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/ladder_beir_cqadupstack_physics_traced.json",
+      "kind": "receipt",
+      "bytes": 6019130,
+      "sha256": "270df25cd4b7b6234e03d6cdd71f55ac9a36d7d1e4551fba197621cf938d15c8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/ladder_beir_cqadupstack_physics_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/manifest.json",
+      "kind": "receipt",
+      "bytes": 19251,
+      "sha256": "c99121e86a4ab818647e5968d1e52abc9386a092ac8026d5fdc753a3b4cfc77b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_physics/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/beir_ndcg_beir_cqadupstack_programmers_traced.json",
+      "kind": "receipt",
+      "bytes": 181154,
+      "sha256": "582b1452684b5bf84903edadc8516a3ee392f884e1f7618c8d59f973ce36a44a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/beir_ndcg_beir_cqadupstack_programmers_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/ladder_beir_cqadupstack_programmers_traced.json",
+      "kind": "receipt",
+      "bytes": 5050405,
+      "sha256": "7b12e06da5a1630881b32ab3fafd9d4607ece663b2fcd9c6e6779f1b19e65951",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/ladder_beir_cqadupstack_programmers_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/manifest.json",
+      "kind": "receipt",
+      "bytes": 19258,
+      "sha256": "9fef41a0808b3d49d82bc5c44dfe81164e1b27a5c6aec51287be4085c91889e5",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_programmers/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/beir_ndcg_beir_cqadupstack_stats_traced.json",
+      "kind": "receipt",
+      "bytes": 130152,
+      "sha256": "414afb1cd74757b6d52e1e9a415e314291f550911485b48bbbdff8d2e86b29fb",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/beir_ndcg_beir_cqadupstack_stats_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/ladder_beir_cqadupstack_stats_traced.json",
+      "kind": "receipt",
+      "bytes": 3738011,
+      "sha256": "3ed072fa59a038a1667e38eed0a33351eaab6d16c16e08e995ba55153585f907",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/ladder_beir_cqadupstack_stats_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/manifest.json",
+      "kind": "receipt",
+      "bytes": 19114,
+      "sha256": "695726e5dc5b06c30e5d4b614f5e4320ccb5ec6be682892199166d9d4d4563b9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_stats/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/beir_ndcg_beir_cqadupstack_tex_traced.json",
+      "kind": "receipt",
+      "bytes": 572346,
+      "sha256": "715178c2097781446636a806d249ecc273a3dd6c85b21013b550483ef95bd1aa",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/beir_ndcg_beir_cqadupstack_tex_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/ladder_beir_cqadupstack_tex_traced.json",
+      "kind": "receipt",
+      "bytes": 16629545,
+      "sha256": "2532e53301bf23ef5d9c655c8b3dc6cae84b8165a95caf1e4433fde3b64bfd39",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/ladder_beir_cqadupstack_tex_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/manifest.json",
+      "kind": "receipt",
+      "bytes": 19178,
+      "sha256": "21829da5236cf79620aa3c76f907ba9bdec4de6015e58b91d3ac34b28662dc4c",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_tex/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/beir_ndcg_beir_cqadupstack_unix_traced.json",
+      "kind": "receipt",
+      "bytes": 212661,
+      "sha256": "7745c7b581bae317a42ba574c53328bd3897b8c12a72bd90fda27ef135afaeaa",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/beir_ndcg_beir_cqadupstack_unix_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/ladder_beir_cqadupstack_unix_traced.json",
+      "kind": "receipt",
+      "bytes": 6136063,
+      "sha256": "cf6b86cf652626565073ed0403eb5b3c9c5f34c752f19592b83dbf85be59117d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/ladder_beir_cqadupstack_unix_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/manifest.json",
+      "kind": "receipt",
+      "bytes": 19192,
+      "sha256": "9f66340ccaf92adedb4307d28ec1ef1a7ec748a4a9854d352ac0ebbc58e128e9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_unix/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/beir_ndcg_beir_cqadupstack_webmasters_traced.json",
+      "kind": "receipt",
+      "bytes": 104361,
+      "sha256": "a332083a22a0c2122f5608faeaf3a9b5f52c88b82da68b0d61e0b7fafd9977da",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/beir_ndcg_beir_cqadupstack_webmasters_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/ladder_beir_cqadupstack_webmasters_traced.json",
+      "kind": "receipt",
+      "bytes": 2974760,
+      "sha256": "2abd3bac221d1c5bdf66cdb6d13c860146c71ee99969adec9522b4dd98fd24a4",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/ladder_beir_cqadupstack_webmasters_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/manifest.json",
+      "kind": "receipt",
+      "bytes": 19311,
+      "sha256": "b3831891f2b79363752ec3691d13c9eb681b70de36c7335abac112a8b74de782",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_webmasters/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/beir_ndcg_beir_cqadupstack_wordpress_traced.json",
+      "kind": "receipt",
+      "bytes": 110109,
+      "sha256": "03381c067a492ca860e093e5e11ed6a02a62c27968250ba2201f13abc611b6cf",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/beir_ndcg_beir_cqadupstack_wordpress_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/ladder_beir_cqadupstack_wordpress_traced.json",
+      "kind": "receipt",
+      "bytes": 3107548,
+      "sha256": "476bb730c601800cddf2a96ae168c45d218b3924e9963a9fdf14ebf3bb2f5fc8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/ladder_beir_cqadupstack_wordpress_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/manifest.json",
+      "kind": "receipt",
+      "bytes": 19228,
+      "sha256": "8ef098354f54c8c334085e0d68f05e33cd3271beeefce1d7605ab79ffbba3a72",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_cqadupstack_wordpress/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/beir_ndcg_beir_fiqa_traced.json",
+      "kind": "receipt",
+      "bytes": 123428,
+      "sha256": "b5470cc472740ef7b4595f000517298062182b0db7373396d4fb5e5a95d48c3a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/beir_ndcg_beir_fiqa_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/ladder_beir_fiqa_traced.json",
+      "kind": "receipt",
+      "bytes": 3766244,
+      "sha256": "ba052781c9ac246e76ea52e005f83e00d27545033f778cbfe6884b4b46d22424",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/ladder_beir_fiqa_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/manifest.json",
+      "kind": "receipt",
+      "bytes": 18873,
+      "sha256": "21533462b43d337b6afda27a1ac3d3befa8b70e3c264149951b233372df25c07",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_fiqa/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/beir_ndcg_beir_nfcorpus_traced.json",
+      "kind": "receipt",
+      "bytes": 70603,
+      "sha256": "fca2bea342f7500e28403759e2ebacb547cbf3d24757c046ad8c58e4de626912",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/beir_ndcg_beir_nfcorpus_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/ladder_beir_nfcorpus_traced.json",
+      "kind": "receipt",
+      "bytes": 2107625,
+      "sha256": "b2f4f2d3b72aef77ec9489f12fb5d666be58217910d5defbb8d8db5d77bb981a",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/ladder_beir_nfcorpus_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/manifest.json",
+      "kind": "receipt",
+      "bytes": 18865,
+      "sha256": "d4b444f9c3acef5658caf632334d4fb8a15954a9a4ceb910b2c4a2a724dcd62e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_nfcorpus/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/beir_ndcg_beir_quora_traced.json",
+      "kind": "receipt",
+      "bytes": 1909890,
+      "sha256": "c9da59dc797d5ca6c03ba6028fc4f6d657614b7619c9ab2c83ca93fbf88830f6",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/beir_ndcg_beir_quora_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/ladder_beir_quora_traced.json",
+      "kind": "receipt",
+      "bytes": 60504584,
+      "sha256": "859818a76ee7564f3c34c63dac5f80ef36838a7ded92e53f7e63a1f42da8ede1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/ladder_beir_quora_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/manifest.json",
+      "kind": "receipt",
+      "bytes": 18927,
+      "sha256": "8711176cc6ed2cbc7622aea00cd3ddbf6cc236c0bd85bdbb530d3af64df750cd",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_quora/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/beir_ndcg_beir_scidocs_traced.json",
+      "kind": "receipt",
+      "bytes": 226751,
+      "sha256": "cd7f7b46c57d6f6970ee54f8e1f4beea69d65e287c7ba964aa5bcf11e6b3c13e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/beir_ndcg_beir_scidocs_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/ladder_beir_scidocs_traced.json",
+      "kind": "receipt",
+      "bytes": 5971789,
+      "sha256": "def44b1b2df0589918ec9150ac7de5a014404b4c61a7d0d64dd7330768323128",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/ladder_beir_scidocs_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/manifest.json",
+      "kind": "receipt",
+      "bytes": 18850,
+      "sha256": "d820d411cd7224338aef08c3c4735b9b2f1a460722f2267d0c0630f9b3428be1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scidocs/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/beir_ndcg_beir_scifact_traced.json",
+      "kind": "receipt",
+      "bytes": 57209,
+      "sha256": "2ce2521e287943db35aa76823c2d835afa4eebcd72a6f52356fe8346dd36e6ac",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/beir_ndcg_beir_scifact_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/ladder_beir_scifact_traced.json",
+      "kind": "receipt",
+      "bytes": 1773260,
+      "sha256": "2b2f9862bde7f7457b0a190cea68a724cbd050f4afca0cfe6d31f2add4f547c8",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/ladder_beir_scifact_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/manifest.json",
+      "kind": "receipt",
+      "bytes": 18853,
+      "sha256": "379b7a5114be419e69c210f0428f0b98e8f364ccdfb09048c0c29c54f053fcc3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_scifact/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/beir_ndcg_beir_trec_covid_traced.json",
+      "kind": "receipt",
+      "bytes": 12323,
+      "sha256": "d2d83432682a3eacabd25df2df3181a601afc2603877242ac038cfb6034298b3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/beir_ndcg_beir_trec_covid_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/ladder_beir_trec_covid_traced.json",
+      "kind": "receipt",
+      "bytes": 1160908,
+      "sha256": "765104e712b7a24eadcdf49b281c84fd7453fdcc483ca70b037382d1701485c0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/ladder_beir_trec_covid_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/manifest.json",
+      "kind": "receipt",
+      "bytes": 18918,
+      "sha256": "89b4a59b4a4b8862064569e320ba4a78daea0e2b6b440d5edadb733b6954eca1",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_trec_covid/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/beir_ndcg_beir_webis_touche2020_traced.json",
+      "kind": "receipt",
+      "bytes": 11910,
+      "sha256": "4c78f935efed797b38d08361bebb198b55c1e73819e5d72b8f3a6f9206318fb7",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/beir_ndcg_beir_webis_touche2020_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/ladder_beir_webis_touche2020_traced.json",
+      "kind": "receipt",
+      "bytes": 408852,
+      "sha256": "85385dab0d82e78cb2e3966f14de787a74d6386433efaeec18f861a981ccbe30",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/ladder_beir_webis_touche2020_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/manifest.json",
+      "kind": "receipt",
+      "bytes": 19083,
+      "sha256": "ad84d9abee7d23a3086d0c2451f16b415bfa0c206548279ca1eb2c2054a68aa9",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/beir_webis_touche2020/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_docs/ladder_coderag_docs_traced.json",
+      "kind": "receipt",
+      "bytes": 2346105,
+      "sha256": "42b6c8f3ffabcd89d2a5219ce48431ae2e3a266180be850f56daaf071c406c3b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_docs/ladder_coderag_docs_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_docs/manifest.json",
+      "kind": "receipt",
+      "bytes": 18820,
+      "sha256": "a77e67f4119dfe2dfbc8fc0daaed813201017fe8e424cd0fb7dcef532d8a7d2e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_docs/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_solutions/ladder_coderag_solutions_traced.json",
+      "kind": "receipt",
+      "bytes": 2328755,
+      "sha256": "1395a75e9bb631d2af8cb19019d281023baad594697199fb1e2393420d4a7904",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_solutions/ladder_coderag_solutions_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_solutions/manifest.json",
+      "kind": "receipt",
+      "bytes": 18798,
+      "sha256": "0432e6e34eefd6a8c5096c38dbd37b9eb66d74867ff1253d3fc33eac04daed40",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/coderag_solutions/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/cosqa/ladder_cosqa_traced.json",
+      "kind": "receipt",
+      "bytes": 1654655,
+      "sha256": "6489353470dae42d835bedd24696fc24b311557bfbbef25257f465875eeb24dc",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/cosqa/ladder_cosqa_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/cosqa/manifest.json",
+      "kind": "receipt",
+      "bytes": 18515,
+      "sha256": "3c9e008c2c8ba80fa69b6ff05a9feb548658f75fda99154b7752fe13b106a373",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/cosqa/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_padded/ladder_enronqa_padded_traced.json",
+      "kind": "receipt",
+      "bytes": 1731797,
+      "sha256": "9b34687536513e67ca9c7848d0fd7ebe0dc1f70c5a824fe6e8c50d6f75ecf031",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_padded/ladder_enronqa_padded_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_padded/manifest.json",
+      "kind": "receipt",
+      "bytes": 18823,
+      "sha256": "f5ac796cda1fef3bf4399f3e5b3b71829eaecae81fb4d1ff64b4acf78d4abece",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_padded/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_v2/ladder_enronqa_v2_traced.json",
+      "kind": "receipt",
+      "bytes": 1745265,
+      "sha256": "74dbd38f55eeda04ca2e9a56ab51a14739678803df5551d310c4e67f54dd7bd0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_v2/ladder_enronqa_v2_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_v2/manifest.json",
+      "kind": "receipt",
+      "bytes": 18703,
+      "sha256": "ee559790a094a32ed561bc626ba9678e13d02d8a5160a1f8339cd59f810737a3",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/enronqa_v2/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/erb_947k/ladder_erb_947k_traced.json",
+      "kind": "receipt",
+      "bytes": 1794778,
+      "sha256": "e2018a2ea588cb5b91c785f8b3184d7b3aa481da7b7ca0c32816dc5af082a504",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/erb_947k/ladder_erb_947k_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/erb_947k/manifest.json",
+      "kind": "receipt",
+      "bytes": 18643,
+      "sha256": "3e6f3c1f49fc5e1c1fe493086e38db7dd36a8337fa5bef4dceeb93b9d1d2ec24",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/erb_947k/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/financebench/ladder_financebench_traced.json",
+      "kind": "receipt",
+      "bytes": 480389,
+      "sha256": "bb899d703e458d88a03a723eed3ba453b7f6b5dd72b66e447a41d7dbb8c76438",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/financebench/ladder_financebench_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/financebench/manifest.json",
+      "kind": "receipt",
+      "bytes": 18730,
+      "sha256": "dc533b9cb3414c350bff245815e543a15d9bf75e96e50788bef8761d59369544",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/financebench/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/latency_table.md",
       "kind": "doc",
-      "bytes": 1793,
-      "sha256": "682555da5e684f19ddcda667db4bb624ab65c0031d772145b3b3f1a913ec153e",
-      "source": "hand-written provenance note",
+      "bytes": 3121,
+      "sha256": "44a2a8d463589df6c57bc523ca529505c5062c7fe7a3611ef4f9504de2ec0404",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/latency_table.md",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/locomo/ladder_locomo_traced.json",
+      "kind": "receipt",
+      "bytes": 7913075,
+      "sha256": "d42811d60c0ba9fd06ad837ac699f7f47b1c10c4b94b2368a1240c9763f4714f",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/locomo/ladder_locomo_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/locomo/manifest.json",
+      "kind": "receipt",
+      "bytes": 18583,
+      "sha256": "123f8923ebafb95f43c05cd6dffaacc4ce84697f94533ea5841ad67cf77dd0b0",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/locomo/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/muloc/ladder_muloc_traced.json",
+      "kind": "receipt",
+      "bytes": 2985120,
+      "sha256": "68f7c8246619a1f9910577d2b331367a87cea8ec98915ab4cbf705ca5fa549af",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/muloc/ladder_muloc_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/muloc/manifest.json",
+      "kind": "receipt",
+      "bytes": 18680,
+      "sha256": "6fa55b9be7ccb2ee0bddb60eced8fdef1a3ebc873c8cfb60a6080aac259ae53b",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/muloc/manifest.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/swebench/ladder_swebench_traced.json",
+      "kind": "receipt",
+      "bytes": 2305365,
+      "sha256": "f2f9f40935567a763bcecf6c5ed51128993768ef61b61a981d6bb34e8acb398e",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/swebench/ladder_swebench_traced.json",
+      "source_commit": null,
+      "stamp": null
+    },
+    {
+      "path": "untracked/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/swebench/manifest.json",
+      "kind": "receipt",
+      "bytes": 18739,
+      "sha256": "ea9e9780f659d8855e2767aed125c49720e3a3213bace569d64f353370679a5d",
+      "source": "F:/Projects/cymatix-context/.claude/worktrees/vigilant-wu-5416d6/benchmarks/dogfood/receipts/traced_sweep_2026-10-11/swebench/manifest.json",
       "source_commit": null,
       "stamp": null
     },

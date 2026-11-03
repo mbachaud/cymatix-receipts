@@ -1,0 +1,12 @@
+17:04:30 INFO    [7040 files, 7040 genes] 297.5 genes/s
+17:04:32 INFO    [7552 files, 7552 genes] 298.6 genes/s
+17:04:33 INFO    ============================================================
+17:04:33 INFO    DONE beir_bright_pony (parallel) in 26.1s
+17:04:33 INFO      files=7894 genes=7894 skipped=0 errors=0
+17:04:33 INFO      total_genes=6183 harmonic_links=0 bytes=34115584
+17:04:33 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_bright_pony_bed/beir_bright_pony.db
+17:04:33 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_pony_bed/beir_bright_pony.db
+17:04:33 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_pony_bed/manifest.json (key=beir_bright_pony)
+17:04:33 INFO    ============================================================
+17:04:33 INFO    SUMMARY (blob)
+17:04:33 INFO      beir_bright_pony genes=6183 bytes=34320384 elapsed=26.1s (files=7894 errors=0 missing=0)

@@ -1,0 +1,12 @@
+19:21:50 INFO    [413156 files, 430528 genes] 160.2 genes/s
+19:21:53 INFO    [413632 files, 431040 genes] 160.2 genes/s
+19:22:04 INFO    ============================================================
+19:22:04 INFO    DONE beir_bright_leetcode (parallel) in 2691.7s
+19:22:04 INFO      files=413932 genes=431354 skipped=0 errors=0
+19:22:04 INFO      total_genes=431258 harmonic_links=0 bytes=4597944320
+19:22:07 INFO    cover index built in 0.8s: /home/user/bench/beds_nosplade/beir_bright_leetcode_bed/beir_bright_leetcode.db
+19:22:07 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_leetcode_bed/beir_bright_leetcode.db
+19:22:07 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_leetcode_bed/manifest.json (key=beir_bright_leetcode)
+19:22:07 INFO    ============================================================
+19:22:07 INFO    SUMMARY (blob)
+19:22:07 INFO      beir_bright_leetcode genes=431258 bytes=4609232896 elapsed=2691.7s (files=413932 errors=0 missing=0)

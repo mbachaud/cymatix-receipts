@@ -1,0 +1,43 @@
+{
+  "bench": "fixture_matrix",
+  "spec": "docs/benchmarks/GENOME_FIXTURE_MATRIX.md",
+  "created_at": "2026-11-03T17:44:16.176474+00:00",
+  "targets": {
+    "beir_bright_stackoverflow": {
+      "mode": "parallel",
+      "tagger_version": 2,
+      "profile": "beir_bright_stackoverflow",
+      "label": "beir_bright_stackoverflow",
+      "active_roots": 1,
+      "roots": [
+        "/home/user/bench/corpus/beir_bright_stackoverflow/corpus"
+      ],
+      "db_path": "/home/user/bench/beds_nosplade/beir_bright_stackoverflow_bed/beir_bright_stackoverflow.db",
+      "started_at": "2026-11-03T17:27:40.656504+00:00",
+      "files": 107081,
+      "genes": 113142,
+      "skipped": 0,
+      "errors": 0,
+      "missing_roots": [],
+      "entity_autolink": true,
+      "min_file_bytes": 1,
+      "discovered_files": 107081,
+      "resumed_files_remaining": 107081,
+      "commit_batch": 0,
+      "batched_commits": 0,
+      "valve_trips": 0,
+      "workers": 4,
+      "elapsed_s": 995.0,
+      "finished_at": "2026-11-03T17:44:15.623913+00:00",
+      "total_genes": 67763,
+      "compression_ratio": 3.119,
+      "harmonic_links": 0,
+      "bytes": 614776832,
+      "cover_index": true,
+      "cover_index_s": 0.1,
+      "dense_coverage": 0.0,
+      "dense_genes_populated": 0
+    }
+  },
+  "updated_at": "2026-11-03T17:44:16.176524+00:00"
+}

@@ -1,0 +1,12 @@
+17:27:15 INFO    [23157 files, 23552 genes] 144.2 genes/s
+17:27:18 INFO    [23596 files, 24000 genes] 144.0 genes/s
+17:27:20 INFO    ============================================================
+17:27:20 INFO    DONE beir_bright_theoremqa_theorems (parallel) in 168.4s
+17:27:20 INFO      files=23839 genes=24253 skipped=0 errors=0
+17:27:20 INFO      total_genes=24253 harmonic_links=0 bytes=183603200
+17:27:20 INFO    cover index built in 0.0s: /home/user/bench/beds_nosplade/beir_bright_theoremqa_theorems_bed/beir_bright_theoremqa_theorems.db
+17:27:20 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_theoremqa_theorems_bed/beir_bright_theoremqa_theorems.db
+17:27:20 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_theoremqa_theorems_bed/manifest.json (key=beir_bright_theoremqa_theorems)
+17:27:20 INFO    ============================================================
+17:27:20 INFO    SUMMARY (blob)
+17:27:20 INFO      beir_bright_theoremqa_theorems genes=24253 bytes=184197120 elapsed=168.4s (files=23839 errors=0 missing=0)

@@ -1,0 +1,62 @@
+{
+ "pony": {
+  "n": 112,
+  "bm25_ndcg@10": 0.0226,
+  "bm25_recall@100": 0.1245
+ },
+ "biology": {
+  "n": 103,
+  "bm25_ndcg@10": 0.0775,
+  "bm25_recall@100": 0.3092
+ },
+ "economics": {
+  "n": 103,
+  "bm25_ndcg@10": 0.1026,
+  "bm25_recall@100": 0.3405
+ },
+ "psychology": {
+  "n": 101,
+  "bm25_ndcg@10": 0.0764,
+  "bm25_recall@100": 0.2979
+ },
+ "sustainable_living": {
+  "n": 108,
+  "bm25_ndcg@10": 0.0851,
+  "bm25_recall@100": 0.3881
+ },
+ "robotics": {
+  "n": 101,
+  "bm25_ndcg@10": 0.0623,
+  "bm25_recall@100": 0.3278
+ },
+ "theoremqa_theorems": {
+  "n": 76,
+  "bm25_ndcg@10": 0.0051,
+  "bm25_recall@100": 0.1096
+ },
+ "stackoverflow": {
+  "n": 117,
+  "bm25_ndcg@10": 0.1636,
+  "bm25_recall@100": 0.5089
+ },
+ "earth_science": {
+  "n": 116,
+  "bm25_ndcg@10": 0.1283,
+  "bm25_recall@100": 0.3948
+ },
+ "aops": {
+  "n": 111,
+  "bm25_ndcg@10": 0.0498,
+  "bm25_recall@100": 0.1687
+ },
+ "theoremqa_questions": {
+  "n": 194,
+  "bm25_ndcg@10": 0.0735,
+  "bm25_recall@100": 0.1474
+ },
+ "leetcode": {
+  "n": 142,
+  "bm25_ndcg@10": 0.2532,
+  "bm25_recall@100": 0.4455
+ }
+}

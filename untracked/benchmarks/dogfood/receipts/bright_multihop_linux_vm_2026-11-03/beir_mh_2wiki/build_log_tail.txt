@@ -1,0 +1,12 @@
+20:00:30 INFO    [55850 files, 56000 genes] 211.0 genes/s
+20:00:32 INFO    [56362 files, 56512 genes] 211.3 genes/s
+20:00:34 INFO    ============================================================
+20:00:34 INFO    DONE beir_mh_2wiki (parallel) in 268.9s
+20:00:34 INFO      files=56687 genes=56837 skipped=0 errors=0
+20:00:34 INFO      total_genes=56836 harmonic_links=0 bytes=335790080
+20:00:34 INFO    cover index built in 0.1s: /home/user/bench/beds_nosplade/beir_mh_2wiki_bed/beir_mh_2wiki.db
+20:00:34 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_mh_2wiki_bed/beir_mh_2wiki.db
+20:00:34 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_mh_2wiki_bed/manifest.json (key=beir_mh_2wiki)
+20:00:34 INFO    ============================================================
+20:00:34 INFO    SUMMARY (blob)
+20:00:34 INFO      beir_mh_2wiki genes=56836 bytes=336306176 elapsed=268.9s (files=56687 errors=0 missing=0)

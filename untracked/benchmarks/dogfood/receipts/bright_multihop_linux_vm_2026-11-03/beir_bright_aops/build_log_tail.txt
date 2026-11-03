@@ -1,0 +1,12 @@
+18:13:51 INFO    [187377 files, 187520 genes] 170.6 genes/s
+18:13:54 INFO    [187889 files, 188032 genes] 170.6 genes/s
+18:13:55 INFO    ============================================================
+18:13:55 INFO    DONE beir_bright_aops (parallel) in 1102.5s
+18:13:55 INFO      files=188002 genes=188145 skipped=0 errors=0
+18:13:55 INFO      total_genes=176651 harmonic_links=0 bytes=1141411840
+18:13:55 INFO    cover index built in 0.3s: /home/user/bench/beds_nosplade/beir_bright_aops_bed/beir_bright_aops.db
+18:13:55 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_bright_aops_bed/beir_bright_aops.db
+18:13:55 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_bright_aops_bed/manifest.json (key=beir_bright_aops)
+18:13:55 INFO    ============================================================
+18:13:55 INFO    SUMMARY (blob)
+18:13:55 INFO      beir_bright_aops genes=176651 bytes=1146077184 elapsed=1102.5s (files=188002 errors=0 missing=0)

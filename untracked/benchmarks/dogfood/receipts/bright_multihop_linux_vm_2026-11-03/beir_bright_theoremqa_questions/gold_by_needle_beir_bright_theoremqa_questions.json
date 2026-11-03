@@ -1,0 +1,829 @@
+{
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/econ_micro_11.json": [
+  "b5a6aee9ad967206"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/econ_micro_14_3.json": [
+  "b5eb7d8af09065c4"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/econ_micro_18.json": [
+  "0721f7d5e3b9fa88",
+  "a30224becfcc4b2f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/econ_micro_7.json": [
+  "0721f7d5e3b9fa88",
+  "16cf650ae4f9b4b1"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/econ_micro_7_2.json": [
+  "16cf650ae4f9b4b1",
+  "a30224becfcc4b2f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_abstact_algebra_7.json": [
+  "cb2ed378958affd5",
+  "d08e004dd6c81f16"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_abstact_algebra_7_3.json": [
+  "5568110d0779b1ba",
+  "d08e004dd6c81f16"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_abstact_algebra_7_5.json": [
+  "5568110d0779b1ba",
+  "cb2ed378958affd5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_abstact_algebra_7_8.json": [
+  "509ded6b013aa181"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_1.json": [
+  "2ef82ab8ae2a7866"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_1_2.json": [
+  "f7c15a884d1d32ee"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_3_2.json": [
+  "7a05a560abba7b85",
+  "c9ac894f149008fe"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_4.json": [
+  "3763beefb5006197"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_4_3.json": [
+  "d8344b2f8b2f11f6"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_5.json": [
+  "03554b064b7daf38"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_algebra_7_2.json": [
+  "6b57ff072012106b",
+  "817e6d06bea1394a"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_11.json": [
+  "8eb4609897b504ef"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_12.json": [
+  "18abdb16eb59e504",
+  "9b8ee29e30ca7d90"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_2_11.json": [
+  "0feddf32cd2b5437"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_2_5.json": [
+  "a5910e99ad59e00b",
+  "bf898dee3e99ea73"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_2_6.json": [
+  "bbe7d8bbc9524ecf",
+  "bf53d59a8db1442b",
+  "cee09c2e88e9cd05"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_2_7.json": [
+  "a5910e99ad59e00b",
+  "e55648d1391e2ed7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_3_8.json": [
+  "061f4fd3c65b2497",
+  "9b8ee29e30ca7d90"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_5.json": [
+  "0accf14aa3da9099",
+  "38d03bea245fcad8",
+  "3e4f5816d2a8ca15",
+  "d1110f55f5919489"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_elainewan/math_calculus_5_2.json": [
+  "0accf14aa3da9099",
+  "3e4f5816d2a8ca15",
+  "d1110f55f5919489",
+  "ef5f72199d4e289b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_1.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "1ea1244ffa69da6b",
+  "433aad0c6e132452",
+  "7c25165a6f26ad81",
+  "8cde3093aca69b25",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_2.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "1ea1244ffa69da6b",
+  "433aad0c6e132452",
+  "646c8886457f160c",
+  "7c25165a6f26ad81",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_3.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "1ea1244ffa69da6b",
+  "433aad0c6e132452",
+  "646c8886457f160c",
+  "7c25165a6f26ad81",
+  "8cde3093aca69b25"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_4.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "1ea1244ffa69da6b",
+  "646c8886457f160c",
+  "7c25165a6f26ad81",
+  "8cde3093aca69b25",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_5.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "1ea1244ffa69da6b",
+  "433aad0c6e132452",
+  "646c8886457f160c",
+  "8cde3093aca69b25",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Binomial_6.json": [
+  "0cf41b104bf0ff8e",
+  "1895f9511387792e",
+  "433aad0c6e132452",
+  "646c8886457f160c",
+  "7c25165a6f26ad81",
+  "8cde3093aca69b25",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Catalan_1.json": [
+  "acd76fce3be5f02d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Catalan_2.json": [
+  "82cce37f5f3699a7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Cayley_3.json": [
+  "7e4778ef46453aab"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Graph_2.json": [
+  "61c9df49527d1e8f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Multinomial_1.json": [
+  "33d56ea827a53eb7",
+  "655fb9b687cdd725",
+  "b11620e9897fd4de",
+  "fb8cec02f452e6e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Multinomial_2.json": [
+  "33d56ea827a53eb7",
+  "655fb9b687cdd725",
+  "889118b1316093a8",
+  "fb8cec02f452e6e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Multinomial_3.json": [
+  "655fb9b687cdd725",
+  "889118b1316093a8",
+  "b11620e9897fd4de",
+  "fb8cec02f452e6e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Multinomial_4.json": [
+  "33d56ea827a53eb7",
+  "889118b1316093a8",
+  "b11620e9897fd4de",
+  "fb8cec02f452e6e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Multinomial_6.json": [
+  "33d56ea827a53eb7",
+  "655fb9b687cdd725",
+  "889118b1316093a8",
+  "b11620e9897fd4de"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Ramsey_2.json": [
+  "16542ce7f71fb4cb",
+  "236ca91bc9985428",
+  "cd9410464169fc80",
+  "ebfcfc7c64ce9c84"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Ramsey_3.json": [
+  "236ca91bc9985428",
+  "cd9410464169fc80",
+  "ebfcfc7c64ce9c84",
+  "f019cb5bb94a5652"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Ramsey_4.json": [
+  "16542ce7f71fb4cb",
+  "236ca91bc9985428",
+  "ebfcfc7c64ce9c84",
+  "f019cb5bb94a5652"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Ramsey_5.json": [
+  "16542ce7f71fb4cb",
+  "cd9410464169fc80",
+  "ebfcfc7c64ce9c84",
+  "f019cb5bb94a5652"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Ramsey_6.json": [
+  "16542ce7f71fb4cb",
+  "236ca91bc9985428",
+  "cd9410464169fc80",
+  "f019cb5bb94a5652"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Stirling_number_first_kind_5.json": [
+  "bfaf81eec5d8eec7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Stirling_number_first_kind_6.json": [
+  "044bc5292c9baad0"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Stirling_number_second_kind_3.json": [
+  "57ee2fbf8f2e117b",
+  "c4101c555118de60"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Stirling_number_second_kind_5.json": [
+  "c4101c555118de60",
+  "c84efd29e28e4443"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/Stirling_number_second_kind_6.json": [
+  "57ee2fbf8f2e117b",
+  "c84efd29e28e4443"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/combination_1.json": [
+  "0cf41b104bf0ff8e",
+  "1ea1244ffa69da6b",
+  "433aad0c6e132452",
+  "646c8886457f160c",
+  "7c25165a6f26ad81",
+  "8cde3093aca69b25",
+  "b276706a166fa783"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/pigeonhole_1.json": [
+  "280f7a3c76d36fa0",
+  "f3c745de8acd9056",
+  "fa242a70f38c3cce"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/pigeonhole_2.json": [
+  "1b28d2285ec432d0",
+  "f3c745de8acd9056",
+  "fa242a70f38c3cce"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/pigeonhole_3.json": [
+  "1b28d2285ec432d0",
+  "280f7a3c76d36fa0",
+  "fa242a70f38c3cce"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_jianyu_xu/pigeonhole_4.json": [
+  "1b28d2285ec432d0",
+  "280f7a3c76d36fa0",
+  "f3c745de8acd9056"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-cnn1.json": [
+  "5b5138bf3b043861",
+  "6e083d21bb966d1f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-cnn4.json": [
+  "5b5138bf3b043861",
+  "fbb69de0735058c2"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-colorsci1-rgb.json": [
+  "0f309254ec759aeb",
+  "6f2e001c9fa7e3ee",
+  "dca1458ffcf4c691"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-colorsci2-hsi.json": [
+  "35a2fd4c731b8e78",
+  "6f2e001c9fa7e3ee",
+  "dca1458ffcf4c691"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-colorsci3-rgb.json": [
+  "0f309254ec759aeb",
+  "35a2fd4c731b8e78",
+  "dca1458ffcf4c691"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-imageprocessing2-morphology.json": [
+  "92cd0af950a5d30b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-imageprocessing6-histogram.json": [
+  "37fb960b9c4033ae",
+  "7368b917a758254f",
+  "dd7902a3a905d51f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-imageprocessing8-fourier2.json": [
+  "7f3022f96a9c965c"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/cv-imageprocessing9-digital-image.json": [
+  "d10dc6ead018e3dc"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/fourier1-FS.json": [
+  "1ce6467993744c21",
+  "21685ac380b821e7",
+  "67ed3bb6ca21398c",
+  "a3732ed87b95d4ef",
+  "a7b4e1f054b6d944"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/fourier6-FT.json": [
+  "21685ac380b821e7",
+  "42b7563606a57a69",
+  "67ed3bb6ca21398c",
+  "a3732ed87b95d4ef",
+  "a7b4e1f054b6d944"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory10-shortestpath.json": [
+  "2783bbe0fac209b4",
+  "934b2dc6c163eb4c",
+  "9f926ef6119d8a71"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory11-shortestpath-hard.json": [
+  "2783bbe0fac209b4",
+  "934b2dc6c163eb4c",
+  "b8bec7d3c9dc6762"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory2-vertexcover.json": [
+  "04653a1886f23e01",
+  "92453a673dd68bf5",
+  "cc1799247f6bf4e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory3-vertexcover.json": [
+  "04653a1886f23e01",
+  "84013a097a02e3e4",
+  "92453a673dd68bf5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory4-vertexcover.json": [
+  "84013a097a02e3e4",
+  "92453a673dd68bf5",
+  "cc1799247f6bf4e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory5-vertexcover.json": [
+  "04653a1886f23e01",
+  "84013a097a02e3e4",
+  "cc1799247f6bf4e5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory6-shortestpath.json": [
+  "934b2dc6c163eb4c",
+  "9f926ef6119d8a71",
+  "b8bec7d3c9dc6762"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/graphtheory7-shortestpath.json": [
+  "2783bbe0fac209b4",
+  "9f926ef6119d8a71",
+  "b8bec7d3c9dc6762"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/ipnetwork13-hammingdist.json": [
+  "e8146024aa760007"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/ipnetwork14-hammingdist.json": [
+  "66f0c877116294e8"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/ipnetwork21-ip-2.json": [
+  "75ffcab7497ca65b",
+  "f0b3ff93c9a6b314"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/ipnetwork4-mac.json": [
+  "e0b883e83d1191b1"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/ipnetwork5-mac.json": [
+  "7d4141958f149062"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing11-nyquist.json": [
+  "46db2071f903e95f",
+  "d8534f9afd100d33",
+  "fe5ad6a7fbcf8791"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing13-Ztransform.json": [
+  "3c624cdbeb1aa2c5",
+  "510b7cc6ca76b066",
+  "91b8330e4fb99696",
+  "91c2b0052ac2defa"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing14-Ztransform.json": [
+  "3c624cdbeb1aa2c5",
+  "510b7cc6ca76b066",
+  "5452bdb4e05d3339",
+  "91b8330e4fb99696"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing15-DB.json": [
+  "7a87456d75f0777f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing19-period.json": [
+  "02cc24bee9884de6",
+  "607ac0bfc679f58b",
+  "92b968ec1022094f",
+  "ff597a7aee6ed75d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing2-DB.json": [
+  "86e3db00795714cb"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing5-nyquist.json": [
+  "46db2071f903e95f",
+  "befa1f49b5765589",
+  "d8534f9afd100d33"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing6-Ztransform.json": [
+  "3c624cdbeb1aa2c5",
+  "510b7cc6ca76b066",
+  "5452bdb4e05d3339",
+  "91c2b0052ac2defa"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing7-phaseshift.json": [
+  "02cc24bee9884de6",
+  "607ac0bfc679f58b",
+  "e787452a92f9902a",
+  "ff597a7aee6ed75d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_maxku/signalprocessing9-signalrep.json": [
+  "02cc24bee9884de6",
+  "607ac0bfc679f58b",
+  "92b968ec1022094f",
+  "e787452a92f9902a"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/Fundamental-Theorem-of-Calculus3.json": [
+  "0accf14aa3da9099",
+  "38d03bea245fcad8",
+  "3e4f5816d2a8ca15",
+  "ef5f72199d4e289b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/Lebesgue-measure1.json": [
+  "061a9c52665dc3d9"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/Limit-of-sequence2.json": [
+  "4d70735a8c7b5549",
+  "a05dcec0940ebf02",
+  "ebb83667fb8a6abd",
+  "fa1a54bb8e67951e"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/Limit-of-sequence3.json": [
+  "11e9177b1001002e",
+  "4d70735a8c7b5549",
+  "a05dcec0940ebf02",
+  "fa1a54bb8e67951e"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/cauchy-integral-theorem1.json": [
+  "98e99f0a314c63e6"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/convexity1.json": [
+  "7ee454d4f23d350b",
+  "9c47ae056eb5a208",
+  "dec9bf6326b83e20"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/series2.json": [
+  "24223ae33ea073dd",
+  "a8d3ff2161f34942",
+  "a9afa19a9a029f65"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_mingyin/stopping-time1.json": [
+  "0d975541220e9ee2",
+  "7d3f83e5f8c97521"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/angular_frequency3.json": [
+  "90b669299ee8c6dc",
+  "cb19349ab00e7f35"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/gravitational_force1.json": [
+  "e215951687de6d2b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/gravitational_force2.json": [
+  "480fc473996f9d22"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/molar_heat_capacity1.json": [
+  "28bb8f9cc7bb0463"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/molar_heat_capacity2.json": [
+  "c6773e0627f20743"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/rigid-body3.json": [
+  "6c60ea3e755f8dfa",
+  "90b669299ee8c6dc"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/similarity2.json": [
+  "f5b94a95730a6149"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/similarity3.json": [
+  "e0a9f18cca4e8d6b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/trapezoid1.json": [
+  "30413f73a8485ab1",
+  "58d96b9d5c3e6e42",
+  "89001abea9906f28"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_panlu/wave_length1.json": [
+  "8d2b5dc43b6f130f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/euler-graph2.json": [
+  "336213985f3dee76"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/euler-graph3.json": [
+  "1914978e0d9e353f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/maxplanar1.json": [
+  "a99acbc4709ddf2f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/maxplanar3.json": [
+  "34d00d88566560a8"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/particle4.json": [
+  "1978f99d538c259f",
+  "2e2c6d026c7c79be"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/particle6.json": [
+  "1978f99d538c259f",
+  "afcaf3c584e95820"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/semiconductor1.json": [
+  "50ccf9328730fbcb",
+  "85323c80c4384db4",
+  "a623810d16f96d74"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/semiconductor2.json": [
+  "6772164bc0ba3eea",
+  "85323c80c4384db4",
+  "a623810d16f96d74"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/semiconductor3.json": [
+  "50ccf9328730fbcb",
+  "6772164bc0ba3eea",
+  "85323c80c4384db4"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/semiconductor5.json": [
+  "50ccf9328730fbcb",
+  "6772164bc0ba3eea",
+  "a623810d16f96d74"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/statisticalphysics2.json": [
+  "ea37634ec1d34f18"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_tonyxia/wave2.json": [
+  "81fb3210db7246d3"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/L'H\u00f4pital_rule1.json": [
+  "303c94c421510350",
+  "bbe7d8bbc9524ecf",
+  "bf53d59a8db1442b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/L'H\u00f4pital_rule2.json": [
+  "303c94c421510350",
+  "bbe7d8bbc9524ecf",
+  "cee09c2e88e9cd05"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/Liouville\u2019s_theorem1.json": [
+  "3834ca12b43652fc",
+  "a7551a3cf736fc2b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/Liouville\u2019s_theorem2.json": [
+  "3e83b78984f237d7",
+  "a7551a3cf736fc2b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/ODE2.json": [
+  "86b336d76841a895"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/ODE3.json": [
+  "01c749c635d20222"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/Poisson_process2.json": [
+  "54fc9cc2e5fc8afb"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/Poisson_process3.json": [
+  "0675841180c7a0da"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/Rolle's_theorem.json": [
+  "12c1cb2ce695a4fe"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/cauchy_integral1.json": [
+  "8beb5fb98d1ab813"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/definite_matrix1.json": [
+  "32df43a06c86bd1b"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/determinant1.json": [
+  "65ad25490996428b",
+  "e69c29420050ea8e",
+  "e83575951f44d9d1"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/determinant2.json": [
+  "05e792b72cccb5bc",
+  "65ad25490996428b",
+  "e83575951f44d9d1"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/double_integral2.json": [
+  "516722628aa5c1b5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/eigen_value1.json": [
+  "6b57ff072012106b",
+  "aa93f455a69c17dd"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/euler's_method1.json": [
+  "679abdb0fb9dbf48"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/euler's_method2.json": [
+  "120dd9a14c1a7381"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/gauss_lemma.json": [
+  "a1ec842174fed32c"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/gauss_lemma2.json": [
+  "fcfd39ac7c7e2dc0"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/infinite_series_sum3.json": [
+  "11e9177b1001002e",
+  "a05dcec0940ebf02",
+  "ebb83667fb8a6abd",
+  "fa1a54bb8e67951e"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/jensen1.json": [
+  "0cd7e7adc64b3166"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/jensen2.json": [
+  "ed507795a2e0ddc7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/kepler's_law1.json": [
+  "4b75876c2d5cf031",
+  "a8d07b748c945131"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/kepler's_law3.json": [
+  "4b75876c2d5cf031",
+  "ff41dbfe427c0760"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/newton2.json": [
+  "4c2b91ca50092deb"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/optics2.json": [
+  "b11ff9a809c550fd",
+  "b69979c33d9320e3"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/optics3.json": [
+  "b69979c33d9320e3",
+  "d464ac4fa4c4ccc5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/optics7.json": [
+  "b11ff9a809c550fd",
+  "d464ac4fa4c4ccc5"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/optics8.json": [
+  "9b184d3fb1909ac9"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/p_value2.json": [
+  "0abea4cbb2fd73fd"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/series_convergen2.json": [
+  "85625a0972d24082",
+  "a8d3ff2161f34942",
+  "a9afa19a9a029f65"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/series_convergen3.json": [
+  "24223ae33ea073dd",
+  "85625a0972d24082",
+  "a8d3ff2161f34942"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/t_test1.json": [
+  "727150cbeb69c09c",
+  "ee4dfd20ed94b9da"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/t_test2.json": [
+  "b01b38d4f6d9a4a0",
+  "ee4dfd20ed94b9da"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/t_test3.json": [
+  "727150cbeb69c09c",
+  "b01b38d4f6d9a4a0"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/trapezoidal_rule2.json": [
+  "30413f73a8485ab1",
+  "58d96b9d5c3e6e42",
+  "ab9618a0eaa7a322"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/trapezoidal_rule3.json": [
+  "30413f73a8485ab1",
+  "89001abea9906f28",
+  "ab9618a0eaa7a322"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/viterbi1.json": [
+  "63bd9c61aebf3ec1"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_wenhuchen/viterbi2.json": [
+  "67c8977278d9ed3d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/channel_capacity_1.json": [
+  "fff55ae50483da87"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/channel_capacity_3.json": [
+  "f9677e942b8975ac"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/cramer_rao_lower_bound_2.json": [
+  "ce93c7eec2ec6f18"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/dag_1.json": [
+  "882770d01a25eb0d",
+  "ba343e463c90adb8"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/dag_2.json": [
+  "a87db2fdddbb21ec",
+  "ba343e463c90adb8"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/dag_3.json": [
+  "882770d01a25eb0d",
+  "a87db2fdddbb21ec"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/distortion_rate_function_2.json": [
+  "3466d3b6239ab682",
+  "3d29902b3212867d",
+  "424c9efa1043816e",
+  "9fd7b931988ef8b7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/huffman_code_1.json": [
+  "b210cb6bb181ac73",
+  "fece239dc72f3988"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/huffman_code_3.json": [
+  "bc1f5d853db11ed0",
+  "fece239dc72f3988"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/kernel_1.json": [
+  "b33dcb68a3120e60"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/linear_projection.json": [
+  "cfa30ddab0d85065"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/maximum_entropy_2.json": [
+  "7cd06d68efbfdacc"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/neural_networks.json": [
+  "6e083d21bb966d1f",
+  "fbb69de0735058c2"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/rate_distortion_function_1.json": [
+  "3466d3b6239ab682",
+  "3d29902b3212867d",
+  "424c9efa1043816e",
+  "996097874871a9e8"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/rate_distortion_function_2.json": [
+  "3466d3b6239ab682",
+  "3d29902b3212867d",
+  "996097874871a9e8",
+  "9fd7b931988ef8b7"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/rotation.json": [
+  "6c60ea3e755f8dfa",
+  "cb19349ab00e7f35"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xinyi/sum_product_algorithm.json": [
+  "1250a6da3aa41d8d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/binomial_model_1.json": [
+  "515e7aca2dacf545"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/binomial_model_2.json": [
+  "9db4da1485dcdbf2"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/dividend_discount_model_1.json": [
+  "80436377e1354efb",
+  "e17e9429391ba029",
+  "e59230ce4ae5ee50"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/dividend_discount_model_2.json": [
+  "e17e9429391ba029",
+  "e59230ce4ae5ee50",
+  "fd6c1d7b60cc437d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/dividend_discount_model_4.json": [
+  "80436377e1354efb",
+  "e59230ce4ae5ee50",
+  "fd6c1d7b60cc437d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/dividend_discount_model_5.json": [
+  "80436377e1354efb",
+  "e17e9429391ba029",
+  "fd6c1d7b60cc437d"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/effective_rates_1.json": [
+  "554ed31f7dfeb99f"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/forward_price_1.json": [
+  "972852e90ac885ce",
+  "b44aa55969c0a0ca"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/forward_price_2.json": [
+  "6c496d292d0b507c",
+  "b44aa55969c0a0ca"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/forward_price_3.json": [
+  "6c496d292d0b507c",
+  "972852e90ac885ce"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/forward_rate_1.json": [
+  "5234a6d9fd0ff668"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/future_value_1.json": [
+  "d1ec9715d3d0a025"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/future_value_2.json": [
+  "55bd86dcddb4ea5c"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/geometric_brownian_motion.json": [
+  "16cf997df72ff741"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/intermediate_value_theorem.json": [
+  "b28028b8c7222bd9"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/present_value_1.json": [
+  "fbd8086627170e0a"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/present_value_2.json": [
+  "f7b58fe3bd28ee78"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/spot_rate.json": [
+  "5d39923d80c9e4d4"
+ ],
+ "beir_bright_theoremqa_questions_TheoremQA_xueguangma/taylors_approximation_theorem.json": [
+  "8797389acddb7c95"
+ ]
+}

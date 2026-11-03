@@ -1,0 +1,12 @@
+19:43:28 INFO    [66033 files, 66048 genes] 166.1 genes/s
+19:43:31 INFO    [66545 files, 66560 genes] 166.1 genes/s
+19:43:32 INFO    ============================================================
+19:43:32 INFO    DONE beir_mh_hotpotqa (parallel) in 401.4s
+19:43:32 INFO      files=66635 genes=66650 skipped=0 errors=0
+19:43:32 INFO      total_genes=66650 harmonic_links=0 bytes=486580224
+19:43:32 INFO    cover index built in 0.2s: /home/user/bench/beds_nosplade/beir_mh_hotpotqa_bed/beir_mh_hotpotqa.db
+19:43:32 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_mh_hotpotqa_bed/beir_mh_hotpotqa.db
+19:43:32 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_mh_hotpotqa_bed/manifest.json (key=beir_mh_hotpotqa)
+19:43:32 INFO    ============================================================
+19:43:32 INFO    SUMMARY (blob)
+19:43:32 INFO      beir_mh_hotpotqa genes=66650 bytes=486580224 elapsed=401.4s (files=66635 errors=0 missing=0)

@@ -1,0 +1,12 @@
+22:15:09 INFO    [522048 files, 522048 genes] 442.3 genes/s
+22:15:10 INFO    [522560 files, 522560 genes] 442.5 genes/s
+22:15:11 INFO    ============================================================
+22:15:11 INFO    DONE beir_quora (parallel) in 1181.4s
+22:15:11 INFO      files=522931 genes=522931 skipped=0 errors=0
+22:15:11 INFO      total_genes=522363 harmonic_links=0 bytes=877985792
+22:15:12 INFO    cover index built in 0.6s: /home/user/bench/beds_nosplade/beir_quora_bed/beir_quora.db
+22:15:12 INFO    dense backfill skipped (CYMATIX_BFM_DENSE_BACKFILL=0): /home/user/bench/beds_nosplade/beir_quora_bed/beir_quora.db
+22:15:12 INFO    manifest updated: /home/user/bench/beds_nosplade/beir_quora_bed/manifest.json (key=beir_quora)
+22:15:12 INFO    ============================================================
+22:15:12 INFO    SUMMARY (blob)
+22:15:12 INFO      beir_quora genes=522363 bytes=891691008 elapsed=1181.4s (files=522931 errors=0 missing=0)

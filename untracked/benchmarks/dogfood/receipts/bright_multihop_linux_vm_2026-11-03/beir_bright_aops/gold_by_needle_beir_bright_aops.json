@@ -1,0 +1,748 @@
+{
+ "beir_bright_aops_aops_1959_IMO_Problems/Problem_1": [
+  "6e3ea1de1303afdd",
+  "9761d1248fc6fabc",
+  "a334983408644725",
+  "b96fe3c61cb06336"
+ ],
+ "beir_bright_aops_aops_1971_AHSME_Problems/Problem_26": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_aops_1971_Canadian_MO_Problems/Problem_1": [
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_1981_IMO_Problems/Problem_3": [
+  "361ed6548861ec56",
+  "58e7932b3483bc4b",
+  "8add6428fc3e47aa",
+  "f096fb1dcbe32a43"
+ ],
+ "beir_bright_aops_aops_1985_AIME_Problems/Problem_6": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_aops_1987_IMO_Problems/Problem_1": [
+  "0f4ec3ad1d3cce0a",
+  "0f5397bbe0db50d2",
+  "d210d6815ab1db87",
+  "de8347aefa7384e9"
+ ],
+ "beir_bright_aops_aops_1988_AIME_Problems/Problem_12": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_aops_1990_AIME_Problems/Problem_9": [
+  "58e7932b3483bc4b",
+  "8add6428fc3e47aa",
+  "aa59d884d23e1ae5",
+  "f096fb1dcbe32a43"
+ ],
+ "beir_bright_aops_aops_1994_AIME_Problems/Problem_9": [
+  "4f2d88e626a24b55",
+  "99046cee3cf2dca7",
+  "a0f51671f98c06ec"
+ ],
+ "beir_bright_aops_aops_1998_AIME_Problems/Problem_2": [
+  "02d8498b16fcec5d",
+  "ca37e65b44dc4d43"
+ ],
+ "beir_bright_aops_aops_2000_AIME_I_Problems/Problem_9": [
+  "212f43df513a1819",
+  "4c9839b925724431",
+  "5a1076bae135bd92",
+  "c05e5ef554d831b4"
+ ],
+ "beir_bright_aops_aops_2000_AMC_12_Problems/Problem_14": [
+  "54da57887b3ba62f",
+  "d782ce2c877de8af",
+  "eed077c215044d80"
+ ],
+ "beir_bright_aops_aops_2000_AMC_12_Problems/Problem_4": [
+  "361ed6548861ec56",
+  "8add6428fc3e47aa",
+  "aa59d884d23e1ae5",
+  "f096fb1dcbe32a43"
+ ],
+ "beir_bright_aops_aops_2001_AMC_10_Problems/Problem_19": [
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2002_AIME_I_Problems/Problem_10": [
+  "009600f18dd1bc0e",
+  "0293b886e56b25bf",
+  "2f17856caa281e5c",
+  "3f1fa9e534dd5817",
+  "522be931fb108604",
+  "bf4983da554ab0ed"
+ ],
+ "beir_bright_aops_aops_2002_AIME_I_Problems/Problem_6": [
+  "28033e630747fa78",
+  "3a504ecf2edb9313",
+  "9e0c736c9f25181f"
+ ],
+ "beir_bright_aops_aops_2004_AIME_I_Problems/Problem_10": [
+  "efe2bf256ce1cb5e",
+  "fe712a1207ac2e9c"
+ ],
+ "beir_bright_aops_aops_2005_AMC_12A_Problems/Problem_18": [
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_aops_2005_IMO_Problems/Problem_4": [
+  "18b2cb20fdfdde69",
+  "3507f16687e8ca50",
+  "53c5e928319d0530",
+  "b7b71ed48e88beb4",
+  "bf577f90032e9863",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_aops_2005_USAMO_Problems/Problem_2": [
+  "18b2cb20fdfdde69",
+  "3507f16687e8ca50",
+  "53c5e928319d0530",
+  "702d6fd1aa8ad47a",
+  "b7b71ed48e88beb4",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_aops_2007_AIME_II_Problems/Problem_10": [
+  "5830c36660e2befc",
+  "8e7a6894722a661e",
+  "f58e3cedc854e4d1"
+ ],
+ "beir_bright_aops_aops_2007_AIME_I_Problems/Problem_10": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2007_iTest_Problems/Problem_6": [
+  "0f4ec3ad1d3cce0a",
+  "0f5397bbe0db50d2",
+  "ae98200bbe3b6c8d",
+  "de8347aefa7384e9"
+ ],
+ "beir_bright_aops_aops_2008_AMC_12A_Problems/Problem_15": [
+  "18b2cb20fdfdde69",
+  "3507f16687e8ca50",
+  "53c5e928319d0530",
+  "702d6fd1aa8ad47a",
+  "b7b71ed48e88beb4",
+  "bf577f90032e9863"
+ ],
+ "beir_bright_aops_aops_2008_AMC_12A_Problems/Problem_16": [
+  "28033e630747fa78",
+  "9075ea8fc5e591c8",
+  "9e0c736c9f25181f"
+ ],
+ "beir_bright_aops_aops_2008_AMC_12B_Problems/Problem_16": [
+  "212f43df513a1819",
+  "4b47ac038f93a5b5",
+  "5a1076bae135bd92",
+  "c05e5ef554d831b4"
+ ],
+ "beir_bright_aops_aops_2009_AMC_12A_Problems/Problem_17": [
+  "a5d0e15a824fa84e",
+  "d8f8ec2d5dab3fe0",
+  "ec573f98d5d26895"
+ ],
+ "beir_bright_aops_aops_2011_AMC_8_Problems/Problem_6": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_aops_2013_AMC_12A_Problems/Problem_13": [
+  "02d8498b16fcec5d",
+  "aebccd9209661d50"
+ ],
+ "beir_bright_aops_aops_2015_AIME_I_Problems/Problem_4": [
+  "009600f18dd1bc0e",
+  "0293b886e56b25bf",
+  "2f17856caa281e5c",
+  "3f1fa9e534dd5817",
+  "bf4983da554ab0ed",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_aops_2015_AMC_10B_Problems/Problem_15": [
+  "67cb527f7c4df4f6",
+  "99cca7b1bbf9ef22"
+ ],
+ "beir_bright_aops_aops_2015_AMC_12A_Problems/Problem_22": [
+  "4f2d88e626a24b55",
+  "736c7d9e27867bc5",
+  "99046cee3cf2dca7"
+ ],
+ "beir_bright_aops_aops_2016_AIME_II_Problems/Problem_10": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_2016_AIME_I_Problems/Problem_15": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a"
+ ],
+ "beir_bright_aops_aops_2016_AMC_10A_Problems/Problem_19": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de"
+ ],
+ "beir_bright_aops_aops_2016_AMC_10A_Problems/Problem_7": [
+  "1ae0718d0ede6065",
+  "d782ce2c877de8af",
+  "eed077c215044d80"
+ ],
+ "beir_bright_aops_aops_2017_AIME_II_Problems/Problem_1": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_aops_2017_AIME_II_Problems/Problem_3": [
+  "009600f18dd1bc0e",
+  "2f17856caa281e5c",
+  "3f1fa9e534dd5817",
+  "522be931fb108604",
+  "bf4983da554ab0ed",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_aops_2017_AMC_10B_Problems/Problem_13": [
+  "025bda3cbf686750",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_aops_2017_AMC_10B_Problems/Problem_14": [
+  "18b2cb20fdfdde69",
+  "3507f16687e8ca50",
+  "702d6fd1aa8ad47a",
+  "b7b71ed48e88beb4",
+  "bf577f90032e9863",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_aops_2018_AMC_10A_Problems/Problem_11": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2018_AMC_8_Problems/Problem_23": [
+  "00c6de963f951cac",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2019_AIME_I_Problems/Problem_3": [
+  "0293b886e56b25bf",
+  "2f17856caa281e5c",
+  "3f1fa9e534dd5817",
+  "522be931fb108604",
+  "bf4983da554ab0ed",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_aops_2019_AMC_10A_Problems/Problem_12": [
+  "1ae0718d0ede6065",
+  "54da57887b3ba62f",
+  "eed077c215044d80"
+ ],
+ "beir_bright_aops_aops_2019_AMC_12A_Problems/Problem_17": [
+  "18ea97a023c0fcc9",
+  "215836b13eee11a3"
+ ],
+ "beir_bright_aops_aops_2019_AMC_8_Problems/Problem_25": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2020_AIME_II_Problems/Problem_9": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_aops_2020_AIME_I_Problems/Problem_15": [
+  "0f5b15fad542af2d",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_2020_AMC_10A_Problems/Problem_24": [
+  "6e3ea1de1303afdd",
+  "9761d1248fc6fabc",
+  "b96fe3c61cb06336",
+  "f64aac27e64fc179"
+ ],
+ "beir_bright_aops_aops_2020_AMC_10B_Problems/Problem_25": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_aops_2020_AMC_8_Problems/Problem_12": [
+  "0f4ec3ad1d3cce0a",
+  "0f5397bbe0db50d2",
+  "ae98200bbe3b6c8d",
+  "d210d6815ab1db87"
+ ],
+ "beir_bright_aops_aops_2021_AIME_II_Problems/Problem_9": [
+  "6e3ea1de1303afdd",
+  "a334983408644725",
+  "b96fe3c61cb06336",
+  "f64aac27e64fc179"
+ ],
+ "beir_bright_aops_aops_2021_AIME_I_Problems/Problem_10": [
+  "6e3ea1de1303afdd",
+  "9761d1248fc6fabc",
+  "a334983408644725",
+  "f64aac27e64fc179"
+ ],
+ "beir_bright_aops_aops_2021_AIME_I_Problems/Problem_14": [
+  "18b2cb20fdfdde69",
+  "53c5e928319d0530",
+  "702d6fd1aa8ad47a",
+  "b7b71ed48e88beb4",
+  "bf577f90032e9863",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_aops_2021_AMC_12B_Problems/Problem_9": [
+  "3a504ecf2edb9313",
+  "9075ea8fc5e591c8",
+  "9e0c736c9f25181f"
+ ],
+ "beir_bright_aops_aops_2021_Fall_AMC_12A_Problems/Problem_12": [
+  "d1caa4ac092cc39f"
+ ],
+ "beir_bright_aops_aops_2022_AIME_I_Problems/Problem_11": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_2022_AMC_10B_Problems/Problem_9": [
+  "4f2d88e626a24b55",
+  "736c7d9e27867bc5",
+  "a0f51671f98c06ec"
+ ],
+ "beir_bright_aops_aops_2023_AIME_II_Problems/Problem_9": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_2023_AIME_I_Problems/Problem_5": [
+  "175d725af9a0a0b9",
+  "3869b565e9c99811"
+ ],
+ "beir_bright_aops_aops_2024_AIME_I_Problems/Problem_10": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "94deeb2ef5e6e350",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_aops_2024_AIME_I_Problems/Problem_13": [
+  "3507f16687e8ca50",
+  "53c5e928319d0530",
+  "702d6fd1aa8ad47a",
+  "b7b71ed48e88beb4",
+  "bf577f90032e9863",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_math_test_algebra_1208": [
+  "a5d0e15a824fa84e",
+  "d4a5e3e01830b03c",
+  "d8f8ec2d5dab3fe0"
+ ],
+ "beir_bright_aops_math_test_counting_and_probability_1003": [
+  "1cd6da06eaf13f82",
+  "8e7a6894722a661e",
+  "f58e3cedc854e4d1"
+ ],
+ "beir_bright_aops_math_test_counting_and_probability_1009": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_math_test_counting_and_probability_430": [
+  "1cd6da06eaf13f82",
+  "5830c36660e2befc",
+  "8e7a6894722a661e"
+ ],
+ "beir_bright_aops_math_test_counting_and_probability_838": [
+  "0f5397bbe0db50d2",
+  "ae98200bbe3b6c8d",
+  "d210d6815ab1db87",
+  "de8347aefa7384e9"
+ ],
+ "beir_bright_aops_math_test_geometry_454": [
+  "175d725af9a0a0b9",
+  "d73648373ad5a8a8"
+ ],
+ "beir_bright_aops_math_test_intermediate_algebra_1179": [
+  "215836b13eee11a3",
+  "55a8c4348271abf1"
+ ],
+ "beir_bright_aops_math_test_intermediate_algebra_1812": [
+  "9405c11c23b0cde5"
+ ],
+ "beir_bright_aops_math_test_intermediate_algebra_951": [
+  "6ee6a15f3467218d",
+  "eec1866bdd3598dc"
+ ],
+ "beir_bright_aops_math_test_prealgebra_1987": [
+  "1cd6da06eaf13f82",
+  "5830c36660e2befc",
+  "f58e3cedc854e4d1"
+ ],
+ "beir_bright_aops_math_train_algebra_2521": [
+  "00caa7c590db10f4",
+  "eec1866bdd3598dc"
+ ],
+ "beir_bright_aops_math_train_algebra_2826": [
+  "1ae0718d0ede6065",
+  "54da57887b3ba62f",
+  "d782ce2c877de8af"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5011": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "b7b75f1d962b0558",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5024": [
+  "99cca7b1bbf9ef22",
+  "cf56a42ec9f3d242"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5035": [
+  "b1a7379dbe585274",
+  "fe712a1207ac2e9c"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5045": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5047": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "ab963eba75c8936f",
+  "c34b7661127d8ecf"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5048": [
+  "025bda3cbf686750",
+  "11a9868395218c23",
+  "5be8a8c6d88771df",
+  "7f7a0a74ea6a01f3",
+  "8336379cd5be3ae1",
+  "91ed695ec54d47c3",
+  "ab963eba75c8936f"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5064": [
+  "736c7d9e27867bc5",
+  "99046cee3cf2dca7",
+  "a0f51671f98c06ec"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5111": [
+  "a57ede549a8e2e83",
+  "bdaa23100d216f55"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_5131": [
+  "00c6de963f951cac",
+  "0b8be2a763cd5757",
+  "ab34c521f94336a7",
+  "b11c565b44a30f2a",
+  "b234d8d06b38ef8b",
+  "d7d9a1cb21b09ec1",
+  "f1516fd975b35756",
+  "fad10a920eb0565c"
+ ],
+ "beir_bright_aops_math_train_counting_and_probability_822": [
+  "612fc4a03966f2e8",
+  "bdaa23100d216f55"
+ ],
+ "beir_bright_aops_math_train_geometry_317": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_math_train_geometry_6018": [
+  "3869b565e9c99811",
+  "d73648373ad5a8a8"
+ ],
+ "beir_bright_aops_math_train_geometry_6022": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_math_train_geometry_6051": [
+  "009600f18dd1bc0e",
+  "0293b886e56b25bf",
+  "3f1fa9e534dd5817",
+  "522be931fb108604",
+  "bf4983da554ab0ed",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_math_train_geometry_6060": [
+  "08c7797969921141",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_math_train_geometry_6078": [
+  "009600f18dd1bc0e",
+  "0293b886e56b25bf",
+  "2f17856caa281e5c",
+  "3f1fa9e534dd5817",
+  "522be931fb108604",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_math_train_geometry_6092": [
+  "0f5b15fad542af2d",
+  "51ab27a76cad69b9",
+  "65d6a051bb0b6020",
+  "9c5c487f15169e54",
+  "ca2c2ecbad8f3565",
+  "da8afaf57e2a1d2a",
+  "e02ee99eaec9f095"
+ ],
+ "beir_bright_aops_math_train_geometry_6105": [
+  "aebccd9209661d50",
+  "ca37e65b44dc4d43"
+ ],
+ "beir_bright_aops_math_train_geometry_6112": [
+  "009600f18dd1bc0e",
+  "0293b886e56b25bf",
+  "2f17856caa281e5c",
+  "522be931fb108604",
+  "bf4983da554ab0ed",
+  "ecba28087d33caa5"
+ ],
+ "beir_bright_aops_math_train_geometry_6115": [
+  "08c7797969921141",
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_math_train_geometry_6116": [
+  "415dd966918ec41d",
+  "5c5900e0fbe13671",
+  "6d9972331bbbf5af",
+  "c8e89b624a1cac1c",
+  "ca891dc2d1f4ac6a",
+  "cc3c0e9cfc4a9b17",
+  "e62c69be640e19de",
+  "f6e31137702b54e6"
+ ],
+ "beir_bright_aops_math_train_geometry_6173": [
+  "b1a7379dbe585274",
+  "efe2bf256ce1cb5e"
+ ],
+ "beir_bright_aops_math_train_geometry_747": [
+  "612fc4a03966f2e8",
+  "a57ede549a8e2e83"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_1268": [
+  "28033e630747fa78",
+  "3a504ecf2edb9313",
+  "9075ea8fc5e591c8"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_1822": [
+  "d4a5e3e01830b03c",
+  "d8f8ec2d5dab3fe0",
+  "ec573f98d5d26895"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_2060": [
+  "00caa7c590db10f4",
+  "6ee6a15f3467218d"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_477": [
+  "361ed6548861ec56",
+  "58e7932b3483bc4b",
+  "aa59d884d23e1ae5",
+  "f096fb1dcbe32a43"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_513": [
+  "18ea97a023c0fcc9",
+  "55a8c4348271abf1"
+ ],
+ "beir_bright_aops_math_train_intermediate_algebra_659": [
+  "361ed6548861ec56",
+  "58e7932b3483bc4b",
+  "8add6428fc3e47aa",
+  "aa59d884d23e1ae5"
+ ],
+ "beir_bright_aops_math_train_number_theory_7003": [
+  "9761d1248fc6fabc",
+  "a334983408644725",
+  "b96fe3c61cb06336",
+  "f64aac27e64fc179"
+ ],
+ "beir_bright_aops_math_train_number_theory_7012": [
+  "4b47ac038f93a5b5",
+  "4c9839b925724431",
+  "5a1076bae135bd92",
+  "c05e5ef554d831b4"
+ ],
+ "beir_bright_aops_math_train_number_theory_7016": [
+  "18b2cb20fdfdde69",
+  "3507f16687e8ca50",
+  "53c5e928319d0530",
+  "702d6fd1aa8ad47a",
+  "bf577f90032e9863",
+  "c728691bb2295673"
+ ],
+ "beir_bright_aops_math_train_number_theory_7030": [
+  "212f43df513a1819",
+  "4b47ac038f93a5b5",
+  "4c9839b925724431",
+  "c05e5ef554d831b4"
+ ],
+ "beir_bright_aops_math_train_number_theory_7066": [
+  "0f4ec3ad1d3cce0a",
+  "ae98200bbe3b6c8d",
+  "d210d6815ab1db87",
+  "de8347aefa7384e9"
+ ],
+ "beir_bright_aops_math_train_number_theory_7078": [
+  "a5d0e15a824fa84e",
+  "d4a5e3e01830b03c",
+  "ec573f98d5d26895"
+ ],
+ "beir_bright_aops_math_train_number_theory_7095": [
+  "67cb527f7c4df4f6",
+  "cf56a42ec9f3d242"
+ ],
+ "beir_bright_aops_math_train_number_theory_839": [
+  "212f43df513a1819",
+  "4b47ac038f93a5b5",
+  "4c9839b925724431",
+  "5a1076bae135bd92"
+ ]
+}
